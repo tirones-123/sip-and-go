@@ -1,0 +1,31 @@
+import React from 'react';
+import { View, Text, TouchableOpacity } from 'react-native';
+import tw from 'twrnc';
+import { useTranslation } from '../utils/i18n';
+
+interface PlayerListItemProps {
+  name: string;
+  onRemove: (name: string) => void;
+}
+
+/**
+ * Component for displaying a player in the list
+ */
+const PlayerListItem: React.FC<PlayerListItemProps> = ({ name, onRemove }) => {
+  const { t } = useTranslation();
+  
+  return (
+    <View style={tw`flex-row items-center justify-between bg-white/10 rounded-lg p-3 mb-2`}>
+      <Text style={tw`text-white font-medium text-lg flex-1`}>{name}</Text>
+      <TouchableOpacity
+        onPress={() => onRemove(name)}
+        style={tw`h-8 w-8 rounded-full bg-white/20 items-center justify-center`}
+        accessibilityLabel={t('addPlayers.deleteButton')}
+      >
+        <Text style={tw`text-white text-lg font-bold`}>×</Text>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+export default PlayerListItem; 

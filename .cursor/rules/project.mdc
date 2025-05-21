@@ -1,0 +1,168 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+
+## 0. TL;DR for the agent
+
+* **Project name:** Drinking‑Game MVP (Picolo‑like)
+* **Stack:** React Native + Expo SDK 50 • TypeScript strict • Tailwind RN • RevenueCat • PostHog • Sentry
+* **Data:** 1 500 questions embarquées en JSON (multilingue `fr` & `en`)
+* **Navigation:** Native Stack (`@react-navigation/native-stack`)
+* **State:** Zustand `useGameStore`
+* **E2E goal:** Build passes `eas build -p ios|android` & Expo Go hot‑reload works.
+
+---
+
+## 1. File / folder conventions
+
+| Kind             | Convention                               | Example              |
+| ---------------- | ---------------------------------------- | -------------------- |
+| Screen component | `PascalCase.tsx` inside `src/screens`    | `ModeCarousel.tsx`   |
+| UI Component     | `PascalCase.tsx` inside `src/components` | `PlayerListItem.tsx` |
+| Hook             | `camelCase.ts` inside `src/hooks`        | `useQuestions.ts`    |
+| Store            | `use<Name>Store.ts`                      | `useGameStore.ts`    |
+| Util             | `camelCase.ts` inside `src/utils`        | `pickQuestions.ts`   |
+| JSON assets      | `packName.lang.json`                     | `classic.en.json`    |
+
+No other folders should be created unless explicitly requested.
+
+---
+
+## 2. Coding style
+
+* **TypeScript always strict** (`tsconfig.json` already set).
+* **Functional Components** with React hooks.
+* **Props first, callbacks last**.
+* Use **Tailwind RN classes** (e.g. `className="bg-darkBg flex-1 items-center"`). If a color is not in the default palette, add it through the `tailwind.config.js` tokens defined in README.
+* Prefer **ES modules** – no `require`.
+* All network / storage calls `async/await`.
+* **No inline styles**; always Tailwind or styled‑components.
+* Add **JSDoc** for exported functions.
+
+---
+
+## 3. Packages & versions (locked)
+
+```jsonc
+expo: "^50.x"
+react-native-reanimated: "^3.x"
+@react-navigation/native-stack: "^7.x"
+zustand: "^4.x"
+react-native-purchases: "^7.x"   // RevenueCat
+posthog-react-native: "^3.x"
+@expo/sentry: "latest"
+```
+
+* **Do NOT** add a new dependency unless the user explicitly asks for it.
+
+---
+
+## 4. Navigation map
+
+```
+RootStack
+├── AddPlayers      (Accueil)         // initialRoute
+├── ModeCarousel    (Choix du mode)
+├── Question        (Partie en cours)
+├── Settings        (modal)
+└── Paywall         (modal)
+```
+
+* Modal screens use `presentation: 'modal'` & transparent header.
+* `Question` disables the gesture back.
+
+---
+
+## 5. State store schema
+
+```ts
+interface Pack {
+  id: string;
+  title: string;
+  description: string;
+  color: string;         // primary
+  access: 'FREE' | 'LOCKED';
+}
+interface GameStore {
+  players: string[];
+  packs: Pack[];
+  premium: boolean;
+  currentPack?: Pack;
+  currentQuestions: Question[];
+  addPlayer(name: string): void;
+  removePlayer(name: string): void;
+  startPack(packId: string): void; // fills currentQuestions
+  nextQuestion(): void;
+}
+```
+
+* Use `create` from Zustand; persist nothing to storage for now.
+
+---
+
+## 6. RevenueCat helper
+
+```ts
+import Purchases from 'react-native-purchases';
+export async function initRC() {
+  await Purchases.setup(process.env.RC_KEY);
+  Purchases.addCustomerInfoUpdateListener(({ entitlements }) => {
+    useGameStore.setState({ premium: !!entitlements.active.premium });
+  });
+}
+```
+
+---
+
+## 7. Analytics helper
+
+```ts
+import { PostHog } from 'posthog-react-native';
+export const posthog = new PostHog(process.env.POSTHOG_KEY!, { host: process.env.POSTHOG_HOST! });
+```
+
+* Queue flush handled by SDK; no manual retries.
+
+---
+
+## 8. Tests
+
+* Jest config already present.
+* Each util/hook must have **at least one** unit test in `__tests__`.
+* Aim for 80 % coverage for utils; UI tests optional.
+
+---
+
+## 9. Internationalisation
+
+* Strings live in `strings/en.ts` & `strings/fr.ts`.
+* Use `useTranslation()` helper that maps keys to current `lang` from `expo-localization`.
+* Screens must never hardcode visible strings.
+
+---
+
+## 10. Forbidden patterns
+
+* Class components.
+* `any` types in final code (use generics or explicit interfaces).
+* Inline hex colors except when generated (Question screen randomizer).
+* Direct calls to Apple/Google IAP APIs (always via RevenueCat).
+
+---
+
+## 11. Pull‑request checklist (AI auto‑fill before proposing code)
+
+* [ ] File path matches §1 conventions
+* [ ] No new dependency introduced
+* [ ] Passes `npm run lint` & `npm run typecheck`
+* [ ] Strings externalised
+* [ ] Unit tests added if utility/hook
+
+---
+
+### End of Cursor Rules
+
+*Keep these rules short and stable; business questions live in README.*

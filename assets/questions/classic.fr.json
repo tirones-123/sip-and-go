@@ -1,0 +1,79 @@
+[
+  {
+    "id": "c1",
+    "text": "${player}, bois 2 gorgées !",
+    "pack": "classic"
+  },
+  {
+    "id": "c2",
+    "text": "Tous ceux qui ont déjà été ivres, prenez 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c3",
+    "text": "${player}, choisis quelqu'un pour boire 3 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c4",
+    "text": "Le joueur le plus grand boit 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c5",
+    "text": "${player}, si tu as déjà envoyé un message à la mauvaise personne, bois 2 gorgées. Sinon, distribue 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c6",
+    "text": "Tous ceux avec des yeux bleus, prenez 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c7",
+    "text": "Tout le monde doit dire sa boisson préférée. ${player} choisit la meilleure, et cette personne boit.",
+    "pack": "classic"
+  },
+  {
+    "id": "c8",
+    "text": "${player}, bois autant de gorgées que ton âge divisé par 10, arrondi au supérieur.",
+    "pack": "classic"
+  },
+  {
+    "id": "c9",
+    "text": "Tous ceux qui ont voyagé à l'étranger boivent 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c10",
+    "text": "${player}, tu es le maître du pouce jusqu'à la prochaine question. Quand tu poses ton pouce sur la table, la dernière personne à faire de même boit.",
+    "pack": "classic"
+  },
+  {
+    "id": "c11",
+    "text": "Pierre, papier, ciseaux entre ${player} et la personne à sa droite. Le perdant boit 2 gorgées.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c12",
+    "text": "Tous ceux qui ont un frère ou une sœur, prenez 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c13",
+    "text": "${player}, ferme les yeux. Tout le monde vote si tu dois boire. La majorité l'emporte.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c14",
+    "text": "Je n'ai jamais... fait de skinny dipping. Buvez si vous l'avez fait.",
+    "pack": "classic"
+  },
+  {
+    "id": "c15",
+    "text": "${player}, tu es le créateur de règles. Établis une règle que tout le monde doit suivre jusqu'à la fin du jeu. Quiconque l'enfreint boit 2 gorgées.",
+    "pack": "classic"
+  }
+] 

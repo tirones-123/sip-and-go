@@ -1,0 +1,79 @@
+[
+  {
+    "id": "c1",
+    "text": "${player}, drink 2 sips!",
+    "pack": "classic"
+  },
+  {
+    "id": "c2",
+    "text": "Everyone who has ever been drunk, drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c3",
+    "text": "${player}, choose someone to drink 3 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c4",
+    "text": "The tallest player drinks 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c5",
+    "text": "${player}, if you've ever sent a text to the wrong person, drink 2 sips. If not, give 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c6",
+    "text": "Everyone with blue eyes, drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c7",
+    "text": "Everyone must say their favorite drink. ${player} chooses the best one, and that person drinks.",
+    "pack": "classic"
+  },
+  {
+    "id": "c8",
+    "text": "${player}, drink as many sips as your age divided by 10, rounded up.",
+    "pack": "classic"
+  },
+  {
+    "id": "c9",
+    "text": "Everyone who has been outside the country drinks 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c10",
+    "text": "${player}, you're the thumb master until the next question. Whenever you put your thumb on the table, the last person to do the same drinks.",
+    "pack": "classic"
+  },
+  {
+    "id": "c11",
+    "text": "Rock, paper, scissors between ${player} and the person to their right. Loser drinks 2 sips.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c12",
+    "text": "Everyone who has a sibling, drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c13",
+    "text": "${player}, close your eyes. Everyone votes if you should drink. Majority wins.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c14",
+    "text": "Never have I ever... gone skinny dipping. Drink if you have.",
+    "pack": "classic"
+  },
+  {
+    "id": "c15",
+    "text": "${player}, you're the rule maker. Make a rule that everyone must follow until the end of the game. Anyone who breaks it drinks 2 sips.",
+    "pack": "classic"
+  }
+] 
