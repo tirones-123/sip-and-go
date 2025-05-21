@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { 
   View, 
   Text, 
@@ -9,7 +9,7 @@ import {
   Platform,
   Alert
 } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation, useIsFocused } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import tw from 'twrnc';
 import { useTranslation } from '../utils/i18n';
@@ -26,6 +26,7 @@ type AddPlayersScreenNavigationProp = NativeStackNavigationProp<RootStackParamLi
 const AddPlayers: React.FC = () => {
   const { t } = useTranslation();
   const navigation = useNavigation<AddPlayersScreenNavigationProp>();
+  const isFocused = useIsFocused();
   const [playerName, setPlayerName] = useState('');
   const inputRef = useRef<TextInput>(null);
   
@@ -59,6 +60,14 @@ const AddPlayers: React.FC = () => {
   const openSettings = () => {
     navigation.navigate('Settings');
   };
+  
+  useEffect(() => {
+    if (isFocused) {
+      inputRef.current?.focus();
+    } else {
+      inputRef.current?.blur();
+    }
+  }, [isFocused]);
   
   return (
     <KeyboardAvoidingView
@@ -97,7 +106,11 @@ const AddPlayers: React.FC = () => {
             blurOnSubmit={false}
             maxLength={20}
             autoCorrect={false}
-            autoFocus
+            autoCapitalize="none"
+            spellCheck={false}
+            autoComplete="off"
+            importantForAutofill="no"
+            // autoFocus handled via focus effect
           />
           
           <TouchableOpacity

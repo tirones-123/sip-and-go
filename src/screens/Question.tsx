@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   View, 
   Text, 
@@ -6,7 +6,8 @@ import {
   Modal,
   FlatList,
   Pressable,
-  TextInput
+  TextInput,
+  Keyboard
 } from 'react-native';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -49,6 +50,7 @@ const Question: React.FC = () => {
   const [newPlayerName, setNewPlayerName] = useState('');
   const [isFinished, setIsFinished] = useState(false);
   const [showQuitConfirm, setShowQuitConfirm] = useState(false);
+  const modalInputRef = useRef<TextInput>(null);
   
   // Current question
   const currentQuestion = currentQuestions[currentQuestionIndex];
@@ -95,13 +97,14 @@ const Question: React.FC = () => {
     if (newPlayerName.trim()) {
       addPlayer(newPlayerName.trim());
       setNewPlayerName('');
+      modalInputRef.current?.focus();
     }
   };
   
   return (
     <View style={[tw`flex-1 justify-center items-center`, { backgroundColor }]}>
       {/* Top navigation bar */}
-      <View style={tw`absolute top-12 left-0 right-0 flex-row justify-between px-4`}>
+      <View style={tw`absolute top-12 left-0 right-0 flex-row justify-between px-4 z-20`}>
         {/* Players button */}
         <TouchableOpacity
           style={tw`w-10 h-10 bg-white/20 rounded-full items-center justify-center`}
@@ -123,6 +126,7 @@ const Question: React.FC = () => {
       <Pressable
         style={[tw`flex-1 justify-center items-center px-6 py-8`]}
         onPress={handleNextQuestion}
+        pointerEvents="auto"
       >
         <Text style={[tw`text-white text-center text-3xl`, { fontFamily: 'Montserrat_800ExtraBold', maxWidth: '90%' }]}>
           {formattedText}
@@ -151,7 +155,10 @@ const Question: React.FC = () => {
         animationType="slide"
         onRequestClose={() => setShowPlayersModal(false)}
       >
-        <View style={tw`flex-1 justify-center items-center bg-black/70`}>
+        <Pressable
+          style={tw`flex-1 justify-center items-center bg-black/70`}
+          onPress={Keyboard.dismiss}
+        >
           <View style={tw`bg-darkBg w-4/5 h-2/3 rounded-xl p-4`}>
             <View style={tw`flex-row justify-between items-center mb-4`}>
               <Text style={tw`text-white text-lg font-bold`}>
@@ -162,25 +169,25 @@ const Question: React.FC = () => {
               </TouchableOpacity>
             </View>
             
-            {/* Player list */}
-            <FlatList
-              data={players}
-              keyExtractor={(item) => item}
-              renderItem={({ item }) => (
-                <PlayerListItem name={item} onRemove={removePlayer} />
-              )}
-              style={tw`flex-1 mb-4`}
-            />
-            
             {/* Add player input */}
             <View style={tw`flex-row mb-4`}>
               <TextInput
+                ref={modalInputRef}
                 style={tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2`}
                 placeholder={t('addPlayers.inputPlaceholder')}
                 placeholderTextColor="#ffffff80"
                 value={newPlayerName}
                 onChangeText={setNewPlayerName}
+                onSubmitEditing={handleAddPlayer}
+                returnKeyType="done"
+                returnKeyLabel={t('addPlayers.addButton')}
+                blurOnSubmit={false}
                 maxLength={20}
+                autoCorrect={false}
+                autoCapitalize="none"
+                spellCheck={false}
+                autoComplete="off"
+                importantForAutofill="no"
               />
               <Button
                 text={t('addPlayers.addButton')}
@@ -189,6 +196,21 @@ const Question: React.FC = () => {
               />
             </View>
             
+            {/* Player list */}
+            <FlatList
+              data={players}
+              keyExtractor={(item) => item}
+              renderItem={({ item }) => (
+                <PlayerListItem name={item} onRemove={removePlayer} />
+              )}
+              style={tw`flex-1 mb-4`}
+              ListEmptyComponent={
+                <Text style={tw`text-white/50 text-center mt-4`}>
+                  {t('addPlayers.playerCountError')}
+                </Text>
+              }
+            />
+            
             <Button
               text={t('close')}
               variant="outline"
@@ -196,7 +218,7 @@ const Question: React.FC = () => {
               fullWidth
             />
           </View>
-        </View>
+        </Pressable>
       </Modal>
       
       {/* Quit confirmation modal */}
@@ -221,7 +243,7 @@ const Question: React.FC = () => {
                 onPress={() => {
                   resetGame();
                   setShowQuitConfirm(false);
-                  navigation.reset({ index: 0, routes: [{ name: 'AddPlayers' }] });
+                  navigation.reset({ index: 0, routes: [{ name: 'ModeCarousel' }] });
                 }}
               />
             </View>

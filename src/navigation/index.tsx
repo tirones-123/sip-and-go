@@ -84,9 +84,9 @@ const Navigation: React.FC = () => {
           name="Paywall"
           component={Paywall}
           options={{
-            presentation: 'modal',
+            presentation: 'fullScreenModal',
             headerShown: false,
-            gestureEnabled: true,
+            gestureEnabled: false,
           }}
         />
         
