@@ -64,7 +64,12 @@ export default {
   // Question
   question: {
     quitButton: "Quit",
-    managePlayers: "Manage Players"
+    managePlayers: "Manage Players",
+    finishedTitle: "Game Over",
+    finishedSubtitle: "Tap anywhere to continue",
+    quitConfirm: "Are you sure you want to quit the game?",
+    quitYes: "Quit",
+    quitNo: "Cancel"
   },
   
   // Settings

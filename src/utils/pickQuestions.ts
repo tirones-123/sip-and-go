@@ -42,9 +42,23 @@ export const pickQuestions = (
 export const formatQuestionText = (text: string, players: string[]): string => {
   if (!players.length) return text;
   
-  // Replace ${player} with a random player name
+  // Prepare a mutable pool so that each name is used once before any repeats
+  let available = [...players];
+
   return text.replace(/\${player}/g, () => {
-    const randomIndex = Math.floor(Math.random() * players.length);
-    return players[randomIndex];
+    // Refill the pool if we have run out (needed when there are
+    // more placeholders than distinct players)
+    if (available.length === 0) {
+      available = [...players];
+    }
+
+    // Pick a random index from the remaining available players
+    const index = Math.floor(Math.random() * available.length);
+    const name = available[index];
+
+    // Remove the selected name to avoid duplicates until pool resets
+    available.splice(index, 1);
+
+    return name;
   });
 }; 

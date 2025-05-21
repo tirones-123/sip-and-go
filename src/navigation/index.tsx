@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import React, { useRef } from 'react';
+import { NavigationContainer, NavigationContainerRef } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTranslation } from '../utils/i18n';
 
@@ -28,8 +28,18 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const Navigation: React.FC = () => {
   const { t } = useTranslation();
   
+  const navRef = useRef<NavigationContainerRef<RootStackParamList>>(null);
+
+  const handleReady = () => {
+    // Cast to any to bypass generic constraint for initial navigation
+    (navRef.current as any)?.navigate('Paywall');
+  };
+
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      ref={navRef}
+      onReady={handleReady}
+    >
       <Stack.Navigator
         initialRouteName="AddPlayers"
         screenOptions={{

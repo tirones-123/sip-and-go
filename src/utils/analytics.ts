@@ -1,14 +1,43 @@
-import { PostHog } from 'posthog-react-native';
 import Constants from 'expo-constants';
 
-// Get PostHog key and host from app config
-const posthogKey = Constants.expoConfig?.extra?.POSTHOG_KEY as string;
-const posthogHost = Constants.expoConfig?.extra?.POSTHOG_HOST as string || 'https://eu.posthog.com';
+// Get PostHog key & host from app config (values injected via .env → app.config.ts)
+const posthogKey = Constants.expoConfig?.extra?.POSTHOG_KEY as string | undefined;
+const posthogHost = (Constants.expoConfig?.extra?.POSTHOG_HOST as string) || 'https://eu.posthog.com';
 
 /**
- * Initialize and export PostHog instance
+ * Lightweight interface to avoid `any` when PostHog is disabled.
  */
-export const posthog = new PostHog(posthogKey, { host: posthogHost });
+interface AnalyticsClient {
+  capture(event: string, properties?: Record<string, unknown>): void;
+}
+
+function createDisabledClient(): AnalyticsClient {
+  return {
+    capture: (event, props) => {
+      if (__DEV__) {
+        // eslint-disable-next-line no-console
+        console.debug('[PostHog disabled]', event, props);
+      }
+    },
+  };
+}
+
+let client: AnalyticsClient = createDisabledClient();
+
+if (posthogKey && Constants.appOwnership !== 'expo') {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const { PostHog } = require('posthog-react-native');
+    client = new PostHog(posthogKey, { host: posthogHost });
+  } catch (e) {
+    if (__DEV__) {
+      // eslint-disable-next-line no-console
+      console.warn('[PostHog] Native module not found, running in Expo Go – analytics disabled.');
+    }
+  }
+}
+
+export const posthog: AnalyticsClient = client;
 
 /**
  * Event names for consistent tracking

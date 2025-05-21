@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { 
   View, 
   Text, 
@@ -27,6 +27,7 @@ const AddPlayers: React.FC = () => {
   const { t } = useTranslation();
   const navigation = useNavigation<AddPlayersScreenNavigationProp>();
   const [playerName, setPlayerName] = useState('');
+  const inputRef = useRef<TextInput>(null);
   
   // Get players and actions from store
   const players = useGameStore(state => state.players);
@@ -39,6 +40,8 @@ const AddPlayers: React.FC = () => {
     if (trimmedName) {
       addPlayer(trimmedName);
       setPlayerName('');
+      // Keep the keyboard open and focus in the input for quicker multi-add
+      inputRef.current?.focus();
     }
   };
   
@@ -63,7 +66,7 @@ const AddPlayers: React.FC = () => {
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}
       keyboardVerticalOffset={Platform.OS === 'ios' ? 64 : 0}
     >
-      <View style={tw`flex-1 p-4`}>
+      <View style={tw`flex-1 p-4 pb-8`}>
         {/* Header */}
         <View style={tw`flex-row justify-between items-center mb-6`}>
           <View>
@@ -82,14 +85,19 @@ const AddPlayers: React.FC = () => {
         {/* Add player input */}
         <View style={tw`flex-row mb-6`}>
           <TextInput
+            ref={inputRef}
             style={tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2`}
             placeholder={t('addPlayers.inputPlaceholder')}
             placeholderTextColor="#ffffff80"
             value={playerName}
             onChangeText={setPlayerName}
             onSubmitEditing={handleAddPlayer}
+            returnKeyType="done"
+            returnKeyLabel={t('addPlayers.addButton')}
+            blurOnSubmit={false}
             maxLength={20}
             autoCorrect={false}
+            autoFocus
           />
           
           <TouchableOpacity
@@ -122,6 +130,7 @@ const AddPlayers: React.FC = () => {
           size="large"
           disabled={players.length < 2}
           onPress={handleStart}
+          style={tw`mb-2`}
         />
       </View>
     </KeyboardAvoidingView>

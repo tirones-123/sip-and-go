@@ -69,4 +69,15 @@ describe('formatQuestionText', () => {
     const result = formatQuestionText('${player} drinks!', []);
     expect(result).toBe('${player} drinks!');
   });
+  
+  it('does not repeat player names within the same question when enough players', () => {
+    const players = ['Alice', 'Bob', 'Charlie'];
+    const result = formatQuestionText('${player} gives ${player} a drink!', players);
+
+    const matches = result.match(/Alice|Bob|Charlie/g) || [];
+
+    // We expect two placeholders → two names, all distinct
+    expect(matches.length).toBe(2);
+    expect(new Set(matches).size).toBe(2);
+  });
 }); 

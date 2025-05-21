@@ -64,7 +64,12 @@ export default {
   // Question
   question: {
     quitButton: "Quitter",
-    managePlayers: "Gérer les joueurs"
+    managePlayers: "Gérer les joueurs",
+    finishedTitle: "Partie terminée !",
+    finishedSubtitle: "Appuie pour continuer",
+    quitConfirm: "Êtes-vous sûr de vouloir quitter la partie ?",
+    quitYes: "Quitter",
+    quitNo: "Annuler"
   },
   
   // Settings

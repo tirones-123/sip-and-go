@@ -41,11 +41,14 @@ const Question: React.FC = () => {
   const nextQuestion = useGameStore(state => state.nextQuestion);
   const addPlayer = useGameStore(state => state.addPlayer);
   const removePlayer = useGameStore(state => state.removePlayer);
+  const resetGame = useGameStore(state => state.resetGame);
   
   // Local state
   const [backgroundColor, setBackgroundColor] = useState(currentPack?.color || '#0B0E1A');
   const [showPlayersModal, setShowPlayersModal] = useState(false);
   const [newPlayerName, setNewPlayerName] = useState('');
+  const [isFinished, setIsFinished] = useState(false);
+  const [showQuitConfirm, setShowQuitConfirm] = useState(false);
   
   // Current question
   const currentQuestion = currentQuestions[currentQuestionIndex];
@@ -59,12 +62,22 @@ const Question: React.FC = () => {
   
   // Handle next question
   const handleNextQuestion = () => {
-    // Generate a new background color variation
+    // If last question → show finished screen
+    if (currentQuestionIndex >= currentQuestions.length - 1) {
+      setIsFinished(true);
+      return;
+    }
+
+    // Otherwise next question with new color
     if (currentPack?.color) {
       setBackgroundColor(randomColorVariation(currentPack.color, 15, 10, 10));
     }
-    
     nextQuestion();
+  };
+  
+  const handleFinishPress = () => {
+    resetGame();
+    navigation.navigate('ModeCarousel');
   };
   
   // Format the question text with player names
@@ -74,7 +87,7 @@ const Question: React.FC = () => {
   
   // Handle quitting game
   const handleQuit = () => {
-    navigation.navigate('ModeCarousel');
+    setShowQuitConfirm(true);
   };
   
   // Handle adding a player
@@ -108,13 +121,28 @@ const Question: React.FC = () => {
       
       {/* Question text */}
       <Pressable
-        style={tw`px-6 py-8`}
+        style={[tw`flex-1 justify-center items-center px-6 py-8`]}
         onPress={handleNextQuestion}
       >
-        <Text style={tw`text-white text-center text-2xl font-bold`}>
+        <Text style={[tw`text-white text-center text-3xl`, { fontFamily: 'Montserrat_800ExtraBold', maxWidth: '90%' }]}>
           {formattedText}
         </Text>
       </Pressable>
+      
+      {/* Finished overlay */}
+      {isFinished && (
+        <Pressable
+          style={tw`absolute inset-0 bg-black/90 flex-1 justify-center items-center`}
+          onPress={handleFinishPress}
+        >
+          <Text style={[tw`text-white text-center text-3xl mb-4`, { fontFamily: 'Montserrat_800ExtraBold' }]}> 
+            {t('question.finishedTitle')}
+          </Text>
+          <Text style={[tw`text-white text-center`, { fontFamily: 'Montserrat_400Regular' }]}> 
+            {t('question.finishedSubtitle')}
+          </Text>
+        </Pressable>
+      )}
       
       {/* Players modal */}
       <Modal
@@ -167,6 +195,36 @@ const Question: React.FC = () => {
               onPress={() => setShowPlayersModal(false)}
               fullWidth
             />
+          </View>
+        </View>
+      </Modal>
+      
+      {/* Quit confirmation modal */}
+      <Modal
+        visible={showQuitConfirm}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => setShowQuitConfirm(false)}
+      >
+        <View style={tw`flex-1 bg-black/80 justify-center items-center`}>
+          <View style={tw`bg-darkBg w-4/5 rounded-xl p-6`}>
+            <Text style={tw`text-white text-lg font-bold mb-6`}>{t('question.quitConfirm')}</Text>
+            <View style={tw`flex-row justify-end`}>
+              <Button
+                text={t('question.quitNo')}
+                variant="outline"
+                onPress={() => setShowQuitConfirm(false)}
+                style={tw`mr-2`}
+              />
+              <Button
+                text={t('question.quitYes')}
+                onPress={() => {
+                  resetGame();
+                  setShowQuitConfirm(false);
+                  navigation.reset({ index: 0, routes: [{ name: 'AddPlayers' }] });
+                }}
+              />
+            </View>
           </View>
         </View>
       </Modal>

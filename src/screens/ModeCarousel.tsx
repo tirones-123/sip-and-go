@@ -1,9 +1,10 @@
-import React from 'react';
-import { View, Text, FlatList, useWindowDimensions } from 'react-native';
+import React, { useLayoutEffect } from 'react';
+import { View, Text, FlatList, useWindowDimensions, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import tw from 'twrnc';
 import Animated, { useAnimatedScrollHandler } from 'react-native-reanimated';
+import { Pack } from '../types';
 
 import { useTranslation } from '../utils/i18n';
 import { useGameStore } from '../store/useGameStore';
@@ -13,7 +14,7 @@ import PackCard from '../components/PackCard';
 type ModeCarouselScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'ModeCarousel'>;
 
 // Use Animated FlatList
-const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
+const AnimatedFlatList = Animated.createAnimatedComponent(FlatList<Pack>);
 
 /**
  * ModeCarousel screen - Pack selection carousel
@@ -28,6 +29,21 @@ const ModeCarousel: React.FC = () => {
   const players = useGameStore(state => state.players);
   const premium = useGameStore(state => state.premium);
   const startPack = useGameStore(state => state.startPack);
+  const resetGame = useGameStore(state => state.resetGame);
+  
+  // Force header back to AddPlayers
+  useLayoutEffect(() => {
+    navigation.setOptions({
+      headerLeft: () => (
+        <TouchableOpacity onPress={() => {
+          resetGame();
+          navigation.reset({ index: 0, routes: [{ name: 'AddPlayers' }] });
+        }}>
+          <Text style={tw`text-white text-3xl`}>‹</Text>
+        </TouchableOpacity>
+      ),
+    });
+  }, [navigation, resetGame]);
   
   // Handle pack selection
   const handlePlayPack = (packId: string) => {
