@@ -1,54 +1,63 @@
 import { ExpoConfig, ConfigContext } from 'expo/config';
 
-export default ({ config }: ConfigContext): ExpoConfig => ({
-  ...config,
-  name: "Picolo",
-  slug: "picolo",
-  version: "1.0.0",
-  orientation: "portrait",
-  icon: "./assets/icon.png",
-  userInterfaceStyle: "dark",
-  splash: {
-    image: "./assets/splash.png",
-    resizeMode: "contain",
-    backgroundColor: "#0B0E1A"
-  },
-  assetBundlePatterns: [
-    "**/*"
-  ],
-  ios: {
-    supportsTablet: false,
-    bundleIdentifier: "com.yourcompany.picolo"
-  },
-  android: {
-    adaptiveIcon: {
-      foregroundImage: "./assets/adaptive-icon.png",
+export default ({ config }: ConfigContext): ExpoConfig => {
+  const isEas = process.env.EAS_BUILD === 'true';
+  // Build plugins array with correct typing
+  const plugins: (string | [string, any])[] = [
+    '@sentry/react-native/expo',
+  ];
+
+  if (isEas) {
+    plugins.push([
+      'react-native-purchases',
+      {
+        appUserID: null,
+        apiKey: {
+          ios: process.env.RC_KEY_IOS,
+          android: process.env.RC_KEY_ANDROID,
+        },
+      },
+    ]);
+  }
+
+  return {
+    ...config,
+    name: "Picolo",
+    slug: "picolo",
+    version: "1.0.0",
+    orientation: "portrait",
+    icon: "./assets/icon.png",
+    userInterfaceStyle: "dark",
+    splash: {
+      image: "./assets/splash.png",
+      resizeMode: "contain",
       backgroundColor: "#0B0E1A"
     },
-    package: "com.yourcompany.picolo"
-  },
-  extra: {
-    eas: {
-      projectId: "your-eas-project-id"
+    assetBundlePatterns: [
+      "**/*"
+    ],
+    ios: {
+      supportsTablet: false,
+      bundleIdentifier: "com.yourcompany.picolo"
     },
-    // Environment variables access
-    RC_KEY_IOS: process.env.RC_KEY_IOS,
-    RC_KEY_ANDROID: process.env.RC_KEY_ANDROID,
-    POSTHOG_KEY: process.env.POSTHOG_KEY,
-    POSTHOG_HOST: process.env.POSTHOG_HOST || "https://eu.posthog.com",
-    SENTRY_DSN: process.env.SENTRY_DSN
-  },
-  plugins: [
-    ["@sentry/react-native/expo"],
-    [
-      "react-native-purchases",
-      {
-        "appUserID": null,
-        "apiKey": {
-          "ios": process.env.RC_KEY_IOS,
-          "android": process.env.RC_KEY_ANDROID
-        }
-      }
-    ]
-  ]
-}); 
+    android: {
+      adaptiveIcon: {
+        foregroundImage: "./assets/adaptive-icon.png",
+        backgroundColor: "#0B0E1A"
+      },
+      package: "com.yourcompany.picolo"
+    },
+    extra: {
+      eas: {
+        projectId: "9f20c5ac-4959-4e50-a5c7-bff348faa999"
+      },
+      // Environment variables access
+      RC_KEY_IOS: process.env.RC_KEY_IOS,
+      RC_KEY_ANDROID: process.env.RC_KEY_ANDROID,
+      POSTHOG_KEY: process.env.POSTHOG_KEY,
+      POSTHOG_HOST: process.env.POSTHOG_HOST || "https://eu.posthog.com",
+      SENTRY_DSN: process.env.SENTRY_DSN
+    },
+    plugins
+  };
+}; 
