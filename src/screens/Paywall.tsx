@@ -129,14 +129,9 @@ const Paywall: React.FC = () => {
   
   // Handle close
   const handleClose = () => {
-    if (returnTo && packId) {
-      // Return to the specified screen with the pack ID
-      navigation.navigate(returnTo, { packId });
-    } else if (returnTo) {
-      // Return to the specified screen without params
-      navigation.navigate(returnTo);
+    if (returnTo === 'Question' && packId) {
+      navigation.navigate('Question', { packId });
     } else {
-      // Default to going back
       navigation.goBack();
     }
   };

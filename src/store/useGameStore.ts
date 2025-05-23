@@ -13,6 +13,20 @@ const DEFAULT_PACKS: Pack[] = [
     access: 'FREE'
   },
   {
+    id: 'girls',
+    title: 'Entre filles',
+    description: 'Perfect for girls night out',
+    color: '#E84D8A', // Reusing the Party blue color
+    access: 'LOCKED'
+  },
+  {
+    id: 'guys',
+    title: 'Entre gars',
+    description: 'For the boys only',
+    color: '#4A8FE7', // Reusing the Extreme color
+    access: 'LOCKED'
+  },
+  {
     id: 'spicy',
     title: 'Spicy',
     description: 'Hot questions to spice up your night',
@@ -21,23 +35,9 @@ const DEFAULT_PACKS: Pack[] = [
   },
   {
     id: 'couples',
-    title: 'Couples',
+    title: 'En couple',
     description: 'Perfect for dates and couples',
     color: '#9C5BD1',
-    access: 'LOCKED'
-  },
-  {
-    id: 'party',
-    title: 'Party',
-    description: 'Crazy challenges for wild nights',
-    color: '#4A8FE7',
-    access: 'LOCKED'
-  },
-  {
-    id: 'extreme',
-    title: 'Extreme',
-    description: 'Not for the faint-hearted!',
-    color: '#E84D8A',
     access: 'LOCKED'
   }
 ];

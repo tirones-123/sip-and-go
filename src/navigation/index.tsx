@@ -42,18 +42,19 @@ const Navigation: React.FC = () => {
     >
       <Stack.Navigator
         initialRouteName="AddPlayers"
-        screenOptions={{
+        screenOptions={({ route }) => ({
           headerStyle: {
-            backgroundColor: '#0B0E1A',
+            backgroundColor: route.name === 'ModeCarousel' ? '#FDE0A4' : '#0B0E1A',
           },
-          headerTintColor: '#fff',
+          headerTintColor: route.name === 'ModeCarousel' ? '#0B0E1A' : '#fff',
           headerTitleStyle: {
             fontWeight: 'bold',
+            color: route.name === 'ModeCarousel' ? '#0B0E1A' : '#fff',
           },
           contentStyle: {
-            backgroundColor: '#0B0E1A',
+            backgroundColor: route.name === 'ModeCarousel' ? '#FDE0A4' : '#0B0E1A',
           },
-        }}
+        })}
       >
         <Stack.Screen
           name="AddPlayers"

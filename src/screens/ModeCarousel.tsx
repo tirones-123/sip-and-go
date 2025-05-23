@@ -16,6 +16,15 @@ type ModeCarouselScreenNavigationProp = NativeStackNavigationProp<RootStackParam
 // Use Animated FlatList
 const AnimatedFlatList = Animated.createAnimatedComponent(FlatList<Pack>);
 
+// Static mapping of hero images for each pack (replace PNGs with your actual assets)
+const packImages: Record<string, any> = {
+  classic: require('../../assets/hero/classic.png'),
+  girls: require('../../assets/hero/girls.png'),
+  guys: require('../../assets/hero/guys.png'),
+  spicy: require('../../assets/hero/spicy.png'),
+  couples: require('../../assets/hero/couples.png'),
+};
+
 /**
  * ModeCarousel screen - Pack selection carousel
  */
@@ -23,6 +32,19 @@ const ModeCarousel: React.FC = () => {
   const { t } = useTranslation();
   const navigation = useNavigation<ModeCarouselScreenNavigationProp>();
   const { width } = useWindowDimensions();
+  
+  // Carousel layout constants
+  const ITEM_SPACING = 16; // space between cards
+
+  // Width of each carousel item (take 85 % of screen but max 320px) and round to nearest pixel
+  const rawItemWidth = Math.min(width * 0.85, 320);
+  const ITEM_WIDTH = Math.round(rawItemWidth);
+
+  // Snap interval (integer) must include item width + spacing between items
+  const SNAP_INTERVAL = ITEM_WIDTH + ITEM_SPACING;
+
+  // Side padding (integer) so the first/last card are centered on screen
+  const sidePadding = Math.round((width - ITEM_WIDTH) / 2);
   
   // Get store data
   const packs = useGameStore(state => state.packs);
@@ -67,30 +89,43 @@ const ModeCarousel: React.FC = () => {
     },
   });
   
+  const snapToOffsets = React.useMemo(
+    () => packs.map((_, index) => index * SNAP_INTERVAL),
+    [packs, SNAP_INTERVAL]
+  );
+
   return (
-    <View style={tw`flex-1 bg-darkBg`}>
+    <View style={tw`flex-1 bg-carouselBg`}>
       {/* Carousel */}
       <AnimatedFlatList
         data={packs}
         keyExtractor={(item) => item.id}
         horizontal
         showsHorizontalScrollIndicator={false}
-        snapToInterval={width * 0.85}
+        snapToOffsets={snapToOffsets}
         decelerationRate="fast"
-        contentContainerStyle={tw`py-4 px-2`}
+        contentContainerStyle={[tw`py-4`, { paddingHorizontal: sidePadding }]}
         onScroll={scrollHandler}
-        renderItem={({ item }) => (
-          <PackCard 
-            pack={item}
-            onPlay={handlePlayPack}
-            isPremium={premium}
-          />
+        style={{ overflow: 'visible' }}
+        renderItem={({ item, index }) => (
+          <View style={{
+            marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
+            marginRight: index === packs.length - 1 ? 0 : ITEM_SPACING / 2,
+          }}>
+            <PackCard 
+              pack={item}
+              onPlay={handlePlayPack}
+              isPremium={premium}
+              itemWidth={ITEM_WIDTH}
+              heroImageSource={packImages[item.id]}
+            />
+          </View>
         )}
       />
       
       {/* Footer - Player count */}
       <View style={tw`pb-8 items-center`}>
-        <Text style={tw`text-white/70`}>
+        <Text style={tw`text-darkBg/70`}>
           {t('modeCarousel.playerCount', { count: players.length })}
         </Text>
       </View>

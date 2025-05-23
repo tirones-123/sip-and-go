@@ -42,6 +42,14 @@ export default {
         title: "Classic",
         description: "The original drinking game with simple challenges"
       },
+      girls: {
+        title: "Between Girls",
+        description: "Perfect for girls night out"
+      },
+      guys: {
+        title: "Between Guys",
+        description: "For the boys only"
+      },
       spicy: {
         title: "Spicy",
         description: "Hot questions to spice up your night" 
@@ -49,14 +57,6 @@ export default {
       couples: {
         title: "Couples",
         description: "Perfect for dates and couples"
-      },
-      party: {
-        title: "Party",
-        description: "Crazy challenges for wild nights"
-      },
-      extreme: {
-        title: "Extreme",
-        description: "Not for the faint-hearted!"
       }
     }
   },

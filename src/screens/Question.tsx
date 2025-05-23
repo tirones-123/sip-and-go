@@ -7,7 +7,8 @@ import {
   FlatList,
   Pressable,
   TextInput,
-  Keyboard
+  Keyboard,
+  Animated
 } from 'react-native';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -51,6 +52,7 @@ const Question: React.FC = () => {
   const [isFinished, setIsFinished] = useState(false);
   const [showQuitConfirm, setShowQuitConfirm] = useState(false);
   const modalInputRef = useRef<TextInput>(null);
+  const shakeAnim = useRef(new Animated.Value(0)).current;
   
   // Current question
   const currentQuestion = currentQuestions[currentQuestionIndex];
@@ -99,6 +101,27 @@ const Question: React.FC = () => {
       setNewPlayerName('');
       modalInputRef.current?.focus();
     }
+  };
+  
+  // Shake animation helper
+  const triggerShake = () => {
+    shakeAnim.setValue(0);
+    Animated.sequence([
+      Animated.timing(shakeAnim, { toValue: 8, duration: 40, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: -8, duration: 40, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: 6, duration: 40, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: -6, duration: 40, useNativeDriver: true }),
+      Animated.timing(shakeAnim, { toValue: 0, duration: 40, useNativeDriver: true }),
+    ]).start();
+  };
+  
+  // Handle removing a player with minimum limit
+  const handleRemovePlayer = (name: string) => {
+    if (players.length <= 2) {
+      triggerShake();
+      return;
+    }
+    removePlayer(name);
   };
   
   return (
@@ -159,7 +182,7 @@ const Question: React.FC = () => {
           style={tw`flex-1 justify-center items-center bg-black/70`}
           onPress={Keyboard.dismiss}
         >
-          <View style={tw`bg-darkBg w-4/5 h-2/3 rounded-xl p-4`}>
+          <Animated.View style={[tw`bg-darkBg w-4/5 h-2/3 rounded-xl p-4`, { transform: [{ translateX: shakeAnim }] }]}>
             <View style={tw`flex-row justify-between items-center mb-4`}>
               <Text style={tw`text-white text-lg font-bold`}>
                 {t('question.managePlayers')}
@@ -201,7 +224,10 @@ const Question: React.FC = () => {
               data={players}
               keyExtractor={(item) => item}
               renderItem={({ item }) => (
-                <PlayerListItem name={item} onRemove={removePlayer} />
+                <PlayerListItem 
+                  name={item} 
+                  onRemove={handleRemovePlayer}
+                />
               )}
               style={tw`flex-1 mb-4`}
               ListEmptyComponent={
@@ -217,7 +243,7 @@ const Question: React.FC = () => {
               onPress={() => setShowPlayersModal(false)}
               fullWidth
             />
-          </View>
+          </Animated.View>
         </Pressable>
       </Modal>
       

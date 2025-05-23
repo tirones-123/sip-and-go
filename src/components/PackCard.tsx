@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ImageSourcePropType } from 'react-native';
 import tw from 'twrnc';
-import Button from './Button';
+// import Button from './Button'; // Button component might be replaced by custom button style
 import { Pack } from '../types';
 import { useTranslation } from '../utils/i18n';
 
@@ -9,51 +9,122 @@ interface PackCardProps {
   pack: Pack;
   onPlay: (packId: string) => void;
   isPremium: boolean;
+  itemWidth?: number;
+  heroImageSource: ImageSourcePropType;
 }
 
+// Helper function to calculate darker/lighter shades of a hex color
+// percent: -1.0 (black) to 1.0 (white)
+const shadeColor = (color: string, percent: number): string => {
+  let R = parseInt(color.substring(1, 3), 16);
+  let G = parseInt(color.substring(3, 5), 16);
+  let B = parseInt(color.substring(5, 7), 16);
+
+  R = parseInt(String(R * (1 + percent)));
+  G = parseInt(String(G * (1 + percent)));
+  B = parseInt(String(B * (1 + percent)));
+
+  R = (R < 255) ? R : 255;
+  G = (G < 255) ? G : 255;
+  B = (B < 255) ? B : 255;
+  
+  R = (R > 0) ? R : 0;
+  G = (G > 0) ? G : 0;
+  B = (B > 0) ? B : 0;
+
+  const RR = ((R.toString(16).length === 1) ? `0${R.toString(16)}` : R.toString(16));
+  const GG = ((G.toString(16).length === 1) ? `0${G.toString(16)}` : G.toString(16));
+  const BB = ((B.toString(16).length === 1) ? `0${B.toString(16)}` : B.toString(16));
+
+  return `#${RR}${GG}${BB}`;
+};
+
 /**
- * Card component for displaying a game pack in the carousel
+ * Card component for displaying a game pack in the carousel, redesigned.
  */
-const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium }) => {
+const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth, heroImageSource }) => {
   const { t } = useTranslation();
   const isLocked = pack.access === 'LOCKED' && !isPremium;
   
   // Get the pack title and description from translations
-  const packTitle = t(`modeCarousel.packs.${pack.id}.title`);
-  const packDescription = t(`modeCarousel.packs.${pack.id}.description`);
+  const packTitle = t(`modeCarousel.packs.${pack.id}.title`, { defaultValue: pack.title });
+  const packDescription = t(`modeCarousel.packs.${pack.id}.description`, { defaultValue: pack.description });
   
+  // Derived colors
+  // Using pack.color as the primary color.
+  // For dark elements (pill, button, description text), derive a dark shade.
+  // For secondary background (bottom part), derive a light shade.
+  
+  // Example: -0.5 for 50% darker, 0.7 for 70% lighter (towards white)
+  // These percentages might need adjustment based on the actual pack.color values
+  const darkAccentColor = shadeColor(pack.color, -0.5); 
+  const veryDarkTextColor = shadeColor(pack.color, -0.7); // Even darker for text for contrast
+  const lightSecondaryBgColor = shadeColor(pack.color, 0.15); // Further adjusted for better harmony
+  // const lightPillButtonTextColor = shadeColor(pack.color, 0.9); // For pill and button text - Now using white
+
   return (
-    <View style={tw`bg-darkBg w-80 rounded-3xl overflow-hidden my-4 mx-2 shadow-lg`}>
-      {/* Pack image or color block */}
-      <View style={[tw`h-48 w-full`, { backgroundColor: pack.color }]}>
-        {/* Chip title */}
-        <View style={tw`absolute top-4 left-4 px-3 py-1 rounded-full bg-white/20`}>
-          <Text style={tw`text-white font-bold`}>{packTitle}</Text>
+    <View
+      style={[
+        tw`rounded-3xl my-4 bg-transparent`,
+        // Shadow to match the mockup (offset to the right and slightly down, soft)
+        {
+          shadowColor: '#000',
+          shadowOpacity: 0.25, // Darker shadow
+          shadowRadius: 16, // Slightly larger blur radius
+          shadowOffset: { width: 6, height: 4 }, // Slightly reduced offset for balance
+          elevation: 10, // Slight bump for Android shadow
+        },
+        { width: itemWidth ?? 320 },
+      ]}
+    >
+      {/* Inner container with clipping */}
+      <View style={tw`rounded-3xl overflow-hidden`}>
+
+      {/* Top Part */}
+      <View style={[tw`relative items-center pt-5 h-64 rounded-t-3xl`, { backgroundColor: pack.color }]}>
+        {/* Title Pill */}
+        <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
+          <Text style={[tw`font-bold text-base text-center text-white`]}>{packTitle}</Text>
         </View>
         
-        {/* Lock overlay for premium packs */}
+        {/* Hero Image Container - aligned to bottom */}
+        <View style={tw`flex-1 w-full items-center justify-end`}>
+          {/* Image takes full width of this container, resizeMode contain will handle aspect ratio */}
+          <Image source={heroImageSource} style={[tw`w-full h-full`, { resizeMode: 'contain' }]} />
+        </View>
+        {/* Lock overlay for premium packs - only top part */}
         {isLocked && (
-          <View style={tw`absolute inset-0 bg-black/60 items-center justify-center`}>
-            <View style={tw`absolute top-3 right-3`}>
+          <> 
+            <View style={tw`absolute inset-0 bg-black/60`} />
+            <View style={tw`absolute top-4 right-4 bg-black/50 p-2 rounded-full`}>
               <Text style={tw`text-white text-2xl`}>🔒</Text>
             </View>
-          </View>
+          </>
         )}
       </View>
       
-      {/* Description section */}
-      <View style={tw`p-4`}>
-        <Text style={tw`text-white text-lg font-bold mb-2`}>{packTitle}</Text>
-        <Text style={tw`text-white/80 mb-4`}>{packDescription}</Text>
+      {/* Bottom Part */}
+      <View style={[tw`p-5 items-center rounded-b-3xl`, { backgroundColor: lightSecondaryBgColor }]}>
+        <Text style={[tw`text-xl font-bold text-center mb-5`, { color: veryDarkTextColor }]}>
+          {packDescription}
+        </Text>
         
-        {/* Play button */}
-        <Button
-          text={t('modeCarousel.playButton')}
-          fullWidth
-          packColor={pack.color}
+        {/* Play Button */}
+        <TouchableOpacity
+          style={[
+            tw`px-12 py-3 rounded-full shadow-md items-center justify-center`,
+            { backgroundColor: darkAccentColor },
+          ]}
           onPress={() => onPlay(pack.id)}
-        />
+          activeOpacity={0.8}
+        >
+          <Text style={[tw`font-bold uppercase text-lg text-white`]}>
+            {t('modeCarousel.playButton')}
+          </Text>
+        </TouchableOpacity>
       </View>
+
+      </View>{/* end inner container */}
     </View>
   );
 };

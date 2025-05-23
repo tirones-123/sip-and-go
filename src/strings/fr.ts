@@ -42,21 +42,21 @@ export default {
         title: "Classique",
         description: "Le jeu à boire original avec des défis simples"
       },
+      girls: {
+        title: "Entre filles",
+        description: "Parfait pour les soirées entre filles"
+      },
+      guys: {
+        title: "Entre gars",
+        description: "Spécialement pour les soirées entre mecs"
+      },
       spicy: {
         title: "Épicé",
         description: "Questions chaudes pour pimenter votre soirée"
       },
       couples: {
-        title: "Couples",
+        title: "En couple",
         description: "Parfait pour les rendez-vous et les couples"
-      },
-      party: {
-        title: "Fête",
-        description: "Défis fous pour des soirées délirantes"
-      },
-      extreme: {
-        title: "Extrême",
-        description: "Pas pour les cœurs sensibles !"
       }
     }
   },
