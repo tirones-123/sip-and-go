@@ -75,5 +75,163 @@
     "id": "c15",
     "text": "${player}, tu es le créateur de règles. Établis une règle que tout le monde doit suivre jusqu'à la fin du jeu. Quiconque l'enfreint boit 2 gorgées.",
     "pack": "classic"
+  },
+  {
+    "id": "c16",
+    "text": "${player}, donne une gorgée à ${player}.",
+    "pack": "classic"
+  },
+  {
+    "id": "c17",
+    "text": "${player} et ${player} qui portent des lunettes boivent 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c18",
+    "text": "${player}, chante le refrain choisi par ${player} ou bois 3 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c19",
+    "text": "Entre ${player} et ${player}, celui dont l'anniversaire est le plus proche boit 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c20",
+    "text": "${player} choisit une catégorie et ${player} commence à énumérer; le premier qui hésite boit 2 gorgées.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c21",
+    "text": "Si ${player} et ${player} sont célibataires, ils boivent chacun 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c22",
+    "text": "${player} échange sa place avec ${player} ou boit 2 gorgées.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c23",
+    "text": "Si ${player} ou ${player} a déjà raté le permis, il boit 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c24",
+    "text": "${player} commence à compter, ${player} suit; celui qui hésite boit 1 gorgée.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c25",
+    "text": "Si le prénom de ${player} ou ${player} commence par une voyelle, ils boivent 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c26",
+    "text": "${player} révèle une vérité; si ${player} l'a aussi vécue, ils boivent 1 gorgée chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c27",
+    "text": "Entre ${player} et ${player}, celui avec la batterie la plus basse boit 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c28",
+    "text": "${player} choisit un mot; ${player} commence les rimes. Le premier qui échoue boit 2 gorgées.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c29",
+    "text": "Si ${player} ou ${player} s'est déjà endormi dans les transports, ils boivent 1 gorgée chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c30",
+    "text": "${player} et ${player} font pierre-papier-ciseaux; le perdant boit 2 gorgées.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c31",
+    "text": "Si ${player} et ${player} portent un jean, ils boivent 1 gorgée chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c32",
+    "text": "${player} choisit un accent pour ${player}. S'il refuse, il boit 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c33",
+    "text": "Entre ${player} et ${player}, le plus grand distribue 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c34",
+    "text": "${player} nomme ${player} maître du pouce. Même règles qu'habituellement.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c35",
+    "text": "Si ${player} ou ${player} s'est déjà cassé un os, il boit 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c36",
+    "text": "${player} désigne ${player} comme le plus désordonné; il boit 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c37",
+    "text": "Si ${player} ou ${player} a déjà rencontré une célébrité, il boit 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c38",
+    "text": "${player} choisit une partie du corps. Tout le monde la touche; ${player} qui est dernier boit 1 gorgée.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c39",
+    "text": "Si ${player} ou ${player} a l'écran fissuré, il boit 2 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c40",
+    "text": "${player} raconte une blague à ${player}. Si personne ne rit, ${player} boit 3 gorgées.",
+    "pack": "classic"
+  },
+  {
+    "id": "c41",
+    "text": "Les joueurs nés le même mois que ${player} ou ${player} boivent 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c42",
+    "text": "${player} défie ${player} au concours de regards; le perdant boit 2 gorgées.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c43",
+    "text": "Si ${player} et ${player} ont déjà menti sur leur âge, ils boivent 1 gorgée chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c44",
+    "text": "${player} choisit un mot interdit pour ${player}. Chaque fois qu'il est prononcé, c'est 1 gorgée.",
+    "pack": "classic"
+  },
+  {
+    "id": "c45",
+    "text": "Selfie de groupe ! Si ${player} ou ${player} oublie de le publier avant demain, il devra 3 gorgées la prochaine partie.",
+    "pack": "classic"
   }
 ] 

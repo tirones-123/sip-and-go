@@ -44,11 +44,11 @@ export default {
       },
       girls: {
         title: "Entre filles",
-        description: "Parfait pour les soirées entre filles"
+        description: "Ce que tu ne veux pas savoir..."
       },
       guys: {
         title: "Entre gars",
-        description: "Spécialement pour les soirées entre mecs"
+        description: "Le QI baisse, mais l'ambiance monte !"
       },
       spicy: {
         title: "Épicé",

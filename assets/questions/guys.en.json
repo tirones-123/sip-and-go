@@ -1,0 +1,152 @@
+[
+  {
+    "id": "gy1",
+    "text": "${player}, drink 2 sips if you've ever been in a fight.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy2",
+    "text": "${player} and ${player}, race to chug your drinks. Loser takes 2 more sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy3",
+    "text": "${player}, what's your most impressive sports achievement? If ${player} isn't impressed, drink 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy4",
+    "text": "Between ${player} and ${player}, whoever bench presses more distributes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy5",
+    "text": "${player}, drink for every video game console you currently own.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy6",
+    "text": "${player} and ${player}, arm wrestle! Loser drinks 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy7",
+    "text": "${player}, tell everyone your most embarrassing rejection story or drink 4 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy8",
+    "text": "${player} picks which player would survive longest in a zombie apocalypse. ${player} distributes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy9",
+    "text": "If ${player} or ${player} has ever sent a drunk text to an ex, drink 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy10",
+    "text": "${player} and ${player} compete in a staring contest. Loser drinks 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy11",
+    "text": "${player}, truth: what's your go-to move to impress someone you like? If ${player} thinks it wouldn't work, drink.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy12",
+    "text": "Between ${player} and ${player}, whoever has the most dating app matches takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy13",
+    "text": "${player}, show the last inappropriate meme you saved or drink 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy14",
+    "text": "${player} and ${player} compare their favorite sports teams. Everyone votes on which is better; loser drinks.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy15",
+    "text": "${player}, what car would you buy if money was no object? If ${player} thinks it's a poor choice, both drink.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy16",
+    "text": "If ${player} or ${player} has ever used a cheesy pickup line, drink 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy17",
+    "text": "${player} and ${player} thumb wrestle. Loser drinks 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy18",
+    "text": "${player}, rate everyone's fashion sense. Lowest score drinks 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy19",
+    "text": "Between ${player} and ${player}, whoever has gone longer without washing their sheets drinks 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy20",
+    "text": "${player} shows ${player} their most embarrassing photo on their phone or drinks 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy21",
+    "text": "If ${player} or ${player} has ever been kicked out of a bar, drink 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy22",
+    "text": "${player} and ${player}, who can do more push-ups? Loser drinks that many sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy23",
+    "text": "${player}, tell us your best dad joke. If ${player} doesn't laugh, you drink 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy24",
+    "text": "Between ${player} and ${player}, whoever spent more on their last haircut drinks 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy25",
+    "text": "${player}, who in this group would be the worst roommate? That person distributes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy26",
+    "text": "If ${player} or ${player} has ever pretended to know about sports to impress someone, drink 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy27",
+    "text": "${player} and ${player}, compare your weekend plans. Group votes whose sounds better; loser drinks.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy28",
+    "text": "${player}, if you had to get in a fight with someone here, who would it be? ${player} distributes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy29",
+    "text": "Between ${player} and ${player}, whoever has more notifications on their phone right now drinks 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy30",
+    "text": "${player} chooses rock, paper, or scissors mentally. ${player} guesses what it is. If wrong, both drink.",
+    "pack": "guys"
+  }
+] 

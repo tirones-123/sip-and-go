@@ -3,7 +3,6 @@ import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import * as Sentry from '@sentry/react-native';
 import Constants from 'expo-constants';
-// @ts-expect-error — expo-google-fonts has no TS types bundled
 import { useFonts, Montserrat_400Regular, Montserrat_800ExtraBold } from '@expo-google-fonts/montserrat';
 import { Text } from 'react-native';
 
@@ -28,6 +27,7 @@ export default function App() {
   const [fontsLoaded] = useFonts({
     Montserrat_400Regular,
     Montserrat_800ExtraBold,
+    'FugazOne-Regular': require('./assets/fonts/FugazOne-Regular.ttf'),
   });
 
   // Set default font for all Text components once fonts are loaded

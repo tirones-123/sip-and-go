@@ -17,8 +17,8 @@ import tw from 'twrnc';
 import { useTranslation } from '../utils/i18n';
 import { useGameStore } from '../store/useGameStore';
 import { RootStackParamList } from '../navigation';
-import { formatQuestionText } from '../utils/pickQuestions';
-import { randomColorVariation } from '../utils/randomPalette';
+import { formatQuestionParts, QuestionPart } from '../utils/pickQuestions';
+import { randomColorVariation, tintColor } from '../utils/randomPalette';
 import PlayerListItem from '../components/PlayerListItem';
 import Button from '../components/Button';
 import { trackQuestionViewed } from '../utils/analytics';
@@ -84,10 +84,10 @@ const Question: React.FC = () => {
     navigation.navigate('ModeCarousel');
   };
   
-  // Format the question text with player names
-  const formattedText = currentQuestion 
-    ? formatQuestionText(currentQuestion.text, players)
-    : '';
+  // Build formatted parts so that player names can be styled
+  const formattedParts: QuestionPart[] = currentQuestion
+    ? formatQuestionParts(currentQuestion.text, players)
+    : [];
   
   // Handle quitting game
   const handleQuit = () => {
@@ -151,8 +151,39 @@ const Question: React.FC = () => {
         onPress={handleNextQuestion}
         pointerEvents="auto"
       >
-        <Text style={[tw`text-white text-center text-3xl`, { fontFamily: 'Montserrat_800ExtraBold', maxWidth: '90%' }]}>
-          {formattedText}
+        <Text
+          style={[
+            tw`text-white text-center text-2xl`,
+            {
+              fontFamily: 'Montserrat_800ExtraBold',
+              maxWidth: '90%',
+              lineHeight: 36,
+              textShadowColor: 'rgba(0, 0, 0, 0.25)',
+              textShadowOffset: { width: 2, height: 4 },
+              textShadowRadius: 5,
+            },
+          ]}
+        >
+          {formattedParts.map((part, idx) => {
+            if (part.type === 'player') {
+              return (
+                <Text
+                  key={idx}
+                  style={{
+                    color: tintColor(currentPack?.color ?? '#FFFFFF', 0.5),
+                    fontFamily: 'Montserrat_800ExtraBold',
+                  }}
+                >
+                  {part.value}
+                </Text>
+              );
+            }
+            return (
+              <Text key={idx} style={{ fontFamily: 'Montserrat_800ExtraBold' }}>
+                {part.value}
+              </Text>
+            );
+          })}
         </Text>
       </Pressable>
       

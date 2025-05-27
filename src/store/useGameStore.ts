@@ -2,6 +2,8 @@ import { create } from 'zustand';
 import { GameStore, Pack, Question } from '../types';
 import { pickQuestions } from '../utils/pickQuestions';
 import { trackGameStart, trackPackSelect } from '../utils/analytics';
+import { getLanguage } from '../utils/i18n';
+import { questionsMap } from '../utils/questions';
 
 // Default packs
 const DEFAULT_PACKS: Pack[] = [
@@ -9,35 +11,35 @@ const DEFAULT_PACKS: Pack[] = [
     id: 'classic',
     title: 'Classic',
     description: 'The original drinking game with simple challenges',
-    color: '#F3C53F',
+    color: '#9C5BD1',
     access: 'FREE'
   },
   {
     id: 'girls',
     title: 'Entre filles',
     description: 'Perfect for girls night out',
-    color: '#E84D8A', // Reusing the Party blue color
+    color: '#e4325f',
     access: 'LOCKED'
   },
   {
     id: 'guys',
     title: 'Entre gars',
     description: 'For the boys only',
-    color: '#4A8FE7', // Reusing the Extreme color
+    color: '#A54429',
     access: 'LOCKED'
   },
   {
     id: 'spicy',
     title: 'Spicy',
     description: 'Hot questions to spice up your night',
-    color: '#E35152',
+    color: '#660000',
     access: 'LOCKED'
   },
   {
     id: 'couples',
     title: 'En couple',
     description: 'Perfect for dates and couples',
-    color: '#9C5BD1',
+    color: '#1c27ef',
     access: 'LOCKED'
   }
 ];
@@ -97,17 +99,13 @@ export const useGameStore = create<GameStore>((set, get) => ({
     trackPackSelect(packId, premium);
     trackGameStart(players.length);
     
-    // We'll simulate loading questions
-    // In a real implementation, we would use the useQuestions hook
-    const mockQuestions: Question[] = Array(30).fill(0).map((_, i) => ({
-      id: `${packId}-${i}`,
-      text: `${packId} question ${i + 1}`,
-      pack: packId
-    }));
-    
-    // Select random questions for the game session
-    const selectedQuestions = pickQuestions(mockQuestions, 30, players.length);
-    
+    const lang = getLanguage();
+
+    const allPackQuestions: Question[] = questionsMap[packId]?.[lang] ?? [];
+
+    // Select random questions for the game session (40 per game)
+    const selectedQuestions = pickQuestions(allPackQuestions, 40, players.length);
+
     set({
       currentPack: selectedPack,
       currentQuestions: selectedQuestions,

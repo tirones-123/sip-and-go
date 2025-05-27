@@ -82,24 +82,54 @@ const hslToHex = (h: number, s: number, l: number): string => {
  * @param hueShift Maximum hue shift amount (in degrees)
  * @param saturationVariation Maximum saturation variation percentage
  * @param lightnessVariation Maximum lightness variation percentage
+ * @param maxLightness Maximum allowed lightness (default 60)
  * @returns A new hex color
  */
 export const randomColorVariation = (
   baseColor: string,
   hueShift = 10,
   saturationVariation = 5,
-  lightnessVariation = 5
+  lightnessVariation = 5,
+  maxLightness = 50
 ): string => {
   const hsl = hexToHSL(baseColor);
   
   // Apply random variations
   const randomHueShift = (Math.random() * 2 - 1) * hueShift;
   const randomSaturationShift = (Math.random() * 2 - 1) * saturationVariation;
-  const randomLightnessShift = (Math.random() * 2 - 1) * lightnessVariation;
+  const randomLightnessShift = -Math.random() * lightnessVariation;
   
   const newHue = (hsl.h + randomHueShift + 360) % 360;
   const newSaturation = Math.max(0, Math.min(100, hsl.s + randomSaturationShift));
-  const newLightness = Math.max(0, Math.min(100, hsl.l + randomLightnessShift));
+  let newLightness = Math.max(0, Math.min(100, hsl.l + randomLightnessShift));
+  
+  // Ensure the resulting lightness does not exceed the allowed maximum.
+  if (newLightness > maxLightness) {
+    newLightness = maxLightness;
+  }
   
   return hslToHex(newHue, newSaturation, newLightness);
+};
+
+/**
+ * Lightens a hex color by mixing it with white.
+ * @param baseColor Hex color string (e.g. #FF5A92)
+ * @param ratio 0 → no change, 1 → pure white. Default 0.4 (40 % white)
+ */
+export const tintColor = (baseColor: string, ratio = 0.4): string => {
+  // Clamp
+  const mix = Math.min(Math.max(ratio, 0), 1);
+
+  const hex = baseColor.replace(/^#/, '');
+  const r = parseInt(hex.substring(0, 2), 16);
+  const g = parseInt(hex.substring(2, 4), 16);
+  const b = parseInt(hex.substring(4, 6), 16);
+
+  const newR = Math.round(r + (255 - r) * mix);
+  const newG = Math.round(g + (255 - g) * mix);
+  const newB = Math.round(b + (255 - b) * mix);
+
+  const toHex = (v: number) => v.toString(16).padStart(2, '0');
+
+  return `#${toHex(newR)}${toHex(newG)}${toHex(newB)}`;
 }; 

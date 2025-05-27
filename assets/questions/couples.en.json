@@ -1,0 +1,152 @@
+[
+  {
+    "id": "co1",
+    "text": "${player} and ${player}, which of you said 'I love you' first? The other person drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co2",
+    "text": "${player}, name three of ${player}'s best qualities. For each one the group agrees with, your partner drinks 1 sip.",
+    "pack": "couples"
+  },
+  {
+    "id": "co3",
+    "text": "All couples: the person who takes longer to get ready in the morning drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co4",
+    "text": "${player} and ${player}, feed each other a drink. If either spills, they both drink 2 more sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co5",
+    "text": "${player}, what was your first impression of ${player}? If it wasn't positive, drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co6",
+    "text": "Couples play: ${player} and ${player}, count to three and then point to who apologizes first after arguments.",
+    "pack": "couples"
+  },
+  {
+    "id": "co7",
+    "text": "${player}, if you could change one habit of ${player}, what would it be? Your partner drinks if they agree.",
+    "pack": "couples"
+  },
+  {
+    "id": "co8",
+    "text": "All couples: the person who's more jealous in the relationship drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co9",
+    "text": "${player} and ${player}, take turns naming things that annoy you about each other. First to run out drinks 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co10",
+    "text": "${player}, what's ${player}'s most embarrassing moment that you've witnessed? They drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co11",
+    "text": "Couples play: the person who made the first move drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co12",
+    "text": "${player}, do your best impression of ${player}. The group rates it 1-10; below 5 and you drink that many sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co13",
+    "text": "All couples: the more forgetful partner drinks 2 sips. Disputes settled by group vote.",
+    "pack": "couples"
+  },
+  {
+    "id": "co14",
+    "text": "${player}, name ${player}'s guilty pleasure. If correct, your partner drinks 2 sips. If wrong, you drink 3.",
+    "pack": "couples"
+  },
+  {
+    "id": "co15",
+    "text": "Couples swap phones for 30 seconds. Each person can open one app of their choice on their partner's phone.",
+    "pack": "couples"
+  },
+  {
+    "id": "co16",
+    "text": "${player}, what's the most romantic thing ${player} has done for you? If everyone goes \"aww,\" your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co17",
+    "text": "All couples: the better cook in the relationship distributes 3 sips. Disputes settled by group vote.",
+    "pack": "couples"
+  },
+  {
+    "id": "co18",
+    "text": "${player}, tell us about your worst date with ${player}. They drink 2 sips afterward.",
+    "pack": "couples"
+  },
+  {
+    "id": "co19",
+    "text": "Couples play: the partner who's more likely to check their phone during dinner drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co20",
+    "text": "${player} and ${player}, rate your first kiss out of 10. If scores differ by more than 2 points, both drink the difference.",
+    "pack": "couples"
+  },
+  {
+    "id": "co21",
+    "text": "All couples: the partner who spends more money on unnecessary things drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co22",
+    "text": "${player}, what would ${player} say is your most annoying habit? If you guess wrong, drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co23",
+    "text": "Couples play: on the count of three, point to who said 'I love you' first. Mismatched couples both drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co24",
+    "text": "${player}, what would be ${player}'s ideal date night? Your partner drinks if you get it right.",
+    "pack": "couples"
+  },
+  {
+    "id": "co25",
+    "text": "All couples: the partner who takes longer in the bathroom drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co26",
+    "text": "${player}, what song reminds you most of ${player}? If they don't know the song, you drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co27",
+    "text": "Couples play: the more stubborn partner drinks 3 sips. Disputes settled by group vote.",
+    "pack": "couples"
+  },
+  {
+    "id": "co28",
+    "text": "${player} and ${player}, give each other a compliment. The group votes on the most genuine; loser drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co29",
+    "text": "All couples: the partner who's more likely to fall asleep during a movie drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co30",
+    "text": "${player}, what's the weirdest gift ${player} has ever given you? If it was actually thoughtful, give out 3 sips.",
+    "pack": "couples"
+  }
+]

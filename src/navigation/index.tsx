@@ -44,7 +44,7 @@ const Navigation: React.FC = () => {
         initialRouteName="AddPlayers"
         screenOptions={({ route }) => ({
           headerStyle: {
-            backgroundColor: route.name === 'ModeCarousel' ? '#FDE0A4' : '#0B0E1A',
+            backgroundColor: route.name === 'ModeCarousel' ? '#FFFFFF' : '#0B0E1A',
           },
           headerTintColor: route.name === 'ModeCarousel' ? '#0B0E1A' : '#fff',
           headerTitleStyle: {
@@ -52,7 +52,7 @@ const Navigation: React.FC = () => {
             color: route.name === 'ModeCarousel' ? '#0B0E1A' : '#fff',
           },
           contentStyle: {
-            backgroundColor: route.name === 'ModeCarousel' ? '#FDE0A4' : '#0B0E1A',
+            backgroundColor: route.name === 'ModeCarousel' ? '#FFFFFF' : '#0B0E1A',
           },
         })}
       >

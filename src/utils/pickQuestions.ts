@@ -9,7 +9,7 @@ import { Question } from '../types';
  */
 export const pickQuestions = (
   questions: Question[],
-  count: number = 30,
+  count: number = 40,
   playerCount: number = 2
 ): Question[] => {
   // Filter questions that have minimum player requirements
@@ -61,4 +61,74 @@ export const formatQuestionText = (text: string, players: string[]): string => {
 
     return name;
   });
+};
+
+/**
+ * Single part of a formatted question – either plain text or a player name.
+ */
+export interface QuestionPart {
+  type: 'text' | 'player';
+  value: string;
+}
+
+/**
+ * Splits a question text into parts so that player placeholders can be styled
+ * differently when rendered.
+ *
+ * @example
+ * // Given text "${player} drinks with ${player}!" and players ["Ana", "Bob"]
+ * // returns something like:
+ * // [ { type: 'player', value: 'Ana' },
+ * //   { type: 'text', value: ' drinks with ' },
+ * //   { type: 'player', value: 'Bob' },
+ * //   { type: 'text', value: '!' } ]
+ *
+ * @param text Question containing "${player}" placeholders.
+ * @param players Active player names.
+ */
+export const formatQuestionParts = (text: string, players: string[]): QuestionPart[] => {
+  if (!players.length) {
+    return [{ type: 'text', value: text }];
+  }
+
+  // Create a mutable pool so that each name is used once before repetitions
+  let available = [...players];
+
+  const parts: QuestionPart[] = [];
+  let lastIndex = 0;
+
+  // Regex to find all "${player}" placeholders
+  const regex = /\${player}/g;
+  let match: RegExpExecArray | null;
+
+  // eslint-disable-next-line no-cond-assign
+  while ((match = regex.exec(text)) !== null) {
+    const matchStart = match.index;
+
+    // Push preceding static text if any
+    if (matchStart > lastIndex) {
+      parts.push({ type: 'text', value: text.slice(lastIndex, matchStart) });
+    }
+
+    // Refill pool if empty
+    if (available.length === 0) {
+      available = [...players];
+    }
+
+    // Pick a random player from the remaining pool
+    const idx = Math.floor(Math.random() * available.length);
+    const playerName = available[idx];
+    available.splice(idx, 1);
+
+    parts.push({ type: 'player', value: playerName });
+
+    lastIndex = matchStart + match[0].length;
+  }
+
+  // Push remaining text after the last placeholder
+  if (lastIndex < text.length) {
+    parts.push({ type: 'text', value: text.slice(lastIndex) });
+  }
+
+  return parts;
 }; 

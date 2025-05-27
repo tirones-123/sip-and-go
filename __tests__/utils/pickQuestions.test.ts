@@ -1,4 +1,4 @@
-import { pickQuestions, formatQuestionText } from '../../src/utils/pickQuestions';
+import { pickQuestions, formatQuestionText, formatQuestionParts } from '../../src/utils/pickQuestions';
 import { Question } from '../../src/types';
 
 // Sample questions for testing
@@ -79,5 +79,22 @@ describe('formatQuestionText', () => {
     // We expect two placeholders → two names, all distinct
     expect(matches.length).toBe(2);
     expect(new Set(matches).size).toBe(2);
+  });
+});
+
+describe('formatQuestionParts', () => {
+  it('returns structured parts separating text and player names', () => {
+    const players = ['Alice', 'Bob'];
+    const parts = formatQuestionParts('Cheers ${player} and ${player}!', players);
+
+    // We expect 4 parts: text, player, text, player, text
+    expect(parts).toHaveLength(5);
+    // Player parts should have type 'player'
+    const playerParts = parts.filter(p => p.type === 'player');
+    expect(playerParts).toHaveLength(2);
+    // Their values should be from the provided players list
+    playerParts.forEach(p => {
+      expect(players).toContain(p.value);
+    });
   });
 }); 

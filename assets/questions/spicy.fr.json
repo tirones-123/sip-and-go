@@ -1,0 +1,152 @@
+[
+  {
+    "id": "s1",
+    "text": "${player}, bois une gorgée pour chaque personne dans cette pièce que tu as imaginé embrasser.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s2",
+    "text": "${player} et ${player}, regardez-vous dans les yeux pendant 30 secondes. Le premier à rire ou détourner le regard boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s3",
+    "text": "${player}, vérité : qu'est-ce qui t'excite le plus ? Si ${player} partage le même, vous buvez tous les deux.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s4",
+    "text": "Entre ${player} et ${player}, qui a eu le plan d'un soir le plus fou ? Le groupe vote, le perdant boit 3 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s5",
+    "text": "${player}, montre ta technique de drague favorite sur ${player} ou bois 4 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s6",
+    "text": "Si ${player} ou ${player} a déjà envoyé une photo osée, bois 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s7",
+    "text": "${player} doit chuchoter quelque chose de séduisant à ${player}. S'il rougit, le chuchoteur distribue 3 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s8",
+    "text": "Vérité : ${player}, quel est l'endroit le plus osé où tu as eu un rapport ? Si ${player} a été plus aventureux, tu bois 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s9",
+    "text": "${player} et ${player}, jouez à 'Je n'ai jamais' avec 3 doigts. Le premier à baisser tous ses doigts prend 3 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s10",
+    "text": "Entre ${player} et ${player}, celui qui a le grain de beauté le plus intéressant le montre ou boit 3 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s11",
+    "text": "${player}, note tout le monde dans la pièce sur 10 pour leur sex-appeal. Le score le plus bas boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s12",
+    "text": "${player} et ${player} doivent se complimenter physiquement. La personne la plus mal à l'aise boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s13",
+    "text": "Si ${player} a déjà rêvé de quelqu'un dans cette pièce, bois 2 gorgées. Si c'était de ${player}, bois 2 gorgées de plus.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s14",
+    "text": "${player}, vérité ou bois 3 gorgées : quelle est ta position préférée ? ${player} décide si c'est crédible.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s15",
+    "text": "${player} et ${player}, tenez-vous la main jusqu'à vos prochains tours. Le premier à lâcher boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s16",
+    "text": "Entre ${player} et ${player}, celui qui a embrassé quelqu'un le plus récemment distribue 3 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s17",
+    "text": "${player}, vérité : as-tu déjà eu un crush sur le partenaire d'un ami ? Si ${player} aussi, vous buvez 2 gorgées chacun.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s18",
+    "text": "${player} et ${player}, nommez à tour de rôle des objets qu'on trouve dans une chambre. Le premier à hésiter boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s19",
+    "text": "Si ${player} ou ${player} a déjà utilisé une application de rencontres en étant en couple, bois 3 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s20",
+    "text": "${player}, qui préférerais-tu embrasser : ${player} ou ${player} ? La personne non choisie boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s21",
+    "text": "Entre ${player} et ${player}, celui qui est célibataire depuis le plus longtemps boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s22",
+    "text": "${player}, dis-nous ton plus grand deal-breaker chez un partenaire. Si ${player} l'a, il boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s23",
+    "text": "${player} et ${player}, décrivez-vous rapidement en trois mots. La description la plus flatteuse distribue 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s24",
+    "text": "Si ${player} ou ${player} a déjà eu une relation 'amis avec avantages', bois 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s25",
+    "text": "${player}, fais un massage rapide des épaules à ${player} ou bois 3 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s26",
+    "text": "Entre ${player} et ${player}, celui qui a eu le plus de rendez-vous cette année boit 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s27",
+    "text": "${player}, vérité : as-tu déjà regretté un coup d'un soir ? Si ${player} aussi, vous buvez 2 gorgées chacun.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s28",
+    "text": "${player} et ${player}, faites-vous boire mutuellement. Si l'un de vous renverse, il boit 2 gorgées supplémentaires.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s29",
+    "text": "Si ${player} ou ${player} a déjà eu une rencontre gênante avec un ex, bois 2 gorgées.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s30",
+    "text": "${player} doit créer un nom de cocktail séduisant inspiré par ${player}. S'il n'est pas assez hot, bois 3 gorgées.",
+    "pack": "spicy"
+  }
+] 

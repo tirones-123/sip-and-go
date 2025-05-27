@@ -11,22 +11,22 @@ module.exports = {
           dark: '#D8A615',
         },
         girls: {
-          DEFAULT: '#4A8FE7',
-          light: '#6DA5F9',
-          medium: '#3677D9',
-          dark: '#2960B6',
-        },
-        guys: {
           DEFAULT: '#E84D8A',
           light: '#F26CA0',
           medium: '#D43473',
           dark: '#B52860',
         },
+        guys: {
+          DEFAULT: '#A54429',
+          light: '#C15F42',
+          medium: '#8C3A22',
+          dark: '#6E2F1B',
+        },
         spicy: {
-          DEFAULT: '#E35152',
-          light: '#F16363',
-          medium: '#CC3A3A',
-          dark: '#B62C2C',
+          DEFAULT: '#660000',
+          light: '#802020',
+          medium: '#4D0000',
+          dark: '#330000',
         },
         couples: {
           DEFAULT: '#9C5BD1',

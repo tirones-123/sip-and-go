@@ -4,6 +4,7 @@ import tw from 'twrnc';
 // import Button from './Button'; // Button component might be replaced by custom button style
 import { Pack } from '../types';
 import { useTranslation } from '../utils/i18n';
+import { tintColor } from '../utils/colorUtils'; // Import tintColor
 
 interface PackCardProps {
   pack: Pack;
@@ -60,6 +61,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
   const darkAccentColor = shadeColor(pack.color, -0.5); 
   const veryDarkTextColor = shadeColor(pack.color, -0.7); // Even darker for text for contrast
   const lightSecondaryBgColor = shadeColor(pack.color, 0.15); // Further adjusted for better harmony
+  const descriptionTextColor = '#FFFFFF'; // Description always white
   // const lightPillButtonTextColor = shadeColor(pack.color, 0.9); // For pill and button text - Now using white
 
   return (
@@ -81,10 +83,10 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
       <View style={tw`rounded-3xl overflow-hidden`}>
 
       {/* Top Part */}
-      <View style={[tw`relative items-center pt-5 h-64 rounded-t-3xl`, { backgroundColor: pack.color }]}>
+      <View style={[tw`relative items-center pt-5 h-72 rounded-t-3xl`, { backgroundColor: pack.color }]}>
         {/* Title Pill */}
         <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
-          <Text style={[tw`font-bold text-base text-center text-white`]}>{packTitle}</Text>
+          <Text style={[tw`font-bold text-base text-center text-white`, { fontFamily: 'Montserrat_800ExtraBold' }]}>{packTitle}</Text>
         </View>
         
         {/* Hero Image Container - aligned to bottom */}
@@ -105,7 +107,18 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
       
       {/* Bottom Part */}
       <View style={[tw`p-5 items-center rounded-b-3xl`, { backgroundColor: lightSecondaryBgColor }]}>
-        <Text style={[tw`text-xl font-bold text-center mb-5`, { color: veryDarkTextColor }]}>
+        <Text
+          style={[
+            tw`text-2xl text-center mb-5`,
+            {
+              color: descriptionTextColor,
+              fontFamily: 'Montserrat_800ExtraBold',
+              textShadowColor: 'rgba(0,0,0,0.25)',
+              textShadowOffset: { width: 2, height: 4 },
+              textShadowRadius: 5,
+            },
+          ]}
+        >
           {packDescription}
         </Text>
         
@@ -118,7 +131,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
           onPress={() => onPlay(pack.id)}
           activeOpacity={0.8}
         >
-          <Text style={[tw`font-bold uppercase text-lg text-white`]}>
+          <Text style={[tw`font-bold uppercase text-lg text-white`, { fontFamily: 'Montserrat_800ExtraBold' }]}>
             {t('modeCarousel.playButton')}
           </Text>
         </TouchableOpacity>

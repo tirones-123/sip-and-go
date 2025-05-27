@@ -75,5 +75,163 @@
     "id": "c15",
     "text": "${player}, you're the rule maker. Make a rule that everyone must follow until the end of the game. Anyone who breaks it drinks 2 sips.",
     "pack": "classic"
+  },
+  {
+    "id": "c16",
+    "text": "${player}, give 1 sip to ${player}.",
+    "pack": "classic"
+  },
+  {
+    "id": "c17",
+    "text": "Both ${player} and ${player} wearing glasses drink 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c18",
+    "text": "${player}, sing a chorus chosen by ${player} or drink 3 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c19",
+    "text": "Between ${player} and ${player}, whoever has the next birthday drinks 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c20",
+    "text": "${player} picks a category and ${player} starts naming items. First to fail drinks 2 sips.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c21",
+    "text": "If ${player} and ${player} are single, they each drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c22",
+    "text": "${player} swaps seats with ${player} opposite or drinks 2 sips.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c23",
+    "text": "If ${player} or ${player} has failed a driving test, they drink 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c24",
+    "text": "${player} starts counting, ${player} follows; whoever hesitates drinks 1 sip.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c25",
+    "text": "If ${player} or ${player}'s first name starts with a vowel, they drink 1 sip each.",
+    "pack": "classic"
+  },
+  {
+    "id": "c26",
+    "text": "${player} tells a truth; if ${player} has done the same, both drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c27",
+    "text": "Between ${player} and ${player}, the one with the lowest phone battery drinks 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c28",
+    "text": "${player} picks a word; ${player} begins the rhymes. First fail drinks 2 sips.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c29",
+    "text": "If ${player} or ${player} has fallen asleep on public transport, they drink 1 sip each.",
+    "pack": "classic"
+  },
+  {
+    "id": "c30",
+    "text": "${player} and ${player} play rock-paper-scissors; loser drinks 2 sips.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c31",
+    "text": "If ${player} and ${player} are wearing jeans, they each drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c32",
+    "text": "${player} picks an accent for ${player}. If they refuse, they drink 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c33",
+    "text": "Between ${player} and ${player}, the taller gives 2 sips to someone of their choice.",
+    "pack": "classic"
+  },
+  {
+    "id": "c34",
+    "text": "${player} makes ${player} the thumb master. Same rules apply.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c35",
+    "text": "If ${player} or ${player} has broken a bone, they drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c36",
+    "text": "${player} points at the messiest ${player}. They drink 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c37",
+    "text": "If ${player} or ${player} has met a celebrity, they drink 1 sip each.",
+    "pack": "classic"
+  },
+  {
+    "id": "c38",
+    "text": "${player} chooses a body part. Everyone touches it; ${player} last to touch drinks 1 sip.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c39",
+    "text": "If ${player} or ${player} has a cracked phone screen, they drink 2 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c40",
+    "text": "${player} tells a joke to ${player}. If nobody laughs, ${player} drinks 3 sips.",
+    "pack": "classic"
+  },
+  {
+    "id": "c41",
+    "text": "Players born in the same month as ${player} or ${player} drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c42",
+    "text": "${player} challenges ${player} to a staring contest. Loser drinks 2 sips.",
+    "pack": "classic",
+    "minPlayers": 3
+  },
+  {
+    "id": "c43",
+    "text": "If ${player} and ${player} have ever lied about their age, they each drink 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c44",
+    "text": "${player} picks a forbidden word for ${player}. Each slip costs 1 sip.",
+    "pack": "classic"
+  },
+  {
+    "id": "c45",
+    "text": "Group selfie! If ${player} or ${player} forgets to post it by tomorrow, they owe 3 sips next game.",
+    "pack": "classic"
   }
 ] 

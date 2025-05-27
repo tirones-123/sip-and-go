@@ -1,15 +1,23 @@
 import React, { useLayoutEffect } from 'react';
-import { View, Text, FlatList, useWindowDimensions, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, useWindowDimensions, TouchableOpacity, Image } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import tw from 'twrnc';
-import Animated, { useAnimatedScrollHandler } from 'react-native-reanimated';
+import Animated, {
+  useAnimatedScrollHandler,
+  useSharedValue,
+  useAnimatedStyle,
+  interpolateColor,
+  clamp,
+} from 'react-native-reanimated';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Pack } from '../types';
 
 import { useTranslation } from '../utils/i18n';
 import { useGameStore } from '../store/useGameStore';
 import { RootStackParamList } from '../navigation';
 import PackCard from '../components/PackCard';
+import { tintColor } from '../utils/colorUtils';
 
 type ModeCarouselScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'ModeCarousel'>;
 
@@ -25,6 +33,10 @@ const packImages: Record<string, any> = {
   couples: require('../../assets/hero/couples.png'),
 };
 
+const FALLBACK_COLOR_DARK = '#0B0E1A'; // For footer
+const TINT_AMOUNT = 0.7; // 70% towards white, making it much lighter
+const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
+
 /**
  * ModeCarousel screen - Pack selection carousel
  */
@@ -32,6 +44,7 @@ const ModeCarousel: React.FC = () => {
   const { t } = useTranslation();
   const navigation = useNavigation<ModeCarouselScreenNavigationProp>();
   const { width } = useWindowDimensions();
+  const insets = useSafeAreaInsets(); // Get safe area insets
   
   // Carousel layout constants
   const ITEM_SPACING = 16; // space between cards
@@ -53,19 +66,15 @@ const ModeCarousel: React.FC = () => {
   const startPack = useGameStore(state => state.startPack);
   const resetGame = useGameStore(state => state.resetGame);
   
+  // Animation setup: Scroll-dependent background color
+  const scrollX = useSharedValue(0);
+
   // Force header back to AddPlayers
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerLeft: () => (
-        <TouchableOpacity onPress={() => {
-          resetGame();
-          navigation.reset({ index: 0, routes: [{ name: 'AddPlayers' }] });
-        }}>
-          <Text style={tw`text-white text-3xl`}>‹</Text>
-        </TouchableOpacity>
-      ),
+      headerShown: false, // Completely hide the header
     });
-  }, [navigation, resetGame]);
+  }, [navigation]);
   
   // Handle pack selection
   const handlePlayPack = (packId: string) => {
@@ -85,7 +94,7 @@ const ModeCarousel: React.FC = () => {
   // Animated scroll handler
   const scrollHandler = useAnimatedScrollHandler({
     onScroll: (event) => {
-      // Animation logic could be added here if needed
+      scrollX.value = event.contentOffset.x;
     },
   });
   
@@ -94,8 +103,59 @@ const ModeCarousel: React.FC = () => {
     [packs, SNAP_INTERVAL]
   );
 
+  const animatedBgStyle = useAnimatedStyle(() => {
+    if (!packs || packs.length === 0) {
+      return { backgroundColor: tintColor(FALLBACK_COLOR_DARK, TINT_AMOUNT) };
+    }
+    if (packs.length === 1) {
+      return { backgroundColor: tintColor(packs[0].color, TINT_AMOUNT) };
+    }
+
+    const inputRange = packs.map((_, index) => index * SNAP_INTERVAL);
+    const outputRange = packs.map(pack => tintColor(pack.color, TINT_AMOUNT));
+
+    // Clamp scrollX to avoid issues with interpolateColor if scrolling beyond defined input ranges
+    const clampedScrollX = clamp(scrollX.value, inputRange[0], inputRange[inputRange.length - 1]);
+
+    return {
+      backgroundColor: interpolateColor(clampedScrollX, inputRange, outputRange),
+    };
+  });
+
   return (
-    <View style={tw`flex-1 bg-carouselBg`}>
+    <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
+      {/* Custom top elements: Back button and Logo */}
+      <View 
+        style={{
+          position: 'absolute',
+          top: insets.top + HEADER_ELEMENT_TOP_PADDING,
+          left: 0,
+          right: 0,
+          alignItems: 'center',
+          zIndex: 1, // Ensure logo is on top
+        }}
+      >
+        <Image
+          source={require('../../assets/logo.png')}
+          style={{ height: 80, resizeMode: 'contain' }}
+        />
+      </View>
+      <TouchableOpacity
+        style={{
+          position: 'absolute',
+          top: insets.top + HEADER_ELEMENT_TOP_PADDING,
+          left: 10, // Standard padding from left edge
+          zIndex: 2, // Ensure button is on top of logo if they overlap
+          padding: 8, // Increase tap area
+        }}
+        onPress={() => {
+          resetGame();
+          navigation.reset({ index: 0, routes: [{ name: 'AddPlayers' }] });
+        }}
+      >
+        <Text style={{ fontSize: 30, color: FALLBACK_COLOR_DARK }}>‹</Text>
+      </TouchableOpacity>
+
       {/* Carousel */}
       <AnimatedFlatList
         data={packs}
@@ -104,8 +164,17 @@ const ModeCarousel: React.FC = () => {
         showsHorizontalScrollIndicator={false}
         snapToOffsets={snapToOffsets}
         decelerationRate="fast"
-        contentContainerStyle={[tw`py-4`, { paddingHorizontal: sidePadding }]}
+        contentContainerStyle={[
+          tw`py-4 items-center`,
+          { 
+            paddingHorizontal: sidePadding, 
+            // Add padding to ensure content starts below custom header elements
+            // Approximate height of custom header area: logo height + top padding + some buffer
+            paddingTop: insets.top + HEADER_ELEMENT_TOP_PADDING + 35 + 20, 
+          }
+        ]}
         onScroll={scrollHandler}
+        scrollEventThrottle={16}
         style={{ overflow: 'visible' }}
         renderItem={({ item, index }) => (
           <View style={{
@@ -124,12 +193,12 @@ const ModeCarousel: React.FC = () => {
       />
       
       {/* Footer - Player count */}
-      <View style={tw`pb-8 items-center`}>
-        <Text style={tw`text-darkBg/70`}>
+      <View style={[tw`mx-4 mb-6 px-6 py-4 rounded-2xl items-center shadow-lg`, { backgroundColor: FALLBACK_COLOR_DARK }]}>
+        <Text style={[tw`text-white text-lg font-bold`, { fontFamily: 'Montserrat_800ExtraBold' }]}>
           {t('modeCarousel.playerCount', { count: players.length })}
         </Text>
       </View>
-    </View>
+    </Animated.View>
   );
 };
 

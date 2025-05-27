@@ -106,7 +106,7 @@ const AddPlayers: React.FC = () => {
             blurOnSubmit={false}
             maxLength={20}
             autoCorrect={false}
-            autoCapitalize="none"
+            autoCapitalize="words"
             spellCheck={false}
             autoComplete="off"
             importantForAutofill="no"

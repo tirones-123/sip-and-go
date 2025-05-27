@@ -1,0 +1,152 @@
+[
+  {
+    "id": "s1",
+    "text": "${player}, take a sip for every person in this room you've thought about kissing.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s2",
+    "text": "${player} and ${player}, stare into each other's eyes for 30 seconds. First to laugh or look away drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s3",
+    "text": "${player}, truth: what's your biggest turn-on? If ${player} shares the same one, both drink.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s4",
+    "text": "Between ${player} and ${player}, who has had the wildest one-night stand? Group votes, loser drinks 3 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s5",
+    "text": "${player}, demonstrate your go-to flirting move on ${player} or drink 4 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s6",
+    "text": "If ${player} or ${player} has ever sent a risqué photo, drink 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s7",
+    "text": "${player} must whisper something seductive to ${player}. If they blush, the whisperer gives out 3 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s8",
+    "text": "Truth: ${player}, what's the most daring place you've hooked up? If ${player} has been more adventurous, you drink 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s9",
+    "text": "${player} and ${player}, play 'Never Have I Ever' with 3 fingers. First to put all fingers down takes 3 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s10",
+    "text": "Between ${player} and ${player}, whoever has the most interesting birthmark shows it or drinks 3 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s11",
+    "text": "${player}, rate everyone in the room on a scale of 1-10 for attractiveness. Lowest score drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s12",
+    "text": "${player} and ${player} must compliment each other's physical attributes. Most awkward person drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s13",
+    "text": "If ${player} has ever had a dream about someone in this room, drink 2 sips. If it was about ${player}, drink 2 more.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s14",
+    "text": "${player}, truth or drink 3 sips: what's your favorite position? ${player} decides if it's believable.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s15",
+    "text": "${player} and ${player}, hold hands until your next turns. Whoever lets go first drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s16",
+    "text": "Between ${player} and ${player}, whoever made out with someone most recently gives out 3 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s17",
+    "text": "${player}, truth: have you ever had a crush on a friend's partner? If ${player} has too, both drink 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s18",
+    "text": "${player} and ${player}, take turns naming items you'd find in a bedroom. First to hesitate drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s19",
+    "text": "If ${player} or ${player} has ever used a dating app while in a relationship, drink 3 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s20",
+    "text": "${player}, who would you rather kiss: ${player} or ${player}? The unchosen person drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s21",
+    "text": "Between ${player} and ${player}, whoever has been single longer drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s22",
+    "text": "${player}, tell us your biggest deal-breaker in a partner. If ${player} has it, they drink 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s23",
+    "text": "${player} and ${player}, quickly describe each other in three words. Most flattering description gives out 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s24",
+    "text": "If ${player} or ${player} has ever had a friends-with-benefits situation, drink 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s25",
+    "text": "${player}, give ${player} a quick shoulder massage or drink 3 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s26",
+    "text": "Between ${player} and ${player}, whoever has been on more dates this year drinks 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s27",
+    "text": "${player}, truth: have you ever regretted hooking up with someone? If ${player} has too, both drink 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s28",
+    "text": "${player} and ${player}, feed each other a drink. If either spills, they drink 2 more sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s29",
+    "text": "If ${player} or ${player} has ever had an awkward encounter with an ex, drink 2 sips.",
+    "pack": "spicy"
+  },
+  {
+    "id": "s30",
+    "text": "${player} must create a seductive drink name inspired by ${player}. If it's not hot enough, drink 3 sips.",
+    "pack": "spicy"
+  }
+] 
