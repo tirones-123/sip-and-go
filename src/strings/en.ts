@@ -23,11 +23,10 @@ export default {
   // Add Players
   addPlayers: {
     title: "Add Players",
-    subtitle: "Who is playing tonight?",
     inputPlaceholder: "Player name",
     addButton: "Add",
     startButton: "START",
-    playerCountError: "Add at least 2 players to start",
+    playerCountError: "Add at least 2 players",
     deleteButton: "Remove"
   },
   

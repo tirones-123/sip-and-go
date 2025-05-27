@@ -1,237 +1,687 @@
 [
   {
     "id": "c1",
-    "text": "${player}, bois 2 gorgées !",
+    "text": "${player}, Raconte une soirée où tout a dégénéré. Si tu n’as rien à raconter, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c2",
-    "text": "Tous ceux qui ont déjà été ivres, prenez 1 gorgée.",
+    "text": "${player}, Quelle est l’appli dont tu as le plus honte sur ton téléphone ? Si tu refuses de dire, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c3",
-    "text": "${player}, choisis quelqu'un pour boire 3 gorgées.",
+    "text": "Votez tous en même temps : Qui serait le pire coloc ici présent ? Celui qui a le plus de voix, 2 pénalités",
     "pack": "classic"
   },
   {
     "id": "c4",
-    "text": "Le joueur le plus grand boit 2 gorgées.",
+    "text": "${player}, Raconte une situation où tu t'es pris un gros vent. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c5",
-    "text": "${player}, si tu as déjà envoyé un message à la mauvaise personne, bois 2 gorgées. Sinon, distribue 2 gorgées.",
+    "text": "${player}, À ton avis, qui ment le mieux ici ? Désigne-le/la. Cette personne boit 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c6",
-    "text": "Tous ceux avec des yeux bleus, prenez 1 gorgée.",
+    "text": "${player}, Raconte la pire chose que tu aies dite à un prof. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c7",
-    "text": "Tout le monde doit dire sa boisson préférée. ${player} choisit la meilleure, et cette personne boit.",
+    "text": "${player}, Si tu devais échanger ta vie avec un joueur ici pendant une semaine, qui choisirais-tu ? Cette personne boit 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c8",
-    "text": "${player}, bois autant de gorgées que ton âge divisé par 10, arrondi au supérieur.",
+    "text": "Votez tous en même temps : Le joueur avec les chaussettes les plus moches prend 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c9",
-    "text": "Tous ceux qui ont voyagé à l'étranger boivent 2 gorgées.",
+    "text": "Tous ceux qui ont déjà dragué sur Instagram boivent 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c10",
-    "text": "${player}, tu es le maître du pouce jusqu'à la prochaine question. Quand tu poses ton pouce sur la table, la dernière personne à faire de même boit.",
+    "text": "Tous ceux qui ont déjà menti sur leur âge pour entrer en boîte prennent 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c11",
-    "text": "Pierre, papier, ciseaux entre ${player} et la personne à sa droite. Le perdant boit 2 gorgées.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Si tu es déjà retourné(e) avec un ex, prends 2 pénalités.",
+    "pack": "classic"
   },
   {
     "id": "c12",
-    "text": "Tous ceux qui ont un frère ou une sœur, prenez 1 gorgée.",
+    "text": "Tous les gauchers boivent 1 pénalité. Si aucun gaucher, tout le monde boit.",
     "pack": "classic"
   },
   {
     "id": "c13",
-    "text": "${player}, ferme les yeux. Tout le monde vote si tu dois boire. La majorité l'emporte.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "Tous ceux qui ont un animal de compagnie boivent 1 pénalité.",
+    "pack": "classic"
   },
   {
     "id": "c14",
-    "text": "Je n'ai jamais... fait de skinny dipping. Buvez si vous l'avez fait.",
+    "text": "${player}, Imite une personne ici. Si personne ne devine en 10 secondes, tu prends 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c15",
-    "text": "${player}, tu es le créateur de règles. Établis une règle que tout le monde doit suivre jusqu'à la fin du jeu. Quiconque l'enfreint boit 2 gorgées.",
+    "text": "${player}, Chante le refrain d’une chanson d'un des Disney. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c16",
-    "text": "${player}, donne une gorgée à ${player}.",
+    "text": "${player}, Lis à voix haute ton dernier DM. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c17",
-    "text": "${player} et ${player} qui portent des lunettes boivent 2 gorgées.",
+    "text": "${player}, Dis “je t’aime” en 3 langues. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c18",
-    "text": "${player}, chante le refrain choisi par ${player} ou bois 3 gorgées.",
+    "text": "${player}, Fais deviner un film en mime. Si personne ne trouve, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c19",
-    "text": "Entre ${player} et ${player}, celui dont l'anniversaire est le plus proche boit 2 gorgées.",
+    "text": "${player}, Raconte un dossier sur quelqu'un ici présent. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c20",
-    "text": "${player} choisit une catégorie et ${player} commence à énumérer; le premier qui hésite boit 2 gorgées.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Si tu es en couple, pénalité ultime.",
+    "pack": "classic"
   },
   {
     "id": "c21",
-    "text": "Si ${player} et ${player} sont célibataires, ils boivent chacun 1 gorgée.",
+    "text": "${player}, Si tu as déjà ghosté quelqu’un après avoir couché avec, pénalité ultime.",
     "pack": "classic"
   },
   {
     "id": "c22",
-    "text": "${player} échange sa place avec ${player} ou boit 2 gorgées.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Si tu as déjà été friendzoné, pénalité ultime.",
+    "pack": "classic"
   },
   {
     "id": "c23",
-    "text": "Si ${player} ou ${player} a déjà raté le permis, il boit 2 gorgées.",
+    "text": "${player}, Si tu n’as jamais eu la gueule de bois, pénalité ultime (oui, on te croit moyen…).",
     "pack": "classic"
   },
   {
     "id": "c24",
-    "text": "${player} commence à compter, ${player} suit; celui qui hésite boit 1 gorgée.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Si tu as déjà volé quelque chose, même petit, pénalité ultime.",
+    "pack": "classic"
   },
   {
     "id": "c25",
-    "text": "Si le prénom de ${player} ou ${player} commence par une voyelle, ils boivent 1 gorgée.",
+    "text": "${player}, Si tu es l’aîné(e) de ta fratrie, pénalité ultime.",
     "pack": "classic"
   },
   {
     "id": "c26",
-    "text": "${player} révèle une vérité; si ${player} l'a aussi vécue, ils boivent 1 gorgée chacun.",
+    "text": "${player}, Si tu t’es déjà endormi(e) en soirée, pénalité ultime.",
     "pack": "classic"
   },
   {
     "id": "c27",
-    "text": "Entre ${player} et ${player}, celui avec la batterie la plus basse boit 2 gorgées.",
+    "text": "${player}, Quelle est la chose la plus stupide que tu aies faite par amour ? Partage ou prends 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c28",
-    "text": "${player} choisit un mot; ${player} commence les rimes. Le premier qui échoue boit 2 gorgées.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Quelle est la pire soirée de ta vie ? Partage ou prends 2 pénalités.",
+    "pack": "classic"
   },
   {
     "id": "c29",
-    "text": "Si ${player} ou ${player} s'est déjà endormi dans les transports, ils boivent 1 gorgée chacun.",
+    "text": "Votez tous en même temps : qui a le plus de chances d'oublier un anniversaire ? Celui qui a le plus de voix, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c30",
-    "text": "${player} et ${player} font pierre-papier-ciseaux; le perdant boit 2 gorgées.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Quelle est la plus grosse excuse que tu as inventée pour faire le mur ? Raconte ou 2 pénalités.",
+    "pack": "classic"
   },
   {
     "id": "c31",
-    "text": "Si ${player} et ${player} portent un jean, ils boivent 1 gorgée chacun.",
+    "text": "Tous ceux qui ont déjà pleuré devant un Disney boivent 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c32",
-    "text": "${player} choisit un accent pour ${player}. S'il refuse, il boit 2 gorgées.",
+    "text": "Tous ceux qui ont déjà stalké un ex sur les réseaux prennent 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c33",
-    "text": "Entre ${player} et ${player}, le plus grand distribue 2 gorgées.",
+    "text": "La personne avec le plus de bracelets/anneaux sur elle boit 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c34",
-    "text": "${player} nomme ${player} maître du pouce. Même règles qu'habituellement.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Montre ta dernière photo prise. Refus = 2 pénalités.",
+    "pack": "classic"
   },
   {
     "id": "c35",
-    "text": "Si ${player} ou ${player} s'est déjà cassé un os, il boit 1 gorgée.",
+    "text": "${player}, Tour à tour chante une pub de ton enfance. Dès que quelqu'un n'a plus d'idée, 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c36",
-    "text": "${player} désigne ${player} comme le plus désordonné; il boit 2 gorgées.",
+    "text": "${player}, Si tu as déjà dit “je t’aime” sans le penser, pénalité ultime.",
     "pack": "classic"
   },
   {
     "id": "c37",
-    "text": "Si ${player} ou ${player} a déjà rencontré une célébrité, il boit 1 gorgée.",
+    "text": "Votez tous en même temps : Qui raconte toujours les mêmes anecdotes pourries ? Celui qui a le plus de voix, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c38",
-    "text": "${player} choisit une partie du corps. Tout le monde la touche; ${player} qui est dernier boit 1 gorgée.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "Votez tous en même temps : Qui a l'air d'avoir le secret le plus hardcore ? Celui qui a le plus de voix, 2 pénalités.",
+    "pack": "classic"
   },
   {
     "id": "c39",
-    "text": "Si ${player} ou ${player} a l'écran fissuré, il boit 2 gorgées.",
+    "text": "Votez tous en même temps  Qui serait le premier à se perdre en forêt ? Celui qui a le plus de voix, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c40",
-    "text": "${player} raconte une blague à ${player}. Si personne ne rit, ${player} boit 3 gorgées.",
+    "text": "Votez tous en même temps : Qui est la plus grosse langue de p*te ? Celui qui a le plus de voix, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c41",
-    "text": "Les joueurs nés le même mois que ${player} ou ${player} boivent 1 gorgée.",
+    "text": "${player}, Raconte la fois où tu as eu le plus honte en soirée. Si tu refuses, 3 pénalités",
     "pack": "classic"
   },
   {
     "id": "c42",
-    "text": "${player} défie ${player} au concours de regards; le perdant boit 2 gorgées.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, Raconte une anecdote gênante avec un(e) ex. Si tu refuses, 2 pénalités",
+    "pack": "classic"
   },
   {
     "id": "c43",
-    "text": "Si ${player} et ${player} ont déjà menti sur leur âge, ils boivent 1 gorgée chacun.",
+    "text": "${player}, Quelle est la chose la plus hard que tu aies faite seul(e) chez toi ? Si tu n’as rien à raconter, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c44",
-    "text": "${player} choisit un mot interdit pour ${player}. Chaque fois qu'il est prononcé, c'est 1 gorgée.",
+    "text": "${player}, Donne un surnom humiliant que tu as eu dans ta vie. Si tu refuses, 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c45",
-    "text": "Selfie de groupe ! Si ${player} ou ${player} oublie de le publier avant demain, il devra 3 gorgées la prochaine partie.",
+    "text": "${player}, Fais 3 sons d’animaux différents. Si tu refuses, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c46",
+    "text": "${player}, Prends un accent au choix pour les deux prochains tours. Si tu refuses, 3 pénalités",
+    "pack": "classic"
+  },
+  {
+    "id": "c47",
+    "text": "${player}, Quel est le deuxième prénom de la personne à ta gauche ? Si tu te trompes, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c48",
+    "text": "${player}, Cite 3 objets qui pourraient te servir de sextoy. Si tu refuses, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c49",
+    "text": "${player}, Donne 3 titres de chansons de Britney Spears. Si tu n’y arrives pas, 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c50",
+    "text": "${player}, As-tu déjà stalké quelqu’un ici sur les réseaux ? Qui ? Si tu refuses de dire, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c51",
+    "text": "Tous ceux qui ont déjà menti ce soir prennent 2 pénalités. Soyez honnêtes (ou pas).",
+    "pack": "classic"
+  },
+  {
+    "id": "c52",
+    "text": "${player}, Si tu lis cette carte à voix haute, distribue 3 pénalités comme bon te semble.",
+    "pack": "classic"
+  },
+  {
+    "id": "c53",
+    "text": "As-tu déjà oublié le prénom de quelqu’un autour de la table ? Tous ceux concernés prennent 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c54",
+    "text": "Votez tous en même temps : Qui a le rire le plus gênant ? Celui qui récolte le plus de voix prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c55",
+    "text": "As-tu déjà stalké l’ex de ton mec/meuf ? Tous ceux concernés prennent 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c56",
+    "text": "Votez tous en même temps : Qui met le plus de temps à répondre aux messages ? La personne désignée prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c57",
+    "text": "${player}, Qu’est-ce qui te fait rougir ? Cite 3 trucs ou prends 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c58",
+    "text": "Votez tous en même temps : Penses-tu que quelqu’un ici a un crush sur toi ? Les minoritaires prennent 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c59",
+    "text": "${player}, Qui se plaint tout le temps ici ? Distribue-lui 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c60",
+    "text": "${player}, As-tu récemment utilisé un surnom d’ex sans faire exprès ? Si oui, pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c61",
+    "text": "Votez tous en même temps : Qui ici est le plus susceptible ? La personne choisie prend 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c62",
+    "text": "${player}, Raconte une anecdote honteuse en lien avec de l’alcool. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c63",
+    "text": "${player}, Si tu as déjà prétendu être sobre alors que tu ne l’étais clairement pas : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c64",
+    "text": "Tous ceux qui sont déjà tombés amoureux en vacances : 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c65",
+    "text": "Tous ceux qui ont dorme encore avec un doudou: 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c66",
+    "text": "Tous ceux qui ont déjà vomi dans un endroit improbable : 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c67",
+    "text": "${player}, Lis à voix haute le dernier message que tu as reçu sur Instagram, sinon 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c68",
+    "text": "${player}, Dis une qualité que tu trouves sexy chez ${player}. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c69",
+    "text": "Tous ceux qui ont déjà envoyé un message à leur ex en pleine nuit : pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c70",
+    "text": "${player}, Cite 3 choses que tu as déjà faites sous la douche... sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c71",
+    "text": "${player}, Avec qui tu ne voudrais jamais être coincé(e) dans un ascenseur. La personne désignée prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c72",
+    "text": "Tous ceux qui ont déjà envoyé un vocal gênant par erreur : 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c73",
+    "text": "Tous ceux qui sont déjà revenus vers leur ex : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c74",
+    "text": "Tous ceux qui ont déjà fait un rêve chelou sur un(e) pote ici : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c75",
+    "text": "Votez tous en même temps : qui ici pourrait finir influenceur ? La personne désignée donne 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c76",
+    "text": "Votez tous en même temps : qui est le plus du genre à stalker des gens ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c77",
+    "text": "Votez tous en même temps : qui a le plus de chance de finir bourré(e) ce soir ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c78",
+    "text": "Tous ceux qui ont une appli de rencontre installée sur leur téléphone : pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c79",
+    "text": "${player}, T’es-tu déjà réveillé(e) dans un endroit improbable après une soirée ? Si oui, 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c80",
+    "text": "Votez tous en même temps : qui a les goûts musicaux les plus discutables ? Il/elle prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c81",
+    "text": "Votez tous en même temps : qui raconte les meilleurs ragots ? Il/elle distribue 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c82",
+    "text": "${player}, Donne 1 habitude cheloue que tu ne veux pas que tes potes découvrent.",
+    "pack": "classic"
+  },
+  {
+    "id": "c83",
+    "text": "${player}, Cite 2 mots ou expressions que tu utilises beaucoup trop souvent.",
+    "pack": "classic"
+  },
+  {
+    "id": "c84",
+    "text": "${player}, Donne 2 exemples de trucs que tu fais \"en cachette\". Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c85",
+    "text": "${player}, Le jeu commence : à ton tour, dis un mot qui rime avec alcool. Celui qui sèche prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c86",
+    "text": "${player}, À ton tour, chacun doit dire une capitale européenne. Erreur ou oubli = 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c87",
+    "text": "${player}, À ton tour, chacun doit nommer une appli de rencontre. Celui qui bug prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c88",
+    "text": "Interdiction de dire “oui” ou “non” jusqu’à la prochaine carte. Si quelqu’un se fait avoir, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c89",
+    "text": "${player}, Jeu du \"mot interdit\" : choisis un mot simple. Celui qui le dit pendant les 3 prochaines cartes prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c90",
+    "text": "Règle de groupe : interdiction de pointer du doigt. Si quelqu’un le fait, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c91",
+    "text": "Règle : remplacez le mot “boire” par “manger”. Si quelqu’un oublie, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c92",
+    "text": "${player}, Jusqu’à nouvel ordre, chaque fois que tu bois, tu dois lever un pouce en l’air. Oubli = 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c93",
+    "text": "${player}, Dès maintenant, tu es le perroquet de ${player}. Tu dois répéter tout ce qu’il/elle dit (sinon, 2 pénalités).",
+    "pack": "classic"
+  },
+  {
+    "id": "c94",
+    "text": "Le prochain joueur qui touche ses cheveux prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c95",
+    "text": "${player}, À partir de maintenant, chaque fois qu’on dit ton prénom, tu dois aboyer. Oubli = 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c96",
+    "text": "Le dernier à poser ses coudes sur la table prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c97",
+    "text": "Jusqu’à ta prochaine carte, tu dois répondre à tout en chantant. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c98",
+    "text": "${player}, Tu choisis un joueur qui ne doit plus te regarder dans les yeux. S’il le fait : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c99",
+    "text": "Tous les joueurs doivent désormais dire “merci” après chaque gorgée. Oubli = 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c100",
+    "text": "${player}, Dès maintenant, parle avec l’accent de ton choix pendant 2 tours. Refus = 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c101",
+    "text": "Tous les joueurs doivent finir leurs phrases par “chef”. Oubli = 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c102",
+    "text": "Dès maintenant, interdit de croiser les bras ou les jambes. Le premier qui oublie prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c103",
+    "text": "${player}, Cite 3 choses que tu fais quand personne ne te regarde. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c104",
+    "text": "${player}, As-tu déjà eu un plan à trois (ou plus) ? Si oui, donne 2 pénalités. Si non, prends-les.",
+    "pack": "classic"
+  },
+  {
+    "id": "c105",
+    "text": "${player}, Si tu as déjà envoyé un nude, distribue 2 pénalités. Sinon, prends-les.",
+    "pack": "classic"
+  },
+  {
+    "id": "c106",
+    "text": "${player}, Raconte ton pire date Tinder. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c107",
+    "text": "${player}, Décris ta zone érogène préférée, sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c108",
+    "text": "${player}, Dis quel joueur tu embrasserais s'il fallait choisir, sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c109",
+    "text": "Tous ceux qui portent un string ou un boxer moulant ce soir : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c110",
+    "text": "Tous ceux qui ont déjà couché dans un lieu public : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c111",
+    "text": "${player}, As-tu déjà eu un blackout complet ? Si oui, donne 2 pénalités. Sinon, prends-les.",
+    "pack": "classic"
+  },
+  {
+    "id": "c112",
+    "text": "${player}, Si tu t’es déjà battu(e) ou embrouillé(e) en soirée, prends 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c113",
+    "text": "Tous ceux qui ont déjà fait une sextape (ou photo coquine) : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c114",
+    "text": "Tous ceux qui sont vierges de cuite : pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c115",
+    "text": "Votez tous en même temps : qui ferait le meilleur coup d’un soir ? Le gagnant distribue 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c116",
+    "text": "${player}, Si t’as déjà ghosté quelqu’un juste après avoir couché avec : pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c117",
+    "text": "${player} et ${player}, mettez vos fronts l’un contre l’autre 10 secondes. Sinon, 2 pénalités chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c118",
+    "text": "${player}, dis où tu penses que ${player} aime être touché(e). Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c119",
+    "text": "${player}, mime la façon dont tu penses que ${player} embrasse. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c120",
+    "text": "${player}, sur une échelle de 1 à 10, à combien tu penses que ${player} est expérimenté(e) ? Moins de 5 = 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c121",
+    "text": "${player}, choisis : 3 pénalités pour toi ou 1 pénalité pour ${player}.",
+    "pack": "classic"
+  },
+  {
+    "id": "c122",
+    "text": "${player}, choisis : révéler ton dernier message à ${player} ou 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c123",
+    "text": "${player}, choisis : que ${player} boive 3 pénalités ou toi une pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c124",
+    "text": "${player}, fais un câlin à ${player} ou 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c125",
+    "text": "${player}, regarde ${player} dans les yeux et dis ton fantasme le plus hard. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c126",
+    "text": "Votez tous en même temps : qui entre ${player} et ${player} est le plus chaud(e) ? Le perdant : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c127",
+    "text": "Votez tous en même temps : qui est le/la plus attirant(e) physiquement ? La personne désignée prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c128",
+    "text": "${player}, Tu es invité à une partouze cite les 3 choses que tu ramènes. Sinon 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c129",
+    "text": "${player}, Quelle est ta catégorie préférée sur un site X ? Assume-la, sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c130",
+    "text": "${player}, Avec qui ici serais-tu le plus tenté(e) de tester un plan à trois ? Donne un nom, sinon, pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c131",
+    "text": "${player}, Donne le prénom de la personne qui a été ton meilleur coup. Si tu refuses, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c132",
+    "text": "${player}, Donne le prénom de la personne qui a été ton moins bon coup. Si tu refuses, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c133",
+    "text": "${player}, Décris, sans dire de prénom, la personne ici que tu trouves la plus excitante. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c134",
+    "text": "${player}, Avec qui ici pourrais-tu dormir nu dans le même lit sans que rien ne se passe… ou pas ? Donne un nom, sinon, pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c135",
+    "text": "${player}, Chuchote à l’oreille de la personne de ton choix ce que tu aimerais lui faire s’il n’y avait pas de limites… sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c136",
+    "text": "${player}, Passe 10 secondes à caresser sensuellement ton propre cou pendant que quelqu’un te regarde. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c137",
+    "text": "${player}, Frotte ton nez contre celui d’un joueur pendant 5 secondes comme si c’était une scène de film torride… sinon, 2 pénalités.",
     "pack": "classic"
   }
-] 
+]

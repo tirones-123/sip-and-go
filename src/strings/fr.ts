@@ -23,11 +23,10 @@ export default {
   // Add Players
   addPlayers: {
     title: "Ajouter des joueurs",
-    subtitle: "Qui joue ce soir ?",
     inputPlaceholder: "Nom du joueur",
     addButton: "Ajouter",
     startButton: "DÉMARRER",
-    playerCountError: "Ajoutez au moins 2 joueurs pour commencer",
+    playerCountError: "Ajoutez au moins 2 joueurs",
     deleteButton: "Supprimer"
   },
   
@@ -40,7 +39,7 @@ export default {
     packs: {
       classic: {
         title: "Classique",
-        description: "Le jeu à boire original avec des défis simples"
+        description: "Le jeu à boire original en mode before"
       },
       girls: {
         title: "Entre filles",
@@ -52,11 +51,11 @@ export default {
       },
       spicy: {
         title: "Épicé",
-        description: "Questions chaudes pour pimenter votre soirée"
+        description: "Questions chaudes pour pimenter"
       },
       couples: {
         title: "En couple",
-        description: "Parfait pour les rendez-vous et les couples"
+        description: "Parfait pour les rendez-vous"
       }
     }
   },

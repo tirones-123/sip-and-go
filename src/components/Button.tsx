@@ -61,7 +61,7 @@ const Button: React.FC<ButtonProps> = ({
     tw`font-bold text-center`,
     size === 'small' ? tw`text-sm` : size === 'large' ? tw`text-lg` : tw`text-base`,
     variant === 'outline' ? tw`text-white` : tw`text-white`,
-    textClassName
+    ...(textClassName ? [tw.style(textClassName)] : [])
   ];
   
   // Width style

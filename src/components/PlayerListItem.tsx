@@ -16,15 +16,15 @@ const PlayerListItem: React.FC<PlayerListItemProps> = ({ name, onRemove, canRemo
   const { t } = useTranslation();
   
   return (
-    <View style={tw`flex-row items-center justify-between bg-white/10 rounded-lg p-3 mb-2`}>
-      <Text style={tw`text-white font-medium text-lg flex-1`}>{name}</Text>
+    <View style={tw`flex-row items-center justify-between bg-white/10 rounded-lg p-2 mb-2`}>
+      <Text style={tw`text-white font-medium text-base flex-1`}>{name}</Text>
       {canRemove && (
         <TouchableOpacity
           onPress={() => onRemove(name)}
-          style={tw`h-8 w-8 rounded-full bg-white/20 items-center justify-center`}
+          style={tw`h-7 w-7 rounded-full bg-white/20 items-center justify-center`}
           accessibilityLabel={t('addPlayers.deleteButton')}
         >
-          <Text style={tw`text-white text-lg font-bold`}>×</Text>
+          <Text style={tw`text-white text-base font-bold`}>×</Text>
         </TouchableOpacity>
       )}
     </View>

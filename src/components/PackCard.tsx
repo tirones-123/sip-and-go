@@ -5,6 +5,7 @@ import tw from 'twrnc';
 import { Pack } from '../types';
 import { useTranslation } from '../utils/i18n';
 import { tintColor } from '../utils/colorUtils'; // Import tintColor
+import LockIcon from './LockIcon';
 
 interface PackCardProps {
   pack: Pack;
@@ -83,7 +84,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
       <View style={tw`rounded-3xl overflow-hidden`}>
 
       {/* Top Part */}
-      <View style={[tw`relative items-center pt-5 h-72 rounded-t-3xl`, { backgroundColor: pack.color }]}>
+      <View style={[tw`relative items-center pt-5 h-80 rounded-t-3xl`, { backgroundColor: pack.color }]}>
         {/* Title Pill */}
         <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
           <Text style={[tw`font-bold text-base text-center text-white`, { fontFamily: 'Montserrat_800ExtraBold' }]}>{packTitle}</Text>
@@ -99,14 +100,19 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
           <> 
             <View style={tw`absolute inset-0 bg-black/60`} />
             <View style={tw`absolute top-4 right-4 bg-black/50 p-2 rounded-full`}>
-              <Text style={tw`text-white text-2xl`}>🔒</Text>
+              <LockIcon size={24} color="#FFFFFF" />
             </View>
           </>
         )}
       </View>
       
       {/* Bottom Part */}
-      <View style={[tw`p-5 items-center rounded-b-3xl`, { backgroundColor: lightSecondaryBgColor }]}>
+      <View
+        style={[
+          tw`p-5 items-center rounded-b-3xl`,
+          { backgroundColor: lightSecondaryBgColor },
+        ]}
+      >
         <Text
           style={[
             tw`text-2xl text-center mb-5`,
