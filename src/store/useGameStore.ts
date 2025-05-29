@@ -11,7 +11,7 @@ const DEFAULT_PACKS: Pack[] = [
     id: 'classic',
     title: 'Classic',
     description: 'The original drinking game with simple challenges',
-    color: '#9C5BD1',
+    color: '#e0b151',
     access: 'FREE'
   },
   {
@@ -103,8 +103,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
 
     const allPackQuestions: Question[] = questionsMap[packId]?.[lang] ?? [];
 
-    // Select random questions for the game session (40 per game)
-    const selectedQuestions = pickQuestions(allPackQuestions, 40, players.length);
+    // Select random questions for the game session (25 per game)
+    const selectedQuestions = pickQuestions(allPackQuestions, 25, players.length);
 
     set({
       currentPack: selectedPack,

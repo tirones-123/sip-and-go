@@ -1,5 +1,6 @@
 import Constants from 'expo-constants';
 import { Platform } from 'react-native';
+import Superwall from '@superwall/react-native-superwall';
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 import type { PurchasesPackage as RCPackage } from 'react-native-purchases';
@@ -42,17 +43,37 @@ export async function initRC(setIsPremium: (isPremium: boolean) => void): Promis
     }
     
     // Initialize RevenueCat
-    await Purchases.configure({ apiKey });
+    await Purchases.configure({ apiKey, observerMode: true });
     
     // Get initial customer info
     const { customerInfo } = await Purchases.getCustomerInfo();
     const premium = customerInfo.entitlements.active.premium !== undefined;
     setIsPremium(premium);
     
+    // Inform Superwall immediately
+    try {
+      const sw = (Superwall as any)?.shared;
+      if (sw) {
+        sw.subscriptionStatus = premium
+          ? { state: 'active', entitlements: new Set(['premium']) }
+          : { state: 'inactive' };
+      }
+    } catch {}
+    
     // Set up listener for entitlement changes
     Purchases.addCustomerInfoUpdateListener((info: any) => {
       const isPremium = info.entitlements.active.premium !== undefined;
       setIsPremium(isPremium);
+
+      // Sync with Superwall
+      try {
+        const sw = (Superwall as any)?.shared;
+        if (sw) {
+          sw.subscriptionStatus = isPremium
+            ? { state: 'active', entitlements: new Set(['premium']) }
+            : { state: 'inactive' };
+        }
+      } catch {}
     });
     
     console.log('RevenueCat initialized successfully');

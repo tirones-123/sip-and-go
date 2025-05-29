@@ -4,7 +4,9 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import * as Sentry from '@sentry/react-native';
 import Constants from 'expo-constants';
 import { useFonts, Montserrat_400Regular, Montserrat_800ExtraBold } from '@expo-google-fonts/montserrat';
-import { Text } from 'react-native';
+import { Text, Platform } from 'react-native';
+import Superwall from '@superwall/react-native-superwall';
+import { showPaywall } from './src/utils/superwall';
 
 import Navigation from './src/navigation';
 import { useGameStore } from './src/store/useGameStore';
@@ -42,6 +44,7 @@ export default function App() {
 
   // Get setPremium function from store
   const setPremium = useGameStore(state => state.setPremium);
+  const premium = useGameStore(state => state.premium);
   
   // Initialize RevenueCat and track app open
   useEffect(() => {
@@ -51,9 +54,31 @@ export default function App() {
       Sentry.captureException(error);
     });
     
-    // Track app open event
+    // Initialize Superwall
+    const superwallKey = Platform.OS === 'ios'
+      ? (Constants.expoConfig?.extra?.SUPERWALL_KEY_IOS as string | undefined)
+      : (Constants.expoConfig?.extra?.SUPERWALL_KEY_ANDROID as string | undefined);
+
+    if (superwallKey) {
+      try {
+        Superwall.configure({ apiKey: superwallKey });
+      } catch (e) {
+        console.error('Failed to configure Superwall:', e);
+        Sentry.captureException(e as Error);
+      }
+    } else if (__DEV__) {
+      console.warn('[Superwall] API key not provided – skipping initialization.');
+    }
+    
+    (async () => {
+      // Show paywall at app launch if user not premium
+      if (!premium) {
+        await showPaywall('app_open');
+      }
+    })();
+
     trackAppOpen();
-  }, [setPremium]);
+  }, [setPremium, premium]);
   
   if (!fontsLoaded) {
     // You can replace null with a splash screen if desired
@@ -61,7 +86,7 @@ export default function App() {
   }
 
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
       <StatusBar style="light" />
       <Navigation />
     </SafeAreaProvider>

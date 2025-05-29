@@ -9,7 +9,7 @@ import { Question } from '../types';
  */
 export const pickQuestions = (
   questions: Question[],
-  count: number = 40,
+  count: number = 25,
   playerCount: number = 2
 ): Question[] => {
   // Filter questions that have minimum player requirements

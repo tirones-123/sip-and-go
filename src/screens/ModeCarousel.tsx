@@ -18,6 +18,7 @@ import { useGameStore } from '../store/useGameStore';
 import { RootStackParamList } from '../navigation';
 import PackCard from '../components/PackCard';
 import { tintColor } from '../utils/colorUtils';
+import { showPaywall } from '../utils/superwall';
 
 type ModeCarouselScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'ModeCarousel'>;
 
@@ -34,7 +35,7 @@ const packImages: Record<string, any> = {
 };
 
 const FALLBACK_COLOR_DARK = '#0B0E1A'; // For footer
-const TINT_AMOUNT = 0.7; // 70% towards white, making it much lighter
+const TINT_AMOUNT = 0.5; // 40% towards white, making it darker than before
 const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
 
 /**
@@ -69,7 +70,7 @@ const ModeCarousel: React.FC = () => {
   // Animation setup: Scroll-dependent background color
   const scrollX = useSharedValue(0);
 
-  // Force header back to AddPlayers
+  // Force header hidden
   useLayoutEffect(() => {
     navigation.setOptions({
       headerShown: false, // Completely hide the header
@@ -77,16 +78,22 @@ const ModeCarousel: React.FC = () => {
   }, [navigation]);
   
   // Handle pack selection
-  const handlePlayPack = (packId: string) => {
+  const handlePlayPack = async (packId: string) => {
     const selectedPack = packs.find(p => p.id === packId);
     
-    // If the pack is locked and user is not premium, show paywall
+    // If the pack is locked and user is not premium, show Superwall paywall
     if (selectedPack?.access === 'LOCKED' && !premium) {
-      navigation.navigate('Paywall', { returnTo: 'ModeCarousel', packId });
+      // Show Superwall paywall – placement can be dynamic per pack
+      const placement = 'pack_click';
+      await showPaywall(placement, async () => {
+        // Called when user becomes premium
+        startPack(packId);
+        navigation.navigate('Question', { packId });
+      });
       return;
     }
-    
-    // Start the pack and navigate to Question screen
+
+    // Free pack or premium user
     startPack(packId);
     navigation.navigate('Question', { packId });
   };
@@ -136,25 +143,10 @@ const ModeCarousel: React.FC = () => {
         }}
       >
         <Image
-          source={require('../../assets/logo.png')}
-          style={{ height: 80, resizeMode: 'contain' }}
+          source={require('../../assets/logo-jauneclair.png')}
+          style={{ height: 100, resizeMode: 'contain' }}
         />
       </View>
-      <TouchableOpacity
-        style={{
-          position: 'absolute',
-          top: insets.top + HEADER_ELEMENT_TOP_PADDING,
-          left: 10, // Standard padding from left edge
-          zIndex: 2, // Ensure button is on top of logo if they overlap
-          padding: 8, // Increase tap area
-        }}
-        onPress={() => {
-          resetGame();
-          navigation.reset({ index: 0, routes: [{ name: 'AddPlayers' }] });
-        }}
-      >
-        <Text style={{ fontSize: 30, color: FALLBACK_COLOR_DARK }}>‹</Text>
-      </TouchableOpacity>
 
       {/* Carousel */}
       <AnimatedFlatList
@@ -192,9 +184,37 @@ const ModeCarousel: React.FC = () => {
         )}
       />
       
-      {/* Footer - Player count */}
-      <View style={[tw`mx-4 mb-6 px-6 py-4 rounded-2xl items-center shadow-lg`, { backgroundColor: FALLBACK_COLOR_DARK }]}>
-        <Text style={[tw`text-white text-lg font-bold`, { fontFamily: 'Montserrat_800ExtraBold' }]}>
+      {/* Footer - Back arrow + Player count */}
+      <View
+        style={[
+          tw`mx-4 mb-6 px-6 py-4 rounded-2xl shadow-lg`,
+          {
+            backgroundColor: FALLBACK_COLOR_DARK,
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+        ]}
+      >
+        {/* Back arrow */}
+        <TouchableOpacity
+          onPress={() => {
+            resetGame();
+            navigation.reset({ index: 0, routes: [{ name: 'AddPlayers' }] });
+          }}
+          style={{
+            position: 'absolute',
+            left: 16,
+            padding: 10,
+            backgroundColor: 'rgba(255,255,255,0.1)',
+            borderRadius: 12,
+          }}
+        >
+          <Text style={[tw`text-white font-black`, { fontSize: 20, fontWeight: '900' }]}>←</Text>
+        </TouchableOpacity>
+
+        {/* Player count */}
+        <Text style={[tw`text-white text-lg font-bold`, { fontFamily: 'Montserrat_800ExtraBold' }]}> 
           {t('modeCarousel.playerCount', { count: players.length })}
         </Text>
       </View>
@@ -202,4 +222,4 @@ const ModeCarousel: React.FC = () => {
   );
 };
 
-export default ModeCarousel; 
+export default ModeCarousel;

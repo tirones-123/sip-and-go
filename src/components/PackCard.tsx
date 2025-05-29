@@ -66,7 +66,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
   // const lightPillButtonTextColor = shadeColor(pack.color, 0.9); // For pill and button text - Now using white
 
   return (
-    <View
+    <TouchableOpacity
       style={[
         tw`rounded-3xl my-4 bg-transparent`,
         // Shadow to match the mockup (offset to the right and slightly down, soft)
@@ -79,28 +79,38 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
         },
         { width: itemWidth ?? 320 },
       ]}
+      onPress={() => onPlay(pack.id)}
+      activeOpacity={0.9}
     >
       {/* Inner container with clipping */}
       <View style={tw`rounded-3xl overflow-hidden`}>
 
       {/* Top Part */}
-      <View style={[tw`relative items-center pt-5 h-80 rounded-t-3xl`, { backgroundColor: pack.color }]}>
+      <View
+        style={[tw`relative items-center pt-5`, { backgroundColor: pack.color }]}
+      >
         {/* Title Pill */}
         <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
           <Text style={[tw`font-bold text-base text-center text-white`, { fontFamily: 'Montserrat_800ExtraBold' }]}>{packTitle}</Text>
         </View>
         
         {/* Hero Image Container - aligned to bottom */}
-        <View style={tw`flex-1 w-full items-center justify-end`}>
+        <View
+          style={{ width: '100%', aspectRatio: 4 / 3, justifyContent: 'flex-end' }}
+        >
           {/* Image takes full width of this container, resizeMode contain will handle aspect ratio */}
-          <Image source={heroImageSource} style={[tw`w-full h-full`, { resizeMode: 'contain' }]} />
+          <Image
+            source={heroImageSource}
+            style={tw`w-full h-full`}
+            resizeMode="contain"
+          />
         </View>
         {/* Lock overlay for premium packs - only top part */}
         {isLocked && (
           <> 
             <View style={tw`absolute inset-0 bg-black/60`} />
             <View style={tw`absolute top-4 right-4 bg-black/50 p-2 rounded-full`}>
-              <LockIcon size={24} color="#FFFFFF" />
+              <LockIcon size={24} bodyColor="#FFFFFF" shackleColor="#FFFFFF" />
             </View>
           </>
         )}
@@ -124,27 +134,28 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
               textShadowRadius: 5,
             },
           ]}
+          numberOfLines={2}
+          adjustsFontSizeToFit
+          minimumFontScale={0.6}
         >
           {packDescription}
         </Text>
         
         {/* Play Button */}
-        <TouchableOpacity
+        <View
           style={[
             tw`px-12 py-3 rounded-full shadow-md items-center justify-center`,
             { backgroundColor: darkAccentColor },
           ]}
-          onPress={() => onPlay(pack.id)}
-          activeOpacity={0.8}
         >
           <Text style={[tw`font-bold uppercase text-lg text-white`, { fontFamily: 'Montserrat_800ExtraBold' }]}>
             {t('modeCarousel.playButton')}
           </Text>
-        </TouchableOpacity>
+        </View>
       </View>
 
       </View>{/* end inner container */}
-    </View>
+    </TouchableOpacity>
   );
 };
 

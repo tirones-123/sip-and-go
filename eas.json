@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 16.7.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "env": {
+        "RC_KEY_IOS": "appl_xxxxxxxxx",
+        "RC_KEY_ANDROID": "goog_xxxxxxxxx",
+        "SUPERWALL_KEY_IOS": "pk_live_xxxxx",
+        "SUPERWALL_KEY_ANDROID": "pk_live_xxxxx",
+        "POSTHOG_KEY": "phc_xxxxx",
+        "POSTHOG_HOST": "https://eu.posthog.com"
+      }
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "production": {
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

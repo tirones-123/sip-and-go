@@ -5,28 +5,39 @@ import {
   TouchableOpacity, 
   Linking, 
   Platform,
-  ActivityIndicator
+  ActivityIndicator,
+  Image,
+  StyleSheet,
+  ScrollView
 } from 'react-native';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
 import tw from 'twrnc';
 import { PurchasesPackage } from 'react-native-purchases';
 
-import { useTranslation } from '../utils/i18n';
+import { useTranslation, getLanguage } from '../utils/i18n';
 import { useGameStore } from '../store/useGameStore';
 import { RootStackParamList } from '../navigation';
 import { getPackages, purchasePackage, restorePurchases } from '../utils/revenueCat';
 import Button from '../components/Button';
 import { AnalyticsEvent, posthog } from '../utils/analytics';
+import { tintColor } from '../utils/colorUtils';
+import en from '../strings/en';
+import fr from '../strings/fr';
 
 type PaywallScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Paywall'>;
 type PaywallScreenRouteProp = RouteProp<RootStackParamList, 'Paywall'>;
+
+// Main background color
+const BG_COLOR = '#FBA464';
 
 /**
  * Paywall screen - Premium subscription screen
  */
 const Paywall: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const navigation = useNavigation<PaywallScreenNavigationProp>();
   const route = useRoute<PaywallScreenRouteProp>();
   const { returnTo, packId } = route.params || {};
@@ -40,7 +51,11 @@ const Paywall: React.FC = () => {
   // Premium status from store
   const premium = useGameStore(state => state.premium);
   const setPremium = useGameStore(state => state.setPremium);
-  const startPack = useGameStore(state => state.startPack);
+  const storePacks = useGameStore(state => state.packs);
+  const resetGame = useGameStore(state => state.resetGame);
+  
+  // Background gradient
+  const lighterBg = tintColor(BG_COLOR, 0.15);
   
   // Load packages
   useEffect(() => {
@@ -63,12 +78,30 @@ const Paywall: React.FC = () => {
     posthog.capture(AnalyticsEvent.PREMIUM_VIEW);
   }, []);
   
-  // Navigate away if premium is already active
+  // Auto-close if premium and not in a 'replay' flow (where paywall should be shown)
   useEffect(() => {
-    if (premium && returnTo) {
-      handleClose();
+    if (premium && returnTo && returnTo !== 'Question') {
+      // If user is premium and paywall was opened from a context like Settings,
+      // navigate back to that screen.
+      switch (returnTo) {
+        case 'AddPlayers':
+          navigation.navigate('AddPlayers');
+          break;
+        case 'ModeCarousel':
+          navigation.navigate('ModeCarousel');
+          break;
+        case 'Settings':
+          navigation.navigate('Settings');
+          break;
+        // 'Question' is excluded by the if condition
+        // 'Paywall' itself is an unlikely returnTo target here
+        default:
+          // Fallback or handle other specific screens if needed
+          navigation.goBack(); 
+          break;
+      }
     }
-  }, [premium, returnTo]);
+  }, [premium, returnTo, navigation]);
   
   // Handle purchase
   const handlePurchase = async () => {
@@ -85,12 +118,8 @@ const Paywall: React.FC = () => {
           package: selectedPackage.identifier
         });
         
-        // Start the pack that was selected (if any)
-        if (packId) {
-          startPack(packId);
-        }
-        
-        handleClose();
+        // No need to call startPack here, Question screen will handle it via relaunchGame
+        handleCloseAfterAction();
       }
     } catch (error) {
       console.error('Purchase failed:', error);
@@ -113,12 +142,8 @@ const Paywall: React.FC = () => {
         // Update premium status
         setPremium(true);
         
-        // Handle navigation if pack was selected
-        if (packId) {
-          startPack(packId);
-        }
-        
-        handleClose();
+        // No need to call startPack here, Question screen will handle it via relaunchGame
+        handleCloseAfterAction();
       }
     } catch (error) {
       console.error('Restore failed:', error);
@@ -127,97 +152,192 @@ const Paywall: React.FC = () => {
     }
   };
   
-  // Handle close
-  const handleClose = () => {
-    if (returnTo === 'Question' && packId) {
-      navigation.navigate('Question', { packId });
+  // Handles navigation after a successful purchase or restore
+  const handleCloseAfterAction = () => {
+    const packInfo = storePacks.find(p => p.id === packId);
+    const canPlayPack = premium || packInfo?.access === 'FREE';
+
+    if (returnTo === 'Question' && packId && canPlayPack) {
+      navigation.navigate('Question', { packId, relaunchGame: true });
+    } else if (returnTo === 'Question') {
+      navigation.navigate('ModeCarousel');
+    } else if (returnTo) {
+      // Navigate to the specified screen
+      // This needs to be type-safe based on RootStackParamList
+      switch (returnTo) {
+        case 'AddPlayers':
+          navigation.navigate('AddPlayers');
+          break;
+        case 'ModeCarousel':
+          navigation.navigate('ModeCarousel');
+          break;
+        case 'Settings':
+          navigation.navigate('Settings');
+          break;
+        // It's unlikely to be 'Question' here without packId/relaunchGame logic handled above
+        // or 'Paywall' as a returnTo for itself.
+        default:
+          // Fallback if returnTo is a screen not explicitly handled or no params are needed
+          navigation.goBack(); 
+          break;
+      }
     } else {
       navigation.goBack();
     }
   };
+
+  // Handler for the "X" close button
+  const handleExplicitClosePress = () => {
+    if (returnTo === 'Question') {
+      // If closing the paywall that was shown for 'Replay',
+      // cancel replay, reset game state, and go to ModeCarousel.
+      resetGame(); // Reset the game state
+      navigation.replace('ModeCarousel');
+    } else {
+      // Otherwise (e.g. paywall opened from Settings), just go back
+      navigation.goBack();
+    }
+  };
   
-  // Fixed feature list items
-  const features = [
-    t('paywall.features.0'),
-    t('paywall.features.1'),
-    t('paywall.features.2')
-  ];
+  // Get features from strings
+  const features = lang === 'fr' ? fr.settings.premium.features : en.settings.premium.features;
   
   return (
-    <View style={tw`flex-1 bg-darkBg px-4 pt-12 pb-8`}>
+    <LinearGradient
+      colors={[lighterBg, BG_COLOR]}
+      style={tw`flex-1`}
+    >
       {/* Close button */}
       <TouchableOpacity
-        style={tw`absolute top-12 left-4 z-10 w-10 h-10 items-center justify-center`}
-        onPress={handleClose}
+        style={tw`absolute top-14 right-4 z-10 w-10 h-10 items-center justify-center bg-white/20 rounded-full`}
+        onPress={handleExplicitClosePress}
       >
-        <Text style={tw`text-white text-3xl`}>✕</Text>
+        <Ionicons name="close" size={24} color="#fff" />
       </TouchableOpacity>
       
-      {/* Content */}
-      <View style={tw`flex-1 items-center justify-center`}>
-        {/* App icon */}
-        <View style={tw`w-24 h-24 bg-roseCTA rounded-3xl items-center justify-center mb-6`}>
-          <Text style={tw`text-4xl`}>🍻</Text>
+      <ScrollView 
+        style={tw`flex-1`}
+        contentContainerStyle={tw`px-4 pt-20 pb-8`}
+        showsVerticalScrollIndicator={false}
+      >
+        {/* Logo */}
+        <View style={tw`items-center mb-8`}>
+          <Image 
+            source={require('../../assets/logo-jauneclair.png')} 
+            style={{ width: 140, height: 140, resizeMode: 'contain' }}
+          />
         </View>
         
-        {/* Title */}
-        <Text style={tw`text-white text-3xl font-bold mb-8`}>
-          {t('paywall.title')}
-        </Text>
-        
-        {/* Features list */}
-        <View style={tw`mb-8 w-4/5`}>
-          {features.map((feature, index) => (
-            <Text key={index} style={tw`text-white text-lg mb-3`}>
-              {feature}
+        {/* Premium card */}
+        <View style={[tw`bg-white rounded-3xl p-6 mb-6 relative overflow-hidden`, styles.premiumCard]}>
+          {/* Premium badge */}
+          <View style={tw`absolute top-0 right-0 bg-yellow-400 px-4 py-2 rounded-bl-2xl`}>
+            <Text style={tw`text-black text-sm font-bold`}>PREMIUM</Text>
+          </View>
+          
+          {/* Title with stars */}
+          <View style={tw`flex-row items-center justify-center mb-6 mt-2`}>
+            <Ionicons name="star" size={32} color="#FFD700" />
+            <Text style={[
+              tw`text-[${BG_COLOR}] text-3xl font-bold mx-3 text-center`,
+              { fontFamily: 'Montserrat_800ExtraBold' }
+            ]}>
+              {t('paywall.title')}
             </Text>
-          ))}
+            <Ionicons name="star" size={32} color="#FFD700" />
+          </View>
+          
+          {/* Features list */}
+          <View style={tw`mb-6`}>
+            {features.map((feature, index) => (
+              <View key={index} style={tw`flex-row items-start mb-3`}>
+                <Text style={tw`text-[${BG_COLOR}] text-lg`}>{feature}</Text>
+              </View>
+            ))}
+          </View>
+          
+          {/* Sparkle effects */}
+          <View style={tw`absolute top-6 left-6`}>
+            <Text style={tw`text-yellow-400 text-2xl`}>✨</Text>
+          </View>
+          <View style={tw`absolute bottom-6 right-6`}>
+            <Text style={tw`text-yellow-400 text-2xl`}>✨</Text>
+          </View>
         </View>
-        
-        {/* Purchase button */}
-        <Button
-          text={t('paywall.callToAction')}
-          size="large"
-          fullWidth
-          loading={isLoading}
-          onPress={handlePurchase}
-          style={tw`mb-2`}
-        />
         
         {/* Subscription info */}
-        <Text style={tw`text-white/60 text-sm mb-6`}>
+        <Text style={tw`text-white text-center text-base mb-2`}>
           {t('paywall.trialInfo')}
         </Text>
         
+        {/* Purchase button */}
+        <TouchableOpacity
+          onPress={handlePurchase}
+          disabled={isLoading}
+          style={[
+            tw`bg-white rounded-2xl py-5 px-8 mb-6`,
+            styles.ctaButton
+          ]}
+        >
+          {isLoading ? (
+            <ActivityIndicator size="small" color={BG_COLOR} />
+          ) : (
+            <Text style={tw`text-[${BG_COLOR}] text-xl font-bold text-center`}>
+              {t('paywall.callToAction')}
+            </Text>
+          )}
+        </TouchableOpacity>
+        
         {/* Restore purchases */}
-        <TouchableOpacity onPress={handleRestore} disabled={isRestoring}>
-          <Text style={tw`text-white/80 underline text-base mb-4`}>
-            {isRestoring ? (
-              <ActivityIndicator size="small" color="white" />
-            ) : (
-              t('paywall.restorePurchase')
-            )}
-          </Text>
+        <TouchableOpacity 
+          onPress={handleRestore} 
+          disabled={isRestoring}
+          style={tw`mb-6`}
+        >
+          {isRestoring ? (
+            <ActivityIndicator size="small" color="white" />
+          ) : (
+            <Text style={tw`text-white text-center underline text-base`}>
+              {t('paywall.restorePurchase')}
+            </Text>
+          )}
         </TouchableOpacity>
         
         {/* Legal links */}
         <View style={tw`flex-row justify-center`}>
           <TouchableOpacity 
             onPress={() => Linking.openURL('https://example.com/terms')}
-            style={tw`mx-2`}
+            style={tw`mx-3`}
           >
-            <Text style={tw`text-white/60 text-sm`}>{t('paywall.terms')}</Text>
+            <Text style={tw`text-white/80 text-sm underline`}>{t('paywall.terms')}</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             onPress={() => Linking.openURL('https://example.com/privacy')}
-            style={tw`mx-2`}
+            style={tw`mx-3`}
           >
-            <Text style={tw`text-white/60 text-sm`}>{t('paywall.privacy')}</Text>
+            <Text style={tw`text-white/80 text-sm underline`}>{t('paywall.privacy')}</Text>
           </TouchableOpacity>
         </View>
-      </View>
-    </View>
+      </ScrollView>
+    </LinearGradient>
   );
 };
+
+const styles = StyleSheet.create({
+  premiumCard: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.2,
+    shadowRadius: 16,
+    elevation: 10,
+  },
+  ctaButton: {
+    shadowColor: '#FFD700',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 12,
+    elevation: 8,
+  }
+});
 
 export default Paywall; 

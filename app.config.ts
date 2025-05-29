@@ -7,18 +7,19 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     '@sentry/react-native/expo',
   ];
 
-  if (isEas) {
-    plugins.push([
-      'react-native-purchases',
-      {
-        appUserID: null,
-        apiKey: {
-          ios: process.env.RC_KEY_IOS,
-          android: process.env.RC_KEY_ANDROID,
-        },
+  // Ensure required native build properties (Superwall requires iOS 14+, Android minSdk 26)
+  plugins.push([
+    'expo-build-properties',
+    {
+      ios: {
+        deploymentTarget: '15.1',
       },
-    ]);
-  }
+      android: {
+        minSdkVersion: 26,
+        extraMavenRepos: ['https://mvn.superwall.com/release'],
+      },
+    },
+  ]);
 
   return {
     ...config,
@@ -38,14 +39,17 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     ],
     ios: {
       supportsTablet: false,
-      bundleIdentifier: "com.yourcompany.picolo"
+      bundleIdentifier: "com.sipandgoapp.first",
+      infoPlist: {
+        ITSAppUsesNonExemptEncryption: false,
+      },
     },
     android: {
       adaptiveIcon: {
         foregroundImage: "./assets/adaptive-icon.png",
-        backgroundColor: "#0B0E1A"
+        backgroundColor: "#0B0E1A",
       },
-      package: "com.yourcompany.picolo"
+      package: "com.sipandgoapp.first",
     },
     extra: {
       eas: {
@@ -56,7 +60,10 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       RC_KEY_ANDROID: process.env.RC_KEY_ANDROID,
       POSTHOG_KEY: process.env.POSTHOG_KEY,
       POSTHOG_HOST: process.env.POSTHOG_HOST || "https://eu.posthog.com",
-      SENTRY_DSN: process.env.SENTRY_DSN
+      SENTRY_DSN: process.env.SENTRY_DSN,
+      // Superwall public API keys (set these in your .env file)
+      SUPERWALL_KEY_IOS: process.env.SUPERWALL_KEY_IOS,
+      SUPERWALL_KEY_ANDROID: process.env.SUPERWALL_KEY_ANDROID,
     },
     plugins
   };

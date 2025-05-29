@@ -62,13 +62,14 @@ export default {
   
   // Question
   question: {
-    quitButton: "Quitter",
-    managePlayers: "Gérer les joueurs",
-    finishedTitle: "Partie terminée !",
-    finishedSubtitle: "Appuie pour continuer",
-    quitConfirm: "Êtes-vous sûr de vouloir quitter la partie ?",
-    quitYes: "Quitter",
-    quitNo: "Annuler"
+    managePlayers: 'Gérer les joueurs',
+    finishedTitle: 'Partie terminée !',
+    finishedSubtitle: 'Appuyez pour continuer.',
+    quitConfirm: 'Es-tu sûr de vouloir quitter ? La partie sera perdue.',
+    quitNo: 'Non',
+    quitYes: 'Oui',
+    replayButton: 'Rejouer',
+    quitButton: 'Quitter le mode'
   },
   
   // Settings
@@ -76,7 +77,14 @@ export default {
     title: "Paramètres",
     premium: {
       title: "Passer Premium",
-      subtitle: "Débloquer tous les modes de jeu"
+      subtitle: "Débloquer tous les modes de jeu",
+      upgradeButton: "PASSER PREMIUM",
+      features: [
+        "🔓 Débloque tous les modes de jeu",
+        "🎯 Questions exclusives", 
+        "🎮 Nouveau contenu régulier",
+        "✅ Annulable à tout moment"
+      ]
     },
     subscription: {
       title: "Gérer l'abonnement",

@@ -19,9 +19,11 @@ import { useGameStore } from '../store/useGameStore';
 import { RootStackParamList } from '../navigation';
 import { formatQuestionParts, QuestionPart } from '../utils/pickQuestions';
 import { randomColorVariation, tintColor } from '../utils/randomPalette';
+import { CLASSIC_PALETTE, getNextClassicColor } from '../utils/classicPalette';
 import PlayerListItem from '../components/PlayerListItem';
 import Button from '../components/Button';
 import { trackQuestionViewed } from '../utils/analytics';
+import { showPaywall } from '../utils/superwall';
 
 type QuestionScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Question'>;
 type QuestionScreenRouteProp = RouteProp<RootStackParamList, 'Question'>;
@@ -34,6 +36,7 @@ const Question: React.FC = () => {
   const navigation = useNavigation<QuestionScreenNavigationProp>();
   const route = useRoute<QuestionScreenRouteProp>();
   const { packId } = route.params;
+  const relaunchGame = route.params?.relaunchGame;
   
   // Game state from store
   const currentPack = useGameStore(state => state.currentPack);
@@ -44,18 +47,36 @@ const Question: React.FC = () => {
   const addPlayer = useGameStore(state => state.addPlayer);
   const removePlayer = useGameStore(state => state.removePlayer);
   const resetGame = useGameStore(state => state.resetGame);
+  const startPack = useGameStore(state => state.startPack);
   
   // Local state
   const [backgroundColor, setBackgroundColor] = useState(currentPack?.color || '#0B0E1A');
+  const [colorIndex, setColorIndex] = useState<number | undefined>(undefined);
   const [showPlayersModal, setShowPlayersModal] = useState(false);
   const [newPlayerName, setNewPlayerName] = useState('');
   const [isFinished, setIsFinished] = useState(false);
   const [showQuitConfirm, setShowQuitConfirm] = useState(false);
+  const [stableFormattedParts, setStableFormattedParts] = useState<QuestionPart[]>([]);
   const modalInputRef = useRef<TextInput>(null);
   const shakeAnim = useRef(new Animated.Value(0)).current;
   
   // Current question
   const currentQuestion = currentQuestions[currentQuestionIndex];
+  
+  // Initial color setup
+  useEffect(() => {
+    if (currentPack) {
+      if (packId === 'classic') {
+        // For classic pack, use our custom color palette for question backgrounds
+        const { color, index } = getNextClassicColor();
+        setBackgroundColor(color);
+        setColorIndex(index);
+      } else {
+        // For other packs, start with the pack's color
+        setBackgroundColor(currentPack.color);
+      }
+    }
+  }, [currentPack, packId]);
   
   // Track question view
   useEffect(() => {
@@ -63,6 +84,24 @@ const Question: React.FC = () => {
       trackQuestionViewed(packId, currentQuestion.id);
     }
   }, [currentQuestion, packId]);
+  
+  // Update stable formatted parts only when question changes
+  useEffect(() => {
+    if (currentQuestion && players.length > 0) {
+      const newFormattedParts = formatQuestionParts(currentQuestion.text, players);
+      setStableFormattedParts(newFormattedParts);
+    }
+  }, [currentQuestion, currentQuestionIndex]); // Only depend on question, not players
+  
+  // Handle relaunching the game after Paywall
+  useEffect(() => {
+    if (relaunchGame && packId) {
+      startPack(packId);      // Restart the pack
+      setIsFinished(false);   // Ensure the finished overlay is hidden
+      // It might be good to reset navigation params to prevent re-triggering on focus
+      navigation.setParams({ relaunchGame: undefined }); 
+    }
+  }, [relaunchGame, packId, startPack, navigation]);
   
   // Handle next question
   const handleNextQuestion = () => {
@@ -72,10 +111,19 @@ const Question: React.FC = () => {
       return;
     }
 
-    // Otherwise next question with new color
-    if (currentPack?.color) {
-      setBackgroundColor(randomColorVariation(currentPack.color, 15, 10, 10));
+    // Update background color based on pack
+    if (currentPack) {
+      if (packId === 'classic') {
+        // For classic pack, cycle through our orange/yellow palette for question backgrounds
+        const { color, index } = getNextClassicColor(colorIndex);
+        setBackgroundColor(color);
+        setColorIndex(index);
+      } else {
+        // Random variation for other packs
+        setBackgroundColor(randomColorVariation(currentPack.color, 15, 10, 10));
+      }
     }
+    
     nextQuestion();
   };
   
@@ -83,11 +131,6 @@ const Question: React.FC = () => {
     resetGame();
     navigation.navigate('ModeCarousel');
   };
-  
-  // Build formatted parts so that player names can be styled
-  const formattedParts: QuestionPart[] = currentQuestion
-    ? formatQuestionParts(currentQuestion.text, players)
-    : [];
   
   // Handle quitting game
   const handleQuit = () => {
@@ -133,7 +176,23 @@ const Question: React.FC = () => {
           style={tw`w-10 h-10 bg-white/20 rounded-full items-center justify-center`}
           onPress={() => setShowPlayersModal(true)}
         >
-          <Text style={tw`text-white text-lg`}>👤</Text>
+          {/* Person icon drawn with Views */}
+          <View style={tw`items-center justify-center`}>
+            {/* Head */}
+            <View 
+              style={[
+                tw`w-2 h-2 rounded-full mb-0.5`,
+                { backgroundColor: '#FFFFFF' }
+              ]} 
+            />
+            {/* Body */}
+            <View 
+              style={[
+                tw`w-3 h-2 rounded-t-full`,
+                { backgroundColor: '#FFFFFF' }
+              ]} 
+            />
+          </View>
         </TouchableOpacity>
         
         {/* Quit button */}
@@ -143,6 +202,26 @@ const Question: React.FC = () => {
         >
           <Text style={tw`text-white text-lg`}>✕</Text>
         </TouchableOpacity>
+      </View>
+      
+      {/* Progress bar */}
+      <View style={tw`absolute top-31 left-4 right-4 z-20`}>
+        <View 
+          style={[
+            tw`h-5 rounded-full overflow-hidden`,
+            { backgroundColor: '#FFFFFF' }
+          ]}
+        >
+          <View 
+            style={[
+              tw`h-full rounded-full`,
+              { 
+                backgroundColor: currentPack?.color ? `${currentPack.color}80` : 'rgba(255, 255, 255, 0.5)',
+                width: `${((currentQuestionIndex + 1) / currentQuestions.length) * 100}%`
+              }
+            ]}
+          />
+        </View>
       </View>
       
       {/* Question text */}
@@ -164,7 +243,7 @@ const Question: React.FC = () => {
             },
           ]}
         >
-          {formattedParts.map((part, idx) => {
+          {stableFormattedParts.map((part, idx) => {
             if (part.type === 'player') {
               return (
                 <Text
@@ -189,17 +268,37 @@ const Question: React.FC = () => {
       
       {/* Finished overlay */}
       {isFinished && (
-        <Pressable
-          style={tw`absolute inset-0 bg-black/90 flex-1 justify-center items-center`}
-          onPress={handleFinishPress}
-        >
-          <Text style={[tw`text-white text-center text-3xl mb-4`, { fontFamily: 'Montserrat_800ExtraBold' }]}> 
+        <View style={[tw`absolute inset-0 flex-1 justify-center items-center p-6`, { backgroundColor: backgroundColor + 'e6' }]}>
+          <Text style={[tw`text-white text-center text-4xl mb-8`, { fontFamily: 'Montserrat_800ExtraBold' }]}> 
             {t('question.finishedTitle')}
           </Text>
-          <Text style={[tw`text-white text-center`, { fontFamily: 'Montserrat_400Regular' }]}> 
-            {t('question.finishedSubtitle')}
-          </Text>
-        </Pressable>
+          
+          <View style={tw`w-full`}>
+            <Button
+              text={t('question.replayButton')}
+              onPress={async () => {
+                await showPaywall('replay', () => {
+                  // Superwall unlocked, start pack again
+                  startPack(packId);
+                  setIsFinished(false);
+                });
+              }}
+              style={tw`mb-4 bg-white`}
+              textClassName={`text-[${backgroundColor}] font-bold`}
+              size="large"
+              fullWidth
+            />
+            <Button
+              text={t('question.quitButton')}
+              onPress={handleFinishPress}
+              variant="outline"
+              style={tw`border-white`}
+              textClassName="text-white font-bold"
+              size="large"
+              fullWidth
+            />
+          </View>
+        </View>
       )}
       
       {/* Players modal */}
@@ -238,7 +337,7 @@ const Question: React.FC = () => {
                 blurOnSubmit={false}
                 maxLength={20}
                 autoCorrect={false}
-                autoCapitalize="none"
+                autoCapitalize="words"
                 spellCheck={false}
                 autoComplete="off"
                 importantForAutofill="no"

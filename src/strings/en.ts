@@ -62,13 +62,14 @@ export default {
   
   // Question
   question: {
-    quitButton: "Quit",
-    managePlayers: "Manage Players",
-    finishedTitle: "Game Over",
-    finishedSubtitle: "Tap anywhere to continue",
-    quitConfirm: "Are you sure you want to quit the game?",
-    quitYes: "Quit",
-    quitNo: "Cancel"
+    managePlayers: 'Manage Players',
+    finishedTitle: 'Game Over!',
+    finishedSubtitle: 'Tap to continue.',
+    quitConfirm: 'Are you sure you want to quit? The game will be lost.',
+    quitNo: 'No',
+    quitYes: 'Yes',
+    replayButton: 'Play Again',
+    quitButton: 'Quit Mode'
   },
   
   // Settings
@@ -76,7 +77,14 @@ export default {
     title: "Settings",
     premium: {
       title: "Go Premium",
-      subtitle: "Unlock all game modes"
+      subtitle: "Unlock all game modes",
+      upgradeButton: "UPGRADE NOW",
+      features: [
+        "🔓 Unlock all game modes",
+        "🎯 Exclusive questions", 
+        "🎮 New content regularly",
+        "✅ Cancel anytime"
+      ]
     },
     subscription: {
       title: "Manage Subscription",

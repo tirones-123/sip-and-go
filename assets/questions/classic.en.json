@@ -1,237 +1,902 @@
 [
   {
     "id": "c1",
-    "text": "${player}, drink 2 sips!",
+    "text": "${player}, balance une soirée qui est partie en couilles. Si t’as rien à raconter, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c2",
-    "text": "Everyone who has ever been drunk, drink 1 sip.",
+    "text": "Go voter tous : qui serait le pire coloc ici ? Le ou la moins bankable prend 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c3",
-    "text": "${player}, choose someone to drink 3 sips.",
+    "text": "${player}, raconte le moment où tu t’es pris un vent qui t’a fait remettre ta vie en question. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c4",
-    "text": "The tallest player drinks 2 sips.",
+    "text": "${player}, selon toi, qui mytho le mieux ici ? Balance un blaze. Cette personne prend 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c5",
-    "text": "${player}, if you've ever sent a text to the wrong person, drink 2 sips. If not, give 2 sips.",
+    "text": "${player}, c’est quoi le pire truc que t’as balancé à un prof ? Si tu te défiles, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c6",
-    "text": "Everyone with blue eyes, drink 1 sip.",
+    "text": "${player}, si tu devais switch ta vie avec quelqu’un ici pendant une semaine, tu choisis qui ? Cette personne prend 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c7",
-    "text": "Everyone must say their favorite drink. ${player} chooses the best one, and that person drinks.",
+    "text": "Go voter tous : qui a les chaussettes les plus éclatées ? Ce héros prend 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c8",
-    "text": "${player}, drink as many sips as your age divided by 10, rounded up.",
+    "text": "Tous ceux qui ont déjà pécho ou tenté de pécho sur Insta prennent 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c9",
-    "text": "Everyone who has been outside the country drinks 2 sips.",
+    "text": "Tous ceux qui ont déjà mytho leur âge pour rentrer en boîte ramassent 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c10",
-    "text": "${player}, you're the thumb master until the next question. Whenever you put your thumb on the table, the last person to do the same drinks.",
+    "text": "${player}, si t’es déjà retourné(e) avec un ex, prends 2 pénalités. Courage.",
     "pack": "classic"
   },
   {
     "id": "c11",
-    "text": "Rock, paper, scissors between ${player} and the person to their right. Loser drinks 2 sips.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "Tous les gauchers prennent 1 pénalité. S’il y en a pas, tout le monde trin… prend.",
+    "pack": "classic"
   },
   {
     "id": "c12",
-    "text": "Everyone who has a sibling, drink 1 sip.",
+    "text": "Tous ceux qui ont une boule de poils ou un bestiau chez eux prennent 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c13",
-    "text": "${player}, close your eyes. Everyone votes if you should drink. Majority wins.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, imite quelqu’un ici. Si personne capte en 10 secondes, 2 pénalités pour ta pomme.",
+    "pack": "classic"
   },
   {
     "id": "c14",
-    "text": "Never have I ever... gone skinny dipping. Drink if you have.",
+    "text": "${player}, chante un refrain de Disney comme si t’étais à The Voice. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c15",
-    "text": "${player}, you're the rule maker. Make a rule that everyone must follow until the end of the game. Anyone who breaks it drinks 2 sips.",
+    "text": "${player}, lis ton dernier DM à voix haute. Même si c’est la honte. Sinon, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c16",
-    "text": "${player}, give 1 sip to ${player}.",
+    "text": "${player}, dis “je t’aime” en 3 langues. Sinon t’enchaînes 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c17",
-    "text": "Both ${player} and ${player} wearing glasses drink 2 sips.",
+    "text": "${player}, mime un film pour qu’on le devine. Si personne trouve, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c18",
-    "text": "${player}, sing a chorus chosen by ${player} or drink 3 sips.",
+    "text": "${player}, balance un dossier gênant sur quelqu’un ici. Sinon t’en prends 2.",
     "pack": "classic"
   },
   {
     "id": "c19",
-    "text": "Between ${player} and ${player}, whoever has the next birthday drinks 2 sips.",
+    "text": "${player}, t’es en couple ? Si oui, pénalité ultime direct.",
     "pack": "classic"
   },
   {
     "id": "c20",
-    "text": "${player} picks a category and ${player} starts naming items. First to fail drinks 2 sips.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, si t’as déjà ghosté après un câlin sous la couette, pénalité ultime.",
+    "pack": "classic"
   },
   {
     "id": "c21",
-    "text": "If ${player} and ${player} are single, they each drink 1 sip.",
+    "text": "${player}, t’as déjà fini dans la friendzone ? Si oui, pénalité ultime. C’est dur.",
     "pack": "classic"
   },
   {
     "id": "c22",
-    "text": "${player} swaps seats with ${player} opposite or drinks 2 sips.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, t’as jamais eu la gueule de bois ? Pénalité ultime… (et franchement, on y croit moyen).",
+    "pack": "classic"
   },
   {
     "id": "c23",
-    "text": "If ${player} or ${player} has failed a driving test, they drink 2 sips.",
+    "text": "${player}, si t’as déjà chouré un truc, même un vieux stylo, pénalité ultime.",
     "pack": "classic"
   },
   {
     "id": "c24",
-    "text": "${player} starts counting, ${player} follows; whoever hesitates drinks 1 sip.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, si t’es l’aîné(e) de ta fratrie, pas de chance : pénalité ultime.",
+    "pack": "classic"
   },
   {
     "id": "c25",
-    "text": "If ${player} or ${player}'s first name starts with a vowel, they drink 1 sip each.",
+    "text": "${player}, si tu t’es déjà endormi(e) en soirée comme une larve, prends ta pénalité ultime.",
     "pack": "classic"
   },
   {
     "id": "c26",
-    "text": "${player} tells a truth; if ${player} has done the same, both drink 1 sip.",
+    "text": "${player}, c’est quoi le move le plus claqué que t’as fait par love ? Balance ou 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c27",
-    "text": "Between ${player} and ${player}, the one with the lowest phone battery drinks 2 sips.",
+    "text": "${player}, raconte ta pire soirée ever. Si tu préfères garder ça pour ton psy, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c28",
-    "text": "${player} picks a word; ${player} begins the rhymes. First fail drinks 2 sips.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "Go voter tous : qui ici oublierait l’anniv de sa daronne ? Le grand gagnant prend 2 pénalités.",
+    "pack": "classic"
   },
   {
     "id": "c29",
-    "text": "If ${player} or ${player} has fallen asleep on public transport, they drink 1 sip each.",
+    "text": "Tous ceux qui ont déjà lâché une petite larme devant un Disney prennent 1 pénalité (assumez !).",
     "pack": "classic"
   },
   {
     "id": "c30",
-    "text": "${player} and ${player} play rock-paper-scissors; loser drinks 2 sips.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "Tous ceux qui ont déjà stalké un(e) ex sur Insta ou autre prennent 1 pénalité.",
+    "pack": "classic"
   },
   {
     "id": "c31",
-    "text": "If ${player} and ${player} are wearing jeans, they each drink 1 sip.",
+    "text": "Celui ou celle avec le plus de bagouzes ou de bracelets prend 1 pénalité. Faut assumer le drip.",
     "pack": "classic"
   },
   {
     "id": "c32",
-    "text": "${player} picks an accent for ${player}. If they refuse, they drink 2 sips.",
+    "text": "${player}, montre-nous ta dernière photo. Si tu flippes, c’est 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c33",
-    "text": "Between ${player} and ${player}, the taller gives 2 sips to someone of their choice.",
+    "text": "${player}, chacun son tour, chante une pub de quand t’étais petit. Celui qui cale prend 1 pénalité.",
     "pack": "classic"
   },
   {
     "id": "c34",
-    "text": "${player} makes ${player} the thumb master. Same rules apply.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, si t’as déjà dit \"je t’aime\" juste pour conclure, pénalité ultime. Pas cool.",
+    "pack": "classic"
   },
   {
     "id": "c35",
-    "text": "If ${player} or ${player} has broken a bone, they drink 1 sip.",
+    "text": "Go voter tous : qui sort toujours les mêmes anecdotes éclatées ? 2 pénalités pour le ou la rediff.",
     "pack": "classic"
   },
   {
     "id": "c36",
-    "text": "${player} points at the messiest ${player}. They drink 2 sips.",
+    "text": "Go voter tous : qui a clairement un secret bien dark ? Cette personne prend 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c37",
-    "text": "If ${player} or ${player} has met a celebrity, they drink 1 sip each.",
+    "text": "Go voter tous : qui serait le premier à se paumer en forêt ? Le ou la désignée, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c38",
-    "text": "${player} chooses a body part. Everyone touches it; ${player} last to touch drinks 1 sip.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "Go voter tous : qui est la plus grosse commère ici ? Cette légende prend 2 pénalités.",
+    "pack": "classic"
   },
   {
     "id": "c39",
-    "text": "If ${player} or ${player} has a cracked phone screen, they drink 2 sips.",
+    "text": "${player}, raconte un moment où t’as eu honte puissance 1000 en soirée. Si tu veux esquiver, 3 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c40",
-    "text": "${player} tells a joke to ${player}. If nobody laughs, ${player} drinks 3 sips.",
+    "text": "${player}, une anecdote gênante avec un(e) ex ? Si c’est trop chaud à raconter, prends 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c41",
-    "text": "Players born in the same month as ${player} or ${player} drink 1 sip.",
+    "text": "${player}, c’est quoi le truc le plus chelou que t’as fait solo chez toi ? Si t’assumes pas, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c42",
-    "text": "${player} challenges ${player} to a staring contest. Loser drinks 2 sips.",
-    "pack": "classic",
-    "minPlayers": 3
+    "text": "${player}, c’est quoi le surnom bien honteux qu’on t’a déjà donné ? Si tu veux pas assumer, 1 pénalité.",
+    "pack": "classic"
   },
   {
     "id": "c43",
-    "text": "If ${player} and ${player} have ever lied about their age, they each drink 1 sip.",
+    "text": "${player}, fais-nous 3 cris d’animaux chelous. Si tu te défiles, 2 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c44",
-    "text": "${player} picks a forbidden word for ${player}. Each slip costs 1 sip.",
+    "text": "${player}, chope un accent chelou et garde-le deux tours. Si t’assumes pas, 3 pénalités.",
     "pack": "classic"
   },
   {
     "id": "c45",
-    "text": "Group selfie! If ${player} or ${player} forgets to post it by tomorrow, they owe 3 sips next game.",
+    "text": "${player}, c’est quoi le deuxième blaze de la personne à ta gauche ? Tu plantes ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c46",
+    "text": "${player}, cite 3 objets du quotidien qui pourraient servir de sextoy. Si tu refuses, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c47",
+    "text": "${player}, lâche 3 sons de Britney Spears. Si t’en trouves pas, 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c48",
+    "text": "${player}, t’as déjà stalké quelqu’un ici ? Qui ? Si tu balances pas, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c49",
+    "text": "Ceux qui ont déjà mytho ce soir prennent 2 pénalités. (On vous mate 👀).",
+    "pack": "classic"
+  },
+  {
+    "id": "c50",
+    "text": "${player}, si t’as lu cette carte à voix haute, distribue 3 pénalités comme bon te semble. Fais-toi kiffer.",
+    "pack": "classic"
+  },
+  {
+    "id": "c51",
+    "text": "T’as déjà zappé le blaze de quelqu’un ici ? Les concernés prennent 2 pénalités. La mémoire, les gars.",
+    "pack": "classic"
+  },
+  {
+    "id": "c52",
+    "text": "Go voter tous : qui a le rire le plus gênant ici ? Le ou la désignée prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c53",
+    "text": "T’as déjà stalké l’ex de ton ex ? Avoue. Ceux qui l’ont fait prennent 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c54",
+    "text": "Go voter tous : qui répond genre trois jours après à un message ? Cette personne prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c55",
+    "text": "${player}, qu’est-ce qui te fait rougir comme une tomate ? Lâche 3 trucs ou prends 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c56",
+    "text": "Go voter tous : tu penses que quelqu’un ici a un crush sur toi ? Si t’es minoritaire, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c57",
+    "text": "${player}, qui râle non-stop ici ? File-lui direct 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c58",
+    "text": "${player}, t’as déjà sorti un surnom d’ex par réflexe ? Si oui, c’est pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c59",
+    "text": "Go voter tous : qui est la personne la plus suceptible ici ? Elle prend 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c60",
+    "text": "${player}, raconte une anecdote gênante à base d’alcool. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c61",
+    "text": "${player}, t’as déjà fait genre t’étais sobre alors que t’étais cuit(e) ? Si oui, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c62",
+    "text": "Tous ceux qui sont tombés love en vacances : 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c63",
+    "text": "Tous ceux qui dorment encore avec leur doudou : 1 pénalité (vous êtes trop mims).",
+    "pack": "classic"
+  },
+  {
+    "id": "c64",
+    "text": "Tous ceux qui ont déjà gerbé dans la rue : 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c65",
+    "text": "${player}, lis à voix haute ton dernier DM Insta. Si tu flippes, c’est 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c66",
+    "text": "${player}, dis une qualité que tu trouves sexy chez ${player}. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c67",
+    "text": "Tous ceux qui ont déjà envoyé un \"je pense à toi\" à un ex en pleine nuit : pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c68",
+    "text": "${player}, cite 3 trucs chelous que t’as déjà faits sous la douche. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c69",
+    "text": "${player}, avec qui ici tu voudrais surtout pas rester bloqué(e) dans un ascenseur ? Cette personne prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c70",
+    "text": "Tous ceux qui ont déjà envoyé un vocal gênant sans faire exprès : 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c71",
+    "text": "Tous ceux qui ont retexté un ex : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c72",
+    "text": "Tous ceux qui ont rêvé chelou d’un(e) pote ici : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c73",
+    "text": "Go voter tous : qui ici pourrait percer en tant qu’influenceur ? Cette personne distribue 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c74",
+    "text": "Go voter tous : qui passe sa vie à stalker les gens ? Cette personne prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c75",
+    "text": "Go voter tous : qui a le plus de chances de finir éclaté(e) ce soir ? 2 pénalités pour cette légende.",
+    "pack": "classic"
+  },
+  {
+    "id": "c76",
+    "text": "Tous ceux qui ont une appli de rencontre sur leur tel : pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c77",
+    "text": "${player}, tu t’es déjà réveillé(e) dans un endroit chelou après une soirée ? Si oui, 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c78",
+    "text": "Go voter tous : qui a les goûts musicaux les plus éclatés ? Cette personne prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c79",
+    "text": "Go voter tous : qui sort les meilleurs tea ici ? Il/elle distribue 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c80",
+    "text": "${player}, balance une habitude chelou que t’as, mais que tu veux surtout pas que tes potes sachent.",
+    "pack": "classic"
+  },
+  {
+    "id": "c81",
+    "text": "${player}, cite 2 expressions que tu sors tout le temps. Genre t’as un disque rayé.",
+    "pack": "classic"
+  },
+  {
+    "id": "c82",
+    "text": "${player}, lâche 2 trucs chelous que tu fais en scred. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c83",
+    "text": "${player}, nouveau jeu : dis un mot qui rime avec “alcool”. Celui qui sèche se prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c84",
+    "text": "${player}, chacun son tour balance une capitale européenne. Celui qui bug ou sort une dinguerie : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c85",
+    "text": "${player}, tour à tour, on lâche une appli de rencontre. Celui qui a zéro inspi prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c86",
+    "text": "À partir de maintenant, interdit de dire “oui” ou “non” jusqu’à la prochaine carte. Celui qui se fait avoir, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c87",
+    "text": "${player}, choisis un mot simple. Celui qui le dit dans les 3 prochaines cartes prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c88",
+    "text": "Règle : personne n’a le droit de pointer du doigt. Tu le fais ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c89",
+    "text": "Règle : on remplace “boire” par “manger”. Si tu te foires, c’est 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c90",
+    "text": "${player}, chaque fois que tu bois, tu lèves le pouce. T’oublies ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c91",
+    "text": "${player}, t’es le perroquet de ${player} maintenant. Répète tout ce qu’il/elle dit, sinon 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c92",
+    "text": "Le premier qui touche ses cheveux se prend 2 pénalités. Mains en l’air les nerveux.",
+    "pack": "classic"
+  },
+  {
+    "id": "c93",
+    "text": "${player}, si quelqu’un dit ton blaze, tu dois aboyer. Tu l’oublies ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c94",
+    "text": "Le dernier à poser ses coudes sur la table perd : 2 pénalités pour le/la molle.",
+    "pack": "classic"
+  },
+  {
+    "id": "c95",
+    "text": "Jusqu’à ta prochaine carte, tu dois chanter toutes tes réponses. Pas envie ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c96",
+    "text": "${player}, choisis une personne qui ne doit plus te regarder dans les yeux. Si elle le fait, elle se prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c97",
+    "text": "Dès maintenant, tout le monde doit dire “merci” après avoir bu. Celui qui zappe, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c98",
+    "text": "${player}, prends un accent (what you want) pour les 2 prochains tours. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c99",
+    "text": "Nouveau défi : tout le monde finit ses phrases par “chef”. Tu l’oublies ? Bim, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c100",
+    "text": "Interdit de croiser bras ou jambes jusqu’à nouvel ordre. Le premier qui bug, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c101",
+    "text": "${player}, cite 3 trucs chelous que tu fais quand y’a personne. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c102",
+    "text": "${player}, t’as déjà fait un plan à trois (ou plus) ? Si oui, file 2 pénalités. Si non, prends-les pour toi.",
+    "pack": "classic"
+  },
+  {
+    "id": "c103",
+    "text": "${player}, si t’as déjà envoyé un nude, distribue 2 pénalités. Sinon, garde-les.",
+    "pack": "classic"
+  },
+  {
+    "id": "c104",
+    "text": "${player}, raconte ton pire date Tinder. Si tu veux pas, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c105",
+    "text": "${player}, c’est quoi ta zone érogène préférée ? Si tu veux pas balancer, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c106",
+    "text": "${player}, si tu devais rouler une pelle à un joueur ici, ce serait qui ? Dis-le ou 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c107",
+    "text": "Tous ceux qui sont en mode string ou boxer ultra moulax ce soir prennent 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c108",
+    "text": "Tous ceux qui ont déjà mis les pieds dans un club de strip-tease prennent 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c109",
+    "text": "Tous ceux qui ont déjà fait des galipettes dans un lieu public : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c110",
+    "text": "${player}, t’as déjà eu un blackout total ? Si oui, file 2 pénalités. Sinon, prends-les.",
+    "pack": "classic"
+  },
+  {
+    "id": "c111",
+    "text": "${player}, si t’as déjà eu un embrouille ou une baston en soirée, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c112",
+    "text": "${player}, envoie un message à ton daron et demande-lui 2 prénoms de ses ex. Tu veux pas ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c113",
+    "text": "${player}, dis-nous un truc que tu détestes chez ${player}. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c114",
+    "text": "Tous ceux qui portent des sous-vêtements noirs peuvent donner 1 pénalité. Preuve à l’appui 😏",
+    "pack": "classic"
+  },
+  {
+    "id": "c115",
+    "text": "Tous ceux qui ont déjà fait une sextape ou une photo bien osée prennent 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c116",
+    "text": "Tous ceux qui sont vierges de cuite prennent une pénalité ultime. Bienvenue dans le game.",
+    "pack": "classic"
+  },
+  {
+    "id": "c117",
+    "text": "Votez tous : qui ferait le meilleur coup d’un soir ici ? La personne désignée distribue 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c118",
+    "text": "${player}, t’as déjà ghosté quelqu’un juste après un câlin sous la couette ? Pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c119",
+    "text": "${player}, t’as déjà rêvé de quelqu’un ici ce soir ? Raconte, ou 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c120",
+    "text": "${player}, dis le blaze de ton crush à l’oreille de ${player}. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c121",
+    "text": "Tous ceux qui n’ont pas eu de câlin intime depuis 3 mois prennent 1 pénalité. Allez, on se soutient.",
+    "pack": "classic"
+  },
+  {
+    "id": "c122",
+    "text": "${player}, ferme les yeux. De quelle couleur sont les pompes de ${player} ? Si tu te rates, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c123",
+    "text": "${player}, cite 10 capitales à la suite. Tu te foires ? 2 pénalités, géographe en carton.",
+    "pack": "classic"
+  },
+  {
+    "id": "c124",
+    "text": "${player}, décris ton daron à poil. Tu veux pas ? 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c125",
+    "text": "${player} et ${player}, front contre front pendant 10 secondes. Vous esquivez ? 2 pénalités chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c126",
+    "text": "${player}, où tu penses que ${player} kiffe se faire toucher ? Tu dis rien ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c127",
+    "text": "${player}, mime comment tu penses que ${player} roule une pelle. T’oses pas ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c128",
+    "text": "${player}, note ${player} sur 10 niveau expérience. Moins de 5 ? Cette personne prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c129",
+    "text": "${player}, choisis : tu prends 3 pénalités ou tu files 1 pénalité à ${player}. C’est toi qui vois.",
+    "pack": "classic"
+  },
+  {
+    "id": "c130",
+    "text": "${player}, montre ton dernier message reçu/envoyé. Tu flippes ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c131",
+    "text": "${player}, choisis : ${player} prend 3 pénalités ou toi t’en prends une bien vénère (pénalité ultime).",
+    "pack": "classic"
+  },
+  {
+    "id": "c132",
+    "text": "${player}, fais un câlin à ${player}. Sinon, vous vous ramassez 2 pénalités chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c133",
+    "text": "${player}, regarde ${player} dans les yeux et balance un fantasme. Si tu bégayes, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c134",
+    "text": "Votez tous : qui ici est une bombe atomique ? La personne élue prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c135",
+    "text": "${player}, t’es convié(e) à une orgie. Tu ramènes quoi ? Cite 3 trucs ou prends 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c136",
+    "text": "${player}, c’est quoi ta catégorie pref sur un site X ? Assume ou prends 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c137",
+    "text": "${player}, avec qui ici tu tenterais bien un plan à 3 ? Donne un nom ou prends une pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c138",
+    "text": "${player}, balance le prénom de ton meilleur coup. Tu te défiles ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c139",
+    "text": "${player}, maintenant ton pire coup. Même deal : tu balances ou 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c140",
+    "text": "${player}, sans donner de prénom, décris la personne ici que tu trouves la plus sexy. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c141",
+    "text": "${player}, avec qui ici tu pourrais dormir à poil dans le même lit sans qu’il se passe (ou pas) un truc ? Donne un blaze ou pénalité ultime.",
+    "pack": "classic"
+  },
+  {
+    "id": "c142",
+    "text": "${player}, va murmurer à l’oreille de qui tu veux ce que tu lui ferais sans limite. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c143",
+    "text": "${player}, caresse-toi le cou version slow torride pendant 10 secondes sous le regard de quelqu’un. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c144",
+    "text": "${player}, frotte ton nez contre celui d’un joueur 5 secondes comme dans un film bien gênant. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c145",
+    "text": "${player}, colle ton front à celui de quelqu’un ici. Malaise accepté. Tu refuses ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c146",
+    "text": "${player}, lèche ton doigt et touche le front d’un joueur en disant “béni soit-il”. Si t’assumes pas : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c147",
+    "text": "${player}, file un défi à ${player}. S’il le fait, il distribue 2 pénalités à qui il veut (sauf toi).",
+    "pack": "classic"
+  },
+  {
+    "id": "c148",
+    "text": "${player}, donne 5 balles ou prends 2 pénalités. Le karma te regarde.",
+    "pack": "classic"
+  },
+  {
+    "id": "c149",
+    "text": "${player}, roule une pelle à ${player}. Si ça bloque, 2 pénalités pour toi.",
+    "pack": "classic"
+  },
+  {
+    "id": "c150",
+    "text": "Ceux qui ont déjà pécho quelqu’un autour de la table prennent 2 pénalités. Avouez.",
+    "pack": "classic"
+  },
+  {
+    "id": "c151",
+    "text": "${player}, c’est quoi la partie du corps de ${player} que tu kiffes le plus ? Si t’aimes rien, il/elle prend 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c152",
+    "text": "${player}, dis la partie de ton corps que t’aimes le moins. Tu veux pas ? 1 pénalité pour toi.",
+    "pack": "classic"
+  },
+  {
+    "id": "c153",
+    "text": "${player}, envoie un cœur à ton ex en DM. Tu flippes ? 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c154",
+    "text": "${player}, respire un bon coup sous l’aisselle de ${player}. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c155",
+    "text": "${player}, mets ton doigt dans la bouche de ${player}. Si ça bloque, c’est 2 pénalités pour toi.",
+    "pack": "classic"
+  },
+  {
+    "id": "c156",
+    "text": "${player}, c’est quoi le mois de naissance de ${player} ? Tu te rates ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c157",
+    "text": "${player}, devine la taille de ${player} à 2 cm près. Mauvaise pioche ? 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c158",
+    "text": "${player} vs ${player} : le premier à citer un sort d’Harry Potter donne une pénalité à l’autre.",
+    "pack": "classic"
+  },
+  {
+    "id": "c159",
+    "text": "${player} vs ${player} : chifoumi time. Le perdant prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c160",
+    "text": "${player}, distribue autant de pénalités qu’il y a d’années d’écart entre toi et ${player}.",
+    "pack": "classic"
+  },
+  {
+    "id": "c161",
+    "text": "${player}, fais un câlin à ${player}. Si vous fuyez l’amour, vous prenez 1 pénalité chacun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c162",
+    "text": "${player}, si t’es à moins de 50 % de batterie, ramasse 2 pénalités. Fallait charger.",
+    "pack": "classic"
+  },
+  {
+    "id": "c163",
+    "text": "${player} vs ${player} : le premier qui balance la 12e lettre de l’alphabet sans tricher met une pénalité à l’autre.",
+    "pack": "classic"
+  },
+  {
+    "id": "c164",
+    "text": "Tout le monde prend une pénalité. Pas de jaloux, ça réchauffe.",
+    "pack": "classic"
+  },
+  {
+    "id": "c165",
+    "text": "Tous ceux qui ont un prénom qui commence par une voyelle prennent 1 pénalité. Blâmez vos darons.",
+    "pack": "classic"
+  },
+  {
+    "id": "c166",
+    "text": "${player}, t’as un talent chelou ? Montre-nous. Sinon, 2 pénalités pour la timidité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c167",
+    "text": "En commençant par ${player}, chacun chante une ligne de la Marseillaise. Le premier qui cale : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c168",
+    "text": "${player}, distribue autant de pénalités qu’il y a d’années entre maintenant et ton dépucelage.",
+    "pack": "classic"
+  },
+  {
+    "id": "c169",
+    "text": "${player} vs ${player} : celui qui balance le plus vite un film qui commence par un F gagne. L’autre prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c170",
+    "text": "En partant de ${player}, chacun cite un film qui commence par un A. Celui qui bug prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c171",
+    "text": "${player}, fais 10 pompes ou assume 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c172",
+    "text": "${player}, fais 15 squats. Tu refuses ? 2 pénalités. Et pas de triche.",
+    "pack": "classic"
+  },
+  {
+    "id": "c173",
+    "text": "${player}, si t’as déjà brossé tes dents aujourd’hui, prends 1 pénalité. Juste pour le fun.",
+    "pack": "classic"
+  },
+  {
+    "id": "c174",
+    "text": "En partant de ${player}, chacun balance un Youtubeur connu. Celui qui bug, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c175",
+    "text": "Wesh ${player}, à chaque fois que tu parles pendant 3 tours, tu dois commencer par “Wesh”. Tu zappes ? 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c176",
+    "text": "${player}, mets une note 5 étoiles à ce jeu… ou mange-toi 3 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c177",
+    "text": "${player}, si t’as déjà eu un crush sur quelqu’un ici, prends 1 pénalité. Même si t’es grillé.",
+    "pack": "classic"
+  },
+  {
+    "id": "c178",
+    "text": "${player}, raconte un moment où t’as fait l’amour dans un endroit improbable. Si tu veux pas, 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c179",
+    "text": "${player} vs ${player} : le plus rapide à se toucher le nez avec la langue gagne. L’autre prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c180",
+    "text": "Le joueur le plus poilu à table distribue 1 pénalité. Fierté capillaire.",
     "pack": "classic"
   }
-] 
+]

@@ -14,7 +14,7 @@ import Settings from '../screens/Settings';
 export type RootStackParamList = {
   AddPlayers: undefined;
   ModeCarousel: undefined;
-  Question: { packId: string };
+  Question: { packId: string; relaunchGame?: boolean };
   Paywall: { returnTo?: keyof RootStackParamList; packId?: string };
   Settings: undefined;
 };
@@ -88,6 +88,7 @@ const Navigation: React.FC = () => {
             presentation: 'fullScreenModal',
             headerShown: false,
             gestureEnabled: false,
+            animation: 'none'
           }}
         />
         
