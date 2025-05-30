@@ -26,6 +26,7 @@ export interface GameState {
   players: string[];
   packs: Pack[];
   premium: boolean;
+  manualPremiumOverride: boolean;
   currentPack?: Pack;
   currentQuestions: Question[];
   currentQuestionIndex: number;
@@ -42,6 +43,8 @@ export interface GameActions {
   nextQuestion: () => void;
   resetGame: () => void;
   setPremium: (isPremium: boolean) => void;
+  overridePremium: (value: boolean) => void;
+  clearPremiumOverride: () => void;
 }
 
 /**

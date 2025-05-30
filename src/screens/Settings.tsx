@@ -38,7 +38,7 @@ const Settings: React.FC = () => {
   
   // Premium status from store
   const premium = useGameStore(state => state.premium);
-  const setPremium = useGameStore(state => state.setPremium);
+  const overridePremium = useGameStore(state => state.overridePremium);
   
   // Set header background color and hide the header
   useLayoutEffect(() => {
@@ -100,7 +100,7 @@ const Settings: React.FC = () => {
   
   // Toggle premium for development
   const togglePremiumDev = () => {
-    setPremium(!premium);
+    overridePremium(!premium);
   };
   
   /**
@@ -112,7 +112,7 @@ const Settings: React.FC = () => {
   const handleLogoPressIn = () => {
     // Appui long 3s pour basculer premium (utilisable en prod et dev)
     logoPressTimer.current = setTimeout(() => {
-      setPremium(!premium);
+      overridePremium(!premium);
     }, 3000); // 3 seconds
   };
 

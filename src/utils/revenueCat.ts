@@ -68,7 +68,11 @@ export async function initRC(setIsPremium: (isPremium: boolean) => void): Promis
     // Set up listener for entitlement changes
     Purchases.addCustomerInfoUpdateListener((info: any) => {
       const isPremium = !!info?.entitlements?.active?.premium;
-      setIsPremium(isPremium);
+      // Respect manual override
+      const { manualPremiumOverride } = require('../store/useGameStore').useGameStore.getState();
+      if (!manualPremiumOverride) {
+        setIsPremium(isPremium);
+      }
 
       // Sync with Superwall
       try {

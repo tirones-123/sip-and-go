@@ -49,6 +49,7 @@ const initialState = {
   players: [],
   packs: DEFAULT_PACKS,
   premium: false,
+  manualPremiumOverride: false,
   currentQuestions: [],
   currentQuestionIndex: 0,
   isGameStarted: false
@@ -146,6 +147,19 @@ export const useGameStore = create<GameStore>((set, get) => ({
    * Set premium status
    */
   setPremium: (isPremium) => {
-    set({ premium: isPremium });
+    set(state => ({
+      premium: isPremium,
+      manualPremiumOverride: state.manualPremiumOverride || __DEV__ // conserve override en dev
+    }));
+  },
+  
+  /** Force premium override from hidden menu */
+  overridePremium: (value: boolean) => {
+    set({ premium: value, manualPremiumOverride: true });
+  },
+  
+  /** Clear manual override, e.g., after real purchase */
+  clearPremiumOverride: () => {
+    set({ manualPremiumOverride: false });
   }
 })); 
