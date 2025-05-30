@@ -71,10 +71,9 @@ export default function App() {
     }
     
     (async () => {
-      // Show paywall at app launch if user not premium
-      if (!premium) {
-        await showPaywall('app_open');
-      }
+      // Le paywall « app_open » est maintenant géré via le placement automatique
+      // « session_start » depuis le dashboard Superwall ; on ne déclenche plus
+      // manuellement de paywall ici.
     })();
 
     trackAppOpen();

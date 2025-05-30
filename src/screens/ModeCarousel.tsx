@@ -85,10 +85,13 @@ const ModeCarousel: React.FC = () => {
     if (selectedPack?.access === 'LOCKED' && !premium) {
       // Show Superwall paywall – placement can be dynamic per pack
       const placement = 'pack_click';
-      await showPaywall(placement, async () => {
-        // Called when user becomes premium
-        startPack(packId);
-        navigation.navigate('Question', { packId });
+      await showPaywall(placement, () => {
+        // Vérifie si l'utilisateur est devenu premium avant de démarrer la partie
+        const { premium: nowPremium } = useGameStore.getState();
+        if (nowPremium) {
+          startPack(packId);
+          navigation.navigate('Question', { packId });
+        }
       });
       return;
     }

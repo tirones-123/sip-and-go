@@ -1,127 +1,527 @@
 [
   {
     "id": "c1",
-    "pack": "hot",
-    "text": "${player}, envoie un DM “Tu me manques cette nuit” à ton ex ou prends 3 pénalités. 📲"
+    "text": "${player}, envoie \"Tu me manques cette nuit\" à ton ex en DM, sinon 3 sales pénalités. 📲",
+    "pack": "spicy"
   },
   {
     "id": "c2",
-    "pack": "hot",
-    "text": "Votez tous : qui ici est sûrement en manque ? La personne choisie prend 3 pénalités. 🥲"
+    "text": "Votez tous : qui ici est en chien ? Celui qu’on choisit se prend 3 pénalités. 🥲",
+    "pack": "spicy"
   },
   {
     "id": "c3",
-    "pack": "hot",
-    "text": "${player}, suce ton doigt de manière exagérément sexy pendant 5 secondes. Sinon, 3 pénalités. 🧃"
+    "text": "${player}, fais genre tu suces ton doigt bien salement pendant 5 sec. Sinon, 3 pénalités. 🧃",
+    "pack": "spicy"
   },
   {
     "id": "c4",
-    "pack": "hot",
-    "text": "${player}, raconte un moment gênant au lit (détail croustillant requis). Sinon, 2 pénalités. 🤯"
+    "text": "${player}, raconte ton pire moment au lit, un vrai dossier bien gênant. Sinon, 2 pénalités. 🤯",
+    "pack": "spicy"
   },
   {
     "id": "c5",
-    "pack": "hot",
-    "text": "${player}, dis la chose la plus cochonne que t’aies envie d’entendre pendant l’acte. Sinon, 2 pénalités. 🎧"
+    "text": "${player}, dis la phrase la plus dirty que t’aimerais entendre pendant l’acte. Sinon, 2 pénalités. 🎧",
+    "pack": "spicy"
   },
   {
     "id": "c6",
-    "pack": "hot",
-    "text": "${player}, prends une pose ultra sexy et reste comme ça pendant 3 tours. Sinon, 2 pénalités. 🕸️"
+    "text": "${player}, prends une pose bien sexy et reste figé comme ça 3 tours. Sinon, 2 pénalités. 🕸️",
+    "pack": "spicy"
   },
   {
     "id": "c7",
-    "pack": "hot",
-    "text": "${player}, fais un massage très suggestif à ${player} pendant 15 secondes. Sinon, 3 pénalités. 💆‍♂️"
+    "text": "${player}, fais un massage bien chaud à ${player} pendant 15 sec. Sinon, 3 pénalités. 💆‍♂️",
+    "pack": "spicy"
   },
   {
     "id": "c8",
-    "pack": "hot",
-    "text": "${player}, chuchote une envie sexuelle très précise à ${player}. Si tu refuses, 3 pénalités. 🫦"
+    "text": "${player}, souffle à l’oreille de ${player} ton kiff le plus sale. Si t’assumes pas, 3 pénalités. 🫦",
+    "pack": "spicy"
   },
   {
     "id": "c9",
-    "pack": "hot",
-    "text": "${player}, simule une scène de sexe torride avec ton verre. Si tu refuses, 3 pénalités. 🍷"
+    "text": "${player}, mime une scène torride avec ton verre comme si c’était une sextape. Sinon, 3 pénalités. 🍷",
+    "pack": "spicy"
   },
   {
     "id": "c10",
-    "pack": "hot",
-    "text": "${player}, fais semblant d'avoir un orgasme pendant 5 secondes. Pas de son = 3 pénalités. 🫠"
+    "text": "${player}, simule un orgasme là tout de suite, avec bruitage. Sinon, 3 pénalités. 🫠",
+    "pack": "spicy"
   },
   {
     "id": "c11",
-    "pack": "hot",
-    "text": "${player}, décris le dernier rêve érotique que t’as fait. Sinon, 2 pénalités. 🌙"
+    "text": "${player}, raconte ton dernier rêve chelou version érotique. Sinon, 2 pénalités. 🌙",
+    "pack": "spicy"
   },
   {
     "id": "c12",
-    "pack": "hot",
-    "text": "${player}, mime ton dernier moment torride avec autant de réalisme que possible. Sinon, 3 pénalités. 🎭"
+    "text": "${player}, mime ta première fois comme si on y était. Sinon, 3 pénalités. 🎭",
+    "pack": "spicy"
   },
   {
     "id": "c13",
-    "pack": "hot",
-    "text": "${player}, recrée une scène hot d’un film/série avec ${player}. Sinon, 2 pénalités. 🎬"
+    "text": "${player}, refais une scène bien chaude d’une série ou d’un film avec ${player}. Sinon, 2 pénalités. 🎬",
+    "pack": "spicy"
   },
   {
     "id": "c14",
-    "pack": "hot",
-    "text": "${player}, balance un vrai fantasme impliquant une personne autour de cette table. Sinon, 2 pénalités. 🥵"
+    "text": "${player}, est-ce que tu as déjà eu un vrai fantasme avec quelqu’un ici. Assume ou 2 grosses pénalités. 🥵",
+    "pack": "spicy"
   },
   {
     "id": "c15",
-    "pack": "hot",
-    "text": "${player}, pose une question hot à ${player} et il/elle doit répondre. Si l’un des deux refuse : 3 pénalités chacun. 💣"
+    "text": "${player}, pose une question bien hot à ${player}. Si l’un fuit : 3 pénalités chacun. 💣",
+    "pack": "spicy"
   },
   {
     "id": "c16",
-    "pack": "hot",
-    "text": "${player}, fais 10 pompes sexy, en regardant ${player} dans les yeux. Sinon, 2 pénalités. 💪"
+    "text": "${player}, fais 10 pompes sexy en matant ${player} dans les yeux. Sinon, 2 pénalités. 💪",
+    "pack": "spicy"
   },
   {
     "id": "c17",
-    "pack": "hot",
-    "text": "${player}, fais un strip-tease pour de vrai (10 sec minimum), sinon pénalité ultime. 🕺🔥"
+    "text": "${player}, fais un strip-tease de minimum 10 secondes. Sinon, pénalité ultime. 🕺🔥",
+    "pack": "spicy"
   },
   {
     "id": "c18",
-    "pack": "hot",
-    "text": "Votez tous : qui ici a sûrement déjà fait un plan à 3 ? La personne choisie prend 2 pénalités et doit raconter si c'est vrai. 🍑"
+    "text": "Qui ici aimerait tester un plan à 3 ? Tous les concernés prennent 2 pénalités. 🍑",
+    "pack": "spicy"
   },
   {
     "id": "c19",
-    "pack": "hot",
-    "text": "${player}, décris en détail comment tu chaufferais ${player} s’il n’y avait personne ici. Sinon, pénalité ultime. 🧨"
+    "text": "${player}, décris comment tu chaufferais ${player} si t’avais la voie libre. Sinon, pénalité ultime. 🧨",
+    "pack": "spicy"
   },
   {
     "id": "c20",
-    "pack": "hot",
-    "text": "${player}, lèche quelque chose autour de toi (n'importe quoi sauf un objet inanimé), sinon 2 pénalités. 👅"
+    "text": "${player}, lèche un truc vivant autour de toi (et pas ta chaussure), ou 2 pénalités. 👅",
+    "pack": "spicy"
   },
   {
     "id": "c21",
-    "pack": "hot",
-    "text": "${player}, fais une déclaration d'amour ultra torride à ${player}. Sinon, 2 pénalités. 💌"
+    "text": "${player}, balance une déclaration d’amour ultra chaude à ${player}. Sinon, 2 pénalités. 💌",
+    "pack": "spicy"
   },
   {
     "id": "c22",
-    "pack": "hot",
-    "text": "${player}, mime un strip intégral... en version ralentie. Sinon, 2 pénalités. ⏳"
+    "text": "${player}, mime un strip tease au ralenti, comme dans un film de cul mal doublé. Sinon, 2 pénalités. ⏳",
+    "pack": "spicy"
   },
   {
     "id": "c23",
-    "pack": "hot",
-    "text": "${player}, attrape la main de ${player} et guide-la lentement là où tu veux... en mimant. Sinon, 2 pénalités. 🫱"
+    "text": "${player}, prends la main de ${player} et montre-lui (en mime hein) où tu veux qu’elle aille... Sinon, 2 pénalités. 🫱",
+    "pack": "spicy"
   },
   {
     "id": "c24",
-    "pack": "hot",
-    "text": "${player}, mime une position du Kamasutra avec ${player}. Refus = 3 pénalités. 📚🫣"
+    "text": "${player}, mime une position du Kamasutra avec ${player}. Tu refuses ? 3 pénalités. 📚🫣",
+    "pack": "spicy"
   },
   {
     "id": "c25",
-    "pack": "hot",
-    "text": "${player}, mime comment tu sucerais quelqu'un. Sinon, 3 pénalités. 🌍"
-  }
+    "text": "${player}, montre-nous comment tu t’y prendrais pour une gâterie. Sinon, 3 pénalités. 🌍",
+    "pack": "spicy"
+  },
+  {
+    "id": "c26",
+    "text": "${player}, mets une pénalité pour chaque personne ici que t’as déjà imaginé embrasser. 😏",
+    "pack": "spicy"
+  },
+  {
+    "id": "c27",
+    "text": "${player} et ${player}, battle de regards torrides pendant 20 sec. Le premier qui rigole prend 2 pénalités. 👀",
+    "pack": "spicy"
+  },
+  {
+    "id": "c28",
+    "text": "Entre ${player} et ${player}, qui a eu le plan d’un soir le plus fou ? Le groupe vote. Le perdant : 3 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c29",
+    "text": "Tous ceux qui ont déjà envoyé un nude, c’est 2 pénalités cash. 📸",
+    "pack": "spicy"
+  },
+  {
+    "id": "c30",
+    "text": "${player}, c’est quoi le spot le plus chelou où t’as fait des trucs ? Si ${player} bat ça, t’en prends 2. 🚗🍃",
+    "pack": "spicy"
+  },
+  {
+    "id": "c31",
+    "text": "${player}, donne une note sur 10 de sex appeal à chacun ici. Celui avec la plus basse : 2 pénalités. 🔥",
+    "pack": "spicy"
+  },
+  {
+    "id": "c32",
+    "text": "${player} et ${player}, complimentez-vous physiquement. Le plus gêné prend 2 pénalités. 🫣",
+    "pack": "spicy"
+  },
+  {
+    "id": "c33",
+    "text": "${player}, vérité ou 3 pénalités : ta position préférée au lit ? ${player} juge si c’est crédible. 🍑",
+    "pack": "spicy"
+  },
+  {
+    "id": "c34",
+    "text": "${player} et ${player}, tenez-vous la main jusqu’à vos prochains tours. Le premier à lâcher : 2 pénalités. 🤝",
+    "pack": "spicy"
+  },
+  {
+    "id": "c35",
+    "text": "${player}, t’as déjà eu un crush sur le/la mec/meuf de quelqu'un ici, c'est 2 pénalités. 😬",
+    "pack": "spicy"
+  },
+  {
+    "id": "c36",
+    "text": "${player} et ${player}, citez chacun votre tour un truc qu’on trouve dans une chambre. Celui qui sèche : 2 pénalités. 🛏️",
+    "pack": "spicy"
+  },
+  {
+    "id": "c37",
+    "text": "Ceux qui ont déjà maté une appli de dating en étant en couple, 1 pénalité. 💔",
+    "pack": "spicy"
+  },
+  {
+    "id": "c38",
+    "text": "${player}, qui t’embrasserais entre ${player} et ${player} ? La personne recalée prend 2 pénalités. 😬",
+    "pack": "spicy"
+  },
+  {
+    "id": "c39",
+    "text": "Entre ${player} et ${player}, celui qui est solo depuis le plus longtemps prend 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c40",
+    "text": "${player} et ${player}, décrivez-vous en 3 mots hots. Celui/celle qui a la meilleure description donne 2 pénalités. 🗣️",
+    "pack": "spicy"
+  },
+  {
+    "id": "c41",
+    "text": "${player}, fais un petit massage d’épaules à ${player}. Sinon, 3 pénalités. 💆‍♀️",
+    "pack": "spicy"
+  },
+  {
+    "id": "c42",
+    "text": "Entre ${player} et ${player}, celui/celle avec le plus de dates cette année : 2 pénalités. 📅",
+    "pack": "spicy"
+  },
+  {
+    "id": "c43",
+    "text": "1 pénalité pour tous ceux qui ont déjà regretté un coup d’un soir 😅",
+    "pack": "spicy"
+  },
+  {
+    "id": "c44",
+    "text": "${player} et ${player}, donnez à boire à l’autre (avec votre verre). Si ça dégénère, 2 pénalités pour celui qui renverse. 🥤",
+    "pack": "spicy"
+  },
+  {
+    "id": "c45",
+    "text": "${player}, selon toi, qui ici kiffe le plus le sexe ? Cette personne prend 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c46",
+    "text": "${player}, balance LE moment au lit qui t’a le plus marqué. Tu veux pas ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c47",
+    "text": "Vote général : sodomie, pour ou contre ? Les minoritaires prennent 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c48",
+    "text": "${player}, montre-nous tes marques de bronzage. Tu te dégonfles ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c49",
+    "text": "${player}, choisis une lettre. Tous ceux qui ont ken une personne avec un prénom qui commence par cette lettre prennent 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c50",
+    "text": "${player}, t’as 10 secondes pour nous décrire le sexe de ${player}. Sinon, 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c51",
+    "text": "${player}, est-ce que tu pourrais grave coucher avec ${player} dans une autre vie ?",
+    "pack": "spicy"
+  },
+  {
+    "id": "c52",
+    "text": "Pendant un tour, à chaque fois que ${player} parle, ${player} doit faire un petit bruit bien hot. Sinon, 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c53",
+    "text": "Ceux qui aiment se faire attacher au lit prennent 1 pénalité (avouez 👀).",
+    "pack": "spicy"
+  },
+  {
+    "id": "c54",
+    "text": "Votez tous : qui ici va clairement baiser ce soir ? Le plus de votes = 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c55",
+    "text": "${player}, qui serait le meilleur coup autour de la table ? Si tu dis toi, tu prends 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c56",
+    "text": "${player}, si t’as déjà pris dans le c*l, tu peux filer 2 pénalités. Sinon, c’est pour ta pomme.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c57",
+    "text": "${player}, t’aimerais te déguiser comment pour une session bien caliente ? T’assumes pas ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c58",
+    "text": "${player}, à qui pourrais tu offrir un sex toy à quelqu’un ici. En bonus, tu peux lui coller 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c59",
+    "text": "${player}, va t’asseoir sur les genoux de ${player} pour 3 cartes. Tu refuses ? 3 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c60",
+    "text": "${player} et ${player}, vous devez garder un contact physique pendant un tour. Sinon, 2 pénalités chacun.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c61",
+    "text": "${player}, retire ton haut pendant 3 cartes. Pas cap ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c62",
+    "text": "Tous ceux qui ont déjà testé un doigt dans le c*l prennent 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c63",
+    "text": "${player} et ${player}, faites un selfie en vous roulant une pelle. Vous osez pas ? 2 pénalités chacun.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c64",
+    "text": "Tour à tour, dites un truc que vous kiffez avoir dans la bouche 😏. Plus d’idée ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c65",
+    "text": "Tous ceux qui ont déjà ken dans un lieu public prennent 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c66",
+    "text": "${player}, c’est quoi ton kiff pendant les préliminaires ? Tu veux pas dire ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c67",
+    "text": "${player}, raconte-nous ta pire nuit de sexe. Sinon, 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c68",
+    "text": "${player}, simule un orgasme. Tu flippes ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c69",
+    "text": "${player}, balance le blaze de ton meilleur plan Q. Tu veux pas ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c70",
+    "text": "${player} et ${player}, si vous avez envie de vous rouler une pelle, c’est maintenant. Sinon, 1 pénalité chacun.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c71",
+    "text": "${player}, t’as maté combien de pornos cette semaine ? Tu réponds pas ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c72",
+    "text": "${player}, si t’as envie d’un plan à plusieurs avec des gens ici, c’est 2 pénalités direct.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c73",
+    "text": "Vote de groupe : qui devrait embrasser ${player} ? La personne désignée le fait ou prend 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c74",
+    "text": "${player}, devine à 2 cm près la taille de l'engin du mec le plus proche. Tu te plantes ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c75",
+    "text": "Ceux qui ont déjà ken à la plage prennent 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c76",
+    "text": "${player}, enlève un vêtement pour le reste de la partie. Sinon, 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c77",
+    "text": "${player}, t’es prêt à prendre combien de doigts ? Tu veux pas répondre ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c78",
+    "text": "${player}, t’as 10 secondes pour sortir un nom de star du X qui commence par un C. Sinon, 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c79",
+    "text": "${player}, lèche le téton de ${player}. Il/elle ne veut pas ? 2 pénalités pour toi.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c80",
+    "text": "${player}, distribue autant de pénalités que la différence d’âge avec la plus jeune personne avec qui t’as couché.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c81",
+    "text": "${player}, caresse le genou de ${player} pendant 10 secondes. Il/elle veut pas ? Tu prends 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c82",
+    "text": "${player}, chacun votre tour, balancez une position du Kamasutra. Celui qui sèche prend 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c83",
+    "text": "${player}, 3 pénalités si t’as déjà pissé sous la douche.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c84",
+    "text": "${player}, quelle nationalité te chauffe le plus ? T’assumes pas ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c85",
+    "text": "${player}, 1 pénalité si t’as déjà ken dans une piscine.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c86",
+    "text": "${player}, fais un bisou dans le cou de ${player}. Refus = 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c87",
+    "text": "${player} vs ${player} : premier qui sort un titre de film X donne 1 pénalité à l’autre.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c88",
+    "text": "${player}, si t’as déjà testé le poppers, prends 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c89",
+    "text": "${player}, qui ici a le plus de chances de finir sur OnlyFans ? Cette personne prend 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c90",
+    "text": "${player} vs ${player}, vous devez enlever puis remettre 3 fringues. Le plus lent prend 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c91",
+    "text": "${player}, chacun son tour, citez un objet qui pourrait faire sextoy. Plus d’idée ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c92",
+    "text": "${player}, envoie un message à ta daronne pour lui demander le blaze de deux de ses ex. Tu flippes ? Pénalité ultime.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c93",
+    "text": "${player}, si tu penses avoir un plus beau boule que ${player}, tu prends 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c94",
+    "text": "Go on vote tous : qui est le plus en manque de sexe ? Le ou la désignée prend 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c95",
+    "text": "${player}, donne le nom de la personne ici pour qui tu serais prêt à payer un abonnement OnlyFans. Tu veux pas dire ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c96",
+    "text": "${player}, avec qui ici t’aimerais rester coincé dans un ascenseur ? T’assumes pas ? 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c97",
+    "text": "${player} vs ${player} : chifoumi. Le perdant retire un vêtement.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c98",
+    "text": "Ceux qui se sont déjà touchés pendant les cours prennent 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c99",
+    "text": "${player}, qui est le plus doué avec sa langue ici selon toi ? Si tu veux pas tester, 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c100",
+    "text": "${player}, va mordiller l’oreille de ${player}. Pas cap ? 2 pénalités.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c101",
+    "text": "${player} vs ${player}, qui twerk le mieux ici ? Le twerk le plus foireux 1 pénalité.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c102",
+    "text": "${player} : caresse ${player} en fermant les yeux ? Si ${player} se marre, c'est 1 pénalité pour toi.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c103",
+    "text": "${player}, prends 1 pénalité si tu as des sous-vêtements un peu hot. Sinon c'est 2 pénalités pour ${player}",
+    "pack": "spicy"
+  },
+  {
+    "id": "c104",
+    "text": "${player}, prends 1 pénalité si tu as déjà envisagé de tourner une sextape.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c105",
+    "text": "${player}, prends 1 pénalité si tu as déjà été supris en train de te toucher.",
+    "pack": "spicy"
+  },
 ]
