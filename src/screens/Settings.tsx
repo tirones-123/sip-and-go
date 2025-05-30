@@ -111,8 +111,7 @@ const Settings: React.FC = () => {
   const logoPressTimer = useRef<NodeJS.Timeout | null>(null);
 
   const handleLogoPressIn = () => {
-    // Ne pas activer en __DEV__ car déjà visible
-    if (__DEV__) return;
+    // Appui long 3s pour basculer premium (utilisable en prod et dev)
     logoPressTimer.current = setTimeout(() => {
       const cur = useGameStore.getState().premium;
       setPremium(!cur);
@@ -284,12 +283,12 @@ const Settings: React.FC = () => {
           </View>
         </View>
         
-        {/* Development section - Only visible during development */}
-        {__DEV__ && (
+        {/* Premium toggle section - Always visible for testing */}
+        {true && (
           <View style={[tw`bg-red-100 rounded-2xl mb-6 overflow-hidden border-2 border-red-300`, styles.shadow]}>
             <View style={tw`bg-red-200 p-4 border-b border-red-300`}>
               <Text style={tw`text-red-800 font-bold text-lg`}>
-                🚧 Development Tools
+                🚧 {__DEV__ ? 'Development' : 'Test'} Tools
               </Text>
             </View>
             
