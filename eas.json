@@ -31,9 +31,7 @@
     },
     "testflight": {
       "distribution": "store",
-      "ios": {
-        "workflow": "generic"
-      }
+      "ios": {}
     }
   },
   "submit": {
