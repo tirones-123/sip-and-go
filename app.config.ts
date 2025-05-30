@@ -5,6 +5,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
   // Build plugins array with correct typing
   const plugins: (string | [string, any])[] = [
     '@sentry/react-native/expo',
+    'expo-localization',
   ];
 
   // Ensure required native build properties (Superwall requires iOS 14+, Android minSdk 26)
