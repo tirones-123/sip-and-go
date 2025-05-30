@@ -12,7 +12,7 @@
       },
       "env": {
         "RC_KEY_IOS": "appl_CEAWmscRAmtSYEKTiShXUPKLOiu",
-        "RC_KEY_ANDROID": "goog_xxxxxxxxx",
+        "RC_KEY_ANDROID": "goog_VOTRE_CLE_REVENUECAT_ANDROID_ICI",
         "SUPERWALL_KEY_IOS": "pk_23c6d0f2260715251d07c36b0b14cf42346a2bb8415adcf4",
         "SUPERWALL_KEY_ANDROID": "pk_51d3a43fa4207a5751498da609682b7f2151f97cf3e39d45",
         "POSTHOG_KEY": "phc_2gbVNzIQI6VXMYJAvMWFwLy4MAT7rAXFesDk88zeNuu",
@@ -34,7 +34,7 @@
       "autoIncrement": true,
       "env": {
         "RC_KEY_IOS": "appl_CEAWmscRAmtSYEKTiShXUPKLOiu",
-        "RC_KEY_ANDROID": "goog_xxxxxxxxx",
+        "RC_KEY_ANDROID": "goog_VOTRE_CLE_REVENUECAT_ANDROID_ICI",
         "SUPERWALL_KEY_IOS": "pk_23c6d0f2260715251d07c36b0b14cf42346a2bb8415adcf4",
         "SUPERWALL_KEY_ANDROID": "pk_51d3a43fa4207a5751498da609682b7f2151f97cf3e39d45",
         "POSTHOG_KEY": "phc_2gbVNzIQI6VXMYJAvMWFwLy4MAT7rAXFesDk88zeNuu",

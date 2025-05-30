@@ -37,8 +37,8 @@ const Settings: React.FC = () => {
   const navigation = useNavigation<SettingsScreenNavigationProp>();
   
   // Premium status from store
-  const current = useGameStore.getState().premium;
-  const setPremium = useGameStore.getState().setPremium;
+  const premium = useGameStore(state => state.premium);
+  const setPremium = useGameStore(state => state.setPremium);
   
   // Set header background color and hide the header
   useLayoutEffect(() => {
@@ -100,8 +100,7 @@ const Settings: React.FC = () => {
   
   // Toggle premium for development
   const togglePremiumDev = () => {
-    const cur = useGameStore.getState().premium;
-    setPremium(!cur);
+    setPremium(!premium);
   };
   
   /**
@@ -113,8 +112,7 @@ const Settings: React.FC = () => {
   const handleLogoPressIn = () => {
     // Appui long 3s pour basculer premium (utilisable en prod et dev)
     logoPressTimer.current = setTimeout(() => {
-      const cur = useGameStore.getState().premium;
-      setPremium(!cur);
+      setPremium(!premium);
     }, 3000); // 3 seconds
   };
 
@@ -158,7 +156,7 @@ const Settings: React.FC = () => {
         </TouchableOpacity>
         
         {/* Premium button - more attractive */}
-        {!current && (
+        {!premium && (
           <TouchableOpacity 
             onPress={openPremium}
             style={[
@@ -296,13 +294,13 @@ const Settings: React.FC = () => {
               <TouchableOpacity 
                 style={[
                   tw`flex-row items-center justify-between p-4 rounded-xl`,
-                  { backgroundColor: current ? '#10B981' : '#EF4444' }
+                  { backgroundColor: premium ? '#10B981' : '#EF4444' }
                 ]}
                 onPress={togglePremiumDev}
               >
                 <View style={tw`flex-row items-center`}>
                   <Ionicons 
-                    name={current ? "star" : "star-outline"} 
+                    name={premium ? "star" : "star-outline"} 
                     size={24} 
                     color="white" 
                     style={tw`mr-3`} 
@@ -312,12 +310,12 @@ const Settings: React.FC = () => {
                       Premium Status
                     </Text>
                     <Text style={tw`text-white/80 text-sm`}>
-                      Currently: {current ? 'PREMIUM' : 'FREE'}
+                      Currently: {premium ? 'PREMIUM' : 'FREE'}
                     </Text>
                   </View>
                 </View>
                 <Text style={tw`text-white font-bold text-lg`}>
-                  {current ? 'DISABLE' : 'ENABLE'}
+                  {premium ? 'DISABLE' : 'ENABLE'}
                 </Text>
               </TouchableOpacity>
             </View>
