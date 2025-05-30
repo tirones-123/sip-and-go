@@ -4,9 +4,13 @@ export default ({ config }: ConfigContext): ExpoConfig => {
   const isEas = process.env.EAS_BUILD === 'true';
   // Build plugins array with correct typing
   const plugins: (string | [string, any])[] = [
-    '@sentry/react-native/expo',
     'expo-localization',
   ];
+
+  // Ajoute le plugin Sentry uniquement si une DSN est fournie
+  if (process.env.SENTRY_DSN) {
+    plugins.unshift('@sentry/react-native/expo');
+  }
 
   // Ensure required native build properties (Superwall requires iOS 14+, Android minSdk 26)
   plugins.push([

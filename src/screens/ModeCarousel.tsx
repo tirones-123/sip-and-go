@@ -89,8 +89,8 @@ const ModeCarousel: React.FC = () => {
         // Vérifie si l'utilisateur est devenu premium avant de démarrer la partie
         const { premium: nowPremium } = useGameStore.getState();
         if (nowPremium) {
-          startPack(packId);
-          navigation.navigate('Question', { packId });
+        startPack(packId);
+        navigation.navigate('Question', { packId });
         }
       });
       return;
