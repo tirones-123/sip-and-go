@@ -148,7 +148,7 @@ const Settings: React.FC = () => {
             {/* Header */}
             <View style={tw`flex-row items-center justify-center mb-3`}>
               <Ionicons name="star" size={28} color="#FFD700" />
-              <Text style={tw`text-[${BG_COLOR}] text-2xl font-bold ml-2`}>
+              <Text style={[tw`text-2xl font-bold ml-2`, { color: BG_COLOR }]}>
                 {t('settings.premium.title')}
               </Text>
               <Ionicons name="star" size={28} color="#FFD700" />
@@ -158,17 +158,18 @@ const Settings: React.FC = () => {
             <View style={tw`mb-4`}>
               {(lang === 'fr' ? fr.settings.premium.features : en.settings.premium.features).map((feature: string, index: number) => (
                 <View key={index} style={tw`flex-row items-center mb-2`}>
-                  <Text style={tw`text-[${BG_COLOR}] text-base`}>{feature}</Text>
+                  <Text style={[tw`text-base`, { color: BG_COLOR }]}>{feature}</Text>
                 </View>
               ))}
             </View>
             
             {/* CTA Button */}
             <View style={[
-              tw`bg-[${BG_COLOR}] rounded-xl px-8 py-4 items-center`,
-              styles.ctaButton
+              tw`rounded-xl px-8 py-4 items-center`,
+              styles.ctaButton,
+              { backgroundColor: BG_COLOR }
             ]}>
-              <Text style={tw`text-white font-bold text-lg`}>
+              <Text style={[tw`font-bold text-lg`, { color: '#FFFFFF' }]}>
                 {t('settings.premium.upgradeButton')}
               </Text>
             </View>
@@ -186,7 +187,7 @@ const Settings: React.FC = () => {
         {/* Language section - redesigned for multiple languages */}
         <View style={[tw`bg-white/90 rounded-2xl mb-6 overflow-hidden`, styles.shadow]}>
           <View style={tw`bg-white/20 p-4 border-b border-white/10`}>
-            <Text style={tw`text-[${BG_COLOR}] font-bold text-lg`}>
+            <Text style={[tw`font-bold text-lg`, { color: BG_COLOR }]}>
               {t('settings.language.title')}
             </Text>
           </View>
@@ -205,10 +206,13 @@ const Settings: React.FC = () => {
                     onPress={() => changeLanguage(language.code as 'en' | 'fr')}
                   >
                     <View style={[
-                      tw`p-3 rounded-xl border-2 w-24 items-center ${lang === language.code ? 'border-[${BG_COLOR}] bg-[${BG_COLOR}]/10' : 'border-gray-200 bg-white'}`,
+                      tw`p-3 rounded-xl border-2 w-24 items-center`,
+                      lang === language.code
+                        ? { borderColor: BG_COLOR, backgroundColor: `${BG_COLOR}1A` } // 10% opacity
+                        : { borderColor: '#E5E7EB', backgroundColor: '#FFFFFF' },
                     ]}>
                       <Text style={tw`text-3xl mb-1`}>{language.flag}</Text>
-                      <Text style={tw`text-[${BG_COLOR}] text-xs font-medium text-center`} numberOfLines={1}>
+                      <Text style={[tw`text-xs font-medium text-center`, { color: BG_COLOR }]} numberOfLines={1}>
                         {language.name}
                       </Text>
                       {lang === language.code && (
@@ -225,7 +229,7 @@ const Settings: React.FC = () => {
         {/* Support section */}
         <View style={[tw`bg-white/90 rounded-2xl mb-6 overflow-hidden`, styles.shadow]}>
           <View style={tw`bg-white/20 p-4 border-b border-white/10`}>
-            <Text style={tw`text-[${BG_COLOR}] font-bold text-lg`}>
+            <Text style={[tw`font-bold text-lg`, { color: BG_COLOR }]}>
               {t('settings.support.title')}
             </Text>
           </View>
@@ -314,7 +318,7 @@ const SupportItem: React.FC<{
     onPress={onPress}
   >
     <Ionicons name={icon as any} size={22} color="#FF784F" style={tw`mr-3`} />
-    <Text style={tw`text-[#FF784F] flex-1 text-base`}>{title}</Text>
+    <Text style={[tw`text-[#FF784F] flex-1 text-base`, { color: '#FF784F' }]}>{title}</Text>
     <Ionicons name="chevron-forward" size={18} color="#FF784F" />
   </TouchableOpacity>
 );

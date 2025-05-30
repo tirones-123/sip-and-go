@@ -66,8 +66,8 @@ export default {
     finishedTitle: 'Game Over!',
     finishedSubtitle: 'Tap to continue.',
     quitConfirm: 'Are you sure you want to quit? The game will be lost.',
-    quitNo: 'No',
-    quitYes: 'Yes',
+    quitNo: 'Cancel',
+    quitYes: 'Quit',
     replayButton: 'Play Again',
     quitButton: 'Quit Mode'
   },

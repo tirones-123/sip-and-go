@@ -34,10 +34,6 @@ module.exports = {
           medium: '#8742BF',
           dark: '#7B34A8',
         },
-        // App colors
-        'dark-bg': '#0B0E1A',
-        'rose-cta': '#FF5A92',
-        'carousel-bg': '#FDE0A4',
       },
     },
   },

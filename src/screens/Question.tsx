@@ -312,7 +312,7 @@ const Question: React.FC = () => {
           style={tw`flex-1 justify-center items-center bg-black/70`}
           onPress={Keyboard.dismiss}
         >
-          <Animated.View style={[tw`bg-dark-bg w-4/5 h-2/3 rounded-xl p-4`, { transform: [{ translateX: shakeAnim }] }]}>
+          <Animated.View style={[tw`w-4/5 h-2/3 rounded-xl p-4 border border-white/20 rounded-xl`, { transform: [{ translateX: shakeAnim }] }]}>
             <View style={tw`flex-row justify-between items-center mb-4`}>
               <Text style={tw`text-white text-lg font-bold`}>
                 {t('question.managePlayers')}
@@ -385,14 +385,14 @@ const Question: React.FC = () => {
         onRequestClose={() => setShowQuitConfirm(false)}
       >
         <View style={tw`flex-1 bg-black/80 justify-center items-center`}>
-          <View style={tw`bg-dark-bg w-4/5 rounded-xl p-6`}>
+          <View style={tw`w-4/5 rounded-xl p-6 border border-white/20`}>
             <Text style={tw`text-white text-lg font-bold mb-6`}>{t('question.quitConfirm')}</Text>
-            <View style={tw`flex-row justify-end`}>
+            <View style={tw`flex-row justify-center`}>
               <Button
                 text={t('question.quitNo')}
                 variant="outline"
                 onPress={() => setShowQuitConfirm(false)}
-                style={tw`mr-2`}
+                style={tw`mr-4`}
               />
               <Button
                 text={t('question.quitYes')}

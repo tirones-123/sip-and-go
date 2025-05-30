@@ -66,8 +66,8 @@ export default {
     finishedTitle: 'Partie terminée !',
     finishedSubtitle: 'Appuyez pour continuer.',
     quitConfirm: 'Es-tu sûr de vouloir quitter ? La partie sera perdue.',
-    quitNo: 'Non',
-    quitYes: 'Oui',
+    quitNo: 'Annuler',
+    quitYes: 'Quitter',
     replayButton: 'Rejouer',
     quitButton: 'Quitter le mode'
   },
