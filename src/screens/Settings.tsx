@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect } from 'react';
 import { 
   View, 
   Text, 
@@ -37,8 +37,8 @@ const Settings: React.FC = () => {
   const navigation = useNavigation<SettingsScreenNavigationProp>();
   
   // Premium status from store
-  const premium = useGameStore(state => state.premium);
-  const overridePremium = useGameStore(state => state.overridePremium);
+  const current = useGameStore.getState().premium;
+  const setPremium = useGameStore.getState().setPremium;
   
   // Set header background color and hide the header
   useLayoutEffect(() => {
@@ -100,27 +100,8 @@ const Settings: React.FC = () => {
   
   // Toggle premium for development
   const togglePremiumDev = () => {
-    overridePremium(!premium);
-  };
-  
-  /**
-   * Hidden gesture for TestFlight / production debug:
-   * Long-press 3 s on the logo toggles premium status.
-   */
-  const logoPressTimer = useRef<NodeJS.Timeout | null>(null);
-
-  const handleLogoPressIn = () => {
-    // Appui long 3s pour basculer premium (utilisable en prod et dev)
-    logoPressTimer.current = setTimeout(() => {
-      overridePremium(!premium);
-    }, 3000); // 3 seconds
-  };
-
-  const handleLogoPressOut = () => {
-    if (logoPressTimer.current) {
-      clearTimeout(logoPressTimer.current);
-      logoPressTimer.current = null;
-    }
+    const cur = useGameStore.getState().premium;
+    setPremium(!cur);
   };
   
   // Languages available
@@ -142,21 +123,16 @@ const Settings: React.FC = () => {
   return (
     <View style={tw`flex-1 bg-[${BG_COLOR}]`}>
       <ScrollView style={tw`flex-1`} contentContainerStyle={tw`px-4 pb-10`}>
-        {/* Logo (long-press 3 s en prod pour toggle premium) */}
-        <TouchableOpacity
-          activeOpacity={1}
-          onPressIn={handleLogoPressIn}
-          onPressOut={handleLogoPressOut}
-          style={tw`items-center justify-center my-6`}
-        >
+        {/* Logo */}
+        <View style={tw`items-center justify-center my-6`}>
           <Image
             source={require('../../assets/logo-jauneclair.png')}
             style={{ width: 120, height: 120, resizeMode: 'contain' }}
           />
-        </TouchableOpacity>
+        </View>
         
         {/* Premium button - more attractive */}
-        {!premium && (
+        {!current && (
           <TouchableOpacity 
             onPress={openPremium}
             style={[
@@ -281,12 +257,12 @@ const Settings: React.FC = () => {
           </View>
         </View>
         
-        {/* Premium toggle section - Always visible for testing */}
-        {true && (
+        {/* Development section - Only visible during development */}
+        {__DEV__ && (
           <View style={[tw`bg-red-100 rounded-2xl mb-6 overflow-hidden border-2 border-red-300`, styles.shadow]}>
             <View style={tw`bg-red-200 p-4 border-b border-red-300`}>
               <Text style={tw`text-red-800 font-bold text-lg`}>
-                🚧 {__DEV__ ? 'Development' : 'Test'} Tools
+                🚧 Development Tools
               </Text>
             </View>
             
@@ -294,13 +270,13 @@ const Settings: React.FC = () => {
               <TouchableOpacity 
                 style={[
                   tw`flex-row items-center justify-between p-4 rounded-xl`,
-                  { backgroundColor: premium ? '#10B981' : '#EF4444' }
+                  { backgroundColor: current ? '#10B981' : '#EF4444' }
                 ]}
                 onPress={togglePremiumDev}
               >
                 <View style={tw`flex-row items-center`}>
                   <Ionicons 
-                    name={premium ? "star" : "star-outline"} 
+                    name={current ? "star" : "star-outline"} 
                     size={24} 
                     color="white" 
                     style={tw`mr-3`} 
@@ -310,12 +286,12 @@ const Settings: React.FC = () => {
                       Premium Status
                     </Text>
                     <Text style={tw`text-white/80 text-sm`}>
-                      Currently: {premium ? 'PREMIUM' : 'FREE'}
+                      Currently: {current ? 'PREMIUM' : 'FREE'}
                     </Text>
                   </View>
                 </View>
                 <Text style={tw`text-white font-bold text-lg`}>
-                  {premium ? 'DISABLE' : 'ENABLE'}
+                  {current ? 'DISABLE' : 'ENABLE'}
                 </Text>
               </TouchableOpacity>
             </View>

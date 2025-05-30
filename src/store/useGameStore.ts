@@ -19,28 +19,28 @@ const DEFAULT_PACKS: Pack[] = [
     title: 'Entre filles',
     description: 'Perfect for girls night out',
     color: '#e4325f',
-    access: 'LOCKED'
+    access: 'FREE'
   },
   {
     id: 'guys',
     title: 'Entre gars',
     description: 'For the boys only',
     color: '#A54429',
-    access: 'LOCKED'
+    access: 'FREE'
   },
   {
     id: 'spicy',
     title: 'Spicy',
     description: 'Hot questions to spice up your night',
     color: '#660000',
-    access: 'LOCKED'
+    access: 'FREE'
   },
   {
     id: 'couples',
     title: 'En couple',
     description: 'Perfect for dates and couples',
     color: '#1c27ef',
-    access: 'LOCKED'
+    access: 'FREE'
   }
 ];
 
@@ -49,7 +49,6 @@ const initialState = {
   players: [],
   packs: DEFAULT_PACKS,
   premium: false,
-  manualPremiumOverride: false,
   currentQuestions: [],
   currentQuestionIndex: 0,
   isGameStarted: false
@@ -147,19 +146,6 @@ export const useGameStore = create<GameStore>((set, get) => ({
    * Set premium status
    */
   setPremium: (isPremium) => {
-    set(state => ({
-      premium: isPremium,
-      manualPremiumOverride: state.manualPremiumOverride || __DEV__ // conserve override en dev
-    }));
-  },
-  
-  /** Force premium override from hidden menu */
-  overridePremium: (value: boolean) => {
-    set({ premium: value, manualPremiumOverride: true });
-  },
-  
-  /** Clear manual override, e.g., after real purchase */
-  clearPremiumOverride: () => {
-    set({ manualPremiumOverride: false });
+    set({ premium: isPremium });
   }
 })); 
