@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import { 
   View, 
   Text, 
@@ -37,8 +37,8 @@ const Settings: React.FC = () => {
   const navigation = useNavigation<SettingsScreenNavigationProp>();
   
   // Premium status from store
-  const premium = useGameStore(state => state.premium);
-  const setPremium = useGameStore(state => state.setPremium);
+  const current = useGameStore.getState().premium;
+  const setPremium = useGameStore.getState().setPremium;
   
   // Set header background color and hide the header
   useLayoutEffect(() => {
@@ -100,7 +100,30 @@ const Settings: React.FC = () => {
   
   // Toggle premium for development
   const togglePremiumDev = () => {
-    setPremium(!premium);
+    const cur = useGameStore.getState().premium;
+    setPremium(!cur);
+  };
+  
+  /**
+   * Hidden gesture for TestFlight / production debug:
+   * Long-press 3 s on the logo toggles premium status.
+   */
+  const logoPressTimer = useRef<NodeJS.Timeout | null>(null);
+
+  const handleLogoPressIn = () => {
+    // Ne pas activer en __DEV__ car déjà visible
+    if (__DEV__) return;
+    logoPressTimer.current = setTimeout(() => {
+      const cur = useGameStore.getState().premium;
+      setPremium(!cur);
+    }, 3000); // 3 seconds
+  };
+
+  const handleLogoPressOut = () => {
+    if (logoPressTimer.current) {
+      clearTimeout(logoPressTimer.current);
+      logoPressTimer.current = null;
+    }
   };
   
   // Languages available
@@ -122,16 +145,21 @@ const Settings: React.FC = () => {
   return (
     <View style={tw`flex-1 bg-[${BG_COLOR}]`}>
       <ScrollView style={tw`flex-1`} contentContainerStyle={tw`px-4 pb-10`}>
-        {/* Logo */}
-        <View style={tw`items-center justify-center my-6`}>
-          <Image 
-            source={require('../../assets/logo-jauneclair.png')} 
+        {/* Logo (long-press 3 s en prod pour toggle premium) */}
+        <TouchableOpacity
+          activeOpacity={1}
+          onPressIn={handleLogoPressIn}
+          onPressOut={handleLogoPressOut}
+          style={tw`items-center justify-center my-6`}
+        >
+          <Image
+            source={require('../../assets/logo-jauneclair.png')}
             style={{ width: 120, height: 120, resizeMode: 'contain' }}
           />
-        </View>
+        </TouchableOpacity>
         
         {/* Premium button - more attractive */}
-        {!premium && (
+        {!current && (
           <TouchableOpacity 
             onPress={openPremium}
             style={[
@@ -269,13 +297,13 @@ const Settings: React.FC = () => {
               <TouchableOpacity 
                 style={[
                   tw`flex-row items-center justify-between p-4 rounded-xl`,
-                  { backgroundColor: premium ? '#10B981' : '#EF4444' }
+                  { backgroundColor: current ? '#10B981' : '#EF4444' }
                 ]}
                 onPress={togglePremiumDev}
               >
                 <View style={tw`flex-row items-center`}>
                   <Ionicons 
-                    name={premium ? "star" : "star-outline"} 
+                    name={current ? "star" : "star-outline"} 
                     size={24} 
                     color="white" 
                     style={tw`mr-3`} 
@@ -285,12 +313,12 @@ const Settings: React.FC = () => {
                       Premium Status
                     </Text>
                     <Text style={tw`text-white/80 text-sm`}>
-                      Currently: {premium ? 'PREMIUM' : 'FREE'}
+                      Currently: {current ? 'PREMIUM' : 'FREE'}
                     </Text>
                   </View>
                 </View>
                 <Text style={tw`text-white font-bold text-lg`}>
-                  {premium ? 'DISABLE' : 'ENABLE'}
+                  {current ? 'DISABLE' : 'ENABLE'}
                 </Text>
               </TouchableOpacity>
             </View>
