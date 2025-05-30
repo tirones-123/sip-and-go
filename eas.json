@@ -27,6 +27,7 @@
     }
   },
   "submit": {
+    "preview": {},
     "production": {}
   }
 }
