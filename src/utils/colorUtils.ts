@@ -5,6 +5,7 @@
  * @returns The tinted hex color string.
  */
 export const tintColor = (color: string, amount: number): string => {
+  'worklet';
   // Clamp amount between 0-1
   const a = Math.max(0, Math.min(1, amount));
 

@@ -13,6 +13,11 @@ if (Constants.appOwnership !== 'expo') {
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     Purchases = require('react-native-purchases');
+    // Support both CommonJS and ESM default export formats
+    // Some bundlers (or mocked JS stubs when the native code is missing) export the module under `.default`.
+    if (Purchases?.default) {
+      Purchases = Purchases.default;
+    }
   } catch {
     Purchases = null;
   }
@@ -47,7 +52,7 @@ export async function initRC(setIsPremium: (isPremium: boolean) => void): Promis
     
     // Get initial customer info
     const { customerInfo } = await Purchases.getCustomerInfo();
-    const premium = customerInfo.entitlements.active.premium !== undefined;
+    const premium = !!customerInfo?.entitlements?.active?.premium;
     setIsPremium(premium);
     
     // Inform Superwall immediately
@@ -62,7 +67,7 @@ export async function initRC(setIsPremium: (isPremium: boolean) => void): Promis
     
     // Set up listener for entitlement changes
     Purchases.addCustomerInfoUpdateListener((info: any) => {
-      const isPremium = info.entitlements.active.premium !== undefined;
+      const isPremium = !!info?.entitlements?.active?.premium;
       setIsPremium(isPremium);
 
       // Sync with Superwall
@@ -89,14 +94,14 @@ export async function initRC(setIsPremium: (isPremium: boolean) => void): Promis
 export async function getPackages(): Promise<PurchasesPackage[]> {
   if (!Purchases) return [];
   try {
-    const offerings = await Purchases.getOfferings();
+    const offerings = await Purchases.getOfferings?.();
     
-    if (!offerings.current) {
+    if (!offerings?.current) {
       console.warn('No offerings available from RevenueCat');
       return [];
     }
     
-    return offerings.current.availablePackages;
+    return offerings.current.availablePackages ?? [];
   } catch (error) {
     console.error('Failed to get packages:', error);
     return [];
@@ -112,7 +117,7 @@ export async function purchasePackage(packageToPurchase: PurchasesPackage): Prom
   if (!Purchases) return false;
   try {
     const { customerInfo } = await Purchases.purchasePackage(packageToPurchase);
-    return customerInfo.entitlements.active.premium !== undefined;
+    return !!customerInfo?.entitlements?.active?.premium;
   } catch (error: any) {
     // User cancelled or purchase failed
     if (!error.userCancelled) {
@@ -130,7 +135,7 @@ export async function restorePurchases(): Promise<boolean> {
   if (!Purchases) return false;
   try {
     const { customerInfo } = await Purchases.restorePurchases();
-    return customerInfo.entitlements.active.premium !== undefined;
+    return !!customerInfo?.entitlements?.active?.premium;
   } catch (error) {
     console.error('Restore failed:', error);
     return false;

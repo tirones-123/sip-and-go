@@ -46,13 +46,13 @@ const Button: React.FC<ButtonProps> = ({
     
     switch (variant) {
       case 'primary':
-        return tw`bg-roseCTA`;
+        return tw`bg-rose-cta`;
       case 'secondary':
         return tw`bg-classic`;
       case 'outline':
         return tw`border border-gray-300 bg-transparent`;
       default:
-        return tw`bg-roseCTA`;
+        return tw`bg-rose-cta`;
     }
   };
   

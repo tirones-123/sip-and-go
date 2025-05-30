@@ -7,15 +7,13 @@ import { useTranslation } from '../utils/i18n';
 import AddPlayers from '../screens/AddPlayers';
 import ModeCarousel from '../screens/ModeCarousel';
 import Question from '../screens/Question';
-import Paywall from '../screens/Paywall';
 import Settings from '../screens/Settings';
 
-// Define the root stack parameter list
+// Define the root stack parameter list (Paywall screen now handled by Superwall)
 export type RootStackParamList = {
   AddPlayers: undefined;
   ModeCarousel: undefined;
   Question: { packId: string; relaunchGame?: boolean };
-  Paywall: { returnTo?: keyof RootStackParamList; packId?: string };
   Settings: undefined;
 };
 
@@ -30,15 +28,9 @@ const Navigation: React.FC = () => {
   
   const navRef = useRef<NavigationContainerRef<RootStackParamList>>(null);
 
-  const handleReady = () => {
-    // Cast to any to bypass generic constraint for initial navigation
-    (navRef.current as any)?.navigate('Paywall');
-  };
-
   return (
     <NavigationContainer
       ref={navRef}
-      onReady={handleReady}
     >
       <Stack.Navigator
         initialRouteName="AddPlayers"
@@ -78,17 +70,6 @@ const Navigation: React.FC = () => {
           options={{
             headerShown: false,
             gestureEnabled: false,
-          }}
-        />
-        
-        <Stack.Screen
-          name="Paywall"
-          component={Paywall}
-          options={{
-            presentation: 'fullScreenModal',
-            headerShown: false,
-            gestureEnabled: false,
-            animation: 'none'
           }}
         />
         
