@@ -1,7 +1,7 @@
 [
   {
     "id": "g1",
-    "text": "${player}, take a sip if you've ever faked being sick to avoid a date.",
+    "text": "${player}, take a sip if you've ever pretended to be sick to avoid a date.",
     "pack": "girls"
   },
   {
@@ -11,17 +11,17 @@
   },
   {
     "id": "g3",
-    "text": "${player}, take 2 sips if you've ever gone on a girls' trip.",
+    "text": "${player}, take 2 sips if you've ever been on a girls' trip.",
     "pack": "girls"
   },
   {
     "id": "g4",
-    "text": "If ${player} has ever bought clothes online while drunk, drink 2 sips.",
+    "text": "If ${player} has ever bought clothes online while drunk, take 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g5",
-    "text": "${player}, tell your most embarrassing date story or drink 3 sips.",
+    "text": "${player}, tell us about your most embarrassing date or take 3 sips.",
     "pack": "girls"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "id": "g8",
-    "text": "${player} votes which player has the best style tonight. That player gives out 2 sips.",
+    "text": "${player} votes for the player with the best style tonight. That person distributes 2 sips.",
     "pack": "girls"
   },
   {
@@ -46,22 +46,22 @@
   },
   {
     "id": "g10",
-    "text": "${player} must show ${player} the last photo they took. If they refuse, drink 3 sips.",
+    "text": "${player} must show ${player} the last photo they took. If they refuse, 3 sips.",
     "pack": "girls"
   },
   {
     "id": "g11",
-    "text": "Between ${player} and ${player}, whoever spent more on their last hairstyle drinks 2 sips.",
+    "text": "Between ${player} and ${player}, whoever spent more on their last hairstyle takes 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g12",
-    "text": "${player}, rate everyone's outfit on a scale of 1-10. The lowest score drinks.",
+    "text": "${player}, rate everyone's outfit out of 10. The lowest score drinks.",
     "pack": "girls"
   },
   {
     "id": "g13",
-    "text": "${player} and ${player}, drink if you've ever sent screenshots of a chat to another friend.",
+    "text": "${player} and ${player}, drink if you've ever sent screenshots of a conversation to another friend.",
     "pack": "girls"
   },
   {
@@ -71,22 +71,22 @@
   },
   {
     "id": "g15",
-    "text": "${player} tells ${player} a beauty hack. If it's useful, giver gets to distribute 2 sips.",
+    "text": "${player} shares a beauty tip with ${player}. If it's useful, the giver distributes 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g16",
-    "text": "If ${player} or ${player} has ever posted then deleted a selfie, drink 1 sip.",
+    "text": "If ${player} or ${player} has ever posted then deleted a selfie, take 1 sip.",
     "pack": "girls"
   },
   {
     "id": "g17",
-    "text": "${player}, what's your skincare routine? If ${player} thinks it's too short, both drink.",
+    "text": "${player}, what's your skincare routine? If ${player} thinks it's too short, you both drink.",
     "pack": "girls"
   },
   {
     "id": "g18",
-    "text": "${player} and ${player} compare their most recent online purchase. The pricier one drinks 2 sips.",
+    "text": "${player} and ${player} compare their latest online purchase. The more expensive one takes 2 sips.",
     "pack": "girls"
   },
   {
@@ -96,32 +96,32 @@
   },
   {
     "id": "g20",
-    "text": "Between ${player} and ${player}, whoever took longer to get ready today gives out 2 sips.",
+    "text": "Between ${player} and ${player}, whoever took longer to get ready today distributes 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g21",
-    "text": "${player}, who is most likely to marry rich? That person drinks 2 sips.",
+    "text": "${player}, who's most likely to marry rich? That person takes 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g22",
-    "text": "${player} and ${player} compare their celebrity crushes. Everyone votes on the best one; loser drinks.",
+    "text": "${player} and ${player} compare their celebrity crushes. Everyone votes for the best one; loser drinks.",
     "pack": "girls"
   },
   {
     "id": "g23",
-    "text": "${player}, share a dating red flag with ${player}. If they've experienced it, both drink 2 sips.",
+    "text": "${player}, share a dating red flag with ${player}. If they've experienced it, both take 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g24",
-    "text": "Between ${player} and ${player}, whoever has the most dating apps on their phone drinks 3 sips.",
+    "text": "Between ${player} and ${player}, whoever has the most dating apps on their phone takes 3 sips.",
     "pack": "girls"
   },
   {
     "id": "g25",
-    "text": "${player}, have ${player} check your social media. If they find an embarrassing post, drink 2 sips.",
+    "text": "${player}, let ${player} check your social media. If they find an embarrassing post, take 2 sips.",
     "pack": "girls"
   },
   {
@@ -131,22 +131,22 @@
   },
   {
     "id": "g27",
-    "text": "${player}, pick someone who would make the best shopping buddy. They distribute 2 sips.",
+    "text": "${player}, choose someone who would make the best shopping partner. They distribute 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g28",
-    "text": "${player} shares a hair disaster story with ${player} or drinks 3 sips.",
+    "text": "${player} tells ${player} about a hair disaster or takes 3 sips.",
     "pack": "girls"
   },
   {
     "id": "g29",
-    "text": "If ${player} or ${player} has ever sent a risky text after midnight, drink 2 sips.",
+    "text": "If ${player} or ${player} has ever sent a risky text after midnight, take 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g30",
-    "text": "${player} guesses ${player}'s favorite fashion brand. If wrong, both drink 1 sip.",
+    "text": "${player} guesses ${player}'s favorite fashion brand. If wrong, both take 1 sip.",
     "pack": "girls"
   }
 ] 

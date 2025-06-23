@@ -1,152 +1,527 @@
 [
   {
-    "id": "s1",
-    "text": "${player}, take a sip for every person in this room you've thought about kissing.",
+    "id": "c1",
+    "text": "${player}, send \"I miss you tonight\" to your ex in DM, otherwise 3 nasty penalties. 📲",
     "pack": "spicy"
   },
   {
-    "id": "s2",
-    "text": "${player} and ${player}, stare into each other's eyes for 30 seconds. First to laugh or look away drinks 2 sips.",
+    "id": "c2",
+    "text": "Everyone vote: who here is thirsty as hell? The chosen one takes 3 penalties. 🥲",
     "pack": "spicy"
   },
   {
-    "id": "s3",
-    "text": "${player}, truth: what's your biggest turn-on? If ${player} shares the same one, both drink.",
+    "id": "c3",
+    "text": "${player}, pretend to suck your finger real dirty for 5 seconds. Otherwise, 3 penalties. 🧃",
     "pack": "spicy"
   },
   {
-    "id": "s4",
-    "text": "Between ${player} and ${player}, who has had the wildest one-night stand? Group votes, loser drinks 3 sips.",
+    "id": "c4",
+    "text": "${player}, tell us about your worst moment in bed, a real embarrassing story. Otherwise, 2 penalties. 🤯",
     "pack": "spicy"
   },
   {
-    "id": "s5",
-    "text": "${player}, demonstrate your go-to flirting move on ${player} or drink 4 sips.",
+    "id": "c5",
+    "text": "${player}, say the dirtiest phrase you'd love to hear during the act. Otherwise, 2 penalties. 🎧",
     "pack": "spicy"
   },
   {
-    "id": "s6",
-    "text": "If ${player} or ${player} has ever sent a risqué photo, drink 2 sips.",
+    "id": "c6",
+    "text": "${player}, strike a sexy pose and stay frozen like that for 3 rounds. Otherwise, 2 penalties. 🕸️",
     "pack": "spicy"
   },
   {
-    "id": "s7",
-    "text": "${player} must whisper something seductive to ${player}. If they blush, the whisperer gives out 3 sips.",
+    "id": "c7",
+    "text": "${player}, give ${player} a hot massage for 15 seconds. Otherwise, 3 penalties. 💆‍♂️",
     "pack": "spicy"
   },
   {
-    "id": "s8",
-    "text": "Truth: ${player}, what's the most daring place you've hooked up? If ${player} has been more adventurous, you drink 2 sips.",
+    "id": "c8",
+    "text": "${player}, whisper your dirtiest fantasy in ${player}'s ear. If you can't handle it, 3 penalties. 🫦",
     "pack": "spicy"
   },
   {
-    "id": "s9",
-    "text": "${player} and ${player}, play 'Never Have I Ever' with 3 fingers. First to put all fingers down takes 3 sips.",
+    "id": "c9",
+    "text": "${player}, act out a steamy scene with your glass like it's a sex tape. Otherwise, 3 penalties. 🍷",
     "pack": "spicy"
   },
   {
-    "id": "s10",
-    "text": "Between ${player} and ${player}, whoever has the most interesting birthmark shows it or drinks 3 sips.",
+    "id": "c10",
+    "text": "${player}, fake an orgasm right now, with sound effects. Otherwise, 3 penalties. 🫠",
     "pack": "spicy"
   },
   {
-    "id": "s11",
-    "text": "${player}, rate everyone in the room on a scale of 1-10 for attractiveness. Lowest score drinks 2 sips.",
+    "id": "c11",
+    "text": "${player}, tell us about your last weird erotic dream. Otherwise, 2 penalties. 🌙",
     "pack": "spicy"
   },
   {
-    "id": "s12",
-    "text": "${player} and ${player} must compliment each other's physical attributes. Most awkward person drinks 2 sips.",
+    "id": "c12",
+    "text": "${player}, act out your first time like we're watching. Otherwise, 3 penalties. 🎭",
     "pack": "spicy"
   },
   {
-    "id": "s13",
-    "text": "If ${player} has ever had a dream about someone in this room, drink 2 sips. If it was about ${player}, drink 2 more.",
+    "id": "c13",
+    "text": "${player}, recreate a hot scene from a series or movie with ${player}. Otherwise, 2 penalties. 🎬",
     "pack": "spicy"
   },
   {
-    "id": "s14",
-    "text": "${player}, truth or drink 3 sips: what's your favorite position? ${player} decides if it's believable.",
+    "id": "c14",
+    "text": "${player}, have you ever had a real fantasy about someone here? Own it or 2 big penalties. 🥵",
     "pack": "spicy"
   },
   {
-    "id": "s15",
-    "text": "${player} and ${player}, hold hands until your next turns. Whoever lets go first drinks 2 sips.",
+    "id": "c15",
+    "text": "${player}, ask ${player} a really hot question. If either of you backs out: 3 penalties each. 💣",
     "pack": "spicy"
   },
   {
-    "id": "s16",
-    "text": "Between ${player} and ${player}, whoever made out with someone most recently gives out 3 sips.",
+    "id": "c16",
+    "text": "${player}, do 10 sexy push-ups while staring at ${player}. Otherwise, 2 penalties. 💪",
     "pack": "spicy"
   },
   {
-    "id": "s17",
-    "text": "${player}, truth: have you ever had a crush on a friend's partner? If ${player} has too, both drink 2 sips.",
+    "id": "c17",
+    "text": "${player}, do a strip tease for at least 10 seconds. Otherwise, ultimate penalty. 🕺🔥",
     "pack": "spicy"
   },
   {
-    "id": "s18",
-    "text": "${player} and ${player}, take turns naming items you'd find in a bedroom. First to hesitate drinks 2 sips.",
+    "id": "c18",
+    "text": "Who here would like to try a threesome? All those concerned take 2 penalties. 🍑",
     "pack": "spicy"
   },
   {
-    "id": "s19",
-    "text": "If ${player} or ${player} has ever used a dating app while in a relationship, drink 3 sips.",
+    "id": "c19",
+    "text": "${player}, describe how you'd turn on ${player} if you had a free pass. Otherwise, ultimate penalty. 🧨",
     "pack": "spicy"
   },
   {
-    "id": "s20",
-    "text": "${player}, who would you rather kiss: ${player} or ${player}? The unchosen person drinks 2 sips.",
+    "id": "c20",
+    "text": "${player}, lick something alive around you (not your shoe), or 2 penalties. 👅",
     "pack": "spicy"
   },
   {
-    "id": "s21",
-    "text": "Between ${player} and ${player}, whoever has been single longer drinks 2 sips.",
+    "id": "c21",
+    "text": "${player}, give ${player} an ultra hot love declaration. Otherwise, 2 penalties. 💌",
     "pack": "spicy"
   },
   {
-    "id": "s22",
-    "text": "${player}, tell us your biggest deal-breaker in a partner. If ${player} has it, they drink 2 sips.",
+    "id": "c22",
+    "text": "${player}, mime a strip tease in slow motion, like in a badly dubbed porn movie. Otherwise, 2 penalties. ⏳",
     "pack": "spicy"
   },
   {
-    "id": "s23",
-    "text": "${player} and ${player}, quickly describe each other in three words. Most flattering description gives out 2 sips.",
+    "id": "c23",
+    "text": "${player}, take ${player}'s hand and show them (in mime) where you want it to go... Otherwise, 2 penalties. 🫱",
     "pack": "spicy"
   },
   {
-    "id": "s24",
-    "text": "If ${player} or ${player} has ever had a friends-with-benefits situation, drink 2 sips.",
+    "id": "c24",
+    "text": "${player}, mime a Kama Sutra position with ${player}. You refuse? 3 penalties. 📚🫣",
     "pack": "spicy"
   },
   {
-    "id": "s25",
-    "text": "${player}, give ${player} a quick shoulder massage or drink 3 sips.",
+    "id": "c25",
+    "text": "${player}, show us how you'd give a blowjob. Otherwise, 3 penalties. 🌍",
     "pack": "spicy"
   },
   {
-    "id": "s26",
-    "text": "Between ${player} and ${player}, whoever has been on more dates this year drinks 2 sips.",
+    "id": "c26",
+    "text": "${player}, take a penalty for each person here you've imagined kissing. 😏",
     "pack": "spicy"
   },
   {
-    "id": "s27",
-    "text": "${player}, truth: have you ever regretted hooking up with someone? If ${player} has too, both drink 2 sips.",
+    "id": "c27",
+    "text": "${player} and ${player}, steamy staring contest for 20 seconds. First to laugh takes 2 penalties. 👀",
     "pack": "spicy"
   },
   {
-    "id": "s28",
-    "text": "${player} and ${player}, feed each other a drink. If either spills, they drink 2 more sips.",
+    "id": "c28",
+    "text": "Between ${player} and ${player}, who had the wildest one-night stand? Group votes. Loser: 3 penalties.",
     "pack": "spicy"
   },
   {
-    "id": "s29",
-    "text": "If ${player} or ${player} has ever had an awkward encounter with an ex, drink 2 sips.",
+    "id": "c29",
+    "text": "Everyone who has ever sent a nude, that's 2 penalties cash. 📸",
     "pack": "spicy"
   },
   {
-    "id": "s30",
-    "text": "${player} must create a seductive drink name inspired by ${player}. If it's not hot enough, drink 3 sips.",
+    "id": "c30",
+    "text": "${player}, what's the weirdest place you've done stuff? If ${player} beats that, you take 2. 🚗🍃",
+    "pack": "spicy"
+  },
+  {
+    "id": "c31",
+    "text": "${player}, rate everyone here on sex appeal out of 10. Lowest gets: 2 penalties. 🔥",
+    "pack": "spicy"
+  },
+  {
+    "id": "c32",
+    "text": "${player} and ${player}, compliment each other physically. Most awkward person takes 2 penalties. 🫣",
+    "pack": "spicy"
+  },
+  {
+    "id": "c33",
+    "text": "${player}, truth or 3 penalties: what's your favorite position in bed? ${player} judges if it's believable. 🍑",
+    "pack": "spicy"
+  },
+  {
+    "id": "c34",
+    "text": "${player} and ${player}, hold hands until your next turns. First to let go: 2 penalties. 🤝",
+    "pack": "spicy"
+  },
+  {
+    "id": "c35",
+    "text": "${player}, if you've ever had a crush on someone's partner here, that's 2 penalties. 😬",
+    "pack": "spicy"
+  },
+  {
+    "id": "c36",
+    "text": "${player} and ${player}, take turns naming things you find in a bedroom. First to hesitate: 2 penalties. 🛏️",
+    "pack": "spicy"
+  },
+  {
+    "id": "c37",
+    "text": "Those who've checked dating apps while in a relationship, 1 penalty. 💔",
+    "pack": "spicy"
+  },
+  {
+    "id": "c38",
+    "text": "${player}, who would you kiss between ${player} and ${player}? The rejected person takes 2 penalties. 😬",
+    "pack": "spicy"
+  },
+  {
+    "id": "c39",
+    "text": "Between ${player} and ${player}, whoever has been single longest takes 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c40",
+    "text": "${player} and ${player}, describe yourselves in 3 hot words. Best description gives out 2 penalties. 🗣️",
+    "pack": "spicy"
+  },
+  {
+    "id": "c41",
+    "text": "${player}, give ${player} a little shoulder massage. Otherwise, 3 penalties. 💆‍♀️",
+    "pack": "spicy"
+  },
+  {
+    "id": "c42",
+    "text": "Between ${player} and ${player}, whoever had more dates this year: 2 penalties. 📅",
+    "pack": "spicy"
+  },
+  {
+    "id": "c43",
+    "text": "1 penalty for everyone who has regretted a one-night stand 😅",
+    "pack": "spicy"
+  },
+  {
+    "id": "c44",
+    "text": "${player} and ${player}, feed each other a drink (with your glass). If it gets messy, 2 penalties for whoever spills. 🥤",
+    "pack": "spicy"
+  },
+  {
+    "id": "c45",
+    "text": "${player}, who here loves sex the most? That person takes 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c46",
+    "text": "${player}, tell us THE moment in bed that marked you most. Don't want to? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c47",
+    "text": "General vote: anal sex, for or against? Minorities take 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c48",
+    "text": "${player}, show us your tan lines. You chicken out? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c49",
+    "text": "${player}, choose a letter. Everyone who's hooked up with someone whose name starts with that letter takes 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c50",
+    "text": "${player}, you have 10 seconds to describe ${player}'s private parts. Otherwise, 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c51",
+    "text": "${player}, could you totally sleep with ${player} in another life?",
+    "pack": "spicy"
+  },
+  {
+    "id": "c52",
+    "text": "For one turn, every time ${player} speaks, ${player} must make a little hot sound. Otherwise, 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c53",
+    "text": "Those who like being tied up in bed take 1 penalty (admit it 👀).",
+    "pack": "spicy"
+  },
+  {
+    "id": "c54",
+    "text": "Everyone vote: who here is clearly getting laid tonight? Most votes = 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c55",
+    "text": "${player}, who would be the best hookup around the table? If you say yourself, you take 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c56",
+    "text": "${player}, if you've ever taken it in the ass, you can give out 2 penalties. Otherwise, keep them.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c57",
+    "text": "${player}, how would you like to dress up for a hot session? Can't handle it? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c58",
+    "text": "${player}, who here would you give a sex toy to? As a bonus, you can give them 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c59",
+    "text": "${player}, go sit on ${player}'s lap for 3 cards. You refuse? 3 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c60",
+    "text": "${player} and ${player}, you must maintain physical contact for one turn. Otherwise, 2 penalties each.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c61",
+    "text": "${player}, take off your top for 3 cards. Not brave enough? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c62",
+    "text": "Everyone who has tried anal fingering takes 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c63",
+    "text": "${player} and ${player}, take a selfie making out. Too scared? 2 penalties each.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c64",
+    "text": "Take turns saying something you love having in your mouth 😏. Out of ideas? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c65",
+    "text": "Everyone who has had sex in a public place takes 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c66",
+    "text": "${player}, what's your thing during foreplay? Don't want to say? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c67",
+    "text": "${player}, tell us about your worst night of sex. Otherwise, 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c68",
+    "text": "${player}, fake an orgasm. You're scared? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c69",
+    "text": "${player}, give us the name of your best hookup. Don't want to? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c70",
+    "text": "${player} and ${player}, if you want to make out, now's the time. Otherwise, 1 penalty each.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c71",
+    "text": "${player}, how many porn videos did you watch this week? Won't answer? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c72",
+    "text": "${player}, if you want an orgy with people here, that's 2 penalties straight up.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c73",
+    "text": "Group vote: who should kiss ${player}? The chosen person does it or takes 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c74",
+    "text": "${player}, guess the size of the nearest guy's package within 2 cm. Wrong? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c75",
+    "text": "Those who have had sex on the beach take 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c76",
+    "text": "${player}, remove one piece of clothing for the rest of the game. Otherwise, 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c77",
+    "text": "${player}, how many fingers are you ready to take? Won't answer? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c78",
+    "text": "${player}, you have 10 seconds to name a porn star starting with C. Otherwise, 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c79",
+    "text": "${player}, lick ${player}'s nipple. They don't want to? 2 penalties for you.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c80",
+    "text": "${player}, distribute as many penalties as the age difference with the youngest person you've slept with.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c81",
+    "text": "${player}, caress ${player}'s knee for 10 seconds. They don't want to? You take 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c82",
+    "text": "${player}, take turns naming Kama Sutra positions. First to hesitate takes 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c83",
+    "text": "${player}, 3 penalties if you've ever peed in the shower.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c84",
+    "text": "${player}, what nationality turns you on most? Can't handle it? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c85",
+    "text": "${player}, 1 penalty if you've ever had sex in a pool.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c86",
+    "text": "${player}, kiss ${player}'s neck. Refusal = 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c87",
+    "text": "${player} vs ${player}: first to name a porn movie title gives the other 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c88",
+    "text": "${player}, if you've ever tried poppers, take 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c89",
+    "text": "${player}, who here is most likely to end up on OnlyFans? That person takes 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c90",
+    "text": "${player} vs ${player}, you must remove then put back on 3 pieces of clothing. Slowest takes 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c91",
+    "text": "${player}, take turns naming objects that could be used as sex toys. Out of ideas? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c92",
+    "text": "${player}, text your mom asking for the names of two of her exes. Too scared? Ultimate penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c93",
+    "text": "${player}, if you think you have a nicer ass than ${player}, you take 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c94",
+    "text": "Everyone vote: who's the most sexually frustrated here? The chosen one takes 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c95",
+    "text": "${player}, name the person here you'd pay for an OnlyFans subscription. Won't say? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c96",
+    "text": "${player}, who here would you like to be stuck in an elevator with? Can't handle it? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c97",
+    "text": "${player} vs ${player}: rock paper scissors. Loser removes an item of clothing.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c98",
+    "text": "Those who have touched themselves during class take 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c99",
+    "text": "${player}, who's the most skilled with their tongue here in your opinion? Don't want to test? 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c100",
+    "text": "${player}, go nibble ${player}'s ear. Not brave enough? 2 penalties.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c101",
+    "text": "${player} vs ${player}, who twerks better here? Worst twerk gets 1 penalty.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c102",
+    "text": "${player}: caress ${player} with your eyes closed? If ${player} laughs, that's 1 penalty for you.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c103",
+    "text": "${player}, take 1 penalty if you're wearing sexy underwear. Otherwise it's 2 penalties for ${player}",
+    "pack": "spicy"
+  },
+  {
+    "id": "c104",
+    "text": "${player}, take 1 penalty if you've ever considered making a sex tape.",
+    "pack": "spicy"
+  },
+  {
+    "id": "c105",
+    "text": "${player}, take 1 penalty if you've ever been caught masturbating.",
     "pack": "spicy"
   }
 ] 
