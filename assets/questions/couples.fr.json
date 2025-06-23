@@ -348,5 +348,155 @@
     "id": "co70",
     "text": "Jeu de couples : celui qui a scrollé le plus loin dans son propre Instagram cette semaine boit 2 gorgées.",
     "pack": "couples"
+  },
+  {
+    "id": "co71",
+    "text": "${player}, révèle la façon la plus créative dont ${player} évite de répondre au téléphone. S'il le démontre en live, il distribue 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co72",
+    "text": "Tous les couples : celui qui a le plus de fils/écouteurs emmêlés quelque part chez lui boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co73",
+    "text": "${player}, imite la façon dont ${player} prétend écouter quand il est sur son téléphone. Ton partenaire boit s'il se reconnaît parfaitement.",
+    "pack": "couples"
+  },
+  {
+    "id": "co74",
+    "text": "${player} et ${player}, révélez mutuellement votre pire achat impulsif sur internet. Le plus inutile fait boire 3 gorgées à l'autre.",
+    "pack": "couples"
+  },
+  {
+    "id": "co75",
+    "text": "Jeu de couples : celui qui a le plus de trucs 'de secours' périmés dans ses placards boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co76",
+    "text": "${player}, quelle est la combinaison la plus bizarre de ${player} pour être confortable ? S'il l'assume, il distribue 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co77",
+    "text": "Tous les couples : celui qui dit le plus souvent 'on devrait faire ça' sans jamais le faire boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co78",
+    "text": "${player}, révèle la technique secrète de ${player} pour éviter les conversations gênantes. S'il l'utilise maintenant, il boit 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co79",
+    "text": "${player} et ${player}, créez ensemble une publicité de 30 secondes pour vendre vos pires défauts. La plus convaincante fait distribuer 4 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co80",
+    "text": "Jeu de couples : celui qui a le plus de notifications désactivées par flemme boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co81",
+    "text": "${player}, quelle est la chose la plus random que ${player} fait quand il s'ennuie ? S'il le fait depuis moins d'une heure, il distribue 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co82",
+    "text": "Tous les couples : celui qui a le plus de projets commencés mais jamais finis boit 2 gorgées par projet abandonné (max 6).",
+    "pack": "couples"
+  },
+  {
+    "id": "co83",
+    "text": "${player}, imite parfaitement le son que fait ${player} quand il essaie de se rappeler quelque chose. Si c'est trop précis, ton partenaire distribue 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co84",
+    "text": "${player} et ${player}, inventez ensemble une méthode révolutionnaire pour éviter les tâches ménagères. La plus ingénieuse fait boire 3 gorgées au groupe.",
+    "pack": "couples"
+  },
+  {
+    "id": "co85",
+    "text": "Jeu de couples : celui qui a le plus de mots de passe identiques pour tout boit 2 gorgées (et doit les changer après).",
+    "pack": "couples"
+  },
+  {
+    "id": "co86",
+    "text": "${player}, révèle la superstition la plus ridicule de ${player} liée à la technologie. S'il la pratique encore, il boit 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co87",
+    "text": "Tous les couples : celui qui a le plus de 'favoris' qu'il ne consulte jamais boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co88",
+    "text": "${player}, quelle est la façon la plus créative dont ${player} procrastine avant de dormir ? S'il l'a fait hier soir, il boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co89",
+    "text": "${player} et ${player}, mimez ensemble votre routine matinale en accéléré. Si c'est trop réaliste, vous distribuez 3 gorgées chacun.",
+    "pack": "couples"
+  },
+  {
+    "id": "co90",
+    "text": "Jeu de couples : celui qui a le plus de conversations avec lui-même à voix haute boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co91",
+    "text": "${player}, révèle le truc le plus bizarre que ${player} fait pour 'optimiser' sa journée. S'il insiste que c'est logique, il boit 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co92",
+    "text": "Tous les couples : celui qui a le plus de screenshots de memes qu'il a oublié de partager boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co93",
+    "text": "${player}, imite la façon dont ${player} fait semblant de comprendre quelque chose de technique. Ton partenaire boit s'il se reconnaît.",
+    "pack": "couples"
+  },
+  {
+    "id": "co94",
+    "text": "${player} et ${player}, créez ensemble un guide de survie basé sur vos incompétences respectives. Le plus utile fait boire 3 gorgées au groupe.",
+    "pack": "couples"
+  },
+  {
+    "id": "co95",
+    "text": "Jeu de couples : celui qui reporte le plus ses alarmes le matin boit 2 gorgées par snooze habituel.",
+    "pack": "couples"
+  },
+  {
+    "id": "co96",
+    "text": "${player}, quelle est la théorie la plus farfelue de ${player} pour expliquer pourquoi il perd toujours ses clés ? S'il en a plusieurs, il distribue 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co97",
+    "text": "Tous les couples : celui qui a le plus de contacts dans son téléphone qu'il ne reconnaîtrait plus boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co98",
+    "text": "${player}, révèle la chose la plus weird que ${player} fait pour éviter d'admettre qu'il a tort. S'il le fait maintenant, il boit 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co99",
+    "text": "${player} et ${player}, inventez ensemble une excuse complètement absurde pour expliquer pourquoi vous êtes en retard. La plus créative fait distribuer 4 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co100",
+    "text": "Final couples : ${player} et ${player}, révélez mutuellement la chose la plus ridicule que vous avez apprise sur l'autre grâce à ce jeu. Tout le monde boit 3 gorgées pour célébrer !",
+    "pack": "couples"
   }
 ] 
