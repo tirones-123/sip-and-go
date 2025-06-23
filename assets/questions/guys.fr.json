@@ -1,152 +1,152 @@
 [
   {
     "id": "gy1",
-    "text": "${player}, bois 2 gorgées si tu t'es déjà battu.",
+    "text": "${player}, raconte le compliment le plus sincère qu'on t'ait fait récemment. Si ${player} trouve ça touchant, il distribue 2 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy2",
-    "text": "${player} et ${player}, faites la course pour finir vos verres. Le perdant prend 2 gorgées supplémentaires.",
+    "text": "${player} et ${player}, inventez ensemble le pitch d'une série Netflix absurde. Le groupe vote, si c'est génial, vous distribuez 3 gorgées chacun.",
     "pack": "guys"
   },
   {
     "id": "gy3",
-    "text": "${player}, quelle est ta plus grande performance sportive ? Si ${player} n'est pas impressionné, bois 2 gorgées.",
+    "text": "${player}, quelle est ta théorie du complot la plus stupide mais secrètement plausible ? Si ${player} y adhère, vous trinquez sans boire.",
     "pack": "guys"
   },
   {
     "id": "gy4",
-    "text": "Entre ${player} et ${player}, celui qui développe couché le plus distribue 3 gorgées.",
+    "text": "Entre ${player} et ${player}, celui qui a la playlist Spotify la plus embarrassante boit 2 gorgées (et on veut des preuves).",
     "pack": "guys"
   },
   {
     "id": "gy5",
-    "text": "${player}, bois une gorgée pour chaque console de jeux que tu possèdes actuellement.",
+    "text": "${player}, imite l'animal qui te représente le mieux selon toi. Si ${player} devine juste, il distribue 3 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy6",
-    "text": "${player} et ${player}, bras de fer ! Le perdant boit 3 gorgées.",
+    "text": "${player} et ${player}, bataille de mimes : refaites votre série préférée en 30 secondes. Le groupe vote, le perdant boit 2 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy7",
-    "text": "${player}, raconte ton rejet le plus embarrassant ou bois 4 gorgées.",
+    "text": "${player}, révèle ton crush d'enfance le plus improbable. Si ${player} comprend ton goût douteux, vous buvez ensemble.",
     "pack": "guys"
   },
   {
     "id": "gy8",
-    "text": "${player} choisit quel joueur survivrait le plus longtemps pendant une apocalypse zombie. ${player} distribue 3 gorgées.",
+    "text": "${player} choisit lequel d'entre vous survivrait le mieux dans un escape game. Cette personne distribue 2 gorgées à qui elle veut.",
     "pack": "guys"
   },
   {
     "id": "gy9",
-    "text": "Si ${player} ou ${player} a déjà envoyé un message bourré à un ex, bois 2 gorgées.",
+    "text": "Si ${player} ou ${player} a déjà liké par erreur une photo Instagram d'il y a 2 ans, bois 3 gorgées de honte.",
     "pack": "guys"
   },
   {
     "id": "gy10",
-    "text": "${player} et ${player} participent à un concours de regards. Le perdant boit 2 gorgées.",
+    "text": "${player} et ${player}, concours de beatbox/rap improvisé sur le thème 'pizza'. Le public décide, le perdant boit 2 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy11",
-    "text": "${player}, vérité : quelle est ta technique pour impressionner quelqu'un qui te plaît ? Si ${player} pense que ça ne marcherait pas, bois.",
+    "text": "${player}, vérité : quel super-pouvoir choisirais-tu et pourquoi ? Si ${player} pense que tu l'utiliserais mal, vous buvez tous les deux.",
     "pack": "guys"
   },
   {
     "id": "gy12",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de matchs sur les applis de rencontre prend 2 gorgées.",
+    "text": "Entre ${player} et ${player}, celui qui a le plus de photos de nourriture sur son phone boit 2 gorgées (on compte les stories).",
     "pack": "guys"
   },
   {
     "id": "gy13",
-    "text": "${player}, montre le dernier mème inapproprié que tu as sauvegardé ou bois 3 gorgées.",
+    "text": "${player}, montre ton dernier achat Amazon impulsif ou bois 3 gorgées de regret consumériste.",
     "pack": "guys"
   },
   {
     "id": "gy14",
-    "text": "${player} et ${player} comparent leurs équipes sportives préférées. Tout le monde vote pour la meilleure ; le perdant boit.",
+    "text": "${player} et ${player}, débattez : pineapple sur pizza, pour ou contre ? Chacun a 30 secondes. Le groupe vote, le perdant boit.",
     "pack": "guys"
   },
   {
     "id": "gy15",
-    "text": "${player}, quelle voiture achèterais-tu si l'argent n'était pas un problème ? Si ${player} pense que c'est un mauvais choix, vous buvez tous les deux.",
+    "text": "${player}, si tu pouvais redécouvrir un film pour la première fois, lequel ? Si ${player} n'a jamais vu ce film, il boit 2 gorgées de culture.",
     "pack": "guys"
   },
   {
     "id": "gy16",
-    "text": "Si ${player} ou ${player} a déjà utilisé une phrase de drague ringarde, bois 2 gorgées.",
+    "text": "Si ${player} ou ${player} a déjà menti sur son âge sur une app, bois 2 gorgées par année de différence (maximum 4).",
     "pack": "guys"
   },
   {
     "id": "gy17",
-    "text": "${player} et ${player}, bras de fer avec le pouce. Le perdant boit 2 gorgées.",
+    "text": "${player} et ${player}, bataille de dad jokes. Chacun en sort une, le groupe vote. Le perdant boit 2 gorgées de second degré.",
     "pack": "guys"
   },
   {
     "id": "gy18",
-    "text": "${player}, note le style vestimentaire de chacun. Le score le plus bas boit 2 gorgées.",
+    "text": "${player}, note le style de chacun mais uniquement avec des références de dessins animés. Le score le plus bas boit 2 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy19",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps sans laver ses draps boit 2 gorgées.",
+    "text": "Entre ${player} et ${player}, celui qui a le dernier message le plus cringe dans ses DMs boit 2 gorgées (sans montrer).",
     "pack": "guys"
   },
   {
     "id": "gy20",
-    "text": "${player} montre à ${player} la photo la plus embarrassante sur son téléphone ou boit 3 gorgées.",
+    "text": "${player} raconte à ${player} ton rêve le plus bizarre récent. S'il trouve ça trop wtf pour être inventé, il boit 3 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy21",
-    "text": "Si ${player} ou ${player} s'est déjà fait virer d'un bar, bois 3 gorgées.",
+    "text": "Si ${player} ou ${player} s'est déjà endormi pendant un film au cinéma, bois 2 gorgées par film (maximum 6).",
     "pack": "guys"
   },
   {
     "id": "gy22",
-    "text": "${player} et ${player}, qui peut faire le plus de pompes ? Le perdant boit autant de gorgées.",
+    "text": "${player} et ${player}, qui peut tenir un plank le plus longtemps ? Le perdant boit autant de gorgées que de secondes de différence (max 5).",
     "pack": "guys"
   },
   {
     "id": "gy23",
-    "text": "${player}, raconte ta meilleure blague de papa. Si ${player} ne rit pas, tu bois 2 gorgées.",
+    "text": "${player}, fais ton meilleur accent régional français. Si ${player} devine la région, tu distribues 3 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy24",
-    "text": "Entre ${player} et ${player}, celui qui a dépensé le plus pour sa dernière coupe de cheveux boit 2 gorgées.",
+    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps sur TikTok aujourd'hui boit 2 gorgées d'addiction aux réseaux.",
     "pack": "guys"
   },
   {
     "id": "gy25",
-    "text": "${player}, qui dans ce groupe serait le pire coloc ? Cette personne distribue 2 gorgées.",
+    "text": "${player}, qui ici ferait le meilleur YouTubeur ? Cette personne fait un intro de chaîne improbable puis distribue 2 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy26",
-    "text": "Si ${player} ou ${player} a déjà fait semblant de s'y connaître en sport pour impressionner quelqu'un, bois 2 gorgées.",
+    "text": "Si ${player} ou ${player} a déjà googl 'comment impressionner' quelque chose, bois 2 gorgées de recherche désespérée.",
     "pack": "guys"
   },
   {
     "id": "gy27",
-    "text": "${player} et ${player}, comparez vos plans pour le weekend. Le groupe vote pour le meilleur ; le perdant boit.",
+    "text": "${player} et ${player}, créez ensemble un business plan ridicule en 1 minute. Si le groupe investirait, vous distribuez 4 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy28",
-    "text": "${player}, si tu devais te battre avec quelqu'un ici, qui serait-ce ? ${player} distribue 3 gorgées.",
+    "text": "${player}, dans un zombie apocalypse, qui ici serait ton premier allié ? ${player} choisit à qui il distribue 3 gorgées en remerciement.",
     "pack": "guys"
   },
   {
     "id": "gy29",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de notifications sur son téléphone en ce moment boit 2 gorgées.",
+    "text": "Entre ${player} et ${player}, celui qui a le plus d'onglets ouverts sur son navigateur en ce moment boit 2 gorgées par tranche de 10.",
     "pack": "guys"
   },
   {
     "id": "gy30",
-    "text": "${player} choisit pierre, feuille ou ciseaux mentalement. ${player} devine ce que c'est. Si c'est faux, les deux boivent.",
+    "text": "${player} pense à son emoji le plus utilisé. ${player} doit le deviner en 3 essais. Si raté, vous buvez tous les deux en rigolant.",
     "pack": "guys"
   }
 ]
