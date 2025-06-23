@@ -248,5 +248,105 @@
     "id": "gy50",
     "text": "${player} et ${player}, créez ensemble le concept du pire reality show possible. Si le groupe regarderait quand même, vous distribuez 4 gorgées de télé-poubelle assumée.",
     "pack": "guys"
+  },
+  {
+    "id": "gy51",
+    "text": "${player}, imite ton prof le plus marquant du lycée. Si ${player} devine la matière, tu distribues 3 gorgées de nostalgie scolaire.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy52",
+    "text": "Entre ${player} et ${player}, celui qui a le plus de screenshots de conversations drôles boit 2 gorgées d'archivage compulsif.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy53",
+    "text": "${player} et ${player}, inventez ensemble un nom de groupe de rock ridicule. Si ça sonne pro, vous distribuez 3 gorgées chacun.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy54",
+    "text": "${player}, raconte ta technique la plus bizarre pour te motiver le matin. Si ${player} testerait, il boit 2 gorgées de curiosité matinale.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy55",
+    "text": "Si ${player} ou ${player} a déjà fait une playlist pour impressionner quelqu'un, bois 2 gorgées par chanson ratée dans la séduction.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy56",
+    "text": "${player}, fais ton meilleur pitch pour vendre un cours en ligne sur un truc que tu ne maîtrises pas. Si ${player} s'inscrirait, tu distribues 4 gorgées d'arnaque assumée.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy57",
+    "text": "Entre ${player} et ${player}, celui qui a le plus de contacts dans son tel qu'il ne reconnaîtrait pas dans la rue boit 3 gorgées de réseau fantôme.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy58",
+    "text": "${player} et ${player}, débattez : dormir avec ou sans chaussettes ? Arguments scientifiques exigés. Le groupe vote, le perdant boit 2 gorgées.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy59",
+    "text": "${player}, montre ton GIF de réaction le plus utilisé et explique pourquoi il résume ta personnalité. Si ${player} approuve, vous trinquez.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy60",
+    "text": "Si ${player} ou ${player} a déjà menti sur ses compétences dans son CV, bois 2 gorgées par mensonge créatif (soyez honnêtes).",
+    "pack": "guys"
+  },
+  {
+    "id": "gy61",
+    "text": "${player}, fais le doublage le plus dramatique possible de ${player} qui mange quelque chose. S'il joue le jeu, vous distribuez 2 gorgées de théâtre alimentaire.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy62",
+    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des vidéos de chats boit 2 gorgées de mignonnerie assumée.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy63",
+    "text": "${player}, invente la bio Tinder la plus honnête mais séduisante possible. Si ${player} swiperait à droite, tu distribues 3 gorgées de sincérité attractive.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy64",
+    "text": "Si ${player} ou ${player} a déjà eu une conversation sérieuse avec son animal de compagnie, bois 2 gorgées de Dr. Dolittle.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy65",
+    "text": "${player} et ${player}, créez ensemble la théorie de why les chaussettes disparaissent dans la machine. Si c'est convaincant, vous distribuez 3 gorgées de génie domestique.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy66",
+    "text": "${player}, raconte ton moment le plus random où tu t'es senti comme le protagoniste d'un film. Si ${player} capte la vibe, il boit 2 gorgées de cinéma mental.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy67",
+    "text": "Entre ${player} et ${player}, celui qui a le plus de brouillons de messages jamais envoyés boit 2 gorgées d'indécision textuelle.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy68",
+    "text": "${player}, fais ton meilleur tutoriel YouTube pour une tâche ultra-basique (genre faire ses lacets). Si ${player} likrait, tu distribues 3 gorgées de pédagogie inutile.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy69",
+    "text": "Si ${player} ou ${player} a déjà créé un compte avec un faux nom sur un réseau social, bois 2 gorgées par identité secrète.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy70",
+    "text": "${player} et ${player}, inventez ensemble le slogan publicitaire le plus nul pour de l'eau. Si c'est si mauvais que c'en devient mémorable, vous distribuez 4 gorgées d'anti-marketing de génie.",
+    "pack": "guys"
   }
 ]
