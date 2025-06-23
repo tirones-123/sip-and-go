@@ -148,5 +148,105 @@
     "id": "gy30",
     "text": "${player} pense à son emoji le plus utilisé. ${player} doit le deviner en 3 essais. Si raté, vous buvez tous les deux en rigolant.",
     "pack": "guys"
+  },
+  {
+    "id": "gy31",
+    "text": "${player}, fais ton meilleur cri de guerre de gamer. Si ${player} pense que ça motiverait une équipe, tu distribues 3 gorgées.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy32",
+    "text": "Entre ${player} et ${player}, celui qui a le plus de memes sauvegardés sur son téléphone boit 2 gorgées de culture internet.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy33",
+    "text": "${player} et ${player}, créez la chorégraphie la plus ridicule sur 30 secondes. Le groupe vote, les perdants boivent 2 gorgées chacun.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy34",
+    "text": "${player}, imite comment tu cours quand tu es en retard. Si ${player} reconnaît cette course paniquée, vous trinquez.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy35",
+    "text": "Si ${player} ou ${player} a déjà fait semblant de comprendre un truc technique qu'il ne connaissait pas, bois 2 gorgées d'imposture.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy36",
+    "text": "${player}, raconte ton moment le plus awkward en visioconférence. Si ${player} compatit, il boit 2 gorgées de télétravail solidaire.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy37",
+    "text": "Entre ${player} et ${player}, celui qui a le plus de trucs inutiles dans ses favoris YouTube boit 2 gorgées de procrastination.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy38",
+    "text": "${player} et ${player}, débattez : team chien ou team chat ? Chacun a 45 secondes pour convaincre. Le groupe vote, le perdant boit.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy39",
+    "text": "${player}, montre ta photo de profil la plus ancienne que tu trouves. Si ${player} trouve ça iconique, tu distribues 3 gorgées.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy40",
+    "text": "Si ${player} ou ${player} a déjà eu une phase 'influenceur' avec 3 abonnés, bois 2 gorgées par tentative de story sponsorisée ratée.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy41",
+    "text": "${player}, fais le commentaire sportif le plus dramatique possible d'une action banale que fait ${player}. S'il joue le jeu, vous distribuez 2 gorgées chacun.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy42",
+    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à customiser son avatar dans un jeu boit 2 gorgées de perfectionnisme virtuel.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy43",
+    "text": "${player}, invente la pub la plus nulle pour un objet du quotidien. Si ${player} achèterait le produit, tu distribues 4 gorgées de génie marketing.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy44",
+    "text": "Si ${player} ou ${player} a déjà stalké quelqu'un sur LinkedIn pour des raisons non-professionnelles, bois 3 gorgées de curiosité mal placée.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy45",
+    "text": "${player} et ${player}, concours de compliments créatifs pour ${player}. Le plus original fait boire 2 gorgées à l'autre.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy46",
+    "text": "${player}, raconte ton fail culinaire le plus épique. Si ${player} a vécu pire, vous buvez ensemble en solidarité de nuls en cuisine.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy47",
+    "text": "Entre ${player} et ${player}, celui qui a le plus de notifications non-lues boit 1 gorgée par tranche de 50 (maximum 4 gorgées).",
+    "pack": "guys"
+  },
+  {
+    "id": "gy48",
+    "text": "${player}, fais ton meilleur pitch pour convaincre un alien de visiter la Terre. Si ${player} viendrait, tu distribues 3 gorgées galactiques.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy49",
+    "text": "Si ${player} ou ${player} a déjà fait un achat à 3h du matin en scroll infini, bois 2 gorgées par objet inutile commandé.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy50",
+    "text": "${player} et ${player}, créez ensemble le concept du pire reality show possible. Si le groupe regarderait quand même, vous distribuez 4 gorgées de télé-poubelle assumée.",
+    "pack": "guys"
   }
 ]
