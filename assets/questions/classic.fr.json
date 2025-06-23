@@ -898,5 +898,355 @@
     "id": "c180",
     "text": "Le joueur le plus poilu à table distribue 1 pénalité. Fierté capillaire. 🧔",
     "pack": "classic"
+  },
+  {
+    "id": "c181",
+    "text": "${player}, t'as déjà fait semblant d'être malade pour sécher le boulot/les cours ? Si oui, prends 1 pénalité. 🤒",
+    "pack": "classic"
+  },
+  {
+    "id": "c182",
+    "text": "Tous ceux qui ont déjà mangé un truc qui sentait chelou mais l'ont fini quand même : 1 pénalité. 🤢",
+    "pack": "classic"
+  },
+  {
+    "id": "c183",
+    "text": "${player}, fais ton meilleur cri de mouette pendant 5 secondes. Sinon, 2 pénalités. 🕊️",
+    "pack": "classic"
+  },
+  {
+    "id": "c184",
+    "text": "Go on vote tous : qui utilise encore \"mdr\" sans ironie ? Cette relique prend 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c185",
+    "text": "${player}, raconte ton mensonge le plus créatif à tes darons. Si tu veux garder le secret, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c186",
+    "text": "Tous ceux qui ont déjà fait genre d'avoir lu un bouquin qu'ils ont jamais ouvert : 1 pénalité. 📚",
+    "pack": "classic"
+  },
+  {
+    "id": "c187",
+    "text": "${player}, si t'as déjà testé un filtre Snapchat pour voir si t'étais beau/belle en mec/meuf, 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c188",
+    "text": "Tous ceux qui ont déjà ramené quelqu'un chez eux juste pour pas dormir seuls : 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c189",
+    "text": "${player}, montre-nous ta danse de la victoire la plus ridicule. Tu refuses ? 2 pénalités. 💃",
+    "pack": "classic"
+  },
+  {
+    "id": "c190",
+    "text": "Go on vote tous : qui a déjà eu un crush sur un personnage de dessin animé ? 2 pénalités pour l'élu(e). 📺",
+    "pack": "classic"
+  },
+  {
+    "id": "c191",
+    "text": "${player}, si t'as déjà liké une photo d'ex en scrollant trop vite, pénalité ultime. Le cringe absolu. 📱",
+    "pack": "classic"
+  },
+  {
+    "id": "c192",
+    "text": "Tous ceux qui ont un deuxième prénom qu'ils cachent : 1 pénalité. Assumez vos darons bizarres.",
+    "pack": "classic"
+  },
+  {
+    "id": "c193",
+    "text": "${player}, cite 3 mots que tu prononces mal depuis toujours. Si tu veux pas assumer, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c194",
+    "text": "Règle nouvelle : quand quelqu'un dit \"donc\", il faut lever la main. Le dernier prend 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c195",
+    "text": "${player}, fais un battle de regards avec ${player} pendant 15 secondes. Celui qui cligne perd et prend 2 pénalités. 👁️",
+    "pack": "classic"
+  },
+  {
+    "id": "c196",
+    "text": "Tous ceux qui ont déjà eu peur du noir après avoir regardé un film d'horreur : 1 pénalité. 🌙",
+    "pack": "classic"
+  },
+  {
+    "id": "c197",
+    "text": "${player}, raconte un moment où t'as eu une révélation cosmique sous la douche. Sinon, 2 pénalités. 🚿",
+    "pack": "classic"
+  },
+  {
+    "id": "c198",
+    "text": "Go on vote tous : qui serait capable de survivre le plus longtemps dans Koh Lanta ? Il/elle distribue 2 pénalités. 🏝️",
+    "pack": "classic"
+  },
+  {
+    "id": "c199",
+    "text": "${player}, si t'as déjà fait un achat en ligne bourré(e) que tu regrettes, prends 2 pénalités. 💳",
+    "pack": "classic"
+  },
+  {
+    "id": "c200",
+    "text": "Tous ceux qui ont déjà simulé un orgasme prennent 2 pénalités. L'acting a ses limites. 🎭",
+    "pack": "classic"
+  },
+  {
+    "id": "c201",
+    "text": "${player}, imite le bruit que fait ton réveil. Si personne reconnaît, 2 pénalités. ⏰",
+    "pack": "classic"
+  },
+  {
+    "id": "c202",
+    "text": "Tous ceux qui ont Netflix, Disney+ ET Amazon Prime en même temps : 1 pénalité pour l'addiction. 📺",
+    "pack": "classic"
+  },
+  {
+    "id": "c203",
+    "text": "${player}, balance ton pire pickup line. Si tu veux garder ta dignité, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c204",
+    "text": "Go on vote tous : qui a les réflexes les plus lents ici ? Cette tortue prend 2 pénalités. 🐢",
+    "pack": "classic"
+  },
+  {
+    "id": "c205",
+    "text": "${player}, si t'as déjà eu envie de pécho quelqu'un rien que pour sa voix, prends 1 pénalité.",
+    "pack": "classic"
+  },
+  {
+    "id": "c206",
+    "text": "Tous ceux qui ont déjà fait croire qu'ils étaient malades pendant un appel vidéo : 1 pénalité. 📞",
+    "pack": "classic"
+  },
+  {
+    "id": "c207",
+    "text": "${player}, fais le moonwalk. Si tu ressembles plus à un pingouin qu'à MJ, 2 pénalités. 🕺",
+    "pack": "classic"
+  },
+  {
+    "id": "c208",
+    "text": "Règle : pendant 3 tours, tout le monde doit dire \"bisous\" avant de boire. Oubli = 1 pénalité. 💋",
+    "pack": "classic"
+  },
+  {
+    "id": "c209",
+    "text": "${player}, donne-nous ton meilleur conseil de merde. Plus c'est nul, plus on rigole. Sinon, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c210",
+    "text": "Tous ceux qui ont un tatouage qu'ils regrettent ou qu'ils cachent : 2 pénalités. 🎨",
+    "pack": "classic"
+  },
+  {
+    "id": "c211",
+    "text": "${player}, si tu devais recommencer tes études, tu ferais quoi ? Si tu sèches, 1 pénalité. 🎓",
+    "pack": "classic"
+  },
+  {
+    "id": "c212",
+    "text": "Go on vote tous : qui a le plus de chances de devenir célèbre pour les mauvaises raisons ? 2 pénalités. 📸",
+    "pack": "classic"
+  },
+  {
+    "id": "c213",
+    "text": "${player}, raconte ton pire rendez-vous galant en 30 secondes chrono. Pas fini à temps ? 2 pénalités. ⏱️",
+    "pack": "classic"
+  },
+  {
+    "id": "c214",
+    "text": "Tous ceux qui ont déjà envoyé un message à la mauvaise personne : 1 pénalité. Le malaise. 💬",
+    "pack": "classic"
+  },
+  {
+    "id": "c215",
+    "text": "${player}, si t'as déjà fait semblant de comprendre une blague pour pas passer pour un idiot, 1 pénalité. 😅",
+    "pack": "classic"
+  },
+  {
+    "id": "c216",
+    "text": "Dernière connexion sur un réseau social : le plus récent prend 1 pénalité. Addiction confirmée. 📱",
+    "pack": "classic"
+  },
+  {
+    "id": "c217",
+    "text": "${player}, imite quelqu'un qui découvre qu'il a gagné au loto. Si on y croit pas, 2 pénalités. 💰",
+    "pack": "classic"
+  },
+  {
+    "id": "c218",
+    "text": "Go on vote tous : qui utilise le plus d'emojis dans ses messages ? Cette licorne prend 2 pénalités. 🦄",
+    "pack": "classic"
+  },
+  {
+    "id": "c219",
+    "text": "${player}, balance ton excuse la plus foireuse pour annuler un plan. Si tu veux garder tes secrets, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c220",
+    "text": "Tous ceux qui ont déjà fait du chantage affectif à leurs parents : 2 pénalités. Manipulateurs. 😈",
+    "pack": "classic"
+  },
+  {
+    "id": "c221",
+    "text": "${player}, fais ton bruit d'animal préféré. Si personne devine lequel, 2 pénalités. 🦁",
+    "pack": "classic"
+  },
+  {
+    "id": "c222",
+    "text": "Règle : interdiction de dire \"putain\" pendant 5 tours. Celui qui craque prend 2 pénalités. 🤬",
+    "pack": "classic"
+  },
+  {
+    "id": "c223",
+    "text": "${player}, raconte un moment où t'as été un vrai boulet social. Si tu nies, 2 pénalités.",
+    "pack": "classic"
+  },
+  {
+    "id": "c224",
+    "text": "Go on vote tous : qui a la meilleure excuse pour arriver en retard ? Il/elle distribue 1 pénalité. ⏰",
+    "pack": "classic"
+  },
+  {
+    "id": "c225",
+    "text": "${player}, si t'as déjà menti sur ton âge sur Internet, prends 1 pénalité. Même à 13 ans pour jouer à Call of. 🎮",
+    "pack": "classic"
+  },
+  {
+    "id": "c226",
+    "text": "Tous ceux qui ont une playlist \"musique de merde\" qu'ils écoutent en secret : 1 pénalité. 🎵",
+    "pack": "classic"
+  },
+  {
+    "id": "c227",
+    "text": "${player}, donne-nous ta théorie du complot préférée. Plus c'est wtf, mieux c'est. Sinon, 2 pénalités. 👽",
+    "pack": "classic"
+  },
+  {
+    "id": "c228",
+    "text": "Go on vote tous : qui serait le plus nul en tant que espion ? Cette balance prend 2 pénalités. 🕵️",
+    "pack": "classic"
+  },
+  {
+    "id": "c229",
+    "text": "${player}, si t'as déjà eu le béguin pour quelqu'un juste à cause de sa voix, prends 1 pénalité. 🎤",
+    "pack": "classic"
+  },
+  {
+    "id": "c230",
+    "text": "Tous ceux qui ont déjà raconté la même histoire 3 fois à la même personne : 1 pénalité. La mémoire... 🧠",
+    "pack": "classic"
+  },
+  {
+    "id": "c231",
+    "text": "${player}, fais-nous ton meilleur accent de banlieue. Si c'est du foutage de gueule, 2 pénalités. 🏙️",
+    "pack": "classic"
+  },
+  {
+    "id": "c232",
+    "text": "Règle spéciale : ${player} devient le juge. Il/elle peut annuler une pénalité par tour pendant 3 tours. ⚖️",
+    "pack": "classic"
+  },
+  {
+    "id": "c233",
+    "text": "${player}, balance ton conseil le plus nul pour pécho. Plus c'est gênant, plus on kiffe. Sinon, 2 pénalités. 💘",
+    "pack": "classic"
+  },
+  {
+    "id": "c234",
+    "text": "Go on vote tous : qui a les goûts les plus bizarres en matière de bouffe ? Cette créature prend 2 pénalités. 🍕",
+    "pack": "classic"
+  },
+  {
+    "id": "c235",
+    "text": "${player}, si t'as déjà fait du shopping thérapie après une rupture, prends 2 pénalités. 🛍️",
+    "pack": "classic"
+  },
+  {
+    "id": "c236",
+    "text": "Tous ceux qui ont déjà fait genre d'avoir lu un livre qu'ils avaient juste vu en film : 1 pénalité. 🎬",
+    "pack": "classic"
+  },
+  {
+    "id": "c237",
+    "text": "${player}, imite quelqu'un qui découvre une araignée dans sa douche. Si on y croit pas, 2 pénalités. 🕷️",
+    "pack": "classic"
+  },
+  {
+    "id": "c238",
+    "text": "Go on vote tous : qui utilise encore Facebook non-ironiquement ? Ce dinosaure prend 2 pénalités. 🦕",
+    "pack": "classic"
+  },
+  {
+    "id": "c239",
+    "text": "${player}, raconte ton pire foirage en cuisine. Si tu veux protéger ton ego, 2 pénalités. 👨‍🍳",
+    "pack": "classic"
+  },
+  {
+    "id": "c240",
+    "text": "Tous ceux qui ont déjà eu un crush sur leur patron/prof/coach : pénalité ultime. Problématique. 😬",
+    "pack": "classic"
+  },
+  {
+    "id": "c241",
+    "text": "${player}, balance ton surnom d'enfance le plus ridicule. Si tu veus pas, 1 pénalité. 👶",
+    "pack": "classic"
+  },
+  {
+    "id": "c242",
+    "text": "Règle : pendant 2 tours, interdiction de se gratter. Le premier qui craque prend 2 pénalités. 🤏",
+    "pack": "classic"
+  },
+  {
+    "id": "c243",
+    "text": "${player}, fais-nous ton meilleur « Oh mon dieu » version drama queen. Si c'est nul, 2 pénalités. 💅",
+    "pack": "classic"
+  },
+  {
+    "id": "c244",
+    "text": "Go on vote tous : qui a le plus de chance d'oublier son propre anniversaire ? 2 pénalités pour cette tête en l'air. 🎂",
+    "pack": "classic"
+  },
+  {
+    "id": "c245",
+    "text": "${player}, si t'as déjà fait semblant de dormir pour éviter une conversation, prends 1 pénalité. 😴",
+    "pack": "classic"
+  },
+  {
+    "id": "c246",
+    "text": "Tous ceux qui ont une phobie complètement ridicule : 1 pénalité. Et racontez-nous ! 😱",
+    "pack": "classic"
+  },
+  {
+    "id": "c247",
+    "text": "${player}, donne-nous ta meilleure imitation d'un influenceur. Si c'est cringe, 2 pénalités. 📱",
+    "pack": "classic"
+  },
+  {
+    "id": "c248",
+    "text": "Go on vote tous : qui a le plus mauvais goût en matière de memes ? Cette relique prend 2 pénalités. 🐸",
+    "pack": "classic"
+  },
+  {
+    "id": "c249",
+    "text": "${player}, raconte ton échec le plus mémorable devant un crush. Si tu veux garder ta dignité, 2 pénalités. 💔",
+    "pack": "classic"
+  },
+  {
+    "id": "c250",
+    "text": "Carte finale ! Tout le monde lève son verre : à la vôtre, bande de malades ! Santé ! 🍻",
+    "pack": "classic"
   }
 ]
