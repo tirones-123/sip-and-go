@@ -1,152 +1,202 @@
 [
   {
     "id": "co1",
-    "text": "${player} et ${player}, lequel de vous a dit 'je t'aime' en premier ? L'autre personne boit 2 gorgées.",
+    "text": "${player}, raconte à ${player} le rêve le plus bizarre que tu aies fait cette année. Si ça le fait rire, il distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co2",
-    "text": "${player}, cite trois qualités de ${player}. Pour chacune que le groupe approuve, ton partenaire boit 1 gorgée.",
+    "text": "${player}, si tu pouvais voler un seul talent de ${player}, lequel choisirais-tu ? Ton partenaire boit s'il trouve ça flatteur.",
     "pack": "couples"
   },
   {
     "id": "co3",
-    "text": "Tous les couples : la personne qui met le plus de temps à se préparer le matin boit 2 gorgées.",
+    "text": "Tous les couples : celui qui a le plus de théories conspirationnistes bidons boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co4",
-    "text": "${player} et ${player}, faites-vous boire mutuellement. Si l'un de vous renverse, les deux boivent 2 gorgées supplémentaires.",
+    "text": "${player}, quelle est la peur la plus irrationnelle de ${player} ? Si tu te trompes complètement, bois 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co5",
-    "text": "${player}, quelle a été ta première impression de ${player} ? Si elle n'était pas positive, bois 3 gorgées.",
+    "text": "${player} et ${player}, mimez ensemble votre premier argument. Le groupe devine le sujet. Si personne ne trouve, vous buvez tous les deux 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co6",
-    "text": "Jeu de couples : ${player} et ${player}, comptez jusqu'à trois puis désignez qui s'excuse en premier après une dispute.",
+    "text": "${player}, dans quel univers fictif ${player} survivrait-il le mieux ? Explique pourquoi. Ton partenaire boit s'il n'est pas d'accord.",
     "pack": "couples"
   },
   {
     "id": "co7",
-    "text": "${player}, si tu pouvais changer une habitude de ${player}, laquelle serait-ce ? Ton partenaire boit s'il est d'accord.",
+    "text": "Tous les couples : celui qui garde le plus de secrets embarrassants sur son téléphone boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co8",
-    "text": "Tous les couples : la personne la plus jalouse dans la relation boit 2 gorgées.",
+    "text": "${player}, révèle la technique la plus bizarre de ${player} pour éviter les tâches ménagères. Il boit 2 gorgées si c'est vrai.",
     "pack": "couples"
   },
   {
     "id": "co9",
-    "text": "${player} et ${player}, nommez à tour de rôle des choses qui vous agacent l'un chez l'autre. Le premier à court d'idées boit 3 gorgées.",
+    "text": "${player} et ${player}, inventez une origine complètement fausse de votre rencontre. Le groupe vote pour la version la plus crédible.",
     "pack": "couples"
   },
   {
     "id": "co10",
-    "text": "${player}, quel est le moment le plus gênant de ${player} dont tu as été témoin ? Il/elle boit 2 gorgées.",
+    "text": "${player}, quelle est la chose la plus random que ${player} collectionne en secret ? S'il nie, il boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co11",
-    "text": "Jeu de couples : la personne qui a fait le premier pas boit 2 gorgées.",
+    "text": "Jeu de couples : celui qui a le plus de playlists Spotify boit 2 gorgées et doit en nommer 5.",
     "pack": "couples"
   },
   {
     "id": "co12",
-    "text": "${player}, fais ta meilleure imitation de ${player}. Le groupe la note de 1 à 10 ; en dessous de 5, tu bois autant de gorgées.",
+    "text": "${player}, imite la façon dont ${player} se réveille le matin. Si c'est trop précis, ton partenaire distribue 3 gorgées de honte.",
     "pack": "couples"
   },
   {
     "id": "co13",
-    "text": "Tous les couples : le partenaire le plus étourdi boit 2 gorgées. En cas de désaccord, le groupe vote.",
+    "text": "Tous les couples : celui qui a le plus de notifications non lues boit 2 gorgées par tranche de 10 notifications.",
     "pack": "couples"
   },
   {
     "id": "co14",
-    "text": "${player}, nomme le plaisir coupable de ${player}. Si c'est correct, ton partenaire boit 2 gorgées. Si c'est faux, tu en bois 3.",
+    "text": "${player}, quelle serait la biographie non-autorisée la plus gênante qu'on pourrait écrire sur ${player} ? Il boit 2 gorgées si c'est trop proche de la réalité.",
     "pack": "couples"
   },
   {
     "id": "co15",
-    "text": "Les couples échangent leurs téléphones pendant 30 secondes. Chaque personne peut ouvrir une application de son choix sur le téléphone de son partenaire.",
+    "text": "${player} et ${player}, créez ensemble une danse de 10 secondes sur votre chanson couple. Le groupe note sur 10, en dessous de 6 vous buvez la différence.",
     "pack": "couples"
   },
   {
     "id": "co16",
-    "text": "${player}, quelle est la chose la plus romantique que ${player} ait faite pour toi ? Si tout le monde trouve ça mignon, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, révèle l'obsession la plus niche de ${player} que personne d'autre ne connaît. S'il rougit, distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co17",
-    "text": "Tous les couples : le meilleur cuisinier dans la relation distribue 3 gorgées. En cas de désaccord, le groupe vote.",
+    "text": "Tous les couples : celui qui a le plus de photos de nourriture sur son téléphone boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co18",
-    "text": "${player}, raconte-nous ton pire rendez-vous avec ${player}. Il/elle boit 2 gorgées après.",
+    "text": "${player}, raconte le mensonge le plus innocent que ${player} t'a dit récemment. Ton partenaire boit s'il assume.",
     "pack": "couples"
   },
   {
     "id": "co19",
-    "text": "Jeu de couples : le partenaire qui est le plus susceptible de regarder son téléphone pendant le dîner boit 2 gorgées.",
+    "text": "Jeu de couples : celui qui scrolle le plus longtemps sur TikTok/Instagram avant de dormir boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co20",
-    "text": "${player} et ${player}, notez votre premier baiser sur 10. Si les scores diffèrent de plus de 2 points, vous buvez tous les deux la différence.",
+    "text": "${player} et ${player}, devinez mutuellement votre mot de passe wifi personnel. Celui qui se trompe le plus boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co21",
-    "text": "Tous les couples : le partenaire qui dépense le plus pour des choses inutiles boit 2 gorgées.",
+    "text": "Tous les couples : celui qui a le plus de conversations bizarres avec son animal de compagnie boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co22",
-    "text": "${player}, quelle est, selon ${player}, ta manie la plus agaçante ? Si tu te trompes, bois 3 gorgées.",
+    "text": "${player}, quelle est la théorie la plus farfelue de ${player} sur pourquoi les chaussettes disparaissent ? S'il en a vraiment une, il distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co23",
-    "text": "Jeu de couples : à trois, désignez qui a dit 'je t'aime' en premier. Les couples en désaccord boivent tous deux 2 gorgées.",
+    "text": "Jeu de couples : celui qui a le plus de screenshots de conversations embarrassantes boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co24",
-    "text": "${player}, quelle serait la soirée idéale pour ${player} ? Ton partenaire boit si tu as raison.",
+    "text": "${player}, révèle le comfort food le plus bizarre de ${player}. S'il le mange devant Netflix, ton partenaire distribue 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co25",
-    "text": "Tous les couples : le partenaire qui passe le plus de temps dans la salle de bain boit 2 gorgées.",
+    "text": "Tous les couples : celui qui parle le plus à ses plantes (ou qui en aurait le plus besoin) boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co26",
-    "text": "${player}, quelle chanson te fait le plus penser à ${player} ? S'ils ne connaissent pas la chanson, tu bois 2 gorgées.",
+    "text": "${player}, quelle est la recherche Google la plus random de ${player} cette semaine ? S'il refuse de répondre, il boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co27",
-    "text": "Jeu de couples : le partenaire le plus têtu boit 3 gorgées. En cas de désaccord, le groupe vote.",
+    "text": "Jeu de couples : celui qui a le plus de photos floues dans sa galerie boit 2 gorgées et doit en montrer une.",
     "pack": "couples"
   },
   {
     "id": "co28",
-    "text": "${player} et ${player}, faites-vous un compliment. Le groupe vote pour le plus sincère ; le perdant boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez ensemble un nom de groupe de musique basé sur vos manies respectives. Le groupe vote, si c'est nul vous buvez 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co29",
-    "text": "Tous les couples : le partenaire le plus susceptible de s'endormir pendant un film boit 2 gorgées.",
+    "text": "Tous les couples : celui qui a le plus de tabs ouverts sur son navigateur right now boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co30",
-    "text": "${player}, quel est le cadeau le plus bizarre que ${player} t'ait offert ? S'il était en fait attentionné, distribue 3 gorgées.",
+    "text": "${player}, révèle le skill le plus inutile mais impressionnant de ${player}. S'il le démontre sur le champ, il distribue 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co31",
+    "text": "${player} et ${player}, créez ensemble une explication scientifique complètement fausse pour pourquoi vous êtes ensemble. La plus créative fait boire 3 gorgées au groupe.",
+    "pack": "couples"
+  },
+  {
+    "id": "co32",
+    "text": "Jeu de couples : celui qui a le plus de memes sauvegardés sans jamais les partager boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co33",
+    "text": "${player}, quelle est la chose la plus bizarre que ${player} fait quand il se croit seul ? S'il l'assume fièrement, il distribue 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co34",
+    "text": "Tous les couples : celui qui a le plus de produits de beauté/soin qu'il n'utilise jamais boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co35",
+    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il réfléchit intensément. Si c'est spot-on, ton partenaire boit 2 gorgées de reconnaissance.",
+    "pack": "couples"
+  },
+  {
+    "id": "co36",
+    "text": "${player} et ${player}, révélez mutuellement votre guilty pleasure YouTube. Le plus embarrassant fait boire 2 gorgées à l'autre.",
+    "pack": "couples"
+  },
+  {
+    "id": "co37",
+    "text": "Jeu de couples : celui qui a le plus de photos de son partenaire qui dort boit 2 gorgées (et doit en montrer une).",
+    "pack": "couples"
+  },
+  {
+    "id": "co38",
+    "text": "${player}, révèle le superstitieux le plus random de ${player}. S'il nie alors que c'est vrai, il boit 3 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co39",
+    "text": "Tous les couples : celui qui a le plus de conversations avec Siri/Google Assistant par accident boit 2 gorgées.",
+    "pack": "couples"
+  },
+  {
+    "id": "co40",
+    "text": "${player} et ${player}, créez ensemble un pitch de série Netflix basé sur votre couple. Si le groupe voudrait la regarder, vous distribuez 4 gorgées.",
     "pack": "couples"
   }
 ] 
