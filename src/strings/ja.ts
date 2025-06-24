@@ -1,6 +1,6 @@
 export default {
   // Common
-  appName: "Picolo",
+  appName: "SIP&GO!",
   next: "次へ",
   back: "戻る",
   close: "閉じる",

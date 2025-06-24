@@ -1,8 +1,8 @@
-# 🍻 Picolo - Application de Jeu à Boire
+# 🍻 SIP&GO! - Application de Jeu à Boire
 
 ## Aperçu du Projet
 
-Picolo est une application mobile de jeu à boire inspirée du célèbre jeu Picolo. L'application propose:
+SIP&GO! est une application mobile de jeu à boire ultime pour vos soirées. L'application propose:
 - 5 packs thématiques avec environ 1500 questions/défis au total
 - Mode gratuit (pack Classic) et mode premium (tous les packs)
 - Support multilingue (français et anglais)
@@ -33,8 +33,8 @@ Picolo est une application mobile de jeu à boire inspirée du célèbre jeu Pic
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/your-username/picolo.git
-cd picolo
+git clone https://github.com/your-username/sip-and-go.git
+cd sip-and-go
 
 # Installer les dépendances
 npm install
@@ -60,7 +60,7 @@ npm run android
 ## Structure du Projet
 
 ```
-Picolo
+SIP&GO!
 │
 ├── assets/                  # Ressources statiques
 │   └── questions/           # Données JSON des questions (par langue)

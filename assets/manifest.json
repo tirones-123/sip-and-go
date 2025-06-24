@@ -1,7 +1,7 @@
 {
-  "name": "Picolo - Jeu à Boire",
-  "short_name": "Picolo",
-  "description": "Application de jeu à boire inspirée du célèbre jeu Picolo",
+  "name": "SIP&GO! - Jeu à Boire",
+  "short_name": "SIP&GO!",
+  "description": "Application de jeu à boire ultime pour vos soirées",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0B0E1A",

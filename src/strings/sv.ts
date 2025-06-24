@@ -1,6 +1,6 @@
 export default {
   // Common
-  appName: "Picolo",
+  appName: "SIP&GO!",
   next: "Nästa",
   back: "Tillbaka",
   close: "Stäng",

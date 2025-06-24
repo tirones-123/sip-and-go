@@ -7,9 +7,9 @@ alwaysApply: true
 
 ## 0. TL;DR for the agent
 
-* **Project name:** Drinking‑Game MVP (Picolo‑like)
-* **Stack:** React Native + Expo SDK 50 • TypeScript strict • Tailwind RN • RevenueCat • PostHog • Sentry
-* **Data:** 1 500 questions embarquées en JSON (multilingue `fr` & `en`)
+* **Project name:** SIP&GO! - Drinking Game App
+* **Stack:** React Native + Expo SDK 50 • TypeScript strict • Tailwind RN • RevenueCat • PostHog • Sentry
+* **Data:** 1 500 questions embarquées en JSON (multilingue `fr` & `en`)
 * **Navigation:** Native Stack (`@react-navigation/native-stack`)
 * **State:** Zustand `useGameStore`
 * **E2E goal:** Build passes `eas build -p ios|android` & Expo Go hot‑reload works.
@@ -132,7 +132,7 @@ export const posthog = new PostHog(process.env.POSTHOG_KEY!, { host: process.env
 
 * Jest config already present.
 * Each util/hook must have **at least one** unit test in `__tests__`.
-* Aim for 80 % coverage for utils; UI tests optional.
+* Aim for 80 % coverage for utils; UI tests optional.
 
 ---
 

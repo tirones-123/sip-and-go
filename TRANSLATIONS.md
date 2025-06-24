@@ -1,6 +1,6 @@
-# Picolo App - Traductions Multi-langues
+# SIP&GO! App - Traductions Multi-langues
 
-Cette application Picolo a été traduite en **20 langues** basées sur le fichier français original (`fr.ts`).
+Cette application SIP&GO! a été traduite en **20 langues** basées sur le fichier français original (`fr.ts`).
 
 ## Langues Supportées
 

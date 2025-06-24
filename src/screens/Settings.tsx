@@ -72,7 +72,7 @@ const Settings: React.FC = () => {
   const rateApp = () => {
     const storeUrl = Platform.select({
       ios: 'https://apps.apple.com/app/id000000000',
-      android: 'https://play.google.com/store/apps/details?id=com.yourcompany.picolo',
+      android: 'https://play.google.com/store/apps/details?id=com.sipandgoapp.first',
       default: 'https://example.com/rate'
     });
     
@@ -84,9 +84,9 @@ const Settings: React.FC = () => {
     try {
       const result = await Share.share({
         message: Platform.select({
-          ios: 'Check out Picolo, a fun drinking game app! https://apps.apple.com/app/id000000000',
-          android: 'Check out Picolo, a fun drinking game app! https://play.google.com/store/apps/details?id=com.yourcompany.picolo',
-          default: 'Check out Picolo, a fun drinking game app!'
+          ios: 'Check out SIP&GO!, the ultimate drinking game app! https://apps.apple.com/app/id000000000',
+          android: 'Check out SIP&GO!, the ultimate drinking game app! https://play.google.com/store/apps/details?id=com.sipandgoapp.first',
+          default: 'Check out SIP&GO!, the ultimate drinking game app!'
         })
       });
     } catch (error) {
@@ -96,7 +96,7 @@ const Settings: React.FC = () => {
   
   // Contact us
   const contactUs = () => {
-    Linking.openURL('mailto:support@example.com?subject=Picolo App Support');
+    Linking.openURL('mailto:support@sipandgo.app?subject=SIP&GO! App Support');
   };
   
   // Toggle premium for development

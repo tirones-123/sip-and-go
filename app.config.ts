@@ -28,8 +28,8 @@ export default ({ config }: ConfigContext): ExpoConfig => {
 
   return {
     ...config,
-    name: "Picolo",
-    slug: "picolo",
+    name: "SIP&GO!",
+    slug: "sip-and-go",
     version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/icon.png",
@@ -58,9 +58,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     },
     web: {
       favicon: "./assets/icon.png",
-      name: "Picolo - Jeu à Boire",
-      shortName: "Picolo",
-      description: "Application de jeu à boire inspirée du célèbre jeu Picolo",
+      name: "SIP&GO! - Jeu à Boire",
+      shortName: "SIP&GO!",
+      description: "Application de jeu à boire ultime pour vos soirées",
       lang: "fr",
       scope: "/",
       startUrl: "/",
