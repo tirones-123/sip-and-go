@@ -15,6 +15,7 @@ import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Ionicons } from '@expo/vector-icons';
 import tw from 'twrnc';
 import { showPaywall } from '../utils/superwall';
+import { restorePurchases as restorePurchasesRC } from '../utils/revenueCat';
 
 import { useTranslation, getLanguage } from '../utils/i18n';
 import { useGameStore } from '../store/useGameStore';
@@ -103,6 +104,12 @@ const Settings: React.FC = () => {
     const cur = useGameStore.getState().premium;
     setPremium(!cur);
   };
+
+  // Restore purchases
+  const restorePurchases = async () => {
+    const success = await restorePurchasesRC();
+    // Add user feedback here if needed
+  };
   
   // Languages available
   const languages = [
@@ -131,101 +138,111 @@ const Settings: React.FC = () => {
           />
         </View>
         
-        {/* Premium button - more attractive */}
-        {!current && (
-          <TouchableOpacity 
-            onPress={openPremium}
-            style={[
-              tw`bg-white rounded-2xl p-6 mb-6 relative overflow-hidden`,
-              styles.shadow,
-              styles.premiumGlow
-            ]}
+        {/* Language selection */}
+        <View style={tw`w-full mb-6`}>
+          <Text style={tw`text-lg font-bold text-white mb-4`}>
+            {t('settings.language.title')}
+          </Text>
+          <ScrollView 
+            horizontal 
+            showsHorizontalScrollIndicator={false}
+            contentContainerStyle={tw`pr-4`}
           >
-            {/* Premium badge */}
-            <View style={tw`absolute top-0 right-0 bg-yellow-400 px-3 py-1 rounded-bl-xl`}>
-              <Text style={tw`text-black text-xs font-bold`}>PREMIUM</Text>
-            </View>
-            
-            {/* Header */}
-            <View style={tw`flex-row items-center justify-center mb-3`}>
-              <Ionicons name="star" size={28} color="#FFD700" />
-              <Text style={[tw`text-2xl font-bold ml-2`, { color: BG_COLOR }]}>
-                {t('settings.premium.title')}
-              </Text>
-              <Ionicons name="star" size={28} color="#FFD700" />
-            </View>
-            
-            {/* Features list */}
-            <View style={tw`mb-4`}>
-              {(lang === 'fr' ? fr.settings.premium.features : en.settings.premium.features).map((feature: string, index: number) => (
-                <View key={index} style={tw`flex-row items-center mb-2`}>
-                  <Text style={[tw`text-base`, { color: BG_COLOR }]}>{feature}</Text>
-                </View>
+            <View style={tw`flex-row`}>
+              {languages.map((language) => (
+                <TouchableOpacity
+                  key={language.code}
+                  style={tw`mr-2`}
+                  onPress={() => changeLanguage(language.code as 'en' | 'fr')}
+                >
+                  <View style={[
+                    tw`p-3 rounded-xl border-2 w-24 items-center`,
+                    lang === language.code
+                      ? tw`border-white bg-white/20`
+                      : tw`border-white/30 bg-white/10`,
+                  ]}>
+                    <Text style={tw`text-3xl mb-1`}>{language.flag}</Text>
+                    <Text style={tw`text-xs font-medium text-center text-white`} numberOfLines={1}>
+                      {language.name}
+                    </Text>
+                    {lang === language.code && (
+                      <Ionicons name="checkmark-circle" size={16} color="white" style={tw`absolute top-1 right-1`} />
+                    )}
+                  </View>
+                </TouchableOpacity>
               ))}
             </View>
+          </ScrollView>
+        </View>
+
+        {/* Premium section - only show on native platforms */}
+        {Platform.OS !== 'web' && (
+          <View style={tw`w-full mb-6`}>
+            <Text style={tw`text-lg font-bold text-white mb-4`}>
+              {t('settings.premium.title')}
+            </Text>
             
-            {/* CTA Button */}
-            <View style={[
-              tw`rounded-xl px-8 py-4 items-center`,
-              styles.ctaButton,
-              { backgroundColor: BG_COLOR }
-            ]}>
-              <Text style={[tw`font-bold text-lg`, { color: '#FFFFFF' }]}>
-                {t('settings.premium.upgradeButton')}
+            {/* Premium button - more attractive */}
+            <TouchableOpacity
+              style={[
+                tw`bg-gradient-to-r from-yellow-400 to-yellow-600 px-6 py-4 rounded-2xl shadow-lg mb-4`,
+                styles.premiumGlow
+              ]}
+              onPress={openPremium}
+            >
+              {/* Premium badge */}
+              <View style={tw`bg-yellow-300 px-3 py-1 rounded-full self-start mb-2`}>
+                <Text style={tw`text-black text-xs font-bold`}>PREMIUM</Text>
+              </View>
+              
+              <Text style={tw`text-black text-xl font-bold mb-2`}>
+                {t('settings.premium.title')}
               </Text>
-            </View>
-            
-            {/* Sparkle effects */}
-            <View style={tw`absolute top-4 left-4`}>
-              <Text style={tw`text-yellow-400 text-lg`}>✨</Text>
-            </View>
-            <View style={tw`absolute bottom-4 right-4`}>
-              <Text style={tw`text-yellow-400 text-lg`}>✨</Text>
-            </View>
-          </TouchableOpacity>
+              
+              <Text style={tw`text-black text-sm mb-3`}>
+                {t('settings.premium.description')}
+              </Text>
+              
+              {/* Features list */}
+              {(lang === 'fr' ? fr.settings.premium.features : en.settings.premium.features).map((feature: string, index: number) => (
+                <View key={index} style={tw`flex-row items-center mb-1`}>
+                  <Text style={tw`text-black text-lg mr-2`}>✓</Text>
+                  <Text style={tw`text-black text-sm flex-1`}>{feature}</Text>
+                </View>
+              ))}
+              
+              <View style={tw`bg-black/20 px-4 py-2 rounded-xl mt-2`}>
+                <Text style={tw`text-black text-center font-bold`}>
+                  {t('settings.premium.upgradeButton')}
+                </Text>
+              </View>
+            </TouchableOpacity>
+          </View>
         )}
-        
-        {/* Language section - redesigned for multiple languages */}
-        <View style={[tw`bg-white/90 rounded-2xl mb-6 overflow-hidden`, styles.shadow]}>
-          <View style={tw`bg-white/20 p-4 border-b border-white/10`}>
-            <Text style={[tw`font-bold text-lg`, { color: BG_COLOR }]}>
-              {t('settings.language.title')}
+
+        {/* Web platform message */}
+        {Platform.OS === 'web' && (
+          <View style={tw`w-full mb-6 bg-green-600 p-4 rounded-2xl`}>
+            <Text style={tw`text-white text-lg font-bold mb-2 text-center`}>
+              🎉 Version Web Gratuite !
+            </Text>
+            <Text style={tw`text-white text-sm text-center`}>
+              Tous les packs sont gratuits sur la version web. Pour soutenir le développement, téléchargez l'app mobile !
             </Text>
           </View>
-          
-          <View style={tw`p-4`}>
-            <ScrollView 
-              horizontal 
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={tw`pr-4`}
-            >
-              <View style={tw`flex-row`}>
-                {languages.map((language, index) => (
-                  <TouchableOpacity
-                    key={language.code}
-                    style={tw`mr-2`}
-                    onPress={() => changeLanguage(language.code as 'en' | 'fr')}
-                  >
-                    <View style={[
-                      tw`p-3 rounded-xl border-2 w-24 items-center`,
-                      lang === language.code
-                        ? { borderColor: BG_COLOR, backgroundColor: `${BG_COLOR}1A` } // 10% opacity
-                        : { borderColor: '#E5E7EB', backgroundColor: '#FFFFFF' },
-                    ]}>
-                      <Text style={tw`text-3xl mb-1`}>{language.flag}</Text>
-                      <Text style={[tw`text-xs font-medium text-center`, { color: BG_COLOR }]} numberOfLines={1}>
-                        {language.name}
-                      </Text>
-                      {lang === language.code && (
-                        <Ionicons name="checkmark-circle" size={16} color={BG_COLOR} style={tw`absolute top-1 right-1`} />
-                      )}
-                    </View>
-                  </TouchableOpacity>
-                ))}
-              </View>
-            </ScrollView>
-          </View>
-        </View>
+        )}
+
+        {/* Restore purchases - only on native */}
+        {Platform.OS !== 'web' && (
+          <TouchableOpacity
+            style={tw`w-full bg-blue-600 px-6 py-3 rounded-2xl mb-4`}
+            onPress={restorePurchases}
+          >
+            <Text style={tw`text-white font-bold text-center`}>
+              {t('settings.restorePurchases')}
+            </Text>
+          </TouchableOpacity>
+        )}
         
         {/* Support section */}
         <View style={[tw`bg-white/90 rounded-2xl mb-6 overflow-hidden`, styles.shadow]}>

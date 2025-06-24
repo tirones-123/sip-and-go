@@ -1,5 +1,5 @@
-import React, { useLayoutEffect } from 'react';
-import { View, Text, FlatList, useWindowDimensions, TouchableOpacity, Image } from 'react-native';
+import React, { useLayoutEffect, useState } from 'react';
+import { View, Text, FlatList, useWindowDimensions, TouchableOpacity, Image, Platform } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import tw from 'twrnc';
@@ -47,6 +47,9 @@ const ModeCarousel: React.FC = () => {
   const { width } = useWindowDimensions();
   const insets = useSafeAreaInsets(); // Get safe area insets
   
+  // Web-specific state for active pack background
+  const [activePack, setActivePack] = useState(0);
+  
   // Carousel layout constants
   const ITEM_SPACING = 16; // space between cards
 
@@ -78,33 +81,47 @@ const ModeCarousel: React.FC = () => {
   }, [navigation]);
   
   // Handle pack selection
-  const handlePlayPack = async (packId: string) => {
+  const handlePlay = async (packId: string) => {
     const selectedPack = packs.find(p => p.id === packId);
-    
+    if (!selectedPack) return;
+
+    // On web, everything is free - no paywall logic needed
+    if (Platform.OS === 'web') {
+      await startPack(packId);
+      navigation.navigate('Question', { packId });
+      return;
+    }
+
+    // Native platform logic with paywall
     // If the pack is locked and user is not premium, show Superwall paywall
     if (selectedPack?.access === 'LOCKED' && !premium) {
       // Show Superwall paywall – placement can be dynamic per pack
-      const placement = 'pack_click';
+      const placement = `pack_${packId}`;
       await showPaywall(placement, () => {
         // Vérifie si l'utilisateur est devenu premium avant de démarrer la partie
         const { premium: nowPremium } = useGameStore.getState();
         if (nowPremium) {
-        startPack(packId);
-        navigation.navigate('Question', { packId });
+          startPack(packId);
+          navigation.navigate('Question', { packId });
         }
       });
-      return;
+    } else {
+      // Free pack or premium user
+      await startPack(packId);
+      navigation.navigate('Question', { packId });
     }
-
-    // Free pack or premium user
-    startPack(packId);
-    navigation.navigate('Question', { packId });
   };
   
   // Animated scroll handler
   const scrollHandler = useAnimatedScrollHandler({
     onScroll: (event) => {
       scrollX.value = event.contentOffset.x;
+      
+      // Update active pack for web background
+      if (Platform.OS === 'web') {
+        const index = Math.round(event.contentOffset.x / SNAP_INTERVAL);
+        setActivePack(Math.max(0, Math.min(index, packs.length - 1)));
+      }
     },
   });
   
@@ -121,6 +138,11 @@ const ModeCarousel: React.FC = () => {
       return { backgroundColor: tintColor(packs[0].color, TINT_AMOUNT) };
     }
 
+    if (Platform.OS === 'web') {
+      // Use active pack for web background
+      return { backgroundColor: tintColor(packs[activePack]?.color || FALLBACK_COLOR_DARK, TINT_AMOUNT) };
+    }
+
     const inputRange = packs.map((_, index) => index * SNAP_INTERVAL);
     const outputRange = packs.map(pack => tintColor(pack.color, TINT_AMOUNT));
 
@@ -132,60 +154,152 @@ const ModeCarousel: React.FC = () => {
     };
   });
 
-  return (
-    <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
-      {/* Custom top elements: Back button and Logo */}
-      <View 
-        style={{
-          position: 'absolute',
-          top: insets.top + HEADER_ELEMENT_TOP_PADDING,
-          left: 0,
-          right: 0,
-          alignItems: 'center',
-          zIndex: 1, // Ensure logo is on top
-        }}
-      >
+  // Web navigation functions
+  const navigateToIndex = (index: number) => {
+    if (Platform.OS === 'web') {
+      setActivePack(index);
+    }
+  };
+
+  const previousPack = () => {
+    const newIndex = Math.max(0, activePack - 1);
+    navigateToIndex(newIndex);
+  };
+
+  const nextPack = () => {
+    const newIndex = Math.min(packs.length - 1, activePack + 1);
+    navigateToIndex(newIndex);
+  };
+
+  // Web layout: Grid of cards
+  const renderWebLayout = () => (
+    <View style={tw`flex-1 justify-center items-center px-4`}>
+      {/* Logo */}
+      <View style={tw`mb-8`}>
         <Image
           source={require('../../assets/logo-jauneclair.png')}
-          style={{ height: 100, resizeMode: 'contain' }}
+          style={{ height: 80, resizeMode: 'contain' }}
         />
       </View>
 
-      {/* Carousel */}
-      <AnimatedFlatList
-        data={packs}
-        keyExtractor={(item) => item.id}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        snapToOffsets={snapToOffsets}
-        decelerationRate="fast"
-        contentContainerStyle={[
-          tw`py-4 items-center`,
-          { 
-            paddingHorizontal: sidePadding, 
-            // Add padding to ensure content starts below custom header elements
-            // Approximate height of custom header area: logo height + top padding + some buffer
-            paddingTop: insets.top + HEADER_ELEMENT_TOP_PADDING + 35 + 20, 
-          }
-        ]}
-        onScroll={scrollHandler}
-        scrollEventThrottle={16}
-        style={{ overflow: 'visible' }}
-        renderItem={({ item, index }) => (
-          <View style={{
-            marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
-            marginRight: index === packs.length - 1 ? 0 : ITEM_SPACING / 2,
-          }}>
-            <PackCard 
-              pack={item}
-              onPlay={handlePlayPack}
-              isPremium={premium}
-              itemWidth={ITEM_WIDTH}
-              heroImageSource={packImages[item.id]}
+      {/* Pack navigation */}
+      <View style={tw`flex-row items-center justify-center mb-8`}>
+        {/* Previous button */}
+        <TouchableOpacity
+          onPress={previousPack}
+          disabled={activePack === 0}
+          style={[
+            tw`p-4 rounded-full mr-4`,
+            {
+              backgroundColor: activePack === 0 ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.3)',
+            }
+          ]}
+        >
+          <Text style={[tw`text-white font-bold text-xl`, { opacity: activePack === 0 ? 0.5 : 1 }]}>←</Text>
+        </TouchableOpacity>
+
+        {/* Current pack card */}
+        <View style={{ width: Math.min(400, width * 0.6) }}>
+          <PackCard 
+            pack={packs[activePack]}
+            onPlay={handlePlay}
+            isPremium={premium}
+            itemWidth={Math.min(400, width * 0.6)}
+            heroImageSource={packImages[packs[activePack]?.id]}
+          />
+        </View>
+
+        {/* Next button */}
+        <TouchableOpacity
+          onPress={nextPack}
+          disabled={activePack === packs.length - 1}
+          style={[
+            tw`p-4 rounded-full ml-4`,
+            {
+              backgroundColor: activePack === packs.length - 1 ? 'rgba(255,255,255,0.2)' : 'rgba(255,255,255,0.3)',
+            }
+          ]}
+        >
+          <Text style={[tw`text-white font-bold text-xl`, { opacity: activePack === packs.length - 1 ? 0.5 : 1 }]}>→</Text>
+        </TouchableOpacity>
+      </View>
+
+      {/* Pack indicators */}
+      <View style={tw`flex-row mb-8`}>
+        {packs.map((_, index) => (
+          <TouchableOpacity
+            key={index}
+            onPress={() => navigateToIndex(index)}
+            style={[
+              tw`w-3 h-3 rounded-full mx-1`,
+              {
+                backgroundColor: index === activePack ? 'white' : 'rgba(255,255,255,0.4)',
+              }
+            ]}
+          />
+        ))}
+      </View>
+    </View>
+  );
+
+  return (
+    <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
+      {Platform.OS === 'web' ? renderWebLayout() : (
+        <>
+          {/* Custom top elements: Back button and Logo */}
+          <View 
+            style={{
+              position: 'absolute',
+              top: insets.top + HEADER_ELEMENT_TOP_PADDING,
+              left: 0,
+              right: 0,
+              alignItems: 'center',
+              zIndex: 1, // Ensure logo is on top
+            }}
+          >
+            <Image
+              source={require('../../assets/logo-jauneclair.png')}
+              style={{ height: 100, resizeMode: 'contain' }}
             />
           </View>
-        )}
-      />
+
+          {/* Carousel */}
+          <AnimatedFlatList
+            data={packs}
+            keyExtractor={(item) => item.id}
+            horizontal
+            showsHorizontalScrollIndicator={false}
+            snapToOffsets={snapToOffsets}
+            decelerationRate="fast"
+            contentContainerStyle={[
+              tw`py-4 items-center`,
+              { 
+                paddingHorizontal: sidePadding, 
+                // Add padding to ensure content starts below custom header elements
+                // Approximate height of custom header area: logo height + top padding + some buffer
+                paddingTop: insets.top + HEADER_ELEMENT_TOP_PADDING + 35 + 20, 
+              }
+            ]}
+            onScroll={scrollHandler}
+            scrollEventThrottle={16}
+            style={{ overflow: 'visible' }}
+            renderItem={({ item, index }) => (
+              <View style={{
+                marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
+                marginRight: index === packs.length - 1 ? 0 : ITEM_SPACING / 2,
+              }}>
+                <PackCard 
+                  pack={item}
+                  onPlay={handlePlay}
+                  isPremium={premium}
+                  itemWidth={ITEM_WIDTH}
+                  heroImageSource={packImages[item.id]}
+                />
+              </View>
+            )}
+          />
+        </>
+      )}
       
       {/* Footer - Back arrow + Player count */}
       <View

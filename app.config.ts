@@ -56,6 +56,20 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       },
       package: "com.sipandgoapp.first",
     },
+    web: {
+      favicon: "./assets/icon.png",
+      name: "Picolo - Jeu à Boire",
+      shortName: "Picolo",
+      description: "Application de jeu à boire inspirée du célèbre jeu Picolo",
+      lang: "fr",
+      scope: "/",
+      startUrl: "/",
+      display: "standalone",
+      orientation: "portrait",
+      themeColor: "#0B0E1A",
+      backgroundColor: "#0B0E1A",
+      bundler: "metro"
+    },
     extra: {
       eas: {
         projectId: "9f20c5ac-4959-4e50-a5c7-bff348faa999"

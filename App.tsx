@@ -5,13 +5,23 @@ import * as Sentry from '@sentry/react-native';
 import Constants from 'expo-constants';
 import { useFonts, Montserrat_400Regular, Montserrat_800ExtraBold } from '@expo-google-fonts/montserrat';
 import { Text, Platform } from 'react-native';
-import Superwall from '@superwall/react-native-superwall';
 import { showPaywall } from './src/utils/superwall';
 
 import Navigation from './src/navigation';
 import { useGameStore } from './src/store/useGameStore';
 import { initRC } from './src/utils/revenueCat';
 import { trackAppOpen } from './src/utils/analytics';
+
+// Only import Superwall on native platforms
+let Superwall: any = null;
+if (Platform.OS !== 'web') {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    Superwall = require('@superwall/react-native-superwall').default;
+  } catch (e) {
+    console.warn('[Superwall] Module not available on this platform');
+  }
+}
 
 // Initialize Sentry
 const SENTRY_DSN = Constants.expoConfig?.extra?.SENTRY_DSN as string;
@@ -51,30 +61,28 @@ export default function App() {
     // Initialize RevenueCat
     initRC(setPremium).catch(error => {
       console.error('Failed to initialize RevenueCat:', error);
-      Sentry.captureException(error);
+      if (Platform.OS !== 'web') {
+        Sentry.captureException(error);
+      }
     });
     
-    // Initialize Superwall
-    const superwallKey = Platform.OS === 'ios'
-      ? (Constants.expoConfig?.extra?.SUPERWALL_KEY_IOS as string | undefined)
-      : (Constants.expoConfig?.extra?.SUPERWALL_KEY_ANDROID as string | undefined);
+    // Initialize Superwall (only on native platforms)
+    if (Platform.OS !== 'web' && Superwall) {
+      const superwallKey = Platform.OS === 'ios'
+        ? (Constants.expoConfig?.extra?.SUPERWALL_KEY_IOS as string | undefined)
+        : (Constants.expoConfig?.extra?.SUPERWALL_KEY_ANDROID as string | undefined);
 
-    if (superwallKey) {
-      try {
-        Superwall.configure({ apiKey: superwallKey });
-      } catch (e) {
-        console.error('Failed to configure Superwall:', e);
-        Sentry.captureException(e as Error);
+      if (superwallKey) {
+        try {
+          Superwall.configure({ apiKey: superwallKey });
+        } catch (e) {
+          console.error('Failed to configure Superwall:', e);
+          Sentry.captureException(e as Error);
+        }
+      } else if (__DEV__) {
+        console.warn('[Superwall] API key not provided – skipping initialization.');
       }
-    } else if (__DEV__) {
-      console.warn('[Superwall] API key not provided – skipping initialization.');
     }
-    
-    (async () => {
-      // Le paywall « app_open » est maintenant géré via le placement automatique
-      // « session_start » depuis le dashboard Superwall ; on ne déclenche plus
-      // manuellement de paywall ici.
-    })();
 
     trackAppOpen();
   }, [setPremium, premium]);

@@ -1,20 +1,20 @@
 import Constants from 'expo-constants';
 import { Platform } from 'react-native';
-import Superwall from '@superwall/react-native-superwall';
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-imports
 import type { PurchasesPackage as RCPackage } from 'react-native-purchases';
 
+export type PurchasesPackage = RCPackage;
+
 // Use `any` to avoid type errors when the module isn't present
 let Purchases: any = null;
 
-// Dynamically require Purchases only outside Expo Go
-if (Constants.appOwnership !== 'expo') {
+// Only load Purchases on native platforms
+if (Platform.OS !== 'web' && Constants.appOwnership !== 'expo') {
   try {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     Purchases = require('react-native-purchases');
     // Support both CommonJS and ESM default export formats
-    // Some bundlers (or mocked JS stubs when the native code is missing) export the module under `.default`.
     if (Purchases?.default) {
       Purchases = Purchases.default;
     }
@@ -22,8 +22,6 @@ if (Constants.appOwnership !== 'expo') {
     Purchases = null;
   }
 }
-
-export type PurchasesPackage = RCPackage;
 
 // Get API keys from app config
 const iosKey = Constants.expoConfig?.extra?.RC_KEY_IOS as string;
@@ -34,10 +32,18 @@ const androidKey = Constants.expoConfig?.extra?.RC_KEY_ANDROID as string;
  * @param setIsPremium Callback to update premium status in store
  */
 export async function initRC(setIsPremium: (isPremium: boolean) => void): Promise<void> {
+  // On web, always set premium to true (everything is free)
+  if (Platform.OS === 'web') {
+    setIsPremium(true);
+    console.log('[RevenueCat] Disabled on web - all content is free');
+    return;
+  }
+
   if (!Purchases) {
     if (__DEV__) console.warn('[RevenueCat] Module not available in Expo Go – skipping init.');
     return;
   }
+  
   try {
     // Use the appropriate key based on platform
     const apiKey = Platform.OS === 'ios' ? iosKey : androidKey;
@@ -55,30 +61,10 @@ export async function initRC(setIsPremium: (isPremium: boolean) => void): Promis
     const premium = !!customerInfo?.entitlements?.active?.premium;
     setIsPremium(premium);
     
-    // Inform Superwall immediately
-    try {
-      const sw = (Superwall as any)?.shared;
-      if (sw) {
-        sw.subscriptionStatus = premium
-          ? { state: 'active', entitlements: new Set(['premium']) }
-          : { state: 'inactive' };
-      }
-    } catch {}
-    
     // Set up listener for entitlement changes
     Purchases.addCustomerInfoUpdateListener((info: any) => {
       const isPremium = !!info?.entitlements?.active?.premium;
       setIsPremium(isPremium);
-
-      // Sync with Superwall
-      try {
-        const sw = (Superwall as any)?.shared;
-        if (sw) {
-          sw.subscriptionStatus = isPremium
-            ? { state: 'active', entitlements: new Set(['premium']) }
-            : { state: 'inactive' };
-        }
-      } catch {}
     });
     
     console.log('RevenueCat initialized successfully');
@@ -92,7 +78,8 @@ export async function initRC(setIsPremium: (isPremium: boolean) => void): Promis
  * @returns List of available purchase packages
  */
 export async function getPackages(): Promise<PurchasesPackage[]> {
-  if (!Purchases) return [];
+  if (Platform.OS === 'web' || !Purchases) return [];
+  
   try {
     const offerings = await Purchases.getOfferings?.();
     
@@ -114,7 +101,9 @@ export async function getPackages(): Promise<PurchasesPackage[]> {
  * @returns Success status
  */
 export async function purchasePackage(packageToPurchase: PurchasesPackage): Promise<boolean> {
+  if (Platform.OS === 'web') return true; // Always succeed on web
   if (!Purchases) return false;
+  
   try {
     const { customerInfo } = await Purchases.purchasePackage(packageToPurchase);
     return !!customerInfo?.entitlements?.active?.premium;
@@ -132,7 +121,9 @@ export async function purchasePackage(packageToPurchase: PurchasesPackage): Prom
  * @returns Success status
  */
 export async function restorePurchases(): Promise<boolean> {
+  if (Platform.OS === 'web') return true; // Always succeed on web
   if (!Purchases) return false;
+  
   try {
     const { customerInfo } = await Purchases.restorePurchases();
     return !!customerInfo?.entitlements?.active?.premium;

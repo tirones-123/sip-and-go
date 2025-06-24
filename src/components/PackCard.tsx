@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, Image, TouchableOpacity, ImageSourcePropType } from 'react-native';
+import { View, Text, Image, TouchableOpacity, ImageSourcePropType, Platform } from 'react-native';
 import tw from 'twrnc';
 // import Button from './Button'; // Button component might be replaced by custom button style
 import { Pack } from '../types';
@@ -46,7 +46,8 @@ const shadeColor = (color: string, percent: number): string => {
  */
 const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth, heroImageSource }) => {
   const { t } = useTranslation();
-  const isLocked = pack.access === 'LOCKED' && !isPremium;
+  // On web, nothing is locked (everything is free)
+  const isLocked = Platform.OS !== 'web' && pack.access === 'LOCKED' && !isPremium;
   
   // Get the pack title and description from translations
   const packTitle = t(`modeCarousel.packs.${pack.id}.title`, { defaultValue: pack.title });

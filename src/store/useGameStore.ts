@@ -4,6 +4,7 @@ import { pickQuestions } from '../utils/pickQuestions';
 import { trackGameStart, trackPackSelect } from '../utils/analytics';
 import { getLanguage } from '../utils/i18n';
 import { questionsMap } from '../utils/questions';
+import { isWeb } from '../utils/platform';
 
 // Default packs
 const DEFAULT_PACKS: Pack[] = [
@@ -19,28 +20,28 @@ const DEFAULT_PACKS: Pack[] = [
     title: 'Entre filles',
     description: 'Perfect for girls night out',
     color: '#e4325f',
-    access: 'FREE'
+    access: isWeb ? 'FREE' : 'LOCKED'
   },
   {
     id: 'guys',
     title: 'Entre gars',
     description: 'For the boys only',
     color: '#A54429',
-    access: 'FREE'
+    access: isWeb ? 'FREE' : 'LOCKED'
   },
   {
     id: 'spicy',
     title: 'Spicy',
     description: 'Hot questions to spice up your night',
     color: '#660000',
-    access: 'FREE'
+    access: isWeb ? 'FREE' : 'LOCKED'
   },
   {
     id: 'couples',
     title: 'En couple',
     description: 'Perfect for dates and couples',
     color: '#1c27ef',
-    access: 'FREE'
+    access: isWeb ? 'FREE' : 'LOCKED'
   }
 ];
 

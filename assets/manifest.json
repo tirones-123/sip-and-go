@@ -1,0 +1,24 @@
+{
+  "name": "Picolo - Jeu à Boire",
+  "short_name": "Picolo",
+  "description": "Application de jeu à boire inspirée du célèbre jeu Picolo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0E1A",
+  "theme_color": "#0B0E1A",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "lang": "fr"
+} 
