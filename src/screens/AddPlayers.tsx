@@ -133,9 +133,9 @@ const AddPlayers: React.FC = () => {
         behavior={Platform.OS === 'ios' ? 'padding' : undefined}
         keyboardVerticalOffset={Platform.OS === 'ios' ? -20 : 0}
       >
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-          <View style={tw`flex-1 p-6 pb-1`}>
-            {/* Header Section */}
+        <View style={tw`flex-1 p-6 pb-1`}>
+          {/* Header Section */}
+          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <View style={tw`items-center mt-42 mb-5`}>
               <Text
                 style={[
@@ -151,8 +151,10 @@ const AddPlayers: React.FC = () => {
                 {t('addPlayers.title')}
               </Text>
             </View>
+          </TouchableWithoutFeedback>
 
-            {/* Player List Section */}
+          {/* Player List Section */}
+          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <View style={tw`flex-1`}>
               <FlatList
                 ref={listRef}
@@ -172,51 +174,51 @@ const AddPlayers: React.FC = () => {
                 }
               />
             </View>
+          </TouchableWithoutFeedback>
 
-            {/* Input and Start Button Section */}
-            <View>
-              <View style={tw`flex-row mb-4`}>
-                <TextInput
-                  ref={inputRef}
-                  style={[tw`flex-1 bg-white/20 text-white text-base rounded-xl px-4 py-3.5 mr-2 border border-white/30`, { lineHeight: 20 }]}
-                  placeholder={t('addPlayers.inputPlaceholder')}
-                  placeholderTextColor="#ffffff90"
-                  value={playerName}
-                  onChangeText={setPlayerName}
-                  onSubmitEditing={handleAddPlayer}
-                  returnKeyType="done"
-                  returnKeyLabel={t('addPlayers.addButton')}
-                  blurOnSubmit={false}
-                  maxLength={20}
-                  autoCorrect={false}
-                  autoCapitalize="words"
-                  spellCheck={false}
-                  autoComplete="off"
-                  importantForAutofill="no"
-                  textAlignVertical="center"
-                />
-                
-                <TouchableOpacity
-                  style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-xl border border-white/30`}
-                  onPress={handleAddPlayer}
-                >
-                  <Text style={tw`text-white text-2xl font-bold`}>+</Text>
-                </TouchableOpacity>
-              </View>
-              
-              <Button
-                text={t('addPlayers.startButton')}
-                fullWidth
-                size="large"
-                disabled={players.length < 2}
-                onPress={handleStart}
-                style={tw`bg-white py-4 rounded-xl shadow-md mb-6`}
-                textClassName={`text-lg font-bold text-[${BG_COLOR}]`}
+          {/* Input and Start Button Section */}
+          <View>
+            <View style={tw`flex-row mb-4`}>
+              <TextInput
+                ref={inputRef}
+                style={[tw`flex-1 bg-white/20 text-white text-base rounded-xl px-4 py-3.5 mr-2 border border-white/30`, { lineHeight: 20 }]}
+                placeholder={t('addPlayers.inputPlaceholder')}
+                placeholderTextColor="#ffffff90"
+                value={playerName}
+                onChangeText={setPlayerName}
+                onSubmitEditing={handleAddPlayer}
+                returnKeyType="done"
+                returnKeyLabel={t('addPlayers.addButton')}
+                blurOnSubmit={false}
+                maxLength={20}
+                autoCorrect={false}
+                autoCapitalize="words"
+                spellCheck={false}
+                autoComplete="off"
+                importantForAutofill="no"
+                textAlignVertical="center"
               />
+              
+              <TouchableOpacity
+                style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-xl border border-white/30`}
+                onPress={handleAddPlayer}
+              >
+                <Text style={tw`text-white text-2xl font-bold`}>+</Text>
+              </TouchableOpacity>
             </View>
-
+            
+            <Button
+              text={t('addPlayers.startButton')}
+              fullWidth
+              size="large"
+              disabled={players.length < 2}
+              onPress={handleStart}
+              style={tw`bg-white py-4 rounded-xl shadow-md mb-6`}
+              textClassName={`text-lg font-bold text-[${BG_COLOR}]`}
+            />
           </View>
-        </TouchableWithoutFeedback>
+
+        </View>
       </KeyboardAvoidingView>
     </LinearGradient>
   );
