@@ -75,7 +75,7 @@ export default {
   // Install
   install: {
     button: "Installer l'app",
-    iosInstructions: "Installer sur iPhone",
+    iosInstructions: "Installer l'app",
     installing: "Installation...",
     installed: "App installée !"
   },

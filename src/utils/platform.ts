@@ -22,15 +22,17 @@ export const isAndroid = Platform.OS === 'android';
 
 /**
  * Check if running on iOS Safari (for PWA installation)
+ * Note: On iOS, all browsers use Safari's WebKit engine, so PWA installation works the same way
  */
 export const isIOSSafari = (): boolean => {
   if (!isWeb) return false;
   
   const userAgent = navigator.userAgent;
   const isIOSDevice = /iPad|iPhone|iPod/.test(userAgent);
-  const isSafari = /Safari/.test(userAgent) && !/Chrome|CriOS|FxiOS/.test(userAgent);
   
-  return isIOSDevice && isSafari;
+  // On iOS, all browsers (Safari, Chrome, Firefox, etc.) use Safari's WebKit
+  // So PWA installation works the same way regardless of the browser
+  return isIOSDevice;
 };
 
 /**
@@ -65,12 +67,29 @@ export const canInstallPWA = (): boolean => {
 export const showIOSInstallInstructions = (): void => {
   if (!isIOSSafari()) return;
   
+  const userAgent = navigator.userAgent;
+  const isChrome = /CriOS/.test(userAgent);
+  const isFirefox = /FxiOS/.test(userAgent);
+  
+  let browserName = 'Safari';
+  let shareIcon = '📤';
+  
+  if (isChrome) {
+    browserName = 'Chrome';
+    shareIcon = '⋮'; // Chrome uses 3 dots menu
+  } else if (isFirefox) {
+    browserName = 'Firefox';
+    shareIcon = '⋮';
+  }
+  
   const instructions = `Pour installer SIP&GO! sur votre iPhone :
 
-1. Appuyez sur le bouton "Partager" 📤 en bas de Safari
-2. Faites défiler et appuyez sur "Sur l'écran d'accueil"
+1. Appuyez sur le menu ${shareIcon} ${browserName === 'Safari' ? 'en bas' : 'en haut à droite'}
+2. ${browserName === 'Safari' ? 'Faites défiler et ' : ''}Appuyez sur "Ajouter à l'écran d'accueil"
 3. Appuyez sur "Ajouter" en haut à droite
-4. L'app apparaîtra sur votre écran d'accueil !`;
+4. L'app apparaîtra sur votre écran d'accueil !
+
+Note: Sur iOS, tous les navigateurs utilisent le même système d'installation.`;
 
   alert(instructions);
 };
