@@ -23,7 +23,7 @@ import { CLASSIC_PALETTE, getNextClassicColor } from '../utils/classicPalette';
 import PlayerListItem from '../components/PlayerListItem';
 import Button from '../components/Button';
 import { trackQuestionViewed } from '../utils/analytics';
-import { showPaywall } from '../utils/superwall';
+import { showPaywall } from '../utils/superwall.web';
 
 type QuestionScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'Question'>;
 type QuestionScreenRouteProp = RouteProp<RootStackParamList, 'Question'>;

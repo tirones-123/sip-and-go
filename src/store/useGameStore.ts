@@ -20,28 +20,28 @@ const DEFAULT_PACKS: Pack[] = [
     title: 'Entre filles',
     description: 'Perfect for girls night out',
     color: '#e4325f',
-    access: isWeb ? 'FREE' : 'LOCKED'
+    access: 'FREE'
   },
   {
     id: 'guys',
     title: 'Entre gars',
     description: 'For the boys only',
     color: '#A54429',
-    access: isWeb ? 'FREE' : 'LOCKED'
+    access: 'FREE'
   },
   {
     id: 'spicy',
     title: 'Spicy',
     description: 'Hot questions to spice up your night',
     color: '#660000',
-    access: isWeb ? 'FREE' : 'LOCKED'
+    access: 'FREE'
   },
   {
     id: 'couples',
     title: 'En couple',
     description: 'Perfect for dates and couples',
     color: '#1c27ef',
-    access: isWeb ? 'FREE' : 'LOCKED'
+    access: 'FREE'
   }
 ];
 
@@ -49,7 +49,6 @@ const DEFAULT_PACKS: Pack[] = [
 const initialState = {
   players: [],
   packs: DEFAULT_PACKS,
-  premium: false,
   currentQuestions: [],
   currentQuestionIndex: 0,
   isGameStarted: false
@@ -86,18 +85,13 @@ export const useGameStore = create<GameStore>((set, get) => ({
    * Start a game with the selected pack
    */
   startPack: async (packId) => {
-    const { packs, players, premium } = get();
+    const { packs, players } = get();
     const selectedPack = packs.find(p => p.id === packId);
     
     if (!selectedPack) return;
     
-    // Check if locked pack and no premium
-    if (selectedPack.access === 'LOCKED' && !premium) {
-      return;
-    }
-    
     // Track analytics
-    trackPackSelect(packId, premium);
+    trackPackSelect(packId, false); // No premium
     trackGameStart(players.length);
     
     const lang = getLanguage();
@@ -142,11 +136,4 @@ export const useGameStore = create<GameStore>((set, get) => ({
       isGameStarted: false
     });
   },
-  
-  /**
-   * Set premium status
-   */
-  setPremium: (isPremium) => {
-    set({ premium: isPremium });
-  }
 })); 

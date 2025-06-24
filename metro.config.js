@@ -25,6 +25,8 @@ config.transformer = {
       inlineRequires: false,
     },
   }),
+  // Add custom babel transformer for web
+  babelTransformerPath: require.resolve('./metro-transform.js'),
 };
 
 // Web-specific serializer

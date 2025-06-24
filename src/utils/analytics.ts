@@ -1,4 +1,6 @@
 import Constants from 'expo-constants';
+import { PostHog } from 'posthog-react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // Get PostHog key & host from app config (values injected via .env → app.config.ts)
 const posthogKey = Constants.expoConfig?.extra?.POSTHOG_KEY as string | undefined;
@@ -26,9 +28,13 @@ let client: AnalyticsClient = createDisabledClient();
 
 if (posthogKey && Constants.appOwnership !== 'expo') {
   try {
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const { PostHog } = require('posthog-react-native');
-    client = new PostHog(posthogKey, { host: posthogHost });
+    client = new PostHog(
+      process.env.EXPO_PUBLIC_POSTHOG_KEY!,
+      {
+        host: process.env.EXPO_PUBLIC_POSTHOG_HOST!,
+        customStorage: AsyncStorage,
+      }
+    );
   } catch (e) {
     if (__DEV__) {
       // eslint-disable-next-line no-console

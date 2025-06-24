@@ -25,7 +25,6 @@ export interface Question {
 export interface GameState {
   players: string[];
   packs: Pack[];
-  premium: boolean;
   currentPack?: Pack;
   currentQuestions: Question[];
   currentQuestionIndex: number;
@@ -41,7 +40,6 @@ export interface GameActions {
   startPack: (packId: string) => void;
   nextQuestion: () => void;
   resetGame: () => void;
-  setPremium: (isPremium: boolean) => void;
 }
 
 /**

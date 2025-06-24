@@ -12,20 +12,6 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     plugins.unshift('@sentry/react-native/expo');
   }
 
-  // Ensure required native build properties (Superwall requires iOS 14+, Android minSdk 26)
-  plugins.push([
-    'expo-build-properties',
-    {
-      ios: {
-        deploymentTarget: '15.1',
-      },
-      android: {
-        minSdkVersion: 26,
-        extraMavenRepos: ['https://mvn.superwall.com/release'],
-      },
-    },
-  ]);
-
   return {
     ...config,
     name: "SIP&GO!",
@@ -75,14 +61,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         projectId: "9f20c5ac-4959-4e50-a5c7-bff348faa999"
       },
       // Environment variables access
-      RC_KEY_IOS: process.env.RC_KEY_IOS,
-      RC_KEY_ANDROID: process.env.RC_KEY_ANDROID,
       POSTHOG_KEY: process.env.POSTHOG_KEY,
       POSTHOG_HOST: process.env.POSTHOG_HOST || "https://eu.posthog.com",
       SENTRY_DSN: process.env.SENTRY_DSN,
-      // Superwall public API keys (set these in your .env file)
-      SUPERWALL_KEY_IOS: process.env.SUPERWALL_KEY_IOS,
-      SUPERWALL_KEY_ANDROID: process.env.SUPERWALL_KEY_ANDROID,
     },
     plugins
   };

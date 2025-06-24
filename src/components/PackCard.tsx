@@ -10,7 +10,6 @@ import LockIcon from './LockIcon';
 interface PackCardProps {
   pack: Pack;
   onPlay: (packId: string) => void;
-  isPremium: boolean;
   itemWidth?: number;
   heroImageSource: ImageSourcePropType;
 }
@@ -44,10 +43,8 @@ const shadeColor = (color: string, percent: number): string => {
 /**
  * Card component for displaying a game pack in the carousel, redesigned.
  */
-const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth, heroImageSource }) => {
+const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageSource }) => {
   const { t } = useTranslation();
-  // On web, nothing is locked (everything is free)
-  const isLocked = Platform.OS !== 'web' && pack.access === 'LOCKED' && !isPremium;
   
   // Get the pack title and description from translations
   const packTitle = t(`modeCarousel.packs.${pack.id}.title`, { defaultValue: pack.title });
@@ -106,15 +103,6 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, isPremium, itemWidth,
             resizeMode="contain"
           />
         </View>
-        {/* Lock overlay for premium packs - only top part */}
-        {isLocked && (
-          <> 
-            <View style={tw`absolute inset-0 bg-black/60`} />
-            <View style={tw`absolute top-4 right-4 bg-black/50 p-2 rounded-full`}>
-              <LockIcon size={24} bodyColor="#FFFFFF" shackleColor="#FFFFFF" />
-            </View>
-          </>
-        )}
       </View>
       
       {/* Bottom Part */}
