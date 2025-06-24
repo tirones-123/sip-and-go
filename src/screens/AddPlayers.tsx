@@ -21,6 +21,7 @@ import { RootStackParamList } from '../navigation';
 import PlayerListItem from '../components/PlayerListItem';
 import Button from '../components/Button';
 import BubbleBackground from '../components/BubbleBackground';
+import InstallButton from '../components/InstallButton';
 import { tintColor } from '../utils/colorUtils';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -213,9 +214,12 @@ const AddPlayers: React.FC = () => {
               size="large"
               disabled={players.length < 2}
               onPress={handleStart}
-              style={tw`bg-white py-4 rounded-xl shadow-md mb-6`}
+              style={tw`bg-white py-4 rounded-xl shadow-md mb-4`}
               textClassName={`text-lg font-bold text-[${BG_COLOR}]`}
             />
+            
+            {/* Install PWA Button */}
+            <InstallButton style={tw`mb-6`} />
           </View>
 
         </View>

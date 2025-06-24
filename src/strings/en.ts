@@ -72,6 +72,14 @@ export default {
     quitButton: 'Quit Mode'
   },
   
+  // Install
+  install: {
+    button: "Install App",
+    iosInstructions: "Install on iPhone",
+    installing: "Installing...",
+    installed: "App Installed!"
+  },
+
   // Settings
   settings: {
     title: "Settings",
