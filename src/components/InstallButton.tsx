@@ -25,10 +25,26 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
       const canInstall = canInstallPWA();
       const isAlreadyInstalled = isPWAInstalled();
       
+      // Debug info (remove in production)
+      console.log('PWA Status:', {
+        canInstall,
+        isAlreadyInstalled,
+        isIOSSafari: isIOSSafari(),
+        standalone: window.matchMedia('(display-mode: standalone)').matches,
+        navigator: (window.navigator as any).standalone
+      });
+      
       setShowInstallButton(canInstall && !isAlreadyInstalled);
     };
 
     checkInstallAvailability();
+
+    // Recheck when app comes back to foreground (iOS)
+    const handleVisibilityChange = () => {
+      if (!document.hidden) {
+        checkInstallAvailability();
+      }
+    };
 
     // Listen for beforeinstallprompt event (for Android/Chrome)
     const handleBeforeInstallPrompt = (e: Event) => {
@@ -46,10 +62,12 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
     if (typeof window !== 'undefined') {
       window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
       window.addEventListener('appinstalled', handleAppInstalled);
+      document.addEventListener('visibilitychange', handleVisibilityChange);
 
       return () => {
         window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
         window.removeEventListener('appinstalled', handleAppInstalled);
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
       };
     }
   }, []);

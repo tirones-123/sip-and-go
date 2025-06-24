@@ -22,6 +22,7 @@ import PlayerListItem from '../components/PlayerListItem';
 import Button from '../components/Button';
 import BubbleBackground from '../components/BubbleBackground';
 import InstallButton from '../components/InstallButton';
+import InstalledBadge from '../components/InstalledBadge';
 import { tintColor } from '../utils/colorUtils';
 import { LinearGradient } from 'expo-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -218,8 +219,9 @@ const AddPlayers: React.FC = () => {
               textClassName={`text-lg font-bold text-[${BG_COLOR}]`}
             />
             
-            {/* Install PWA Button */}
+            {/* Install PWA Button or Installed Badge */}
             <InstallButton style={tw`mb-6`} />
+            <InstalledBadge style={tw`mb-6 self-center`} />
           </View>
 
         </View>
