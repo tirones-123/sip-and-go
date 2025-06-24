@@ -326,7 +326,7 @@
   },
   {
     "id": "c66",
-    "text": "${player}, name a quality you find sexy about ${player}. Otherwise, 2 penalties.",
+    "text": "${player}, name a quality you find sexy about someone here. Otherwise, 2 penalties.",
     "pack": "classic"
   },
   {
@@ -451,7 +451,7 @@
   },
   {
     "id": "c91",
-    "text": "${player}, you're ${player}'s parrot now. Repeat everything they say, otherwise 2 penalties.",
+    "text": "${player}, choose someone to be your parrot. They must repeat everything you say for 2 rounds, otherwise 2 penalties.",
     "pack": "classic"
   },
   {
@@ -561,7 +561,7 @@
   },
   {
     "id": "c113",
-    "text": "${player}, tell us something you hate about ${player}. Otherwise, 2 penalties.",
+    "text": "${player}, tell us something you hate about someone here. Otherwise, 2 penalties.",
     "pack": "classic"
   },
   {

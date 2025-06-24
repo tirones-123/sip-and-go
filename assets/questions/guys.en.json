@@ -11,7 +11,7 @@
   },
   {
     "id": "gy3",
-    "text": "${player}, what's your greatest sports achievement? If ${player} isn't impressed, take 2 sips.",
+    "text": "${player}, what's your greatest sports achievement? If the group isn't impressed, take 2 sips.",
     "pack": "guys"
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "id": "gy8",
-    "text": "${player} chooses which player would survive longest in a zombie apocalypse. ${player} distributes 3 sips.",
+    "text": "${player} chooses which player would survive longest in a zombie apocalypse. That person distributes 3 sips.",
     "pack": "guys"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "id": "gy11",
-    "text": "${player}, truth: what's your technique to impress someone you like? If ${player} thinks it wouldn't work, drink.",
+    "text": "${player}, truth: what's your technique to impress someone you like? If the group thinks it wouldn't work, drink.",
     "pack": "guys"
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "id": "gy15",
-    "text": "${player}, what car would you buy if money wasn't an issue? If ${player} thinks it's a bad choice, you both drink.",
+    "text": "${player}, what car would you buy if money wasn't an issue? If the group thinks it's a bad choice, take 2 sips.",
     "pack": "guys"
   },
   {
@@ -96,7 +96,7 @@
   },
   {
     "id": "gy20",
-    "text": "${player} shows ${player} the most embarrassing photo on their phone or takes 3 sips.",
+    "text": "${player} shows the group the most embarrassing photo on their phone or takes 3 sips.",
     "pack": "guys"
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "id": "gy23",
-    "text": "${player}, tell us your best dad joke. If ${player} doesn't laugh, you take 2 sips.",
+    "text": "${player}, tell us your best dad joke. If nobody laughs, you take 2 sips.",
     "pack": "guys"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "id": "gy28",
-    "text": "${player}, if you had to fight someone here, who would it be? ${player} distributes 3 sips.",
+    "text": "${player}, if you had to fight someone here, who would it be? That person distributes 3 sips.",
     "pack": "guys"
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "id": "gy30",
-    "text": "${player} mentally chooses rock, paper, or scissors. ${player} guesses what it is. If wrong, both drink.",
+    "text": "${player} mentally chooses rock, paper, or scissors. The person to your right tries to guess what it is. If wrong, both drink.",
     "pack": "guys"
   }
 ] 

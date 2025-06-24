@@ -46,7 +46,7 @@
   },
   {
     "id": "g10",
-    "text": "${player} must show ${player} the last photo they took. If they refuse, 3 sips.",
+    "text": "${player} must show the group the last photo they took. If they refuse, 3 sips.",
     "pack": "girls"
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "id": "g15",
-    "text": "${player} shares a beauty tip with ${player}. If it's useful, the giver distributes 2 sips.",
+    "text": "${player} shares a beauty tip with someone here. If it's useful, the giver distributes 2 sips.",
     "pack": "girls"
   },
   {
@@ -81,7 +81,7 @@
   },
   {
     "id": "g17",
-    "text": "${player}, what's your skincare routine? If ${player} thinks it's too short, you both drink.",
+    "text": "${player}, what's your skincare routine? If the group thinks it's too short, you drink.",
     "pack": "girls"
   },
   {
@@ -91,7 +91,7 @@
   },
   {
     "id": "g19",
-    "text": "${player} shares a fashion opinion. If ${player} disagrees, they both drink.",
+    "text": "${player} shares a fashion opinion. If someone disagrees, they both drink.",
     "pack": "girls"
   },
   {
@@ -111,7 +111,7 @@
   },
   {
     "id": "g23",
-    "text": "${player}, share a dating red flag with ${player}. If they've experienced it, both take 2 sips.",
+    "text": "${player}, share a dating red flag with someone here. If they've experienced it, both take 2 sips.",
     "pack": "girls"
   },
   {
@@ -121,7 +121,7 @@
   },
   {
     "id": "g25",
-    "text": "${player}, let ${player} check your social media. If they find an embarrassing post, take 2 sips.",
+    "text": "${player}, let someone here check your social media. If they find an embarrassing post, take 2 sips.",
     "pack": "girls"
   },
   {
@@ -136,7 +136,7 @@
   },
   {
     "id": "g28",
-    "text": "${player} tells ${player} about a hair disaster or takes 3 sips.",
+    "text": "${player} tells someone here about a hair disaster or takes 3 sips.",
     "pack": "girls"
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "id": "g30",
-    "text": "${player} guesses ${player}'s favorite fashion brand. If wrong, both take 1 sip.",
+    "text": "${player} guesses someone's favorite fashion brand. If wrong, both take 1 sip.",
     "pack": "girls"
   }
 ] 
