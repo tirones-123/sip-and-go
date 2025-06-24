@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Modal, View, Text, TouchableOpacity, ScrollView, Image, Animated } from 'react-native';
+import { Modal, View, Text, TouchableOpacity, ScrollView, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import tw from 'twrnc';
@@ -12,84 +12,23 @@ interface InstallModalProps {
 }
 
 /**
- * Premium installation modal with detailed benefits and visual instructions
+ * Simple installation modal with clear instructions
  */
 const InstallModal: React.FC<InstallModalProps> = ({ visible, onClose }) => {
   const { t } = useTranslation();
-  const [currentStep, setCurrentStep] = useState(0);
   const [fadeAnim] = useState(new Animated.Value(0));
-  const [slideAnim] = useState(new Animated.Value(50));
 
   useEffect(() => {
     if (visible) {
-      Animated.parallel([
-        Animated.timing(fadeAnim, {
-          toValue: 1,
-          duration: 300,
-          useNativeDriver: true,
-        }),
-        Animated.timing(slideAnim, {
-          toValue: 0,
-          duration: 300,
-          useNativeDriver: true,
-        }),
-      ]).start();
+      Animated.timing(fadeAnim, {
+        toValue: 1,
+        duration: 200,
+        useNativeDriver: true,
+      }).start();
     } else {
       fadeAnim.setValue(0);
-      slideAnim.setValue(50);
     }
   }, [visible]);
-
-  const benefits = [
-    {
-      icon: "⚡",
-      title: "Lancement Ultra-Rapide",
-      description: "Ouvrez l'app en 0.5 seconde, plus rapide que Safari"
-    },
-    {
-      icon: "📱",
-      title: "Expérience Native",
-      description: "Interface plein écran, comme une vraie app iPhone"
-    },
-    {
-      icon: "🚀",
-      title: "Performance Optimisée",
-      description: "Consomme 50% moins de batterie et mémoire"
-    },
-    {
-      icon: "💾",
-      title: "Mode Hors-ligne",
-      description: "Jouez même sans connexion internet"
-    },
-    {
-      icon: "🔒",
-      title: "Sécurisé",
-      description: "Aucune donnée partagée, 100% privé"
-    },
-    {
-      icon: "🎮",
-      title: "Notifications",
-      description: "Recevez les nouveaux packs en premier"
-    }
-  ];
-
-  const iosSteps = [
-    {
-      icon: "📤",
-      title: "1. Appuyez sur Partager",
-      description: "Touchez l'icône de partage en bas de l'écran"
-    },
-    {
-      icon: "📱",
-      title: "2. Ajoutez à l'écran d'accueil",
-      description: "Faites défiler et sélectionnez cette option"
-    },
-    {
-      icon: "✅",
-      title: "3. Confirmez",
-      description: "Appuyez sur 'Ajouter' en haut à droite"
-    }
-  ];
 
   const handleInstall = async () => {
     try {
@@ -107,104 +46,116 @@ const InstallModal: React.FC<InstallModalProps> = ({ visible, onClose }) => {
       animationType="none"
       onRequestClose={onClose}
     >
-      <View style={tw`flex-1 bg-black/50 justify-center items-center p-4`}>
+      <View style={tw`flex-1 bg-black/60 justify-center items-center p-6`}>
         <Animated.View
           style={[
-            tw`bg-white rounded-3xl max-w-sm w-full shadow-2xl`,
-            {
-              opacity: fadeAnim,
-              transform: [{ translateY: slideAnim }],
-            },
+            tw`bg-white rounded-2xl w-full max-w-sm shadow-xl`,
+            { opacity: fadeAnim },
           ]}
         >
           {/* Header */}
-          <LinearGradient
-            colors={['#FF6B6B', '#FF8E53']}
-            style={tw`rounded-t-3xl p-6 items-center`}
-          >
-            <View style={tw`bg-white/20 rounded-full p-4 mb-4`}>
-              <Ionicons name="phone-portrait" size={32} color="#FFFFFF" />
+          <View style={tw`p-6 pb-4 border-b border-gray-100`}>
+            <View style={tw`flex-row items-center justify-between`}>
+              <View style={tw`flex-row items-center`}>
+                <View style={tw`bg-blue-100 rounded-full p-2 mr-3`}>
+                  <Ionicons name="phone-portrait" size={20} color="#3B82F6" />
+                </View>
+                <Text style={tw`text-gray-900 font-semibold text-lg`}>
+                  Installer SIP&GO!
+                </Text>
+              </View>
+              <TouchableOpacity
+                style={tw`p-1`}
+                onPress={onClose}
+              >
+                <Ionicons name="close" size={24} color="#6B7280" />
+              </TouchableOpacity>
             </View>
-            <Text style={tw`text-white font-bold text-2xl text-center`}>
-              Installer SIP&GO!
-            </Text>
-            <Text style={tw`text-white/90 text-center mt-2`}>
-              Transformez votre expérience de jeu
-            </Text>
-            
-            {/* Close button */}
-            <TouchableOpacity
-              style={tw`absolute top-4 right-4 bg-white/20 rounded-full p-2`}
-              onPress={onClose}
-            >
-              <Ionicons name="close" size={20} color="#FFFFFF" />
-            </TouchableOpacity>
-          </LinearGradient>
+          </View>
 
-          <ScrollView style={tw`max-h-96`}>
-            {/* Benefits */}
-            <View style={tw`p-6`}>
-              <Text style={tw`text-gray-800 font-bold text-lg mb-4 text-center`}>
-                🎉 Pourquoi installer l'app ?
+          <View style={tw`p-6`}>
+            {/* Why install */}
+            <View style={tw`mb-6`}>
+              <Text style={tw`text-gray-600 text-sm mb-3`}>
+                Pourquoi installer l'app :
               </Text>
-              
-              {benefits.map((benefit, index) => (
-                <View key={index} style={tw`flex-row items-center mb-3`}>
-                  <Text style={tw`text-2xl mr-3`}>{benefit.icon}</Text>
-                  <View style={tw`flex-1`}>
-                    <Text style={tw`font-semibold text-gray-800`}>
-                      {benefit.title}
-                    </Text>
-                    <Text style={tw`text-gray-600 text-sm`}>
-                      {benefit.description}
-                    </Text>
+              <View style={tw`space-y-2`}>
+                <View style={tw`flex-row items-center`}>
+                  <Text style={tw`text-blue-500 mr-2`}>⚡</Text>
+                  <Text style={tw`text-gray-700 text-sm`}>Plus rapide à ouvrir</Text>
+                </View>
+                <View style={tw`flex-row items-center`}>
+                  <Text style={tw`text-blue-500 mr-2`}>📱</Text>
+                  <Text style={tw`text-gray-700 text-sm`}>Interface plein écran</Text>
+                </View>
+                <View style={tw`flex-row items-center`}>
+                  <Text style={tw`text-blue-500 mr-2`}>💾</Text>
+                  <Text style={tw`text-gray-700 text-sm`}>Fonctionne hors-ligne</Text>
+                </View>
+              </View>
+            </View>
+
+            {/* Installation Steps for iOS */}
+            {isIOSSafari() && (
+              <View style={tw`mb-6`}>
+                <Text style={tw`text-gray-800 font-medium mb-4`}>
+                  Comment installer :
+                </Text>
+                
+                <View style={tw`space-y-3`}>
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="share-outline" size={16} color="#3B82F6" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        1. Appuyez sur le bouton Partager
+                      </Text>
+                      <Text style={tw`text-gray-600 text-xs mt-1`}>
+                        L'icône 📤 en bas de votre écran
+                      </Text>
+                    </View>
+                  </View>
+
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="add-circle-outline" size={16} color="#3B82F6" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        2. "Sur l'écran d'accueil"
+                      </Text>
+                      <Text style={tw`text-gray-600 text-xs mt-1`}>
+                        Faites défiler et sélectionnez cette option
+                      </Text>
+                    </View>
+                  </View>
+
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="checkmark-circle-outline" size={16} color="#10B981" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        3. Appuyez sur "Ajouter"
+                      </Text>
+                      <Text style={tw`text-gray-600 text-xs mt-1`}>
+                        L'app apparaîtra sur votre écran d'accueil
+                      </Text>
+                    </View>
                   </View>
                 </View>
-              ))}
+              </View>
+            )}
 
-              {/* Installation Steps for iOS */}
-              {isIOSSafari() && (
-                <View style={tw`mt-6`}>
-                  <Text style={tw`text-gray-800 font-bold text-lg mb-4 text-center`}>
-                    📖 Comment installer (3 étapes)
-                  </Text>
-                  
-                  {iosSteps.map((step, index) => (
-                    <View key={index} style={tw`flex-row items-center mb-4 p-3 bg-gray-50 rounded-xl`}>
-                      <Text style={tw`text-2xl mr-3`}>{step.icon}</Text>
-                      <View style={tw`flex-1`}>
-                        <Text style={tw`font-semibold text-gray-800`}>
-                          {step.title}
-                        </Text>
-                        <Text style={tw`text-gray-600 text-sm`}>
-                          {step.description}
-                        </Text>
-                      </View>
-                    </View>
-                  ))}
-                </View>
-              )}
-            </View>
-          </ScrollView>
-
-          {/* Action Buttons */}
-          <View style={tw`p-6 pt-0`}>
+            {/* Action Button */}
             <TouchableOpacity
-              style={tw`bg-green-500 rounded-2xl py-4 mb-3 shadow-lg`}
+              style={tw`bg-blue-500 rounded-xl py-3 px-4`}
               onPress={handleInstall}
               activeOpacity={0.8}
             >
-              <Text style={tw`text-white font-bold text-lg text-center`}>
-                {isIOSSafari() ? "🚀 Voir les instructions" : "⬇️ Installer maintenant"}
-              </Text>
-            </TouchableOpacity>
-            
-            <TouchableOpacity
-              style={tw`py-3`}
-              onPress={onClose}
-            >
-              <Text style={tw`text-gray-500 text-center`}>
-                Plus tard
+              <Text style={tw`text-white font-medium text-center`}>
+                {isIOSSafari() ? "Voir les instructions" : "Installer maintenant"}
               </Text>
             </TouchableOpacity>
           </View>
