@@ -150,7 +150,7 @@ const ModeCarousel: React.FC = () => {
           decelerationRate="fast"
           contentContainerStyle={{
             paddingHorizontal: (width - ITEM_WIDTH) / 2,
-            paddingTop: 70,
+            paddingTop: 100,
             paddingBottom: 40,
           }}
           onScroll={scrollHandler}
