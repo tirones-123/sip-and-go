@@ -36,14 +36,83 @@ export const isIOSSafari = (): boolean => {
 };
 
 /**
+ * Mark PWA as installed in localStorage
+ */
+export const markPWAAsInstalled = (): void => {
+  if (!isWeb) return;
+  
+  try {
+    localStorage.setItem('pwa-installed', 'true');
+    localStorage.setItem('pwa-install-date', new Date().toISOString());
+  } catch (error) {
+    console.warn('Could not save PWA install status:', error);
+  }
+};
+
+/**
+ * Check if PWA was marked as installed in localStorage
+ */
+export const isPWAMarkedAsInstalled = (): boolean => {
+  if (!isWeb) return false;
+  
+  try {
+    return localStorage.getItem('pwa-installed') === 'true';
+  } catch (error) {
+    return false;
+  }
+};
+
+/**
  * Check if the app is already installed as PWA
  */
 export const isPWAInstalled = (): boolean => {
   if (!isWeb) return false;
   
-  // Check if running in standalone mode (installed PWA)
-  return window.matchMedia('(display-mode: standalone)').matches ||
-         (window.navigator as any).standalone === true;
+  // First check if user manually marked as installed
+  if (isPWAMarkedAsInstalled()) {
+    return true;
+  }
+  
+  // Multiple ways to detect PWA installation
+  
+  // Method 1: Check display-mode standalone
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+  
+  // Method 2: Check navigator.standalone (iOS Safari specific)
+  const isIOSStandalone = (window.navigator as any).standalone === true;
+  
+  // Method 3: Check if window.navigator.userAgent contains specific PWA indicators
+  const userAgent = navigator.userAgent;
+  const isPWAMode = userAgent.includes('wv'); // WebView indicator
+  
+  // Method 4: Check window size and screen properties (PWA often runs fullscreen)
+  const isFullscreen = window.screen.height === window.innerHeight;
+  
+  // Method 5: Check if app was launched from home screen (iOS)
+  const isFromHomeScreen = !document.referrer || document.referrer === '';
+  
+  // Debug info
+  console.log('PWA Detection Methods:', {
+    isStandalone,
+    isIOSStandalone,
+    isPWAMode,
+    isFullscreen,
+    isFromHomeScreen,
+    userAgent: userAgent.substring(0, 100),
+    referrer: document.referrer,
+    screenHeight: window.screen.height,
+    innerHeight: window.innerHeight,
+    markedAsInstalled: isPWAMarkedAsInstalled()
+  });
+  
+  const isInstalled = isStandalone || isIOSStandalone || (isIOSSafari() && isFromHomeScreen && isFullscreen);
+  
+  // If we detect it's installed, mark it for future reference
+  if (isInstalled) {
+    markPWAAsInstalled();
+  }
+  
+  return isInstalled;
 };
 
 /**

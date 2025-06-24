@@ -54,7 +54,27 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       orientation: "portrait",
       themeColor: "#0B0E1A",
       backgroundColor: "#0B0E1A",
-      bundler: "metro"
+      bundler: "metro",
+      // PWA Configuration for full screen
+      manifest: {
+        display: "standalone",
+        orientation: "portrait",
+        theme_color: "#0B0E1A",
+        background_color: "#0B0E1A",
+        start_url: "/",
+        scope: "/",
+        categories: ["games", "entertainment"],
+        prefer_related_applications: false,
+        display_override: ["standalone", "fullscreen"]
+      },
+      // Meta tags for iOS full screen
+      meta: {
+        "apple-mobile-web-app-capable": "yes",
+        "apple-mobile-web-app-status-bar-style": "black-translucent",
+        "apple-mobile-web-app-title": "SIP&GO!",
+        "mobile-web-app-capable": "yes",
+        "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+      }
     },
     extra: {
       eas: {
