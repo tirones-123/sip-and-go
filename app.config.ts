@@ -65,7 +65,16 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         scope: "/",
         categories: ["games", "entertainment"],
         prefer_related_applications: false,
-        display_override: ["standalone", "fullscreen"]
+        display_override: ["standalone", "fullscreen"],
+        // Ajout des icônes pour une meilleure installation
+        icons: [
+          {
+            src: "./assets/icon.png",
+            sizes: "any",
+            type: "image/png",
+            purpose: "any maskable"
+          }
+        ]
       },
       // Meta tags for iOS full screen
       meta: {
@@ -73,7 +82,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         "apple-mobile-web-app-status-bar-style": "black-translucent",
         "apple-mobile-web-app-title": "SIP&GO!",
         "mobile-web-app-capable": "yes",
-        "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
+        "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover",
+        // Forcer le mode standalone
+        "apple-touch-fullscreen": "yes"
       }
     },
     extra: {
