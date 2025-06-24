@@ -20,7 +20,6 @@ import PackCard from '../components/PackCard';
 import { tintColor } from '../utils/colorUtils';
 import { showPaywall } from '../utils/superwall.web';
 import { useDraggableScroll } from '../hooks/useDraggableScroll';
-import BubbleBackground from '../components/BubbleBackground';
 
 type ModeCarouselScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'ModeCarousel'>;
 
@@ -46,7 +45,7 @@ const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
 const ModeCarousel: React.FC = () => {
   const { t } = useTranslation();
   const navigation = useNavigation<ModeCarouselScreenNavigationProp>();
-  const { width } = useWindowDimensions();
+  const { width, height } = useWindowDimensions();
   const insets = useSafeAreaInsets(); // Get safe area insets
   
   const flatListRef = useRef<FlatList<Pack>>(null);
@@ -57,13 +56,13 @@ const ModeCarousel: React.FC = () => {
 
   // Carousel layout constants
   const ITEM_SPACING = 16; // space between cards
+  const ITEM_WIDTH = Math.min(width * 0.85, 320); // Responsive width with max limit
 
-  // Width of each carousel item (take 85 % of screen but max 320px) and round to nearest pixel
-  const rawItemWidth = Math.min(width * 0.85, 320);
-  const ITEM_WIDTH = Math.round(rawItemWidth);
+  // Calculate responsive padding based on screen height
+  const RESPONSIVE_PADDING_TOP = Math.max(height * 0.15, 80); // 15% of screen height, minimum 80px
 
   // Snap interval (integer) must include item width + spacing between items
-  const SNAP_INTERVAL = ITEM_WIDTH + ITEM_SPACING;
+  const SNAP_INTERVAL = Math.round(ITEM_WIDTH + ITEM_SPACING);
 
   // Side padding (integer) so the first/last card are centered on screen
   const sidePadding = Math.round((width - ITEM_WIDTH) / 2);
@@ -118,35 +117,27 @@ const ModeCarousel: React.FC = () => {
     };
   });
 
-  const renderItem = ({ item, index }: { item: Pack; index: number }) => (
-    <View style={{
-      marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
-      marginRight: index === packs.length - 1 ? 0 : ITEM_SPACING / 2,
-    }}>
-      <PackCard 
-        pack={item}
-        onPlay={handlePlay}
-        itemWidth={ITEM_WIDTH}
-        heroImageSource={packImages[item.id]}
-      />
-    </View>
-  );
-
   return (
-    <View style={tw`flex-1 bg-darkBg`}>
-      <BubbleBackground />
-      
-      {/* Header with logo */}
-      <View style={[tw`pt-16 pb-4 items-center`, { paddingTop: insets.top + 16 }]}>
-        <Image 
-          source={require('../../assets/logo-horizontal.png')} 
-          style={tw`w-48 h-12`}
-          resizeMode="contain"
+    <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
+      {/* Custom top elements: Back button and Logo */}
+      <View 
+        style={{
+          position: 'absolute',
+          top: insets.top + HEADER_ELEMENT_TOP_PADDING,
+          left: 0,
+          right: 0,
+          alignItems: 'center',
+          zIndex: 1, // Ensure logo is on top
+        }}
+      >
+        <Image
+          source={require('../../assets/logo-jauneclair.png')}
+          style={{ height: 100, resizeMode: 'contain' }}
         />
       </View>
 
-      {/* Carousel container - takes remaining space and centers content */}
-      <View style={tw`flex-1 justify-center`}>
+      {/* Carousel Container */}
+      <View style={{ flex: 1 }}>
         <Animated.FlatList
           ref={draggableRef}
           data={packs}
@@ -159,16 +150,40 @@ const ModeCarousel: React.FC = () => {
           decelerationRate="fast"
           contentContainerStyle={{
             paddingHorizontal: (width - ITEM_WIDTH) / 2,
+            paddingTop: RESPONSIVE_PADDING_TOP,
+            paddingBottom: 40,
           }}
           onScroll={scrollHandler}
           scrollEventThrottle={16}
           style={{ flex: 1 }}
-          renderItem={renderItem}
+          renderItem={({ item, index }) => (
+            <View style={{
+              marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
+              marginRight: index === packs.length - 1 ? 0 : ITEM_SPACING / 2,
+            }}>
+              <PackCard 
+                pack={item}
+                onPlay={handlePlay}
+                itemWidth={ITEM_WIDTH}
+                heroImageSource={packImages[item.id]}
+              />
+            </View>
+          )}
         />
       </View>
       
-      {/* Bottom section with player count and button */}
-      <View style={[tw`pb-8 px-6`, { paddingBottom: insets.bottom + 32 }]}>
+      {/* Footer - Back arrow + Player count */}
+      <View
+        style={[
+          tw`mx-4 mb-6 px-6 py-4 rounded-2xl shadow-lg`,
+          {
+            backgroundColor: FALLBACK_COLOR_DARK,
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+        ]}
+      >
         {/* Back arrow */}
         <TouchableOpacity
           onPress={() => {
@@ -191,7 +206,7 @@ const ModeCarousel: React.FC = () => {
           {t('modeCarousel.playerCount', { count: players.length })}
         </Text>
       </View>
-    </View>
+    </Animated.View>
   );
 };
 
