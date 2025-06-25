@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Modal, View, Text, TouchableOpacity, ScrollView, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { LinearGradient } from 'expo-linear-gradient';
 import tw from 'twrnc';
 import { isIOSSafari, installPWA } from '../utils/platform';
 import { useTranslation } from '../utils/i18n';
@@ -17,6 +16,10 @@ interface InstallModalProps {
 const InstallModal: React.FC<InstallModalProps> = ({ visible, onClose }) => {
   const { t } = useTranslation();
   const [fadeAnim] = useState(new Animated.Value(0));
+  // Detect platform for tailored instructions
+  const userAgent = typeof navigator !== 'undefined' ? navigator.userAgent : '';
+  const isAndroidChrome = /Android/.test(userAgent) && /Chrome\//.test(userAgent);
+  const isDesktopChromium = !isIOSSafari() && !isAndroidChrome;
 
   useEffect(() => {
     if (visible) {
@@ -141,6 +144,80 @@ const InstallModal: React.FC<InstallModalProps> = ({ visible, onClose }) => {
                       </Text>
                       <Text style={tw`text-gray-600 text-xs mt-1`}>
                         L'app apparaîtra sur votre écran d'accueil
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            )}
+
+            {/* Installation Steps for Android Chrome */}
+            {isAndroidChrome && (
+              <View style={tw`mb-6`}>
+                <Text style={tw`text-gray-800 font-medium mb-4`}>
+                  Comment installer :
+                </Text>
+                <View style={tw`space-y-3`}>
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="ellipsis-vertical" size={16} color="#3B82F6" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        1. Ouvrez le menu (⋮) en haut à droite
+                      </Text>
+                    </View>
+                  </View>
+
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="add-circle-outline" size={16} color="#3B82F6" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        2. Sélectionnez "Ajouter à l'écran d'accueil"
+                      </Text>
+                    </View>
+                  </View>
+
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="checkmark-circle-outline" size={16} color="#10B981" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        3. Validez en appuyant sur "Ajouter"
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            )}
+
+            {/* Installation Steps for Desktop Chromium */}
+            {isDesktopChromium && (
+              <View style={tw`mb-6`}>
+                <Text style={tw`text-gray-800 font-medium mb-4`}>
+                  Comment installer :
+                </Text>
+                <View style={tw`space-y-3`}>
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="download-outline" size={16} color="#3B82F6" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        1. Cliquez sur l'icône "Installer" dans la barre d'adresse
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={tw`flex-row items-start p-3 bg-gray-50 rounded-lg`}>
+                    <View style={tw`bg-white rounded-full p-2 mr-3 shadow-sm`}>
+                      <Ionicons name="checkmark-circle-outline" size={16} color="#10B981" />
+                    </View>
+                    <View style={tw`flex-1`}>
+                      <Text style={tw`font-medium text-gray-800 text-sm`}>
+                        2. Confirmez l'installation
                       </Text>
                     </View>
                   </View>

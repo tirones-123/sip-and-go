@@ -43,7 +43,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       package: "com.sipandgoapp.first",
     },
     web: {
-      favicon: "./assets/icon.png",
+      favicon: "./assets/logo-jauneclair.png",
       name: "SIP&GO! - Jeu à Boire",
       shortName: "SIP&GO!",
       description: "Application de jeu à boire ultime pour vos soirées",
@@ -69,7 +69,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         // Ajout des icônes pour une meilleure installation
         icons: [
           {
-            src: "./assets/icon.png",
+            src: "./assets/logo-jauneclair.png",
             sizes: "any",
             type: "image/png",
             purpose: "any maskable"
