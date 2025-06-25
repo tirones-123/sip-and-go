@@ -1,37 +1,13 @@
 {
-  "buildCommand": "npm run build:web",
+  "buildCommand": "expo export --platform web",
   "outputDirectory": "dist",
-  "devCommand": "npm start",
-  "routes": [
-    {
-      "src": "/assets/logo-jauneclair.png",
-      "dest": "/assets/logo-jauneclair.png"
-    },
-    {
-      "src": "/logo-jauneclair.png", 
-      "dest": "/logo-jauneclair.png"
-    },
-    {
-      "src": "/apple-touch-icon.png",
-      "dest": "/apple-touch-icon.png"
-    },
-    {
-      "src": "/manifest.json",
-      "dest": "/manifest.json"
-    },
-    {
-      "src": "/sw.js",
-      "dest": "/sw.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/"
-    }
-  ],
+  "devCommand": "expo",
+  "installCommand": "npm install",
+  "framework": null,
   "rewrites": [
     {
-      "source": "/assets/:path*",
-      "destination": "/_expo/static/js/web/assets/:path*"
+      "source": "/(.*)",
+      "destination": "/"
     }
   ]
 } 

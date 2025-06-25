@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
 import { isWeb } from '../utils/platform';
-import { Asset } from 'expo-asset';
-import { generateManifest } from '../utils/generateManifest';
 
 /**
  * Hook to configure PWA meta tags dynamically
@@ -12,16 +10,6 @@ export const usePWAConfiguration = () => {
     if (!isWeb) return;
 
     const configurePWA = async () => {
-      // Generate dynamic manifest with correct asset URLs
-      await generateManifest();
-
-      // Load the logo asset using Expo Asset
-      const logoAsset = Asset.fromModule(require('../../assets/logo-jauneclair.png'));
-      await logoAsset.downloadAsync();
-      const iconUrl = logoAsset.uri || '/assets/logo-jauneclair.png';
-
-      console.log('PWA Icon URL:', iconUrl);
-
       // Create or update meta tags for PWA
       const updateMetaTag = (name: string, content: string) => {
         let meta = document.querySelector(`meta[name="${name}"]`);
@@ -59,6 +47,9 @@ export const usePWAConfiguration = () => {
       
       // Force viewport for true fullscreen
       updateMetaTag('viewport', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no');
+
+      // Use a simple icon URL
+      const iconUrl = '/assets/logo-jauneclair.png';
 
       // Update various icon sizes for iOS
       updateLinkTag('apple-touch-icon', iconUrl);
