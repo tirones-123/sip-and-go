@@ -1,0 +1,6 @@
+# Redirect assets to the correct location
+/assets/logo-jauneclair.png /.expo/web/cache/production/assets/assets/logo-jauneclair.png 200
+/logo-jauneclair.png /.expo/web/cache/production/assets/assets/logo-jauneclair.png 200
+
+# Fallback for all other routes
+/* /index.html 200 

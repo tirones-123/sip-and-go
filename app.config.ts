@@ -55,77 +55,8 @@ export default ({ config }: ConfigContext): ExpoConfig => {
       themeColor: "#FF784F",
       backgroundColor: "#0B0E1A",
       bundler: "metro",
-      // PWA Configuration for full screen
-      manifest: {
-        display: "standalone",
-        orientation: "portrait",
-        theme_color: "#FF784F",
-        background_color: "#0B0E1A",
-        start_url: "/",
-        scope: "/",
-        categories: ["games", "entertainment", "lifestyle"],
-        prefer_related_applications: false,
-        display_override: ["standalone", "fullscreen", "minimal-ui"],
-        // Ajout des icônes pour une meilleure installation
-        icons: [
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "any",
-            type: "image/png",
-            purpose: "any maskable"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "48x48",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "72x72",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "96x96",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "128x128",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "144x144",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "152x152",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "192x192",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "256x256",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "384x384",
-            type: "image/png"
-          },
-          {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "512x512",
-            type: "image/png"
-          }
-        ]
-      },
+      // Désactiver le manifest automatique d'Expo pour utiliser le nôtre
+      output: "single",
       // Meta tags for iOS full screen
       meta: {
         "apple-mobile-web-app-capable": "yes",
@@ -134,7 +65,9 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         "mobile-web-app-capable": "yes",
         "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover, minimal-ui",
         // Forcer le mode standalone
-        "apple-touch-fullscreen": "yes"
+        "apple-touch-fullscreen": "yes",
+        // Apple touch icons
+        "apple-touch-icon": "/assets/logo-jauneclair.png"
       }
     },
     extra: {
