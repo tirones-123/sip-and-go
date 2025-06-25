@@ -18,7 +18,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     slug: "sip-and-go",
     version: "1.0.0",
     orientation: "portrait",
-    icon: "./assets/icon.png",
+    icon: "./assets/logo-jauneclair.png",
     userInterfaceStyle: "dark",
     splash: {
       image: "./assets/splash.png",
@@ -37,42 +37,92 @@ export default ({ config }: ConfigContext): ExpoConfig => {
     },
     android: {
       adaptiveIcon: {
-        foregroundImage: "./assets/adaptive-icon.png",
+        foregroundImage: "./assets/logo-jauneclair.png",
         backgroundColor: "#0B0E1A",
       },
       package: "com.sipandgoapp.first",
     },
     web: {
-      favicon: "./assets/icon.png",
+      favicon: "./assets/logo-jauneclair.png",
       name: "SIP&GO! - Jeu à Boire",
       shortName: "SIP&GO!",
-      description: "Application de jeu à boire ultime pour vos soirées",
+      description: "L'application de jeu à boire ultime pour vos soirées. Plus de 1500 questions et défis !",
       lang: "fr",
       scope: "/",
       startUrl: "/",
       display: "standalone",
       orientation: "portrait",
-      themeColor: "#0B0E1A",
+      themeColor: "#FF784F",
       backgroundColor: "#0B0E1A",
       bundler: "metro",
       // PWA Configuration for full screen
       manifest: {
         display: "standalone",
         orientation: "portrait",
-        theme_color: "#0B0E1A",
+        theme_color: "#FF784F",
         background_color: "#0B0E1A",
         start_url: "/",
         scope: "/",
-        categories: ["games", "entertainment"],
+        categories: ["games", "entertainment", "lifestyle"],
         prefer_related_applications: false,
-        display_override: ["standalone", "fullscreen"],
+        display_override: ["standalone", "fullscreen", "minimal-ui"],
         // Ajout des icônes pour une meilleure installation
         icons: [
           {
-            src: "./assets/icon.png",
+            src: "./assets/logo-jauneclair.png",
             sizes: "any",
             type: "image/png",
             purpose: "any maskable"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "48x48",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "72x72",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "96x96",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "128x128",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "144x144",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "152x152",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "256x256",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "384x384",
+            type: "image/png"
+          },
+          {
+            src: "./assets/logo-jauneclair.png",
+            sizes: "512x512",
+            type: "image/png"
           }
         ]
       },
@@ -82,7 +132,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         "apple-mobile-web-app-status-bar-style": "black-translucent",
         "apple-mobile-web-app-title": "SIP&GO!",
         "mobile-web-app-capable": "yes",
-        "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover",
+        "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover, minimal-ui",
         // Forcer le mode standalone
         "apple-touch-fullscreen": "yes"
       }
