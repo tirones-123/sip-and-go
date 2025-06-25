@@ -14,17 +14,27 @@
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="format-detection" content="telephone=no">
   <meta name="theme-color" content="#FF784F">
+  <meta name="application-name" content="SIP&GO!">
   
-  <!-- iOS Splash Screens -->
+  <!-- iOS Splash Screens and Status Bar -->
   <meta name="apple-mobile-web-app-orientation" content="portrait">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   
-  <!-- Icons -->
+  <!-- iOS Icons - Multiple sizes for different devices -->
   <link rel="icon" type="image/png" href="/assets/logo-jauneclair.png">
   <link rel="apple-touch-icon" href="/assets/logo-jauneclair.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/logo-jauneclair.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/logo-jauneclair.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/logo-jauneclair.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/logo-jauneclair.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/logo-jauneclair.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/logo-jauneclair.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/logo-jauneclair.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo-jauneclair.png">
+  <link rel="shortcut icon" href="/assets/logo-jauneclair.png">
   
-  <!-- Manifest -->
-  <link rel="manifest" href="/assets/manifest.json">
+  <!-- Manifest - Updated path -->
+  <link rel="manifest" href="/manifest.json">
   
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -41,21 +51,32 @@
       user-select: none;
     }
     
-    html, body {
-      width: 100%;
+    html {
       height: 100%;
-      overflow: hidden;
+      width: 100%;
       position: fixed;
+      overflow: hidden;
+    }
+    
+    body {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      overflow: hidden;
       background-color: #0B0E1A;
       color: white;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      /* iOS specific */
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
     }
     
     /* Prevent pull-to-refresh and overscroll */
     body {
       overscroll-behavior: none;
       -webkit-overflow-scrolling: touch;
-      touch-action: pan-x pan-y;
+      touch-action: manipulation;
     }
     
     /* Root container */
@@ -80,21 +101,29 @@
       ::-webkit-scrollbar {
         display: none;
       }
+      
+      /* Ensure full height on iOS */
+      html, body, #root {
+        height: 100% !important;
+        min-height: 100% !important;
+      }
     }
     
     /* iOS specific fixes */
     @supports (-webkit-touch-callout: none) {
+      /* iOS only */
+      html {
+        height: -webkit-fill-available;
+      }
+      
       body {
-        /* Prevent rubber band scrolling */
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        -webkit-overflow-scrolling: touch;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
       }
       
       #root {
-        height: 100vh;
-        height: -webkit-fill-available;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
       }
     }
     
@@ -149,14 +178,23 @@
     /* iOS safe area support */
     .safe-area-top {
       padding-top: env(safe-area-inset-top);
+      padding-top: constant(safe-area-inset-top);
     }
     
     .safe-area-bottom {
       padding-bottom: env(safe-area-inset-bottom);
+      padding-bottom: constant(safe-area-inset-bottom);
     }
   </style>
   
   <script>
+    // Force viewport on iOS
+    if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+      document.addEventListener('gesturestart', function (e) {
+        e.preventDefault();
+      });
+    }
+    
     // PWA install prompt handler
     let deferredPrompt;
     window.addEventListener('beforeinstallprompt', (e) => {
@@ -173,12 +211,19 @@
         e.preventDefault();
       }
       lastTouchEnd = now;
-    }, false);
+    }, { passive: false });
     
     // Lock orientation to portrait
     if (screen.orientation && screen.orientation.lock) {
       screen.orientation.lock('portrait').catch(() => {});
     }
+    
+    // iOS specific: prevent scrolling
+    document.addEventListener('touchmove', function(e) {
+      if (!e.target.closest('.scrollable')) {
+        e.preventDefault();
+      }
+    }, { passive: false });
   </script>
 </head>
 <body>
@@ -194,6 +239,9 @@
   <script>
     // Hide loading screen when app is ready
     window.addEventListener('load', () => {
+      // Force hide address bar on iOS
+      window.scrollTo(0, 1);
+      
       setTimeout(() => {
         const loadingEl = document.getElementById('loading');
         if (loadingEl) {

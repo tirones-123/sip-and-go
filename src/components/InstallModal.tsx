@@ -342,6 +342,29 @@ const InstallModal: React.FC<InstallModalProps> = ({ visible, onClose }) => {
                   </View>
                 )}
 
+                {/* Additional iOS notice on last step */}
+                {deviceType === 'ios' && currentStep === instructions.length - 1 && (
+                  <View style={tw`bg-amber-50 rounded-lg p-3 mb-4`}>
+                    <View style={tw`flex-row items-start`}>
+                      <Ionicons name="warning" size={20} color="#F59E0B" style={tw`mr-2 mt-0.5`} />
+                      <View style={tw`flex-1`}>
+                        <Text style={tw`text-amber-900 font-medium text-sm mb-1`}>
+                          Important
+                        </Text>
+                        <Text style={tw`text-amber-700 text-xs mb-2`}>
+                          Après l'installation :
+                        </Text>
+                        <Text style={tw`text-amber-700 text-xs mb-1`}>
+                          1. Fermez complètement Safari (glissez vers le haut)
+                        </Text>
+                        <Text style={tw`text-amber-700 text-xs`}>
+                          2. Ouvrez SIP&GO! depuis votre écran d'accueil pour une expérience plein écran
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                )}
+
                 {/* Navigation buttons */}
                 <View style={tw`flex-row justify-between`}>
                   {currentStep > 0 && (
