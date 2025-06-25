@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { TouchableOpacity, Text, View, Animated } from 'react-native';
+import { TouchableOpacity, Text, View, Animated, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import tw from 'twrnc';
-import { canInstallPWA, installPWA, isPWAInstalled, isIOSSafari, markPWAAsInstalled, hasPromptedForInstall } from '../utils/platform';
+import { canInstallPWA, installPWA, isPWAInstalled, isIOSSafari, markPWAAsInstalled, hasPromptedForInstall, hasUserDismissedInstall } from '../utils/platform';
 import { useTranslation } from '../utils/i18n';
 import InstallModal from './InstallModal';
 
@@ -18,81 +18,26 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
   const { t } = useTranslation();
   const [showInstallButton, setShowInstallButton] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const [autoShowModal, setAutoShowModal] = useState(false);
   const pulseAnim = useRef(new Animated.Value(1)).current;
-  const shineAnim = useRef(new Animated.Value(0)).current;
 
   useEffect(() => {
     // Check if PWA installation is available
     const checkInstallAvailability = () => {
       const canInstall = canInstallPWA();
       const isAlreadyInstalled = isPWAInstalled();
-      const hasPrompted = hasPromptedForInstall();
       
-      // Debug info (remove in production)
-      console.log('PWA Status:', {
+      console.log('PWA Install Button Status:', {
         canInstall,
         isAlreadyInstalled,
-        hasPrompted,
+        hasPrompted: hasPromptedForInstall(),
         isIOSSafari: isIOSSafari(),
-        standalone: window.matchMedia('(display-mode: standalone)').matches,
-        navigator: (window.navigator as any).standalone
       });
       
+      // Only show button if can install and not already installed
       setShowInstallButton(canInstall && !isAlreadyInstalled);
-      
-      // Auto-show modal after 5 seconds for first-time visitors
-      if (canInstall && !isAlreadyInstalled && !hasPrompted) {
-        setAutoShowModal(true);
-      }
     };
 
     checkInstallAvailability();
-
-    // Start animations
-    if (showInstallButton) {
-      // Pulse animation
-      Animated.loop(
-        Animated.sequence([
-          Animated.timing(pulseAnim, {
-            toValue: 1.05,
-            duration: 1000,
-            useNativeDriver: true,
-          }),
-          Animated.timing(pulseAnim, {
-            toValue: 1,
-            duration: 1000,
-            useNativeDriver: true,
-          }),
-        ])
-      ).start();
-
-      // Shine animation
-      Animated.loop(
-        Animated.sequence([
-          Animated.timing(shineAnim, {
-            toValue: 1,
-            duration: 2000,
-            useNativeDriver: true,
-          }),
-          Animated.timing(shineAnim, {
-            toValue: 0,
-            duration: 0,
-            useNativeDriver: true,
-          }),
-          Animated.delay(1000),
-        ])
-      ).start();
-    }
-
-    // Auto-show modal after delay for first-time visitors
-    let autoShowTimer: NodeJS.Timeout;
-    if (autoShowModal && showInstallButton) {
-      autoShowTimer = setTimeout(() => {
-        setShowModal(true);
-        setAutoShowModal(false);
-      }, 5000);
-    }
 
     // Recheck when app comes back to foreground (iOS)
     const handleVisibilityChange = () => {
@@ -123,13 +68,47 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
         window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
         window.removeEventListener('appinstalled', handleAppInstalled);
         document.removeEventListener('visibilitychange', handleVisibilityChange);
-        if (autoShowTimer) clearTimeout(autoShowTimer);
       };
     }
-  }, [showInstallButton, autoShowModal]);
+  }, []);
+
+  // Pulse animation
+  useEffect(() => {
+    if (showInstallButton && Platform.OS === 'web') {
+      const animation = Animated.loop(
+        Animated.sequence([
+          Animated.timing(pulseAnim, {
+            toValue: 1.05,
+            duration: 1000,
+            useNativeDriver: true,
+          }),
+          Animated.timing(pulseAnim, {
+            toValue: 1,
+            duration: 1000,
+            useNativeDriver: true,
+          }),
+        ])
+      );
+      animation.start();
+      
+      return () => animation.stop();
+    }
+  }, [showInstallButton, pulseAnim]);
 
   const handleInstall = () => {
     setShowModal(true);
+  };
+
+  const handleModalClose = () => {
+    setShowModal(false);
+    // Mark as prompted so it doesn't auto-show again
+    if (typeof window !== 'undefined') {
+      try {
+        localStorage.setItem('pwa-install-modal-closed', 'true');
+      } catch (error) {
+        console.warn('Could not save modal close state:', error);
+      }
+    }
   };
 
   // Don't render if installation is not available
@@ -145,32 +124,10 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
         }}
       >
         <TouchableOpacity
-          style={tw`bg-gradient-to-r from-orange-500 to-yellow-500 flex-row items-center justify-center px-5 py-3.5 rounded-2xl shadow-lg`}
+          style={tw`bg-orange-500 flex-row items-center justify-center px-5 py-3.5 rounded-2xl shadow-lg`}
           onPress={handleInstall}
           activeOpacity={0.8}
         >
-          {/* Gradient background effect */}
-          <View style={tw`absolute inset-0 bg-white/20 rounded-2xl`} />
-          
-          {/* Shine effect */}
-          <Animated.View
-            style={[
-              tw`absolute -inset-1 rounded-2xl`,
-              {
-                opacity: shineAnim,
-                backgroundColor: 'rgba(255, 255, 255, 0.3)',
-                transform: [
-                  {
-                    translateX: shineAnim.interpolate({
-                      inputRange: [0, 1],
-                      outputRange: [-100, 100],
-                    }),
-                  },
-                ],
-              },
-            ]}
-          />
-          
           <View style={tw`flex-row items-center`}>
             <View style={tw`bg-white/25 rounded-full p-1.5 mr-2.5`}>
               <Ionicons 
@@ -199,7 +156,7 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
       {/* Install Modal */}
       <InstallModal 
         visible={showModal} 
-        onClose={() => setShowModal(false)} 
+        onClose={handleModalClose} 
       />
     </View>
   );

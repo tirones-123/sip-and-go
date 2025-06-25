@@ -217,13 +217,31 @@ export const isPWAInstalled = (): boolean => {
 };
 
 /**
+ * Check if user has dismissed the install modal
+ */
+export const hasUserDismissedInstall = (): boolean => {
+  if (!isWeb) return true;
+  
+  try {
+    return localStorage.getItem('pwa-install-modal-closed') === 'true';
+  } catch (error) {
+    return false;
+  }
+};
+
+/**
  * Check if PWA installation is available
  */
 export const canInstallPWA = (): boolean => {
   if (!isWeb) return false;
   
-  // If already installed or already prompted, don't show again
-  if (isPWAInstalled() || hasPromptedForInstall()) {
+  // If already installed, don't show
+  if (isPWAInstalled()) {
+    return false;
+  }
+  
+  // If user has dismissed the modal, don't show
+  if (hasUserDismissedInstall()) {
     return false;
   }
   

@@ -325,6 +325,23 @@ const InstallModal: React.FC<InstallModalProps> = ({ visible, onClose }) => {
                   </Text>
                 </View>
 
+                {/* iOS URL bar notice */}
+                {deviceType === 'ios' && currentStep === 0 && (
+                  <View style={tw`bg-blue-50 rounded-lg p-3 mb-4`}>
+                    <View style={tw`flex-row items-start`}>
+                      <Ionicons name="information-circle" size={20} color="#3B82F6" style={tw`mr-2 mt-0.5`} />
+                      <View style={tw`flex-1`}>
+                        <Text style={tw`text-blue-900 font-medium text-sm mb-1`}>
+                          Astuce iOS
+                        </Text>
+                        <Text style={tw`text-blue-700 text-xs`}>
+                          La barre d'URL disparaîtra complètement une fois l'app installée et lancée depuis votre écran d'accueil.
+                        </Text>
+                      </View>
+                    </View>
+                  </View>
+                )}
+
                 {/* Navigation buttons */}
                 <View style={tw`flex-row justify-between`}>
                   {currentStep > 0 && (
