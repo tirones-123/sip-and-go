@@ -36,86 +36,6 @@ export const isIOSSafari = (): boolean => {
 };
 
 /**
- * Get detailed browser type for enhanced PWA instructions
- */
-export const getBrowserInfo = () => {
-  if (typeof window === 'undefined' || !navigator) {
-    return { browser: 'unknown', device: 'unknown', isStandalone: false };
-  }
-
-  const userAgent = navigator.userAgent.toLowerCase();
-  const isStandalone = window.matchMedia('(display-mode: standalone)').matches || 
-                      (window.navigator as any).standalone === true;
-  
-  // Device detection
-  let device: 'ios' | 'android' | 'desktop' = 'desktop';
-  if (/ipad|iphone|ipod/.test(userAgent)) device = 'ios';
-  else if (/android/.test(userAgent)) device = 'android';
-  
-  // Browser detection
-  let browser = 'unknown';
-  if (/edg/.test(userAgent)) browser = 'edge';
-  else if (/firefox|fxios/.test(userAgent)) browser = 'firefox';
-  else if (/chrome|crios/.test(userAgent) && !/edg/.test(userAgent)) browser = 'chrome';
-  else if (/safari/.test(userAgent) && !/chrome|crios/.test(userAgent)) browser = 'safari';
-  
-  return { browser, device, isStandalone };
-};
-
-/**
- * Force fullscreen mode for better app experience
- */
-export const requestFullscreen = async (): Promise<boolean> => {
-  if (!isWeb) return false;
-  
-  try {
-    const elem = document.documentElement;
-    
-    if (elem.requestFullscreen) {
-      await elem.requestFullscreen();
-      return true;
-    } else if ((elem as any).webkitRequestFullscreen) {
-      await (elem as any).webkitRequestFullscreen();
-      return true;
-    } else if ((elem as any).mozRequestFullScreen) {
-      await (elem as any).mozRequestFullScreen();
-      return true;
-    } else if ((elem as any).msRequestFullscreen) {
-      await (elem as any).msRequestFullscreen();
-      return true;
-    }
-  } catch (error) {
-    console.log('Fullscreen request failed:', error);
-  }
-  
-  return false;
-};
-
-/**
- * Hide the address bar on mobile browsers
- */
-export const hideAddressBar = (): void => {
-  if (!isWeb) return;
-  
-  // Scroll a tiny bit to hide the address bar
-  window.scrollTo(0, 1);
-  
-  // Also try to set the viewport height to 100vh
-  const viewport = document.querySelector('meta[name="viewport"]');
-  if (viewport) {
-    viewport.setAttribute('content', 'width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover, minimal-ui');
-  }
-  
-  // For iOS, we can use a special meta tag
-  if (isIOSSafari()) {
-    const appleMeta = document.querySelector('meta[name="apple-mobile-web-app-capable"]');
-    if (appleMeta) {
-      appleMeta.setAttribute('content', 'yes');
-    }
-  }
-};
-
-/**
  * Mark PWA as installed in localStorage
  */
 export const markPWAAsInstalled = (): void => {
@@ -124,22 +44,8 @@ export const markPWAAsInstalled = (): void => {
   try {
     localStorage.setItem('pwa-installed', 'true');
     localStorage.setItem('pwa-install-date', new Date().toISOString());
-    localStorage.setItem('pwa-install-prompted', 'true'); // Mark that we've shown the prompt
   } catch (error) {
     console.warn('Could not save PWA install status:', error);
-  }
-};
-
-/**
- * Check if we've already prompted for PWA installation
- */
-export const hasPromptedForInstall = (): boolean => {
-  if (!isWeb) return true;
-  
-  try {
-    return localStorage.getItem('pwa-install-prompted') === 'true';
-  } catch (error) {
-    return false;
   }
 };
 
@@ -185,10 +91,6 @@ export const isPWAInstalled = (): boolean => {
   // Method 5: Check if app was launched from home screen (iOS)
   const isFromHomeScreen = !document.referrer || document.referrer === '';
   
-  // Method 6: Check for fullscreen or minimal-ui display mode
-  const isFullscreenMode = window.matchMedia('(display-mode: fullscreen)').matches;
-  const isMinimalUI = window.matchMedia('(display-mode: minimal-ui)').matches;
-  
   // Debug info
   console.log('PWA Detection Methods:', {
     isStandalone,
@@ -196,8 +98,6 @@ export const isPWAInstalled = (): boolean => {
     isPWAMode,
     isFullscreen,
     isFromHomeScreen,
-    isFullscreenMode,
-    isMinimalUI,
     userAgent: userAgent.substring(0, 100),
     referrer: document.referrer,
     screenHeight: window.screen.height,
@@ -205,8 +105,7 @@ export const isPWAInstalled = (): boolean => {
     markedAsInstalled: isPWAMarkedAsInstalled()
   });
   
-  const isInstalled = isStandalone || isIOSStandalone || isFullscreenMode || isMinimalUI || 
-                     (isIOSSafari() && isFromHomeScreen && isFullscreen);
+  const isInstalled = isStandalone || isIOSStandalone || (isIOSSafari() && isFromHomeScreen && isFullscreen);
   
   // If we detect it's installed, mark it for future reference
   if (isInstalled) {
@@ -217,37 +116,14 @@ export const isPWAInstalled = (): boolean => {
 };
 
 /**
- * Check if user has dismissed the install modal
- */
-export const hasUserDismissedInstall = (): boolean => {
-  if (!isWeb) return true;
-  
-  try {
-    return localStorage.getItem('pwa-install-modal-closed') === 'true';
-  } catch (error) {
-    return false;
-  }
-};
-
-/**
  * Check if PWA installation is available
  */
 export const canInstallPWA = (): boolean => {
   if (!isWeb) return false;
   
-  // If already installed, don't show
-  if (isPWAInstalled()) {
-    return false;
-  }
-  
-  // If user has dismissed the modal, don't show
-  if (hasUserDismissedInstall()) {
-    return false;
-  }
-  
   // For iOS Safari, we can always show install instructions
   if (isIOSSafari()) {
-    return true;
+    return !isPWAInstalled();
   }
   
   // For other browsers, check if beforeinstallprompt is supported
@@ -295,13 +171,8 @@ export const installPWA = async (): Promise<boolean> => {
   
   // For iOS Safari, show instructions
   if (isIOSSafari()) {
-    // Mark as prompted so we don't show again automatically
-    try {
-      localStorage.setItem('pwa-install-prompted', 'true');
-    } catch (error) {
-      console.warn('Could not save prompt status:', error);
-    }
-    return true; // Return true to indicate instructions were shown
+    showIOSInstallInstructions();
+    return true;
   }
   
   // For other browsers with beforeinstallprompt support
@@ -311,14 +182,6 @@ export const installPWA = async (): Promise<boolean> => {
       if (deferredPrompt) {
         deferredPrompt.prompt();
         const result = await deferredPrompt.userChoice;
-        
-        // Mark as prompted regardless of outcome
-        try {
-          localStorage.setItem('pwa-install-prompted', 'true');
-        } catch (error) {
-          console.warn('Could not save prompt status:', error);
-        }
-        
         return result.outcome === 'accepted';
       }
     } catch (error) {

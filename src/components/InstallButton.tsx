@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { TouchableOpacity, Text, View, Animated, Platform } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { TouchableOpacity, Text, View, Animated } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import tw from 'twrnc';
-import { canInstallPWA, installPWA, isPWAInstalled, isIOSSafari, markPWAAsInstalled, hasPromptedForInstall, hasUserDismissedInstall } from '../utils/platform';
+import { canInstallPWA, installPWA, isPWAInstalled, isIOSSafari, markPWAAsInstalled } from '../utils/platform';
 import { useTranslation } from '../utils/i18n';
 import InstallModal from './InstallModal';
 
@@ -12,13 +12,13 @@ interface InstallButtonProps {
 }
 
 /**
- * Enhanced install button with animation to catch attention
+ * Simple and discrete install button
  */
 const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
   const { t } = useTranslation();
   const [showInstallButton, setShowInstallButton] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  const pulseAnim = useRef(new Animated.Value(1)).current;
+  const [showDebug, setShowDebug] = useState(false);
 
   useEffect(() => {
     // Check if PWA installation is available
@@ -26,18 +26,26 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
       const canInstall = canInstallPWA();
       const isAlreadyInstalled = isPWAInstalled();
       
-      console.log('PWA Install Button Status:', {
+      // Debug info (remove in production)
+      console.log('PWA Status:', {
         canInstall,
         isAlreadyInstalled,
-        hasPrompted: hasPromptedForInstall(),
         isIOSSafari: isIOSSafari(),
+        standalone: window.matchMedia('(display-mode: standalone)').matches,
+        navigator: (window.navigator as any).standalone
       });
       
-      // Only show button if can install and not already installed
       setShowInstallButton(canInstall && !isAlreadyInstalled);
     };
 
     checkInstallAvailability();
+
+    // Show debug after 3 seconds if button is still visible
+    const debugTimer = setTimeout(() => {
+      if (showInstallButton) {
+        setShowDebug(true);
+      }
+    }, 3000);
 
     // Recheck when app comes back to foreground (iOS)
     const handleVisibilityChange = () => {
@@ -68,47 +76,19 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
         window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
         window.removeEventListener('appinstalled', handleAppInstalled);
         document.removeEventListener('visibilitychange', handleVisibilityChange);
+        clearTimeout(debugTimer);
       };
     }
-  }, []);
-
-  // Pulse animation
-  useEffect(() => {
-    if (showInstallButton && Platform.OS === 'web') {
-      const animation = Animated.loop(
-        Animated.sequence([
-          Animated.timing(pulseAnim, {
-            toValue: 1.05,
-            duration: 1000,
-            useNativeDriver: true,
-          }),
-          Animated.timing(pulseAnim, {
-            toValue: 1,
-            duration: 1000,
-            useNativeDriver: true,
-          }),
-        ])
-      );
-      animation.start();
-      
-      return () => animation.stop();
-    }
-  }, [showInstallButton, pulseAnim]);
+  }, [showInstallButton]);
 
   const handleInstall = () => {
     setShowModal(true);
   };
 
-  const handleModalClose = () => {
-    setShowModal(false);
-    // Mark as prompted so it doesn't auto-show again
-    if (typeof window !== 'undefined') {
-      try {
-        localStorage.setItem('pwa-install-modal-closed', 'true');
-      } catch (error) {
-        console.warn('Could not save modal close state:', error);
-      }
-    }
+  const handleMarkAsInstalled = () => {
+    markPWAAsInstalled();
+    setShowInstallButton(false);
+    setShowDebug(false);
   };
 
   // Don't render if installation is not available
@@ -118,45 +98,39 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
 
   return (
     <View style={style}>
-      <Animated.View
-        style={{
-          transform: [{ scale: pulseAnim }],
-        }}
+      <TouchableOpacity
+        style={tw`bg-white/15 flex-row items-center justify-center px-4 py-3 rounded-xl border border-white/20`}
+        onPress={handleInstall}
+        activeOpacity={0.7}
       >
+        <Ionicons 
+          name="download-outline" 
+          size={18} 
+          color="#FFFFFF" 
+          style={tw`mr-2`}
+        />
+        <Text style={tw`text-white text-sm font-medium`}>
+          Installer l'app
+        </Text>
+      </TouchableOpacity>
+
+      {/* Debug button - remove in production */}
+      {showDebug && (
         <TouchableOpacity
-          style={tw`bg-orange-500 flex-row items-center justify-center px-5 py-3.5 rounded-2xl shadow-lg`}
-          onPress={handleInstall}
-          activeOpacity={0.8}
+          style={tw`bg-red-500/20 flex-row items-center justify-center px-3 py-2 rounded-lg border border-red-500/30 mt-2`}
+          onPress={handleMarkAsInstalled}
+          activeOpacity={0.7}
         >
-          <View style={tw`flex-row items-center`}>
-            <View style={tw`bg-white/25 rounded-full p-1.5 mr-2.5`}>
-              <Ionicons 
-                name="phone-portrait" 
-                size={18} 
-                color="#FFFFFF" 
-              />
-            </View>
-            <View>
-              <Text style={tw`text-white text-base font-bold`}>
-                Installer l'application
-              </Text>
-              <Text style={tw`text-white/80 text-xs`}>
-                Plus rapide • Plein écran • Hors-ligne
-              </Text>
-            </View>
-          </View>
+          <Text style={tw`text-red-300 text-xs`}>
+            🐛 Marquer comme installé (debug)
+          </Text>
         </TouchableOpacity>
-      </Animated.View>
+      )}
 
-      {/* Small hint text */}
-      <Text style={tw`text-white/60 text-xs text-center mt-2`}>
-        📱 Ajoutez à votre écran d'accueil
-      </Text>
-
-      {/* Install Modal */}
+      {/* Simple Install Modal */}
       <InstallModal 
         visible={showModal} 
-        onClose={handleModalClose} 
+        onClose={() => setShowModal(false)} 
       />
     </View>
   );

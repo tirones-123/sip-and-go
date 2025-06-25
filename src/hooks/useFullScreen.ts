@@ -1,143 +1,90 @@
-import { useEffect, useState, useCallback } from 'react';
-import { isWeb, hideAddressBar, requestFullscreen, isPWAInstalled } from '../utils/platform';
+import { useState, useEffect } from 'react';
+import { isWeb, isIOSSafari } from '../utils/platform';
 
 /**
- * Hook to manage fullscreen mode and hide address bar for PWA experience
+ * Hook to manage and detect PWA fullscreen mode
  */
 export const useFullScreen = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);
-  const [isSupported, setIsSupported] = useState(false);
+  const [isPWAMode, setIsPWAMode] = useState(false);
 
   useEffect(() => {
     if (!isWeb) return;
 
-    // Check if fullscreen API is supported
-    const checkSupport = () => {
-      const doc = document as any;
-      const supported = !!(
-        doc.fullscreenEnabled ||
-        doc.webkitFullscreenEnabled ||
-        doc.mozFullScreenEnabled ||
-        doc.msFullscreenEnabled
-      );
-      setIsSupported(supported);
-    };
-
-    // Hide address bar on load for mobile browsers
-    const handleLoad = () => {
-      hideAddressBar();
+    const checkFullScreenStatus = () => {
+      // Check if running in standalone mode (PWA)
+      const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+      const isIOSStandalone = (window.navigator as any).standalone === true;
+      const isPWA = isStandalone || isIOSStandalone;
       
-      // Re-hide address bar after a short delay to ensure it works
-      setTimeout(hideAddressBar, 100);
-      setTimeout(hideAddressBar, 300);
-    };
-
-    // Check fullscreen state
-    const checkFullScreen = () => {
-      const doc = document as any;
-      const isFS = !!(
-        doc.fullscreenElement ||
-        doc.webkitFullscreenElement ||
-        doc.mozFullScreenElement ||
-        doc.msFullscreenElement
-      );
-      setIsFullScreen(isFS);
-    };
-
-    // Event listeners for fullscreen changes
-    const handleFullScreenChange = () => {
-      checkFullScreen();
-    };
-
-    // Prevent scroll bounce on iOS
-    const preventBounce = (e: TouchEvent) => {
-      if (!isPWAInstalled()) return;
+      // Check if actually fullscreen
+      const isActuallyFullScreen = window.innerHeight === window.screen.height;
       
-      const target = e.target as HTMLElement;
-      const scrollable = target.closest('.scrollable');
+      setIsPWAMode(isPWA);
+      setIsFullScreen(isPWA && isActuallyFullScreen);
       
-      if (!scrollable) {
-        e.preventDefault();
+      console.log('FullScreen Status:', {
+        isStandalone,
+        isIOSStandalone,
+        isPWA,
+        isActuallyFullScreen,
+        windowHeight: window.innerHeight,
+        screenHeight: window.screen.height,
+        userAgent: navigator.userAgent.substring(0, 50)
+      });
+    };
+
+    // Check initially
+    checkFullScreenStatus();
+
+    // Check on resize
+    window.addEventListener('resize', checkFullScreenStatus);
+    window.addEventListener('orientationchange', checkFullScreenStatus);
+
+    // Check when visibility changes
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        setTimeout(checkFullScreenStatus, 100);
       }
-    };
-
-    // Add event listeners
-    checkSupport();
-    checkFullScreen();
-    handleLoad();
-
-    document.addEventListener('fullscreenchange', handleFullScreenChange);
-    document.addEventListener('webkitfullscreenchange', handleFullScreenChange);
-    document.addEventListener('mozfullscreenchange', handleFullScreenChange);
-    document.addEventListener('MSFullscreenChange', handleFullScreenChange);
-    
-    // Handle orientation changes
-    window.addEventListener('orientationchange', handleLoad);
-    window.addEventListener('resize', handleLoad);
-    
-    // Prevent pull-to-refresh on PWA
-    if (isPWAInstalled()) {
-      document.addEventListener('touchmove', preventBounce, { passive: false });
-    }
+    });
 
     return () => {
-      document.removeEventListener('fullscreenchange', handleFullScreenChange);
-      document.removeEventListener('webkitfullscreenchange', handleFullScreenChange);
-      document.removeEventListener('mozfullscreenchange', handleFullScreenChange);
-      document.removeEventListener('MSFullscreenChange', handleFullScreenChange);
-      window.removeEventListener('orientationchange', handleLoad);
-      window.removeEventListener('resize', handleLoad);
-      
-      if (isPWAInstalled()) {
-        document.removeEventListener('touchmove', preventBounce);
-      }
+      window.removeEventListener('resize', checkFullScreenStatus);
+      window.removeEventListener('orientationchange', checkFullScreenStatus);
     };
   }, []);
 
-  const enterFullScreen = useCallback(async () => {
-    if (!isWeb || !isSupported) return false;
-    
-    try {
-      const success = await requestFullscreen();
-      if (success) {
-        hideAddressBar();
-      }
-      return success;
-    } catch (error) {
-      console.error('Failed to enter fullscreen:', error);
-      return false;
-    }
-  }, [isSupported]);
-
-  const exitFullScreen = useCallback(() => {
+  const requestFullScreen = () => {
     if (!isWeb) return;
 
-    const doc = document as any;
-    
-    if (doc.exitFullscreen) {
-      doc.exitFullscreen();
-    } else if (doc.webkitExitFullscreen) {
-      doc.webkitExitFullscreen();
-    } else if (doc.mozCancelFullScreen) {
-      doc.mozCancelFullScreen();
-    } else if (doc.msExitFullscreen) {
-      doc.msExitFullscreen();
-    }
-  }, []);
+    // For iOS, show instructions
+    if (isIOSSafari() && !isPWAMode) {
+      alert(`Pour utiliser l'app en plein écran :
 
-  const toggleFullScreen = useCallback(() => {
-    if (isFullScreen) {
-      exitFullScreen();
-    } else {
-      enterFullScreen();
+1. Ajoutez d'abord l'app à votre écran d'accueil
+2. Ouvrez l'app depuis l'écran d'accueil (pas depuis Safari)
+3. L'app s'ouvrira automatiquement en plein écran !
+
+Note: Les PWA iOS ne peuvent être en plein écran que si elles sont lancées depuis l'écran d'accueil.`);
+      return;
     }
-  }, [isFullScreen, enterFullScreen, exitFullScreen]);
+
+    // For other browsers, try native fullscreen API
+    const element = document.documentElement;
+    if (element.requestFullscreen) {
+      element.requestFullscreen();
+    } else if ((element as any).webkitRequestFullscreen) {
+      (element as any).webkitRequestFullscreen();
+    } else if ((element as any).mozRequestFullScreen) {
+      (element as any).mozRequestFullScreen();
+    } else if ((element as any).msRequestFullscreen) {
+      (element as any).msRequestFullscreen();
+    }
+  };
 
   return {
     isFullScreen,
-    isSupported,
-    enterFullScreen,
-    exitFullScreen,
-    toggleFullScreen,
+    isPWAMode,
+    requestFullScreen
   };
 }; 

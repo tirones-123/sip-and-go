@@ -1,142 +1,59 @@
 import React, { useEffect } from 'react';
-import { View, AppState, AppStateStatus, ActivityIndicator, Image } from 'react-native';
-import tw from 'twrnc';
-import { useFonts } from 'expo-font';
-import { 
-  Montserrat_400Regular, 
-  Montserrat_600SemiBold, 
-  Montserrat_700Bold,
-  Montserrat_800ExtraBold
-} from '@expo-google-fonts/montserrat';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Navigation from './src/navigation';
-import { LogBox } from 'react-native';
+import * as Sentry from '@sentry/react-native';
 import Constants from 'expo-constants';
-import { isPWAInstalled, hideAddressBar, isWeb } from './src/utils/platform';
-import { useFullScreen } from './src/hooks/useFullScreen';
+import { useFonts, Montserrat_400Regular, Montserrat_800ExtraBold } from '@expo-google-fonts/montserrat';
+import { Text, Platform } from 'react-native';
+import { showPaywall } from './src/utils/superwall.web';
 
-// Configure Sentry if enabled
-const initSentry = () => {
-  try {
-    const Sentry = require('@sentry/react-native');
-    const dsn = Constants.expoConfig?.extra?.SENTRY_DSN;
-    
-    if (dsn) {
-      Sentry.init({
-        dsn,
-        debug: __DEV__,
-        environment: __DEV__ ? 'development' : 'production',
-      });
-      console.log('Sentry initialized successfully');
-    }
-  } catch (error) {
-    console.log('Sentry not available or initialization failed:', error);
-  }
-};
+import Navigation from './src/navigation';
+import { useGameStore } from './src/store/useGameStore';
+import { trackAppOpen } from './src/utils/analytics';
 
-// Initialize Sentry
-initSentry();
+// Sentry should be initialized before any other imports
+const SENTRY_DSN = Constants.expoConfig?.extra?.SENTRY_DSN as string;
+if (SENTRY_DSN) {
+  Sentry.init({
+    dsn: SENTRY_DSN,
+    enableAutoSessionTracking: true,
+    // Debug only in development
+    debug: __DEV__,
+  });
+}
 
-// Ignore certain warnings
-LogBox.ignoreLogs([
-  'Constants.platform.ios.model has been deprecated',
-  'Require cycle:',
-  'Sending `onAnimatedValueUpdate` with no listeners registered.',
-]);
-
-/**
- * Main app component
- */
 export default function App() {
-  const [fontsLoaded, fontError] = useFonts({
+  // Load Montserrat fonts
+  const [fontsLoaded] = useFonts({
     Montserrat_400Regular,
-    Montserrat_600SemiBold,
-    Montserrat_700Bold,
     Montserrat_800ExtraBold,
     'FugazOne-Regular': require('./assets/fonts/FugazOne-Regular.ttf'),
-    'LuckiestGuy-Regular': require('./assets/fonts/LuckiestGuy-Regular.ttf'),
   });
 
-  // Use fullscreen hook
-  const { enterFullScreen } = useFullScreen();
-
-  useEffect(() => {
-    if (!isWeb) return;
-
-    // Hide address bar on load
-    hideAddressBar();
-
-    // Try to enter fullscreen on user interaction (required by browsers)
-    const handleFirstInteraction = () => {
-      enterFullScreen();
-      // Remove listeners after first interaction
-      document.removeEventListener('click', handleFirstInteraction);
-      document.removeEventListener('touchstart', handleFirstInteraction);
+  // Set default font for all Text components once fonts are loaded
+  if (fontsLoaded && !(Text as any)._hasSetDefaultFont) {
+    const TextAny = Text as any;
+    TextAny._hasSetDefaultFont = true;
+    TextAny.defaultProps = {
+      ...(TextAny.defaultProps || {}),
+      style: [{ fontFamily: 'Montserrat_400Regular' }, (TextAny.defaultProps?.style || {})],
     };
-
-    // Add listeners for first user interaction
-    document.addEventListener('click', handleFirstInteraction);
-    document.addEventListener('touchstart', handleFirstInteraction);
-
-    // Handle app state changes for web
-    const handleAppStateChange = (nextAppState: AppStateStatus) => {
-      if (nextAppState === 'active') {
-        hideAddressBar();
-      }
-    };
-
-    const subscription = AppState.addEventListener('change', handleAppStateChange);
-
-    // PWA-specific optimizations
-    if (isPWAInstalled()) {
-      // Prevent pull-to-refresh
-      document.body.style.overscrollBehavior = 'none';
-      
-      // Set viewport for full coverage
-      const viewport = document.querySelector('meta[name="viewport"]');
-      if (viewport) {
-        viewport.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no');
-      }
-
-      // Add PWA class to body for CSS customizations
-      document.body.classList.add('pwa-installed');
-    }
-
-    return () => {
-      document.removeEventListener('click', handleFirstInteraction);
-      document.removeEventListener('touchstart', handleFirstInteraction);
-      subscription.remove();
-    };
-  }, [enterFullScreen]);
-
-  // Show loading screen while fonts are loading
-  if (!fontsLoaded && !fontError) {
-    return (
-      <SafeAreaProvider>
-        <StatusBar style="light" backgroundColor="#0B0E1A" />
-        <View style={[tw`flex-1 bg-[#0B0E1A] items-center justify-center`]}>
-          <Image
-            source={require('./assets/logo-jauneclair.png')}
-            style={{ width: 120, height: 120, marginBottom: 30 }}
-            resizeMode="contain"
-          />
-          <ActivityIndicator size="large" color="#FF784F" />
-        </View>
-      </SafeAreaProvider>
-    );
   }
 
-  // Show error screen if fonts failed to load
-  if (fontError) {
-    console.error('Font loading error:', fontError);
-    // Continue with default fonts
+  // Initialize and track app open
+  useEffect(() => {
+    trackAppOpen();
+  }, []);
+  
+  if (!fontsLoaded) {
+    // You can replace null with a splash screen if desired
+    return null;
   }
 
   return (
-    <SafeAreaProvider>
-      <StatusBar style="light" backgroundColor="#0B0E1A" />
+    <SafeAreaProvider style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
+      <StatusBar style="light" />
       <Navigation />
     </SafeAreaProvider>
   );
-} 
+}; 

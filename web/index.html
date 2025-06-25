@@ -2,257 +2,61 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <title>SIP&GO! - Jeu à Boire</title>
-  <meta name="description" content="L'application de jeu à boire ultime pour vos soirées. Plus de 1500 questions et défis !">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <!-- PWA Meta Tags -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, shrink-to-fit=no, minimal-ui">
+  <!-- Viewport pour mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+  
+  <!-- Meta tags génériques -->
+  <title>SIP&GO! - Jeu à Boire</title>
+  <meta name="description" content="Application de jeu à boire ultime pour vos soirées">
+  <meta name="theme-color" content="#0B0E1A">
+  
+  <!-- Manifest PWA -->
+  <link rel="manifest" href="/manifest.json">
+  
+  <!-- Meta tags iOS PWA -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="SIP&GO!">
-  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-touch-fullscreen" content="yes">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="theme-color" content="#FF784F">
+  
+  <!-- Meta tags Android PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="application-name" content="SIP&GO!">
   
-  <!-- iOS Splash Screens and Status Bar -->
-  <meta name="apple-mobile-web-app-orientation" content="portrait">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <!-- Icônes -->
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/icon.png" />
   
-  <!-- iOS Icons - Multiple sizes for different devices -->
-  <link rel="icon" type="image/png" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/logo-jauneclair.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/logo-jauneclair.png">
-  <link rel="shortcut icon" href="/assets/logo-jauneclair.png">
-  
-  <!-- Manifest - Updated path -->
-  <link rel="manifest" href="/manifest.json">
-  
-  <!-- Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  
-  <style>
-    /* Reset and base styles */
-    * {
+  <!-- Style reset pour React Native Web -->
+  <style id="expo-reset">
+    /* These styles make the body full-height */
+    html,
+    body {
+      height: 100%;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      user-select: none;
     }
-    
-    html {
-      height: 100%;
-      width: 100%;
-      position: fixed;
+    /* These styles disable body scrolling if you are using <ScrollView> */
+    body {
       overflow: hidden;
     }
-    
-    body {
-      height: 100%;
-      width: 100%;
-      position: fixed;
-      overflow: hidden;
-      background-color: #0B0E1A;
-      color: white;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      /* iOS specific */
-      -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-      text-size-adjust: 100%;
-    }
-    
-    /* Prevent pull-to-refresh and overscroll */
-    body {
-      overscroll-behavior: none;
-      -webkit-overflow-scrolling: touch;
-      touch-action: manipulation;
-    }
-    
-    /* Root container */
+    /* These styles make the root element full-height */
     #root {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      overflow: hidden;
-    }
-    
-    /* PWA specific styles */
-    @media all and (display-mode: standalone) {
-      body {
-        background-color: #0B0E1A;
-      }
-      
-      /* Hide any scrollbars */
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      
-      /* Ensure full height on iOS */
-      html, body, #root {
-        height: 100% !important;
-        min-height: 100% !important;
-      }
-    }
-    
-    /* iOS specific fixes */
-    @supports (-webkit-touch-callout: none) {
-      /* iOS only */
-      html {
-        height: -webkit-fill-available;
-      }
-      
-      body {
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
-      }
-      
-      #root {
-        min-height: 100vh;
-        min-height: -webkit-fill-available;
-      }
-    }
-    
-    /* Loading screen */
-    .loading-container {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: #0B0E1A;
-      z-index: 9999;
-    }
-    
-    .loading-logo {
-      width: 120px;
-      height: 120px;
-      margin-bottom: 30px;
-      animation: pulse 2s ease-in-out infinite;
-    }
-    
-    @keyframes pulse {
-      0% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.1); opacity: 0.8; }
-      100% { transform: scale(1); opacity: 1; }
-    }
-    
-    .loading-text {
-      color: #FF784F;
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
-    
-    /* Scrollable areas */
-    .scrollable {
-      -webkit-overflow-scrolling: touch;
-      overflow-y: auto;
-      overflow-x: hidden;
-    }
-    
-    /* Disable text selection except in inputs */
-    input, textarea {
-      -webkit-user-select: text;
-      user-select: text;
-    }
-    
-    /* iOS safe area support */
-    .safe-area-top {
-      padding-top: env(safe-area-inset-top);
-      padding-top: constant(safe-area-inset-top);
-    }
-    
-    .safe-area-bottom {
-      padding-bottom: env(safe-area-inset-bottom);
-      padding-bottom: constant(safe-area-inset-bottom);
+      height: 100%;
+      flex: 1;
     }
   </style>
-  
-  <script>
-    // Force viewport on iOS
-    if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-      document.addEventListener('gesturestart', function (e) {
-        e.preventDefault();
-      });
-    }
-    
-    // PWA install prompt handler
-    let deferredPrompt;
-    window.addEventListener('beforeinstallprompt', (e) => {
-      e.preventDefault();
-      deferredPrompt = e;
-      window.deferredPrompt = e;
-    });
-    
-    // Prevent zoom on double tap (iOS)
-    let lastTouchEnd = 0;
-    document.addEventListener('touchend', (e) => {
-      const now = Date.now();
-      if (now - lastTouchEnd <= 300) {
-        e.preventDefault();
-      }
-      lastTouchEnd = now;
-    }, { passive: false });
-    
-    // Lock orientation to portrait
-    if (screen.orientation && screen.orientation.lock) {
-      screen.orientation.lock('portrait').catch(() => {});
-    }
-    
-    // iOS specific: prevent scrolling
-    document.addEventListener('touchmove', function(e) {
-      if (!e.target.closest('.scrollable')) {
-        e.preventDefault();
-      }
-    }, { passive: false });
-  </script>
 </head>
+
 <body>
-  <!-- Loading screen -->
-  <div id="loading" class="loading-container">
-    <img src="/assets/logo-jauneclair.png" alt="SIP&GO!" class="loading-logo">
-    <div class="loading-text">Chargement...</div>
-  </div>
-  
-  <!-- React app root -->
+  <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <!-- The root element for your Expo app. -->
   <div id="root"></div>
-  
-  <script>
-    // Hide loading screen when app is ready
-    window.addEventListener('load', () => {
-      // Force hide address bar on iOS
-      window.scrollTo(0, 1);
-      
-      setTimeout(() => {
-        const loadingEl = document.getElementById('loading');
-        if (loadingEl) {
-          loadingEl.style.opacity = '0';
-          loadingEl.style.transition = 'opacity 0.3s ease';
-          setTimeout(() => {
-            loadingEl.remove();
-          }, 300);
-        }
-      }, 100);
-    });
-  </script>
 </body>
 </html> 
