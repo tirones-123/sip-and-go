@@ -69,17 +69,21 @@ export default ({ config }: ConfigContext): ExpoConfig => {
         // Ajout des icônes pour une meilleure installation
         icons: [
           {
-            src: "./assets/logo-jauneclair.png",
-            sizes: "any",
-            type: "image/png",
-            purpose: "any maskable"
+            src: "./assets/icon.png",
+            sizes: "192x192",
+            type: "image/png"
+          },
+          {
+            src: "./assets/icon.png",
+            sizes: "512x512",
+            type: "image/png"
           }
         ]
       },
       // Meta tags for iOS full screen
       meta: {
         "apple-mobile-web-app-capable": "yes",
-        "apple-mobile-web-app-status-bar-style": "black-translucent",
+        "apple-mobile-web-app-status-bar-style": "default",
         "apple-mobile-web-app-title": "SIP&GO!",
         "mobile-web-app-capable": "yes",
         "viewport": "width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover",
