@@ -15,7 +15,6 @@ import { LogBox } from 'react-native';
 import Constants from 'expo-constants';
 import { isPWAInstalled, hideAddressBar, isWeb } from './src/utils/platform';
 import { useFullScreen } from './src/hooks/useFullScreen';
-import { usePWAConfiguration } from './src/hooks/usePWAConfiguration';
 
 // Configure Sentry if enabled
 const initSentry = () => {
@@ -61,9 +60,6 @@ export default function App() {
 
   // Use fullscreen hook
   const { enterFullScreen } = useFullScreen();
-  
-  // Configure PWA meta tags
-  usePWAConfiguration();
 
   useEffect(() => {
     if (!isWeb) return;
