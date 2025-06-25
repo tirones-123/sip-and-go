@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, AppState, AppStateStatus } from 'react-native';
+import { View, AppState, AppStateStatus, ActivityIndicator, Image } from 'react-native';
 import tw from 'twrnc';
 import { useFonts } from 'expo-font';
 import { 
@@ -8,7 +8,6 @@ import {
   Montserrat_700Bold,
   Montserrat_800ExtraBold
 } from '@expo-google-fonts/montserrat';
-import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Navigation from './src/navigation';
@@ -50,7 +49,7 @@ LogBox.ignoreLogs([
  * Main app component
  */
 export default function App() {
-  const [fontsLoaded] = useFonts({
+  const [fontsLoaded, fontError] = useFonts({
     Montserrat_400Regular,
     Montserrat_600SemiBold,
     Montserrat_700Bold,
@@ -111,18 +110,33 @@ export default function App() {
     };
   }, [enterFullScreen]);
 
-  if (!fontsLoaded) {
-    return null;
+  // Show loading screen while fonts are loading
+  if (!fontsLoaded && !fontError) {
+    return (
+      <SafeAreaProvider>
+        <StatusBar style="light" backgroundColor="#0B0E1A" />
+        <View style={[tw`flex-1 bg-[#0B0E1A] items-center justify-center`]}>
+          <Image
+            source={require('./assets/logo-jauneclair.png')}
+            style={{ width: 120, height: 120, marginBottom: 30 }}
+            resizeMode="contain"
+          />
+          <ActivityIndicator size="large" color="#FF784F" />
+        </View>
+      </SafeAreaProvider>
+    );
+  }
+
+  // Show error screen if fonts failed to load
+  if (fontError) {
+    console.error('Font loading error:', fontError);
+    // Continue with default fonts
   }
 
   return (
     <SafeAreaProvider>
       <StatusBar style="light" backgroundColor="#0B0E1A" />
-      <NavigationContainer>
-        <View style={tw`flex-1 bg-darkBg`}>
-          <Navigation />
-        </View>
-      </NavigationContainer>
+      <Navigation />
     </SafeAreaProvider>
   );
 } 
