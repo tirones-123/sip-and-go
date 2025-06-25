@@ -17,7 +17,6 @@
 • « Restaurer » ➜ `restorePurchases`  
 • Croix ✕ ➜ `navigation.goBack()` ou retour écran précédent
 
-
 2	Accueil / Ajout des joueurs
 RootStack après fermeture du Paywall	- Fond sombre `#0B0E1A`  
 - Header : titre « Ajouter des joueurs » blanc + sous-titre gris (#ffffff70)  
