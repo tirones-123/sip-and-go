@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test SEO Redirections</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+        .test { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        .button { display: inline-block; padding: 10px 20px; margin: 5px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .button:hover { background: #0056b3; }
+        code { background: #f4f4f4; padding: 2px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test SEO Redirections for SIP&GO!</h1>
+    
+    <div class="test">
+        <h2>1. Test as Regular User</h2>
+        <p>Click below to visit the site normally (should redirect to app):</p>
+        <a href="/" class="button">Visit as User →</a>
+    </div>
+    
+    <div class="test">
+        <h2>2. Test as Googlebot</h2>
+        <p>Click below to simulate Googlebot (should show landing page):</p>
+        <a href="/" class="button" onclick="simulateBot(event, 'Googlebot/2.1')">Visit as Googlebot →</a>
+    </div>
+    
+    <div class="test">
+        <h2>3. Direct Access to Pages</h2>
+        <p>Force direct access without redirection:</p>
+        <a href="/landing.html" class="button">Landing Page (SEO) →</a>
+        <a href="/app.html" class="button">App (PWA) →</a>
+        <a href="/?app=true" class="button">Force App Mode →</a>
+    </div>
+    
+    <div class="test">
+        <h2>4. Test Search Engine Referrer</h2>
+        <p>Simulate coming from Google search:</p>
+        <a href="/" class="button" onclick="simulateReferrer(event, 'https://www.google.com/search?q=drinking+games')">From Google →</a>
+    </div>
+    
+    <div class="test">
+        <h2>5. Current Detection Info</h2>
+        <p><strong>Your User Agent:</strong> <code id="userAgent"></code></p>
+        <p><strong>Your Referrer:</strong> <code id="referrer"></code></p>
+        <p><strong>Bot Detection:</strong> <span id="botStatus"></span></p>
+    </div>
+
+    <script>
+        // Display current info
+        document.getElementById('userAgent').textContent = navigator.userAgent;
+        document.getElementById('referrer').textContent = document.referrer || 'None';
+        
+        // Check if current UA is detected as bot
+        const botPatterns = [
+            /googlebot/i, /bingbot/i, /slurp/i, /duckduckbot/i, /baiduspider/i,
+            /yandexbot/i, /facebookexternalhit/i, /twitterbot/i, /linkedinbot/i,
+            /whatsapp/i, /telegram/i, /pinterestbot/i, /ahrefsbot/i, /semrushbot/i,
+            /mj12bot/i, /dotbot/i, /applebot/i, /rogerbot/i, /crawler/i, /spider/i,
+            /bot/i, /scraper/i, /msnbot/i, /adsbot/i
+        ];
+        const isBot = botPatterns.some(pattern => pattern.test(navigator.userAgent));
+        document.getElementById('botStatus').textContent = isBot ? '✅ Detected as bot' : '❌ Not detected as bot';
+        
+        // Simulate bot visit
+        function simulateBot(e, userAgent) {
+            e.preventDefault();
+            alert(`To test as ${userAgent}:\n\n1. Open Chrome DevTools (F12)\n2. Go to Network tab\n3. Click ⋮ → More tools → Network conditions\n4. Uncheck "Use browser default" for User agent\n5. Select "${userAgent}" or enter custom\n6. Refresh the page\n\nOr use curl:\ncurl -H "User-Agent: ${userAgent}" ${e.target.href}`);
+        }
+        
+        // Simulate referrer
+        function simulateReferrer(e, referrer) {
+            e.preventDefault();
+            alert(`To test with referrer:\n\n1. Use this in console:\nwindow.location.href = '${e.target.href}';\n\nOr use curl:\ncurl -H "Referer: ${referrer}" ${e.target.href}`);
+        }
+    </script>
+</body>
+</html> 
