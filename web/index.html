@@ -12,52 +12,33 @@
   <!-- Detect and redirect based on user agent -->
   <script>
     (function() {
-      // Bot detection patterns
-      const botPatterns = [
-        /googlebot/i, /bingbot/i, /slurp/i, /duckduckbot/i, /baiduspider/i,
-        /yandexbot/i, /facebookexternalhit/i, /twitterbot/i, /linkedinbot/i,
-        /whatsapp/i, /telegram/i, /pinterestbot/i, /ahrefsbot/i, /semrushbot/i,
-        /mj12bot/i, /dotbot/i, /applebot/i, /rogerbot/i, /crawler/i, /spider/i,
-        /bot/i, /scraper/i, /msnbot/i, /adsbot/i
-      ];
+      // Check if we're in dev mode
+      const urlParams = new URLSearchParams(window.location.search);
+      const isDevMode = urlParams.get('dev') === 'true';
+      const secretKey = urlParams.get('seokey') === 'maxime2024'; // Your secret key
       
-      // Search engine referrer patterns
-      const searchEngineReferrers = [
-        'google.', 'bing.', 'yahoo.', 'duckduckgo.', 'baidu.', 'yandex.',
-        'ask.', 'aol.', 'ecosia.', 'qwant.'
-      ];
-      
-      const userAgent = navigator.userAgent || '';
-      const referrer = document.referrer || '';
-      
-      // Check if it's a bot
-      const isBot = botPatterns.some(pattern => pattern.test(userAgent));
-      
-      // Check if coming from search engine
-      const fromSearchEngine = searchEngineReferrers.some(engine => 
-        referrer.toLowerCase().includes(engine)
-      );
-      
-      // Check if user explicitly wants the app
-      const wantsApp = window.location.search.includes('app=true');
-      
-      // Check if dev mode is enabled (bypass all redirections)
-      const isDevMode = window.location.search.includes('dev=true') || 
-                       window.location.hostname === 'localhost' || 
-                       window.location.hostname === '127.0.0.1' ||
-                       window.location.search.includes('noredirect=true');
-      
-      // Skip redirection in dev mode
-      if (isDevMode) {
-        return; // Let the page load normally
+      // Skip redirection if in dev mode or using secret key
+      if (isDevMode || secretKey) {
+        console.log('SEO redirection bypassed');
+        return;
       }
       
-      // If bot or from search engine (and not explicitly wanting app), go to landing page  
-      if ((isBot || fromSearchEngine) && !wantsApp) {
-        window.location.replace('/landing.html');
-      } else {
-        // Otherwise, go to the app
-        window.location.replace('/app.html');
+      // Check if the request is likely from a search engine crawler
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isSearchEngine = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot|linkedinbot|whatsapp/i.test(userAgent);
+      
+      // Check if we came from a search engine or external source
+      const referrer = document.referrer.toLowerCase();
+      const fromSearchEngine = referrer.includes('google.') || 
+                              referrer.includes('bing.') || 
+                              referrer.includes('yahoo.') || 
+                              referrer.includes('duckduckgo.') ||
+                              referrer.includes('baidu.') ||
+                              referrer === ''; // Direct access might be from search results
+      
+      // If likely from search engine, redirect to landing page
+      if (isSearchEngine || fromSearchEngine) {
+        window.location.href = '/landing.html';
       }
     })();
   </script>

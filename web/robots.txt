@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow development/admin pages
+Disallow: /seo-dev-index.html
+
+# Sitemap location
+Sitemap: https://sip-and-go.vercel.app/sitemap.xml 
