@@ -125,9 +125,6 @@ const ModeCarousel: React.FC = () => {
     ? footerHeight
     : FOOTER_ESTIMATED_HEIGHT) + insets.bottom + FOOTER_MARGIN_BOTTOM;
 
-  const availableHeight = height - headerRenderedHeight - footerRenderedHeight - VERTICAL_SPACING;
-  const cardMaxHeight = Math.max(availableHeight, 450); // Increased minimum from 400 to 450
-
   return (
     <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
       {/* Custom top elements: Back button and Logo */}
@@ -148,7 +145,7 @@ const ModeCarousel: React.FC = () => {
       </View>
 
       {/* Carousel Container */}
-      <View style={{ flex: 1, justifyContent: 'center', paddingTop: headerRenderedHeight, paddingBottom: footerRenderedHeight }}>
+      <View style={{ flex: 1, paddingTop: headerRenderedHeight, paddingBottom: footerRenderedHeight }}>
         <Animated.FlatList
           ref={draggableRef}
           data={packs}
@@ -161,10 +158,11 @@ const ModeCarousel: React.FC = () => {
           decelerationRate="fast"
           contentContainerStyle={{
             paddingHorizontal: sidePadding,
+            alignItems: 'center',
           }}
           onScroll={scrollHandler}
           scrollEventThrottle={16}
-          style={{ flexGrow: 0 }}
+          style={{ flexGrow: 1 }}
           renderItem={({ item, index }) => (
             <View style={{
               marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
@@ -175,7 +173,6 @@ const ModeCarousel: React.FC = () => {
                 onPlay={handlePlay}
                 itemWidth={ITEM_WIDTH}
                 heroImageSource={packImages[item.id]}
-                maxHeight={cardMaxHeight}
               />
             </View>
           )}
