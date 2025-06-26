@@ -280,13 +280,23 @@
   
   <!-- Smart App Redirection -->
   <script>
-    // Detect if user wants to access the app directly
-    const wantsApp = window.location.search.includes('app') || 
-                     window.location.pathname.includes('app') ||
-                     localStorage.getItem('sipandgo-prefers-app') === 'true';
+    // Check if we're in dev mode or using secret key
+    const urlParams = new URLSearchParams(window.location.search);
+    const isDevMode = urlParams.get('dev') === 'true';
+    const secretKey = urlParams.get('seokey') === 'maxime2024';
     
-    if (wantsApp) {
-      window.location.href = '/app.html';
+    // Skip redirection if in dev mode or using secret key
+    if (isDevMode || secretKey) {
+      console.log('Landing page redirection bypassed');
+    } else {
+      // Detect if user wants to access the app directly
+      const wantsApp = window.location.search.includes('app') || 
+                       window.location.pathname.includes('app') ||
+                       localStorage.getItem('sipandgo-prefers-app') === 'true';
+      
+      if (wantsApp) {
+        window.location.href = '/app.html';
+      }
     }
   </script>
   
