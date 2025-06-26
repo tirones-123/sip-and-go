@@ -12,6 +12,7 @@ interface PackCardProps {
   onPlay: (packId: string) => void;
   itemWidth?: number;
   heroImageSource: ImageSourcePropType;
+  cardHeight?: number;
 }
 
 // Helper function to calculate darker/lighter shades of a hex color
@@ -43,7 +44,7 @@ const shadeColor = (color: string, percent: number): string => {
 /**
  * Card component for displaying a game pack in the carousel, redesigned.
  */
-const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageSource }) => {
+const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageSource, cardHeight }) => {
   const { t } = useTranslation();
   
   // Get the pack title and description from translations
@@ -75,7 +76,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
           shadowOffset: { width: 6, height: 4 }, // Slightly reduced offset for balance
           elevation: 10, // Slight bump for Android shadow
         },
-        { width: itemWidth ?? 320, height: 500 }, // Fixed height instead of maxHeight
+        { width: itemWidth ?? 320, height: cardHeight ?? 450 }, // Dynamic height with fallback
       ]}
       onPress={() => onPlay(pack.id)}
       activeOpacity={0.9}

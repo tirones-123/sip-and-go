@@ -125,6 +125,10 @@ const ModeCarousel: React.FC = () => {
     ? footerHeight
     : FOOTER_ESTIMATED_HEIGHT) + insets.bottom + FOOTER_MARGIN_BOTTOM;
 
+  // Calculate dynamic card height based on available space
+  const availableHeight = height - headerRenderedHeight - footerRenderedHeight - (VERTICAL_SPACING * 2);
+  const cardHeight = Math.min(Math.max(availableHeight * 0.8, 350), 500); // 80% of available space, min 350, max 500
+
   return (
     <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
       {/* Custom top elements: Back button and Logo */}
@@ -173,6 +177,7 @@ const ModeCarousel: React.FC = () => {
                 onPlay={handlePlay}
                 itemWidth={ITEM_WIDTH}
                 heroImageSource={packImages[item.id]}
+                cardHeight={cardHeight}
               />
             </View>
           )}
