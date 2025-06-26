@@ -82,11 +82,11 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
       activeOpacity={0.9}
     >
       {/* Inner container with clipping */}
-      <View style={tw`rounded-3xl overflow-hidden`}>
+      <View style={[tw`rounded-3xl overflow-hidden`, { flex: 1 }]}>
 
       {/* Top Part */}
       <View
-        style={[tw`relative items-center pt-5`, { backgroundColor: pack.color, flexShrink: 1 }]}
+        style={[tw`relative items-center pt-5`, { backgroundColor: pack.color, flex: 3 }]}
       >
         {/* Title Pill */}
         <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
@@ -95,12 +95,12 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
         
         {/* Hero Image Container - aligned to bottom */}
         <View
-          style={{ width: '100%', aspectRatio: 4 / 3, justifyContent: 'flex-end', flexShrink: 1 }}
+          style={{ flex: 1, width: '100%', justifyContent: 'flex-end' }}
         >
           {/* Image takes full width of this container, resizeMode contain will handle aspect ratio */}
           <Image
             source={heroImageSource}
-            style={tw`w-full h-full`}
+            style={{ width: '100%', height: '100%' }}
             resizeMode="contain"
           />
         </View>
@@ -110,7 +110,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
       <View
         style={[
           tw`p-5 items-center rounded-b-3xl`,
-          { backgroundColor: lightSecondaryBgColor },
+          { backgroundColor: lightSecondaryBgColor, flex: 2 },
         ]}
       >
         <Text

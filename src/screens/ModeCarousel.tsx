@@ -41,7 +41,7 @@ const LOGO_HEIGHT = 100;
 const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
 const FOOTER_MARGIN_BOTTOM = 24; // from tw`mb-6`
 const FOOTER_ESTIMATED_HEIGHT = 90; // Estimated footer height for initial render
-const VERTICAL_SPACING = 20; // Minimal space above and below the card
+const VERTICAL_SPACING = 40; // Increased spacing above and below the card
 
 /**
  * ModeCarousel screen - Pack selection carousel
@@ -125,8 +125,8 @@ const ModeCarousel: React.FC = () => {
     ? footerHeight
     : FOOTER_ESTIMATED_HEIGHT) + insets.bottom + FOOTER_MARGIN_BOTTOM;
 
-  const availableHeight = height - headerRenderedHeight - footerRenderedHeight;
-  const cardMaxHeight = availableHeight - (VERTICAL_SPACING * 2);
+  const availableHeight = height - headerRenderedHeight - footerRenderedHeight - VERTICAL_SPACING;
+  const cardMaxHeight = Math.max(availableHeight, 400); // Ensure minimum height for cards
 
   return (
     <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
