@@ -86,10 +86,10 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
 
       {/* Top Part */}
       <View
-        style={[tw`relative items-center pt-3`, { backgroundColor: pack.color, flex: 2 }]}
+        style={[tw`relative items-center pt-4`, { backgroundColor: pack.color, flex: 3 }]}
       >
         {/* Title Pill */}
-        <View style={[tw`px-5 py-1.5 rounded-full mb-2 shadow-md`, { backgroundColor: darkAccentColor }]}>
+        <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
           <Text style={[tw`font-bold text-base text-center text-white`, { fontFamily: 'Montserrat_800ExtraBold' }]}>{packTitle}</Text>
         </View>
         
@@ -109,13 +109,13 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
       {/* Bottom Part */}
       <View
         style={[
-          tw`p-4 items-center rounded-b-3xl`,
-          { backgroundColor: lightSecondaryBgColor, flex: 1 },
+          tw`p-5 items-center rounded-b-3xl`,
+          { backgroundColor: lightSecondaryBgColor, flex: 2 },
         ]}
       >
         <Text
           style={[
-            tw`text-xl text-center mb-3`,
+            tw`text-2xl text-center mb-4`,
             {
               color: descriptionTextColor,
               fontFamily: 'Montserrat_800ExtraBold',

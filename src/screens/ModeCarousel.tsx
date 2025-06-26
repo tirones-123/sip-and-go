@@ -37,11 +37,11 @@ const packImages: Record<string, any> = {
 
 const FALLBACK_COLOR_DARK = '#0B0E1A'; // For footer
 const TINT_AMOUNT = 0.5; // 40% towards white, making it darker than before
-const LOGO_HEIGHT = 100;
+const LOGO_HEIGHT = 80; // Reduced from 100
 const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
-const FOOTER_MARGIN_BOTTOM = 24; // from tw`mb-6`
-const FOOTER_ESTIMATED_HEIGHT = 90; // Estimated footer height for initial render
-const VERTICAL_SPACING = 20; // Reduced back to give more space to cards
+const FOOTER_MARGIN_BOTTOM = 20; // Reduced from 24
+const FOOTER_ESTIMATED_HEIGHT = 80; // Reduced from 90
+const VERTICAL_SPACING = 10; // Reduced from 20
 
 /**
  * ModeCarousel screen - Pack selection carousel
@@ -126,8 +126,8 @@ const ModeCarousel: React.FC = () => {
     : FOOTER_ESTIMATED_HEIGHT) + insets.bottom + FOOTER_MARGIN_BOTTOM;
 
   // Calculate dynamic card height based on available space
-  const availableHeight = height - headerRenderedHeight - footerRenderedHeight - (VERTICAL_SPACING * 2);
-  const cardHeight = Math.min(Math.max(availableHeight * 0.8, 350), 500); // 80% of available space, min 350, max 500
+  const availableHeight = height - headerRenderedHeight - footerRenderedHeight - VERTICAL_SPACING;
+  const cardHeight = Math.min(Math.max(availableHeight * 0.9, 400), 600); // 90% of available space, min 400, max 600
 
   return (
     <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
