@@ -38,6 +38,9 @@ const packImages: Record<string, any> = {
 const FALLBACK_COLOR_DARK = '#0B0E1A'; // For footer
 const TINT_AMOUNT = 0.5; // 40% towards white, making it darker than before
 const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
+const LOGO_HEIGHT = 100; // Height of the logo
+const FOOTER_HEIGHT = 70; // Approximate height of footer (py-4 + text + margins)
+const SAFETY_MARGIN = 20; // Additional safety margin
 
 /**
  * ModeCarousel screen - Pack selection carousel
@@ -58,8 +61,10 @@ const ModeCarousel: React.FC = () => {
   const ITEM_SPACING = 16; // space between cards
   const ITEM_WIDTH = Math.min(width * 0.85, 320); // Responsive width with max limit
 
-  // Calculate responsive padding based on screen height
-  const RESPONSIVE_PADDING_TOP = Math.max(height * 0.15, 80); // 15% of screen height, minimum 80px
+  // Calculate safe padding to avoid overlap with logo and footer
+  const logoBottomPosition = insets.top + HEADER_ELEMENT_TOP_PADDING + LOGO_HEIGHT;
+  const RESPONSIVE_PADDING_TOP = Math.max(logoBottomPosition + SAFETY_MARGIN, height * 0.2);
+  const RESPONSIVE_PADDING_BOTTOM = Math.max(FOOTER_HEIGHT + SAFETY_MARGIN + insets.bottom, 60);
 
   // Snap interval (integer) must include item width + spacing between items
   const SNAP_INTERVAL = Math.round(ITEM_WIDTH + ITEM_SPACING);
@@ -151,7 +156,7 @@ const ModeCarousel: React.FC = () => {
           contentContainerStyle={{
             paddingHorizontal: (width - ITEM_WIDTH) / 2,
             paddingTop: RESPONSIVE_PADDING_TOP,
-            paddingBottom: 40,
+            paddingBottom: RESPONSIVE_PADDING_BOTTOM,
           }}
           onScroll={scrollHandler}
           scrollEventThrottle={16}
