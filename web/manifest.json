@@ -1,13 +1,14 @@
 {
-  "name": "SIP&GO!",
+  "name": "SIP&GO! - Jeu à Boire",
   "short_name": "SIP&GO!",
   "description": "Application de jeu à boire ultime pour vos soirées",
-  "start_url": "/app.html",
+  "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#0B0E1A",
   "background_color": "#0B0E1A",
+  "lang": "fr",
   "categories": ["games", "entertainment"],
   "prefer_related_applications": false,
   "display_override": ["standalone", "fullscreen"],
@@ -21,6 +22,11 @@
       "src": "/icon.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
     }
   ]
 } 
