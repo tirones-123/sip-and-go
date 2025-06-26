@@ -37,10 +37,10 @@ const packImages: Record<string, any> = {
 
 const FALLBACK_COLOR_DARK = '#0B0E1A'; // For footer
 const TINT_AMOUNT = 0.5; // 40% towards white, making it darker than before
+const LOGO_HEIGHT = 100;
 const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
-const LOGO_HEIGHT = 100; // Height of the logo
-const FOOTER_HEIGHT = 70; // Approximate height of footer (py-4 + text + margins)
-const SAFETY_MARGIN = 20; // Additional safety margin
+const FOOTER_MARGIN_BOTTOM = 24; // from tw`mb-6`
+const FOOTER_ESTIMATED_HEIGHT = 90; // Estimated footer height for initial render
 
 /**
  * ModeCarousel screen - Pack selection carousel
@@ -51,6 +51,7 @@ const ModeCarousel: React.FC = () => {
   const { width, height } = useWindowDimensions();
   const insets = useSafeAreaInsets(); // Get safe area insets
   
+  const [footerHeight, setFooterHeight] = React.useState(0);
   const flatListRef = useRef<FlatList<Pack>>(null);
   const scrollX = useSharedValue(0);
 
@@ -60,11 +61,6 @@ const ModeCarousel: React.FC = () => {
   // Carousel layout constants
   const ITEM_SPACING = 16; // space between cards
   const ITEM_WIDTH = Math.min(width * 0.85, 320); // Responsive width with max limit
-
-  // Calculate safe padding to avoid overlap with logo and footer
-  const logoBottomPosition = insets.top + HEADER_ELEMENT_TOP_PADDING + LOGO_HEIGHT;
-  const RESPONSIVE_PADDING_TOP = Math.max(logoBottomPosition + SAFETY_MARGIN, height * 0.2);
-  const RESPONSIVE_PADDING_BOTTOM = Math.max(FOOTER_HEIGHT + SAFETY_MARGIN + insets.bottom, 60);
 
   // Snap interval (integer) must include item width + spacing between items
   const SNAP_INTERVAL = Math.round(ITEM_WIDTH + ITEM_SPACING);
@@ -122,6 +118,12 @@ const ModeCarousel: React.FC = () => {
     };
   });
 
+  // Calculate dynamic padding to avoid overlap with header/footer
+  const headerRenderedHeight = insets.top + HEADER_ELEMENT_TOP_PADDING + LOGO_HEIGHT;
+  const footerRenderedHeight = footerHeight > 0 
+    ? footerHeight + FOOTER_MARGIN_BOTTOM + insets.bottom 
+    : FOOTER_ESTIMATED_HEIGHT;
+
   return (
     <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
       {/* Custom top elements: Back button and Logo */}
@@ -137,12 +139,12 @@ const ModeCarousel: React.FC = () => {
       >
         <Image
           source={require('../../assets/logo-jauneclair.png')}
-          style={{ height: 100, resizeMode: 'contain' }}
+          style={{ height: LOGO_HEIGHT, resizeMode: 'contain' }}
         />
       </View>
 
       {/* Carousel Container */}
-      <View style={{ flex: 1 }}>
+      <View style={{ flex: 1, justifyContent: 'center', paddingTop: headerRenderedHeight, paddingBottom: footerRenderedHeight }}>
         <Animated.FlatList
           ref={draggableRef}
           data={packs}
@@ -154,13 +156,11 @@ const ModeCarousel: React.FC = () => {
           snapToAlignment="start"
           decelerationRate="fast"
           contentContainerStyle={{
-            paddingHorizontal: (width - ITEM_WIDTH) / 2,
-            paddingTop: RESPONSIVE_PADDING_TOP,
-            paddingBottom: RESPONSIVE_PADDING_BOTTOM,
+            paddingHorizontal: sidePadding,
           }}
           onScroll={scrollHandler}
           scrollEventThrottle={16}
-          style={{ flex: 1 }}
+          style={{ flexGrow: 0 }}
           renderItem={({ item, index }) => (
             <View style={{
               marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
@@ -179,9 +179,18 @@ const ModeCarousel: React.FC = () => {
       
       {/* Footer - Back arrow + Player count */}
       <View
+        onLayout={(e) => {
+          if (e.nativeEvent.layout.height > 0 && footerHeight === 0) {
+            setFooterHeight(e.nativeEvent.layout.height);
+          }
+        }}
         style={[
-          tw`mx-4 mb-6 px-6 py-4 rounded-2xl shadow-lg`,
+          tw`mx-4 px-6 py-4 rounded-2xl shadow-lg`,
           {
+            position: 'absolute',
+            bottom: insets.bottom + FOOTER_MARGIN_BOTTOM,
+            left: 16,
+            right: 16,
             backgroundColor: FALLBACK_COLOR_DARK,
             flexDirection: 'row',
             alignItems: 'center',
