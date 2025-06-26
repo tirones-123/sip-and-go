@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Girls Night - SIP&GO! | Jeu à Boire entre Filles</title>
+    <meta name="description" content="Le pack Girls Night de SIP&GO! - 390+ questions intimes et complices pour des soirées épiques entre copines. Secrets et fous rires garantis ! 💕">
+    <meta name="keywords" content="jeu entre filles, soirée copines, girls night, complicité féminine, questions intimes, jeu à boire femmes">
+    <link rel="canonical" href="https://sipandgo.app/packs/girls">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pack Girls Night - SIP&GO! | Soirées entre Copines">
+    <meta property="og:description" content="390+ questions intimes et complices pour des soirées épiques entre filles. Secrets et fous rires garantis ! 💕">
+    <meta property="og:url" content="https://sipandgo.app/packs/girls">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sipandgo.app/static/girls.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pack Girls Night - SIP&GO! | Soirées entre Copines">
+    <meta name="twitter:description" content="390+ questions intimes et complices pour des soirées épiques entre filles. Secrets et fous rires garantis ! 💕">
+    <meta name="twitter:image" content="https://sipandgo.app/static/girls.png">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GamePlayMode",
+        "name": "Pack Girls Night",
+        "description": "Pack de jeu spécialement conçu pour les soirées entre amies féminines",
+        "isPartOf": {
+            "@type": "MobileApplication",
+            "name": "SIP&GO!",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": ["iOS", "Android", "Web"],
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+            }
+        },
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Women"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #E91E63 0%, #F06292 50%, #FFB74D 100%);
+            color: white;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 40px 0;
+        }
+        
+        .logo {
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .pack-badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 8px 20px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .hero-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+        
+        .hero-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .hero-image {
+            text-align: center;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: #FFD54F;
+            display: block;
+        }
+        
+        .features {
+            margin-bottom: 60px;
+        }
+        
+        .features h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .questions-preview {
+            margin-bottom: 60px;
+        }
+        
+        .questions-preview h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .question-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 1.1rem;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, #FF6B35, #F7931E);
+            color: white;
+            padding: 20px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+        }
+        
+        .back-link {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        
+        .back-link:hover {
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-content h2 {
+                font-size: 1.8rem;
+            }
+            
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="../" class="back-link">← Retour aux packs</a>
+            <img src="../static/logo-jauneclair.png" alt="SIP&GO!" class="logo">
+            <div class="pack-badge">💕 PACK PREMIUM</div>
+        </div>
+        
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Girls Night 💕</h1>
+                <p class="subtitle">Le pack ultime pour les soirées entre copines</p>
+                <p>Des questions intimes et complices spécialement créées pour renforcer les liens d'amitié féminine. Secrets partagés, fous rires et moments de sororité inoubliables !</p>
+            </div>
+            <div class="hero-image">
+                <img src="../static/girls.png" alt="Pack Girls Night - Soirées entre filles" loading="lazy">
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-number">390+</span>
+                <div>Questions Complices</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">👭</span>
+                <div>Sororité</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">💄</span>
+                <div>Secrets Intimes</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">✨</span>
+                <div>Girl Power</div>
+            </div>
+        </div>
+        
+        <section class="features">
+            <h2>Pourquoi ce pack est magique</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">💎</span>
+                    <h3>Questions Féminines</h3>
+                    <p>Des questions qui parlent aux filles : amour, relations, beauté, carrière et tout ce qui nous unit.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌸</span>
+                    <h3>Complicité Féminine</h3>
+                    <p>Des moments privilégiés pour partager vos expériences et créer des liens encore plus forts.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎀</span>
+                    <h3>Défis Amusants</h3>
+                    <p>Des challenges fun et bienveillants qui révèlent votre personnalité unique.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">💫</span>
+                    <h3>Empowerment</h3>
+                    <p>Des questions qui célèbrent la force féminine et boostent la confiance en soi.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="questions-preview">
+            <h2>Aperçu des questions (version soft)</h2>
+            <div class="question-card">
+                "Raconte ton pire date ou bois 2 gorgées. On veut tous les détails croustillants !"
+            </div>
+            <div class="question-card">
+                "Entre [Joueuse] et [Joueuse], celle qui a le plus de crush secrets actuels distribue 2 gorgées."
+            </div>
+            <div class="question-card">
+                "Raconte ton expérience la plus gênante en beauté. Si tu refuses, 2 pénalités."
+            </div>
+            <div class="question-card">
+                "Vote de groupe : qui ici a le plus de chances de devenir influenceuse ?"
+            </div>
+            <div class="question-card">
+                "Révèle ton red flag préféré chez un crush ou bois 2 gorgées."
+            </div>
+            <p style="text-align: center; margin-top: 30px; opacity: 0.8;">
+                <em>Et bien plus... Les vraies questions vont beaucoup plus loin ! 🔥</em>
+            </p>
+        </section>
+        
+        <section class="cta-section">
+            <h2>Prête pour une soirée légendaire ?</h2>
+            <p style="margin-bottom: 30px;">Télécharge SIP&GO! et découvre toutes les questions du pack Girls Night</p>
+            <a href="../install-app" class="cta-button">📱 Télécharger l'App</a>
+            <a href="../" class="cta-button">🎮 Voir tous les packs</a>
+        </section>
+        
+        <footer style="text-align: center; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 60px;">
+            <p>&copy; 2024 SIP&GO! - L'app qui transforme vos soirées</p>
+            <p style="margin-top: 10px; opacity: 0.7;">
+                <a href="../terms" style="color: rgba(255,255,255,0.7);">Conditions d'utilisation</a> • 
+                <a href="../privacy" style="color: rgba(255,255,255,0.7);">Politique de confidentialité</a> • 
+                <a href="../drink-responsibly" style="color: rgba(255,255,255,0.7);">Boire avec modération</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html> 

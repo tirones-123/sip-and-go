@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- SEO Meta Tags -->
+  <title>Install SIP&GO! App - PWA Installation Guide</title>
+  <meta name="description" content="Learn how to install SIP&GO! as a native app on your phone, tablet, or computer. Step-by-step guide for iOS, Android, and desktop installation.">
+  <link rel="canonical" href="https://sipandgo.app/install-app">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/icon.png">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      background: #0B0E1A;
+      color: white;
+      padding: 20px 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      height: 40px;
+    }
+    
+    .back-link {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #ffd700, #ffed4e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* Main Content */
+    main {
+      padding: 60px 0;
+    }
+    
+    .platform-tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      background: white;
+      border-radius: 50px;
+      padding: 5px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .tab {
+      padding: 12px 24px;
+      border: none;
+      background: transparent;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    
+    .tab.active {
+      background: #ffd700;
+      color: #0B0E1A;
+    }
+    
+    .platform-content {
+      display: none;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    
+    .platform-content.active {
+      display: block;
+    }
+    
+    .steps {
+      display: grid;
+      gap: 30px;
+    }
+    
+    .step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: #ffd700;
+      color: #0B0E1A;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .step-content h3 {
+      color: #0B0E1A;
+      margin-bottom: 10px;
+    }
+    
+    .step-content p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+    
+    .screenshot {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      margin: 10px 0;
+    }
+    
+    .benefits {
+      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
+      color: white;
+      padding: 60px 40px;
+      border-radius: 20px;
+      margin: 60px 0;
+      text-align: center;
+    }
+    
+    .benefits h2 {
+      margin-bottom: 30px;
+      color: #ffd700;
+    }
+    
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    
+    .benefit {
+      text-align: center;
+    }
+    
+    .benefit-icon {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    
+    /* Footer */
+    footer {
+      background: #0B0E1A;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      margin-top: 60px;
+    }
+    
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .platform-tabs {
+        flex-direction: column;
+        border-radius: 15px;
+      }
+      
+      .step {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
+      <a href="/" class="back-link">← Back to Home</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Install SIP&GO! App</h1>
+      <p>Get the full app experience! Install SIP&GO! on your device for faster access, offline play, and a native app feel. No app store required - install directly from your browser.</p>
+    </div>
+  </section>
+
+  <main>
+    <div class="container">
+      <div class="platform-tabs">
+        <button class="tab active" onclick="showPlatform('ios')">📱 iPhone/iPad</button>
+        <button class="tab" onclick="showPlatform('android')">🤖 Android</button>
+        <button class="tab" onclick="showPlatform('desktop')">💻 Desktop</button>
+      </div>
+
+      <div id="ios" class="platform-content active">
+        <h2>Install on iPhone/iPad (iOS)</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Open in Safari</h3>
+              <p>Visit sipandgo.app in Safari browser (this won't work in Chrome or other browsers on iOS).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Tap the Share Button</h3>
+              <p>Look for the share icon at the bottom of your screen (square with arrow pointing up).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Select "Add to Home Screen"</h3>
+              <p>Scroll down in the share menu and tap "Add to Home Screen" option.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Confirm Installation</h3>
+              <p>You can change the app name if desired, then tap "Add" to install SIP&GO! to your home screen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="android" class="platform-content">
+        <h2>Install on Android</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Open in Chrome</h3>
+              <p>Visit sipandgo.app in Chrome browser (recommended) or another modern browser.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Look for Install Prompt</h3>
+              <p>Chrome may automatically show an "Add to Home screen" banner at the bottom of the page.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Use Menu Option</h3>
+              <p>If no banner appears, tap the three dots menu (⋮) and select "Add to Home screen" or "Install app".</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Confirm Installation</h3>
+              <p>Tap "Add" or "Install" to add SIP&GO! to your home screen and app drawer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="desktop" class="platform-content">
+        <h2>Install on Desktop (Windows/Mac/Linux)</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Open in Chrome, Edge, or Firefox</h3>
+              <p>Visit sipandgo.app in a modern browser that supports PWA installation.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Look for Install Icon</h3>
+              <p>You should see an install icon (⊕) in the address bar, or a banner at the top of the page.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Click Install</h3>
+              <p>Click the install icon or banner button to start the installation process.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Confirm Installation</h3>
+              <p>Click "Install" in the confirmation dialog. SIP&GO! will be added to your applications/programs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits">
+        <h2>Why Install the App?</h2>
+        <p>Installing SIP&GO! as an app gives you the best experience with additional benefits:</p>
+        <div class="benefits-grid">
+          <div class="benefit">
+            <div class="benefit-icon">⚡</div>
+            <h4>Faster Loading</h4>
+            <p>Instant access without opening your browser</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">📴</div>
+            <h4>Offline Play</h4>
+            <p>Play even without internet connection</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">🎯</div>
+            <h4>Native Feel</h4>
+            <p>Full-screen experience like a native app</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">🔔</div>
+            <h4>Home Screen Access</h4>
+            <p>Quick access directly from your home screen</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">💾</div>
+            <h4>Less Data Usage</h4>
+            <p>Cached content uses less data</p>
+          </div>
+          <div class="benefit">
+            <div class="benefit-icon">🔒</div>
+            <h4>More Secure</h4>
+            <p>Runs in its own secure container</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
+        <h2>Need Help?</h2>
+        <p style="margin-bottom: 20px;">If you're having trouble installing the app, you can always use SIP&GO! directly in your browser. The web version works perfectly and includes all the same features!</p>
+        <p><strong>Troubleshooting Tips:</strong></p>
+        <ul style="text-align: left; max-width: 500px; margin: 20px auto;">
+          <li>Make sure you're using a supported browser (Chrome, Safari, Edge, Firefox)</li>
+          <li>Check that your browser is up to date</li>
+          <li>Try refreshing the page if the install option doesn't appear</li>
+          <li>Some ad blockers may interfere with PWA installation</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 SIP&GO! - Install once, party everywhere</p>
+    </div>
+  </footer>
+
+  <script>
+    function showPlatform(platform) {
+      // Hide all platform content
+      document.querySelectorAll('.platform-content').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      // Remove active class from all tabs
+      document.querySelectorAll('.tab').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      // Show selected platform
+      document.getElementById(platform).classList.add('active');
+      
+      // Add active class to clicked tab
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html> 

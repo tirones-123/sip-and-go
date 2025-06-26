@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- SEO Meta Tags -->
+  <title>SIP&GO! Game Packs - 5 Unique Drinking Game Collections</title>
+  <meta name="description" content="Discover all 5 SIP&GO! drinking game packs: Classic (free), Spicy, Guys Night, Girls Night, and Couples. 1500+ questions for epic party games.">
+  <link rel="canonical" href="https://sipandgo.app/packs/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sipandgo.app/packs/">
+  <meta property="og:title" content="SIP&GO! Game Packs - 5 Unique Drinking Game Collections">
+  <meta property="og:description" content="Discover all 5 SIP&GO! drinking game packs: Classic (free), Spicy, Guys Night, Girls Night, and Couples. 1500+ questions for epic party games.">
+  <meta property="og:image" content="https://sipandgo.app/static/logo-jauneclair.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/icon.png">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      background: #0B0E1A;
+      color: white;
+      padding: 20px 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      height: 40px;
+    }
+    
+    .back-link {
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    
+    /* Main Content */
+    main {
+      padding: 60px 0;
+    }
+    
+    .page-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .page-header h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #0B0E1A;
+    }
+    
+    .page-header p {
+      font-size: 1.2rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .packs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 40px;
+    }
+    
+    .pack-card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    
+    .pack-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .pack-hero {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+    
+    .pack-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #0B0E1A;
+    }
+    
+    .pack-description {
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    
+    .pack-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    
+    .pack-price {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .free {
+      background: #28a745;
+      color: white;
+    }
+    
+    .premium {
+      background: #ffd700;
+      color: #0B0E1A;
+    }
+    
+    .sample-questions {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    
+    .sample-questions h4 {
+      margin-bottom: 10px;
+      color: #0B0E1A;
+    }
+    
+    .sample-questions ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .sample-questions li {
+      background: #f8f9fa;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    
+    /* Footer */
+    footer {
+      background: #0B0E1A;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      margin-top: 80px;
+    }
+    
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 2rem;
+      }
+      
+      .packs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "SIP&GO! Drinking Game Packs",
+    "description": "Collection of 5 unique drinking game packs with over 1500 questions",
+    "itemListElement": [
+      {
+        "@type": "Product",
+        "position": 1,
+        "name": "Classic Pack",
+        "description": "Free starter pack with universal party questions",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      },
+      {
+        "@type": "Product",
+        "position": 2,
+        "name": "Spicy Pack",
+        "description": "Daring challenges and bold questions for adventurous parties"
+      },
+      {
+        "@type": "Product",
+        "position": 3,
+        "name": "Guys Night Pack",
+        "description": "Questions crafted for bachelor parties and guys' nights"
+      },
+      {
+        "@type": "Product",
+        "position": 4,
+        "name": "Girls Night Pack",
+        "description": "Fun questions for bachelorette parties and girls' nights"
+      },
+      {
+        "@type": "Product",
+        "position": 5,
+        "name": "Couples Pack",
+        "description": "Romantic and playful questions for couples' date nights"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
+      <a href="/" class="back-link">← Back to Home</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="page-header">
+        <h1>SIP&GO! Drinking Game Packs</h1>
+        <p>Choose from 5 unique collections of drinking game questions, each designed for different party vibes and group dynamics. Start with our free Classic pack or explore themed collections for your perfect party experience.</p>
+      </div>
+
+      <div class="packs-grid">
+        <a href="/packs/classic" class="pack-card">
+          <img src="/static/classic.png" alt="Classic Pack - Free Drinking Game Questions" class="pack-hero">
+          <h2 class="pack-title">🍻 Classic Pack</h2>
+          <p class="pack-description">The perfect starter pack for any party! Filled with universal drinking game questions that work for every group. Get the laughs going with classics that never get old.</p>
+          <div class="pack-stats">
+            <span>300+ Questions</span>
+            <span>Universal Appeal</span>
+          </div>
+          <span class="pack-price free">FREE</span>
+          <div class="sample-questions">
+            <h4>Sample Questions:</h4>
+            <ul>
+              <li>"Tell us about a party that went completely wrong"</li>
+              <li>"Everyone vote: who would be the worst roommate?"</li>
+              <li>"Sing a Disney song like you're on The Voice"</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="/packs/spicy" class="pack-card">
+          <img src="/static/spicy.png" alt="Spicy Pack - Daring Drinking Game Questions" class="pack-hero">
+          <h2 class="pack-title">🌶️ Spicy Pack</h2>
+          <p class="pack-description">Turn up the heat with daring challenges and bold questions! Perfect for close friends who aren't afraid to push boundaries and have some wild fun.</p>
+          <div class="pack-stats">
+            <span>400+ Questions</span>
+            <span>Adults Only</span>
+          </div>
+          <span class="pack-price premium">Premium</span>
+          <div class="sample-questions">
+            <h4>Sample Questions:</h4>
+            <ul>
+              <li>"Most embarrassing place you've been caught..."</li>
+              <li>"Truth or dare: reveal your wildest fantasy"</li>
+              <li>"Rate everyone's kissing skills (if you know)"</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="/packs/guys" class="pack-card">
+          <img src="/static/guys.png" alt="Guys Night Pack - Bachelor Party Drinking Games" class="pack-hero">
+          <h2 class="pack-title">👨 Guys Night Pack</h2>
+          <p class="pack-description">Specially crafted questions for the bros! Perfect for bachelor parties, guys' nights out, or any time the fellas want to bond over some beers and laughs.</p>
+          <div class="pack-stats">
+            <span>300+ Questions</span>
+            <span>Bro-Focused</span>
+          </div>
+          <span class="pack-price premium">Premium</span>
+          <div class="sample-questions">
+            <h4>Sample Questions:</h4>
+            <ul>
+              <li>"Who's the worst wingman in the group?"</li>
+              <li>"Most embarrassing gym moment story"</li>
+              <li>"Rate each other's dating game skills"</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="/packs/girls" class="pack-card">
+          <img src="/static/girls.png" alt="Girls Night Pack - Bachelorette Party Drinking Games" class="pack-hero">
+          <h2 class="pack-title">👩 Girls Night Pack</h2>
+          <p class="pack-description">Fun questions designed for the girls! Perfect for bachelorette parties, girls' nights in, or any time the ladies want to dish and have some fun together.</p>
+          <div class="pack-stats">
+            <span>350+ Questions</span>
+            <span>Girl Power</span>
+          </div>
+          <span class="pack-price premium">Premium</span>
+          <div class="sample-questions">
+            <h4>Sample Questions:</h4>
+            <ul>
+              <li>"Spill the tea on your worst date ever"</li>
+              <li>"Who has the best makeup skills?"</li>
+              <li>"Most dramatic friend breakup story"</li>
+            </ul>
+          </div>
+        </a>
+
+        <a href="/packs/couples" class="pack-card">
+          <img src="/static/couples.png" alt="Couples Pack - Romantic Drinking Game Questions" class="pack-hero">
+          <h2 class="pack-title">💕 Couples Pack</h2>
+          <p class="pack-description">Romantic and playful questions perfect for couples looking to spice up their date nights or double dates. Deepen your connection while having fun!</p>
+          <div class="pack-stats">
+            <span>250+ Questions</span>
+            <span>Romance & Fun</span>
+          </div>
+          <span class="pack-price premium">Premium</span>
+          <div class="sample-questions">
+            <h4>Sample Questions:</h4>
+            <ul>
+              <li>"What's your partner's secret talent?"</li>
+              <li>"Most romantic thing they've done for you"</li>
+              <li>"Recreate your first kiss (or drink!)"</li>
+            </ul>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 SIP&GO! - Start with our free Classic pack, upgrade for premium themes!</p>
+    </div>
+  </footer>
+</body>
+</html> 

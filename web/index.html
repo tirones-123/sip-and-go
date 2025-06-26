@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,10 +7,25 @@
   <!-- Viewport pour mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
   
-  <!-- Meta tags génériques -->
-  <title>SIP&GO! - Jeu à Boire</title>
-  <meta name="description" content="Application de jeu à boire ultime pour vos soirées">
+  <!-- SEO Meta Tags -->
+  <title>SIP&GO! - Ultimate Drinking Game App for Epic Parties</title>
+  <meta name="description" content="Transform your parties with SIP&GO! - 1500+ drinking game questions, 5 themed packs, and endless fun. Free classic pack, multilingual support. Download now!">
+  <link rel="canonical" href="https://sipandgo.app/">
   <meta name="theme-color" content="#0B0E1A">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sipandgo.app/">
+  <meta property="og:title" content="SIP&GO! - Ultimate Drinking Game App for Epic Parties">
+  <meta property="og:description" content="Transform your parties with SIP&GO! - 1500+ drinking game questions, 5 themed packs, and endless fun. Free classic pack, multilingual support.">
+  <meta property="og:image" content="https://sipandgo.app/static/logo-jauneclair.png">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://sipandgo.app/">
+  <meta property="twitter:title" content="SIP&GO! - Ultimate Drinking Game App for Epic Parties">
+  <meta property="twitter:description" content="Transform your parties with SIP&GO! - 1500+ drinking game questions, 5 themed packs, and endless fun. Free classic pack, multilingual support.">
+  <meta property="twitter:image" content="https://sipandgo.app/static/logo-jauneclair.png">
   
   <!-- Manifest PWA -->
   <link rel="manifest" href="/manifest.json">
@@ -32,7 +47,22 @@
   <meta name="application-name" content="SIP&GO!">
   
   <!-- Icônes -->
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/icon.png" />
+  
+  <!-- Check if user wants app or landing page -->
+  <script>
+    // Detect if user wants the marketing site or the app
+    const isAppPath = window.location.pathname === '/' && 
+                     !window.location.search.includes('landing') &&
+                     !document.referrer.includes('google') &&
+                     !document.referrer.includes('bing') &&
+                     !document.referrer.includes('search');
+    
+    // If coming from search engines or wants landing, show marketing site
+    if (!isAppPath || window.location.search.includes('landing')) {
+      window.location.href = '/landing.html';
+    }
+  </script>
   
   <!-- Style reset pour React Native Web -->
   <style id="expo-reset">
@@ -54,6 +84,29 @@
       flex: 1;
     }
   </style>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "SIP&GO!",
+    "description": "Ultimate drinking game app with 1500+ questions across 5 themed packs for epic parties",
+    "url": "https://sipandgo.app",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "iOS, Android, Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "ratingCount": "2500"
+    }
+  }
+  </script>
 </head>
 
 <body>
