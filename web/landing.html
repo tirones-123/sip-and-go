@@ -29,6 +29,7 @@
   
   <!-- Preload critical resources -->
   <link rel="preload" href="/static/logo-jauneclair.png" as="image">
+  <link rel="preload" href="/static/classic.png" as="image">
   
   <style>
     * {
@@ -37,11 +38,37 @@
       box-sizing: border-box;
     }
     
+    :root {
+      /* Classic palette from the app */
+      --classic-1: #fed475;
+      --classic-2: #fec443;
+      --classic-3: #febc29;
+      --classic-4: #feb410;
+      --classic-5: #fe8d10;
+      --classic-6: #fe895c;
+      
+      /* Pack colors */
+      --pack-classic: #F3C53F;
+      --pack-girls: #E84D8A;
+      --pack-guys: #A54429;
+      --pack-spicy: #660000;
+      --pack-couples: #9C5BD1;
+      
+      /* Dark theme */
+      --dark-bg: #0B0E1A;
+      --dark-bg-light: #1a1d29;
+    }
+    
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       line-height: 1.6;
       color: #333;
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
+      overflow-x: hidden;
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
     }
     
     .container {
@@ -59,6 +86,12 @@
       width: 100%;
       top: 0;
       z-index: 1000;
+      transition: all 0.3s ease;
+    }
+    
+    header.scrolled {
+      padding: 15px 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
     
     nav {
@@ -68,6 +101,11 @@
     }
     
     .logo {
+      height: 50px;
+      transition: height 0.3s ease;
+    }
+    
+    header.scrolled .logo {
       height: 40px;
     }
     
@@ -81,40 +119,77 @@
       color: #fff;
       text-decoration: none;
       font-weight: 500;
-      transition: color 0.3s;
+      transition: all 0.3s;
+      position: relative;
     }
     
-    .nav-links a:hover {
-      color: #ffd700;
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--classic-3);
+      transition: width 0.3s;
     }
     
-    /* Hero Section */
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    
+    /* Hero Section with animated gradient */
     .hero {
-      padding: 120px 0 80px;
-      text-align: center;
-      color: white;
+      padding: 140px 0 80px;
       min-height: 100vh;
       display: flex;
       align-items: center;
+      position: relative;
+      background: linear-gradient(135deg, var(--classic-1) 0%, var(--classic-3) 25%, var(--classic-5) 50%, var(--classic-6) 75%, var(--pack-girls) 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+    
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .hero-content {
+      text-align: center;
+      color: white;
+      position: relative;
+      z-index: 2;
     }
     
     .hero h1 {
-      font-size: 3.5rem;
-      font-weight: 800;
+      font-size: 4rem;
+      font-weight: 900;
       margin-bottom: 20px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     
     .hero p {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       margin-bottom: 40px;
-      max-width: 600px;
+      max-width: 700px;
       margin-left: auto;
       margin-right: auto;
-      opacity: 0.9;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+      animation: fadeInUp 1s ease 0.2s both;
     }
     
     .cta-buttons {
@@ -122,143 +197,411 @@
       gap: 20px;
       justify-content: center;
       flex-wrap: wrap;
+      animation: fadeInUp 1s ease 0.4s both;
     }
     
     .btn {
-      padding: 15px 30px;
+      padding: 18px 40px;
       border: none;
       border-radius: 50px;
       font-size: 1.1rem;
-      font-weight: 600;
+      font-weight: 700;
       text-decoration: none;
       display: inline-block;
       transition: all 0.3s;
       cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      overflow: hidden;
     }
     
     .btn-primary {
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      color: #0B0E1A;
+      background: var(--dark-bg);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     
     .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
     }
     
     .btn-secondary {
-      background: transparent;
-      color: #fff;
-      border: 2px solid #fff;
+      background: rgba(255,255,255,0.2);
+      color: var(--dark-bg);
+      border: 2px solid var(--dark-bg);
+      backdrop-filter: blur(10px);
     }
     
     .btn-secondary:hover {
-      background: #fff;
-      color: #0B0E1A;
+      background: var(--dark-bg);
+      color: white;
     }
+    
+    /* Floating pack images */
+    .floating-packs {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+    
+    .floating-pack {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      opacity: 0.1;
+      animation: float 20s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      33% { transform: translateY(-20px) rotate(120deg); }
+      66% { transform: translateY(20px) rotate(240deg); }
+    }
+    
+    .floating-pack:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+    .floating-pack:nth-child(2) { right: 15%; top: 30%; animation-delay: 3s; }
+    .floating-pack:nth-child(3) { left: 20%; bottom: 20%; animation-delay: 6s; }
+    .floating-pack:nth-child(4) { right: 10%; bottom: 30%; animation-delay: 9s; }
+    .floating-pack:nth-child(5) { left: 50%; top: 10%; animation-delay: 12s; }
     
     /* Features Section */
     .features {
-      padding: 80px 0;
+      padding: 100px 0;
       background: #fff;
+      position: relative;
+    }
+    
+    .features::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: linear-gradient(to bottom, rgba(254,137,92,0.1), transparent);
     }
     
     .features h2 {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--dark-bg);
+      font-weight: 900;
+    }
+    
+    .features-subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
       margin-bottom: 60px;
-      color: #0B0E1A;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
       gap: 40px;
     }
     
     .feature-card {
-      text-align: center;
-      padding: 30px;
-      border-radius: 20px;
-      background: #f8f9fa;
+      padding: 40px;
+      border-radius: 24px;
+      background: #fff;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--classic-1), var(--classic-3), var(--classic-5));
+      transform: scaleX(0);
       transition: transform 0.3s;
+    }
+    
+    .feature-card:hover::before {
+      transform: scaleX(1);
     }
     
     .feature-card:hover {
       transform: translateY(-5px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      border-color: var(--classic-3);
     }
     
     .feature-icon {
-      font-size: 3rem;
+      font-size: 3.5rem;
       margin-bottom: 20px;
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+    
+    .feature-card:nth-child(1) .feature-icon { animation-delay: 0s; }
+    .feature-card:nth-child(2) .feature-icon { animation-delay: 0.2s; }
+    .feature-card:nth-child(3) .feature-icon { animation-delay: 0.4s; }
+    .feature-card:nth-child(4) .feature-icon { animation-delay: 0.6s; }
+    .feature-card:nth-child(5) .feature-icon { animation-delay: 0.8s; }
+    .feature-card:nth-child(6) .feature-icon { animation-delay: 1s; }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
     
     .feature-card h3 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-bottom: 15px;
-      color: #0B0E1A;
+      color: var(--dark-bg);
+      font-weight: 800;
+    }
+    
+    .feature-card p {
+      color: #666;
+      line-height: 1.8;
     }
     
     /* Packs Section */
     .packs {
-      padding: 80px 0;
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
-      color: white;
+      padding: 100px 0;
+      background: var(--dark-bg);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .packs::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(254,196,67,0.1) 0%, transparent 70%);
+      animation: rotate 30s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
     
     .packs h2 {
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin-bottom: 60px;
+      color: white;
+      font-weight: 900;
+      position: relative;
+      z-index: 2;
     }
     
     .packs-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
+      position: relative;
+      z-index: 2;
     }
     
     .pack-card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 30px;
+      border-radius: 24px;
+      padding: 40px 30px;
       text-align: center;
-      backdrop-filter: blur(10px);
-      transition: transform 0.3s;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
     }
     
+    .pack-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+      backdrop-filter: blur(10px);
+      z-index: 1;
+    }
+    
+    .pack-card > * {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .pack-card.classic { background: var(--pack-classic); }
+    .pack-card.girls { background: var(--pack-girls); }
+    .pack-card.guys { background: var(--pack-guys); }
+    .pack-card.spicy { background: var(--pack-spicy); }
+    .pack-card.couples { background: var(--pack-couples); }
+    
     .pack-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+    
+    .pack-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
     }
     
     .pack-card h3 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       margin-bottom: 15px;
-      color: #ffd700;
+      color: white;
+      font-weight: 900;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    }
+    
+    .pack-card p {
+      color: rgba(255,255,255,0.9);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .pack-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--classic-2) 0%, var(--classic-4) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: url('/static/logo-jauneclair.png') center/100px 100px repeat;
+      opacity: 0.05;
+      animation: rotate 60s linear infinite reverse;
+    }
+    
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .cta-section h2 {
+      font-size: 3.5rem;
+      color: var(--dark-bg);
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+    
+    .cta-section p {
+      font-size: 1.3rem;
+      color: var(--dark-bg);
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
     }
     
     /* Footer */
     footer {
-      background: #0B0E1A;
+      background: var(--dark-bg);
       color: white;
-      padding: 40px 0;
-      text-align: center;
+      padding: 60px 0 40px;
     }
     
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .footer-section h4 {
+      font-size: 1.2rem;
       margin-bottom: 20px;
+      color: var(--classic-3);
+      font-weight: 700;
     }
     
-    .footer-links a {
-      color: #fff;
+    .footer-section ul {
+      list-style: none;
+    }
+    
+    .footer-section a {
+      color: rgba(255,255,255,0.8);
       text-decoration: none;
+      line-height: 2;
+      transition: color 0.3s;
     }
     
-    .footer-links a:hover {
-      color: #ffd700;
+    .footer-section a:hover {
+      color: var(--classic-3);
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.6);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    .social-links a {
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    
+    .social-links a:hover {
+      background: var(--classic-3);
+      transform: translateY(-3px);
+    }
+    
+    /* Mobile menu */
+    .mobile-menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
     }
     
     /* Responsive */
@@ -267,13 +610,43 @@
         font-size: 2.5rem;
       }
       
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      .features h2, .packs h2, .cta-section h2 {
+        font-size: 2rem;
+      }
+      
       .nav-links {
         display: none;
+      }
+      
+      .mobile-menu-toggle {
+        display: block;
       }
       
       .cta-buttons {
         flex-direction: column;
         align-items: center;
+      }
+      
+      .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .packs-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .floating-pack {
+        display: none;
       }
     }
   </style>
@@ -298,6 +671,16 @@
         window.location.href = '/app.html';
       }
     }
+    
+    // Header scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
   </script>
   
   <!-- JSON-LD Structured Data -->
@@ -334,16 +717,24 @@
         <li><a href="/drinking-games">Drinking Games</a></li>
         <li><a href="/install-app">Install App</a></li>
       </ul>
+      <button class="mobile-menu-toggle">☰</button>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <h1>SIP&GO! - Ultimate Drinking Game App</h1>
-        <p>Transform your parties with 1500+ hilarious drinking game questions across 5 themed packs. Free classic pack included, multilingual support, and endless fun guaranteed!</p>
+      <div class="floating-packs">
+        <img src="/static/classic.png" alt="Classic pack" class="floating-pack">
+        <img src="/static/girls.png" alt="Girls pack" class="floating-pack">
+        <img src="/static/guys.png" alt="Guys pack" class="floating-pack">
+        <img src="/static/spicy.png" alt="Spicy pack" class="floating-pack">
+        <img src="/static/couples.png" alt="Couples pack" class="floating-pack">
+      </div>
+      <div class="container hero-content">
+        <h1>SIP&GO! - The Party Starts Here 🎉</h1>
+        <p>Transform any gathering into an unforgettable party with 1500+ hilarious drinking game questions. From mild to wild, we've got the perfect pack for your crew!</p>
         <div class="cta-buttons">
-          <a href="/?app=true" class="btn btn-primary">Play Now - Free</a>
+          <a href="/?app=true" class="btn btn-primary">Play Now - It's Free!</a>
           <a href="/install-app" class="btn btn-secondary">Install App</a>
         </div>
       </div>
@@ -351,37 +742,38 @@
 
     <section class="features">
       <div class="container">
-        <h2>Why Choose SIP&GO! for Your Party Games?</h2>
+        <h2>Why SIP&GO! Rules the Party</h2>
+        <p class="features-subtitle">Everything you need for the ultimate drinking game experience</p>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">🎮</div>
             <h3>1500+ Questions</h3>
-            <p>Massive collection of hilarious drinking game questions across 5 unique themed packs to keep your parties fresh and exciting.</p>
+            <p>Never run out of fun with our massive collection of drinking game questions. Each pack is carefully crafted to keep your party going all night long.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🆓</div>
-            <h3>Free Classic Pack</h3>
-            <p>Start playing immediately with our free classic pack - no payment required to begin the fun at your party.</p>
+            <h3>Start Free</h3>
+            <p>Jump right in with our Classic pack - absolutely free! No credit card, no signup, just instant party fun at your fingertips.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🌍</div>
-            <h3>Multilingual Support</h3>
-            <p>Play in your preferred language with support for French, English, and more languages coming soon.</p>
+            <h3>Multiple Languages</h3>
+            <p>Party in your language! Full support for English and French, with more languages coming soon. Everyone can join the fun!</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">📱</div>
-            <h3>Works Everywhere</h3>
-            <p>Play on any device - iPhone, Android, or web browser. No app store required, just start playing instantly.</p>
+            <h3>Play Anywhere</h3>
+            <p>Works on any device - iPhone, Android, tablet, or computer. No downloads required, just open and play instantly!</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
-            <h3>Smart Player System</h3>
-            <p>Questions adapt to your group size and player names for a personalized drinking game experience.</p>
+            <h3>Smart Questions</h3>
+            <p>Questions adapt to your group size and use player names for personalized challenges. Every game feels fresh and tailored to your crew.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🔄</div>
             <h3>Always Fresh</h3>
-            <p>Random question selection means every game session is unique and unpredictable for maximum fun.</p>
+            <p>Random question selection ensures no two games are the same. Keep the surprises coming and the laughs rolling!</p>
           </div>
         </div>
       </div>
@@ -389,32 +781,52 @@
 
     <section class="packs">
       <div class="container">
-        <h2>Choose Your Drinking Game Adventure</h2>
+        <h2>Choose Your Adventure</h2>
         <div class="packs-grid">
-          <div class="pack-card">
-            <h3>🍻 Classic</h3>
-            <p>Perfect starter pack with universal party questions. Great for any group and guaranteed laughs.</p>
-            <strong>FREE</strong>
+          <div class="pack-card classic">
+            <div class="pack-icon">🍻</div>
+            <h3>Classic</h3>
+            <p>The perfect starter pack! Universal party questions that work for any group. Great mix of fun challenges and hilarious dares.</p>
+            <span class="pack-badge">FREE FOREVER</span>
           </div>
-          <div class="pack-card">
-            <h3>🌶️ Spicy</h3>
-            <p>Turn up the heat with daring challenges and bold questions for adventurous party-goers.</p>
+          <div class="pack-card spicy">
+            <div class="pack-icon">🌶️</div>
+            <h3>Spicy</h3>
+            <p>Turn up the heat! Bold questions and daring challenges for groups ready to push boundaries and create legendary stories.</p>
+            <span class="pack-badge">Premium</span>
           </div>
-          <div class="pack-card">
-            <h3>👨 Guys Night</h3>
-            <p>Specially crafted questions for the bros. Perfect for bachelor parties and guys' nights out.</p>
+          <div class="pack-card guys">
+            <div class="pack-icon">👨</div>
+            <h3>Guys Night</h3>
+            <p>Bros being bros! Specially crafted for the boys - perfect for bachelor parties, poker nights, and legendary guy gatherings.</p>
+            <span class="pack-badge">Premium</span>
           </div>
-          <div class="pack-card">
-            <h3>👩 Girls Night</h3>
-            <p>Fun questions designed for the girls. Perfect for bachelorette parties and girls' nights in.</p>
+          <div class="pack-card girls">
+            <div class="pack-icon">👩</div>
+            <h3>Girls Night</h3>
+            <p>Ladies, this one's for you! Fun, flirty questions perfect for bachelorette parties, wine nights, and unforgettable girl time.</p>
+            <span class="pack-badge">Premium</span>
           </div>
-          <div class="pack-card">
-            <h3>💕 Couples</h3>
-            <p>Romantic and playful questions perfect for couples looking to spice up their date nights.</p>
+          <div class="pack-card couples">
+            <div class="pack-icon">💕</div>
+            <h3>Couples</h3>
+            <p>Spice up date night! Romantic and playful questions designed to bring couples closer with fun challenges and sweet dares.</p>
+            <span class="pack-badge">Premium</span>
           </div>
         </div>
-        <div style="text-align: center; margin-top: 40px;">
-          <a href="/packs" class="btn btn-primary">Explore All Packs</a>
+        <div style="text-align: center; margin-top: 60px;">
+          <a href="/packs" class="btn btn-primary" style="background: white; color: var(--dark-bg);">Explore All Packs in Detail</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2>Ready to Party? 🎉</h2>
+        <p>Join thousands of party-goers who've made SIP&GO! their go-to drinking game app. Start playing in seconds!</p>
+        <div class="cta-buttons">
+          <a href="/?app=true" class="btn btn-primary">Start Playing Free</a>
+          <a href="/install-app" class="btn btn-secondary" style="background: white; color: var(--dark-bg); border-color: var(--dark-bg);">Get the App</a>
         </div>
       </div>
     </section>
@@ -422,13 +834,47 @@
 
   <footer>
     <div class="container">
-      <div class="footer-links">
-        <a href="/drink-responsibly">Drink Responsibly</a>
-        <a href="/terms">Terms</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/press">Press</a>
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="/static/logo-jauneclair.png" alt="SIP&GO!" style="height: 60px; margin-bottom: 20px;">
+          <p>The ultimate drinking game app for unforgettable parties.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Play</h4>
+          <ul>
+            <li><a href="/?app=true">Start Game</a></li>
+            <li><a href="/packs">Game Packs</a></li>
+            <li><a href="/install-app">Download App</a></li>
+            <li><a href="/features">Features</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="/drinking-games">Drinking Games Guide</a></li>
+            <li><a href="/drink-responsibly">Drink Responsibly</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/terms">Terms of Service</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
       </div>
-      <p>&copy; 2024 SIP&GO! - The Ultimate Drinking Game App. Party responsibly.</p>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SIP&GO! - Party Responsibly 🍻</p>
+      </div>
     </div>
   </footer>
 </body>

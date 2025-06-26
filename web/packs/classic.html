@@ -26,11 +26,29 @@
       box-sizing: border-box;
     }
     
+    :root {
+      /* Classic palette from the app */
+      --classic-1: #fed475;
+      --classic-2: #fec443;
+      --classic-3: #febc29;
+      --classic-4: #feb410;
+      --classic-5: #fe8d10;
+      --classic-6: #fe895c;
+      
+      /* Pack colors */
+      --pack-classic: #F3C53F;
+      
+      /* Dark theme */
+      --dark-bg: #0B0E1A;
+      --dark-bg-light: #1a1d29;
+    }
+    
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       line-height: 1.6;
       color: #333;
       background: #f8f9fa;
+      overflow-x: hidden;
     }
     
     .container {
@@ -41,9 +59,15 @@
     
     /* Header */
     header {
-      background: #0B0E1A;
+      background: rgba(11, 14, 26, 0.95);
+      backdrop-filter: blur(10px);
       color: white;
       padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
     }
     
     nav {
@@ -53,182 +77,588 @@
     }
     
     .logo {
-      height: 40px;
+      height: 50px;
     }
     
     .back-link {
-      color: #ffd700;
+      color: var(--classic-3);
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
+      transition: all 0.3s;
+      padding: 10px 20px;
+      border: 2px solid var(--classic-3);
+      border-radius: 25px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .back-link:hover {
+      background: var(--classic-3);
+      color: var(--dark-bg);
+      transform: translateX(-5px);
     }
     
     /* Hero Section */
     .hero {
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
+      background: linear-gradient(135deg, var(--classic-1) 0%, var(--classic-3) 25%, var(--classic-5) 50%, var(--classic-6) 75%, var(--pack-classic) 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
       color: white;
-      padding: 80px 0;
-      text-align: center;
+      padding: 140px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 600px;
+      height: 600px;
+      background: url('/static/classic.png') center/contain no-repeat;
+      opacity: 0.1;
+      animation: float 20s infinite ease-in-out;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(10deg); }
     }
     
     .hero-content {
+      position: relative;
+      z-index: 2;
       display: grid;
-      grid-template-columns: 1fr 300px;
+      grid-template-columns: 1fr 350px;
       gap: 60px;
       align-items: center;
-      text-align: left;
     }
     
-    .hero h1 {
-      font-size: 3rem;
+    .hero-text h1 {
+      font-size: 4rem;
+      font-weight: 900;
       margin-bottom: 20px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--dark-bg);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
     
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
+    .hero-text h1 .icon {
+      font-size: 5rem;
+      filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    }
+    
+    .hero-text p {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      color: var(--dark-bg);
       opacity: 0.9;
+      line-height: 1.8;
     }
     
     .hero-image {
       width: 100%;
-      max-width: 300px;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      max-width: 350px;
+      border-radius: 30px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+      animation: heroFloat 6s infinite ease-in-out;
+    }
+    
+    @keyframes heroFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
     }
     
     .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      color: #0B0E1A;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 40px;
+      background: var(--dark-bg);
+      color: white;
       text-decoration: none;
       border-radius: 50px;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1.1rem;
-      transition: transform 0.3s;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     
     .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    
+    .btn-secondary {
+      background: rgba(255,255,255,0.2);
+      color: var(--dark-bg);
+      border: 2px solid var(--dark-bg);
+      backdrop-filter: blur(10px);
+    }
+    
+    .btn-secondary:hover {
+      background: var(--dark-bg);
+      color: white;
     }
     
     /* Main Content */
     main {
-      padding: 80px 0;
+      background: #fff;
+      position: relative;
     }
     
     .section {
-      margin-bottom: 80px;
+      padding: 100px 0;
+      position: relative;
     }
     
     .section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      color: #0B0E1A;
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--dark-bg);
       text-align: center;
+      font-weight: 900;
+    }
+    
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 60px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Features Section */
+    .features-section {
+      background: #f8f9fa;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .features-section::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: var(--classic-3);
+      border-radius: 50%;
+      opacity: 0.05;
+    }
+    
+    .features-section::after {
+      content: '';
+      position: absolute;
+      bottom: -150px;
+      right: -150px;
+      width: 400px;
+      height: 400px;
+      background: var(--classic-5);
+      border-radius: 50%;
+      opacity: 0.05;
     }
     
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-bottom: 60px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+      position: relative;
+      z-index: 2;
     }
     
     .feature-card {
       background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 50px 40px;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
       text-align: center;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--classic-1), var(--classic-3), var(--classic-5));
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+    
+    .feature-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
     }
     
     .feature-icon {
-      font-size: 2.5rem;
+      font-size: 4rem;
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+    
+    .feature-card:nth-child(1) .feature-icon { animation-delay: 0s; }
+    .feature-card:nth-child(2) .feature-icon { animation-delay: 0.2s; }
+    .feature-card:nth-child(3) .feature-icon { animation-delay: 0.4s; }
+    .feature-card:nth-child(4) .feature-icon { animation-delay: 0.6s; }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    .feature-card h3 {
+      font-size: 1.5rem;
       margin-bottom: 15px;
+      color: var(--dark-bg);
+      font-weight: 800;
+    }
+    
+    .feature-card p {
+      color: #666;
+      line-height: 1.8;
     }
     
     /* Sample Questions */
-    .questions-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+    .questions-section {
+      background: white;
+    }
+    
+    .questions-carousel {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 60px;
+    }
+    
+    .questions-track {
+      display: flex;
+      gap: 30px;
+      animation: scroll 30s linear infinite;
+      padding: 20px 0;
+    }
+    
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
     
     .question-card {
-      background: white;
-      padding: 25px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      border-left: 4px solid #ffd700;
+      background: linear-gradient(135deg, var(--classic-1), var(--classic-3));
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      min-width: 400px;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .question-card::before {
+      content: '❝';
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 4rem;
+      opacity: 0.2;
+      color: white;
     }
     
     .question-card p {
+      font-size: 1.2rem;
+      color: var(--dark-bg);
       font-style: italic;
-      color: #555;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+      line-height: 1.8;
     }
     
     .question-type {
-      font-size: 0.8rem;
-      color: #888;
+      display: inline-block;
+      background: rgba(255,255,255,0.3);
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--dark-bg);
+      font-weight: 700;
       text-transform: uppercase;
-      font-weight: 600;
+      letter-spacing: 1px;
     }
     
     /* How to Play */
-    .how-to-play {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    .how-to-section {
+      background: var(--dark-bg);
+      color: white;
+      position: relative;
+      overflow: hidden;
     }
     
-    .steps {
+    .how-to-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, var(--classic-3) 0%, transparent 70%);
+      opacity: 0.1;
+    }
+    
+    .how-to-section h2 {
+      color: white;
+    }
+    
+    .how-to-section .section-subtitle {
+      color: rgba(255,255,255,0.8);
+    }
+    
+    .steps-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      position: relative;
+      z-index: 2;
     }
     
-    .step {
+    .step-card {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 25px;
       text-align: center;
+      transition: all 0.3s;
+      border: 2px solid transparent;
+    }
+    
+    .step-card:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: var(--classic-3);
+      transform: translateY(-5px);
     }
     
     .step-number {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      background: #ffd700;
-      color: #0B0E1A;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: var(--classic-3);
+      color: var(--dark-bg);
       border-radius: 50%;
-      line-height: 40px;
-      font-weight: bold;
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+    
+    .step-card h3 {
+      font-size: 1.4rem;
       margin-bottom: 15px;
+      color: white;
+    }
+    
+    .step-card p {
+      color: rgba(255,255,255,0.8);
+      line-height: 1.6;
+    }
+    
+    /* Perfect For Section */
+    .perfect-for-section {
+      background: #f8f9fa;
+    }
+    
+    .party-types {
+      background: white;
+      padding: 60px;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    
+    .party-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    
+    .party-type {
+      padding: 20px;
+      background: linear-gradient(135deg, var(--classic-1), var(--classic-3));
+      border-radius: 20px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--dark-bg);
+      transition: all 0.3s;
+    }
+    
+    .party-type:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 30px rgba(254,188,41,0.3);
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--classic-2) 0%, var(--classic-4) 100%);
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: url('/static/logo-jauneclair.png') center/100px 100px repeat;
+      opacity: 0.05;
+      animation: rotate 60s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .cta-section h2 {
+      font-size: 3.5rem;
+      color: var(--dark-bg);
+      margin-bottom: 20px;
+    }
+    
+    .cta-section p {
+      font-size: 1.3rem;
+      color: var(--dark-bg);
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
     }
     
     /* Footer */
     footer {
-      background: #0B0E1A;
+      background: var(--dark-bg);
       color: white;
-      padding: 40px 0;
+      padding: 60px 0 40px;
       text-align: center;
-      margin-top: 80px;
     }
     
-    @media (max-width: 768px) {
+    footer p {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--classic-3);
+    }
+    
+    /* Responsive */
+    @media (max-width: 968px) {
       .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
       }
       
-      .hero h1 {
+      .hero-text h1 {
+        font-size: 3rem;
+        flex-direction: column;
+      }
+      
+      .hero-image {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      
+      .questions-track {
+        animation-duration: 20s;
+      }
+      
+      .question-card {
+        min-width: 300px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-text h1 .icon {
+        font-size: 3rem;
+      }
+      
+      .section h2 {
         font-size: 2rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+      }
+      
+      .party-types {
+        padding: 40px 20px;
+      }
+      
+      .cta-section h2 {
+        font-size: 2.5rem;
       }
     }
   </style>
@@ -268,17 +698,32 @@
   <header>
     <nav class="container">
       <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
-      <a href="/packs" class="back-link">← All Packs</a>
+      <a href="/packs" class="back-link">
+        <span>←</span>
+        <span>All Packs</span>
+      </a>
     </nav>
   </header>
 
   <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <div>
-          <h1>🍻 Classic Pack - FREE</h1>
-          <p>The perfect starter pack for any party! Our Classic pack features 300+ carefully crafted drinking game questions that work for every group. From hilarious confessions to fun challenges, get the laughs going with timeless questions that never get old.</p>
-          <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">Play Classic Pack Now - Free!</a>
+        <div class="hero-text">
+          <h1>
+            <span class="icon">🍻</span>
+            <span>Classic Pack</span>
+          </h1>
+          <p>The ultimate starter pack for legendary parties! Our Classic collection features 300+ carefully crafted drinking game questions that work for every group. From hilarious confessions to wild challenges, get ready for a night of unforgettable fun - completely FREE!</p>
+          <div class="hero-buttons">
+            <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+              Play Now - It's Free!
+              <span>→</span>
+            </a>
+            <a href="#sample-questions" class="btn btn-secondary">
+              See Sample Questions
+              <span>↓</span>
+            </a>
+          </div>
         </div>
         <img src="/static/classic.png" alt="Classic Pack - Free Drinking Game Questions" class="hero-image">
       </div>
@@ -286,42 +731,45 @@
   </section>
 
   <main>
-    <div class="container">
-      <section class="section">
-        <h2>Why Start with Classic Pack?</h2>
+    <section class="section features-section">
+      <div class="container">
+        <h2>Why Classic Pack Rules</h2>
+        <p class="section-subtitle">Everything you need to turn any gathering into an epic party</p>
         <div class="features-grid">
           <div class="feature-card">
             <div class="feature-icon">🆓</div>
             <h3>100% Free Forever</h3>
-            <p>No hidden costs, no trials, no subscriptions. Play instantly without any payment required.</p>
+            <p>No trials, no tricks, no credit card. Just instant party fun without spending a dime.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">👥</div>
             <h3>Universal Appeal</h3>
-            <p>Questions work for any group - friends, family, coworkers, or new acquaintances.</p>
+            <p>Questions crafted to work with any group - friends, family, coworkers, or new acquaintances.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">🎯</div>
             <h3>300+ Questions</h3>
-            <p>Huge variety ensures every game session feels fresh and unpredictable.</p>
+            <p>Massive variety ensures no two games are the same. Keep the surprises coming all night long!</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">⚡</div>
             <h3>Instant Fun</h3>
-            <p>No setup required - just add players and start the party immediately.</p>
+            <p>Zero setup required. Add players and start laughing within seconds. Party mode: activated!</p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
+    <section id="sample-questions" class="section questions-section">
+      <div class="container">
         <h2>Sample Classic Questions</h2>
-        <p style="text-align: center; margin-bottom: 40px; font-size: 1.1rem; color: #666;">
-          Get a taste of what makes our Classic pack so entertaining with these sample questions:
-        </p>
-        <div class="questions-grid">
+        <p class="section-subtitle">Get a taste of what makes our Classic pack the perfect party starter</p>
+      </div>
+      <div class="questions-carousel">
+        <div class="questions-track">
           <div class="question-card">
             <p>"Tell us about a party that went completely wrong. If you've got nothing to share, 2 penalties."</p>
-            <div class="question-type">Story Challenge</div>
+            <div class="question-type">Story Time</div>
           </div>
           <div class="question-card">
             <p>"Everyone vote: who would be the worst roommate here? The chosen person takes 2 penalties."</p>
@@ -337,71 +785,98 @@
           </div>
           <div class="question-card">
             <p>"Imitate someone here. If nobody guesses in 10 seconds, 2 penalties for you."</p>
-            <div class="question-type">Acting Challenge</div>
+            <div class="question-type">Acting</div>
           </div>
           <div class="question-card">
             <p>"From now on, no saying 'yes' or 'no' until the next round. Get caught, 2 penalties."</p>
             <div class="question-type">Rule Challenge</div>
           </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="how-to-play">
-          <h2>How to Play Classic Pack</h2>
-          <p style="text-align: center; font-size: 1.1rem; color: #666;">
-            Getting started with SIP&GO! Classic is simple - just follow these easy steps:
-          </p>
-          <div class="steps">
-            <div class="step">
-              <div class="step-number">1</div>
-              <h3>Add Players</h3>
-              <p>Enter 2+ player names to personalize the questions</p>
-            </div>
-            <div class="step">
-              <div class="step-number">2</div>
-              <h3>Select Classic Pack</h3>
-              <p>Choose the free Classic pack from the game modes</p>
-            </div>
-            <div class="step">
-              <div class="step-number">3</div>
-              <h3>Start Playing</h3>
-              <p>Read questions aloud and follow the instructions</p>
-            </div>
-            <div class="step">
-              <div class="step-number">4</div>
-              <h3>Keep the Fun Going</h3>
-              <p>Tap for the next question and enjoy endless entertainment</p>
-            </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="question-card">
+            <p>"Tell us about a party that went completely wrong. If you've got nothing to share, 2 penalties."</p>
+            <div class="question-type">Story Time</div>
+          </div>
+          <div class="question-card">
+            <p>"Everyone vote: who would be the worst roommate here? The chosen person takes 2 penalties."</p>
+            <div class="question-type">Group Vote</div>
+          </div>
+          <div class="question-card">
+            <p>"Sing a Disney song like you're on The Voice. Otherwise, 2 penalties. 🎤"</p>
+            <div class="question-type">Performance</div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
+    <section class="section how-to-section">
+      <div class="container">
+        <h2>How to Play Classic Pack</h2>
+        <p class="section-subtitle">Get your party started in 4 simple steps</p>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Add Players</h3>
+            <p>Enter 2 or more player names to personalize the questions for your group</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Select Classic</h3>
+            <p>Choose the free Classic pack from the colorful game mode carousel</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Start Playing</h3>
+            <p>Read questions aloud and follow the fun instructions or penalties</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Keep Going!</h3>
+            <p>Tap for the next question and watch your party become legendary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section perfect-for-section">
+      <div class="container">
         <h2>Perfect For Any Party</h2>
-        <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
-          <p style="font-size: 1.2rem; margin-bottom: 30px;">
-            The Classic pack works amazingly for all types of gatherings:
-          </p>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
-            <div>🎉 House Parties</div>
-            <div>🍻 Pub Nights</div>
-            <div>🏠 Game Nights</div>
-            <div>🎂 Birthday Parties</div>
-            <div>🎓 College Parties</div>
-            <div>🌴 Vacation Fun</div>
-          </div>
-          <div style="margin-top: 30px;">
-            <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">Start Playing Classic Pack Free!</a>
+        <p class="section-subtitle">Classic pack brings the fun to every type of gathering</p>
+        <div class="party-types">
+          <div class="party-grid">
+            <div class="party-type">🎉 House Parties</div>
+            <div class="party-type">🍻 Pub Nights</div>
+            <div class="party-type">🏠 Game Nights</div>
+            <div class="party-type">🎂 Birthday Parties</div>
+            <div class="party-type">🎓 College Parties</div>
+            <div class="party-type">🌴 Vacation Fun</div>
+            <div class="party-type">🏖️ Beach Parties</div>
+            <div class="party-type">🎄 Holiday Gatherings</div>
+            <div class="party-type">🏕️ Camping Trips</div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2>Ready to Party? 🎉</h2>
+        <p>Join thousands who've made SIP&GO! Classic their go-to party game. Start playing in seconds!</p>
+        <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+          Start Playing Classic Pack Free!
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer>
     <div class="container">
       <p>&copy; 2024 SIP&GO! - Classic Pack: Free Forever, Fun Always!</p>
+      <div class="footer-links">
+        <a href="/drink-responsibly">Drink Responsibly</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/">Home</a>
+      </div>
     </div>
   </footer>
 </body>

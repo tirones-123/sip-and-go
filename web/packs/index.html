@@ -26,11 +26,33 @@
       box-sizing: border-box;
     }
     
+    :root {
+      /* Classic palette from the app */
+      --classic-1: #fed475;
+      --classic-2: #fec443;
+      --classic-3: #febc29;
+      --classic-4: #feb410;
+      --classic-5: #fe8d10;
+      --classic-6: #fe895c;
+      
+      /* Pack colors */
+      --pack-classic: #F3C53F;
+      --pack-girls: #E84D8A;
+      --pack-guys: #A54429;
+      --pack-spicy: #660000;
+      --pack-couples: #9C5BD1;
+      
+      /* Dark theme */
+      --dark-bg: #0B0E1A;
+      --dark-bg-light: #1a1d29;
+    }
+    
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       line-height: 1.6;
       color: #333;
-      background: #f8f9fa;
+      background: var(--dark-bg);
+      overflow-x: hidden;
     }
     
     .container {
@@ -41,9 +63,15 @@
     
     /* Header */
     header {
-      background: #0B0E1A;
+      background: rgba(11, 14, 26, 0.95);
+      backdrop-filter: blur(10px);
       color: white;
       padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
     }
     
     nav {
@@ -53,149 +81,482 @@
     }
     
     .logo {
-      height: 40px;
+      height: 50px;
     }
     
     .back-link {
-      color: #ffd700;
+      color: var(--classic-3);
       text-decoration: none;
-      font-weight: 500;
+      font-weight: 600;
+      transition: all 0.3s;
+      padding: 10px 20px;
+      border: 2px solid var(--classic-3);
+      border-radius: 25px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .back-link:hover {
+      background: var(--classic-3);
+      color: var(--dark-bg);
+      transform: translateX(-5px);
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: 140px 0 80px;
+      background: linear-gradient(135deg, var(--classic-1) 0%, var(--classic-3) 50%, var(--classic-5) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: url('/static/logo-jauneclair.png') center/150px 150px repeat;
+      opacity: 0.03;
+      animation: rotate 60s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: var(--dark-bg);
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      animation: fadeInUp 0.8s ease;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .hero p {
+      font-size: 1.3rem;
+      color: var(--dark-bg);
+      max-width: 700px;
+      margin: 0 auto 40px;
+      opacity: 0.9;
+      animation: fadeInUp 0.8s ease 0.2s both;
+    }
+    
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 40px;
+      animation: fadeInUp 0.8s ease 0.4s both;
+    }
+    
+    .stat {
+      text-align: center;
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--dark-bg);
+      display: block;
+    }
+    
+    .stat-label {
+      font-size: 1.1rem;
+      color: var(--dark-bg);
+      opacity: 0.8;
     }
     
     /* Main Content */
     main {
-      padding: 60px 0;
+      background: #f8f9fa;
+      position: relative;
     }
     
-    .page-header {
-      text-align: center;
-      margin-bottom: 60px;
+    .packs-section {
+      padding: 100px 0;
+      position: relative;
     }
     
-    .page-header h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      color: #0B0E1A;
-    }
-    
-    .page-header p {
-      font-size: 1.2rem;
-      color: #666;
-      max-width: 600px;
-      margin: 0 auto;
+    .packs-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      background: linear-gradient(to bottom, var(--classic-5), transparent);
+      opacity: 0.1;
     }
     
     .packs-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      gap: 40px;
+      gap: 60px;
+      position: relative;
+      z-index: 2;
     }
     
     .pack-card {
       background: white;
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      transition: all 0.3s;
       text-decoration: none;
       color: inherit;
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      min-height: 400px;
+    }
+    
+    .pack-card:nth-child(even) {
+      grid-template-columns: 1fr 1fr;
+      direction: rtl;
+    }
+    
+    .pack-card:nth-child(even) > * {
+      direction: ltr;
     }
     
     .pack-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-      text-decoration: none;
-      color: inherit;
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
     }
     
-    .pack-hero {
+    .pack-image {
+      height: 100%;
+      min-height: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .pack-image img {
       width: 100%;
-      height: 200px;
+      height: 100%;
       object-fit: cover;
-      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+    
+    .pack-card:hover .pack-image img {
+      transform: scale(1.1);
+    }
+    
+    .pack-content {
+      padding: 60px;
+    }
+    
+    .pack-icon {
+      font-size: 4rem;
       margin-bottom: 20px;
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
     
     .pack-title {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: #0B0E1A;
+      font-size: 2.5rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      color: var(--dark-bg);
     }
+    
+    .pack-card.classic .pack-title { color: var(--pack-classic); }
+    .pack-card.spicy .pack-title { color: var(--pack-spicy); }
+    .pack-card.guys .pack-title { color: var(--pack-guys); }
+    .pack-card.girls .pack-title { color: var(--pack-girls); }
+    .pack-card.couples .pack-title { color: var(--pack-couples); }
     
     .pack-description {
       color: #666;
-      margin-bottom: 20px;
-      line-height: 1.6;
+      margin-bottom: 30px;
+      line-height: 1.8;
+      font-size: 1.1rem;
     }
     
-    .pack-stats {
+    .pack-features {
       display: flex;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      font-size: 0.9rem;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+    
+    .pack-feature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       color: #888;
+      font-size: 0.95rem;
+    }
+    
+    .pack-feature::before {
+      content: '✓';
+      color: var(--classic-3);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    
+    .pack-cta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
     
     .pack-price {
       display: inline-block;
-      padding: 8px 16px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 0.9rem;
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
     
     .free {
-      background: #28a745;
+      background: linear-gradient(135deg, var(--classic-3), var(--classic-5));
       color: white;
     }
     
     .premium {
-      background: #ffd700;
-      color: #0B0E1A;
+      background: var(--dark-bg);
+      color: white;
     }
     
-    .sample-questions {
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
+    .play-btn {
+      padding: 12px 30px;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      border: 2px solid var(--dark-bg);
+      color: var(--dark-bg);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
     }
     
-    .sample-questions h4 {
-      margin-bottom: 10px;
-      color: #0B0E1A;
+    .play-btn:hover {
+      background: var(--dark-bg);
+      color: white;
+      transform: translateX(5px);
     }
     
-    .sample-questions ul {
-      list-style: none;
-      padding: 0;
+    /* Sample Questions Carousel */
+    .samples {
+      background: #fafafa;
+      padding: 20px 30px;
+      border-radius: 20px;
+      margin-top: 30px;
     }
     
-    .sample-questions li {
-      background: #f8f9fa;
-      padding: 10px;
-      margin-bottom: 5px;
-      border-radius: 8px;
-      font-size: 0.9rem;
+    .samples h4 {
+      margin-bottom: 15px;
+      color: var(--dark-bg);
+      font-size: 1.1rem;
+    }
+    
+    .sample-list {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+    
+    .sample-question {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 15px;
+      font-size: 0.95rem;
+      white-space: nowrap;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      flex-shrink: 0;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      background: var(--dark-bg);
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, var(--classic-3) 0%, transparent 70%);
+      opacity: 0.1;
+    }
+    
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .cta-section h2 {
+      font-size: 3rem;
+      color: white;
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+    
+    .cta-section p {
+      font-size: 1.3rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 18px 40px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .btn-primary {
+      background: var(--classic-3);
+      color: var(--dark-bg);
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(254,188,41,0.3);
     }
     
     /* Footer */
     footer {
-      background: #0B0E1A;
+      background: var(--dark-bg);
       color: white;
-      padding: 40px 0;
+      padding: 60px 0 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .footer-content {
       text-align: center;
-      margin-top: 80px;
+    }
+    
+    .footer-content p {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--classic-3);
+    }
+    
+    /* Responsive */
+    @media (max-width: 968px) {
+      .pack-card,
+      .pack-card:nth-child(even) {
+        grid-template-columns: 1fr;
+        direction: ltr;
+      }
+      
+      .pack-image {
+        min-height: 300px;
+      }
+      
+      .pack-content {
+        padding: 40px;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .stats {
+        gap: 30px;
+      }
+      
+      .stat-number {
+        font-size: 2.5rem;
+      }
     }
     
     @media (max-width: 768px) {
-      .page-header h1 {
+      .hero h1 {
         font-size: 2rem;
       }
       
-      .packs-grid {
-        grid-template-columns: 1fr;
+      .pack-title {
+        font-size: 2rem;
+      }
+      
+      .pack-content {
+        padding: 30px;
+      }
+      
+      .stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn {
+        width: 100%;
+        max-width: 300px;
       }
     }
   </style>
@@ -252,119 +613,201 @@
   <header>
     <nav class="container">
       <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
-      <a href="/" class="back-link">← Back to Home</a>
+      <a href="/" class="back-link">
+        <span>←</span>
+        <span>Back to Home</span>
+      </a>
     </nav>
   </header>
 
-  <main>
-    <div class="container">
-      <div class="page-header">
-        <h1>SIP&GO! Drinking Game Packs</h1>
-        <p>Choose from 5 unique collections of drinking game questions, each designed for different party vibes and group dynamics. Start with our free Classic pack or explore themed collections for your perfect party experience.</p>
-      </div>
-
-      <div class="packs-grid">
-        <a href="/packs/classic" class="pack-card">
-          <img src="/static/classic.png" alt="Classic Pack - Free Drinking Game Questions" class="pack-hero">
-          <h2 class="pack-title">🍻 Classic Pack</h2>
-          <p class="pack-description">The perfect starter pack for any party! Filled with universal drinking game questions that work for every group. Get the laughs going with classics that never get old.</p>
-          <div class="pack-stats">
-            <span>300+ Questions</span>
-            <span>Universal Appeal</span>
-          </div>
-          <span class="pack-price free">FREE</span>
-          <div class="sample-questions">
-            <h4>Sample Questions:</h4>
-            <ul>
-              <li>"Tell us about a party that went completely wrong"</li>
-              <li>"Everyone vote: who would be the worst roommate?"</li>
-              <li>"Sing a Disney song like you're on The Voice"</li>
-            </ul>
-          </div>
-        </a>
-
-        <a href="/packs/spicy" class="pack-card">
-          <img src="/static/spicy.png" alt="Spicy Pack - Daring Drinking Game Questions" class="pack-hero">
-          <h2 class="pack-title">🌶️ Spicy Pack</h2>
-          <p class="pack-description">Turn up the heat with daring challenges and bold questions! Perfect for close friends who aren't afraid to push boundaries and have some wild fun.</p>
-          <div class="pack-stats">
-            <span>400+ Questions</span>
-            <span>Adults Only</span>
-          </div>
-          <span class="pack-price premium">Premium</span>
-          <div class="sample-questions">
-            <h4>Sample Questions:</h4>
-            <ul>
-              <li>"Most embarrassing place you've been caught..."</li>
-              <li>"Truth or dare: reveal your wildest fantasy"</li>
-              <li>"Rate everyone's kissing skills (if you know)"</li>
-            </ul>
-          </div>
-        </a>
-
-        <a href="/packs/guys" class="pack-card">
-          <img src="/static/guys.png" alt="Guys Night Pack - Bachelor Party Drinking Games" class="pack-hero">
-          <h2 class="pack-title">👨 Guys Night Pack</h2>
-          <p class="pack-description">Specially crafted questions for the bros! Perfect for bachelor parties, guys' nights out, or any time the fellas want to bond over some beers and laughs.</p>
-          <div class="pack-stats">
-            <span>300+ Questions</span>
-            <span>Bro-Focused</span>
-          </div>
-          <span class="pack-price premium">Premium</span>
-          <div class="sample-questions">
-            <h4>Sample Questions:</h4>
-            <ul>
-              <li>"Who's the worst wingman in the group?"</li>
-              <li>"Most embarrassing gym moment story"</li>
-              <li>"Rate each other's dating game skills"</li>
-            </ul>
-          </div>
-        </a>
-
-        <a href="/packs/girls" class="pack-card">
-          <img src="/static/girls.png" alt="Girls Night Pack - Bachelorette Party Drinking Games" class="pack-hero">
-          <h2 class="pack-title">👩 Girls Night Pack</h2>
-          <p class="pack-description">Fun questions designed for the girls! Perfect for bachelorette parties, girls' nights in, or any time the ladies want to dish and have some fun together.</p>
-          <div class="pack-stats">
-            <span>350+ Questions</span>
-            <span>Girl Power</span>
-          </div>
-          <span class="pack-price premium">Premium</span>
-          <div class="sample-questions">
-            <h4>Sample Questions:</h4>
-            <ul>
-              <li>"Spill the tea on your worst date ever"</li>
-              <li>"Who has the best makeup skills?"</li>
-              <li>"Most dramatic friend breakup story"</li>
-            </ul>
-          </div>
-        </a>
-
-        <a href="/packs/couples" class="pack-card">
-          <img src="/static/couples.png" alt="Couples Pack - Romantic Drinking Game Questions" class="pack-hero">
-          <h2 class="pack-title">💕 Couples Pack</h2>
-          <p class="pack-description">Romantic and playful questions perfect for couples looking to spice up their date nights or double dates. Deepen your connection while having fun!</p>
-          <div class="pack-stats">
-            <span>250+ Questions</span>
-            <span>Romance & Fun</span>
-          </div>
-          <span class="pack-price premium">Premium</span>
-          <div class="sample-questions">
-            <h4>Sample Questions:</h4>
-            <ul>
-              <li>"What's your partner's secret talent?"</li>
-              <li>"Most romantic thing they've done for you"</li>
-              <li>"Recreate your first kiss (or drink!)"</li>
-            </ul>
-          </div>
-        </a>
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Choose Your Perfect Party Pack</h1>
+      <p>From mild to wild, we've got the perfect drinking game questions for every type of party. Start with our free Classic pack or unlock premium themes for specialized fun!</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-number">1500+</span>
+          <span class="stat-label">Total Questions</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Unique Packs</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24</span>
+          <span class="stat-label">Languages</span>
+        </div>
       </div>
     </div>
+  </section>
+
+  <main>
+    <section class="packs-section">
+      <div class="container">
+        <div class="packs-grid">
+          <!-- Classic Pack -->
+          <a href="/packs/classic" class="pack-card classic">
+            <div class="pack-image">
+              <img src="/static/classic.png" alt="Classic Pack - Free Drinking Game Questions">
+            </div>
+            <div class="pack-content">
+              <div class="pack-icon">🍻</div>
+              <h2 class="pack-title">Classic Pack</h2>
+              <p class="pack-description">The perfect starter pack for any party! Universal drinking game questions that work for every group. Get everyone laughing with timeless classics that never get old.</p>
+              <div class="pack-features">
+                <div class="pack-feature">300+ Questions</div>
+                <div class="pack-feature">All Groups</div>
+              </div>
+              <div class="pack-cta">
+                <span class="pack-price free">FREE FOREVER</span>
+                <span class="play-btn">Play Now →</span>
+              </div>
+              <div class="samples">
+                <h4>Sample Questions:</h4>
+                <div class="sample-list">
+                  <div class="sample-question">"Most embarrassing party story"</div>
+                  <div class="sample-question">"Vote: worst dancer here"</div>
+                  <div class="sample-question">"Sing your favorite song opera style"</div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Spicy Pack -->
+          <a href="/packs/spicy" class="pack-card spicy">
+            <div class="pack-image">
+              <img src="/static/spicy.png" alt="Spicy Pack - Daring Drinking Game Questions">
+            </div>
+            <div class="pack-content">
+              <div class="pack-icon">🌶️</div>
+              <h2 class="pack-title">Spicy Pack</h2>
+              <p class="pack-description">Turn up the heat with daring challenges! Perfect for close friends who aren't afraid to push boundaries and create legendary party stories.</p>
+              <div class="pack-features">
+                <div class="pack-feature">400+ Questions</div>
+                <div class="pack-feature">Adults Only</div>
+              </div>
+              <div class="pack-cta">
+                <span class="pack-price premium">PREMIUM</span>
+                <span class="play-btn">Unlock Pack →</span>
+              </div>
+              <div class="samples">
+                <h4>Sample Questions:</h4>
+                <div class="sample-list">
+                  <div class="sample-question">"Wildest place you've hooked up"</div>
+                  <div class="sample-question">"Body count truth or drink"</div>
+                  <div class="sample-question">"Rate everyone's kissing potential"</div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Guys Pack -->
+          <a href="/packs/guys" class="pack-card guys">
+            <div class="pack-image">
+              <img src="/static/guys.png" alt="Guys Night Pack - Bachelor Party Drinking Games">
+            </div>
+            <div class="pack-content">
+              <div class="pack-icon">👨</div>
+              <h2 class="pack-title">Guys Night Pack</h2>
+              <p class="pack-description">Bros being bros! Specially crafted for the boys - perfect for bachelor parties, poker nights, and legendary guy gatherings.</p>
+              <div class="pack-features">
+                <div class="pack-feature">300+ Questions</div>
+                <div class="pack-feature">Bro-Focused</div>
+              </div>
+              <div class="pack-cta">
+                <span class="pack-price premium">PREMIUM</span>
+                <span class="play-btn">Unlock Pack →</span>
+              </div>
+              <div class="samples">
+                <h4>Sample Questions:</h4>
+                <div class="sample-list">
+                  <div class="sample-question">"Worst wingman fail story"</div>
+                  <div class="sample-question">"Most embarrassing gym moment"</div>
+                  <div class="sample-question">"Rate each other's game"</div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Girls Pack -->
+          <a href="/packs/girls" class="pack-card girls">
+            <div class="pack-image">
+              <img src="/static/girls.png" alt="Girls Night Pack - Bachelorette Party Drinking Games">
+            </div>
+            <div class="pack-content">
+              <div class="pack-icon">👩</div>
+              <h2 class="pack-title">Girls Night Pack</h2>
+              <p class="pack-description">Ladies, this one's for you! Fun, flirty questions perfect for bachelorette parties, wine nights, and unforgettable girl time.</p>
+              <div class="pack-features">
+                <div class="pack-feature">350+ Questions</div>
+                <div class="pack-feature">Girl Power</div>
+              </div>
+              <div class="pack-cta">
+                <span class="pack-price premium">PREMIUM</span>
+                <span class="play-btn">Unlock Pack →</span>
+              </div>
+              <div class="samples">
+                <h4>Sample Questions:</h4>
+                <div class="sample-list">
+                  <div class="sample-question">"Spill the tea on worst date"</div>
+                  <div class="sample-question">"Who has the best style?"</div>
+                  <div class="sample-question">"Most dramatic friend story"</div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <!-- Couples Pack -->
+          <a href="/packs/couples" class="pack-card couples">
+            <div class="pack-image">
+              <img src="/static/couples.png" alt="Couples Pack - Romantic Drinking Game Questions">
+            </div>
+            <div class="pack-content">
+              <div class="pack-icon">💕</div>
+              <h2 class="pack-title">Couples Pack</h2>
+              <p class="pack-description">Spice up date night! Romantic and playful questions designed to bring couples closer with fun challenges and sweet dares.</p>
+              <div class="pack-features">
+                <div class="pack-feature">250+ Questions</div>
+                <div class="pack-feature">Romance & Fun</div>
+              </div>
+              <div class="pack-cta">
+                <span class="pack-price premium">PREMIUM</span>
+                <span class="play-btn">Unlock Pack →</span>
+              </div>
+              <div class="samples">
+                <h4>Sample Questions:</h4>
+                <div class="sample-list">
+                  <div class="sample-question">"First thing you noticed about them"</div>
+                  <div class="sample-question">"Most romantic gesture received"</div>
+                  <div class="sample-question">"Recreate your first kiss"</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2>Ready to Level Up Your Party?</h2>
+        <p>Start with our free Classic pack or unlock all premium packs for endless party fun!</p>
+        <div class="cta-buttons">
+          <a href="/?app=true" class="btn btn-primary">Start Playing Free</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2024 SIP&GO! - Start with our free Classic pack, upgrade for premium themes!</p>
+    <div class="container footer-content">
+      <p>&copy; 2024 SIP&GO! - The Ultimate Drinking Game App</p>
+      <div class="footer-links">
+        <a href="/drink-responsibly">Drink Responsibly</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/contact">Contact</a>
+      </div>
     </div>
   </footer>
 </body>
