@@ -4,9 +4,7 @@
 
 SIP&GO! est une application mobile de jeu à boire ultime pour vos soirées. L'application propose:
 - 5 packs thématiques avec environ 1500 questions/défis au total
-- Mode gratuit (pack Classic) et mode premium (tous les packs)
-- Support multilingue (français et anglais)
-- Conception offline-first
+- Mode gratuit tous les packs
 
 ## Stack Technique
 

@@ -10,3 +10,6 @@
 | Press / Media                 | Link-bait & PR           | `/press`                      | Downloadable media kit (images / PDFs).              |
 | Install App Tutorial          | Boost PWA installs       | `/install-app`                | Static screenshots, OS-specific steps.               |
 | Sitemap & robots.txt          | Crawl control            | `/sitemap.xml`, `/robots.txt` | Auto-generated in CI/CD.                             |
+
+
+DIRECTIVE 

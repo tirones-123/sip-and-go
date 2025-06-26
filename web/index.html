@@ -41,7 +41,18 @@
       // Check if user explicitly wants the app
       const wantsApp = window.location.search.includes('app=true');
       
-      // If bot or from search engine (and not explicitly wanting app), go to landing page
+      // Check if dev mode is enabled (bypass all redirections)
+      const isDevMode = window.location.search.includes('dev=true') || 
+                       window.location.hostname === 'localhost' || 
+                       window.location.hostname === '127.0.0.1' ||
+                       window.location.search.includes('noredirect=true');
+      
+      // Skip redirection in dev mode
+      if (isDevMode) {
+        return; // Let the page load normally
+      }
+      
+      // If bot or from search engine (and not explicitly wanting app), go to landing page  
       if ((isBot || fromSearchEngine) && !wantsApp) {
         window.location.replace('/landing.html');
       } else {
