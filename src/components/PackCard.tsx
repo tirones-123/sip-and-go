@@ -95,7 +95,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
         
         {/* Hero Image Container - aligned to bottom */}
         <View
-          style={{ flex: 1, width: '100%', justifyContent: 'flex-end' }}
+          style={{ width: '100%', aspectRatio: 4 / 3, justifyContent: 'flex-end', flexShrink: 1 }}
         >
           {/* Image takes full width of this container, resizeMode contain will handle aspect ratio */}
           <Image
