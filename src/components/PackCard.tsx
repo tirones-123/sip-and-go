@@ -84,20 +84,24 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
       {/* Inner container with clipping */}
       <View style={[tw`rounded-3xl overflow-hidden`, { flex: 1 }]}>
 
-      {/* Top Part */}
-      <View
-        style={[tw`relative items-center pt-4`, { backgroundColor: pack.color, flex: 3 }]}
-      >
-        {/* Title Pill */}
-        <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
+      {/* Main container with relative positioning */}
+      <View style={{ flex: 1, backgroundColor: pack.color }}>
+        {/* Title Pill - Positioned absolutely */}
+        <View style={[
+          tw`px-6 py-2 rounded-full shadow-md`, 
+          { 
+            backgroundColor: darkAccentColor,
+            position: 'absolute',
+            top: 20,
+            alignSelf: 'center',
+            zIndex: 10
+          }
+        ]}>
           <Text style={[tw`font-bold text-base text-center text-white`, { fontFamily: 'Montserrat_800ExtraBold' }]}>{packTitle}</Text>
         </View>
         
-        {/* Hero Image Container - aligned to bottom */}
-        <View
-          style={{ flex: 1, width: '100%', justifyContent: 'flex-end' }}
-        >
-          {/* Image takes full width of this container, resizeMode contain will handle aspect ratio */}
+        {/* Hero Image Container - Takes most of the space */}
+        <View style={{ flex: 1, justifyContent: 'center', paddingTop: 60 }}>
           <Image
             source={heroImageSource}
             style={{ width: '100%', height: '100%' }}
@@ -106,11 +110,19 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
         </View>
       </View>
       
-      {/* Bottom Part */}
+      {/* Bottom Part - Overlapping the image */}
       <View
         style={[
-          tw`p-5 items-center rounded-b-3xl`,
-          { backgroundColor: lightSecondaryBgColor, flex: 2 },
+          tw`px-6 py-5 items-center`,
+          { 
+            backgroundColor: lightSecondaryBgColor,
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            borderBottomLeftRadius: 24,
+            borderBottomRightRadius: 24,
+          },
         ]}
       >
         <Text

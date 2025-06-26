@@ -127,7 +127,7 @@ const ModeCarousel: React.FC = () => {
 
   // Calculate dynamic card height based on available space
   const availableHeight = height - headerRenderedHeight - footerRenderedHeight - VERTICAL_SPACING;
-  const cardHeight = Math.min(Math.max(availableHeight * 0.9, 400), 600); // 90% of available space, min 400, max 600
+  const cardHeight = Math.min(Math.max(availableHeight * 0.95, 450), 650); // 95% of available space, min 450, max 650
 
   return (
     <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
