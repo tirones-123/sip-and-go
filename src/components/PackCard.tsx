@@ -86,7 +86,7 @@ const PackCard: React.FC<PackCardProps> = ({ pack, onPlay, itemWidth, heroImageS
 
       {/* Top Part */}
       <View
-        style={[tw`relative items-center pt-5`, { backgroundColor: pack.color }]}
+        style={[tw`relative items-center pt-5`, { backgroundColor: pack.color, flexShrink: 1 }]}
       >
         {/* Title Pill */}
         <View style={[tw`px-6 py-2 rounded-full mb-3 shadow-md`, { backgroundColor: darkAccentColor }]}>
