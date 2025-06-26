@@ -1,0 +1,79 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# ────────────────────────────────────────────────────────────────
+#  .cursorrules  ─  SEO standards for the SIP&GO! public website
+#  Scope ⟶ Markdown/MDX, TSX/JSX, HTML under /apps/web
+#  Goal  ⟶ Ship content that’s index-ready, fast, and multilingual-safe
+# ----------------------------------------------------------------
+
+## ── FILE-NAMING & URL STRUCTURE ────────────────────────────────
+- Slugs must be lower-case, kebab-case, ASCII only, no stop-words
+  (e.g. `/drinking-games-guide`, **not** `/Guide_Jeux_à_Boire`).
+- Place language prefix first: `/en/drinking-games-guide`, `/fr/guide-jeux-a-boire`.
+- When generating a file, include the locale in the filename:  
+  `drinking-games-guide.en.mdx`, `drinking-games-guide.fr.mdx`.
+
+## ── META TAGS ──────────────────────────────────────────────────
+- `<title>` : **50-60 chars**; primary keyword near the start. :contentReference[oaicite:0]{index=0}
+- `<meta name="description">` : **145-160 chars**, written as a call-to-action. :contentReference[oaicite:1]{index=1}
+- Always add canonical: `<link rel="canonical" href="FULL_HTTPS_URL" />`.
+- Add basic Open Graph / Twitter tags (title, description, og:image).
+
+## ── HEADINGS & CONTENT ────────────────────────────────────────
+- Exactly one **H1** per page; mirrors the `<title>` but not identical.
+- Nest headings logically (H2 → H3…). No skipped levels.
+- Primary keyword must appear:
+  1. In H1  
+  2. In the first 100 words  
+  3. In one H2
+- Minimum body length: **600 words**; aim for 1 000-2 000 for guides.
+- End every long-form page with a short “Key takeaways” list.
+
+## ── IMAGES ────────────────────────────────────────────────────
+- Each `<img>` or `<Image>` must have descriptive `alt` text; include the keyword once where natural.
+- Use `webp` or `avif`, max width 1920 px.
+- Import through Next.js `<Image>` with `priority` only for LCP element.
+
+## ── LINKS ─────────────────────────────────────────────────────
+- Internal: at least **2 relevant internal links** using descriptive anchor text.
+- External: max **3**, point to high-authority domains (.gov, .edu, WHO, etc.).
+- Never orphan a page (must be reachable in ≤ 3 clicks).
+
+## ── STRUCTURED DATA (JSON-LD) ────────────────────────────────
+- Guides & blog posts → `Article`.
+- Pack pages → `ItemList` + `Product` (one per pack).
+- FAQ sections → `FAQPage` (but **don’t rely on rich result visibility**). :contentReference[oaicite:2]{index=2}
+- Responsibility page → `MedicalWebPage`.
+- Legal pages → `LegalService`.
+- Insert JSON-LD via `<script type="application/ld+json">` in MDX.
+
+## ── MULTILINGUAL / HREFLANG ───────────────────────────────────
+- For every page, generate `<link rel="alternate" hreflang="x-y" …>` for **all** supported locales plus `x-default`.
+- Keep content semantically equivalent across locales; update all translations together.
+
+## ── PERFORMANCE & TECHNICAL ───────────────────────────────────
+- Static-render (SSG) by default; fallback to ISR > 10 min when needed.
+- LCP ≤ 2.5 s, CLS ≤ 0.1, INP ≤ 200 ms (measure via `next/script` web-vitals listener).
+- Preload hero image and critical fonts (swap).
+
+## ── ROBOTS & SITEMAP ──────────────────────────────────────────
+- Auto-append new URLs to `/public/sitemap.xml`; ping Search Console in CI.
+- Block all non-production preview or storybook URLs with `robots.txt`:
+  `Disallow: /preview/`  `Disallow: /storybook/`.
+- Add `noindex` to beta/test pages.
+
+## ── QUALITY & REVIEW ──────────────────────────────────────────
+- Run `npm run lint:seo` (axe + @next/seo-checker) before commit; fail CI on error.
+- No lorem ipsum, placeholder text, or empty alt attributes.
+- For each PR, append a checklist comment confirming:
+  - [ ] Title & meta description within limits  
+  - [ ] Canonical set  
+  - [ ] Hreflang tags generated  
+  - [ ] Images optimized & alt text present  
+  - [ ] Internal links added  
+  - [ ] JSON-LD validated with Rich Results Test
+
+# End of file

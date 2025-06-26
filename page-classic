@@ -1,0 +1,12 @@
+| **Page**                      | **Purpose**              | **Suggested Slug**            | **Key Elements**<br/>(text + static images)          |
+| ----------------------------- | ------------------------ | ----------------------------- | ---------------------------------------------------- |
+| Home / Landing                | Core keyword + brand     | `/`                           | Clear H1, value prop text, screenshots, strong CTA.  |
+| Pack Pages (×5)               | Long-tail traffic        | `/packs/<pack-slug>`          | Pack intro, 8 sample challenges, ItemList schema.    |
+| Blog & Guides                 | Top-funnel, backlinks    | `/blog` + `/blog/<slug>`      | MDX SSG articles, internal linking grid.             |
+| Generic “Drinking Games” Page | Semantic hub             | `/drinking-games`             | Definitions, history, static images, links to packs. |
+| Features                      | Showcase advantages      | `/features`                   | Sections: free, offline, multilingual, etc.          |
+| Responsibility                | E-E-A-T & compliance     | `/drink-responsibly`          | Serious content, prevention links, images.           |
+| Terms / Privacy               | Legal & store compliance | `/terms`, `/privacy`          | Legal text (Markdown/HTML), LegalService schema.     |
+| Press / Media                 | Link-bait & PR           | `/press`                      | Downloadable media kit (images / PDFs).              |
+| Install App Tutorial          | Boost PWA installs       | `/install-app`                | Static screenshots, OS-specific steps.               |
+| Sitemap & robots.txt          | Crawl control            | `/sitemap.xml`, `/robots.txt` | Auto-generated in CI/CD.                             |

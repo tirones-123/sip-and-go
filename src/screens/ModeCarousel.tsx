@@ -37,11 +37,7 @@ const packImages: Record<string, any> = {
 
 const FALLBACK_COLOR_DARK = '#0B0E1A'; // For footer
 const TINT_AMOUNT = 0.5; // 40% towards white, making it darker than before
-const LOGO_HEIGHT = 80; // Reduced from 100
 const HEADER_ELEMENT_TOP_PADDING = 10; // Padding from the safe area top inset
-const FOOTER_MARGIN_BOTTOM = 20; // Reduced from 24
-const FOOTER_ESTIMATED_HEIGHT = 80; // Reduced from 90
-const VERTICAL_SPACING = 10; // Reduced from 20
 
 /**
  * ModeCarousel screen - Pack selection carousel
@@ -52,7 +48,6 @@ const ModeCarousel: React.FC = () => {
   const { width, height } = useWindowDimensions();
   const insets = useSafeAreaInsets(); // Get safe area insets
   
-  const [footerHeight, setFooterHeight] = React.useState(0);
   const flatListRef = useRef<FlatList<Pack>>(null);
   const scrollX = useSharedValue(0);
 
@@ -61,7 +56,10 @@ const ModeCarousel: React.FC = () => {
 
   // Carousel layout constants
   const ITEM_SPACING = 16; // space between cards
-  const ITEM_WIDTH = Math.min(width * 0.9, 360); // Increased from 0.85 to 0.9 and max from 320 to 360
+  const ITEM_WIDTH = Math.min(width * 0.85, 320); // Responsive width with max limit
+
+  // Calculate responsive padding based on screen height
+  const RESPONSIVE_PADDING_TOP = Math.max(height * 0.15, 80); // 15% of screen height, minimum 80px
 
   // Snap interval (integer) must include item width + spacing between items
   const SNAP_INTERVAL = Math.round(ITEM_WIDTH + ITEM_SPACING);
@@ -119,16 +117,6 @@ const ModeCarousel: React.FC = () => {
     };
   });
 
-  // Calculate dynamic dimensions to avoid overlap with header/footer
-  const headerRenderedHeight = insets.top + HEADER_ELEMENT_TOP_PADDING + LOGO_HEIGHT;
-  const footerRenderedHeight = (footerHeight > 0 
-    ? footerHeight
-    : FOOTER_ESTIMATED_HEIGHT) + insets.bottom + FOOTER_MARGIN_BOTTOM;
-
-  // Calculate dynamic card height based on available space
-  const availableHeight = height - headerRenderedHeight - footerRenderedHeight - VERTICAL_SPACING;
-  const cardHeight = Math.min(Math.max(availableHeight * 0.95, 450), 650); // 95% of available space, min 450, max 650
-
   return (
     <Animated.View style={[tw`flex-1`, animatedBgStyle]}>
       {/* Custom top elements: Back button and Logo */}
@@ -144,12 +132,12 @@ const ModeCarousel: React.FC = () => {
       >
         <Image
           source={require('../../assets/logo-jauneclair.png')}
-          style={{ height: LOGO_HEIGHT, resizeMode: 'contain' }}
+          style={{ height: 100, resizeMode: 'contain' }}
         />
       </View>
 
       {/* Carousel Container */}
-      <View style={{ flex: 1, paddingTop: headerRenderedHeight, paddingBottom: footerRenderedHeight }}>
+      <View style={{ flex: 1 }}>
         <Animated.FlatList
           ref={draggableRef}
           data={packs}
@@ -161,12 +149,13 @@ const ModeCarousel: React.FC = () => {
           snapToAlignment="start"
           decelerationRate="fast"
           contentContainerStyle={{
-            paddingHorizontal: sidePadding,
-            alignItems: 'center',
+            paddingHorizontal: (width - ITEM_WIDTH) / 2,
+            paddingTop: RESPONSIVE_PADDING_TOP,
+            paddingBottom: 40,
           }}
           onScroll={scrollHandler}
           scrollEventThrottle={16}
-          style={{ flexGrow: 1 }}
+          style={{ flex: 1 }}
           renderItem={({ item, index }) => (
             <View style={{
               marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
@@ -177,7 +166,6 @@ const ModeCarousel: React.FC = () => {
                 onPlay={handlePlay}
                 itemWidth={ITEM_WIDTH}
                 heroImageSource={packImages[item.id]}
-                cardHeight={cardHeight}
               />
             </View>
           )}
@@ -186,20 +174,9 @@ const ModeCarousel: React.FC = () => {
       
       {/* Footer - Back arrow + Player count */}
       <View
-        onLayout={(e) => {
-          if (e.nativeEvent.layout.height > 0 && footerHeight === 0) {
-            setFooterHeight(e.nativeEvent.layout.height);
-          }
-        }}
         style={[
-          tw`mx-4 px-6 py-4 rounded-2xl shadow-lg`,
+          tw`mx-4 mb-6 px-6 py-4 rounded-2xl shadow-lg`,
           {
-            position: 'absolute',
-            bottom: insets.bottom,
-            marginHorizontal: 16,
-            marginBottom: FOOTER_MARGIN_BOTTOM,
-            left: 0,
-            right: 0,
             backgroundColor: FALLBACK_COLOR_DARK,
             flexDirection: 'row',
             alignItems: 'center',
