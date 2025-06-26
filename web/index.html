@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  <!-- Viewport pour mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <!-- SEO Meta Tags -->
   <title>SIP&GO! - Ultimate Drinking Game App for Epic Parties</title>
   <meta name="description" content="Transform your parties with SIP&GO! - 1500+ drinking game questions, 5 themed packs, and endless fun. Free classic pack, multilingual support. Download now!">
   <link rel="canonical" href="https://sipandgo.app/">
-  <meta name="theme-color" content="#0B0E1A">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -27,63 +23,272 @@
   <meta property="twitter:description" content="Transform your parties with SIP&GO! - 1500+ drinking game questions, 5 themed packs, and endless fun. Free classic pack, multilingual support.">
   <meta property="twitter:image" content="https://sipandgo.app/static/logo-jauneclair.png">
   
-  <!-- Manifest PWA -->
-  <link rel="manifest" href="/manifest.json">
-  
-  <!-- Meta tags iOS PWA -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="SIP&GO!">
-  
-  <!-- Icônes & Splash Screen pour iOS -->
+  <!-- Favicon -->
+  <link rel="icon" href="/icon.png">
   <link rel="apple-touch-icon" href="/icon.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icon.png">
-  <link rel="apple-touch-icon" sizes="167x167" href="/icon.png">
-  <link rel="apple-touch-startup-image" href="/splash.png">
   
-  <!-- Meta tags Android PWA -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="SIP&GO!">
+  <!-- Preload critical resources -->
+  <link rel="preload" href="/static/logo-jauneclair.png" as="image">
   
-  <!-- Icônes -->
-  <link rel="icon" href="/icon.png" />
-  
-  <!-- Check if user wants app or landing page -->
-  <script>
-    // Detect if user wants the marketing site or the app
-    const isAppPath = window.location.pathname === '/' && 
-                     !window.location.search.includes('landing') &&
-                     !document.referrer.includes('google') &&
-                     !document.referrer.includes('bing') &&
-                     !document.referrer.includes('search');
-    
-    // If coming from search engines or wants landing, show marketing site
-    if (!isAppPath || window.location.search.includes('landing')) {
-      window.location.href = '/landing.html';
-    }
-  </script>
-  
-  <!-- Style reset pour React Native Web -->
-  <style id="expo-reset">
-    /* These styles make the body full-height */
-    html,
-    body {
-      height: 100%;
+  <style>
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    /* These styles disable body scrolling if you are using <ScrollView> */
+    
     body {
-      overflow: hidden;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
     }
-    /* These styles make the root element full-height */
-    #root {
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      padding: 20px 0;
+      background: rgba(11, 14, 26, 0.95);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+    
+    nav {
       display: flex;
-      height: 100%;
-      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      height: 40px;
+    }
+    
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+    
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: #ffd700;
+    }
+    
+    /* Hero Section */
+    .hero {
+      padding: 120px 0 80px;
+      text-align: center;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      background: linear-gradient(45deg, #ffd700, #ffed4e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.9;
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(45deg, #ffd700, #ffed4e);
+      color: #0B0E1A;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+    }
+    
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+    
+    .btn-secondary:hover {
+      background: #fff;
+      color: #0B0E1A;
+    }
+    
+    /* Features Section */
+    .features {
+      padding: 80px 0;
+      background: #fff;
+    }
+    
+    .features h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+      color: #0B0E1A;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    
+    .feature-card {
+      text-align: center;
+      padding: 30px;
+      border-radius: 20px;
+      background: #f8f9fa;
+      transition: transform 0.3s;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .feature-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #0B0E1A;
+    }
+    
+    /* Packs Section */
+    .packs {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
+      color: white;
+    }
+    
+    .packs h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 60px;
+    }
+    
+    .packs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    
+    .pack-card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s;
+    }
+    
+    .pack-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .pack-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #ffd700;
+    }
+    
+    /* Footer */
+    footer {
+      background: #0B0E1A;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-links a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+      color: #ffd700;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
+  
+  <!-- Smart App Redirection -->
+  <script>
+    // Detect if user wants to access the app directly
+    const wantsApp = window.location.search.includes('app') || 
+                     window.location.pathname.includes('app') ||
+                     localStorage.getItem('sipandgo-prefers-app') === 'true';
+    
+    if (wantsApp) {
+      window.location.href = '/app.html';
+    }
+  </script>
   
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -110,11 +315,111 @@
 </head>
 
 <body>
-  <!-- Use static rendering with Expo Router to support running without JavaScript. -->
-  <noscript>
-    You need to enable JavaScript to run this app.
-  </noscript>
-  <!-- The root element for your Expo app. -->
-  <div id="root"></div>
+  <header>
+    <nav class="container">
+      <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="/packs">Game Packs</a></li>
+        <li><a href="/features">Features</a></li>
+        <li><a href="/drinking-games">Drinking Games</a></li>
+        <li><a href="/install-app">Install App</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>SIP&GO! - Ultimate Drinking Game App</h1>
+        <p>Transform your parties with 1500+ hilarious drinking game questions across 5 themed packs. Free classic pack included, multilingual support, and endless fun guaranteed!</p>
+        <div class="cta-buttons">
+          <a href="/app.html" class="btn btn-primary" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">Play Now - Free</a>
+          <a href="/install-app" class="btn btn-secondary">Install App</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2>Why Choose SIP&GO! for Your Party Games?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎮</div>
+            <h3>1500+ Questions</h3>
+            <p>Massive collection of hilarious drinking game questions across 5 unique themed packs to keep your parties fresh and exciting.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🆓</div>
+            <h3>Free Classic Pack</h3>
+            <p>Start playing immediately with our free classic pack - no payment required to begin the fun at your party.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3>Multilingual Support</h3>
+            <p>Play in your preferred language with support for French, English, and more languages coming soon.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>Works Everywhere</h3>
+            <p>Play on any device - iPhone, Android, or web browser. No app store required, just start playing instantly.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Smart Player System</h3>
+            <p>Questions adapt to your group size and player names for a personalized drinking game experience.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Always Fresh</h3>
+            <p>Random question selection means every game session is unique and unpredictable for maximum fun.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packs">
+      <div class="container">
+        <h2>Choose Your Drinking Game Adventure</h2>
+        <div class="packs-grid">
+          <div class="pack-card">
+            <h3>🍻 Classic</h3>
+            <p>Perfect starter pack with universal party questions. Great for any group and guaranteed laughs.</p>
+            <strong>FREE</strong>
+          </div>
+          <div class="pack-card">
+            <h3>🌶️ Spicy</h3>
+            <p>Turn up the heat with daring challenges and bold questions for adventurous party-goers.</p>
+          </div>
+          <div class="pack-card">
+            <h3>👨 Guys Night</h3>
+            <p>Specially crafted questions for the bros. Perfect for bachelor parties and guys' nights out.</p>
+          </div>
+          <div class="pack-card">
+            <h3>👩 Girls Night</h3>
+            <p>Fun questions designed for the girls. Perfect for bachelorette parties and girls' nights in.</p>
+          </div>
+          <div class="pack-card">
+            <h3>💕 Couples</h3>
+            <p>Romantic and playful questions perfect for couples looking to spice up their date nights.</p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+          <a href="/packs" class="btn btn-primary">Explore All Packs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="/drink-responsibly">Drink Responsibly</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/press">Press</a>
+      </div>
+      <p>&copy; 2024 SIP&GO! - The Ultimate Drinking Game App. Party responsibly.</p>
+    </div>
+  </footer>
 </body>
 </html> 
