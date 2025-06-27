@@ -239,7 +239,7 @@
             display: flex;
             justify-content: center;
             margin-bottom: 3rem;
-            background: var(--glass-bg);
+            background: rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(20px);
             border-radius: 50px;
             padding: 0.5rem;
@@ -273,7 +273,7 @@
         /* Platform content */
         .platform-content {
             display: none;
-            background: var(--glass-bg);
+            background: rgba(0, 0, 0, 0.4);
             backdrop-filter: blur(20px);
             padding: 3rem;
             border-radius: 25px;
@@ -342,15 +342,18 @@
         .step-content p {
             margin-bottom: 1rem;
             opacity: 0.9;
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
         }
         
         .step-tip {
-            background: rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.5);
             padding: 1rem;
             border-radius: 10px;
             border-left: 4px solid var(--classic-primary);
             font-size: 0.9rem;
-            opacity: 0.8;
+            opacity: 0.95;
+            color: rgba(255, 255, 255, 0.9);
         }
         
         /* Benefits section */
@@ -380,7 +383,7 @@
         }
         
         .benefit {
-            background: var(--glass-bg);
+            background: rgba(0, 0, 0, 0.4);
             padding: 2rem;
             border-radius: 20px;
             border: 1px solid var(--glass-border);
@@ -402,6 +405,11 @@
             color: var(--classic-primary);
             margin-bottom: 1rem;
             font-size: 1.2rem;
+        }
+        
+        .benefit p {
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
         }
         
         /* Quick install section */
