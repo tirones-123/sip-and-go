@@ -17,13 +17,13 @@
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#F3C53F">
   
-  <!-- Detect and redirect based on user agent -->
+  <!-- Smart redirect logic -->
   <script>
     (function() {
       // Check if we're in dev mode
       const urlParams = new URLSearchParams(window.location.search);
       const isDevMode = urlParams.get('dev') === 'true';
-      const secretKey = urlParams.get('seokey') === 'maxime2024'; // Your secret key
+      const secretKey = urlParams.get('seokey') === 'maxime2024';
       
       // Skip redirection if in dev mode or using secret key
       if (isDevMode || secretKey) {
@@ -31,23 +31,18 @@
         return;
       }
       
-      // Check if the request is likely from a search engine crawler
+      // Check if the request is from a search engine crawler
       const userAgent = navigator.userAgent.toLowerCase();
       const isSearchEngine = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot|linkedinbot|whatsapp/i.test(userAgent);
       
-      // Check if we came from a search engine or external source
-      const referrer = document.referrer.toLowerCase();
-      const fromSearchEngine = referrer.includes('google.') || 
-                              referrer.includes('bing.') || 
-                              referrer.includes('yahoo.') || 
-                              referrer.includes('duckduckgo.') ||
-                              referrer.includes('baidu.') ||
-                              referrer === ''; // Direct access might be from search results
-      
-      // If likely from search engine, redirect to landing page
-      if (isSearchEngine || fromSearchEngine) {
+      // If it's a search engine bot, show landing page
+      if (isSearchEngine) {
         window.location.href = '/landing.html';
+        return;
       }
+      
+      // For regular users, redirect to the app
+      window.location.href = '/app.html';
     })();
   </script>
   
@@ -59,8 +54,8 @@
 <body>
   <!-- This page should redirect immediately, but just in case -->
   <div style="text-align: center; padding: 50px; font-family: sans-serif;">
-    <p>Redirecting to SIP&GO!...</p>
-    <p>If you are not redirected, <a href="/landing.html">click here</a>.</p>
+    <p>Loading SIP&GO!...</p>
+    <p>If you are not redirected, <a href="/app.html">click here to play</a> or <a href="/landing.html">visit our homepage</a>.</p>
   </div>
 </body>
 </html>
