@@ -1,0 +1,29 @@
+{
+    "name": "SIP&GO! - Ultimate Drinking Game",
+    "short_name": "SIP&GO!",
+    "icons": [
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#F3C53F",
+    "background_color": "#0B0E1A",
+    "display": "standalone"
+} 
