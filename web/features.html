@@ -1,472 +1,811 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- SEO Meta Tags -->
-  <title>SIP&GO! Features - Ultimate Drinking Game App Advantages</title>
-  <meta name="description" content="Discover SIP&GO! features: 1500+ questions, free play, multilingual support, works offline, smart player system, and more. Perfect party game app for any device.">
-  <link rel="canonical" href="https://sipandgo.app/features">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://sipandgo.app/features">
-  <meta property="og:title" content="SIP&GO! Features - Ultimate Drinking Game App Advantages">
-  <meta property="og:description" content="Discover SIP&GO! features: 1500+ questions, free play, multilingual support, works offline, smart player system, and more. Perfect party game app for any device.">
-  <meta property="og:image" content="https://sipandgo.app/static/logo-jauneclair.png">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="/icon.png">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP&GO! Features - Ultimate Drinking Game App Advantages</title>
+    <meta name="description" content="Discover SIP&GO! features: 1500+ questions, free play, multilingual support, works offline, smart player system, and more. Perfect party game app for any device.">
+    <meta name="keywords" content="SIP&GO features, drinking game app, party game features, offline game, multilingual, PWA, mobile app">
+    <link rel="canonical" href="https://sipandgo.app/features">
     
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f8f9fa;
-    }
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sipandgo.app/features">
+    <meta property="og:title" content="SIP&GO! Features - Ultimate Drinking Game App Advantages">
+    <meta property="og:description" content="Discover SIP&GO! features: 1500+ questions, free play, multilingual support, works offline, smart player system, and more. Perfect party game app for any device.">
+    <meta property="og:image" content="https://sipandgo.app/static/logo-jauneclair.png">
     
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SIP&GO! Features - Ultimate Drinking Game App">
+    <meta name="twitter:description" content="Discover SIP&GO! features: 1500+ questions, free play, multilingual support, works offline, smart player system, and more.">
+    <meta name="twitter:image" content="https://sipandgo.app/static/logo-jauneclair.png">
     
-    /* Header */
-    header {
-      background: #0B0E1A;
-      color: white;
-      padding: 20px 0;
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "SIP&GO! Features",
+        "description": "Comprehensive list of SIP&GO! drinking game app features and advantages",
+        "url": "https://sipandgo.app/features",
+        "mainEntity": {
+            "@type": "SoftwareApplication",
+            "name": "SIP&GO!",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": ["iOS", "Android", "Web"],
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+            },
+            "featureList": [
+                "1500+ unique questions",
+                "5 themed game packs",
+                "Multilingual support",
+                "Offline gameplay",
+                "Smart player system",
+                "Progressive Web App"
+            ]
+        }
     }
+    </script>
     
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      height: 40px;
-    }
-    
-    .back-link {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
-      color: white;
-      padding: 80px 0;
-      text-align: center;
-    }
-    
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    .hero p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    /* Main Content */
-    main {
-      padding: 80px 0;
-    }
-    
-    .section {
-      margin-bottom: 80px;
-    }
-    
-    .section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-      color: #0B0E1A;
-      text-align: center;
-    }
-    
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 40px;
-    }
-    
-    .feature-card {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      text-align: center;
-      transition: transform 0.3s;
-    }
-    
-    .feature-card:hover {
-      transform: translateY(-5px);
-    }
-    
-    .feature-icon {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      display: block;
-    }
-    
-    .feature-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #0B0E1A;
-    }
-    
-    .feature-card p {
-      color: #666;
-      line-height: 1.6;
-    }
-    
-    /* Comparison Section */
-    .comparison {
-      background: white;
-      padding: 60px 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-    
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 30px;
-    }
-    
-    .comparison-table th,
-    .comparison-table td {
-      padding: 15px;
-      text-align: center;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .comparison-table th {
-      background: #f8f9fa;
-      font-weight: 600;
-      color: #0B0E1A;
-    }
-    
-    .comparison-table .sipandgo {
-      background: #fff3cd;
-      font-weight: 600;
-    }
-    
-    .check {
-      color: #28a745;
-      font-size: 1.2rem;
-    }
-    
-    .cross {
-      color: #dc3545;
-      font-size: 1.2rem;
-    }
-    
-    /* Technical Features */
-    .tech-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-    }
-    
-    .tech-card {
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
-      color: white;
-      padding: 30px;
-      border-radius: 15px;
-      text-align: center;
-    }
-    
-    .tech-card h4 {
-      margin-bottom: 15px;
-      color: #ffd700;
-    }
-    
-    /* CTA Section */
-    .cta-section {
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
-      color: white;
-      padding: 60px 40px;
-      border-radius: 20px;
-      text-align: center;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      color: #0B0E1A;
-      text-decoration: none;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: transform 0.3s;
-      margin: 10px;
-    }
-    
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
-    }
-    
-    .btn-secondary {
-      background: transparent;
-      color: #fff;
-      border: 2px solid #fff;
-    }
-    
-    .btn-secondary:hover {
-      background: #fff;
-      color: #0B0E1A;
-    }
-    
-    /* Footer */
-    footer {
-      background: #0B0E1A;
-      color: white;
-      padding: 40px 0;
-      text-align: center;
-      margin-top: 80px;
-    }
-    
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      .comparison-table {
-        font-size: 0.9rem;
-      }
-      
-      .comparison-table th,
-      .comparison-table td {
-        padding: 10px 5px;
-      }
-    }
-  </style>
+    <style>
+        :root {
+            --classic-primary: #F3C53F;
+            --classic-secondary: #fed475;
+            --classic-accent: #fec443;
+            --classic-dark: #0B0E1A;
+            --classic-light: #febc29;
+            --text-light: rgba(255, 255, 255, 0.9);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, var(--classic-primary), var(--classic-secondary), var(--classic-accent), var(--classic-light));
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Floating background elements */
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .float-element {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 25s infinite linear;
+        }
+        
+        .float-element:nth-child(1) { left: 5%; animation-delay: 0s; }
+        .float-element:nth-child(2) { left: 15%; animation-delay: 2s; }
+        .float-element:nth-child(3) { left: 25%; animation-delay: 4s; }
+        .float-element:nth-child(4) { left: 35%; animation-delay: 6s; }
+        .float-element:nth-child(5) { left: 45%; animation-delay: 8s; }
+        .float-element:nth-child(6) { left: 55%; animation-delay: 10s; }
+        .float-element:nth-child(7) { left: 65%; animation-delay: 12s; }
+        .float-element:nth-child(8) { left: 75%; animation-delay: 14s; }
+        .float-element:nth-child(9) { left: 85%; animation-delay: 16s; }
+        .float-element:nth-child(10) { left: 95%; animation-delay: 18s; }
+        
+        @keyframes float {
+            0% { 
+                transform: translateY(100vh) rotate(0deg) scale(0.8); 
+                opacity: 0.05;
+            }
+            50% { 
+                opacity: 0.15;
+                transform: translateY(50vh) rotate(180deg) scale(1.2);
+            }
+            100% { 
+                transform: translateY(-100px) rotate(360deg) scale(0.8); 
+                opacity: 0.05;
+            }
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .back-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+        }
+        
+        .back-link:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo {
+            height: 50px;
+        }
+        
+        .nav-badge {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-accent));
+            color: var(--classic-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Main content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 2rem 2rem;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, white, var(--classic-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Stats section */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .stat-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--classic-primary);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        /* Features section */
+        .features-section {
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .features-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 800;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .feature-card:hover::before {
+            left: 100%;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--classic-primary);
+            font-weight: 700;
+        }
+        
+        /* Comparison section */
+        .comparison-section {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            margin-bottom: 4rem;
+            border: 1px solid var(--glass-border);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .comparison-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 800;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--glass-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        
+        .comparison-table th {
+            background: rgba(0, 0, 0, 0.3);
+            font-weight: 700;
+            color: var(--classic-primary);
+            font-size: 1.1rem;
+        }
+        
+        .comparison-table .sipandgo {
+            background: rgba(243, 197, 63, 0.2);
+            font-weight: 600;
+        }
+        
+        .check {
+            color: #4ade80;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .cross {
+            color: #f87171;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        /* Technical features */
+        .tech-section {
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+        
+        .tech-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 800;
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .tech-card {
+            background: linear-gradient(135deg, var(--classic-dark) 0%, rgba(11, 14, 26, 0.8) 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+        
+        .tech-card h4 {
+            margin-bottom: 1rem;
+            color: var(--classic-primary);
+            font-size: 1.3rem;
+        }
+        
+        .tech-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        /* CTA section */
+        .cta-section {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+        
+        .cta-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-secondary));
+            color: var(--classic-dark);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 2px solid transparent;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .cta-button.secondary {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--glass-border);
+            color: white;
+        }
+        
+        .cta-button.secondary:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            padding: 3rem 2rem 2rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 80px 1rem 1rem;
+            }
+            
+            .header-content {
+                padding: 0 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .comparison-section {
+                padding: 2rem 1rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .features-grid, .tech-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison-table {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <nav class="container">
-      <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
-      <a href="/" class="back-link">← Back to Home</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <h1>SIP&GO! Features</h1>
-      <p>Discover what makes SIP&GO! the ultimate drinking game app for unforgettable parties. From our massive question collection to smart features that adapt to your group.</p>
+    <!-- Floating background elements -->
+    <div class="floating-elements">
+        <div class="float-element">⚡</div>
+        <div class="float-element">🎮</div>
+        <div class="float-element">🚀</div>
+        <div class="float-element">💫</div>
+        <div class="float-element">✨</div>
+        <div class="float-element">🎯</div>
+        <div class="float-element">🔥</div>
+        <div class="float-element">💎</div>
+        <div class="float-element">🌟</div>
+        <div class="float-element">⭐</div>
     </div>
-  </section>
 
-  <main>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="back-link">← Back to Home</a>
+            <img src="/static/logo-jauneclair.png" alt="SIP&GO!" class="logo">
+            <div class="nav-badge">⚡ FEATURES</div>
+        </div>
+    </header>
+
+    <!-- Main content -->
     <div class="container">
-      <section class="section">
-        <h2>Core Features That Set Us Apart</h2>
-        <div class="features-grid">
-          <div class="feature-card">
-            <span class="feature-icon">🎮</span>
-            <h3>1500+ Unique Questions</h3>
-            <p>Massive collection of carefully crafted drinking game questions across 5 themed packs. Each question is designed to create memorable moments and lasting laughs.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">🆓</span>
-            <h3>Free Classic Pack</h3>
-            <p>Start playing immediately with our free Classic pack featuring 300+ questions. No payment required, no trials - just instant party fun.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">🌍</span>
-            <h3>Multilingual Support</h3>
-            <p>Play in your preferred language with full support for French, English, and more languages being added regularly based on user demand.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">📱</span>
-            <h3>Works on Any Device</h3>
-            <p>Play on iPhone, Android, tablet, or web browser. No app store downloads required - works instantly in your browser with full PWA support.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">🎯</span>
-            <h3>Smart Player System</h3>
-            <p>Questions automatically adapt to your group size and include player names for personalized experiences. Add 2-20+ players effortlessly.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">🔄</span>
-            <h3>Always Fresh Content</h3>
-            <p>Advanced randomization ensures every game session feels unique. Our algorithm prevents repetition and keeps the surprises coming.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">⚡</span>
-            <h3>Lightning Fast</h3>
-            <p>No loading screens, no delays. Optimized for instant question transitions and smooth gameplay that keeps the energy high.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">🎨</span>
-            <h3>Beautiful Design</h3>
-            <p>Stunning visual design with dynamic color themes for each pack. Eye-catching animations and smooth transitions enhance the experience.</p>
-          </div>
-          
-          <div class="feature-card">
-            <span class="feature-icon">🔒</span>
-            <h3>Privacy First</h3>
-            <p>No personal data collection, no account required. Your party stays private - we focus on fun, not data harvesting.</p>
-          </div>
-        </div>
-      </section>
+        <!-- Hero section -->
+        <section class="hero">
+            <h1>SIP&GO! Features ⚡</h1>
+            <p class="subtitle">Discover why SIP&GO! is the ultimate party game app with powerful features designed for unforgettable experiences</p>
+        </section>
 
-      <section class="section">
-        <div class="comparison">
-          <h2>SIP&GO! vs. Other Party Games</h2>
-          <p style="text-align: center; margin-bottom: 30px; font-size: 1.1rem; color: #666;">
-            See how SIP&GO! stacks up against traditional party games and other drinking game apps:
-          </p>
-          <table class="comparison-table">
-            <thead>
-              <tr>
-                <th>Feature</th>
-                <th class="sipandgo">SIP&GO!</th>
-                <th>Other Apps</th>
-                <th>Card Games</th>
-                <th>Truth or Dare</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>No setup required</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="check">✓</span></td>
-              </tr>
-              <tr>
-                <td>1500+ questions</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-              </tr>
-              <tr>
-                <td>Personalized questions</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-              </tr>
-              <tr>
-                <td>Free to start</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="check">✓</span></td>
-              </tr>
-              <tr>
-                <td>Multiple themes</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-              </tr>
-              <tr>
-                <td>Works offline</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-              </tr>
-              <tr>
-                <td>No ads interruption</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="check">✓</span></td>
-                <td><span class="check">✓</span></td>
-              </tr>
-              <tr>
-                <td>Multilingual</td>
-                <td class="sipandgo"><span class="check">✓</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-                <td><span class="cross">✗</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
+        <!-- Stats section -->
+        <section class="stats">
+            <div class="stat-card">
+                <span class="stat-number">1500+</span>
+                <div class="stat-label">Unique Questions</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">5</span>
+                <div class="stat-label">Game Packs</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">20+</span>
+                <div class="stat-label">Languages</div>
+            </div>
+            <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <div class="stat-label">Free to Play</div>
+            </div>
+        </section>
 
-      <section class="section">
-        <h2>Technical Excellence</h2>
-        <div class="tech-grid">
-          <div class="tech-card">
-            <h4>⚡ PWA Technology</h4>
-            <p>Progressive Web App that works like a native app but runs in your browser</p>
-          </div>
-          <div class="tech-card">
-            <h4>📱 Responsive Design</h4>
-            <p>Perfect experience on phones, tablets, and desktops with adaptive layouts</p>
-          </div>
-          <div class="tech-card">
-            <h4>🔄 Offline Support</h4>
-            <p>Play anywhere, anytime - no internet connection required once loaded</p>
-          </div>
-          <div class="tech-card">
-            <h4>🎨 Modern UI/UX</h4>
-            <p>Clean, intuitive interface designed for party environments and quick interaction</p>
-          </div>
-          <div class="tech-card">
-            <h4>🚀 Fast Performance</h4>
-            <p>Optimized for speed with instant loading and smooth animations</p>
-          </div>
-          <div class="tech-card">
-            <h4>🔐 Secure & Private</h4>
-            <p>No data collection, no tracking - your privacy is our priority</p>
-          </div>
-        </div>
-      </section>
+        <!-- Core Features Section -->
+        <section class="features-section">
+            <h2>🎮 Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3>Smart Player System</h3>
+                    <p>Add 2-10 players and watch as questions dynamically include player names for personalized fun. Every question feels custom-made for your group!</p>
+                </div>
 
-      <section class="section">
-        <div class="cta-section">
-          <h2>Ready to Experience the Difference?</h2>
-          <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9;">
-            Join thousands of party-goers who've discovered the ultimate drinking game experience with SIP&GO!
-          </p>
-          <div>
-            <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">Play Free Classic Pack</a>
-            <a href="/packs" class="btn btn-secondary">Explore All Packs</a>
-          </div>
-        </div>
-      </section>
+                <div class="feature-card">
+                    <span class="feature-icon">🎪</span>
+                    <h3>5 Themed Packs</h3>
+                    <p>Choose from Classic, Spicy, Couples, Girls Night, or Guys Night packs. Each pack is carefully crafted for different group dynamics and comfort levels.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🌍</span>
+                    <h3>Multilingual Support</h3>
+                    <p>Play in over 20 languages including English, French, Spanish, German, and more. Perfect for international parties and diverse groups.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">📱</span>
+                    <h3>Progressive Web App</h3>
+                    <p>Install on any device like a native app. Works on iPhone, Android, tablets, and computers with full offline capability.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">🔄</span>
+                    <h3>Endless Variety</h3>
+                    <p>With 1500+ questions and smart randomization, you'll never see the same question twice. Every game session feels fresh and exciting.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Instant Play</h3>
+                    <p>No downloads, no registration, no setup. Just add players and start playing immediately. Perfect for spontaneous party moments.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Section -->
+        <section class="comparison-section">
+            <h2>🏆 Why Choose SIP&GO!</h2>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>SIP&GO!</th>
+                            <th>Traditional Games</th>
+                            <th>Other Apps</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="sipandgo">
+                            <td><strong>Setup Time</strong></td>
+                            <td><span class="check">✓</span> Instant</td>
+                            <td><span class="cross">✗</span> 5-15 minutes</td>
+                            <td><span class="cross">✗</span> Download required</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Question Variety</strong></td>
+                            <td><span class="check">✓</span> 1500+ unique</td>
+                            <td><span class="cross">✗</span> Limited & repetitive</td>
+                            <td><span class="cross">✗</span> 100-300 questions</td>
+                        </tr>
+                        <tr class="sipandgo">
+                            <td><strong>Personalization</strong></td>
+                            <td><span class="check">✓</span> Player names included</td>
+                            <td><span class="cross">✗</span> Generic questions</td>
+                            <td><span class="cross">✗</span> Basic customization</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Offline Play</strong></td>
+                            <td><span class="check">✓</span> Full offline support</td>
+                            <td><span class="check">✓</span> Cards work offline</td>
+                            <td><span class="cross">✗</span> Internet required</td>
+                        </tr>
+                        <tr class="sipandgo">
+                            <td><strong>Languages</strong></td>
+                            <td><span class="check">✓</span> 20+ languages</td>
+                            <td><span class="cross">✗</span> Usually English only</td>
+                            <td><span class="cross">✗</span> 2-3 languages</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost</strong></td>
+                            <td><span class="check">✓</span> 100% Free</td>
+                            <td><span class="cross">✗</span> Buy cards/dice</td>
+                            <td><span class="cross">✗</span> Premium subscriptions</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Technical Features -->
+        <section class="tech-section">
+            <h2>🚀 Technical Excellence</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <span class="tech-icon">📱</span>
+                    <h4>Cross-Platform</h4>
+                    <p>Works perfectly on iOS, Android, tablets, and desktop computers. One app, all devices.</p>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">⚡</span>
+                    <h4>Lightning Fast</h4>
+                    <p>Optimized for speed with instant loading and smooth animations. No lag, just pure fun.</p>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">🔒</span>
+                    <h4>Privacy First</h4>
+                    <p>No personal data collection, no tracking, no ads. Your privacy is completely protected.</p>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">📶</span>
+                    <h4>Offline Ready</h4>
+                    <p>Download once, play anywhere. Perfect for parties without reliable internet connection.</p>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">🎨</span>
+                    <h4>Beautiful Design</h4>
+                    <p>Modern, intuitive interface with smooth animations and eye-catching visuals that enhance the experience.</p>
+                </div>
+
+                <div class="tech-card">
+                    <span class="tech-icon">🔄</span>
+                    <h4>Auto-Updates</h4>
+                    <p>Always get the latest features and content automatically. No manual updates required.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA section -->
+        <section class="cta-section">
+            <h2>Ready to Experience the Best? 🎉</h2>
+            <p>Join thousands of party-goers who've made SIP&GO! their go-to game app</p>
+            <div class="cta-buttons">
+                <a href="/app.html" class="cta-button" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+                    🎮 Try All Features Free
+                </a>
+                <a href="/install-app" class="cta-button secondary">
+                    📱 Install as App
+                </a>
+                <a href="/packs/" class="cta-button secondary">
+                    🎯 Browse Game Packs
+                </a>
+            </div>
+        </section>
     </div>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 SIP&GO! - Features that make every party unforgettable</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/terms">Terms of Service</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/drink-responsibly">Drink Responsibly</a>
+                <a href="/drinking-games">Game Guide</a>
+                <a href="/">Home</a>
+            </div>
+            <p>&copy; 2024 SIP&GO! - The ultimate party game app</p>
+            <p>Powerful features, endless fun! ⚡</p>
+        </div>
+    </footer>
 </body>
 </html> 

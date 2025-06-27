@@ -1,25 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- SEO Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Drinking Games Guide - Best Party Games & Rules | SIP&GO!</title>
   <meta name="description" content="Complete guide to drinking games: rules, variations, and tips for epic parties. From classic games to modern twists, discover the best drinking games for your group.">
+    <meta name="keywords" content="drinking games, party games, drinking game rules, beer pong, never have I ever, flip cup, party guide">
   <link rel="canonical" href="https://sipandgo.app/drinking-games">
   
-  <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://sipandgo.app/drinking-games">
   <meta property="og:title" content="Drinking Games Guide - Best Party Games & Rules">
   <meta property="og:description" content="Complete guide to drinking games: rules, variations, and tips for epic parties. From classic games to modern twists, discover the best drinking games for your group.">
   <meta property="og:image" content="https://sipandgo.app/static/logo-jauneclair.png">
   
-  <!-- Favicon -->
-  <link rel="icon" href="/icon.png">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Drinking Games Guide - Best Party Games & Rules">
+    <meta name="twitter:description" content="Complete guide to drinking games: rules, variations, and tips for epic parties. From classic games to modern twists, discover the best drinking games for your group.">
+    <meta name="twitter:image" content="https://sipandgo.app/static/logo-jauneclair.png">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Drinking Games Guide - Best Party Games & Rules",
+        "description": "Complete guide to drinking games: rules, variations, and tips for epic parties. From classic games to modern twists, discover the best drinking games for your group.",
+        "author": {
+            "@type": "Organization",
+            "name": "SIP&GO!"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "SIP&GO!",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://sipandgo.app/static/logo-jauneclair.png"
+            }
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2024-12-01",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://sipandgo.app/drinking-games"
+        }
+    }
+    </script>
   
   <style>
+        :root {
+            --classic-primary: #F3C53F;
+            --classic-secondary: #fed475;
+            --classic-accent: #fec443;
+            --classic-dark: #0B0E1A;
+            --classic-light: #febc29;
+            --text-light: rgba(255, 255, 255, 0.9);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+        
     * {
       margin: 0;
       padding: 0;
@@ -27,417 +68,726 @@
     }
     
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, var(--classic-primary), var(--classic-secondary), var(--classic-accent), var(--classic-light));
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+            min-height: 100vh;
       line-height: 1.6;
-      color: #333;
-      background: #f8f9fa;
-    }
-    
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Floating background elements */
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .float-element {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 20s infinite linear;
+        }
+        
+        .float-element:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .float-element:nth-child(2) { left: 20%; animation-delay: 2s; }
+        .float-element:nth-child(3) { left: 30%; animation-delay: 4s; }
+        .float-element:nth-child(4) { left: 40%; animation-delay: 6s; }
+        .float-element:nth-child(5) { left: 50%; animation-delay: 8s; }
+        .float-element:nth-child(6) { left: 60%; animation-delay: 10s; }
+        .float-element:nth-child(7) { left: 70%; animation-delay: 12s; }
+        .float-element:nth-child(8) { left: 80%; animation-delay: 14s; }
+        .float-element:nth-child(9) { left: 90%; animation-delay: 16s; }
+        
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
     }
     
     /* Header */
-    header {
-      background: #0B0E1A;
-      color: white;
-      padding: 20px 0;
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            border-bottom: 1px solid var(--glass-border);
     }
     
-    nav {
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+        
+        .back-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+        }
+        
+        .back-link:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
     
     .logo {
-      height: 40px;
+            height: 50px;
     }
     
-    .back-link {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: 500;
+        .nav-badge {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-accent));
+            color: var(--classic-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Main content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 100px 2rem 2rem;
+            position: relative;
+            z-index: 10;
     }
     
-    /* Hero Section */
+        /* Hero section */
     .hero {
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
-      color: white;
-      padding: 80px 0;
       text-align: center;
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
     }
     
     .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, white, var(--classic-light));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
     
-    .hero p {
-      font-size: 1.2rem;
+        .hero .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2rem;
       opacity: 0.9;
       max-width: 800px;
-      margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
     }
     
-    /* Main Content */
-    main {
-      padding: 80px 0;
+        /* Table of contents */
+        .toc {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
     }
     
-    .content {
+        .toc h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--classic-primary);
+            text-align: center;
+        }
+        
+        .toc-grid {
       display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 60px;
-      align-items: start;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
     }
     
-    .main-content {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        .toc-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .toc-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
     }
     
-    .sidebar {
-      position: sticky;
-      top: 20px;
+        .toc-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        /* Content sections */
+        .content-section {
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out;
     }
     
-    .sidebar-card {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+        .content-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 2rem;
+            font-weight: 800;
+            text-align: center;
     }
     
-    .sidebar h3 {
-      color: #0B0E1A;
-      margin-bottom: 15px;
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
     }
     
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
+        .game-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
     }
     
-    .sidebar li {
-      margin-bottom: 10px;
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     }
     
-    .sidebar a {
-      color: #666;
-      text-decoration: none;
-      padding: 8px 0;
-      display: block;
-      border-bottom: 1px solid #eee;
+        .game-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .game-card:hover::before {
+            left: 100%;
     }
     
-    .sidebar a:hover {
-      color: #ffd700;
+        .game-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--classic-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
     }
     
-    h2 {
-      font-size: 2rem;
-      margin: 40px 0 20px 0;
-      color: #0B0E1A;
+        .game-icon {
+            font-size: 2rem;
+        }
+        
+        .game-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
     }
     
-    h3 {
-      font-size: 1.5rem;
-      margin: 30px 0 15px 0;
-      color: #0B0E1A;
-    }
-    
-    .game-card {
-      background: #f8f9fa;
-      padding: 30px;
-      border-radius: 15px;
-      margin: 30px 0;
-      border-left: 4px solid #ffd700;
-    }
-    
-    .game-card h4 {
-      color: #0B0E1A;
-      margin-bottom: 15px;
-      font-size: 1.3rem;
+        .meta-tag {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: 500;
     }
     
     .game-rules {
-      background: #e8f4f8;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 15px 0;
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1rem 0;
+            border-left: 4px solid var(--classic-primary);
     }
     
-    .game-rules h5 {
-      color: #0B0E1A;
-      margin-bottom: 10px;
+        .game-rules h4 {
+            color: var(--classic-primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
     }
     
     .game-rules ol {
-      margin-left: 20px;
+            margin-left: 1.5rem;
+        }
+        
+        .game-rules li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Tips section */
+        .tips-section {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            margin-bottom: 4rem;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            animation: fadeInUp 1s ease-out 0.8s both;
     }
     
-    .btn {
-      display: inline-block;
-      padding: 15px 30px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      color: #0B0E1A;
-      text-decoration: none;
+        .tips-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 2rem;
+            font-weight: 800;
+        }
+        
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .tip-card {
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+        
+        .tip-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .tip-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .tip-card h4 {
+            color: var(--classic-primary);
+            margin-bottom: 1rem;
+        }
+        
+        /* CTA section */
+        .cta-section {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+        
+        .cta-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-secondary));
+            color: var(--classic-dark);
+            padding: 1rem 2rem;
+            border: none;
       border-radius: 50px;
-      font-weight: 600;
       font-size: 1.1rem;
-      transition: transform 0.3s;
-      text-align: center;
-      margin: 20px 0;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 2px solid transparent;
     }
     
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .cta-button.secondary {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--glass-border);
+            color: white;
+        }
+        
+        .cta-button.secondary:hover {
+            background: rgba(255,255,255,0.2);
     }
     
     /* Footer */
-    footer {
-      background: #0B0E1A;
+        .footer {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            padding: 3rem 2rem 2rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
       color: white;
-      padding: 40px 0;
-      text-align: center;
-      margin-top: 80px;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+            margin-bottom: 0.5rem;
     }
     
+        /* Responsive design */
     @media (max-width: 768px) {
-      .content {
-        grid-template-columns: 1fr;
-        gap: 40px;
+            .container {
+                padding: 80px 1rem 1rem;
       }
       
-      .hero h1 {
-        font-size: 2rem;
+            .header-content {
+                padding: 0 1rem;
       }
       
-      .sidebar {
-        position: static;
+            .cta-buttons {
+                flex-direction: column;
       }
-    }
-  </style>
-  
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Drinking Games Guide - Best Party Games & Rules",
-    "description": "Complete guide to drinking games including rules, variations, and tips for epic parties",
-    "author": {
-      "@type": "Organization",
-      "name": "SIP&GO!"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "SIP&GO!",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://sipandgo.app/static/logo-jauneclair.png"
-      }
-    },
-    "datePublished": "2024-01-01",
-    "dateModified": "2024-01-01",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://sipandgo.app/drinking-games"
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+            
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tips-section {
+                padding: 2rem 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .toc-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .tips-grid {
+                grid-template-columns: repeat(2, 1fr);
     }
   }
-  </script>
+    </style>
 </head>
-
 <body>
-  <header>
-    <nav class="container">
-      <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
+    <!-- Floating background elements -->
+    <div class="floating-elements">
+        <div class="float-element">🍺</div>
+        <div class="float-element">🥳</div>
+        <div class="float-element">🎉</div>
+        <div class="float-element">🍻</div>
+        <div class="float-element">🎊</div>
+        <div class="float-element">🍺</div>
+        <div class="float-element">🥳</div>
+        <div class="float-element">🎉</div>
+        <div class="float-element">🍻</div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
       <a href="/" class="back-link">← Back to Home</a>
-    </nav>
+            <img src="/static/logo-jauneclair.png" alt="SIP&GO!" class="logo">
+            <div class="nav-badge">🎮 GAME GUIDE</div>
+        </div>
   </header>
 
-  <section class="hero">
+    <!-- Main content -->
     <div class="container">
-      <h1>Ultimate Guide to Drinking Games</h1>
-      <p>Master the art of party entertainment with our comprehensive drinking games guide. From timeless classics to modern variations, discover the perfect games for your group and create unforgettable memories.</p>
+        <!-- Hero section -->
+        <section class="hero">
+            <h1>Drinking Games Guide 🍻</h1>
+            <p class="subtitle">Master the art of party games with our complete guide to the best drinking games, rules, and tips for epic celebrations</p>
+        </section>
+
+        <!-- Table of contents -->
+        <section class="toc">
+            <h2>🎯 Quick Navigation</h2>
+            <div class="toc-grid">
+                <div class="toc-item">
+                    <a href="#classic-games">🍺 Classic Games</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#card-games">🃏 Card Games</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#group-games">👥 Group Games</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#skill-games">🎯 Skill Games</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#party-tips">💡 Party Tips</a>
+                </div>
+                <div class="toc-item">
+                    <a href="#safety">🛡️ Safety Guide</a>
+                </div>
     </div>
   </section>
 
-  <main>
-    <div class="container">
-      <div class="content">
-        <div class="main-content">
-          <p>Drinking games have been bringing people together for centuries, transforming ordinary gatherings into memorable experiences filled with laughter, bonding, and fun. Whether you're hosting a house party, celebrating a special occasion, or just looking to spice up your night out, the right drinking game can make all the difference.</p>
-
-          <h2>What Are Drinking Games?</h2>
-          <p>Drinking games are social activities that combine entertainment with the consumption of alcoholic beverages. They typically involve rules, challenges, or questions that determine when participants drink. The primary goal is to have fun, socialize, and create memorable experiences with friends.</p>
-
-          <p>Modern drinking games range from simple card games to elaborate party apps like <strong>SIP&GO!</strong>, which offers over 1500 questions across themed packs designed for different group dynamics.</p>
-
-          <h2>Popular Types of Drinking Games</h2>
-
+        <!-- Classic Games Section -->
+        <section id="classic-games" class="content-section">
+            <h2>🍺 Classic Drinking Games</h2>
+            <div class="games-grid">
           <div class="game-card">
-            <h4>🎯 Question-Based Games</h4>
-            <p>These games revolve around asking questions that lead to drinking based on answers or actions. Examples include Never Have I Ever, Truth or Drink, and modern app-based games.</p>
+                    <h3><span class="game-icon">🏓</span>Beer Pong</h3>
+                    <div class="game-meta">
+                        <span class="meta-tag">👥 4-8 Players</span>
+                        <span class="meta-tag">⏱️ 20-30 min</span>
+                        <span class="meta-tag">🎯 Skill</span>
+                    </div>
+                    <p>The ultimate party game combining skill, luck, and lots of fun. Teams take turns throwing ping pong balls into cups of beer.</p>
             <div class="game-rules">
-              <h5>How to Play:</h5>
+                        <h4>How to Play:</h4>
               <ol>
-                <li>Players take turns asking questions or drawing cards</li>
-                <li>Other players respond based on the question</li>
-                <li>Drinking occurs based on predetermined rules</li>
-                <li>Questions often become more personal or funny as the game progresses</li>
+                            <li>Set up 10 cups in triangle formation on each side</li>
+                            <li>Fill cups with beer (about 1/4 full)</li>
+                            <li>Teams alternate throwing balls into opponent's cups</li>
+                            <li>When a ball lands in a cup, the defending team drinks it</li>
+                            <li>First team to eliminate all opponent's cups wins</li>
               </ol>
             </div>
           </div>
 
           <div class="game-card">
-            <h4>🃏 Card-Based Games</h4>
-            <p>Traditional drinking games using standard playing cards. Popular examples include Kings Cup, Ride the Bus, and Pyramid.</p>
+                    <h3><span class="game-icon">🔄</span>Flip Cup</h3>
+                    <div class="game-meta">
+                        <span class="meta-tag">👥 6-12 Players</span>
+                        <span class="meta-tag">⏱️ 5-10 min</span>
+                        <span class="meta-tag">⚡ Fast-Paced</span>
+                    </div>
+                    <p>A fast-paced team relay game that gets everyone involved and creates amazing energy at any party.</p>
             <div class="game-rules">
-              <h5>How to Play:</h5>
+                        <h4>How to Play:</h4>
               <ol>
-                <li>Use a standard deck of playing cards</li>
-                <li>Each card has a specific rule or action</li>
-                <li>Players draw cards and follow the associated rules</li>
-                <li>Game continues until all cards are used or players decide to stop</li>
+                            <li>Divide into two equal teams</li>
+                            <li>Each player has a cup with beer</li>
+                            <li>First players drink and flip their cups</li>
+                            <li>Next player can't start until previous cup is flipped</li>
+                            <li>First team to flip all cups wins</li>
               </ol>
             </div>
           </div>
 
           <div class="game-card">
-            <h4>🎲 Dice & Chance Games</h4>
-            <p>Games that rely on luck and chance, such as Yahtzee drinking versions or custom dice games.</p>
+                    <h3><span class="game-icon">🎲</span>Never Have I Ever</h3>
+                    <div class="game-meta">
+                        <span class="meta-tag">👥 3-10 Players</span>
+                        <span class="meta-tag">⏱️ 15-30 min</span>
+                        <span class="meta-tag">💭 Social</span>
+                    </div>
+                    <p>Learn surprising things about your friends in this classic revelation game that's perfect for breaking the ice.</p>
             <div class="game-rules">
-              <h5>How to Play:</h5>
+                        <h4>How to Play:</h4>
               <ol>
-                <li>Roll dice to determine actions</li>
-                <li>Different combinations result in different drinking rules</li>
-                <li>Players take turns rolling and following the results</li>
-                <li>Some games use special drinking dice with custom rules</li>
+                            <li>Players sit in a circle with drinks</li>
+                            <li>Each player says "Never have I ever..." + something they haven't done</li>
+                            <li>Anyone who HAS done it takes a drink</li>
+                            <li>Continue around the circle</li>
+                            <li>Game ends when everyone's had enough fun!</li>
               </ol>
             </div>
           </div>
+            </div>
+        </section>
 
+        <!-- Card Games Section -->
+        <section id="card-games" class="content-section">
+            <h2>🃏 Card-Based Games</h2>
+            <div class="games-grid">
           <div class="game-card">
-            <h4>🎤 Performance Games</h4>
-            <p>Games that involve singing, acting, or other performances. Examples include Karaoke drinking games and charades variations.</p>
+                    <h3><span class="game-icon">👑</span>Kings Cup</h3>
+                    <div class="game-meta">
+                        <span class="meta-tag">👥 4-8 Players</span>
+                        <span class="meta-tag">⏱️ 30-45 min</span>
+                        <span class="meta-tag">🃏 Cards</span>
+                    </div>
+                    <p>The king of drinking games! Each card has a rule, and the fun builds as the game progresses.</p>
             <div class="game-rules">
-              <h5>How to Play:</h5>
+                        <h4>Basic Rules:</h4>
               <ol>
-                <li>Players perform challenges or tasks</li>
-                <li>Success/failure determines drinking consequences</li>
-                <li>Often involves creativity and entertainment</li>
-                <li>Great for breaking the ice and creating laughs</li>
+                            <li>Ace = Waterfall (everyone drinks)</li>
+                            <li>2 = You (pick someone to drink)</li>
+                            <li>3 = Me (you drink)</li>
+                            <li>4 = Floor (last to touch floor drinks)</li>
+                            <li>King = Pour into center cup</li>
               </ol>
             </div>
           </div>
 
-          <h2>Essential Drinking Game Rules</h2>
-          <p>While drinking games are meant to be fun, it's important to establish ground rules to ensure everyone has a good time safely:</p>
+                <div class="game-card">
+                    <h3><span class="game-icon">🔢</span>Ride the Bus</h3>
+                    <div class="game-meta">
+                        <span class="meta-tag">👥 4-10 Players</span>
+                        <span class="meta-tag">⏱️ 20-40 min</span>
+                        <span class="meta-tag">🎰 Chance</span>
+                    </div>
+                    <p>A game of luck and strategy where one unlucky player has to "ride the bus" at the end.</p>
+                    <div class="game-rules">
+                        <h4>Game Phases:</h4>
+                        <ol>
+                            <li>Red or Black? - Guess card color</li>
+                            <li>Higher or Lower? - Guess next card</li>
+                            <li>Between or Outside? - Guess if card falls between</li>
+                            <li>Suit? - Guess the suit</li>
+                            <li>Pyramid round with drinking rules</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <h3>🔥 Universal Party Rules</h3>
-          <ul>
-            <li><strong>Designated Driver:</strong> Always have a sober driver or ride-sharing plan</li>
-            <li><strong>Pace Yourself:</strong> Take breaks between games and drink water</li>
-            <li><strong>Know Your Limits:</strong> It's okay to sit out or use non-alcoholic substitutes</li>
-            <li><strong>Respect Boundaries:</strong> No one should be pressured to drink or answer uncomfortable questions</li>
-            <li><strong>Safe Environment:</strong> Play in a safe location with trusted friends</li>
-          </ul>
-
-          <h3>🎯 Game-Specific Tips</h3>
-          <ul>
-            <li><strong>Set Time Limits:</strong> Decide how long to play each game</li>
-            <li><strong>Modify Rules:</strong> Adjust rules to match your group's comfort level</li>
-            <li><strong>Have Alternatives:</strong> Offer non-alcoholic options for those who prefer them</li>
-            <li><strong>Keep It Fun:</strong> The goal is entertainment, not excessive drinking</li>
-          </ul>
-
-          <h2>Modern Digital Drinking Games</h2>
-          <p>Technology has revolutionized drinking games, with apps like <strong>SIP&GO!</strong> offering thousands of questions, personalized experiences, and themed content. Digital games provide several advantages:</p>
-
-          <ul>
-            <li><strong>Endless Content:</strong> No repetition with thousands of unique questions</li>
-            <li><strong>Personalization:</strong> Questions adapt to include player names</li>
-            <li><strong>Themed Experiences:</strong> Different packs for different group types</li>
-            <li><strong>No Setup:</strong> Instant play without cards or dice</li>
-            <li><strong>Multilingual:</strong> Play in your preferred language</li>
-          </ul>
-
-          <h2>Choosing the Right Game for Your Group</h2>
-          <p>The best drinking game depends on your group size, relationship dynamics, and comfort level:</p>
-
-          <h3>👥 Small Groups (2-4 people)</h3>
-          <p>Intimate games work best with smaller groups. Consider couple-focused games or deep question formats that encourage bonding.</p>
-
-          <h3>🎉 Medium Groups (5-8 people)</h3>
-          <p>Classic party games shine with medium groups. Question-based games and card games work particularly well.</p>
-
-          <h3>🏠 Large Groups (9+ people)</h3>
-          <p>Team-based games or apps that can handle many players simultaneously work best for larger gatherings.</p>
-
-          <h2>Key Takeaways</h2>
-          <p>Drinking games are about bringing people together and creating memorable experiences. Whether you choose traditional card games or modern app-based options like <strong>SIP&GO!</strong>, the most important elements are:</p>
-
-          <ul>
-            <li>Prioritizing fun and safety above all else</li>
-            <li>Choosing games that match your group's comfort level</li>
-            <li>Having designated drivers and safety plans</li>
-            <li>Respecting everyone's boundaries and limits</li>
-            <li>Creating an inclusive environment where everyone can participate</li>
-          </ul>
-
-          <p>Ready to start your party? Try <strong>SIP&GO!</strong> with our free Classic pack and discover why thousands of party-goers choose our app for their drinking game entertainment.</p>
-
-          <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">Start Playing SIP&GO! Free</a>
+        <!-- Party Tips Section -->
+        <section id="party-tips" class="tips-section">
+            <h2>💡 Pro Party Tips</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                Make your party legendary with these expert tips for hosting the perfect drinking game night!
+            </p>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <span class="tip-icon">🏠</span>
+                    <h4>Setup Space</h4>
+                    <p>Ensure you have enough room for everyone to play comfortably and safely.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">🥤</span>
+                    <h4>Hydration Station</h4>
+                    <p>Always provide water and snacks. Hydration is key to a fun, safe night.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">🎵</span>
+                    <h4>Perfect Playlist</h4>
+                    <p>Create an upbeat playlist that matches the energy of your games.</p>
         </div>
-
-        <div class="sidebar">
-          <div class="sidebar-card">
-            <h3>🎮 Try SIP&GO!</h3>
-            <p>Skip the setup and dive straight into fun with our drinking game app featuring 1500+ questions.</p>
-            <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">Play Free Now</a>
+                <div class="tip-card">
+                    <span class="tip-icon">📱</span>
+                    <h4>Use SIP&GO!</h4>
+                    <p>Skip the setup and use our app for instant, endless party questions!</p>
           </div>
-
-          <div class="sidebar-card">
-            <h3>📖 Quick Navigation</h3>
-            <ul>
-              <li><a href="#what-are-drinking-games">What Are Drinking Games?</a></li>
-              <li><a href="#types-of-games">Types of Games</a></li>
-              <li><a href="#essential-rules">Essential Rules</a></li>
-              <li><a href="#digital-games">Digital Games</a></li>
-              <li><a href="#choosing-games">Choosing Games</a></li>
-            </ul>
+                <div class="tip-card">
+                    <span class="tip-icon">🛡️</span>
+                    <h4>Safety First</h4>
+                    <p>Know your limits, have a designated driver, and look out for friends.</p>
           </div>
-
-          <div class="sidebar-card">
-            <h3>🎯 Popular Game Packs</h3>
-            <ul>
-              <li><a href="/packs/classic">Classic Pack (Free)</a></li>
-              <li><a href="/packs/spicy">Spicy Pack</a></li>
-              <li><a href="/packs/couples">Couples Pack</a></li>
-              <li><a href="/packs/guys">Guys Night Pack</a></li>
-              <li><a href="/packs/girls">Girls Night Pack</a></li>
-            </ul>
+                <div class="tip-card">
+                    <span class="tip-icon">📸</span>
+                    <h4>Capture Memories</h4>
+                    <p>Take photos and videos (with permission) to remember the fun times!</p>
           </div>
         </div>
+        </section>
+
+        <!-- CTA section -->
+        <section class="cta-section">
+            <h2>Ready to Party? 🎉</h2>
+            <p>Skip the setup and jump straight into the fun with SIP&GO! - the ultimate party game app</p>
+            <div class="cta-buttons">
+                <a href="/app.html" class="cta-button" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+                    🎮 Play Now
+                </a>
+                <a href="/install-app" class="cta-button secondary">
+                    📱 Install App
+                </a>
+                <a href="/packs/" class="cta-button secondary">
+                    🎯 Browse Game Packs
+                </a>
       </div>
+        </section>
     </div>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 SIP&GO! - Your guide to the best drinking games and party entertainment</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/terms">Terms of Service</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/drink-responsibly">Drink Responsibly</a>
+                <a href="/features">Features</a>
+                <a href="/">Home</a>
+            </div>
+            <p>&copy; 2024 SIP&GO! - The ultimate party game app</p>
+            <p>Party responsibly and create unforgettable memories! 🍻</p>
     </div>
   </footer>
 </body>

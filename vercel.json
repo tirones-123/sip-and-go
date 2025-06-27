@@ -4,5 +4,126 @@
   "devCommand": "npm start",
   "installCommand": "npm install",
   "framework": null,
-  "public": false
+  "public": false,
+  "rewrites": [
+    {
+      "source": "/drinking-games",
+      "destination": "/drinking-games.html"
+    },
+    {
+      "source": "/features",
+      "destination": "/features.html"
+    },
+    {
+      "source": "/install-app",
+      "destination": "/install-app.html"
+    },
+    {
+      "source": "/drink-responsibly",
+      "destination": "/drink-responsibly.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/landing",
+      "destination": "/landing.html"
+    },
+    {
+      "source": "/packs",
+      "destination": "/packs/index.html"
+    },
+    {
+      "source": "/packs/classic",
+      "destination": "/packs/classic.html"
+    },
+    {
+      "source": "/packs/spicy",
+      "destination": "/packs/spicy.html"
+    },
+    {
+      "source": "/packs/couples",
+      "destination": "/packs/couples.html"
+    },
+    {
+      "source": "/packs/girls",
+      "destination": "/packs/girls.html"
+    },
+    {
+      "source": "/packs/guys",
+      "destination": "/packs/guys.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/drinking-games.html",
+      "destination": "/drinking-games",
+      "permanent": true
+    },
+    {
+      "source": "/features.html",
+      "destination": "/features",
+      "permanent": true
+    },
+    {
+      "source": "/install-app.html",
+      "destination": "/install-app",
+      "permanent": true
+    },
+    {
+      "source": "/drink-responsibly.html",
+      "destination": "/drink-responsibly",
+      "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/landing.html",
+      "destination": "/landing",
+      "permanent": true
+    },
+    {
+      "source": "/packs/index.html",
+      "destination": "/packs",
+      "permanent": true
+    },
+    {
+      "source": "/packs/classic.html",
+      "destination": "/packs/classic",
+      "permanent": true
+    },
+    {
+      "source": "/packs/spicy.html",
+      "destination": "/packs/spicy",
+      "permanent": true
+    },
+    {
+      "source": "/packs/couples.html",
+      "destination": "/packs/couples",
+      "permanent": true
+    },
+    {
+      "source": "/packs/girls.html",
+      "destination": "/packs/girls",
+      "permanent": true
+    },
+    {
+      "source": "/packs/guys.html",
+      "destination": "/packs/guys",
+      "permanent": true
+    }
+  ]
 } 

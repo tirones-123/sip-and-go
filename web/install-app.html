@@ -1,426 +1,879 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- SEO Meta Tags -->
-  <title>Install SIP&GO! App - PWA Installation Guide</title>
-  <meta name="description" content="Learn how to install SIP&GO! as a native app on your phone, tablet, or computer. Step-by-step guide for iOS, Android, and desktop installation.">
-  <link rel="canonical" href="https://sipandgo.app/install-app">
-  
-  <!-- Favicon -->
-  <link rel="icon" href="/icon.png">
-  
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install SIP&GO! App - PWA Installation Guide</title>
+    <meta name="description" content="Learn how to install SIP&GO! as a native app on your phone, tablet, or computer. Step-by-step guide for iOS, Android, and desktop installation.">
+    <meta name="keywords" content="install SIP&GO, PWA installation, mobile app, iPhone install, Android install, desktop app">
+    <link rel="canonical" href="https://sipandgo.app/install-app">
     
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f8f9fa;
-    }
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sipandgo.app/install-app">
+    <meta property="og:title" content="Install SIP&GO! App - PWA Installation Guide">
+    <meta property="og:description" content="Learn how to install SIP&GO! as a native app on your phone, tablet, or computer. Step-by-step guide for iOS, Android, and desktop installation.">
+    <meta property="og:image" content="https://sipandgo.app/static/logo-jauneclair.png">
     
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Install SIP&GO! App - PWA Installation Guide">
+    <meta name="twitter:description" content="Learn how to install SIP&GO! as a native app on your phone, tablet, or computer. Step-by-step guide for iOS, Android, and desktop installation.">
+    <meta name="twitter:image" content="https://sipandgo.app/static/logo-jauneclair.png">
     
-    /* Header */
-    header {
-      background: #0B0E1A;
-      color: white;
-      padding: 20px 0;
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Install SIP&GO! App",
+        "description": "Step-by-step guide to install SIP&GO! as a Progressive Web App on any device",
+        "image": "https://sipandgo.app/static/logo-jauneclair.png",
+        "totalTime": "PT2M",
+        "supply": [
+            {
+                "@type": "HowToSupply",
+                "name": "Smartphone, tablet, or computer with web browser"
+            }
+        ],
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Open SIP&GO! in your browser",
+                "text": "Visit sipandgo.app in your mobile browser or desktop browser"
+            },
+            {
+                "@type": "HowToStep", 
+                "name": "Find the install option",
+                "text": "Look for 'Add to Home Screen' or 'Install App' option in your browser menu"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Confirm installation",
+                "text": "Tap 'Add' or 'Install' to add SIP&GO! to your device like a native app"
+            }
+        ]
     }
+    </script>
     
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .logo {
-      height: 40px;
-    }
-    
-    .back-link {
-      color: #ffd700;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
-      color: white;
-      padding: 80px 0;
-      text-align: center;
-    }
-    
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      background: linear-gradient(45deg, #ffd700, #ffed4e);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    
-    .hero p {
-      font-size: 1.2rem;
-      opacity: 0.9;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    /* Main Content */
-    main {
-      padding: 60px 0;
-    }
-    
-    .platform-tabs {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 40px;
-      background: white;
-      border-radius: 50px;
-      padding: 5px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    
-    .tab {
-      padding: 12px 24px;
-      border: none;
-      background: transparent;
-      border-radius: 25px;
-      cursor: pointer;
-      font-weight: 500;
-      transition: all 0.3s;
-    }
-    
-    .tab.active {
-      background: #ffd700;
-      color: #0B0E1A;
-    }
-    
-    .platform-content {
-      display: none;
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-    
-    .platform-content.active {
-      display: block;
-    }
-    
-    .steps {
-      display: grid;
-      gap: 30px;
-    }
-    
-    .step {
-      display: grid;
-      grid-template-columns: 60px 1fr;
-      gap: 20px;
-      align-items: start;
-    }
-    
-    .step-number {
-      width: 50px;
-      height: 50px;
-      background: #ffd700;
-      color: #0B0E1A;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: bold;
-      font-size: 1.2rem;
-    }
-    
-    .step-content h3 {
-      color: #0B0E1A;
-      margin-bottom: 10px;
-    }
-    
-    .step-content p {
-      color: #666;
-      margin-bottom: 15px;
-    }
-    
-    .screenshot {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      margin: 10px 0;
-    }
-    
-    .benefits {
-      background: linear-gradient(135deg, #0B0E1A 0%, #1a1d29 100%);
-      color: white;
-      padding: 60px 40px;
-      border-radius: 20px;
-      margin: 60px 0;
-      text-align: center;
-    }
-    
-    .benefits h2 {
-      margin-bottom: 30px;
-      color: #ffd700;
-    }
-    
-    .benefits-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
-    }
-    
-    .benefit {
-      text-align: center;
-    }
-    
-    .benefit-icon {
-      font-size: 2rem;
-      margin-bottom: 15px;
-    }
-    
-    /* Footer */
-    footer {
-      background: #0B0E1A;
-      color: white;
-      padding: 40px 0;
-      text-align: center;
-      margin-top: 60px;
-    }
-    
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-      
-      .platform-tabs {
-        flex-direction: column;
-        border-radius: 15px;
-      }
-      
-      .step {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-    }
-  </style>
+    <style>
+        :root {
+            --classic-primary: #F3C53F;
+            --classic-secondary: #fed475;
+            --classic-accent: #fec443;
+            --classic-dark: #0B0E1A;
+            --classic-light: #febc29;
+            --text-light: rgba(255, 255, 255, 0.9);
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, var(--classic-primary), var(--classic-secondary), var(--classic-accent), var(--classic-light));
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            color: white;
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Floating background elements */
+        .floating-elements {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .float-element {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.1;
+            animation: float 30s infinite linear;
+        }
+        
+        .float-element:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .float-element:nth-child(2) { left: 20%; animation-delay: 3s; }
+        .float-element:nth-child(3) { left: 30%; animation-delay: 6s; }
+        .float-element:nth-child(4) { left: 40%; animation-delay: 9s; }
+        .float-element:nth-child(5) { left: 50%; animation-delay: 12s; }
+        .float-element:nth-child(6) { left: 60%; animation-delay: 15s; }
+        .float-element:nth-child(7) { left: 70%; animation-delay: 18s; }
+        .float-element:nth-child(8) { left: 80%; animation-delay: 21s; }
+        
+        @keyframes float {
+            0% { 
+                transform: translateY(100vh) rotate(0deg) scale(0.8); 
+                opacity: 0.05;
+            }
+            50% { 
+                opacity: 0.15;
+                transform: translateY(50vh) rotate(180deg) scale(1.1);
+            }
+            100% { 
+                transform: translateY(-100px) rotate(360deg) scale(0.8); 
+                opacity: 0.05;
+            }
+        }
+        
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(20px);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .back-link {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+        }
+        
+        .back-link:hover {
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo {
+            height: 50px;
+        }
+        
+        .nav-badge {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-accent));
+            color: var(--classic-dark);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Main content */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 100px 2rem 2rem;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, white, var(--classic-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero .subtitle {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Platform tabs */
+        .platform-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border-radius: 50px;
+            padding: 0.5rem;
+            border: 1px solid var(--glass-border);
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+        
+        .tab {
+            padding: 1rem 2rem;
+            border: none;
+            background: transparent;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--text-light);
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        
+        .tab.active {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-secondary));
+            color: var(--classic-dark);
+            transform: scale(1.05);
+        }
+        
+        .tab:hover:not(.active) {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+        
+        /* Platform content */
+        .platform-content {
+            display: none;
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            padding: 3rem;
+            border-radius: 25px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--glass-border);
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+        
+        .platform-content.active {
+            display: block;
+        }
+        
+        .platform-content h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: var(--classic-primary);
+            text-align: center;
+            font-weight: 800;
+        }
+        
+        /* Steps */
+        .steps {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 1.5rem;
+            align-items: start;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-secondary));
+            color: var(--classic-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .step-content h3 {
+            color: var(--classic-primary);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        
+        .step-content p {
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .step-tip {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid var(--classic-primary);
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Benefits section */
+        .benefits {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            padding: 4rem 2rem;
+            border-radius: 30px;
+            margin-bottom: 4rem;
+            text-align: center;
+            border: 1px solid var(--glass-border);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .benefits h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 2rem;
+            font-weight: 800;
+            color: var(--classic-primary);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .benefit {
+            background: var(--glass-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: all 0.3s ease;
+        }
+        
+        .benefit:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .benefit h4 {
+            color: var(--classic-primary);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        /* Quick install section */
+        .quick-install {
+            background: linear-gradient(135deg, var(--classic-dark) 0%, rgba(11, 14, 26, 0.9) 100%);
+            padding: 3rem;
+            border-radius: 25px;
+            text-align: center;
+            margin-bottom: 4rem;
+            border: 1px solid var(--glass-border);
+            animation: fadeInUp 1s ease-out 0.8s both;
+        }
+        
+        .quick-install h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--classic-primary);
+            font-weight: 800;
+        }
+        
+        .quick-install p {
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .install-button {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-secondary));
+            color: var(--classic-dark);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border: 2px solid transparent;
+        }
+        
+        .install-button:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        /* CTA section */
+        .cta-section {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeInUp 1s ease-out 1s both;
+        }
+        
+        .cta-section h2 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .cta-button {
+            background: linear-gradient(45deg, var(--classic-primary), var(--classic-secondary));
+            color: var(--classic-dark);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 2px solid transparent;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            border-color: rgba(255,255,255,0.3);
+        }
+        
+        .cta-button.secondary {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--glass-border);
+            color: white;
+        }
+        
+        .cta-button.secondary:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Footer */
+        .footer {
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
+            padding: 3rem 2rem 2rem;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer p {
+            opacity: 0.7;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 80px 1rem 1rem;
+            }
+            
+            .header-content {
+                padding: 0 1rem;
+            }
+            
+            .platform-tabs {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+            
+            .tab {
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .platform-content {
+                padding: 2rem 1.5rem;
+            }
+            
+            .step {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .benefits {
+                padding: 2rem 1rem;
+            }
+            
+            .quick-install {
+                padding: 2rem 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .platform-tabs {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <header>
-    <nav class="container">
-      <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
-      <a href="/" class="back-link">← Back to Home</a>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <div class="container">
-      <h1>Install SIP&GO! App</h1>
-      <p>Get the full app experience! Install SIP&GO! on your device for faster access, offline play, and a native app feel. No app store required - install directly from your browser.</p>
+    <!-- Floating background elements -->
+    <div class="floating-elements">
+        <div class="float-element">📱</div>
+        <div class="float-element">💻</div>
+        <div class="float-element">⬇️</div>
+        <div class="float-element">📲</div>
+        <div class="float-element">🚀</div>
+        <div class="float-element">⚡</div>
+        <div class="float-element">📱</div>
+        <div class="float-element">💻</div>
     </div>
-  </section>
 
-  <main>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <a href="/" class="back-link">← Back to Home</a>
+            <img src="/static/logo-jauneclair.png" alt="SIP&GO!" class="logo">
+            <div class="nav-badge">📱 INSTALL</div>
+        </div>
+    </header>
+
+    <!-- Main content -->
     <div class="container">
-      <div class="platform-tabs">
-        <button class="tab active" onclick="showPlatform('ios')">📱 iPhone/iPad</button>
-        <button class="tab" onclick="showPlatform('android')">🤖 Android</button>
-        <button class="tab" onclick="showPlatform('desktop')">💻 Desktop</button>
-      </div>
+        <!-- Hero section -->
+        <section class="hero">
+            <h1>Install SIP&GO! 📱</h1>
+            <p class="subtitle">Get SIP&GO! as a native app on any device. Works offline, loads instantly, and feels just like a regular app!</p>
+        </section>
 
-      <div id="ios" class="platform-content active">
-        <h2>Install on iPhone/iPad (iOS)</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Open in Safari</h3>
-              <p>Visit sipandgo.app in Safari browser (this won't work in Chrome or other browsers on iOS).</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Tap the Share Button</h3>
-              <p>Look for the share icon at the bottom of your screen (square with arrow pointing up).</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Select "Add to Home Screen"</h3>
-              <p>Scroll down in the share menu and tap "Add to Home Screen" option.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h3>Confirm Installation</h3>
-              <p>You can change the app name if desired, then tap "Add" to install SIP&GO! to your home screen.</p>
-            </div>
-          </div>
+        <!-- Quick install section -->
+        <section class="quick-install">
+            <h2>🚀 Quick Install</h2>
+            <p>Most modern browsers will show an install prompt automatically. Look for the install icon in your address bar!</p>
+            <a href="/app.html" class="install-button" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+                📱 Go to App & Install
+            </a>
+        </section>
+
+        <!-- Platform tabs -->
+        <div class="platform-tabs">
+            <button class="tab active" onclick="showPlatform('ios')">📱 iPhone/iPad</button>
+            <button class="tab" onclick="showPlatform('android')">🤖 Android</button>
+            <button class="tab" onclick="showPlatform('desktop')">💻 Desktop</button>
         </div>
-      </div>
 
-      <div id="android" class="platform-content">
-        <h2>Install on Android</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Open in Chrome</h3>
-              <p>Visit sipandgo.app in Chrome browser (recommended) or another modern browser.</p>
+        <!-- iOS Installation -->
+        <div id="ios" class="platform-content active">
+            <h2>📱 Install on iPhone/iPad</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Open Safari Browser</h3>
+                        <p>Visit <strong>sipandgo.app</strong> using Safari (not Chrome or other browsers)</p>
+                        <div class="step-tip">💡 Tip: PWA installation only works with Safari on iOS devices</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Tap the Share Button</h3>
+                        <p>Look for the share icon (square with arrow pointing up) at the bottom of Safari</p>
+                        <div class="step-tip">📍 Location: Bottom center of Safari browser</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Select "Add to Home Screen"</h3>
+                        <p>Scroll down in the share menu and tap "Add to Home Screen"</p>
+                        <div class="step-tip">🔍 Look for the plus (+) icon next to this option</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Confirm Installation</h3>
+                        <p>Tap "Add" in the top right corner. SIP&GO! will appear on your home screen!</p>
+                        <div class="step-tip">🎉 Success! You can now launch SIP&GO! like any other app</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Look for Install Prompt</h3>
-              <p>Chrome may automatically show an "Add to Home screen" banner at the bottom of the page.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Use Menu Option</h3>
-              <p>If no banner appears, tap the three dots menu (⋮) and select "Add to Home screen" or "Install app".</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h3>Confirm Installation</h3>
-              <p>Tap "Add" or "Install" to add SIP&GO! to your home screen and app drawer.</p>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div id="desktop" class="platform-content">
-        <h2>Install on Desktop (Windows/Mac/Linux)</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="step-number">1</div>
-            <div class="step-content">
-              <h3>Open in Chrome, Edge, or Firefox</h3>
-              <p>Visit sipandgo.app in a modern browser that supports PWA installation.</p>
+        <!-- Android Installation -->
+        <div id="android" class="platform-content">
+            <h2>🤖 Install on Android</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Open Chrome Browser</h3>
+                        <p>Visit <strong>sipandgo.app</strong> using Chrome browser on your Android device</p>
+                        <div class="step-tip">💡 Tip: Chrome usually shows an automatic install prompt</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Look for Install Prompt</h3>
+                        <p>Chrome will show a banner asking "Add SIP&GO! to Home screen?" - tap "Add"</p>
+                        <div class="step-tip">🔔 If you don't see it, try the menu method below</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Alternative: Use Chrome Menu</h3>
+                        <p>Tap the three dots (⋮) menu → "Add to Home screen" → "Add"</p>
+                        <div class="step-tip">📋 This method works if the automatic prompt doesn't appear</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Launch from Home Screen</h3>
+                        <p>Find the SIP&GO! icon on your home screen and tap to launch!</p>
+                        <div class="step-tip">⚡ The app will load instantly and work offline</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <div class="step-content">
-              <h3>Look for Install Icon</h3>
-              <p>You should see an install icon (⊕) in the address bar, or a banner at the top of the page.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <div class="step-content">
-              <h3>Click Install</h3>
-              <p>Click the install icon or banner button to start the installation process.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step-number">4</div>
-            <div class="step-content">
-              <h3>Confirm Installation</h3>
-              <p>Click "Install" in the confirmation dialog. SIP&GO! will be added to your applications/programs.</p>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <div class="benefits">
-        <h2>Why Install the App?</h2>
-        <p>Installing SIP&GO! as an app gives you the best experience with additional benefits:</p>
-        <div class="benefits-grid">
-          <div class="benefit">
-            <div class="benefit-icon">⚡</div>
-            <h4>Faster Loading</h4>
-            <p>Instant access without opening your browser</p>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">📴</div>
-            <h4>Offline Play</h4>
-            <p>Play even without internet connection</p>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">🎯</div>
-            <h4>Native Feel</h4>
-            <p>Full-screen experience like a native app</p>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">🔔</div>
-            <h4>Home Screen Access</h4>
-            <p>Quick access directly from your home screen</p>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">💾</div>
-            <h4>Less Data Usage</h4>
-            <p>Cached content uses less data</p>
-          </div>
-          <div class="benefit">
-            <div class="benefit-icon">🔒</div>
-            <h4>More Secure</h4>
-            <p>Runs in its own secure container</p>
-          </div>
+        <!-- Desktop Installation -->
+        <div id="desktop" class="platform-content">
+            <h2>💻 Install on Desktop</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Open Chrome, Edge, or Firefox</h3>
+                        <p>Visit <strong>sipandgo.app</strong> in your desktop browser</p>
+                        <div class="step-tip">🌐 Works with most modern browsers</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Look for Install Icon</h3>
+                        <p>Check your address bar for a computer/install icon - click it</p>
+                        <div class="step-tip">📍 Usually appears on the right side of the address bar</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Click "Install"</h3>
+                        <p>A dialog will appear asking to install SIP&GO! - click "Install"</p>
+                        <div class="step-tip">⚡ Installation takes just a few seconds</div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Launch from Desktop</h3>
+                        <p>SIP&GO! will appear in your apps menu and desktop. Launch like any native app!</p>
+                        <div class="step-tip">🚀 Runs in its own window, no browser tabs needed</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div style="background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center;">
-        <h2>Need Help?</h2>
-        <p style="margin-bottom: 20px;">If you're having trouble installing the app, you can always use SIP&GO! directly in your browser. The web version works perfectly and includes all the same features!</p>
-        <p><strong>Troubleshooting Tips:</strong></p>
-        <ul style="text-align: left; max-width: 500px; margin: 20px auto;">
-          <li>Make sure you're using a supported browser (Chrome, Safari, Edge, Firefox)</li>
-          <li>Check that your browser is up to date</li>
-          <li>Try refreshing the page if the install option doesn't appear</li>
-          <li>Some ad blockers may interfere with PWA installation</li>
-        </ul>
-      </div>
+        <!-- Benefits section -->
+        <section class="benefits">
+            <h2>🌟 Why Install as an App?</h2>
+            <p style="font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                Installing SIP&GO! gives you the best possible party game experience!
+            </p>
+            <div class="benefits-grid">
+                <div class="benefit">
+                    <span class="benefit-icon">⚡</span>
+                    <h4>Lightning Fast</h4>
+                    <p>Loads instantly, no browser overhead. Perfect for quick party starts!</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">📶</span>
+                    <h4>Works Offline</h4>
+                    <p>Play anywhere without internet once installed. Perfect for any location!</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">🏠</span>
+                    <h4>Home Screen Access</h4>
+                    <p>Launch directly from your home screen like any other app. No bookmarks needed!</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">🔔</span>
+                    <h4>Native Experience</h4>
+                    <p>Runs in its own window with app-like behavior. No browser distractions!</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">💾</span>
+                    <h4>Automatic Updates</h4>
+                    <p>Always get the latest features automatically. No manual updates required!</p>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">🎮</span>
+                    <h4>Full Features</h4>
+                    <p>Access all game packs, settings, and features just like a native app!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA section -->
+        <section class="cta-section">
+            <h2>Ready to Install? 🚀</h2>
+            <p>Join thousands who've installed SIP&GO! for the ultimate party experience</p>
+            <div class="cta-buttons">
+                <a href="/app.html" class="cta-button" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+                    📱 Install SIP&GO! Now
+                </a>
+                <a href="/features" class="cta-button secondary">
+                    ⚡ See All Features
+                </a>
+                <a href="/packs/" class="cta-button secondary">
+                    🎯 Browse Game Packs
+                </a>
+            </div>
+        </section>
     </div>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 SIP&GO! - Install once, party everywhere</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="/terms">Terms of Service</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/drink-responsibly">Drink Responsibly</a>
+                <a href="/features">Features</a>
+                <a href="/">Home</a>
+            </div>
+            <p>&copy; 2024 SIP&GO! - The ultimate party game app</p>
+            <p>Install once, party everywhere! 📱</p>
+        </div>
+    </footer>
 
-  <script>
-    function showPlatform(platform) {
-      // Hide all platform content
-      document.querySelectorAll('.platform-content').forEach(el => {
-        el.classList.remove('active');
-      });
-      
-      // Remove active class from all tabs
-      document.querySelectorAll('.tab').forEach(el => {
-        el.classList.remove('active');
-      });
-      
-      // Show selected platform
-      document.getElementById(platform).classList.add('active');
-      
-      // Add active class to clicked tab
-      event.target.classList.add('active');
-    }
-  </script>
+    <script>
+        function showPlatform(platform) {
+            // Hide all platform contents
+            document.querySelectorAll('.platform-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected platform content
+            document.getElementById(platform).classList.add('active');
+            
+            // Add active class to clicked tab
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html> 

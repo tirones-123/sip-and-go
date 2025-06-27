@@ -1,373 +1,914 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pack Guys Night - SIP&GO! | Jeu à Boire entre Mecs</title>
-    <meta name="description" content="Le pack Guys Night de SIP&GO! - 300+ questions et défis conçus pour des soirées épiques entre potes. Bromance et fous rires garantis ! 🍻">
-    <meta name="keywords" content="jeu entre mecs, soirée potes, guys night, bromance, défis masculins, jeu à boire hommes">
-    <link rel="canonical" href="https://sipandgo.app/packs/guys">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Pack Guys Night - SIP&GO! | Soirées entre Potes">
-    <meta property="og:description" content="300+ questions et défis pour des soirées épiques entre mecs. Bromance et fous rires garantis ! 🍻">
-    <meta property="og:url" content="https://sipandgo.app/packs/guys">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://sipandgo.app/static/guys.png">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Pack Guys Night - SIP&GO! | Soirées entre Potes">
-    <meta name="twitter:description" content="300+ questions et défis pour des soirées épiques entre mecs. Bromance et fous rires garantis ! 🍻">
-    <meta name="twitter:image" content="https://sipandgo.app/static/guys.png">
-    
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "GamePlayMode",
-        "name": "Pack Guys Night",
-        "description": "Pack de jeu spécialement conçu pour les soirées entre amis masculins",
-        "isPartOf": {
-            "@type": "MobileApplication",
-            "name": "SIP&GO!",
-            "applicationCategory": "GameApplication",
-            "operatingSystem": ["iOS", "Android", "Web"],
-            "offers": {
-                "@type": "Offer",
-                "price": "0",
-                "priceCurrency": "EUR"
-            }
-        },
-        "audience": {
-            "@type": "Audience",
-            "audienceType": "Men"
-        }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- SEO Meta Tags -->
+  <title>Guys Night Pack - Bachelor Party Drinking Games | SIP&GO!</title>
+  <meta name="description" content="Bros being bros! SIP&GO!'s Guys Night pack features 300+ questions perfect for bachelor parties, poker nights, and legendary guy gatherings. Get the pack now!">
+  <link rel="canonical" href="https://sipandgo.app/packs/guys">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://sipandgo.app/packs/guys">
+  <meta property="og:title" content="Guys Night Pack - Bachelor Party Drinking Games | SIP&GO!">
+  <meta property="og:description" content="Bros being bros! SIP&GO!'s Guys Night pack features 300+ questions perfect for bachelor parties, poker nights, and legendary guy gatherings.">
+  <meta property="og:image" content="https://sipandgo.app/static/guys.png">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/icon.png">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    </script>
     
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1565C0 0%, #2196F3 50%, #03DAC6 100%);
-            color: white;
-            min-height: 100vh;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 40px;
-            padding: 40px 0;
-        }
-        
-        .logo {
-            height: 80px;
-            margin-bottom: 20px;
-        }
-        
-        .pack-badge {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            padding: 8px 20px;
-            border-radius: 50px;
-            display: inline-block;
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        
-        h1 {
-            font-size: 3rem;
-            font-weight: 900;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .subtitle {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            margin-bottom: 30px;
-        }
-        
-        .hero-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            align-items: center;
-            margin-bottom: 60px;
-        }
-        
-        .hero-content h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-        
-        .hero-image {
-            text-align: center;
-        }
-        
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-        
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-bottom: 60px;
-        }
-        
-        .stat-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 900;
-            color: #FFD54F;
-            display: block;
-        }
-        
-        .features {
-            margin-bottom: 60px;
-        }
-        
-        .features h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 30px;
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            display: block;
-        }
-        
-        .questions-preview {
-            margin-bottom: 60px;
-        }
-        
-        .questions-preview h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-        
-        .question-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            font-size: 1.1rem;
-        }
-        
-        .cta-section {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .cta-button {
-            background: linear-gradient(45deg, #FF6B35, #F7931E);
-            color: white;
-            padding: 20px 40px;
-            border: none;
-            border-radius: 50px;
-            font-size: 1.3rem;
-            font-weight: bold;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-            transition: transform 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-        }
-        
-        .back-link {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-        
-        .back-link:hover {
-            color: white;
-        }
-        
-        @media (max-width: 768px) {
-            .hero-section {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .hero-content h2 {
-                font-size: 1.8rem;
-            }
-            
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    :root {
+      /* Guys palette - earthy/masculine tones */
+      --guys-1: #d4a574;
+      --guys-2: #b8956a;
+      --guys-3: #a54429;
+      --guys-4: #8b3a21;
+      --guys-5: #6f2e1b;
+      --guys-6: #5a2518;
+      
+      /* Pack color */
+      --pack-guys: #A54429;
+      
+      /* Dark theme */
+      --dark-bg: #0B0E1A;
+      --dark-bg-light: #1a1d29;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: var(--dark-bg);
+      overflow-x: hidden;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Header */
+    header {
+      background: rgba(11, 14, 26, 0.95);
+      backdrop-filter: blur(10px);
+      color: white;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      height: 50px;
+    }
+    
+    .back-link {
+      color: var(--guys-1);
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      padding: 10px 20px;
+      border: 2px solid var(--guys-1);
+      border-radius: 25px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .back-link:hover {
+      background: var(--guys-1);
+      color: var(--dark-bg);
+      transform: translateX(-5px);
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--guys-1) 0%, var(--guys-2) 20%, var(--guys-3) 40%, var(--guys-4) 60%, var(--guys-5) 80%, var(--guys-6) 100%);
+      background-size: 400% 400%;
+      animation: guysGradient 25s ease infinite;
+      color: white;
+      padding: 140px 0 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    @keyframes guysGradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .hero::before {
+      content: '🍺';
+      position: absolute;
+      font-size: 300px;
+      top: -100px;
+      right: -100px;
+      opacity: 0.05;
+      animation: float 20s infinite ease-in-out;
+    }
+    
+    .hero::after {
+      content: '🏈';
+      position: absolute;
+      font-size: 200px;
+      bottom: -50px;
+      left: -50px;
+      opacity: 0.05;
+      animation: float 25s infinite ease-in-out reverse;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-30px) rotate(15deg); }
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 350px;
+      gap: 60px;
+      align-items: center;
+    }
+    
+    .hero-text h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    
+    .hero-text h1 .icon {
+      font-size: 5rem;
+      filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+    }
+    
+    .hero-text p {
+      font-size: 1.3rem;
+      margin-bottom: 40px;
+      opacity: 0.95;
+      line-height: 1.8;
+    }
+    
+    .hero-image {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 30px;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+      transition: transform 0.3s;
+      animation: heroFloat 6s infinite ease-in-out;
+    }
+    
+    @keyframes heroFloat {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-20px) scale(1.02); }
+    }
+    
+    .hero-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 18px 40px;
+      background: white;
+      color: var(--guys-3);
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    }
+    
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      border: 2px solid white;
+      backdrop-filter: blur(10px);
+    }
+    
+    .btn-secondary:hover {
+      background: white;
+      color: var(--guys-3);
+    }
+    
+    /* Main Content */
+    main {
+      background: #fff;
+      position: relative;
+    }
+    
+    .section {
+      padding: 100px 0;
+      position: relative;
+    }
+    
+    .section h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: var(--dark-bg);
+      text-align: center;
+      font-weight: 900;
+    }
+    
+    .section-subtitle {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #666;
+      margin-bottom: 60px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* Stats Section */
+    .stats-section {
+      background: #f8f9fa;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .stats-section::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: var(--guys-3);
+      border-radius: 50%;
+      opacity: 0.05;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .stat-card {
+      background: white;
+      padding: 50px 40px;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--guys-1), var(--guys-3), var(--guys-5));
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+    
+    .stat-card:hover::before {
+      transform: scaleX(1);
+    }
+    
+    .stat-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+    }
+    
+    .stat-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+    
+    .stat-card:nth-child(1) .stat-icon { animation-delay: 0s; }
+    .stat-card:nth-child(2) .stat-icon { animation-delay: 0.2s; }
+    .stat-card:nth-child(3) .stat-icon { animation-delay: 0.4s; }
+    .stat-card:nth-child(4) .stat-icon { animation-delay: 0.6s; }
+    
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--guys-3);
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    .stat-label {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    
+    /* Features Section */
+    .features-section {
+      background: white;
+    }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    
+    .feature-card {
+      padding: 50px 40px;
+      border-radius: 30px;
+      text-align: center;
+      transition: all 0.3s;
+      position: relative;
+      background: linear-gradient(135deg, var(--guys-1), var(--guys-3));
+      color: white;
+    }
+    
+    .feature-card:nth-child(2) {
+      background: linear-gradient(135deg, var(--guys-2), var(--guys-4));
+    }
+    
+    .feature-card:nth-child(3) {
+      background: linear-gradient(135deg, var(--guys-3), var(--guys-5));
+    }
+    
+    .feature-card:nth-child(4) {
+      background: linear-gradient(135deg, var(--guys-4), var(--guys-6));
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    
+    .feature-icon {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      display: inline-block;
+      filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
+    }
+    
+    .feature-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      font-weight: 800;
+    }
+    
+    .feature-card p {
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+    
+    /* Sample Questions */
+    .questions-section {
+      background: var(--dark-bg);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .questions-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, var(--guys-3) 0%, transparent 70%);
+      opacity: 0.1;
+    }
+    
+    .questions-section h2 {
+      color: white;
+    }
+    
+    .questions-section .section-subtitle {
+      color: rgba(255,255,255,0.8);
+    }
+    
+    .questions-carousel {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 60px;
+    }
+    
+    .questions-track {
+      display: flex;
+      gap: 30px;
+      animation: scroll 35s linear infinite;
+      padding: 20px 0;
+    }
+    
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    
+    .question-card {
+      background: linear-gradient(135deg, var(--guys-1), var(--guys-3));
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      min-width: 400px;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .question-card::before {
+      content: '💪';
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 2rem;
+      opacity: 0.2;
+    }
+    
+    .question-card p {
+      font-size: 1.2rem;
+      color: white;
+      line-height: 1.8;
+      font-style: italic;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .question-type {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 20px;
+    }
+    
+    /* Perfect For Section */
+    .perfect-for-section {
+      background: #f8f9fa;
+    }
+    
+    .occasions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    
+    .occasion-card {
+      background: white;
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: all 0.3s;
+      border: 3px solid transparent;
+    }
+    
+    .occasion-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--guys-3);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+    }
+    
+    .occasion-icon {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+    
+    .occasion-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: var(--dark-bg);
+      font-weight: 800;
+    }
+    
+    .occasion-card p {
+      color: #666;
+      line-height: 1.8;
+    }
+    
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--guys-2) 0%, var(--guys-4) 100%);
+      padding: 100px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: url('/static/guys.png') center/100px 100px repeat;
+      opacity: 0.05;
+      animation: rotate 60s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+    
+    .cta-section h2 {
+      font-size: 3.5rem;
+      color: white;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    .cta-section p {
+      font-size: 1.3rem;
+      color: white;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.95;
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark-bg);
+      color: white;
+      padding: 60px 0 40px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    footer p {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 20px;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--guys-1);
+    }
+    
+    /* Responsive */
+    @media (max-width: 968px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .hero-text h1 {
+        font-size: 3rem;
+        flex-direction: column;
+      }
+      
+      .hero-image {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+      
+      .questions-track {
+        animation-duration: 20s;
+      }
+      
+      .question-card {
+        min-width: 300px;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero-text h1 .icon {
+        font-size: 3rem;
+      }
+      
+      .section h2 {
+        font-size: 2rem;
+      }
+      
+      .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+      }
+      
+      .cta-section h2 {
+        font-size: 2.5rem;
+      }
+      
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Guys Night Pack - SIP&GO! Drinking Game",
+    "description": "Drinking game pack with 300+ questions specially crafted for bachelor parties and guys' nights",
+    "brand": {
+      "@type": "Brand",
+      "name": "SIP&GO!"
+    },
+    "offers": {
+      "@type": "Offer",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "Premium",
+        "priceCurrency": "USD"
+      }
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "ratingCount": "650"
+    },
+    "category": "Game",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Men's Night Out"
+    }
+  }
+  </script>
 </head>
+
 <body>
+  <header>
+    <nav class="container">
+      <img src="/static/logo-jauneclair.png" alt="SIP&GO! Logo" class="logo">
+      <a href="/packs" class="back-link">
+        <span>←</span>
+        <span>All Packs</span>
+      </a>
+    </nav>
+  </header>
+
+  <section class="hero">
     <div class="container">
-        <div class="header">
-            <a href="../" class="back-link">← Retour aux packs</a>
-            <img src="../static/logo-jauneclair.png" alt="SIP&GO!" class="logo">
-            <div class="pack-badge">🍺 PACK PREMIUM</div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            <span class="icon">👨</span>
+            <span>Guys Night Pack</span>
+          </h1>
+          <p>Bros being bros! Our Guys Night pack is specially crafted with 300+ questions for the fellas. Perfect for bachelor parties, poker nights, sports watch parties, or any time the guys want to bond over beers and create legendary stories!</p>
+          <div class="hero-buttons">
+            <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+              Unlock Guys Pack
+              <span>🍺</span>
+            </a>
+            <a href="#sample-questions" class="btn btn-secondary">
+              See Sample Questions
+              <span>↓</span>
+            </a>
+          </div>
         </div>
-        
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1>Guys Night 🍻</h1>
-                <p class="subtitle">Le pack ultime pour les soirées entre potes</p>
-                <p>Des questions et défis spécialement conçus pour renforcer les liens d'amitié masculine. Fous rires, challenges épiques et moments de bromance garantis !</p>
-            </div>
-            <div class="hero-image">
-                <img src="../static/guys.png" alt="Pack Guys Night - Soirées entre mecs" loading="lazy">
-            </div>
-        </div>
-        
-        <div class="stats">
-            <div class="stat-card">
-                <span class="stat-number">300+</span>
-                <div>Questions de Mecs</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number">🤝</span>
-                <div>Bromance</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number">😂</span>
-                <div>Fous Rires</div>
-            </div>
-            <div class="stat-card">
-                <span class="stat-number">🏆</span>
-                <div>Défis Épiques</div>
-            </div>
-        </div>
-        
-        <section class="features">
-            <h2>Pourquoi ce pack déchire</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <span class="feature-icon">🎯</span>
-                    <h3>Questions Masculines</h3>
-                    <p>Des questions qui parlent aux mecs : sport, gaming, aventures, et tout ce qui forge l'amitié masculine.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">💪</span>
-                    <h3>Défis de Potes</h3>
-                    <p>Des challenges amusants pour tester vos liens d'amitié et créer des souvenirs inoubliables.</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🎮</span>
-                    <h3>Esprit Compétitif</h3>
-                    <p>Des duels et des battles pour révéler qui est le vrai alpha du groupe (avec fair-play bien sûr).</p>
-                </div>
-                <div class="feature-card">
-                    <span class="feature-icon">🤣</span>
-                    <h3>Humour de Mecs</h3>
-                    <p>Des questions qui tapent dans l'humour masculin et créent une atmosphère détendue et fun.</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="questions-preview">
-            <h2>Aperçu des questions</h2>
-            <div class="question-card">
-                "Raconte le compliment le plus sincère qu'on t'ait fait récemment. Si [Joueur] trouve ça touchant, il distribue 2 gorgées."
-            </div>
-            <div class="question-card">
-                "Entre [Joueur] et [Joueur], inventez ensemble le pitch d'une série Netflix absurde. Le groupe vote !"
-            </div>
-            <div class="question-card">
-                "Quelle est ta théorie du complot la plus stupide mais secrètement plausible ?"
-            </div>
-            <div class="question-card">
-                "Imite l'animal qui te représente le mieux selon toi. Si [Joueur] devine juste, il distribue 3 gorgées."
-            </div>
-            <div class="question-card">
-                "Dans un zombie apocalypse, qui ici serait ton premier allié ?"
-            </div>
-            <p style="text-align: center; margin-top: 30px; opacity: 0.8;">
-                <em>300+ questions pour des soirées légendaires entre potes ! 🔥</em>
-            </p>
-        </section>
-        
-        <section class="cta-section">
-            <h2>Prêt pour une soirée de légende ?</h2>
-            <p style="margin-bottom: 30px;">Joue immédiatement ou télécharge SIP&GO! pour découvrir le pack Guys Night</p>
-            <a href="../app.html" class="cta-button" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">🍻 Jouer Maintenant</a>
-            <a href="../install-app" class="cta-button">📱 Télécharger l'App</a>
-            <a href="../" class="cta-button">🎮 Voir tous les packs</a>
-        </section>
-        
-        <footer style="text-align: center; padding: 40px 0; border-top: 1px solid rgba(255,255,255,0.2); margin-top: 60px;">
-            <p>&copy; 2024 SIP&GO! - L'app qui transforme vos soirées</p>
-            <p style="margin-top: 10px; opacity: 0.7;">
-                <a href="../terms" style="color: rgba(255,255,255,0.7);">Conditions d'utilisation</a> • 
-                <a href="../privacy" style="color: rgba(255,255,255,0.7);">Politique de confidentialité</a> • 
-                <a href="../drink-responsibly" style="color: rgba(255,255,255,0.7);">Boire avec modération</a>
-            </p>
-        </footer>
+        <img src="/static/guys.png" alt="Guys Night Pack - Bachelor Party Drinking Games" class="hero-image">
+      </div>
     </div>
+  </section>
+
+  <main>
+    <section class="section stats-section">
+      <div class="container">
+        <h2>Built for the Boys</h2>
+        <p class="section-subtitle">Everything you need for an epic guys' night</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">🍺</div>
+            <span class="stat-number">300+</span>
+            <span class="stat-label">Bro Questions</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">💪</div>
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Challenges</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Guy Approved</span>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🎯</div>
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Epic Stories</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features-section">
+      <div class="container">
+        <h2>What Makes It Legendary</h2>
+        <p class="section-subtitle">Features designed for maximum bro bonding</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🏈</div>
+            <h3>Sports & Competition</h3>
+            <p>Questions about sports fails, gym stories, and competitive challenges that get the testosterone flowing.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎮</div>
+            <h3>Gaming & Tech</h3>
+            <p>From gaming marathons to tech fails, questions that speak to every guy's inner geek.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🚗</div>
+            <h3>Cars & Adventures</h3>
+            <p>Road trip stories, car confessions, and adventure challenges that fuel the conversation.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👊</div>
+            <h3>Brotherhood Tests</h3>
+            <p>Questions that test loyalty, reveal bromances, and strengthen the bonds between the boys.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sample-questions" class="section questions-section">
+      <div class="container">
+        <h2>Sample Bro Questions</h2>
+        <p class="section-subtitle">Get ready for some legendary moments</p>
+      </div>
+      <div class="questions-carousel">
+        <div class="questions-track">
+          <div class="question-card">
+            <p>"Who's the worst wingman in the group? That person takes 3 penalties and explains their worst fail."</p>
+            <div class="question-type">Bro Code</div>
+          </div>
+          <div class="question-card">
+            <p>"Share your most embarrassing gym moment. No story? Do 20 push-ups or take 2 penalties."</p>
+            <div class="question-type">Fitness Fail</div>
+          </div>
+          <div class="question-card">
+            <p>"Rate each other's dating game from 1-10. Lowest score gives advice or drinks."</p>
+            <div class="question-type">Truth Bomb</div>
+          </div>
+          <div class="question-card">
+            <p>"Who would survive longest in a zombie apocalypse? Last pick takes 2 penalties."</p>
+            <div class="question-type">Survival</div>
+          </div>
+          <div class="question-card">
+            <p>"Demonstrate your best pickup line. If no one laughs, take 3 penalties."</p>
+            <div class="question-type">Challenge</div>
+          </div>
+          <div class="question-card">
+            <p>"Everyone who's cried during a sports game takes a penalty. Own it, bros!"</p>
+            <div class="question-type">Group Truth</div>
+          </div>
+          <!-- Duplicate for seamless loop -->
+          <div class="question-card">
+            <p>"Who's the worst wingman in the group? That person takes 3 penalties and explains their worst fail."</p>
+            <div class="question-type">Bro Code</div>
+          </div>
+          <div class="question-card">
+            <p>"Share your most embarrassing gym moment. No story? Do 20 push-ups or take 2 penalties."</p>
+            <div class="question-type">Fitness Fail</div>
+          </div>
+          <div class="question-card">
+            <p>"Rate each other's dating game from 1-10. Lowest score gives advice or drinks."</p>
+            <div class="question-type">Truth Bomb</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section perfect-for-section">
+      <div class="container">
+        <h2>Perfect For Every Guys' Night</h2>
+        <p class="section-subtitle">Whatever the occasion, we've got you covered</p>
+        <div class="occasions-grid">
+          <div class="occasion-card">
+            <div class="occasion-icon">🤵</div>
+            <h3>Bachelor Parties</h3>
+            <p>Send off your bro in style with questions that celebrate the good times and create new memories.</p>
+          </div>
+          <div class="occasion-card">
+            <div class="occasion-icon">🃏</div>
+            <h3>Poker Nights</h3>
+            <p>Add extra stakes to your card game with questions that reveal who's really bluffing.</p>
+          </div>
+          <div class="occasion-card">
+            <div class="occasion-icon">🏈</div>
+            <h3>Game Day</h3>
+            <p>Perfect for halftime entertainment or when your team is getting destroyed.</p>
+          </div>
+          <div class="occasion-card">
+            <div class="occasion-icon">🎣</div>
+            <h3>Camping Trips</h3>
+            <p>Around the campfire or in the cabin, these questions fuel legendary outdoor stories.</p>
+          </div>
+          <div class="occasion-card">
+            <div class="occasion-icon">🎱</div>
+            <h3>Bar Nights</h3>
+            <p>Turn any night at the bar into an unforgettable experience with the boys.</p>
+          </div>
+          <div class="occasion-card">
+            <div class="occasion-icon">🎮</div>
+            <h3>Gaming Sessions</h3>
+            <p>Between matches or during loading screens, keep the energy high with bro challenges.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2>Ready to Rally the Boys? 🍻</h2>
+        <p>Unlock the Guys Night pack and create legendary memories with your crew!</p>
+        <div class="hero-buttons">
+          <a href="/app.html" class="btn" onclick="localStorage.setItem('sipandgo-prefers-app', 'true')">
+            Get Guys Pack Now
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 SIP&GO! - Guys Night Pack: Where Bros Become Legends</p>
+      <div class="footer-links">
+        <a href="/drink-responsibly">Drink Responsibly</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/packs">All Packs</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html> 
