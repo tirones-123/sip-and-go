@@ -1,2002 +1,1002 @@
 [
   {
     "id": "co1",
-    "text": "${player}, raconte à ${player} le rêve le plus bizarre que tu aies fait cette année. Si ça le fait rire, il distribue 3 gorgées.",
+    "text": "${player}, raconte à ${player} ton rêve le plus étrange de cette année. S'il rit, il distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co2",
-    "text": "${player}, si tu pouvais voler un seul talent de ${player}, lequel choisirais-tu ? Ton partenaire boit s'il trouve ça flatteur.",
+    "text": "${player}, quel talent de ${player} aimerais-tu avoir ? Ton partenaire boit s'il trouve ça flatteur.",
     "pack": "couples"
   },
   {
     "id": "co3",
-    "text": "Tous les couples : celui qui a le plus de théories conspirationnistes bidons boit 2 gorgées.",
+    "text": "${player}, quelle est la peur la plus étrange de ${player} ? Si tu te trompes, bois 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co4",
-    "text": "${player}, quelle est la peur la plus irrationnelle de ${player} ? Si tu te trompes complètement, bois 3 gorgées.",
+    "text": "${player} et ${player}, mimez votre premier rendez-vous. Le groupe devine où c'était.",
     "pack": "couples"
   },
   {
     "id": "co5",
-    "text": "${player} et ${player}, mimez ensemble votre premier argument. Le groupe devine le sujet. Si personne ne trouve, vous buvez tous les deux 2 gorgées.",
+    "text": "${player}, dans quel film ${player} survivrait le mieux ? Explique pourquoi.",
     "pack": "couples"
   },
   {
     "id": "co6",
-    "text": "${player}, dans quel univers fictif ${player} survivrait-il le mieux ? Explique pourquoi. Ton partenaire boit s'il n'est pas d'accord.",
+    "text": "${player}, révèle le mensonge le plus innocent de ${player}. Il boit s'il assume.",
     "pack": "couples"
   },
   {
     "id": "co7",
-    "text": "Tous les couples : celui qui garde le plus de secrets embarrassants sur son téléphone boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez une fausse histoire de votre rencontre. La plus crédible gagne.",
     "pack": "couples"
   },
   {
     "id": "co8",
-    "text": "${player}, révèle la technique la plus bizarre de ${player} pour éviter les tâches ménagères. Il boit 2 gorgées si c'est vrai.",
+    "text": "${player}, quelle est la collection secrète de ${player} ? S'il nie, il boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co9",
-    "text": "${player} et ${player}, inventez une origine complètement fausse de votre rencontre. Le groupe vote pour la version la plus crédible.",
+    "text": "${player}, imite le réveil de ${player}. S'il se reconnaît, il distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co10",
-    "text": "${player}, quelle est la chose la plus random que ${player} collectionne en secret ? S'il nie, il boit 3 gorgées.",
+    "text": "${player} et ${player}, créez une danse de 10 secondes. Note du groupe sur 10.",
     "pack": "couples"
   },
   {
     "id": "co11",
-    "text": "Jeu de couples : celui qui a le plus de playlists Spotify boit 2 gorgées et doit en nommer 5.",
+    "text": "${player}, révèle l'obsession secrète de ${player}. S'il rougit, distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co12",
-    "text": "${player}, imite la façon dont ${player} se réveille le matin. Si c'est trop précis, ton partenaire distribue 3 gorgées de honte.",
+    "text": "${player}, quelle est la théorie farfelue de ${player} sur les chaussettes perdues ?",
     "pack": "couples"
   },
   {
     "id": "co13",
-    "text": "Tous les couples : celui qui a le plus de notifications non lues boit 2 gorgées par tranche de 10 notifications.",
+    "text": "${player}, révèle le plat réconfort bizarre de ${player}. Il distribue 2 gorgées s'il assume.",
     "pack": "couples"
   },
   {
     "id": "co14",
-    "text": "${player}, quelle serait la biographie non-autorisée la plus gênante qu'on pourrait écrire sur ${player} ? Il boit 2 gorgées si c'est trop proche de la réalité.",
+    "text": "${player} et ${player}, inventez un nom de groupe de musique avec vos défauts.",
     "pack": "couples"
   },
   {
     "id": "co15",
-    "text": "${player} et ${player}, créez ensemble une danse de 10 secondes sur votre chanson couple. Le groupe note sur 10, en dessous de 6 vous buvez la différence.",
+    "text": "${player}, révèle le talent inutile mais impressionnant de ${player}.",
     "pack": "couples"
   },
   {
     "id": "co16",
-    "text": "${player}, révèle l'obsession la plus niche de ${player} que personne d'autre ne connaît. S'il rougit, distribue 3 gorgées.",
+    "text": "${player} et ${player}, expliquez scientifiquement pourquoi vous êtes ensemble.",
     "pack": "couples"
   },
   {
     "id": "co17",
-    "text": "Tous les couples : celui qui a le plus de photos de nourriture sur son téléphone boit 2 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre quand il se croit seul ?",
     "pack": "couples"
   },
   {
     "id": "co18",
-    "text": "${player}, raconte le mensonge le plus innocent que ${player} t'a dit récemment. Ton partenaire boit s'il assume.",
+    "text": "${player}, imite le bruit de ${player} quand il réfléchit. S'il se reconnaît, il boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co19",
-    "text": "Jeu de couples : celui qui scrolle le plus longtemps sur TikTok/Instagram avant de dormir boit 2 gorgées.",
+    "text": "${player} et ${player}, révélez vos guilty pleasures YouTube mutuellement.",
     "pack": "couples"
   },
   {
     "id": "co20",
-    "text": "${player} et ${player}, devinez mutuellement votre mot de passe wifi personnel. Celui qui se trompe le plus boit 3 gorgées.",
+    "text": "${player}, quelle est la superstition bizarre de ${player} ? S'il nie, il boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co21",
-    "text": "Tous les couples : celui qui a le plus de conversations bizarres avec son animal de compagnie boit 2 gorgées.",
+    "text": "${player} et ${player}, créez un pitch de série Netflix sur votre couple.",
     "pack": "couples"
   },
   {
     "id": "co22",
-    "text": "${player}, quelle est la théorie la plus farfelue de ${player} sur pourquoi les chaussettes disparaissent ? S'il en a vraiment une, il distribue 3 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre avec la nourriture ?",
     "pack": "couples"
   },
   {
     "id": "co23",
-    "text": "Jeu de couples : celui qui a le plus de screenshots de conversations embarrassantes boit 2 gorgées.",
+    "text": "${player}, imite ${player} quand il n'a plus de batterie. S'il se reconnaît, il distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co24",
-    "text": "${player}, révèle le comfort food le plus bizarre de ${player}. S'il le mange devant Netflix, ton partenaire distribue 2 gorgées.",
+    "text": "${player} et ${player}, révélez vos mensonges sur vos talents culinaires.",
     "pack": "couples"
   },
   {
     "id": "co25",
-    "text": "Tous les couples : celui qui parle le plus à ses plantes (ou qui en aurait le plus besoin) boit 2 gorgées.",
+    "text": "${player}, quelle règle bizarre ${player} s'impose-t-il ? S'il nie, il boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co26",
-    "text": "${player}, quelle est la recherche Google la plus random de ${player} cette semaine ? S'il refuse de répondre, il boit 3 gorgées.",
+    "text": "${player}, révèle la technique de procrastination favorite de ${player}.",
     "pack": "couples"
   },
   {
     "id": "co27",
-    "text": "Jeu de couples : celui qui a le plus de photos floues dans sa galerie boit 2 gorgées et doit en montrer une.",
+    "text": "${player} et ${player}, créez un parfum inspiré de vos défauts.",
     "pack": "couples"
   },
   {
     "id": "co28",
-    "text": "${player} et ${player}, inventez ensemble un nom de groupe de musique basé sur vos manies respectives. Le groupe vote, si c'est nul vous buvez 2 gorgées.",
+    "text": "${player}, quelle chose inutile ${player} sait-il par cœur ?",
     "pack": "couples"
   },
   {
     "id": "co29",
-    "text": "Tous les couples : celui qui a le plus de tabs ouverts sur son navigateur right now boit 2 gorgées.",
+    "text": "${player}, imite ${player} expliquant quelque chose qu'il ne comprend pas.",
     "pack": "couples"
   },
   {
     "id": "co30",
-    "text": "${player}, révèle le skill le plus inutile mais impressionnant de ${player}. S'il le démontre sur le champ, il distribue 3 gorgées.",
+    "text": "${player} et ${player}, inventez une excuse ridicule pour annuler des plans.",
     "pack": "couples"
   },
   {
     "id": "co31",
-    "text": "${player} et ${player}, créez ensemble une explication scientifique complètement fausse pour pourquoi vous êtes ensemble. La plus créative fait boire 3 gorgées au groupe.",
+    "text": "${player}, révèle comment ${player} évite le sport. S'il l'a fait cette semaine, il boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co32",
-    "text": "Jeu de couples : celui qui a le plus de memes sauvegardés sans jamais les partager boit 2 gorgées.",
+    "text": "${player} et ${player}, mimez votre dispute la plus absurde.",
     "pack": "couples"
   },
   {
     "id": "co33",
-    "text": "${player}, quelle est la chose la plus bizarre que ${player} fait quand il se croit seul ? S'il l'assume fièrement, il distribue 3 gorgées.",
+    "text": "${player}, révèle l'habitude bizarre de ${player} quand il mange seul.",
     "pack": "couples"
   },
   {
     "id": "co34",
-    "text": "Tous les couples : celui qui a le plus de produits de beauté/soin qu'il n'utilise jamais boit 2 gorgées.",
+    "text": "${player}, imite le bruit de ${player} quand il cherche quelque chose.",
     "pack": "couples"
   },
   {
     "id": "co35",
-    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il réfléchit intensément. Si c'est spot-on, ton partenaire boit 2 gorgées de reconnaissance.",
+    "text": "${player} et ${player}, créez un slogan pour votre relation.",
     "pack": "couples"
   },
   {
     "id": "co36",
-    "text": "${player} et ${player}, révélez mutuellement votre guilty pleasure YouTube. Le plus embarrassant fait boire 2 gorgées à l'autre.",
+    "text": "${player}, pour quoi ${player} a-t-il une opinion très tranchée ?",
     "pack": "couples"
   },
   {
     "id": "co37",
-    "text": "Jeu de couples : celui qui a le plus de photos de son partenaire qui dort boit 2 gorgées (et doit en montrer une).",
+    "text": "${player}, révèle le mensonge innocent de ${player} à sa famille.",
     "pack": "couples"
   },
   {
     "id": "co38",
-    "text": "${player}, révèle le superstitieux le plus random de ${player}. S'il nie alors que c'est vrai, il boit 3 gorgées.",
+    "text": "${player} et ${player}, inventez une conspiration sur votre rencontre.",
     "pack": "couples"
   },
   {
     "id": "co39",
-    "text": "Tous les couples : celui qui a le plus de conversations avec Siri/Google Assistant par accident boit 2 gorgées.",
+    "text": "${player}, révèle comment ${player} évite de répondre au téléphone.",
     "pack": "couples"
   },
   {
     "id": "co40",
-    "text": "${player} et ${player}, créez ensemble un pitch de série Netflix basé sur votre couple. Si le groupe voudrait la regarder, vous distribuez 4 gorgées.",
+    "text": "${player}, imite ${player} prétendant écouter quand il est distrait.",
     "pack": "couples"
   },
   {
     "id": "co41",
-    "text": "${player}, révèle la chose la plus weird que ${player} fait avec la nourriture. S'il l'assume et le démontre, il distribue 3 gorgées.",
+    "text": "${player} et ${player}, révélez vos pires achats impulsifs sur internet.",
     "pack": "couples"
   },
   {
     "id": "co42",
-    "text": "Tous les couples : celui qui a le plus de conversations imaginaires sous la douche boit 2 gorgées.",
+    "text": "${player}, quelle est la combinaison bizarre de ${player} pour être confortable ?",
     "pack": "couples"
   },
   {
     "id": "co43",
-    "text": "${player}, imite la façon dont ${player} réagit quand il n'a plus de batterie. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, révèle la technique secrète de ${player} pour éviter les conversations gênantes.",
     "pack": "couples"
   },
   {
     "id": "co44",
-    "text": "${player} et ${player}, révélez mutuellement votre plus gros mensonge sur vos compétences en cuisine. Le pire cuisinier boit 3 gorgées.",
+    "text": "${player} et ${player}, créez une pub pour vendre vos pires défauts.",
     "pack": "couples"
   },
   {
     "id": "co45",
-    "text": "Jeu de couples : celui qui a le plus de photos de recettes qu'il n'a jamais testées boit 2 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre quand il s'ennuie ?",
     "pack": "couples"
   },
   {
     "id": "co46",
-    "text": "${player}, quelle est la règle la plus bizarre que ${player} s'impose à lui-même ? S'il nie avoir des règles bizarres, il boit 3 gorgées.",
+    "text": "${player}, imite le son de ${player} quand il se souvient de quelque chose.",
     "pack": "couples"
   },
   {
     "id": "co47",
-    "text": "Tous les couples : celui qui parle le plus à la télé comme si les personnages pouvaient l'entendre boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez une méthode révolutionnaire pour éviter le ménage.",
     "pack": "couples"
   },
   {
     "id": "co48",
-    "text": "${player}, révèle le truc le plus random que ${player} fait pour procrastiner. S'il est en train de le faire maintenant, il distribue 3 gorgées.",
+    "text": "${player}, révèle la superstition technologique de ${player}.",
     "pack": "couples"
   },
   {
     "id": "co49",
-    "text": "${player} et ${player}, créez ensemble un nom de parfum inspiré de vos défauts respectifs. Le plus drôle fait boire 2 gorgées au groupe.",
+    "text": "${player}, comment ${player} procrastine-t-il avant de dormir ?",
     "pack": "couples"
   },
   {
     "id": "co50",
-    "text": "Jeu de couples : celui qui a le plus de vidéos d'animaux mignons sauvegardées boit 2 gorgées et doit en montrer une.",
+    "text": "${player} et ${player}, mimez votre routine matinale en accéléré.",
     "pack": "couples"
   },
   {
     "id": "co51",
-    "text": "${player}, quelle est la chose la plus inutile que ${player} sait par cœur ? S'il le récite, il distribue 3 gorgées.",
+    "text": "${player}, révèle le truc bizarre de ${player} pour 'optimiser' sa journée.",
     "pack": "couples"
   },
   {
     "id": "co52",
-    "text": "Tous les couples : celui qui a le plus de trucs cassés 'qu'il va réparer un jour' boit 2 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de comprendre quelque chose de technique.",
     "pack": "couples"
   },
   {
     "id": "co53",
-    "text": "${player}, imite la façon dont ${player} explique quelque chose qu'il ne comprend pas vraiment. Ton partenaire boit s'il se reconnaît.",
+    "text": "${player} et ${player}, créez un guide de survie basé sur vos incompétences.",
     "pack": "couples"
   },
   {
     "id": "co54",
-    "text": "${player} et ${player}, inventez ensemble une excuse complètement ridicule pour annuler des plans. La plus créative fait distribuer 3 gorgées.",
+    "text": "${player}, quelle est la théorie farfelue de ${player} sur pourquoi il perd ses clés ?",
     "pack": "couples"
   },
   {
     "id": "co55",
-    "text": "Jeu de couples : celui qui a le plus d'applications qu'il n'a jamais ouvertes boit 2 gorgées par tranche de 5 apps.",
+    "text": "${player}, révèle ce que fait ${player} pour éviter d'admettre qu'il a tort.",
     "pack": "couples"
   },
   {
     "id": "co56",
-    "text": "${player}, révèle la façon la plus créative dont ${player} évite de faire du sport. S'il l'a fait cette semaine, il boit 3 gorgées.",
+    "text": "${player} et ${player}, inventez une excuse absurde pour expliquer un retard.",
     "pack": "couples"
   },
   {
     "id": "co57",
-    "text": "Tous les couples : celui qui a le plus de playlists avec un seul morceau dedans boit 2 gorgées.",
+    "text": "${player}, révèle le mensonge créatif de ${player} pour éviter une corvée.",
     "pack": "couples"
   },
   {
     "id": "co58",
-    "text": "${player}, quelle est la théorie la plus improbable de ${player} sur les algorithmes des réseaux sociaux ? S'il en développe une là maintenant, il distribue 3 gorgées.",
+    "text": "${player}, imite le bruit de ${player} quand il se lève du canapé.",
     "pack": "couples"
   },
   {
     "id": "co59",
-    "text": "${player} et ${player}, mimez ensemble votre dispute la plus absurde. Si le groupe devine le sujet, vous distribuez 3 gorgées.",
+    "text": "${player} et ${player}, inventez un nom de startup basé sur vos habitudes bizarres.",
     "pack": "couples"
   },
   {
     "id": "co60",
-    "text": "Jeu de couples : celui qui dit le plus souvent 'je vais me coucher tôt ce soir' sans jamais le faire boit 2 gorgées.",
+    "text": "${player}, comment ${player} teste-t-il si quelque chose fonctionne encore ?",
     "pack": "couples"
   },
   {
     "id": "co61",
-    "text": "${player}, révèle la habitude la plus bizarre de ${player} quand il mange tout seul. S'il le démontre, il distribue 3 gorgées.",
+    "text": "${player}, révèle la technique ridicule de ${player} pour faire semblant d'écouter.",
     "pack": "couples"
   },
   {
     "id": "co62",
-    "text": "Tous les couples : celui qui a le plus de brouillons de messages qu'il n'a jamais envoyés boit 2 gorgées.",
+    "text": "${player} et ${player}, créez une théorie conspirationniste sur vos chaussettes perdues.",
     "pack": "couples"
   },
   {
     "id": "co63",
-    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il cherche quelque chose. Si c'est spot-on, ton partenaire boit 2 gorgées de honte.",
+    "text": "${player}, que fait ${player} de bizarre pour éviter de parler aux voisins ?",
     "pack": "couples"
   },
   {
     "id": "co64",
-    "text": "${player} et ${player}, créez ensemble un slogan publicitaire pour votre relation. Le plus convaincant fait boire 3 gorgées au groupe.",
+    "text": "${player}, imite ${player} faisant semblant de chercher quelque chose qu'il a déjà trouvé.",
     "pack": "couples"
   },
   {
     "id": "co65",
-    "text": "Jeu de couples : celui qui a le plus de captures d'écran de trucs qu'il devait 'regarder plus tard' boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez un business plan pour monétiser vos disputes.",
     "pack": "couples"
   },
   {
     "id": "co66",
-    "text": "${player}, quelle est la chose la plus random pour laquelle ${player} a une opinion très tranchée ? S'il la défend maintenant, il distribue 3 gorgées.",
+    "text": "${player}, révèle la superstition bizarre de ${player} liée à la nourriture.",
     "pack": "couples"
   },
   {
     "id": "co67",
-    "text": "Tous les couples : celui qui remet le plus d'alarmes le matin boit 2 gorgées par alarme au-dessus de 3.",
+    "text": "${player}, comment ${player} évite-t-il créativement de faire la vaisselle ?",
     "pack": "couples"
   },
   {
     "id": "co68",
-    "text": "${player}, révèle le mensonge le plus innocent que ${player} dit à sa famille. S'il rougit, il boit 2 gorgées.",
+    "text": "${player} et ${player}, mimez votre première dispute par messages.",
     "pack": "couples"
   },
   {
     "id": "co69",
-    "text": "${player} et ${player}, inventez ensemble une conspiration complètement farfelue sur pourquoi vous vous êtes rencontrés. La plus délirante fait distribuer 4 gorgées.",
+    "text": "${player}, révèle ce que fait ${player} quand il pense que personne ne le voit.",
     "pack": "couples"
   },
   {
     "id": "co70",
-    "text": "Jeu de couples : celui qui a scrollé le plus loin dans son propre Instagram cette semaine boit 2 gorgées.",
+    "text": "${player}, imite le son de ${player} quand il réfléchit à ce qu'il va manger.",
     "pack": "couples"
   },
   {
     "id": "co71",
-    "text": "${player}, révèle la façon la plus créative dont ${player} évite de répondre au téléphone. S'il le démontre en live, il distribue 3 gorgées.",
+    "text": "${player} et ${player}, créez un mode d'emploi pour gérer vos humeurs.",
     "pack": "couples"
   },
   {
     "id": "co72",
-    "text": "Tous les couples : celui qui a le plus de fils/écouteurs emmêlés quelque part chez lui boit 2 gorgées.",
+    "text": "${player}, quelle est la théorie farfelue de ${player} sur les retards ?",
     "pack": "couples"
   },
   {
     "id": "co73",
-    "text": "${player}, imite la façon dont ${player} prétend écouter quand il est sur son téléphone. Ton partenaire boit s'il se reconnaît parfaitement.",
+    "text": "${player}, révèle comment ${player} fait semblant d'être malade.",
     "pack": "couples"
   },
   {
     "id": "co74",
-    "text": "${player} et ${player}, révélez mutuellement votre pire achat impulsif sur internet. Le plus inutile fait boire 3 gorgées à l'autre.",
+    "text": "${player} et ${player}, inventez un tutoriel YouTube sur comment échouer dans vos domaines.",
     "pack": "couples"
   },
   {
     "id": "co75",
-    "text": "Jeu de couples : celui qui a le plus de trucs 'de secours' périmés dans ses placards boit 2 gorgées.",
+    "text": "${player}, que collectionne ${player} sans s'en rendre compte ?",
     "pack": "couples"
   },
   {
     "id": "co76",
-    "text": "${player}, quelle est la combinaison la plus bizarre de ${player} pour être confortable ? S'il l'assume, il distribue 3 gorgées.",
+    "text": "${player}, imite ${player} prétendant comprendre un itinéraire.",
     "pack": "couples"
   },
   {
     "id": "co77",
-    "text": "Tous les couples : celui qui dit le plus souvent 'on devrait faire ça' sans jamais le faire boit 2 gorgées.",
+    "text": "${player} et ${player}, créez un pitch d'émission de télé-réalité sur votre quotidien.",
     "pack": "couples"
   },
   {
     "id": "co78",
-    "text": "${player}, révèle la technique secrète de ${player} pour éviter les conversations gênantes. S'il l'utilise maintenant, il boit 3 gorgées.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour se motiver le matin.",
     "pack": "couples"
   },
   {
     "id": "co79",
-    "text": "${player} et ${player}, créez ensemble une publicité de 30 secondes pour vendre vos pires défauts. La plus convaincante fait distribuer 4 gorgées.",
+    "text": "${player}, quelle est la technique créative de ${player} pour éviter les questions gênantes ?",
     "pack": "couples"
   },
   {
     "id": "co80",
-    "text": "Jeu de couples : celui qui a le plus de notifications désactivées par flemme boit 2 gorgées.",
+    "text": "${player} et ${player}, mimez votre façon de vous disputer en silence.",
     "pack": "couples"
   },
   {
     "id": "co81",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait quand il s'ennuie ? S'il le fait depuis moins d'une heure, il distribue 3 gorgées.",
+    "text": "${player}, révèle la superstition ridicule de ${player} liée aux transports.",
     "pack": "couples"
   },
   {
     "id": "co82",
-    "text": "Tous les couples : celui qui a le plus de projets commencés mais jamais finis boit 2 gorgées par projet abandonné (max 6).",
+    "text": "${player}, imite le bruit de ${player} quand il essaie de se lever discrètement.",
     "pack": "couples"
   },
   {
     "id": "co83",
-    "text": "${player}, imite parfaitement le son que fait ${player} quand il essaie de se rappeler quelque chose. Si c'est trop précis, ton partenaire distribue 3 gorgées.",
+    "text": "${player} et ${player}, créez un produit révolutionnaire pour votre plus gros problème de couple.",
     "pack": "couples"
   },
   {
     "id": "co84",
-    "text": "${player} et ${player}, inventez ensemble une méthode révolutionnaire pour éviter les tâches ménagères. La plus ingénieuse fait boire 3 gorgées au groupe.",
+    "text": "${player}, comment ${player} teste-t-il si la nourriture est encore bonne ?",
     "pack": "couples"
   },
   {
     "id": "co85",
-    "text": "Jeu de couples : celui qui a le plus de mots de passe identiques pour tout boit 2 gorgées (et doit les changer après).",
+    "text": "${player}, révèle la technique créative de ${player} pour éviter de ranger.",
     "pack": "couples"
   },
   {
     "id": "co86",
-    "text": "${player}, révèle la superstition la plus ridicule de ${player} liée à la technologie. S'il la pratique encore, il boit 3 gorgées.",
+    "text": "${player} et ${player}, inventez une méthode scientifique pour prouver qui a raison.",
     "pack": "couples"
   },
   {
     "id": "co87",
-    "text": "Tous les couples : celui qui a le plus de 'favoris' qu'il ne consulte jamais boit 2 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre avec les emballages vides ?",
     "pack": "couples"
   },
   {
     "id": "co88",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} procrastine avant de dormir ? S'il l'a fait hier soir, il boit 2 gorgées.",
+    "text": "${player}, imite ${player} expliquant pourquoi il est en retard.",
     "pack": "couples"
   },
   {
     "id": "co89",
-    "text": "${player} et ${player}, mimez ensemble votre routine matinale en accéléré. Si c'est trop réaliste, vous distribuez 3 gorgées chacun.",
+    "text": "${player} et ${player}, créez un jeu de société basé sur vos pires habitudes.",
     "pack": "couples"
   },
   {
     "id": "co90",
-    "text": "Jeu de couples : celui qui a le plus de conversations avec lui-même à voix haute boit 2 gorgées.",
+    "text": "${player}, révèle la méthode créative de ${player} pour éviter de prendre des décisions.",
     "pack": "couples"
   },
   {
     "id": "co91",
-    "text": "${player}, révèle le truc le plus bizarre que ${player} fait pour 'optimiser' sa journée. S'il insiste que c'est logique, il boit 3 gorgées.",
+    "text": "${player}, quelle est la superstition ridicule de ${player} liée au travail ?",
     "pack": "couples"
   },
   {
     "id": "co92",
-    "text": "Tous les couples : celui qui a le plus de screenshots de memes qu'il a oublié de partager boit 2 gorgées.",
+    "text": "${player} et ${player}, mimez votre routine 'je cherche mes clés'.",
     "pack": "couples"
   },
   {
     "id": "co93",
-    "text": "${player}, imite la façon dont ${player} fait semblant de comprendre quelque chose de technique. Ton partenaire boit s'il se reconnaît.",
+    "text": "${player}, révèle ce que fait ${player} pour tester si quelqu'un l'écoute vraiment.",
     "pack": "couples"
   },
   {
     "id": "co94",
-    "text": "${player} et ${player}, créez ensemble un guide de survie basé sur vos incompétences respectives. Le plus utile fait boire 3 gorgées au groupe.",
+    "text": "${player}, imite ${player} faisant semblant de comprendre un mode d'emploi.",
     "pack": "couples"
   },
   {
     "id": "co95",
-    "text": "Jeu de couples : celui qui reporte le plus ses alarmes le matin boit 2 gorgées par snooze habituel.",
+    "text": "${player} et ${player}, inventez une app pour résoudre vos problèmes de communication.",
     "pack": "couples"
   },
   {
     "id": "co96",
-    "text": "${player}, quelle est la théorie la plus farfelue de ${player} pour expliquer pourquoi il perd toujours ses clés ? S'il en a plusieurs, il distribue 3 gorgées.",
+    "text": "${player}, comment ${player} évite-t-il de dire 'je ne sais pas' ?",
     "pack": "couples"
   },
   {
     "id": "co97",
-    "text": "Tous les couples : celui qui a le plus de contacts dans son téléphone qu'il ne reconnaîtrait plus boit 2 gorgées.",
+    "text": "${player}, révèle la théorie farfelue de ${player} sur les imprimantes en panne.",
     "pack": "couples"
   },
   {
     "id": "co98",
-    "text": "${player}, révèle la chose la plus weird que ${player} fait pour éviter d'admettre qu'il a tort. S'il le fait maintenant, il boit 3 gorgées.",
+    "text": "${player} et ${player}, créez un manuel de survie pour vos familles respectives.",
     "pack": "couples"
   },
   {
     "id": "co99",
-    "text": "${player} et ${player}, inventez ensemble une excuse complètement absurde pour expliquer pourquoi vous êtes en retard. La plus créative fait distribuer 4 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre pour éviter les toilettes publiques ?",
     "pack": "couples"
   },
   {
     "id": "co100",
-    "text": "Final couples : ${player} et ${player}, révélez mutuellement la chose la plus ridicule que vous avez apprise sur l'autre grâce à ce jeu. Tout le monde boit 3 gorgées pour célébrer !",
+    "text": "🎉 Milestone ! ${player} et ${player}, révélez la découverte la plus surprenante sur l'autre. Tout le monde trinque !",
     "pack": "couples"
   },
   {
     "id": "co101",
-    "text": "${player}, révèle le mensonge le plus créatif que ${player} a dit pour éviter une corvée. S'il l'assume, il distribue 3 gorgées.",
+    "text": "${player}, imite le bruit de ${player} quand il réfléchit silencieusement.",
     "pack": "couples"
   },
   {
     "id": "co102",
-    "text": "Tous les couples : celui qui a le plus de comptes en ligne qu'il a oublié d'exister boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez une théorie sur pourquoi vous perdez les mêmes objets.",
     "pack": "couples"
   },
   {
     "id": "co103",
-    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il se lève du canapé. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour choisir sur Netflix.",
     "pack": "couples"
   },
   {
     "id": "co104",
-    "text": "${player} et ${player}, inventez ensemble un nom de startup basé sur vos habitudes les plus bizarres. La plus ridicule fait boire 3 gorgées au groupe.",
+    "text": "${player}, quelle est la technique créative de ${player} pour éviter les appels pros ?",
     "pack": "couples"
   },
   {
     "id": "co105",
-    "text": "Jeu de couples : celui qui a le plus de photos de sa nourriture qu'il n'a jamais postées boit 2 gorgées.",
+    "text": "${player} et ${player}, mimez votre négociation des tâches ménagères.",
     "pack": "couples"
   },
   {
     "id": "co106",
-    "text": "${player}, quelle est la façon la plus weird de ${player} de tester si quelque chose fonctionne encore ? S'il le démontre, il distribue 3 gorgées.",
+    "text": "${player}, révèle la superstition ridicule de ${player} liée au ménage.",
     "pack": "couples"
   },
   {
     "id": "co107",
-    "text": "Tous les couples : celui qui a le plus de 'j'achèterai ça plus tard' dans ses paniers en ligne boit 2 gorgées.",
+    "text": "${player}, imite ${player} prétendant avoir tout compris en réunion.",
     "pack": "couples"
   },
   {
     "id": "co108",
-    "text": "${player}, révèle la technique la plus ridicule de ${player} pour faire semblant qu'il écoute en réunion. Ton partenaire boit s'il se reconnaît.",
+    "text": "${player} et ${player}, créez un service de consulting basé sur vos échecs.",
     "pack": "couples"
   },
   {
     "id": "co109",
-    "text": "${player} et ${player}, créez ensemble une théorie conspirationniste sur pourquoi vos chaussettes disparaissent. La plus délirante fait distribuer 4 gorgées.",
+    "text": "${player}, comment ${player} se convainc-il qu'il n'a pas faim ?",
     "pack": "couples"
   },
   {
     "id": "co110",
-    "text": "Jeu de couples : celui qui a le plus de conversations avec des objets inanimés boit 2 gorgées.",
+    "text": "${player}, révèle la technique créative de ${player} pour éviter les conversations importantes.",
     "pack": "couples"
   },
   {
     "id": "co111",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait pour éviter de parler aux voisins ? S'il l'a fait cette semaine, il boit 3 gorgées.",
+    "text": "${player} et ${player}, inventez un produit pour couples qui ne s'accordent jamais.",
     "pack": "couples"
   },
   {
     "id": "co112",
-    "text": "Tous les couples : celui qui a le plus de notifications 'lire plus tard' qu'il ne lira jamais boit 2 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre quand il s'ennuie dans les transports ?",
     "pack": "couples"
   },
   {
     "id": "co113",
-    "text": "${player}, imite la façon dont ${player} fait semblant de chercher quelque chose qu'il a déjà trouvé. Si c'est spot-on, ton partenaire boit 2 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de dormir pour éviter une conversation.",
     "pack": "couples"
   },
   {
     "id": "co114",
-    "text": "${player} et ${player}, inventez ensemble un business plan pour monétiser vos disputes. Le plus créatif fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, créez un guide pour comprendre vos logiques respectives.",
     "pack": "couples"
   },
   {
     "id": "co115",
-    "text": "Jeu de couples : celui qui a le plus de groupes WhatsApp qu'il a mis en silencieux boit 2 gorgées.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour éviter d'admettre qu'il a tort.",
     "pack": "couples"
   },
   {
     "id": "co116",
-    "text": "${player}, révèle la superstition la plus bizarre de ${player} liée à la nourriture. S'il insiste que c'est logique, il boit 3 gorgées.",
+    "text": "${player}, quelle est la superstition farfelue de ${player} liée aux réseaux sociaux ?",
     "pack": "couples"
   },
   {
     "id": "co117",
-    "text": "Tous les couples : celui qui a le plus de photos floues de concerts/événements boit 2 gorgées.",
+    "text": "${player} et ${player}, mimez votre façon de vous réconcilier après une dispute.",
     "pack": "couples"
   },
   {
     "id": "co118",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} évite de faire la vaisselle ? S'il a innové récemment, il distribue 3 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre avec ses vieux vêtements ?",
     "pack": "couples"
   },
   {
     "id": "co119",
-    "text": "${player} et ${player}, mimez ensemble votre première dispute par messages. Le groupe devine le sujet, sinon vous buvez 2 gorgées chacun.",
+    "text": "${player}, imite ${player} négociant avec lui-même pour ne pas faire de sport.",
     "pack": "couples"
   },
   {
     "id": "co120",
-    "text": "Jeu de couples : celui qui a le plus d'onglets Pinterest qu'il ne consultera jamais boit 2 gorgées.",
+    "text": "${player} et ${player}, créez un business plan pour commercialiser vos disputes absurdes.",
     "pack": "couples"
   },
   {
     "id": "co121",
-    "text": "${player}, révèle le truc le plus bizarre que ${player} fait quand il pense que personne ne le voit. S'il l'assume, il distribue 3 gorgées.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour éviter les courses.",
     "pack": "couples"
   },
   {
     "id": "co122",
-    "text": "Tous les couples : celui qui a le plus de 'Je le ferai demain' en cours boit 2 gorgées par promesse non tenue.",
+    "text": "${player}, quelle est la superstition ridicule de ${player} liée aux examens ?",
     "pack": "couples"
   },
   {
     "id": "co123",
-    "text": "${player}, imite parfaitement le son que fait ${player} quand il réfléchit à ce qu'il va manger. Si c'est trop précis, ton partenaire distribue 3 gorgées.",
+    "text": "${player} et ${player}, mimez votre façon de choisir un film.",
     "pack": "couples"
   },
   {
     "id": "co124",
-    "text": "${player} et ${player}, créez ensemble un mode d'emploi pour gérer vos humeurs respectives. Le plus utile fait boire 3 gorgées au groupe.",
+    "text": "${player}, révèle ce que fait ${player} pour éviter les embouteillages mentaux.",
     "pack": "couples"
   },
   {
     "id": "co125",
-    "text": "Jeu de couples : celui qui a le plus de films/séries commencés mais jamais finis boit 2 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant d'avoir une bonne raison d'être sur son téléphone.",
     "pack": "couples"
   },
   {
     "id": "co126",
-    "text": "${player}, quelle est la théorie la plus farfelue de ${player} sur pourquoi les gens sont en retard ? S'il en développe une nouvelle, il distribue 3 gorgées.",
+    "text": "${player} et ${player}, inventez une méthode pour prédire vos humeurs.",
     "pack": "couples"
   },
   {
     "id": "co127",
-    "text": "Tous les couples : celui qui a le plus de mots de passe basés sur des trucs évidents boit 2 gorgées.",
+    "text": "${player}, comment ${player} évite-t-il de dire qu'il ne comprend pas ?",
     "pack": "couples"
   },
   {
     "id": "co128",
-    "text": "${player}, révèle la façon la plus créative dont ${player} fait semblant d'être malade. S'il perfectionne sa technique, il boit 3 gorgées.",
+    "text": "${player}, révèle la théorie farfelue de ${player} sur ses défaites aux jeux.",
     "pack": "couples"
   },
   {
     "id": "co129",
-    "text": "${player} et ${player}, inventez ensemble un tutoriel YouTube sur comment échouer dans votre domaine. Le plus drôle fait distribuer 4 gorgées.",
+    "text": "${player} et ${player}, créez un guide de survie pour supporter vos manies.",
     "pack": "couples"
   },
   {
     "id": "co130",
-    "text": "Jeu de couples : celui qui a le plus de contacts dans son téléphone avec juste un prénom boit 2 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre pour procrastiner au travail ?",
     "pack": "couples"
   },
   {
     "id": "co131",
-    "text": "${player}, quelle est la chose la plus random que ${player} collectionne sans s'en rendre compte ? S'il compte sur ses doigts, il distribue 3 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de chercher quelque chose qu'il ne veut pas trouver.",
     "pack": "couples"
   },
   {
     "id": "co132",
-    "text": "Tous les couples : celui qui a le plus d'abonnements payants qu'il utilise jamais boit 2 gorgées par abonnement inutile.",
+    "text": "${player} et ${player}, inventez une app pour couples qui se disputent pour des futilités.",
     "pack": "couples"
   },
   {
     "id": "co133",
-    "text": "${player}, imite la façon dont ${player} prétend comprendre quand on lui explique un chemin. Ton partenaire boit s'il se reconnaît.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour éviter de lire les conditions d'utilisation.",
     "pack": "couples"
   },
   {
     "id": "co134",
-    "text": "${player} et ${player}, créez ensemble un pitch pour une émission de télé-réalité basée sur votre quotidien. Le plus regardable fait boire 3 gorgées au groupe.",
+    "text": "${player}, quelle est la superstition ridicule de ${player} liée à la chance ?",
     "pack": "couples"
   },
   {
     "id": "co135",
-    "text": "Jeu de couples : celui qui a le plus de photos de sunsets/couchers de soleil identiques boit 2 gorgées.",
+    "text": "${player} et ${player}, mimez votre routine 'qu'est-ce qu'on fait ce soir ?'",
     "pack": "couples"
   },
   {
     "id": "co136",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour se motiver le matin. S'il la pratique encore, il boit 3 gorgées.",
+    "text": "${player}, révèle ce que fait ${player} créativement pour éviter de parler de ses sentiments.",
     "pack": "couples"
   },
   {
     "id": "co137",
-    "text": "Tous les couples : celui qui dit le plus souvent 'ça va le faire' pour des trucs voués à l'échec boit 2 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de connaître une référence culturelle.",
     "pack": "couples"
   },
   {
     "id": "co138",
-    "text": "${player}, quelle est la technique la plus créative de ${player} pour éviter de répondre à une question gênante ? S'il l'utilise maintenant, il boit 3 gorgées.",
+    "text": "${player} et ${player}, créez un système d'alerte pour vos crises de flemme.",
     "pack": "couples"
   },
   {
     "id": "co139",
-    "text": "${player} et ${player}, mimez ensemble votre façon de vous disputer en silence. Le groupe devine le sujet, sinon vous distribuez 3 gorgées chacun.",
+    "text": "${player}, que fait ${player} de bizarre pour gagner du temps le matin ?",
     "pack": "couples"
   },
   {
     "id": "co140",
-    "text": "Jeu de couples : celui qui a le plus de 'j'y penserai' qui ne mènent nulle part boit 2 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de se rappeler quelque chose d'oublié.",
     "pack": "couples"
   },
   {
     "id": "co141",
-    "text": "${player}, révèle la superstition la plus ridicule de ${player} liée aux transports. S'il la respecte religieusement, il distribue 3 gorgées.",
+    "text": "${player} et ${player}, créez un guide de détection de vos mensonges blancs.",
     "pack": "couples"
   },
   {
     "id": "co142",
-    "text": "Tous les couples : celui qui a le plus de playlists nommées 'Sans titre' ou 'Musique' boit 2 gorgées.",
+    "text": "${player}, révèle la superstition farfelue de ${player} liée aux compliments.",
     "pack": "couples"
   },
   {
     "id": "co143",
-    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il essaie de se lever discrètement. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, comment ${player} évite-t-il de dire qu'il n'a pas envie ?",
     "pack": "couples"
   },
   {
     "id": "co144",
-    "text": "${player} et ${player}, créez ensemble un produit révolutionnaire pour résoudre votre plus gros problème de couple. Le plus vendable fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, mimez votre négociation du thermostat.",
     "pack": "couples"
   },
   {
     "id": "co145",
-    "text": "Jeu de couples : celui qui a le plus de memes sauvegardés dans 'Favoris' boit 2 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre pour éviter les réunions de famille ?",
     "pack": "couples"
   },
   {
     "id": "co146",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} teste si la nourriture est encore bonne ? S'il le démontre, il distribue 3 gorgées.",
+    "text": "${player}, imite ${player} évitant de donner son avis sur des sujets controversés.",
     "pack": "couples"
   },
   {
     "id": "co147",
-    "text": "Tous les couples : celui qui a le plus de 'rappels' sur son téléphone qu'il ignore boit 2 gorgées.",
+    "text": "${player} et ${player}, créez un business model basé sur vos procrastinations.",
     "pack": "couples"
   },
   {
     "id": "co148",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter de ranger. S'il a innové cette semaine, il boit 3 gorgées.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour éviter de se perdre.",
     "pack": "couples"
   },
   {
     "id": "co149",
-    "text": "${player} et ${player}, inventez ensemble une méthode scientifique pour prouver qui a raison dans vos disputes. La plus objectif fait distribuer 4 gorgées.",
+    "text": "${player}, quelle est la superstition ridicule de ${player} liée aux voyages ?",
     "pack": "couples"
   },
   {
     "id": "co150",
-    "text": "Jeu de couples : celui qui a le plus de conversations dans sa tête avec des gens qu'il ne voit jamais boit 2 gorgées.",
+    "text": "🎉 Mi-parcours ! ${player} et ${player}, révélez la manie la plus bizarre découverte ce soir. Applaudissements !",
     "pack": "couples"
   },
   {
     "id": "co151",
-    "text": "${player}, quelle est la chose la plus weird que ${player} fait avec les emballages vides ? S'il garde tout 'au cas où', il boit 3 gorgées.",
+    "text": "${player} et ${player}, mimez votre gestion des conflits Netflix.",
     "pack": "couples"
   },
   {
     "id": "co152",
-    "text": "Tous les couples : celui qui a le plus de 'versions' du même document sur son ordi boit 2 gorgées.",
+    "text": "${player}, révèle ce que fait ${player} créativement pour éviter les appels familiaux.",
     "pack": "couples"
   },
   {
     "id": "co153",
-    "text": "${player}, imite parfaitement la façon dont ${player} explique pourquoi il est en retard. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant d'avoir une excuse valable pour son téléphone.",
     "pack": "couples"
   },
   {
     "id": "co154",
-    "text": "${player} et ${player}, créez ensemble un jeu de société basé sur vos pires habitudes. Le plus jouable fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, inventez une méthode pour quantifier votre niveau de procrastination.",
     "pack": "couples"
   },
   {
     "id": "co155",
-    "text": "Jeu de couples : celui qui a le plus de 'brouillons' d'emails qu'il n'enverra jamais boit 2 gorgées.",
+    "text": "${player}, comment ${player} teste-t-il la température de l'eau ?",
     "pack": "couples"
   },
   {
     "id": "co156",
-    "text": "${player}, révèle la méthode la plus créative de ${player} pour éviter de prendre des décisions. S'il tergiverse maintenant, il boit 3 gorgées.",
+    "text": "${player}, révèle la technique créative de ${player} pour éviter de choisir un restaurant.",
     "pack": "couples"
   },
   {
     "id": "co157",
-    "text": "Tous les couples : celui qui a le plus de screenshots de trucs 'importants' qu'il ne retrouve plus boit 2 gorgées.",
+    "text": "${player} et ${player}, créez un algorithme pour prédire vos disputes.",
     "pack": "couples"
   },
   {
     "id": "co158",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée à son travail ? S'il insiste que ça marche, il distribue 3 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre quand il réfléchit trop fort ?",
     "pack": "couples"
   },
   {
     "id": "co159",
-    "text": "${player} et ${player}, mimez ensemble votre routine 'je cherche mes clés'. Si c'est trop ressemblant, vous distribuez 3 gorgées chacun.",
+    "text": "${player}, imite ${player} faisant semblant de ne pas voir une tâche évidente.",
     "pack": "couples"
   },
   {
     "id": "co160",
-    "text": "Jeu de couples : celui qui a le plus d'applications de fitness qu'il n'ouvre jamais boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez un business plan pour monétiser vos techniques d'évitement.",
     "pack": "couples"
   },
   {
     "id": "co161",
-    "text": "${player}, révèle le truc le plus bizarre que ${player} fait pour tester si quelqu'un l'écoute vraiment. S'il le teste maintenant, il distribue 3 gorgées.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour éviter de réfléchir aux choses importantes.",
     "pack": "couples"
   },
   {
     "id": "co162",
-    "text": "Tous les couples : celui qui a le plus de 'je regarderai ça plus tard' qui traînent boit 2 gorgées.",
+    "text": "${player}, quelle est la superstition ridicule de ${player} liée à son apparence ?",
     "pack": "couples"
   },
   {
     "id": "co163",
-    "text": "${player}, imite la façon dont ${player} fait semblant de comprendre un mode d'emploi. Ton partenaire boit s'il se reconnaît.",
+    "text": "${player} et ${player}, mimez votre gestion des silences gênants.",
     "pack": "couples"
   },
   {
     "id": "co164",
-    "text": "${player} et ${player}, inventez ensemble une app pour résoudre vos problèmes de communication. La plus utile fait boire 3 gorgées au groupe.",
+    "text": "${player}, révèle ce que fait ${player} créativement pour éviter les décisions difficiles.",
     "pack": "couples"
   },
   {
     "id": "co165",
-    "text": "Jeu de couples : celui qui a le plus de musiques dans 'Récemment ajoutées' qu'il n'écoute pas boit 2 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de comprendre les explications techniques.",
     "pack": "couples"
   },
   {
     "id": "co166",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} évite de dire 'je ne sais pas' ? S'il utilise une technique maintenant, il boit 3 gorgées.",
+    "text": "${player} et ${player}, créez un service de traduction pour vos non-dits.",
     "pack": "couples"
   },
   {
     "id": "co167",
-    "text": "Tous les couples : celui qui a le plus de codes promo expirés dans ses mails boit 2 gorgées.",
+    "text": "${player}, comment ${player} évite-t-il de regarder l'heure quand il est en retard ?",
     "pack": "couples"
   },
   {
     "id": "co168",
-    "text": "${player}, révèle la théorie la plus farfelue de ${player} sur pourquoi les imprimantes ne marchent jamais. S'il a raison quelque part, il distribue 3 gorgées.",
+    "text": "${player}, révèle la technique créative de ${player} pour éviter les discussions d'argent.",
     "pack": "couples"
   },
   {
     "id": "co169",
-    "text": "${player} et ${player}, créez ensemble un manuel de survie pour vos familles respectives. Le plus diplomatique fait distribuer 4 gorgées.",
+    "text": "${player} et ${player}, inventez un système d'alerte pour vos pics de flemme.",
     "pack": "couples"
   },
   {
     "id": "co170",
-    "text": "Jeu de couples : celui qui a le plus de 'signets' de sites qu'il ne visite plus boit 2 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre pour gagner du temps le matin ?",
     "pack": "couples"
   },
   {
     "id": "co171",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait pour éviter d'aller aux toilettes en public ? S'il assume ses techniques, il distribue 3 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de se rappeler quelque chose d'important.",
     "pack": "couples"
   },
   {
     "id": "co172",
-    "text": "Tous les couples : celui qui a le plus de 'listes de courses' sur son téléphone boit 2 gorgées.",
+    "text": "${player} et ${player}, créez un guide de détection de vos mensonges blancs.",
     "pack": "couples"
   },
   {
     "id": "co173",
-    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il essaie de réfléchir silencieusement. Si c'est spot-on, ton partenaire distribue 3 gorgées de honte.",
+    "text": "${player}, révèle la superstition farfelue de ${player} liée aux habitudes matinales.",
     "pack": "couples"
   },
   {
     "id": "co174",
-    "text": "${player} et ${player}, inventez ensemble une théorie sur pourquoi vous perdez toujours les mêmes objets. La plus scientifique fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, mimez votre négociation pour savoir qui conduit quand vous êtes perdus.",
     "pack": "couples"
   },
   {
     "id": "co175",
-    "text": "Jeu de couples : celui qui a le plus de photos de tableaux/menus dans des restaurants boit 2 gorgées.",
+    "text": "${player}, révèle ce que fait ${player} créativement pour éviter de dire qu'il a faim.",
     "pack": "couples"
   },
   {
     "id": "co176",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour choisir quoi regarder sur Netflix. S'il scrolle encore pendant qu'on parle, il boit 3 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant de s'y connaître en vin.",
     "pack": "couples"
   },
   {
     "id": "co177",
-    "text": "Tous les couples : celui qui dit le plus souvent 'on devrait sortir plus' sans organiser quoi que ce soit boit 2 gorgées.",
+    "text": "${player} et ${player}, créez un protocole d'urgence pour vos crises de couple récurrentes.",
     "pack": "couples"
   },
   {
     "id": "co178",
-    "text": "${player}, quelle est la technique la plus créative de ${player} pour éviter de répondre au téléphone professionnel ? S'il la perfectionne, il distribue 3 gorgées.",
+    "text": "${player}, comment ${player} évite-t-il de reconnaître qu'il a oublié un anniversaire ?",
     "pack": "couples"
   },
   {
     "id": "co179",
-    "text": "${player} et ${player}, mimez ensemble votre façon de négocier qui fait quoi dans les tâches ménagères. Le plus réaliste fait boire 3 gorgées au groupe.",
+    "text": "${player}, révèle la technique créative de ${player} pour éviter de critiquer ce qu'il n'aime pas.",
     "pack": "couples"
   },
   {
     "id": "co180",
-    "text": "Jeu de couples : celui qui a le plus de 'notes vocales' qu'il s'envoie à lui-même boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez un système de points de fidélité pour votre relation.",
     "pack": "couples"
   },
   {
     "id": "co181",
-    "text": "${player}, révèle la superstition la plus ridicule de ${player} liée au ménage. S'il respecte des règles bizarres, il boit 3 gorgées.",
+    "text": "${player}, que fait ${player} de bizarre pour éviter de prendre position dans un débat ?",
     "pack": "couples"
   },
   {
     "id": "co182",
-    "text": "Tous les couples : celui qui a le plus de 'téléchargements' qu'il ne se rappelle pas avoir faits boit 2 gorgées.",
+    "text": "${player}, imite ${player} faisant semblant d'être organisé quand quelqu'un regarde son bureau.",
     "pack": "couples"
   },
   {
     "id": "co183",
-    "text": "${player}, imite la façon dont ${player} prétend avoir tout compris dans une réunion. Ton partenaire boit s'il se reconnaît parfaitement.",
+    "text": "${player} et ${player}, créez un manuel d'instruction pour vos futurs vous dans 10 ans.",
     "pack": "couples"
   },
   {
     "id": "co184",
-    "text": "${player} et ${player}, créez ensemble un service de consulting basé sur vos échecs respectifs. Le plus honnête fait distribuer 4 gorgées.",
+    "text": "${player}, révèle la superstition farfelue de ${player} liée aux réseaux sociaux.",
     "pack": "couples"
   },
   {
     "id": "co185",
-    "text": "Jeu de couples : celui qui a le plus de 'favoris' YouTube qu'il ne regarde jamais boit 2 gorgées.",
+    "text": "${player}, comment ${player} évite-t-il de dire 'non' directement ?",
     "pack": "couples"
   },
   {
     "id": "co186",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} se convainc qu'il n'a pas faim ? S'il utilise des techniques psychologiques, il distribue 3 gorgées.",
+    "text": "${player} et ${player}, mimez votre vision de vous dans 20 ans.",
     "pack": "couples"
   },
   {
     "id": "co187",
-    "text": "Tous les couples : celui qui a le plus de 'trucs à réparer' qui traînent depuis des mois boit 2 gorgées.",
+    "text": "${player}, que fait ${player} avec les mails de spam ? Les lit-il par curiosité ?",
     "pack": "couples"
   },
   {
     "id": "co188",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter les conversations téléphoniques importantes. S'il raccroche 'par accident', il boit 3 gorgées.",
+    "text": "${player}, imite ${player} évitant de dire qu'il a perdu quelque chose d'important.",
     "pack": "couples"
   },
   {
     "id": "co189",
-    "text": "${player} et ${player}, inventez ensemble un produit pour les couples qui ne peuvent pas se mettre d'accord. Le plus révolutionnaire fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, créez une startup basée sur vos incompétences.",
     "pack": "couples"
   },
   {
     "id": "co190",
-    "text": "Jeu de couples : celui qui a le plus de 'j'ai oublié' légitimes vs bidons boit 2 gorgées si c'est 50/50.",
+    "text": "${player}, révèle la méthode bizarre de ${player} pour éviter de reconnaître ses erreurs.",
     "pack": "couples"
   },
   {
     "id": "co191",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait quand il s'ennuie dans les transports ? S'il le fait discrètement maintenant, il distribue 3 gorgées.",
+    "text": "${player}, quelle est la superstition ridicule de ${player} liée aux performances ?",
     "pack": "couples"
   },
   {
     "id": "co192",
-    "text": "Tous les couples : celui qui a le plus de 'bonne résolution' abandonnées cette année boit 2 gorgées par résolution.",
+    "text": "${player} et ${player}, mimez votre gestion des conflits de planning.",
     "pack": "couples"
   },
   {
     "id": "co193",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant de dormir pour éviter une conversation. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, révèle ce que fait ${player} créativement pour éviter de dire qu'il s'ennuie.",
     "pack": "couples"
   },
   {
     "id": "co194",
-    "text": "${player} et ${player}, créez ensemble un guide pour comprendre vos propres logiques respectives. Le plus nécessaire fait boire 3 gorgées au groupe.",
+    "text": "${player}, imite ${player} faisant semblant d'avoir une stratégie pour quelque chose qu'il improvise.",
     "pack": "couples"
   },
   {
     "id": "co195",
-    "text": "Jeu de couples : celui qui a le plus de 'ça c'est important' qu'il ne fait jamais boit 2 gorgées.",
+    "text": "${player} et ${player}, inventez un système de garantie pour vos promesses de couple.",
     "pack": "couples"
   },
   {
     "id": "co196",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de dire qu'il a tort. S'il nie avoir des méthodes, il boit 3 gorgées.",
+    "text": "${player}, comment ${player} évite-t-il de reconnaître qu'il ne sait pas utiliser quelque chose ?",
     "pack": "couples"
   },
   {
     "id": "co197",
-    "text": "Tous les couples : celui qui a le plus de 'raccourcis' sur son bureau qu'il n'utilise jamais boit 2 gorgées.",
+    "text": "${player}, révèle la technique créative de ${player} pour éviter de donner des nouvelles.",
     "pack": "couples"
   },
   {
     "id": "co198",
-    "text": "${player}, quelle est la superstition la plus farfelue de ${player} liée aux réseaux sociaux ? S'il poste selon des règles bizarres, il distribue 3 gorgées.",
+    "text": "${player} et ${player}, créez un manuel de détection précoce de vos mauvaises humeurs.",
     "pack": "couples"
   },
   {
     "id": "co199",
-    "text": "${player} et ${player}, mimez ensemble votre façon de vous réconcilier après une dispute. Si c'est trop mignon, vous distribuez 3 gorgées chacun.",
+    "text": "${player}, que fait ${player} de bizarre pour éviter de prendre des décisions importantes ?",
     "pack": "couples"
   },
   {
     "id": "co200",
-    "text": "Milestone couples : ${player} et ${player}, révélez ensemble la découverte la plus surprenante sur l'autre depuis qu'on joue. Tout le monde trinque !",
-    "pack": "couples"
-  },
-  {
-    "id": "co201",
-    "text": "${player}, quelle est la chose la plus weird que ${player} fait avec ses vieux vêtements ? S'il garde tout 'pour bricoler', il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co202",
-    "text": "Tous les couples : celui qui a le plus de 'ça pourrait servir' inutiles dans ses placards boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co203",
-    "text": "${player}, imite parfaitement la façon dont ${player} négocie avec lui-même pour ne pas faire de sport. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co204",
-    "text": "${player} et ${player}, créez ensemble un business plan pour commercialiser vos disputes les plus absurdes. Le plus créatif fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co205",
-    "text": "Jeu de couples : celui qui a le plus de conversations 'importantes' reportées à plus tard boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co206",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de faire ses courses. S'il commande tout en ligne par flemme, il distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co207",
-    "text": "Tous les couples : celui qui a le plus de 'notifications' désactivées par procrastination boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co208",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée aux examens/entretiens ? S'il a des rituels bizarres, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co209",
-    "text": "${player} et ${player}, mimez ensemble votre façon de choisir un film. Si ça prend plus de 20 secondes, vous buvez 2 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co210",
-    "text": "Jeu de couples : celui qui a le plus de 'je dois absolument faire ça' qu'il ne fait jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co211",
-    "text": "${player}, révèle le truc le plus bizarre que ${player} fait pour éviter les embouteillages mentaux. S'il a des techniques de méditation weird, il distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co212",
-    "text": "Tous les couples : celui qui a le plus de 'liens intéressants' qu'il ne partage jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co213",
-    "text": "${player}, imite la façon dont ${player} fait semblant d'avoir une bonne raison d'être sur son téléphone. Ton partenaire boit s'il se reconnaît.",
-    "pack": "couples"
-  },
-  {
-    "id": "co214",
-    "text": "${player} et ${player}, inventez ensemble une méthode pour prédire vos humeurs respectives. La plus précise fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co215",
-    "text": "Jeu de couples : celui qui a le plus de 'j'y ai pensé' sans jamais agir boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co216",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} évite de dire qu'il ne comprend pas ? S'il hoche la tête intelligemment, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co217",
-    "text": "Tous les couples : celui qui a le plus de 'documents importants' qu'il ne retrouve plus boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co218",
-    "text": "${player}, révèle la théorie la plus farfelue de ${player} sur pourquoi il perd toujours au jeux. S'il accuse la malchance cosmique, il distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co219",
-    "text": "${player} et ${player}, créez ensemble un guide de survie pour supporter vos manies respectives. Le plus diplomatique fait distribuer 4 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co220",
-    "text": "Jeu de couples : celui qui a le plus de 'bonnes idées' qu'il oublie immédiatement boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co221",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait pour procrastiner au travail ? S'il réorganise son bureau, il distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co222",
-    "text": "Tous les couples : celui qui a le plus de 'j'arrête demain' en cours boit 2 gorgées par mauvaise habitude.",
-    "pack": "couples"
-  },
-  {
-    "id": "co223",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant de chercher quelque chose qu'il ne veut pas trouver. Si c'est spot-on, ton partenaire distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co224",
-    "text": "${player} et ${player}, inventez ensemble une app pour couples qui se disputent pour des trucs ridicules. La plus utile fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co225",
-    "text": "Jeu de couples : celui qui a le plus de 'je commencerai lundi' qui n'arrivent jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co226",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de lire les CGU. S'il clique 'Accepter' sans regarder, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co227",
-    "text": "Tous les couples : celui qui a le plus de 'trucs à trier' qui s'accumulent boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co228",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée à la chance ? S'il touche du bois maintenant, il distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co229",
-    "text": "${player} et ${player}, mimez ensemble votre routine 'on fait quoi ce soir ?'. Si c'est trop réaliste, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co230",
-    "text": "Jeu de couples : celui qui a le plus de 'ça m'intéresse' qu'il n'approfondit jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co231",
-    "text": "${player}, révèle le truc le plus créatif que ${player} fait pour éviter de parler de ses sentiments. S'il change de sujet maintenant, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co232",
-    "text": "Tous les couples : celui qui a le plus de 'photos à trier' sur son téléphone boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co233",
-    "text": "${player}, imite la façon dont ${player} fait semblant de connaître une référence culturelle. Ton partenaire boit s'il se reconnaît parfaitement.",
-    "pack": "couples"
-  },
-  {
-    "id": "co234",
-    "text": "${player} et ${player}, créez ensemble un service de médiation pour vos disputes les plus stupides. Le plus professionnel fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co235",
-    "text": "Jeu de couples : celui qui a le plus de 'il faut que je' qu'il reporte constamment boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co236",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} teste si quelque chose est propre ? S'il renifle, il distribue 3 gorgées assumées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co237",
-    "text": "Tous les couples : celui qui a le plus de 'c'est temporaire' qui durent depuis des mois boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co238",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter les appels de service client. S'il laisse sonner dans le vide, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co239",
-    "text": "${player} et ${player}, inventez ensemble une théorie sur pourquoi vous n'arrivez jamais à jeter les mêmes choses. La plus psychologique fait distribuer 4 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co240",
-    "text": "Jeu de couples : celui qui a le plus de 'résolutions du jour' abandonnées boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co241",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait quand il ne trouve pas ses mots ? S'il fait des gestes bizarres, il distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co242",
-    "text": "Tous les couples : celui qui a le plus de 'versions finales' de trucs qui ne sont pas finales boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co243",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant d'avoir écouté une longue histoire. Si c'est trop précis, ton partenaire distribue 3 gorgées de honte.",
-    "pack": "couples"
-  },
-  {
-    "id": "co244",
-    "text": "${player} et ${player}, créez ensemble un mode d'emploi pour décoder vos silences respectifs. Le plus nécessaire fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co245",
-    "text": "Jeu de couples : celui qui a le plus de 'je le fais tout de suite' qui traînent boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co246",
-    "text": "${player}, révèle la superstition la plus farfelue de ${player} liée à son téléphone. S'il éteint/rallume pour la chance, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co247",
-    "text": "Tous les couples : celui qui a le plus de 'je regarderai le tuto' sans jamais le faire boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co248",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} évite de avouer qu'il a oublié quelque chose d'important ? S'il invente des excuses maintenant, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co249",
-    "text": "${player} et ${player}, mimez ensemble votre façon de prétendre que vous n'êtes pas perdus. Si c'est trop réaliste, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co250",
-    "text": "Quarter final couples : ${player} et ${player}, révélez la manie la plus bizarre de l'autre découverte ce soir. Tout le monde applaudit et boit !",
-    "pack": "couples"
-  },
-  {
-    "id": "co251",
-    "text": "${player}, quelle est la chose la plus weird que ${player} fait avec les restes de nourriture ? S'il fait des créations artistiques, il distribue 3 gorgées créatives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co252",
-    "text": "Tous les couples : celui qui a le plus de 'coins' à nettoyer qui ne le seront jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co253",
-    "text": "${player}, imite parfaitement la façon dont ${player} évite de répondre quand on lui demande ses projets. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co254",
-    "text": "${player} et ${player}, créez ensemble un système de points pour vos contributions domestiques respectives. Le plus équitable fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co255",
-    "text": "Jeu de couples : celui qui a le plus de 'je m'en occupe' oubliés boit 2 gorgées par promesse.",
-    "pack": "couples"
-  },
-  {
-    "id": "co256",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de se perdre. S'il fait semblant de connaître le chemin, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co257",
-    "text": "Tous les couples : celui qui a le plus de 'ça peut attendre' urgents boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co258",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée aux voyages ? S'il a des rituels pre-départ, il distribue 3 gorgées rituelles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co259",
-    "text": "${player} et ${player}, mimez ensemble votre façon de gérer un conflit d'intérêts Netflix. Si c'est trop diplomatique, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co260",
-    "text": "Jeu de couples : celui qui a le plus de 'projets personnels' dans les limbes boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co261",
-    "text": "${player}, révèle le truc le plus créatif que ${player} fait pour éviter les conversations téléphoniques avec la famille. S'il maîtrise l'art du réseau, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co262",
-    "text": "Tous les couples : celui qui a le plus de 'liens utiles' sauvegardés qu'il ne consulte jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co263",
-    "text": "${player}, imite la façon dont ${player} fait semblant d'avoir une excuse valable pour être sur son téléphone. Ton partenaire boit s'il se reconnaît.",
-    "pack": "couples"
-  },
-  {
-    "id": "co264",
-    "text": "${player} et ${player}, inventez ensemble une méthode pour quantifier votre niveau de procrastination. La plus scientifique fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co265",
-    "text": "Jeu de couples : celui qui a le plus de 'reminders' qu'il reporte constamment boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co266",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} teste la température de l'eau ? S'il a des techniques de ninja, il distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co267",
-    "text": "Tous les couples : celui qui a le plus de 'drafts' de messages importants qu'il n'envoie jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co268",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter de choisir un restaurant. S'il dit toujours 'ce que tu veux', il boit 3 gorgées diplomatiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co269",
-    "text": "${player} et ${player}, créez ensemble un algorithme pour prédire vos disputes. Le plus précis fait distribuer 4 gorgées prophétiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co270",
-    "text": "Jeu de couples : celui qui a le plus de 'bonnes intentions' non concrétisées boit 2 gorgées par intention.",
-    "pack": "couples"
-  },
-  {
-    "id": "co271",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait quand il réfléchit trop fort ? S'il fait des grimaces, il distribue 3 gorgées expressives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co272",
-    "text": "Tous les couples : celui qui a le plus de 'fichiers à organiser' en vrac boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co273",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant de ne pas voir une tâche évidente. Si c'est trop précis, ton partenaire distribue 3 gorgées de culpabilité.",
-    "pack": "couples"
-  },
-  {
-    "id": "co274",
-    "text": "${player} et ${player}, inventez ensemble un business plan pour monétiser vos techniques d'évitement. Le plus rentable fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co275",
-    "text": "Jeu de couples : celui qui a le plus de 'je dois vraiment' qu'il ne fait jamais vraiment boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co276",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de réfléchir à des trucs importants. S'il utilise la technique de l'autruche, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co277",
-    "text": "Tous les couples : celui qui a le plus de 'save for later' qu'il ne regardera jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co278",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée à son apparence ? S'il a des routines bizarres, il distribue 3 gorgées coquettes.",
-    "pack": "couples"
-  },
-  {
-    "id": "co279",
-    "text": "${player} et ${player}, mimez ensemble votre façon de gérer les silences gênants. Si c'est trop awkward, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co280",
-    "text": "Jeu de couples : celui qui a le plus de 'contacts' dont il ne se rappelle plus qui c'est boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co281",
-    "text": "${player}, révèle le truc le plus créatif que ${player} fait pour éviter de prendre des décisions difficiles. S'il lance une pièce mentalement, il boit 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co282",
-    "text": "Tous les couples : celui qui a le plus de 'je devrais appeler' qu'il ne fait jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co283",
-    "text": "${player}, imite la façon dont ${player} fait semblant de comprendre les explications techniques. Ton partenaire boit s'il hoche la tête intelligemment.",
-    "pack": "couples"
-  },
-  {
-    "id": "co284",
-    "text": "${player} et ${player}, créez ensemble un service de traduction pour vos non-dits respectifs. Le plus utile fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co285",
-    "text": "Jeu de couples : celui qui a le plus de 'ça sera rapide' qui ne le sont jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co286",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} évite de regarder l'heure quand il est en retard ? S'il maîtrise l'art du déni, il distribue 3 gorgées temporelles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co287",
-    "text": "Tous les couples : celui qui a le plus de 'versions sauvegardées' de trucs identiques boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co288",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter les discussions sur l'argent. S'il change de sujet subtilement, il boit 3 gorgées diplomatiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co289",
-    "text": "${player} et ${player}, inventez ensemble un système d'alerte pour vos pics de flemme respectifs. Le plus préventif fait distribuer 4 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co290",
-    "text": "Jeu de couples : celui qui a le plus de 'tab' ouverts en permanence sur son navigateur boit 2 gorgées par tranche de 10.",
-    "pack": "couples"
-  },
-  {
-    "id": "co291",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait pour gagner du temps le matin ? S'il a optimisé des trucs bizarres, il distribue 3 gorgées efficaces.",
-    "pack": "couples"
-  },
-  {
-    "id": "co292",
-    "text": "Tous les couples : celui qui a le plus de 'raccourcis' dans la vie qui lui font perdre du temps boit 2 gorgées ironiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co293",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant de se rappeler quelque chose qu'il a oublié. Si c'est trop réaliste, ton partenaire distribue 3 gorgées amnésiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co294",
-    "text": "${player} et ${player}, créez ensemble un guide de détection de vos mensonges blancs respectifs. Le plus précis fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co295",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais m'y mettre sérieusement' abandonnés boit 2 gorgées par projet.",
-    "pack": "couples"
-  },
-  {
-    "id": "co296",
-    "text": "${player}, révèle la superstition la plus farfelue de ${player} liée aux compliments. S'il touche du bois après chaque compliment, il boit 3 gorgées superstitieuses.",
-    "pack": "couples"
-  },
-  {
-    "id": "co297",
-    "text": "Tous les couples : celui qui a le plus de 'notes importantes' qu'il ne relit jamais boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co298",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} évite de dire qu'il n'a pas envie ? S'il utilise des excuses scientifiques, il boit 3 gorgées créatives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co299",
-    "text": "${player} et ${player}, mimez ensemble votre façon de négocier le thermostat. Si c'est une guerre froide, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co300",
-    "text": "Milestone 300 : ${player} et ${player}, révélez la chose la plus absurde que vous avez découverte sur l'autre ce soir. Triple toast obligatoire !",
-    "pack": "couples"
-  },
-  {
-    "id": "co301",
-    "text": "${player}, quelle est la chose la plus weird que ${player} fait pour éviter les réunions de famille ? S'il maîtrise l'art de l'excuse médicale, il boit 3 gorgées stratégiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co302",
-    "text": "Tous les couples : celui qui a le plus de 'trucs en cours' qui ne finiront jamais boit 2 gorgées par projet zombi.",
-    "pack": "couples"
-  },
-  {
-    "id": "co303",
-    "text": "${player}, imite parfaitement la façon dont ${player} évite de donner son avis sur des trucs controversés. Si c'est trop diplomatique, ton partenaire distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co304",
-    "text": "${player} et ${player}, créez ensemble un business model basé sur vos procrastinations complémentaires. Le plus innovant fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co305",
-    "text": "Jeu de couples : celui qui a le plus de 'photos à supprimer' qu'il ne supprime jamais boit 2 gorgées par 100 photos.",
-    "pack": "couples"
-  },
-  {
-    "id": "co306",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de reconnaître qu'il s'est trompé de chemin. S'il prétend découvrir le quartier, il distribue 3 gorgées exploratrices.",
-    "pack": "couples"
-  },
-  {
-    "id": "co307",
-    "text": "Tous les couples : celui qui a le plus de 'je regarderai ça quand j'aurai le temps' boit 2 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co308",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée au sommeil ? S'il a des rituels de coucher bizarres, il boit 3 gorgées somnifères.",
-    "pack": "couples"
-  },
-  {
-    "id": "co309",
-    "text": "${player} et ${player}, mimez ensemble votre façon de gérer les appels de démarchage. Si c'est trop créatif, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co310",
-    "text": "Jeu de couples : celui qui a le plus de 'mots de passe' oubliés cette année boit 2 gorgées par reset.",
-    "pack": "couples"
-  },
-  {
-    "id": "co311",
-    "text": "${player}, révèle le truc le plus créatif que ${player} fait pour éviter de nettoyer sa voiture. S'il attend la pluie pour le lavage automatique, il boit 3 gorgées météorologiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co312",
-    "text": "Tous les couples : celui qui a le plus de 'je dois m'en souvenir' qu'il oublie immédiatement boit 2 gorgées amnésiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co313",
-    "text": "${player}, imite la façon dont ${player} fait semblant de connaître une célébrité dont on parle. Ton partenaire boit s'il hoche la tête mysterieusement.",
-    "pack": "couples"
-  },
-  {
-    "id": "co314",
-    "text": "${player} et ${player}, inventez ensemble un système de scoring pour vos contributions invisibles au couple. Le plus équitable fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co315",
-    "text": "Jeu de couples : celui qui a le plus de 'je ferai ça pendant les vacances' reportés boit 2 gorgées par projet vacances.",
-    "pack": "couples"
-  },
-  {
-    "id": "co316",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} évite de répondre aux messages importants ? S'il maîtrise l'art du 'vu', il distribue 3 gorgées évasives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co317",
-    "text": "Tous les couples : celui qui a le plus de 'backup' de trucs qu'il utilisera jamais boit 2 gorgées préventives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co318",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter de choisir un cadeau. S'il offre des 'expériences', il boit 3 gorgées expérientielles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co319",
-    "text": "${player} et ${player}, créez ensemble un algorithme pour optimiser vos disputes. Le plus logique fait distribuer 4 gorgées algorithmiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co320",
-    "text": "Jeu de couples : celui qui a le plus de 'techniques' pour éviter de parler au téléphone boit 2 gorgées par technique.",
-    "pack": "couples"
-  },
-  {
-    "id": "co321",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait quand il s'ennuie au travail ? S'il réorganise virtuellement son bureau, il distribue 3 gorgées productives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co322",
-    "text": "Tous les couples : celui qui a le plus de 'favoris' internet organisés en folders qu'il n'ouvre jamais boit 2 gorgées organisationnelles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co323",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant d'avoir lu un article qu'il a juste survolé. Si c'est trop précis, ton partenaire distribue 3 gorgées littéraires.",
-    "pack": "couples"
-  },
-  {
-    "id": "co324",
-    "text": "${player} et ${player}, inventez ensemble un guide pour décoder vos signaux de fatigue respectifs. Le plus utile fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co325",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais essayer' sincères qui ne mènent nulle part boit 2 gorgées par tentative.",
-    "pack": "couples"
-  },
-  {
-    "id": "co326",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de dire qu'il ne connaît pas quelqu'un. S'il fait semblant de le reconnaître, il boit 3 gorgées sociales.",
-    "pack": "couples"
-  },
-  {
-    "id": "co327",
-    "text": "Tous les couples : celui qui a le plus de 'je dois vraiment trier ça' qu'il ne trie jamais boit 2 gorgées par pile de bazar.",
-    "pack": "couples"
-  },
-  {
-    "id": "co328",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée à la cuisine ? S'il goûte toujours en cuisinant 'pour la chance', il distribue 3 gorgées gustatives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co329",
-    "text": "${player} et ${player}, mimez ensemble votre façon de choisir quoi manger quand vous n'avez pas d'idée. Si ça dure plus de 30 secondes, vous buvez 2 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co330",
-    "text": "Jeu de couples : celui qui a le plus de 'good ideas' notées qu'il ne développe jamais boit 2 gorgées par idée géniale abandonnée.",
-    "pack": "couples"
-  },
-  {
-    "id": "co331",
-    "text": "${player}, révèle le truc le plus créatif que ${player} fait pour éviter de demander de l'aide. S'il préfère galérer seul, il boit 3 gorgées indépendantes.",
-    "pack": "couples"
-  },
-  {
-    "id": "co332",
-    "text": "Tous les couples : celui qui a le plus de 'je lirai ça ce weekend' qui traînent boit 2 gorgées littéraires.",
-    "pack": "couples"
-  },
-  {
-    "id": "co333",
-    "text": "${player}, imite la façon dont ${player} fait semblant d'écouter de la musique qu'il n'aime pas. Ton partenaire boit s'il hoche la tête poliment.",
-    "pack": "couples"
-  },
-  {
-    "id": "co334",
-    "text": "${player} et ${player}, créez ensemble un service après-vente pour vos promesses non tenues. Le plus professionnel fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co335",
-    "text": "Jeu de couples : celui qui a le plus de 'quick fixes' temporaires qui durent depuis des mois boit 2 gorgées par fix.",
-    "pack": "couples"
-  },
-  {
-    "id": "co336",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} évite de regarder son solde bancaire ? S'il maîtrise l'art de l'aveuglement financier, il distribue 3 gorgées économiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co337",
-    "text": "Tous les couples : celui qui a le plus de 'je m'en occuperai demain' récurrents boit 2 gorgées par demain qui n'arrive jamais.",
-    "pack": "couples"
-  },
-  {
-    "id": "co338",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter de jeter des trucs cassés. S'il garde tout 'pour les pièces', il boit 3 gorgées de stock.",
-    "pack": "couples"
-  },
-  {
-    "id": "co339",
-    "text": "${player} et ${player}, inventez ensemble une méthode pour mesurer votre niveau de flemme quotidien. La plus précise fait distribuer 4 gorgées scientifiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co340",
-    "text": "Jeu de couples : celui qui a le plus de 'contacts' professionnels qu'il évite religieusement boit 2 gorgées par contact fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co341",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait pour procrastiner avant de sortir ? S'il trouve toujours une tâche urgente, il distribue 3 gorgées stratégiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co342",
-    "text": "Tous les couples : celui qui a le plus de 'je vais m'inscrire' qu'il ne fait jamais boit 2 gorgées par bonne intention.",
-    "pack": "couples"
-  },
-  {
-    "id": "co343",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant de comprendre une plaisanterie qu'il n'a pas saisie. Si le rire sonne faux, ton partenaire distribue 3 gorgées comiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co344",
-    "text": "${player} et ${player}, créez ensemble un système d'early warning pour vos crises de flemme. Le plus préventif fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co345",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais apprendre ça' abandonnés boit 2 gorgées par compétence fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co346",
-    "text": "${player}, révèle la superstition la plus farfelue de ${player} liée aux rendez-vous. S'il a des rituels pré-meeting, il boit 3 gorgées cérémoniales.",
-    "pack": "couples"
-  },
-  {
-    "id": "co347",
-    "text": "Tous les couples : celui qui a le plus de 'dossiers importants' qu'il ne classe jamais boit 2 gorgées administratives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co348",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} évite de répondre aux questions sur ses projets futurs ? S'il parle de 'voir comment ça évolue', il boit 3 gorgées évasives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co349",
-    "text": "${player} et ${player}, mimez ensemble votre routine de 'on se dépêche ou pas ?'. Si c'est trop chaotique, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co350",
-    "text": "Semi-final couples : ${player} et ${player}, révélez ensemble votre découverte la plus hilarante de la soirée. Tout le monde rit et boit !",
-    "pack": "couples"
-  },
-  {
-    "id": "co351",
-    "text": "${player}, quelle est la chose la plus weird que ${player} fait avec les mails de spam ? S'il les lit par curiosité, il boit 3 gorgées curieuses.",
-    "pack": "couples"
-  },
-  {
-    "id": "co352",
-    "text": "Tous les couples : celui qui a le plus de 'je vais tester ça' qu'il ne teste jamais boit 2 gorgées par test fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co353",
-    "text": "${player}, imite parfaitement la façon dont ${player} évite de dire qu'il a perdu quelque chose d'important. Si c'est trop diplomatique, ton partenaire distribue 3 gorgées.",
-    "pack": "couples"
-  },
-  {
-    "id": "co354",
-    "text": "${player} et ${player}, créez ensemble une startup basée sur vos incompétences respectives. La plus honnête fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co355",
-    "text": "Jeu de couples : celui qui a le plus de 'choses à faire' sur des post-it qu'il perd boit 2 gorgées par post-it disparu.",
-    "pack": "couples"
-  },
-  {
-    "id": "co356",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de reconnaître qu'il a fait une erreur. S'il blame la technologie, il distribue 3 gorgées technologiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co357",
-    "text": "Tous les couples : celui qui a le plus de 'je vais commander ça' dans ses paniers virtuels boit 2 gorgées par article fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co358",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée à ses performances ? S'il porte toujours les mêmes sous-vêtements 'chanceux', il boit 3 gorgées rituelles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co359",
-    "text": "${player} et ${player}, mimez ensemble votre façon de gérer les conflits de planning. Si c'est une négociation de l'ONU, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co360",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais réfléchir' qui ne mènent à rien boit 2 gorgées par réflexion stérile.",
-    "pack": "couples"
-  },
-  {
-    "id": "co361",
-    "text": "${player}, révèle le truc le plus créatif que ${player} fait pour éviter de dire qu'il s'ennuie. S'il prétend être 'en mode contemplation', il boit 3 gorgées zen.",
-    "pack": "couples"
-  },
-  {
-    "id": "co362",
-    "text": "Tous les couples : celui qui a le plus de 'je vais optimiser ça' qu'il n'optimise jamais boit 2 gorgées par optimisation fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co363",
-    "text": "${player}, imite la façon dont ${player} fait semblant d'avoir une stratégie pour quelque chose qu'il improvise. Ton partenaire boit s'il parle de 'vision long terme'.",
-    "pack": "couples"
-  },
-  {
-    "id": "co364",
-    "text": "${player} et ${player}, inventez ensemble un système de warranty pour vos promesses de couple. Le plus réaliste fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co365",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais me renseigner' qu'il ne fait jamais boit 2 gorgées par recherche fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co366",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} évite de reconnaître qu'il ne sait pas utiliser quelque chose ? S'il appuie sur tous les boutons, il distribue 3 gorgées exploratoires.",
-    "pack": "couples"
-  },
-  {
-    "id": "co367",
-    "text": "Tous les couples : celui qui a le plus de 'je vais checker ça' qu'il ne check jamais boit 2 gorgées par vérification fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co368",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter de donner des nouvelles. S'il maîtrise l'art du silence radio, il boit 3 gorgées discrètes.",
-    "pack": "couples"
-  },
-  {
-    "id": "co369",
-    "text": "${player} et ${player}, créez ensemble un manuel de détection précoce de vos bad moods. Le plus préventif fait distribuer 4 gorgées prophétiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co370",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais voir si ça marche' qu'il ne teste jamais boit 2 gorgées par expérience fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co371",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait pour éviter de prendre des décisions importantes ? S'il lance des pièces mentales, il distribue 3 gorgées aléatoires.",
-    "pack": "couples"
-  },
-  {
-    "id": "co372",
-    "text": "Tous les couples : celui qui a le plus de 'je vais essayer de me souvenir' qu'il oublie immédiatement boit 2 gorgées par mémoire défaillante.",
-    "pack": "couples"
-  },
-  {
-    "id": "co373",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant d'avoir une opinion tranchée sur quelque chose qu'il découvre. Si c'est trop convaincu, ton partenaire distribue 3 gorgées expertes.",
-    "pack": "couples"
-  },
-  {
-    "id": "co374",
-    "text": "${player} et ${player}, inventez ensemble un business plan pour monétiser vos techniques de procrastination. Le plus lucratif fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co375",
-    "text": "Final countdown : ${player} et ${player}, révélez ensemble votre plus grande révélation mutuelle de la soirée. Tout le monde se prépare pour la finale !",
-    "pack": "couples"
-  },
-  {
-    "id": "co376",
-    "text": "${player}, révèle la méthode la plus bizarre de ${player} pour éviter de faire des compliments. S'il utilise des faits scientifiques à la place, il boit 3 gorgées objectives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co377",
-    "text": "Tous les couples : celui qui a le plus de 'je vais finir ça' qu'il ne finit jamais boit 2 gorgées par projet en suspens.",
-    "pack": "couples"
-  },
-  {
-    "id": "co378",
-    "text": "${player}, quelle est la superstition la plus ridicule de ${player} liée à ses habitudes matinales ? S'il fait les choses dans un ordre précis 'pour la chance', il distribue 3 gorgées rituelles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co379",
-    "text": "${player} et ${player}, mimez ensemble votre façon de négocier qui conduit quand vous êtes perdus. Si c'est une guerre froide, vous distribuez 3 gorgées chacun.",
-    "pack": "couples"
-  },
-  {
-    "id": "co380",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais penser à ça' qu'il oublie dans la seconde boit 2 gorgées par pensée fugace.",
-    "pack": "couples"
-  },
-  {
-    "id": "co381",
-    "text": "${player}, révèle le truc le plus créatif que ${player} fait pour éviter de dire qu'il a faim. S'il prétend être 'en jeûne intermittent', il boit 3 gorgées nutritionnelles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co382",
-    "text": "Tous les couples : celui qui a le plus de 'je vais me motiver' qu'il ne fait jamais boit 2 gorgées par motivation fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co383",
-    "text": "${player}, imite la façon dont ${player} fait semblant de s'y connaître en vin/café. Ton partenaire boit s'il utilise des mots comme 'corsé' ou 'notes de...'.",
-    "pack": "couples"
-  },
-  {
-    "id": "co384",
-    "text": "${player} et ${player}, créez ensemble un protocole d'urgence pour vos crises de couple les plus récurrentes. Le plus réaliste fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co385",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais faire attention' qu'il ne fait jamais boit 2 gorgées par attention défaillante.",
-    "pack": "couples"
-  },
-  {
-    "id": "co386",
-    "text": "${player}, quelle est la façon la plus bizarre dont ${player} évite de reconnaître qu'il a oublié un anniversaire ? S'il prétend être en avance pour l'année prochaine, il distribue 3 gorgées temporelles.",
-    "pack": "couples"
-  },
-  {
-    "id": "co387",
-    "text": "Tous les couples : celui qui a le plus de 'je vais surveiller ça' qu'il ne surveille jamais boit 2 gorgées par surveillance fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co388",
-    "text": "${player}, révèle la technique la plus créative de ${player} pour éviter de critiquer quelque chose qu'il n'aime pas. S'il trouve toujours un aspect positif, il boit 3 gorgées diplomatiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co389",
-    "text": "${player} et ${player}, inventez ensemble un système de points de fidélité pour votre relation. Le plus innovant fait distribuer 4 gorgées commerciales.",
-    "pack": "couples"
-  },
-  {
-    "id": "co390",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais me documenter' qu'il ne fait jamais boit 2 gorgées par documentation fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co391",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait pour éviter de prendre position dans un débat ? S'il joue l'avocat du diable, il distribue 3 gorgées neutres.",
-    "pack": "couples"
-  },
-  {
-    "id": "co392",
-    "text": "Tous les couples : celui qui a le plus de 'je vais y réfléchir sérieusement' qu'il prend à la légère boit 2 gorgées par réflexion bidon.",
-    "pack": "couples"
-  },
-  {
-    "id": "co393",
-    "text": "${player}, imite parfaitement la façon dont ${player} fait semblant d'être organisé quand quelqu'un regarde son bureau/espace. Si c'est du grand spectacle, ton partenaire distribue 3 gorgées théâtrales.",
-    "pack": "couples"
-  },
-  {
-    "id": "co394",
-    "text": "${player} et ${player}, créez ensemble un manuel d'instruction pour vos futurs vous dans 10 ans. Le plus sage fait boire 3 gorgées au groupe.",
-    "pack": "couples"
-  },
-  {
-    "id": "co395",
-    "text": "Jeu de couples : celui qui a le plus de 'je vais m'améliorer' sincères mais vagues boit 2 gorgées par amélioration fantôme.",
-    "pack": "couples"
-  },
-  {
-    "id": "co396",
-    "text": "${player}, révèle la superstition la plus farfelue de ${player} liée aux réseaux sociaux. S'il poste à des heures précises 'pour l'algorithme', il boit 3 gorgées algorithmiques.",
-    "pack": "couples"
-  },
-  {
-    "id": "co397",
-    "text": "Tous les couples : celui qui a le plus de 'je vais garder ça en tête' qu'il oublie immédiatement boit 2 gorgées par mémoire sélective.",
-    "pack": "couples"
-  },
-  {
-    "id": "co398",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} évite de dire 'non' directement ? S'il maîtrise l'art du 'peut-être', il distribue 3 gorgées évasives.",
-    "pack": "couples"
-  },
-  {
-    "id": "co399",
-    "text": "${player} et ${player}, mimez ensemble votre vision de vous dans 20 ans. Si c'est trop optimiste/pessimiste, vous distribuez 3 gorgées chacun selon le cas.",
-    "pack": "couples"
-  },
-  {
-    "id": "co400",
-    "text": "🎉 FINALE ULTIME 400 ! 🎉 ${player} et ${player}, faites un discours de remerciement mutuel pour toutes les révélations de ce soir. Tout le monde trinque, se congratule et boit 5 gorgées de célébration ! Vous vous connaissez maintenant mieux que jamais ! 🥳🍻",
+    "text": "🎉 FINALE ! ${player} et ${player}, faites un discours de remerciement mutuel pour toutes les révélations de ce soir. Tout le monde trinque et boit 5 gorgées de célébration ! 🥳",
     "pack": "couples"
   }
 ] 
