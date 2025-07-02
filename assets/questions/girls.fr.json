@@ -748,5 +748,1005 @@
     "id": "g150",
     "text": "${player}, bois une gorgée si tu fais des listes pour tout, même pour regarder Netflix.",
     "pack": "girls"
+  },
+  {
+    "id": "g151",
+    "text": "${player}, bois une gorgée si tu as déjà acheté quelque chose juste parce que c'était en solde.",
+    "pack": "girls"
+  },
+  {
+    "id": "g152",
+    "text": "${player}, raconte ton moment le plus cringe sur les réseaux sociaux à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g153",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de notifications non lues boit 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g154",
+    "text": "${player}, bois une gorgée si tu as déjà menti sur ton poids sur un site.",
+    "pack": "girls"
+  },
+  {
+    "id": "g155",
+    "text": "${player} et ${player}, buvez si vous vous êtes déjà disputées pour un vêtement.",
+    "pack": "girls"
+  },
+  {
+    "id": "g156",
+    "text": "${player}, bois 2 gorgées si tu as déjà fait semblant d'aimer un cadeau.",
+    "pack": "girls"
+  },
+  {
+    "id": "g157",
+    "text": "${player}, bois une gorgée si tu gardes des tickets de cinéma comme souvenirs.",
+    "pack": "girls"
+  },
+  {
+    "id": "g158",
+    "text": "Entre ${player} et ${player}, celle qui met le plus de temps à répondre aux messages distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g159",
+    "text": "${player}, raconte ton pire achat impulsif à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g160",
+    "text": "${player}, bois une gorgée si tu as déjà porté la même tenue deux jours de suite.",
+    "pack": "girls"
+  },
+  {
+    "id": "g161",
+    "text": "${player} et ${player}, buvez si vous avez déjà échangé vos mots de passe.",
+    "pack": "girls"
+  },
+  {
+    "id": "g162",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un crush sur le copain d'une amie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g163",
+    "text": "${player}, bois une gorgée si tu connais ton signe astrologique chinois.",
+    "pack": "girls"
+  },
+  {
+    "id": "g164",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de followers sur TikTok distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g165",
+    "text": "${player}, raconte ton moment le plus embarrassant chez le gynéco à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g166",
+    "text": "${player}, bois une gorgée si tu portes toujours les mêmes boucles d'oreilles.",
+    "pack": "girls"
+  },
+  {
+    "id": "g167",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait du shopping en pyjama.",
+    "pack": "girls"
+  },
+  {
+    "id": "g168",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu des sentiments pour ton ex de nouveau après la rupture.",
+    "pack": "girls"
+  },
+  {
+    "id": "g169",
+    "text": "${player}, bois une gorgée si tu utilises encore des émojis cœur avec ton ex.",
+    "pack": "girls"
+  },
+  {
+    "id": "g170",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de crushes Spotify distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g171",
+    "text": "${player}, raconte ton plus gros mensonge à tes parents à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g172",
+    "text": "${player}, bois une gorgée si tu as déjà simulé être malade pour sécher les cours.",
+    "pack": "girls"
+  },
+  {
+    "id": "g173",
+    "text": "${player} et ${player}, buvez si vous avez déjà partagé un bain ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g174",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en rêve.",
+    "pack": "girls"
+  },
+  {
+    "id": "g175",
+    "text": "${player}, bois une gorgée si tu as plus de 5 parfums différents.",
+    "pack": "girls"
+  },
+  {
+    "id": "g176",
+    "text": "Entre ${player} et ${player}, celle qui met le plus de filtres sur ses photos distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g177",
+    "text": "${player}, raconte ton premier baiser en détails à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g178",
+    "text": "${player}, bois une gorgée si tu écris encore dans un journal intime.",
+    "pack": "girls"
+  },
+  {
+    "id": "g179",
+    "text": "${player} et ${player}, buvez si vous vous êtes déjà espionnées mutuellement sur les réseaux.",
+    "pack": "girls"
+  },
+  {
+    "id": "g180",
+    "text": "${player}, bois 2 gorgées si tu as déjà fait du sexting avec un emoji aubergine.",
+    "pack": "girls"
+  },
+  {
+    "id": "g181",
+    "text": "${player}, bois une gorgée si tu collectionnes les bougies parfumées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g182",
+    "text": "Entre ${player} et ${player}, celle qui regarde le plus de tutoriels YouTube distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g183",
+    "text": "${player}, raconte ton moment le plus gênant en maillot de bain à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g184",
+    "text": "${player}, bois une gorgée si tu as déjà fait de la méditation guidée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g185",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un shooting photo ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g186",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un fantasme avec plusieurs partenaires en même temps.",
+    "pack": "girls"
+  },
+  {
+    "id": "g187",
+    "text": "${player}, bois une gorgée si tu as plus de 20 rouges à lèvres différents.",
+    "pack": "girls"
+  },
+  {
+    "id": "g188",
+    "text": "Entre ${player} et ${player}, celle qui utilise le plus d'applications de retouche photo distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g189",
+    "text": "${player}, raconte ton expérience la plus bizarre avec un vibromasseur à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g190",
+    "text": "${player}, bois une gorgée si tu portes toujours un bracelet porte-bonheur.",
+    "pack": "girls"
+  },
+  {
+    "id": "g191",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un pacte de ne jamais sortir avec le même mec.",
+    "pack": "girls"
+  },
+  {
+    "id": "g192",
+    "text": "${player}, bois 2 gorgées si tu as déjà envoyé une photo de tes règles à une amie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g193",
+    "text": "${player}, bois une gorgée si tu consultes ton horoscope tous les jours.",
+    "pack": "girls"
+  },
+  {
+    "id": "g194",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de vernis à ongles distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g195",
+    "text": "${player}, raconte ton pire râteau à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g196",
+    "text": "${player}, bois une gorgée si tu as déjà fait du yoga nu chez toi.",
+    "pack": "girls"
+  },
+  {
+    "id": "g197",
+    "text": "${player} et ${player}, buvez si vous vous êtes déjà prêté de la lingerie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g198",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en te touchant les seins.",
+    "pack": "girls"
+  },
+  {
+    "id": "g199",
+    "text": "${player}, bois une gorgée si tu as déjà pleuré en regardant une pub.",
+    "pack": "girls"
+  },
+  {
+    "id": "g200",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de carnets/agendas distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g201",
+    "text": "${player}, raconte ton mensonge le plus créatif pour éviter une soirée à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g202",
+    "text": "${player}, bois une gorgée si tu gardes des peluches sur ton lit.",
+    "pack": "girls"
+  },
+  {
+    "id": "g203",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un concours de twerk.",
+    "pack": "girls"
+  },
+  {
+    "id": "g204",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé un concombre comme sex-toy.",
+    "pack": "girls"
+  },
+  {
+    "id": "g205",
+    "text": "${player}, bois une gorgée si tu portes des chaussettes dépareillées exprès.",
+    "pack": "girls"
+  },
+  {
+    "id": "g206",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de masques de beauté distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g207",
+    "text": "${player}, raconte ton moment le plus awkward avec tes règles à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g208",
+    "text": "${player}, bois une gorgée si tu as déjà fait de l'auto-hypnose.",
+    "pack": "girls"
+  },
+  {
+    "id": "g209",
+    "text": "${player} et ${player}, buvez si vous avez déjà échangé vos techniques de masturbation.",
+    "pack": "girls"
+  },
+  {
+    "id": "g210",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme juste en serrant les cuisses.",
+    "pack": "girls"
+  },
+  {
+    "id": "g211",
+    "text": "${player}, bois une gorgée si tu as déjà acheté des cristaux pour leur énergie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g212",
+    "text": "Entre ${player} et ${player}, celle qui prend le plus de bains distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g213",
+    "text": "${player}, raconte ton plus gros fail de maquillage à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g214",
+    "text": "${player}, bois une gorgée si tu collectionnes les autocollants.",
+    "pack": "girls"
+  },
+  {
+    "id": "g215",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un jeu de rôle sexuel ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g216",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en pensant à une scène de film.",
+    "pack": "girls"
+  },
+  {
+    "id": "g217",
+    "text": "${player}, bois une gorgée si tu as déjà mangé du chocolat au petit-déjeuner.",
+    "pack": "girls"
+  },
+  {
+    "id": "g218",
+    "text": "Entre ${player} et ${player}, celle qui regarde le plus de séries romantiques distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g219",
+    "text": "${player}, raconte ton expérience la plus embarrassante chez l'esthéticienne à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g220",
+    "text": "${player}, bois une gorgée si tu as déjà fait du shopping thérapie après une rupture.",
+    "pack": "girls"
+  },
+  {
+    "id": "g221",
+    "text": "${player} et ${player}, buvez si vous avez déjà partagé un sex-toy.",
+    "pack": "girls"
+  },
+  {
+    "id": "g222",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu des sensations en montant à cheval.",
+    "pack": "girls"
+  },
+  {
+    "id": "g223",
+    "text": "${player}, bois une gorgée si tu as plus de 10 applications de beauté sur ton téléphone.",
+    "pack": "girls"
+  },
+  {
+    "id": "g224",
+    "text": "Entre ${player} et ${player}, celle qui fait le plus de stories Instagram par jour distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g225",
+    "text": "${player}, raconte ton moment le plus gênant en salle de sport à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g226",
+    "text": "${player}, bois une gorgée si tu portes des bijoux qui ont une signification spirituelle.",
+    "pack": "girls"
+  },
+  {
+    "id": "g227",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un challenge TikTok ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g228",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé un jouet connecté à distance.",
+    "pack": "girls"
+  },
+  {
+    "id": "g229",
+    "text": "${player}, bois une gorgée si tu as déjà écrit de la fanfiction.",
+    "pack": "girls"
+  },
+  {
+    "id": "g230",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de playlists Spotify distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g231",
+    "text": "${player}, raconte ton pire moment de jalousie à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g232",
+    "text": "${player}, bois une gorgée si tu as déjà fait du feng shui dans ta chambre.",
+    "pack": "girls"
+  },
+  {
+    "id": "g233",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un pacte pour rester célibataires ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g234",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en regardant de l'art érotique.",
+    "pack": "girls"
+  },
+  {
+    "id": "g235",
+    "text": "${player}, bois une gorgée si tu gardes des sachets de sauce dans ton sac.",
+    "pack": "girls"
+  },
+  {
+    "id": "g236",
+    "text": "Entre ${player} et ${player}, celle qui utilise le plus d'émojis dans ses messages distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g237",
+    "text": "${player}, raconte ton expérience la plus bizarre avec tes règles à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g238",
+    "text": "${player}, bois une gorgée si tu as déjà acheté quelque chose juste pour l'emballage.",
+    "pack": "girls"
+  },
+  {
+    "id": "g239",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait une séance photo nu ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g240",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé des boules de geisha.",
+    "pack": "girls"
+  },
+  {
+    "id": "g241",
+    "text": "${player}, bois une gorgée si tu as déjà fait du bullet journal.",
+    "pack": "girls"
+  },
+  {
+    "id": "g242",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de followers sur Instagram distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g243",
+    "text": "${player}, raconte ton moment le plus cringe en soirée à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g244",
+    "text": "${player}, bois une gorgée si tu as déjà fait de la sophrologie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g245",
+    "text": "${player} et ${player}, buvez si vous avez déjà testé des positions du Kama Sutra ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g246",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en lisant des témoignages érotiques.",
+    "pack": "girls"
+  },
+  {
+    "id": "g247",
+    "text": "${player}, bois une gorgée si tu as plus de 5 brosses à cheveux différentes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g248",
+    "text": "Entre ${player} et ${player}, celle qui prend le plus de photos de son petit-déjeuner distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g249",
+    "text": "${player}, raconte ton plus gros complexe physique à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g250",
+    "text": "${player}, bois une gorgée si tu as déjà acheté des sous-vêtements juste pour toi.",
+    "pack": "girls"
+  },
+  {
+    "id": "g251",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un massage sensuel ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g252",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé un oreiller pour te masturber.",
+    "pack": "girls"
+  },
+  {
+    "id": "g253",
+    "text": "${player}, bois une gorgée si tu écris tes rêves dans un carnet.",
+    "pack": "girls"
+  },
+  {
+    "id": "g254",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de contacts dans son téléphone distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g255",
+    "text": "${player}, raconte ton expérience la plus embarrassante avec un tampon à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g256",
+    "text": "${player}, bois une gorgée si tu as déjà fait du yoga du rire.",
+    "pack": "girls"
+  },
+  {
+    "id": "g257",
+    "text": "${player} et ${player}, buvez si vous avez déjà comparé vos seins.",
+    "pack": "girls"
+  },
+  {
+    "id": "g258",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en écoutant de l'ASMR non-érotique.",
+    "pack": "girls"
+  },
+  {
+    "id": "g259",
+    "text": "${player}, bois une gorgée si tu collectionnes les stickers de réseaux sociaux.",
+    "pack": "girls"
+  },
+  {
+    "id": "g260",
+    "text": "Entre ${player} et ${player}, celle qui utilise le plus de produits différents pour ses cheveux distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g261",
+    "text": "${player}, raconte ton moment le plus gênant avec tes parents à propos de sexe à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g262",
+    "text": "${player}, bois une gorgée si tu as déjà fait du scrapbooking.",
+    "pack": "girls"
+  },
+  {
+    "id": "g263",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait des abdos en regardant un film romantique.",
+    "pack": "girls"
+  },
+  {
+    "id": "g264",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé la douchette comme stimulation.",
+    "pack": "girls"
+  },
+  {
+    "id": "g265",
+    "text": "${player}, bois une gorgée si tu as plus de 10 mugs différents.",
+    "pack": "girls"
+  },
+  {
+    "id": "g266",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de captures d'écran dans son téléphone distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g267",
+    "text": "${player}, raconte ton pire choix vestimentaire d'ado à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g268",
+    "text": "${player}, bois une gorgée si tu as déjà fait de l'art-thérapie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g269",
+    "text": "${player} et ${player}, buvez si vous avez déjà échangé vos techniques de séduction.",
+    "pack": "girls"
+  },
+  {
+    "id": "g270",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu des sensations en montant sur une moto.",
+    "pack": "girls"
+  },
+  {
+    "id": "g271",
+    "text": "${player}, bois une gorgée si tu gardes des tickets de concert comme souvenirs.",
+    "pack": "girls"
+  },
+  {
+    "id": "g272",
+    "text": "Entre ${player} et ${player}, celle qui regarde le plus de vlogs beauté distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g273",
+    "text": "${player}, raconte ton moment le plus embarrassant en maillot de bain à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g274",
+    "text": "${player}, bois une gorgée si tu as déjà fait de la danse-thérapie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g275",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un concours de qui tient le plus longtemps sans jouir.",
+    "pack": "girls"
+  },
+  {
+    "id": "g276",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé de la glace pendant la masturbation.",
+    "pack": "girls"
+  },
+  {
+    "id": "g277",
+    "text": "${player}, bois une gorgée si tu écris encore des lettres à la main.",
+    "pack": "girls"
+  },
+  {
+    "id": "g278",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de faux ongles dans sa vie distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g279",
+    "text": "${player}, raconte ton plus gros crush secret à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g280",
+    "text": "${player}, bois une gorgée si tu as déjà fait du journaling de gratitude.",
+    "pack": "girls"
+  },
+  {
+    "id": "g281",
+    "text": "${player} et ${player}, buvez si vous avez déjà organisé une soirée pyjama rien que pour vous deux.",
+    "pack": "girls"
+  },
+  {
+    "id": "g282",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en rêvant de quelqu'un de précis.",
+    "pack": "girls"
+  },
+  {
+    "id": "g283",
+    "text": "${player}, bois une gorgée si tu as plus de 5 coussins sur ton lit.",
+    "pack": "girls"
+  },
+  {
+    "id": "g284",
+    "text": "Entre ${player} et ${player}, celle qui prend le plus de selfies par jour distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g285",
+    "text": "${player}, raconte ton expérience la plus gênante chez le coiffeur à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g286",
+    "text": "${player}, bois une gorgée si tu as déjà fait de la chromothérapie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g287",
+    "text": "${player} et ${player}, buvez si vous avez déjà testé des aphrodisiaques ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g288",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé un jet d'eau comme stimulation.",
+    "pack": "girls"
+  },
+  {
+    "id": "g289",
+    "text": "${player}, bois une gorgée si tu collectionnes les carnets même si tu ne les utilises pas.",
+    "pack": "girls"
+  },
+  {
+    "id": "g290",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de produits de maquillage périmés distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g291",
+    "text": "${player}, raconte ton moment le plus bizarre pendant tes règles à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g292",
+    "text": "${player}, bois une gorgée si tu as déjà essayé l'aromathérapie pour dormir.",
+    "pack": "girls"
+  },
+  {
+    "id": "g293",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un défilé en sous-vêtements ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g294",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu des sensations en faisant du vélo.",
+    "pack": "girls"
+  },
+  {
+    "id": "g295",
+    "text": "${player}, bois une gorgée si tu gardes encore des peluches de ton enfance.",
+    "pack": "girls"
+  },
+  {
+    "id": "g296",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de comptes de réseaux sociaux distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g297",
+    "text": "${player}, raconte ton expérience la plus embarrassante avec un soutien-gorge à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g298",
+    "text": "${player}, bois une gorgée si tu as déjà fait du yoga prénatal (sans être enceinte).",
+    "pack": "girls"
+  },
+  {
+    "id": "g299",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un échange de lingerie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g300",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé un coussin chauffant pour autre chose que les douleurs.",
+    "pack": "girls"
+  },
+  {
+    "id": "g301",
+    "text": "${player}, bois une gorgée si tu écris tes objectifs sur des post-it colorés.",
+    "pack": "girls"
+  },
+  {
+    "id": "g302",
+    "text": "Entre ${player} et ${player}, celle qui change le plus souvent de couleur de cheveux distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g303",
+    "text": "${player}, raconte ton pire moment de syndrome prémenstruel à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g304",
+    "text": "${player}, bois une gorgée si tu as déjà essayé la lithothérapie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g305",
+    "text": "${player} et ${player}, buvez si vous avez déjà simulé un orgasme en même temps pour rire.",
+    "pack": "girls"
+  },
+  {
+    "id": "g306",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en faisant des abdos.",
+    "pack": "girls"
+  },
+  {
+    "id": "g307",
+    "text": "${player}, bois une gorgée si tu as plus de 3 agenda/calendriers différents.",
+    "pack": "girls"
+  },
+  {
+    "id": "g308",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de bijoux fantaisie distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g309",
+    "text": "${player}, raconte ton moment le plus gênant avec un string à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g310",
+    "text": "${player}, bois une gorgée si tu as déjà fait de la musicothérapie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g311",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait une bataille d'oreillers en sous-vêtements.",
+    "pack": "girls"
+  },
+  {
+    "id": "g312",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé des techniques de respiration pendant l'orgasme.",
+    "pack": "girls"
+  },
+  {
+    "id": "g313",
+    "text": "${player}, bois une gorgée si tu collectionnes les sachets de thé même sans les boire.",
+    "pack": "girls"
+  },
+  {
+    "id": "g314",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de produits de soin visage distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g315",
+    "text": "${player}, raconte ton expérience la plus bizarre avec une culotte menstruelle à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g316",
+    "text": "${player}, bois une gorgée si tu as déjà fait de l'équithérapie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g317",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait des exercices de Kegel ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g318",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu des sensations en grimpant à la corde.",
+    "pack": "girls"
+  },
+  {
+    "id": "g319",
+    "text": "${player}, bois une gorgée si tu gardes tous tes anciens journaux intimes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g320",
+    "text": "Entre ${player} et ${player}, celle qui utilise le plus de hashtags dans ses posts distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g321",
+    "text": "${player}, raconte ton moment le plus embarrassant avec une serviette hygiénique à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g322",
+    "text": "${player}, bois une gorgée si tu as déjà essayé l'hypnose pour maigrir.",
+    "pack": "girls"
+  },
+  {
+    "id": "g323",
+    "text": "${player} et ${player}, buvez si vous avez déjà organisé une soirée spa maison.",
+    "pack": "girls"
+  },
+  {
+    "id": "g324",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé la vibration de ton téléphone de façon créative.",
+    "pack": "girls"
+  },
+  {
+    "id": "g325",
+    "text": "${player}, bois une gorgée si tu as plus de 10 coussins décoratifs chez toi.",
+    "pack": "girls"
+  },
+  {
+    "id": "g326",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de photos de nourriture sur son téléphone distribue 1 gorgée.",
+    "pack": "girls"
+  },
+  {
+    "id": "g327",
+    "text": "${player}, raconte ton pire fail beauté à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g328",
+    "text": "${player}, bois une gorgée si tu as déjà essayé la naturopathie.",
+    "pack": "girls"
+  },
+  {
+    "id": "g329",
+    "text": "${player} et ${player}, buvez si vous avez déjà testé des positions de yoga érotique.",
+    "pack": "girls"
+  },
+  {
+    "id": "g330",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu un orgasme en faisant de l'équitation.",
+    "pack": "girls"
+  },
+  {
+    "id": "g331",
+    "text": "${player}, bois une gorgée si tu écris encore avec des stylos de couleur.",
+    "pack": "girls"
+  },
+  {
+    "id": "g332",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de bougies parfumées chez elle distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g333",
+    "text": "${player}, raconte ton expérience la plus gênante avec une cup menstruelle à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g334",
+    "text": "${player}, bois une gorgée si tu as déjà fait de la sylvothérapie (câlins aux arbres).",
+    "pack": "girls"
+  },
+  {
+    "id": "g335",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait une séance de méditation guidée ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g336",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé un sèche-cheveux de façon non-conventionnelle.",
+    "pack": "girls"
+  },
+  {
+    "id": "g337",
+    "text": "${player}, bois une gorgée si tu collectionnes les marque-pages même si tu lis sur écran.",
+    "pack": "girls"
+  },
+  {
+    "id": "g338",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de mascaras différents distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g339",
+    "text": "${player}, raconte ton moment le plus bizarre avec un protège-slip à ${player} ou bois 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g340",
+    "text": "${player}, bois une gorgée si tu as déjà essayé la réflexologie plantaire.",
+    "pack": "girls"
+  },
+  {
+    "id": "g341",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un challenge beauté ensemble.",
+    "pack": "girls"
+  },
+  {
+    "id": "g342",
+    "text": "${player}, bois 2 gorgées si tu as déjà eu des sensations en utilisant un jacuzzi.",
+    "pack": "girls"
+  },
+  {
+    "id": "g343",
+    "text": "${player}, bois une gorgée si tu as plus de 5 planners/agendas jamais terminés.",
+    "pack": "girls"
+  },
+  {
+    "id": "g344",
+    "text": "Entre ${player} et ${player}, celle qui a le plus de faux cils dans sa trousse distribue 2 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g345",
+    "text": "${player}, raconte ton expérience la plus embarrassante avec un déodorant à ${player} ou bois 3 gorgées.",
+    "pack": "girls"
+  },
+  {
+    "id": "g346",
+    "text": "${player}, bois une gorgée si tu as déjà fait de l'acupuncture esthétique.",
+    "pack": "girls"
+  },
+  {
+    "id": "g347",
+    "text": "${player} et ${player}, buvez si vous avez déjà fait un concours de flexibilité.",
+    "pack": "girls"
+  },
+  {
+    "id": "g348",
+    "text": "${player}, bois 2 gorgées si tu as déjà utilisé un aspirateur de points noirs de façon créative.",
+    "pack": "girls"
+  },
+  {
+    "id": "g349",
+    "text": "${player}, bois une gorgée si tu écris encore des listes de courses à la main.",
+    "pack": "girls"
+  },
+  {
+    "id": "g350",
+    "text": "${player} et ${player}, défi final ultime : racontez ensemble votre fantasme le plus secret ou buvez 10 gorgées chacune !",
+    "pack": "girls"
   }
 ] 
