@@ -1,152 +1,1052 @@
 [
   {
     "id": "gy1",
-    "text": "${player}, take 2 sips if you've ever been in a fight.",
+    "text": "${player}, take 2 sips if you've ever stolen a street sign while drunk.",
     "pack": "guys"
   },
   {
     "id": "gy2",
-    "text": "${player} and ${player}, race to finish your drinks. Loser takes 2 additional sips.",
+    "text": "${player}, take 3 sips if you've ever broken something while drunk.",
     "pack": "guys"
   },
   {
     "id": "gy3",
-    "text": "${player}, what's your greatest sports achievement? If ${player} isn't impressed, take 2 sips.",
+    "text": "${player}, take 2 sips if you've ever vomited while drinking.",
     "pack": "guys"
   },
   {
     "id": "gy4",
-    "text": "Between ${player} and ${player}, whoever bench presses more distributes 3 sips.",
+    "text": "${player}, take 4 sips if you've ever had problems with the police while drunk.",
     "pack": "guys"
   },
   {
     "id": "gy5",
-    "text": "${player}, take one sip for each gaming console you currently own.",
+    "text": "${player}, take 2 sips if you've ever been refused by a taxi because you were too drunk.",
     "pack": "guys"
   },
   {
     "id": "gy6",
-    "text": "${player} and ${player}, arm wrestle! Loser takes 3 sips.",
+    "text": "${player}, take 3 sips if you've ever smoked more than a pack of cigarettes in one drinking night.",
     "pack": "guys"
   },
   {
     "id": "gy7",
-    "text": "${player}, tell us about your most embarrassing rejection or take 4 sips.",
+    "text": "${player}, take 4 sips if you've ever woken up far from home after a night out.",
     "pack": "guys"
   },
   {
     "id": "gy8",
-    "text": "${player} chooses which player would survive longest in a zombie apocalypse. ${player} distributes 3 sips.",
+    "text": "${player}, take 3 sips if you've ever been banned from entering a bar.",
     "pack": "guys"
   },
   {
     "id": "gy9",
-    "text": "If ${player} or ${player} has ever sent a drunk text to an ex, take 2 sips.",
+    "text": "${player}, take 2 sips if you've ever called in sick because you were hungover.",
     "pack": "guys"
   },
   {
     "id": "gy10",
-    "text": "${player} and ${player} have a staring contest. Loser takes 2 sips.",
+    "text": "${player}, take 2 sips if you've ever done a beer funnel.",
     "pack": "guys"
   },
   {
     "id": "gy11",
-    "text": "${player}, truth: what's your technique to impress someone you like? If ${player} thinks it wouldn't work, drink.",
+    "text": "${player}, take 5 sips if you've ever lost your driver's license because of drunk driving.",
     "pack": "guys"
   },
   {
     "id": "gy12",
-    "text": "Between ${player} and ${player}, whoever has the most matches on dating apps takes 2 sips.",
+    "text": "${player}, take 3 sips if you've ever been kicked out of a club for inappropriate behavior while drunk.",
     "pack": "guys"
   },
   {
     "id": "gy13",
-    "text": "${player}, show the last inappropriate meme you saved or take 3 sips.",
+    "text": "${player}, take 2 sips if you've ever drunk and took a ride on an e-scooter.",
     "pack": "guys"
   },
   {
     "id": "gy14",
-    "text": "${player} and ${player} compare your favorite sports teams. Everyone votes for the best one; loser drinks.",
+    "text": "${player}, take 2 sips if you've ever been the target of a beer shower.",
     "pack": "guys"
   },
   {
     "id": "gy15",
-    "text": "${player}, what car would you buy if money wasn't an issue? If ${player} thinks it's a bad choice, you both drink.",
+    "text": "${player}, take 1 sip if you've ever drunk on a Sunday.",
     "pack": "guys"
   },
   {
     "id": "gy16",
-    "text": "If ${player} or ${player} has ever used a cheesy pickup line, take 2 sips.",
+    "text": "${player}, take 2 sips if you've ever insulted someone while drunk.",
     "pack": "guys"
   },
   {
     "id": "gy17",
-    "text": "${player} and ${player}, thumb wrestle. Loser takes 2 sips.",
+    "text": "${player}, take 1 sip if you've ever taken hangover medication.",
     "pack": "guys"
   },
   {
     "id": "gy18",
-    "text": "${player}, rate everyone's fashion sense. Lowest score takes 2 sips.",
+    "text": "${player}, take 4 sips if you've ever hit someone while drunk.",
     "pack": "guys"
   },
   {
     "id": "gy19",
-    "text": "Between ${player} and ${player}, whoever has gone longer without washing their sheets takes 2 sips.",
+    "text": "${player}, take 2 sips if you've ever drunk too much at a company event.",
     "pack": "guys"
   },
   {
     "id": "gy20",
-    "text": "${player} shows ${player} the most embarrassing photo on their phone or takes 3 sips.",
+    "text": "${player}, take 3 sips if you've ever woken up somewhere outside after a wild night.",
     "pack": "guys"
   },
   {
     "id": "gy21",
-    "text": "If ${player} or ${player} has ever been kicked out of a bar, take 3 sips.",
+    "text": "${player}, take 2 sips if you've ever drunk at an all-inclusive hotel on principle.",
     "pack": "guys"
   },
   {
     "id": "gy22",
-    "text": "${player} and ${player}, who can do more push-ups? Loser takes that many sips.",
+    "text": "${player}, take 3 sips if you've ever had to use the emergency bucket.",
     "pack": "guys"
   },
   {
     "id": "gy23",
-    "text": "${player}, tell us your best dad joke. If ${player} doesn't laugh, you take 2 sips.",
+    "text": "${player}, take 2 sips if you've vomited so hard on alcohol that you still can't drink that type.",
     "pack": "guys"
   },
   {
     "id": "gy24",
-    "text": "Between ${player} and ${player}, whoever spent more on their last haircut takes 2 sips.",
+    "text": "${player}, take 5 sips if you've ever driven a car drunk.",
     "pack": "guys"
   },
   {
     "id": "gy25",
-    "text": "${player}, who in this group would be the worst roommate? That person distributes 2 sips.",
+    "text": "${player}, take 2 sips if you've ever been refused entry to a club because you were too drunk.",
     "pack": "guys"
   },
   {
     "id": "gy26",
-    "text": "If ${player} or ${player} has ever pretended to know about sports to impress someone, take 2 sips.",
+    "text": "${player}, take 3 sips if you've ever dropped someone while carrying them drunk.",
     "pack": "guys"
   },
   {
     "id": "gy27",
-    "text": "${player} and ${player}, compare your weekend plans. Group votes for whose sounds better; loser drinks.",
+    "text": "${player}, take 4 sips if you've ever vomited all over someone's apartment.",
     "pack": "guys"
   },
   {
     "id": "gy28",
-    "text": "${player}, if you had to fight someone here, who would it be? ${player} distributes 3 sips.",
+    "text": "${player}, take 3 sips if you've ever drunk alcohol over 70%.",
     "pack": "guys"
   },
   {
     "id": "gy29",
-    "text": "Between ${player} and ${player}, whoever has more notifications on their phone right now takes 2 sips.",
+    "text": "${player}, take 2 sips if you've ever been accused of alcoholism.",
     "pack": "guys"
   },
   {
     "id": "gy30",
+    "text": "${player}, take 2 sips if you've ever gotten drunk alone.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy31",
+    "text": "${player}, take 3 sips if you've ever drunkenly spilled other people's secrets.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy32",
+    "text": "${player}, take 2 sips if you've ever played drinking games over a movie.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy33",
+    "text": "${player}, take 3 sips if you've ever been drunk before 12 o'clock in the morning.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy34",
+    "text": "${player}, take 2 sips if you've ever drunk burning shots.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy35",
+    "text": "${player}, take 3 sips if you've ever had to be taken away by someone because you were too drunk.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy36",
+    "text": "${player}, take 4 sips if you've ever showed up for work drunk.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy37",
+    "text": "${player}, take 2 sips if you've ever written an exam while hungover.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy38",
+    "text": "${player}, take 2 sips if you've ever peer-pressured someone to drink.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy39",
+    "text": "${player}, take 2 sips if you've ever played Mario Kart don't drink and drive.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy40",
+    "text": "${player}, take 3 sips if you've ever drunk in a handstand.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy41",
+    "text": "${player}, take 2 sips if you've ever played beer pong.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy42",
+    "text": "${player}, take 2 sips if you've ever been to Oktoberfest.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy43",
+    "text": "${player}, take 3 sips if you've ever gotten drunk abroad.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy44",
+    "text": "${player}, take 3 sips if you've ever smoked weed and drank at the same time.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy45",
+    "text": "${player}, take 2 sips if you've ever organized a beer tasting.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy46",
+    "text": "${player}, take 2 sips if you've ever completed a pub crawl.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy47",
+    "text": "${player}, take 2 sips if you've ever made an embarrassing drunk phone call.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy48",
+    "text": "${player}, take 3 sips if you've ever drunk and fell asleep on the toilet.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy49",
+    "text": "${player}, take 2 sips if you've ever pretended you were more drunk than you actually were.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy50",
+    "text": "${player}, take 2 sips if you've ever drunk messaged an ex-partner.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy51",
+    "text": "${player}, take 2 sips if you've ever lost to zero in beer pong.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy52",
+    "text": "${player}, take 3 sips if you've ever lost valuables while drunk.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy53",
+    "text": "${player}, take 2 sips if you've ever had a hangover lasting more than a day.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy54",
+    "text": "${player}, take 2 sips if you've ever laughed at something inappropriate while drunk.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy55",
+    "text": "${player}, take 2 sips if you've ever done a tactical vomit to keep drinking.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy56",
+    "text": "${player}, take 2 sips if you've ever played Flunkyball.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy57",
+    "text": "${player}, take 2 sips if you've ever been at an escalating village festival.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy58",
+    "text": "${player}, take 3 sips if you've ever played Edward Fortyhands.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy59",
+    "text": "${player}, take 2 sips if you've ever drunk even though you were sick.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy60",
+    "text": "${player}, take 2 sips if you've ever been drunk on a plane.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy61",
+    "text": "${player}, take 2 sips if you've ever participated in a bachelor party bar crawl.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy62",
+    "text": "${player}, take 2 sips if you've ever made someone drunk with soft drinks (by lying about alcohol content).",
+    "pack": "guys"
+  },
+  {
+    "id": "gy63",
+    "text": "${player}, take 3 sips if you've ever done more than 5 shots in a row.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy64",
+    "text": "${player}, take 2 sips if you've ever stuck someone with your drink bill.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy65",
+    "text": "${player}, take 2 sips if you've ever puked during a drinking game.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy66",
+    "text": "${player}, take 2 sips if you've ever gotten drunk while watching football.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy67",
+    "text": "${player}, take 2 sips if you've ever made your own alcoholic drinks.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy68",
+    "text": "${player}, take 3 sips if you've ever had someone of legal age buy hard alcohol for you when you were underage.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy69",
+    "text": "${player}, take 2 sips if you've ever let someone stay at your place because of their drunkenness.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy70",
+    "text": "${player}, take 2 sips if you've ever drunk with others via Zoom or Skype.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy71",
+    "text": "${player}, take 3 sips if you've ever mixed hard alcohol into someone's beer without them knowing.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy72",
+    "text": "${player}, take 2 sips if you've ever been in a drinking competition.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy73",
+    "text": "${player}, take 2 sips if you've ever drunk straight from the bottle.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy74",
+    "text": "${player}, take 2 sips if you've ever been drunk at a wedding.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy75",
+    "text": "${player}, take 2 sips if you've ever started a drinking game.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy76",
+    "text": "${player}, take 3 sips if you've ever been drunk and used public transport.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy77",
+    "text": "${player}, take 2 sips if you've ever drunk and taken selfies you regretted.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy78",
+    "text": "${player}, take 2 sips if you've ever been drunk and ordered too much food.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy79",
+    "text": "${player}, take 2 sips if you've ever drunk and lost your keys.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy80",
+    "text": "${player}, take 3 sips if you've ever drunk and gotten into a fight.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy81",
+    "text": "${player}, take 2 sips if you've ever drunk and made a fool of yourself dancing.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy82",
+    "text": "${player}, take 2 sips if you've ever drunk and confessed your feelings to someone.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy83",
+    "text": "${player}, take 2 sips if you've ever drunk and sung karaoke badly.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy84",
+    "text": "${player}, take 2 sips if you've ever drunk and played truth or dare.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy85",
+    "text": "${player}, take 2 sips if you've ever drunk and made a stupid bet.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy86",
+    "text": "${player}, take 2 sips if you've ever drunk and streaked.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy87",
+    "text": "${player}, take 2 sips if you've ever drunk and climbed something you shouldn't have.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy88",
+    "text": "${player}, take 2 sips if you've ever drunk and played strip poker.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy89",
+    "text": "${player}, take 2 sips if you've ever drunk and done body shots.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy90",
+    "text": "${player}, take 2 sips if you've ever drunk and arm wrestled someone.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy91",
+    "text": "${player}, take 2 sips if you've ever drunk and challenged someone to a duel.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy92",
+    "text": "${player}, take 2 sips if you've ever drunk and played video games until dawn.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy93",
+    "text": "${player}, take 2 sips if you've ever drunk and told someone you loved them.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy94",
+    "text": "${player}, take 2 sips if you've ever drunk and made a prank call.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy95",
+    "text": "${player}, take 2 sips if you've ever drunk and tried to cook something.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy96",
+    "text": "${player}, take 2 sips if you've ever drunk and fallen asleep in a weird place.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy97",
+    "text": "${player}, take 2 sips if you've ever drunk and lost a shoe.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy98",
+    "text": "${player}, take 2 sips if you've ever drunk and written something stupid on social media.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy99",
+    "text": "${player}, take 2 sips if you've ever drunk and bought something stupid online.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy100",
+    "text": "${player}, take 2 sips if you've ever drunk and made a midnight food run.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy101",
+    "text": "${player} and ${player}, race to finish your drinks. Loser takes 2 additional sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy102",
+    "text": "${player}, what's your greatest sports achievement? If ${player} isn't impressed, take 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy103",
+    "text": "Between ${player} and ${player}, whoever bench presses more distributes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy104",
+    "text": "${player}, take one sip for each gaming console you currently own.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy105",
+    "text": "${player} and ${player}, arm wrestle! Loser takes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy106",
+    "text": "${player}, tell us about your most embarrassing rejection or take 4 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy107",
+    "text": "${player} chooses which player would survive longest in a zombie apocalypse. ${player} distributes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy108",
+    "text": "${player} and ${player}, have a staring contest. Loser takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy109",
+    "text": "${player}, truth: what's your technique to impress someone you like? If ${player} thinks it wouldn't work, drink.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy110",
+    "text": "Between ${player} and ${player}, whoever has the most matches on dating apps takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy111",
+    "text": "${player}, show the last inappropriate meme you saved or take 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy112",
+    "text": "${player} and ${player}, compare your favorite sports teams. Everyone votes for the best one; loser drinks.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy113",
+    "text": "${player}, what car would you buy if money wasn't an issue? If ${player} thinks it's a bad choice, you both drink.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy114",
+    "text": "${player} and ${player}, thumb wrestle. Loser takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy115",
+    "text": "${player}, rate everyone's fashion sense. Lowest score takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy116",
+    "text": "Between ${player} and ${player}, whoever has gone longer without washing their sheets takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy117",
+    "text": "${player} shows ${player} the most embarrassing photo on their phone or takes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy118",
+    "text": "${player} and ${player}, who can do more push-ups? Loser takes that many sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy119",
+    "text": "${player}, tell us your best dad joke. If ${player} doesn't laugh, you take 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy120",
+    "text": "Between ${player} and ${player}, whoever spent more on their last haircut takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy121",
+    "text": "${player}, who in this group would be the worst roommate? That person distributes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy122",
+    "text": "${player} and ${player}, compare your weekend plans. Group votes for whose sounds better; loser drinks.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy123",
+    "text": "${player}, if you had to fight someone here, who would it be? ${player} distributes 3 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy124",
+    "text": "Between ${player} and ${player}, whoever has more notifications on their phone right now takes 2 sips.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy125",
     "text": "${player} mentally chooses rock, paper, or scissors. ${player} guesses what it is. If wrong, both drink.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy126",
+    "text": "${player}, take 2 sips if you've ever drunk and tried to impress someone by showing off.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy127",
+    "text": "${player}, take 2 sips if you've ever drunk and played a sport.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy128",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a strip club.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy129",
+    "text": "${player}, take 2 sips if you've ever drunk and been kicked out of a restaurant.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy130",
+    "text": "${player}, take 2 sips if you've ever drunk and started a food fight.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy131",
+    "text": "${player}, take 2 sips if you've ever drunk and been in a drinking contest.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy132",
+    "text": "${player}, take 2 sips if you've ever drunk and played beer pong naked.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy133",
+    "text": "${player}, take 2 sips if you've ever drunk and done a keg stand.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy134",
+    "text": "${player}, take 2 sips if you've ever drunk and played drinking games with strangers.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy135",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a foam party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy136",
+    "text": "${player}, take 2 sips if you've ever drunk and been arrested.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy137",
+    "text": "${player}, take 2 sips if you've ever drunk and been in a bar fight.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy138",
+    "text": "${player}, take 2 sips if you've ever drunk and skinny dipped.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy139",
+    "text": "${player}, take 2 sips if you've ever drunk and jumped from a high place.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy140",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a rave.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy141",
+    "text": "${player}, take 2 sips if you've ever drunk and been on a boat.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy142",
+    "text": "${player}, take 2 sips if you've ever drunk and been camping.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy143",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a music festival.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy144",
+    "text": "${player}, take 2 sips if you've ever drunk and been on a motorcycle.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy145",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a casino.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy146",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a brothel.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy147",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a gay bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy148",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a nightclub alone.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy149",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a rooftop party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy150",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a beach party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy151",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a house party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy152",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a college party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy153",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a pool party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy154",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a birthday party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy155",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a graduation party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy156",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a New Year's party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy157",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a Halloween party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy158",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a Christmas party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy159",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a work party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy160",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a family gathering.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy161",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a barbecue.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy162",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a tailgate party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy163",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a block party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy164",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a dinner party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy165",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a cocktail party.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy166",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a wine tasting.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy167",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a beer festival.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy168",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a brewery.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy169",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a distillery.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy170",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a winery.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy171",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a pub quiz.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy172",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a sports bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy173",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a dive bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy174",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a fancy cocktail bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy175",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a hotel bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy176",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a rooftop bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy177",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a beach bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy178",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a karaoke bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy179",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a piano bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy180",
+    "text": "${player}, take 2 sips if you've ever drunk and been to a tiki bar.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy181",
+    "text": "${player}, take 2 sips if you've ever drunk and played flip cup.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy182",
+    "text": "${player}, take 2 sips if you've ever drunk and played quarters.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy183",
+    "text": "${player}, take 2 sips if you've ever drunk and played kings cup.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy184",
+    "text": "${player}, take 2 sips if you've ever drunk and played never have I ever.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy185",
+    "text": "${player}, take 2 sips if you've ever drunk and played ride the bus.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy186",
+    "text": "${player}, take 2 sips if you've ever drunk and played power hour.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy187",
+    "text": "${player}, take 2 sips if you've ever drunk and played century club.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy188",
+    "text": "${player}, take 2 sips if you've ever drunk and played civil war.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy189",
+    "text": "${player}, take 2 sips if you've ever drunk and played boat race.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy190",
+    "text": "${player}, take 2 sips if you've ever drunk and played slap the bag.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy191",
+    "text": "${player}, take 2 sips if you've ever drunk and played dizzy bat.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy192",
+    "text": "${player}, take 2 sips if you've ever drunk and played baseball (drinking game).",
+    "pack": "guys"
+  },
+  {
+    "id": "gy193",
+    "text": "${player}, take 2 sips if you've ever drunk and played chandelier.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy194",
+    "text": "${player}, take 2 sips if you've ever drunk and played thumper.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy195",
+    "text": "${player}, take 2 sips if you've ever drunk and played buffalo.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy196",
+    "text": "${player}, take 2 sips if you've ever drunk and played roxanne.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy197",
+    "text": "${player}, take 2 sips if you've ever drunk and played thunderstruck.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy198",
+    "text": "${player}, take 2 sips if you've ever drunk and played up and down the river.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy199",
+    "text": "${player}, take 2 sips if you've ever drunk and played asshole.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy200",
+    "text": "${player}, take 2 sips if you've ever drunk and played fuck the dealer.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy201",
+    "text": "${player}, take 2 sips if you've ever drunk and played pyramid.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy202",
+    "text": "${player}, take 2 sips if you've ever drunk and played sociables.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy203",
+    "text": "${player}, take 2 sips if you've ever drunk and played circle of death.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy204",
+    "text": "${player}, take 2 sips if you've ever drunk and played ring of fire.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy205",
+    "text": "${player}, take 2 sips if you've ever drunk and played waterfall.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy206",
+    "text": "${player}, take 2 sips if you've ever drunk and played red or black.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy207",
+    "text": "${player}, take 2 sips if you've ever drunk and played higher or lower.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy208",
+    "text": "${player}, take 2 sips if you've ever drunk and played suits.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy209",
+    "text": "${player}, take 2 sips if you've ever drunk and played give or take.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy210",
+    "text": "${player}, take 2 sips if you've ever drunk and played bus driver.",
     "pack": "guys"
   }
 ] 
