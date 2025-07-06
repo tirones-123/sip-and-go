@@ -1,152 +1,752 @@
 [
   {
     "id": "g1",
-    "text": "${player}, take a sip if you've ever pretended to be sick to avoid a date.",
+    "text": "${player}, take a sip if you've ever stalked an ex on social media until 3am.",
     "pack": "girls"
   },
   {
     "id": "g2",
-    "text": "${player} and ${player}, drink if you've ever shared makeup with a friend.",
+    "text": "${player}, tell us about your worst date or drink 2 sips. Spoiler: we want the juicy details!",
     "pack": "girls"
   },
   {
     "id": "g3",
-    "text": "${player}, take 2 sips if you've ever been on a girls' trip.",
+    "text": "${player}, drink 2 sips if you've ever sent a hot photo to the wrong person.",
     "pack": "girls"
   },
   {
     "id": "g4",
-    "text": "If ${player} has ever bought clothes online while drunk, take 2 sips.",
+    "text": "${player}, truth: have you ever had a crush on someone of the same sex? Drink if yes, give out 2 sips if you own it.",
     "pack": "girls"
   },
   {
     "id": "g5",
-    "text": "${player}, tell us about your most embarrassing date or take 3 sips.",
+    "text": "Between ${player} and ${player}, whoever has the most sex toys drinks 1 sip... and gives out 3 to the others!",
     "pack": "girls"
   },
   {
     "id": "g6",
-    "text": "${player} and ${player}, drink if you've ever cried watching a romantic movie.",
+    "text": "${player}, mime your orgasm or drink 3 sips. No half-measures!",
     "pack": "girls"
   },
   {
     "id": "g7",
-    "text": "${player}, truth: have you ever stalked an ex on social media? Drink if yes.",
+    "text": "${player}, tell ${player} your weirdest fantasy or drink 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g8",
-    "text": "${player} votes for the player with the best style tonight. That person distributes 2 sips.",
+    "text": "${player}, drink a sip if you've ever ghosted someone after sleeping with them.",
     "pack": "girls"
   },
   {
     "id": "g9",
-    "text": "${player} and ${player}, drink if you've ever texted the wrong person about your crush.",
+    "text": "${player}, tell ${player} the hottest thing anyone has ever said to you in bed or drink 3 sips.",
     "pack": "girls"
   },
   {
     "id": "g10",
-    "text": "${player} must show ${player} the last photo they took. If they refuse, 3 sips.",
+    "text": "Between ${player} and ${player}, whoever has the most nudes on their phone gives out 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g11",
-    "text": "Between ${player} and ${player}, whoever spent more on their last hairstyle takes 2 sips.",
+    "text": "${player}, drink 2 sips if you've ever faked an orgasm... And no, we're not judging!",
     "pack": "girls"
   },
   {
     "id": "g12",
-    "text": "${player}, rate everyone's outfit out of 10. The lowest score drinks.",
+    "text": "${player}, tell ${player} about your most memorable one-night-stand or drink 3 sips.",
     "pack": "girls"
   },
   {
     "id": "g13",
-    "text": "${player} and ${player}, drink if you've ever sent screenshots of a conversation to another friend.",
+    "text": "${player}, drink a sip if you've ever sent dirty messages during work.",
     "pack": "girls"
   },
   {
     "id": "g14",
-    "text": "${player}, take 2 sips if you've ghosted someone in the last year.",
+    "text": "Between ${player} and ${player}, whoever has slept with someone on the first night gives out 2 sips to the prudes!",
     "pack": "girls"
   },
   {
     "id": "g15",
-    "text": "${player} shares a beauty tip with ${player}. If it's useful, the giver distributes 2 sips.",
+    "text": "${player}, truth: have you ever had an affair with your boss? Drink 2 sips if yes.",
     "pack": "girls"
   },
   {
     "id": "g16",
-    "text": "If ${player} or ${player} has ever posted then deleted a selfie, take 1 sip.",
+    "text": "${player} and ${player}, kiss each other on the cheek... or on the lips if you dare! Otherwise, 2 sips each.",
     "pack": "girls"
   },
   {
     "id": "g17",
-    "text": "${player}, what's your skincare routine? If ${player} thinks it's too short, you both drink.",
+    "text": "${player}, tell us the biggest lie you've told to avoid sleeping with someone or drink 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g18",
-    "text": "${player} and ${player} compare their latest online purchase. The more expensive one takes 2 sips.",
+    "text": "${player}, drink 2 sips if you've ever sexted with multiple people at the same time.",
     "pack": "girls"
   },
   {
     "id": "g19",
-    "text": "${player} shares a fashion opinion. If ${player} disagrees, they both drink.",
+    "text": "${player}, reveal your favorite red flag in a crush to ${player} or drink 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g20",
-    "text": "Between ${player} and ${player}, whoever took longer to get ready today distributes 2 sips.",
+    "text": "${player}, drink a sip if you've ever lied about your age on a dating app.",
     "pack": "girls"
   },
   {
     "id": "g21",
-    "text": "${player}, who's most likely to marry rich? That person takes 2 sips.",
+    "text": "${player}, tell ${player} your weirdest kink or drink 3 sips. We're here to learn!",
     "pack": "girls"
   },
   {
     "id": "g22",
-    "text": "${player} and ${player} compare their celebrity crushes. Everyone votes for the best one; loser drinks.",
+    "text": "${player}, drink a sip if you've ever done dirty talk in a foreign language.",
     "pack": "girls"
   },
   {
     "id": "g23",
-    "text": "${player}, share a dating red flag with ${player}. If they've experienced it, both take 2 sips.",
+    "text": "${player}, tell ${player} your favorite position or drink 2 sips. Details appreciated!",
     "pack": "girls"
   },
   {
     "id": "g24",
-    "text": "Between ${player} and ${player}, whoever has the most dating apps on their phone takes 3 sips.",
+    "text": "${player}, drink 2 sips if you've ever slept with someone more than 10 years older than you.",
     "pack": "girls"
   },
   {
     "id": "g25",
-    "text": "${player}, let ${player} check your social media. If they find an embarrassing post, take 2 sips.",
+    "text": "${player}, truth: have you ever had multiple orgasms? Drink if yes, give out 2 sips if you tell us the number!",
     "pack": "girls"
   },
   {
     "id": "g26",
-    "text": "${player} and ${player}, drink if you've ever pretended to be on the phone to avoid talking to someone.",
+    "text": "${player}, tell ${player} about your hottest vacation experience or drink 2 sips.",
     "pack": "girls"
   },
   {
     "id": "g27",
-    "text": "${player}, choose someone who would make the best shopping partner. They distribute 2 sips.",
+    "text": "${player}, drink 2 sips if you've ever used food in bed... and we're not talking about breakfast!",
     "pack": "girls"
   },
   {
     "id": "g28",
-    "text": "${player} tells ${player} about a hair disaster or takes 3 sips.",
+    "text": "${player}, drink a sip if you've ever had a crush on a same-sex celebrity.",
     "pack": "girls"
   },
   {
     "id": "g29",
-    "text": "If ${player} or ${player} has ever sent a risky text after midnight, take 2 sips.",
+    "text": "${player}, tell ${player} about your most embarrassing bedroom fail or drink 3 sips.",
     "pack": "girls"
   },
   {
     "id": "g30",
-    "text": "${player} guesses ${player}'s favorite fashion brand. If wrong, both take 1 sip.",
+    "text": "${player}, truth: have you ever had a recurring hookup? Drink if yes, give out 2 sips if it lasted more than 6 months.",
+    "pack": "girls"
+  },
+  {
+    "id": "g31",
+    "text": "${player}, drink a sip if you've ever lied about your number of partners.",
+    "pack": "girls"
+  },
+  {
+    "id": "g32",
+    "text": "${player}, tell ${player} about your weirdest erotic dream or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g33",
+    "text": "${player}, drink 2 sips if you've ever had phone sex with a stranger.",
+    "pack": "girls"
+  },
+  {
+    "id": "g34",
+    "text": "${player}, truth: have you ever caught feelings for your hookup? Drink if yes, give out 3 sips if it ended badly.",
+    "pack": "girls"
+  },
+  {
+    "id": "g35",
+    "text": "${player}, drink a sip if you've ever used a dating app while in a relationship.",
+    "pack": "girls"
+  },
+  {
+    "id": "g36",
+    "text": "${player}, tell ${player} about your hottest party experience or drink 3 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g37",
+    "text": "${player}, final truth: tell ${player} your biggest sexual secret or drink 5 sips and embrace the mystery!",
+    "pack": "girls"
+  },
+  {
+    "id": "g38",
+    "text": "${player}, drink a sip if you've ever had an orgasm thinking about someone forbidden.",
+    "pack": "girls"
+  },
+  {
+    "id": "g39",
+    "text": "${player}, tell ${player} about your hottest festival/concert experience or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g40",
+    "text": "${player}, drink 2 sips if you've ever sexted during an important class/meeting.",
+    "pack": "girls"
+  },
+  {
+    "id": "g41",
+    "text": "${player}, truth: have you ever been with someone just for their money? Drink 2 sips if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g42",
+    "text": "${player}, tell ${player} about your riskiest experience (getting caught level) or drink 3 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g43",
+    "text": "${player}, drink 2 sips if you've ever cheated on someone... even just a kiss counts!",
+    "pack": "girls"
+  },
+  {
+    "id": "g44",
+    "text": "${player}, truth: have you ever faked an orgasm for more than 5 minutes? Drink if yes, performance award!",
+    "pack": "girls"
+  },
+  {
+    "id": "g45",
+    "text": "${player}, drink a sip if you've ever used a vibrator in public (discreetly of course).",
+    "pack": "girls"
+  },
+  {
+    "id": "g46",
+    "text": "${player}, tell ${player} about your biggest sexual regret or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g47",
+    "text": "${player}, drink 2 sips if you've ever had feelings for someone who was taken.",
+    "pack": "girls"
+  },
+  {
+    "id": "g48",
+    "text": "${player}, truth: how many different people this year? Drink that many sips or refuse and drink 5.",
+    "pack": "girls"
+  },
+  {
+    "id": "g49",
+    "text": "${player}, drink a sip if you've ever slept with someone just for the Instagram story the next day.",
+    "pack": "girls"
+  },
+  {
+    "id": "g50",
+    "text": "${player}, tell ${player} your most creative excuse to avoid sex or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g51",
+    "text": "${player}, drink 2 sips if you've ever sent photos of your underwear to someone.",
+    "pack": "girls"
+  },
+  {
+    "id": "g52",
+    "text": "${player}, truth: have you ever had a crush on an influencer/porn actress? Drink if yes!",
+    "pack": "girls"
+  },
+  {
+    "id": "g53",
+    "text": "${player}, drink 2 sips if you've ever had a phase where you slept with multiple people per week.",
+    "pack": "girls"
+  },
+  {
+    "id": "g54",
+    "text": "${player}, tell ${player} your most effective seduction move or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g55",
+    "text": "${player} and ${player}, ultimate challenge: share your biggest turn-on or drink 4 sips each!",
+    "pack": "girls"
+  },
+  {
+    "id": "g56",
+    "text": "${player}, drink a sip if you've ever had a long-distance relationship with webcam sex.",
+    "pack": "girls"
+  },
+  {
+    "id": "g57",
+    "text": "${player}, tell ${player} about your hottest school/work trip experience or drink 3 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g58",
+    "text": "${player}, drink 2 sips if you've ever sent nudes to someone you'd never met IRL.",
+    "pack": "girls"
+  },
+  {
+    "id": "g59",
+    "text": "${player}, truth: have you ever used sex toys in front of someone else? Drink 2 sips if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g60",
+    "text": "${player}, drink a sip if you've ever had an orgasm thanks to a hot voice message.",
+    "pack": "girls"
+  },
+  {
+    "id": "g61",
+    "text": "${player}, tell ${player} about your worst sexting fail or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g62",
+    "text": "${player}, drink 2 sips if you've ever slept with someone just to prove you could.",
+    "pack": "girls"
+  },
+  {
+    "id": "g63",
+    "text": "${player}, truth: have you ever fantasized about someone while you were with someone else? Drink if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g64",
+    "text": "${player}, drink a sip if you've ever sent photos of your feet to someone.",
+    "pack": "girls"
+  },
+  {
+    "id": "g65",
+    "text": "${player}, tell ${player} about your hottest festival experience or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g66",
+    "text": "${player}, drink 2 sips if you've ever had an orgasm watching gay male porn.",
+    "pack": "girls"
+  },
+  {
+    "id": "g67",
+    "text": "${player}, truth: have you ever slept with someone just to have a place to sleep? Drink if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g68",
+    "text": "${player}, drink a sip if you've ever lied about your sexual experience to impress someone.",
+    "pack": "girls"
+  },
+  {
+    "id": "g69",
+    "text": "${player}, tell ${player} about your weirdest experience with an object not meant for that or drink 3 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g70",
+    "text": "${player}, drink 2 sips if you've ever had a crush on a TV show/anime character.",
+    "pack": "girls"
+  },
+  {
+    "id": "g71",
+    "text": "${player}, truth: have you ever had an orgasm reading erotic literature? Drink if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g72",
+    "text": "${player}, drink a sip if you've ever sexted during a family meal.",
+    "pack": "girls"
+  },
+  {
+    "id": "g73",
+    "text": "${player}, tell ${player} about your hottest roommate experience or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g74",
+    "text": "${player}, drink 2 sips if you've ever used food as lubricant.",
+    "pack": "girls"
+  },
+  {
+    "id": "g75",
+    "text": "${player}, truth: have you ever had an orgasm thanks to public transport vibrations? Drink if yes!",
+    "pack": "girls"
+  },
+  {
+    "id": "g76",
+    "text": "${player}, drink a sip if you've ever sent nudes from your workplace.",
+    "pack": "girls"
+  },
+  {
+    "id": "g77",
+    "text": "${player}, tell ${player} about your hottest experience with a stranger on vacation or drink 3 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g78",
+    "text": "${player}, drink 2 sips if you've ever had an affair with one of your parents' boyfriend/girlfriend.",
+    "pack": "girls"
+  },
+  {
+    "id": "g79",
+    "text": "${player}, truth: have you ever slept with someone so they'd help you with homework/work? Drink if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g80",
+    "text": "${player}, drink a sip if you've ever lied about your age to sleep with someone.",
+    "pack": "girls"
+  },
+  {
+    "id": "g81",
+    "text": "${player}, tell ${player} about your boldest flirting move or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g82",
+    "text": "${player}, drink 2 sips if you've ever had an orgasm thinking about multiple people at once.",
+    "pack": "girls"
+  },
+  {
+    "id": "g83",
+    "text": "${player}, truth: have you ever used kitchen utensils in bed? Drink 2 sips if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g84",
+    "text": "${player}, drink a sip if you've ever had a crush on someone in your current friend group.",
+    "pack": "girls"
+  },
+  {
+    "id": "g85",
+    "text": "${player}, tell ${player} about your hottest costume party experience or drink 3 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g86",
+    "text": "${player} and ${player}, ultimate challenge: actually kiss each other or drink 5 sips each!",
+    "pack": "girls"
+  },
+  {
+    "id": "g87",
+    "text": "${player}, drink a sip if you've ever had an orgasm in class/at work (discreetly).",
+    "pack": "girls"
+  },
+  {
+    "id": "g88",
+    "text": "${player}, tell ${player} about your hottest camping/nature experience or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g89",
+    "text": "${player}, drink 2 sips if you've ever had a relationship with someone married.",
+    "pack": "girls"
+  },
+  {
+    "id": "g90",
+    "text": "${player}, truth: have you ever used ice cubes in bed? Drink 2 sips if yes.",
+    "pack": "girls"
+  },
+  {
+    "id": "g91",
+    "text": "${player}, drink a sip if you've ever sent nudes to someone famous (even without a response).",
+    "pack": "girls"
+  },
+  {
+    "id": "g92",
+    "text": "${player}, tell ${player} about your hottest shower experience or drink 3 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g93",
+    "text": "${player}, drink 2 sips if you've ever slept with someone to get drugs.",
+    "pack": "girls"
+  },
+  {
+    "id": "g94",
+    "text": "${player}, truth: have you ever used weird objects as sex toys? Tell us or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g95",
+    "text": "${player}, drink a sip if you've ever had an orgasm while being tied up.",
+    "pack": "girls"
+  },
+  {
+    "id": "g96",
+    "text": "${player}, tell ${player} about your hottest masquerade party experience or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g97",
+    "text": "${player}, drink 2 sips if you've ever sent videos of yourself masturbating.",
+    "pack": "girls"
+  },
+  {
+    "id": "g98",
+    "text": "${player}, truth: have you ever used handcuffs in bed? Drink 2 sips if you were the one tied up.",
+    "pack": "girls"
+  },
+  {
+    "id": "g99",
+    "text": "${player}, drink a sip if you've ever fantasized about multiple people from tonight's party.",
+    "pack": "girls"
+  },
+  {
+    "id": "g100",
+    "text": "${player} and ${player}, crazy challenge: fake an orgasm together or drink 7 sips each!",
+    "pack": "girls"
+  },
+  {
+    "id": "g101",
+    "text": "${player}, which of ${player}'s exes could you hook up with? Be honest or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g102",
+    "text": "${player}, give 2 creative ways to get revenge on your ex or drink 3 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g103",
+    "text": "${player}, name a red flag that makes you run away instantly or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g104",
+    "text": "${player}, reveal the green flag that makes you completely melt or drink 2 sips.",
+    "pack": "girls"
+  },
+  {
+    "id": "g105",
+    "text": "${player}, which uniform turns you on the most? Be specific or drink 3 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g106",
+    "text": "${player}, drink 2 sips if you've ever hooked up with someone JUST for their uniform.",
+    "pack": "girls"
+  },
+  {
+    "id": "g107",
+    "text": "${player}, have you ever had a lap dance? If not, choose ${player} to give you one or drink 3 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g108",
+    "text": "Those with an IUD drink a sip! Contraception represent!",
+    "pack": "girls"
+  },
+  {
+    "id": "g109",
+    "text": "Those who always have a condom in their bag drink! Prepared attitude!",
+    "pack": "girls"
+  },
+  {
+    "id": "g110",
+    "text": "Those who've taken the morning-after pill drink 2 sips! No shame!",
+    "pack": "girls"
+  },
+  {
+    "id": "g111",
+    "text": "Girls with curly hair drink! Curly hair, don't care!",
+    "pack": "girls"
+  },
+  {
+    "id": "g112",
+    "text": "${player}, do you prefer big boobs or small boobs? Justify or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g113",
+    "text": "Everyone vote: tall and slim or short and curvy? Minority drinks!",
+    "pack": "girls"
+  },
+  {
+    "id": "g114",
+    "text": "${player}, give 3 male names: 2 you love, 1 you hate. Or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g115",
+    "text": "Those who've had a bi experience drink! Pride vibes!",
+    "pack": "girls"
+  },
+  {
+    "id": "g116",
+    "text": "${player}, drink a sip if you've ever sent a nude. No judgment!",
+    "pack": "girls"
+  },
+  {
+    "id": "g117",
+    "text": "${player}, guess ${player}'s favorite position! If you're right she drinks, otherwise you do!",
+    "pack": "girls"
+  },
+  {
+    "id": "g118",
+    "text": "${player}, your favorite Disney character? If it's a villain, give out 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g119",
+    "text": "${player}, continue: 'Love is an open...' If you don't finish, drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g120",
+    "text": "${player}, Mulan or Pocahontas? Defend your choice or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g121",
+    "text": "${player}, Hailey Bieber or Selena Gomez? Choosing is already betraying! Drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g122",
+    "text": "${player}, name a woman who could make you switch sides or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g123",
+    "text": "${player}, which accent makes you completely melt? Imitate it or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g124",
+    "text": "${player}, for or against period sex? Justify or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g125",
+    "text": "Coffee addicts drink! But not coffee, alcohol!",
+    "pack": "girls"
+  },
+  {
+    "id": "g126",
+    "text": "${player}, matcha or coffee? Wrong answer = 2 sips! (Spoiler: there isn't one)",
+    "pack": "girls"
+  },
+  {
+    "id": "g127",
+    "text": "${player}, name a badly matched celebrity couple or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g128",
+    "text": "${player}, one-piece or two-piece swimsuit? Defend your choice or drink!",
+    "pack": "girls"
+  },
+  {
+    "id": "g129",
+    "text": "${player}, you're the Sam of the party! Choose who drinks 3 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g130",
+    "text": "${player}, who's the most uncontrollable when drunk? Point her out, she drinks 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g131",
+    "text": "${player}, drink 2 sips if you have a vibrator in your nightstand.",
+    "pack": "girls"
+  },
+  {
+    "id": "g132",
+    "text": "${player}, vibrator or fingers? Be specific about your preferences or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g133",
+    "text": "${player}, granny panties or period panties? Comfort before beauty!",
+    "pack": "girls"
+  },
+  {
+    "id": "g134",
+    "text": "${player}, would you rather be cheated on physically or emotionally? Tough choice... Drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g135",
+    "text": "${player}, drink 2 sips if you've ever gone skinny dipping! Rebel attitude!",
+    "pack": "girls"
+  },
+  {
+    "id": "g136",
+    "text": "${player}, drink a sip if you still stalk your ex on Instagram.",
+    "pack": "girls"
+  },
+  {
+    "id": "g137",
+    "text": "${player}, reveal your secret red flag that you hide well or drink 3 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g138",
+    "text": "${player}, have you ever had a crush on a teacher? Specify the grade level! Drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g139",
+    "text": "${player}, drink 2 sips if you've ever had a hot girls' sleepover.",
+    "pack": "girls"
+  },
+  {
+    "id": "g140",
+    "text": "${player}, name 3 positions you absolutely want to try or drink 3 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g141",
+    "text": "${player}, Blake Lively or Ryan Reynolds? Choose your side or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g142",
+    "text": "${player}, reveal your favorite accent in bed or drink 2 sips! Southern French allowed!",
+    "pack": "girls"
+  },
+  {
+    "id": "g143",
+    "text": "${player}, drink 2 sips if you've ever had your period during an important date.",
+    "pack": "girls"
+  },
+  {
+    "id": "g144",
+    "text": "${player}, tea or coffee for a first date? Justify your choice or drink!",
+    "pack": "girls"
+  },
+  {
+    "id": "g145",
+    "text": "${player}, name the most ridiculous couple you know or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g146",
+    "text": "${player}, bikini or swimsuit? Defend your summer choice or drink 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g147",
+    "text": "${player}, point out who goes crazy when she drinks! She gives out 3 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g148",
+    "text": "${player}, drink 2 sips if you have more than 3 different sex toys.",
+    "pack": "girls"
+  },
+  {
+    "id": "g149",
+    "text": "${player}, team sexy panties or comfort panties? Honesty or 2 sips!",
+    "pack": "girls"
+  },
+  {
+    "id": "g150",
+    "text": "${player}, ultimate question: would you rather be cheated on or cheat? Explain or drink 3 sips!",
     "pack": "girls"
   }
-] 
+]

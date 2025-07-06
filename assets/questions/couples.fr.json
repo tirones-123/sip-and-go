@@ -1,502 +1,502 @@
 [
   {
     "id": "co1",
-    "text": "${player}, raconte à ${player} le rêve le plus bizarre que tu aies fait cette année. Si ça le fait rire, il distribue 3 gorgées.",
+    "text": "${player}, tu préfères faire la vaisselle tous les soirs ou sortir les poubelles même quand il pleut ? ${player} décide et celui qui a la pire corvée boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co2",
-    "text": "${player}, si tu pouvais voler un seul talent de ${player}, lequel choisirais-tu ? Ton partenaire boit s'il trouve ça flatteur.",
+    "text": "${player} et ${player}, vous préférez vous lever tôt le week-end ou faire la grasse mat' jusqu'à midi ? Ceux qui ne sont pas d'accord boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co3",
-    "text": "Tous les couples : celui qui a le plus de théories conspirationnistes bidons boit 2 gorgées.",
+    "text": "${player}, tu préfères laisser traîner tes chaussettes partout ou ranger celles de ${player} ? Ton partenaire distribue 3 gorgées si tu avoues ta flemme.",
     "pack": "couples"
   },
   {
     "id": "co4",
-    "text": "${player}, quelle est la peur la plus irrationnelle de ${player} ? Si tu te trompes complètement, bois 3 gorgées.",
+    "text": "Tous les couples : vous préférez cuisiner ensemble dans le chaos ou que l'un cuisine pendant que l'autre se détend ? Les cuisiniers du chaos boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co5",
-    "text": "${player} et ${player}, mimez ensemble votre premier argument. Le groupe devine le sujet. Si personne ne trouve, vous buvez tous les deux 2 gorgées.",
+    "text": "${player}, tu préfères choisir le film ce soir ou laisser ${player} décider ? Celui qui cède boit 2 gorgées de bonne volonté.",
     "pack": "couples"
   },
   {
     "id": "co6",
-    "text": "${player}, dans quel univers fictif ${player} survivrait-il le mieux ? Explique pourquoi. Ton partenaire boit s'il n'est pas d'accord.",
+    "text": "${player} et ${player}, qui préfère avoir le contrôle de la télécommande ? L'autre boit 3 gorgées et peut négocier.",
     "pack": "couples"
   },
   {
     "id": "co7",
-    "text": "Tous les couples : celui qui garde le plus de secrets embarrassants sur son téléphone boit 2 gorgées.",
+    "text": "Tous les couples : appart nickel ou joyeux bordel organisé ? Les maniaques boivent 2 gorgées, les bordéliques distribuent.",
     "pack": "couples"
   },
   {
     "id": "co8",
-    "text": "${player}, révèle la technique la plus bizarre de ${player} pour éviter les tâches ménagères. Il boit 2 gorgées si c'est vrai.",
+    "text": "${player}, tu préfères partager toute ta nourriture avec ${player} ou protéger ton assiette ? Si tu partages, ton partenaire boit 2 gorgées de reconnaissance.",
     "pack": "couples"
   },
   {
     "id": "co9",
-    "text": "${player} et ${player}, inventez une origine complètement fausse de votre rencontre. Le groupe vote pour la version la plus crédible.",
+    "text": "${player} et ${player}, vous préférez faire les courses ensemble ou déléguer à l'un ? Celui qui y va seul peut faire boire 3 gorgées à l'autre.",
     "pack": "couples"
   },
   {
     "id": "co10",
-    "text": "${player}, quelle est la chose la plus random que ${player} collectionne en secret ? S'il nie, il boit 3 gorgées.",
+    "text": "${player}, tu préfères dormir fenêtre ouverte même en hiver ou tout fermé ? Si ${player} n'est pas d'accord, négociez ou buvez 2 gorgées chacun.",
     "pack": "couples"
   },
   {
     "id": "co11",
-    "text": "Jeu de couples : celui qui a le plus de playlists Spotify boit 2 gorgées et doit en nommer 5.",
+    "text": "Jeu de couples : chacun sa couette ou guerre des couvertures ? Les voleurs de couette boivent 3 gorgées d'office.",
     "pack": "couples"
   },
   {
     "id": "co12",
-    "text": "${player}, imite la façon dont ${player} se réveille le matin. Si c'est trop précis, ton partenaire distribue 3 gorgées de honte.",
+    "text": "${player}, tu préfères te préparer rapidement le matin ou prendre tout ton temps ? ${player} boit 2 gorgées s'il/elle t'attend toujours.",
     "pack": "couples"
   },
   {
     "id": "co13",
-    "text": "Tous les couples : celui qui a le plus de notifications non lues boit 2 gorgées par tranche de 10 notifications.",
+    "text": "Tous les couples : vous préférez de l'aide sans demander ou qu'on demande avant ? Les interventionnistes boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co14",
-    "text": "${player}, quelle serait la biographie non-autorisée la plus gênante qu'on pourrait écrire sur ${player} ? Il boit 2 gorgées si c'est trop proche de la réalité.",
+    "text": "${player}, tu préfères un petit-déj rapide ou un brunch dominical avec ${player} ? Le plus gourmand distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co15",
-    "text": "${player} et ${player}, créez ensemble une danse de 10 secondes sur votre chanson couple. Le groupe note sur 10, en dessous de 6 vous buvez la différence.",
+    "text": "${player} et ${player}, vous gérez le budget au centime près ou chacun son indépendance ? Les comptables boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co16",
-    "text": "${player}, révèle l'obsession la plus niche de ${player} que personne d'autre ne connaît. S'il rougit, distribue 3 gorgées.",
+    "text": "${player}, tu préfères une soirée ciné tranquille ou sortie resto avec ${player} ? Votez, le perdant boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co17",
-    "text": "Tous les couples : celui qui a le plus de photos de nourriture sur son téléphone boit 2 gorgées.",
+    "text": "Tous les couples : vacances aventure sac au dos ou hôtel tout compris ? Les aventuriers distribuent 2 gorgées aux fainéants.",
     "pack": "couples"
   },
   {
     "id": "co18",
-    "text": "${player}, raconte le mensonge le plus innocent que ${player} t'a dit récemment. Ton partenaire boit s'il assume.",
+    "text": "${player}, tu préfères un week-end surprise organisé par ${player} ou planifier ensemble ? Si tu fais confiance, ton partenaire boit 2 gorgées de pression.",
     "pack": "couples"
   },
   {
     "id": "co19",
-    "text": "Jeu de couples : celui qui scrolle le plus longtemps sur TikTok/Instagram avant de dormir boit 2 gorgées.",
+    "text": "Jeu de couples : cadeaux matériels ou expériences à vivre ? Les matérialistes boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co20",
-    "text": "${player} et ${player}, devinez mutuellement votre mot de passe wifi personnel. Celui qui se trompe le plus boit 3 gorgées.",
+    "text": "${player} et ${player}, grosse fête d'anniversaire ou célébration intime ? Mimez votre dernier anniversaire, le plus sobre boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co21",
-    "text": "Tous les couples : celui qui a le plus de conversations bizarres avec son animal de compagnie boit 2 gorgées.",
+    "text": "Tous les couples : explorer une nouvelle ville ou retourner dans vos spots préférés ? Les routiniers boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co22",
-    "text": "${player}, quelle est la théorie la plus farfelue de ${player} sur pourquoi les chaussettes disparaissent ? S'il en a vraiment une, il distribue 3 gorgées.",
+    "text": "${player}, tu préfères discuter des heures au café avec ${player} ou faire du sport ensemble ? Les sportifs font boire 3 gorgées aux philosophes.",
     "pack": "couples"
   },
   {
     "id": "co23",
-    "text": "Jeu de couples : celui qui a le plus de screenshots de conversations embarrassantes boit 2 gorgées.",
+    "text": "Jeu de couples : soirée jeux avec des amis ou tête-à-tête romantique ? Les moins romantiques boivent 2 gorgées de honte.",
     "pack": "couples"
   },
   {
     "id": "co24",
-    "text": "${player}, révèle le comfort food le plus bizarre de ${player}. S'il le mange devant Netflix, ton partenaire distribue 2 gorgées.",
+    "text": "${player}, tu préfères les petits mots doux cachés ou les déclarations publiques ? Si ${player} rougit, il/elle distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co25",
-    "text": "Tous les couples : celui qui parle le plus à ses plantes (ou qui en aurait le plus besoin) boit 2 gorgées.",
+    "text": "Tous les couples : match de foot ou ballet ? Ceux qui ne sont pas d'accord boivent 2 gorgées et négocient.",
     "pack": "couples"
   },
   {
     "id": "co26",
-    "text": "${player}, quelle est la recherche Google la plus random de ${player} cette semaine ? S'il refuse de répondre, il boit 3 gorgées.",
+    "text": "${player}, balade en nature ou shopping avec ${player} ? Le citadin boit 3 gorgées, le randonneur distribue.",
     "pack": "couples"
   },
   {
     "id": "co27",
-    "text": "Jeu de couples : celui qui a le plus de photos floues dans sa galerie boit 2 gorgées et doit en montrer une.",
+    "text": "Jeu de couples : nouveau resto branché ou votre cantine habituelle ? Les aventuriers culinaires font boire 2 gorgées aux routiniers.",
     "pack": "couples"
   },
   {
     "id": "co28",
-    "text": "${player} et ${player}, inventez ensemble un nom de groupe de musique basé sur vos manies respectives. Le groupe vote, si c'est nul vous buvez 2 gorgées.",
+    "text": "${player} et ${player}, cadeau fait main ou cadeau cher ? Celui qui a déjà offert un cadeau raté boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co29",
-    "text": "Tous les couples : celui qui a le plus de tabs ouverts sur son navigateur right now boit 2 gorgées.",
+    "text": "Tous les couples : vacances avec d'autres couples ou juste à deux ? Les sociables boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co30",
-    "text": "${player}, révèle le skill le plus inutile mais impressionnant de ${player}. S'il le démontre sur le champ, il distribue 3 gorgées.",
+    "text": "${player}, tu préfères regarder le coucher de soleil en silence avec ${player} ou le lever après une nuit blanche ? Les romantiques distribuent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co31",
-    "text": "${player} et ${player}, créez ensemble une explication scientifique complètement fausse pour pourquoi vous êtes ensemble. La plus créative fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, vous réglez vos disputes à chaud ou à froid ? Celui qui boude le plus longtemps boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co32",
-    "text": "Jeu de couples : celui qui a le plus de memes sauvegardés sans jamais les partager boit 2 gorgées.",
+    "text": "Jeu de couples : besoin d'espace ou câlin immédiat après une dispute ? Les câlineurs boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co33",
-    "text": "${player}, quelle est la chose la plus bizarre que ${player} fait quand il se croit seul ? S'il l'assume fièrement, il distribue 3 gorgées.",
+    "text": "${player}, tu dis franchement quand ${player} t'énerve ou tu prends sur toi ? Les diplomates boivent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co34",
-    "text": "Tous les couples : celui qui a le plus de produits de beauté/soin qu'il n'utilise jamais boit 2 gorgées.",
+    "text": "Tous les couples : critiques constructives ou on laisse faire ? Ceux qui ne supportent pas les critiques boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co35",
-    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il réfléchit intensément. Si c'est spot-on, ton partenaire boit 2 gorgées de reconnaissance.",
+    "text": "${player}, tu préfères parler de tes sentiments ou les montrer par des actions à ${player} ? Les pudiques boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co36",
-    "text": "${player} et ${player}, révélez mutuellement votre guilty pleasure YouTube. Le plus embarrassant fait boire 2 gorgées à l'autre.",
+    "text": "${player} et ${player}, discussions profondes ou conversations légères ? Mimez votre dernière discussion sérieuse, le plus dramatique boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co37",
-    "text": "Jeu de couples : celui qui a le plus de photos de son partenaire qui dort boit 2 gorgées (et doit en montrer une).",
+    "text": "Jeu de couples : plein de questions quand ça ne va pas ou laisser venir ? Les curieux boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co38",
-    "text": "${player}, révèle le superstitieux le plus random de ${player}. S'il nie alors que c'est vrai, il boit 3 gorgées.",
+    "text": "${player}, tu te confies d'abord à ${player} ou à tes amis ? Si ce n'est pas ton partenaire, il/elle distribue 3 gorgées vexées.",
     "pack": "couples"
   },
   {
     "id": "co39",
-    "text": "Tous les couples : celui qui a le plus de conversations avec Siri/Google Assistant par accident boit 2 gorgées.",
+    "text": "Tous les couples : pardonner facilement ou avoir besoin de temps ? Les rancuniers boivent 2 gorgées thérapeutiques.",
     "pack": "couples"
   },
   {
     "id": "co40",
-    "text": "${player} et ${player}, créez ensemble un pitch de série Netflix basé sur votre couple. Si le groupe voudrait la regarder, vous distribuez 4 gorgées.",
+    "text": "${player} et ${player}, vous préférez qu'on devine vos besoins ou les exprimer clairement ? Les télépathes ratés boivent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co41",
-    "text": "${player}, révèle la chose la plus weird que ${player} fait avec la nourriture. S'il l'assume et le démontre, il distribue 3 gorgées.",
+    "text": "${player}, tu abordes les sujets sérieux de manière planifiée avec ${player} ou spontanément ? Les stratèges boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co42",
-    "text": "Tous les couples : celui qui a le plus de conversations imaginaires sous la douche boit 2 gorgées.",
+    "text": "Tous les couples : rire de vos disputes passées ou ne plus en parler ? Racontez-en une, les plus ridicules boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co43",
-    "text": "${player}, imite la façon dont ${player} réagit quand il n'a plus de batterie. Si c'est trop réaliste, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, surnoms mignons en public avec ${player} ou discrétion ? Si vous en avez un gênant, buvez 3 gorgées ensemble.",
     "pack": "couples"
   },
   {
     "id": "co44",
-    "text": "${player} et ${player}, révélez mutuellement votre plus gros mensonge sur vos compétences en cuisine. Le pire cuisinier boit 3 gorgées.",
+    "text": "${player} et ${player}, long message d'excuse ou discussion face à face ? Celui qui a la pire technique boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co45",
-    "text": "Jeu de couples : celui qui a le plus de photos de recettes qu'il n'a jamais testées boit 2 gorgées.",
+    "text": "Jeu de couples : défendre son partenaire même s'il a tort ou rester objectif ? Les avocats aveugles boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co46",
-    "text": "${player}, quelle est la règle la plus bizarre que ${player} s'impose à lui-même ? S'il nie avoir des règles bizarres, il boit 3 gorgées.",
+    "text": "${player}, tu préfères les longs câlins silencieux ou discuter jusqu'à tard avec ${player} ? Les bavards boivent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co47",
-    "text": "Tous les couples : celui qui parle le plus à la télé comme si les personnages pouvaient l'entendre boit 2 gorgées.",
+    "text": "Tous les couples : préliminaires interminables ou droit au but ? Les impatients boivent 2 gorgées pudiques.",
     "pack": "couples"
   },
   {
     "id": "co48",
-    "text": "${player}, révèle le truc le plus random que ${player} fait pour procrastiner. S'il est en train de le faire maintenant, il distribue 3 gorgées.",
+    "text": "${player}, baisers passionnés en public ou gestes discrets avec ${player} ? Les exhibitionnistes distribuent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co49",
-    "text": "${player} et ${player}, créez ensemble un nom de parfum inspiré de vos défauts respectifs. Le plus drôle fait boire 2 gorgées au groupe.",
+    "text": "${player} et ${player}, recevoir ou donner un massage ? Celui qui est le plus égoïste boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co50",
-    "text": "Jeu de couples : celui qui a le plus de vidéos d'animaux mignons sauvegardées boit 2 gorgées et doit en montrer une.",
+    "text": "Jeu de couples : essayer de nouvelles choses ou rester sur les classiques ? Les routiniers boivent 2 gorgées aventureuses.",
     "pack": "couples"
   },
   {
     "id": "co51",
-    "text": "${player}, quelle est la chose la plus inutile que ${player} sait par cœur ? S'il le récite, il distribue 3 gorgées.",
+    "text": "${player}, parler de fantasmes avec ${player} ou garder le mystère ? Les mystérieux boivent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co52",
-    "text": "Tous les couples : celui qui a le plus de trucs cassés 'qu'il va réparer un jour' boit 2 gorgées.",
+    "text": "Tous les couples : lumière tamisée ou noir complet ? Votez discrètement, minorité boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co53",
-    "text": "${player}, imite la façon dont ${player} explique quelque chose qu'il ne comprend pas vraiment. Ton partenaire boit s'il se reconnaît.",
+    "text": "${player}, mots doux chuchotés ou compliments directs à ${player} ? Faites une démo, le plus romantique distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co54",
-    "text": "${player} et ${player}, inventez ensemble une excuse complètement ridicule pour annuler des plans. La plus créative fait distribuer 3 gorgées.",
+    "text": "${player} et ${player}, douche ou bain romantique ? Les économes en eau boivent 2 gorgées écologiques.",
     "pack": "couples"
   },
   {
     "id": "co55",
-    "text": "Jeu de couples : celui qui a le plus d'applications qu'il n'a jamais ouvertes boit 2 gorgées par tranche de 5 apps.",
+    "text": "Jeu de couples : surprendre ou être surpris ? Les control freaks boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co56",
-    "text": "${player}, révèle la façon la plus créative dont ${player} évite de faire du sport. S'il l'a fait cette semaine, il boit 3 gorgées.",
+    "text": "${player}, câlins du matin ou du soir avec ${player} ? Les lève-tard boivent 3 gorgées matinales.",
     "pack": "couples"
   },
   {
     "id": "co57",
-    "text": "Tous les couples : celui qui a le plus de playlists avec un seul morceau dedans boit 2 gorgées.",
+    "text": "Tous les couples : main dans la main ou bras autour de la taille ? Les moins tactiles boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co58",
-    "text": "${player}, quelle est la théorie la plus improbable de ${player} sur les algorithmes des réseaux sociaux ? S'il en développe une là maintenant, il distribue 3 gorgées.",
+    "text": "${player}, petits cadeaux coquins ou expériences sensuelles avec ${player} ? Les prudes boivent 3 gorgées rougissantes.",
     "pack": "couples"
   },
   {
     "id": "co59",
-    "text": "${player} et ${player}, mimez ensemble votre dispute la plus absurde. Si le groupe devine le sujet, vous distribuez 3 gorgées.",
+    "text": "${player} et ${player}, vous préférez vous rappeler votre premier baiser ou premier 'je t'aime' ? Racontez, le plus mignon fait boire 2 gorgées au groupe.",
     "pack": "couples"
   },
   {
     "id": "co60",
-    "text": "Jeu de couples : celui qui dit le plus souvent 'je vais me coucher tôt ce soir' sans jamais le faire boit 2 gorgées.",
+    "text": "Jeu de couples : spontanéité ou ambiance préparée ? Les planificateurs boivent 2 gorgées d'improvisation.",
     "pack": "couples"
   },
   {
     "id": "co61",
-    "text": "${player}, révèle la habitude la plus bizarre de ${player} quand il mange tout seul. S'il le démontre, il distribue 3 gorgées.",
+    "text": "${player}, parler des projets d'avenir avec ${player} ou profiter du présent ? Les stressés du futur boivent 3 gorgées zen.",
     "pack": "couples"
   },
   {
     "id": "co62",
-    "text": "Tous les couples : celui qui a le plus de brouillons de messages qu'il n'a jamais envoyés boit 2 gorgées.",
+    "text": "Tous les couples : vivre en ville ou à la campagne ? Les citadins et les ruraux s'affrontent, minorité boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co63",
-    "text": "${player}, imite parfaitement le bruit que fait ${player} quand il cherche quelque chose. Si c'est spot-on, ton partenaire boit 2 gorgées de honte.",
+    "text": "${player}, enfants ou tour du monde avec ${player} ? Débattez 30 secondes, le moins convaincant boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co64",
-    "text": "${player} et ${player}, créez ensemble un slogan publicitaire pour votre relation. Le plus convaincant fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, grand mariage ou cérémonie intime ? Ceux qui ont déjà planifié mentalement boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co65",
-    "text": "Jeu de couples : celui qui a le plus de captures d'écran de trucs qu'il devait 'regarder plus tard' boit 2 gorgées.",
+    "text": "Jeu de couples : chien, chat ou rien ? Les allergiques boivent 2 gorgées de consolation.",
     "pack": "couples"
   },
   {
     "id": "co66",
-    "text": "${player}, quelle est la chose la plus random pour laquelle ${player} a une opinion très tranchée ? S'il la défend maintenant, il distribue 3 gorgées.",
+    "text": "${player}, carrière prenante ou temps pour ${player} ? Les workaholics boivent 3 gorgées d'équilibre.",
     "pack": "couples"
   },
   {
     "id": "co67",
-    "text": "Tous les couples : celui qui remet le plus d'alarmes le matin boit 2 gorgées par alarme au-dessus de 3.",
+    "text": "Tous les couples : rencontrer la belle-famille vite ou attendre ? Les téméraires boivent 2 gorgées courageuses.",
     "pack": "couples"
   },
   {
     "id": "co68",
-    "text": "${player}, révèle le mensonge le plus innocent que ${player} dit à sa famille. S'il rougit, il boit 2 gorgées.",
+    "text": "${player}, Noël séparés en famille ou ensemble ? Si ${player} n'est pas d'accord, négociez en buvant 2 gorgées chacun.",
     "pack": "couples"
   },
   {
     "id": "co69",
-    "text": "${player} et ${player}, inventez ensemble une conspiration complètement farfelue sur pourquoi vous vous êtes rencontrés. La plus délirante fait distribuer 4 gorgées.",
+    "text": "${player} et ${player}, économiser ou profiter maintenant ? Les cigales boivent 3 gorgées, les fourmis distribuent.",
     "pack": "couples"
   },
   {
     "id": "co70",
-    "text": "Jeu de couples : celui qui a scrollé le plus loin dans son propre Instagram cette semaine boit 2 gorgées.",
+    "text": "Jeu de couples : vieillir ici ou partir à l'étranger ? Les casaniers boivent 2 gorgées d'aventure.",
     "pack": "couples"
   },
   {
     "id": "co71",
-    "text": "${player}, révèle la façon la plus créative dont ${player} évite de répondre au téléphone. S'il le démontre en live, il distribue 3 gorgées.",
+    "text": "${player}, traditions établies ou improvisation avec ${player} ? Les maniaques de l'organisation boivent 3 gorgées spontanées.",
     "pack": "couples"
   },
   {
     "id": "co72",
-    "text": "Tous les couples : celui qui a le plus de fils/écouteurs emmêlés quelque part chez lui boit 2 gorgées.",
+    "text": "Tous les couples : amis communs ou cercles séparés ? Ceux qui n'aiment pas les amis de l'autre boivent 2 gorgées diplomatiques.",
     "pack": "couples"
   },
   {
     "id": "co73",
-    "text": "${player}, imite la façon dont ${player} prétend écouter quand il est sur son téléphone. Ton partenaire boit s'il se reconnaît parfaitement.",
+    "text": "${player}, imaginer dans 5 ans ou 20 ans avec ${player} ? Les plus optimistes distribuent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co74",
-    "text": "${player} et ${player}, révélez mutuellement votre pire achat impulsif sur internet. Le plus inutile fait boire 3 gorgées à l'autre.",
+    "text": "${player} et ${player}, réussite pro ou temps ensemble ? Débat d'une minute, le perdant boit 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co75",
-    "text": "Jeu de couples : celui qui a le plus de trucs 'de secours' périmés dans ses placards boit 2 gorgées.",
+    "text": "Jeu de couples : transmettre vos valeurs ou liberté totale aux enfants ? Les futurs parents stricts boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co76",
-    "text": "${player}, quelle est la combinaison la plus bizarre de ${player} pour être confortable ? S'il l'assume, il distribue 3 gorgées.",
+    "text": "${player}, t-shirts assortis avec ${player} ou sonneries kitsch identiques ? Le moins assumé boit 3 gorgées honteuses.",
     "pack": "couples"
   },
   {
     "id": "co77",
-    "text": "Tous les couples : celui qui dit le plus souvent 'on devrait faire ça' sans jamais le faire boit 2 gorgées.",
+    "text": "Tous les couples : se couper les cheveux mutuellement ou jamais ? Les plus courageux distribuent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co78",
-    "text": "${player}, révèle la technique secrète de ${player} pour éviter les conversations gênantes. S'il l'utilise maintenant, il boit 3 gorgées.",
+    "text": "${player}, comédie romantique clichée ou film d'horreur avec ${player} ? Les froussards boivent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co79",
-    "text": "${player} et ${player}, créez ensemble une publicité de 30 secondes pour vendre vos pires défauts. La plus convaincante fait distribuer 4 gorgées.",
+    "text": "${player} et ${player}, compte Netflix partagé ou séparé ? Si vous connaissez les passwords de l'autre, trinquez 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co80",
-    "text": "Jeu de couples : celui qui a le plus de notifications désactivées par flemme boit 2 gorgées.",
+    "text": "Jeu de couples : chanter en voiture ou silence musical ? Les chanteurs de douche boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co81",
-    "text": "${player}, quelle est la chose la plus random que ${player} fait quand il s'ennuie ? S'il le fait depuis moins d'une heure, il distribue 3 gorgées.",
+    "text": "${player}, montrer ta tête du matin à ${player} ou cacher tes ronflements ? Les parfaits du matin distribuent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co82",
-    "text": "Tous les couples : celui qui a le plus de projets commencés mais jamais finis boit 2 gorgées par projet abandonné (max 6).",
+    "text": "Tous les couples : même plat préféré ou opposés culinairement ? Les difficiles boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co83",
-    "text": "${player}, imite parfaitement le son que fait ${player} quand il essaie de se rappeler quelque chose. Si c'est trop précis, ton partenaire distribue 3 gorgées.",
+    "text": "${player}, réussir un plat compliqué pour ${player} ou qu'il/elle monte un meuble IKEA ? Le moins doué boit 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co84",
-    "text": "${player} et ${player}, inventez ensemble une méthode révolutionnaire pour éviter les tâches ménagères. La plus ingénieuse fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, qui impose la déco ? Le dictateur du design boit 2 gorgées de pouvoir.",
     "pack": "couples"
   },
   {
     "id": "co85",
-    "text": "Jeu de couples : celui qui a le plus de mots de passe identiques pour tout boit 2 gorgées (et doit les changer après).",
+    "text": "Jeu de couples : partager les mots de passe ou vie privée ? Les cachottiers boivent 2 gorgées mystérieuses.",
     "pack": "couples"
   },
   {
     "id": "co86",
-    "text": "${player}, révèle la superstition la plus ridicule de ${player} liée à la technologie. S'il la pratique encore, il boit 3 gorgées.",
+    "text": "${player}, karaoké duo ringard ou chorégraphie TikTok avec ${player} ? Faites une démo de 10 secondes ou buvez 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co87",
-    "text": "Tous les couples : celui qui a le plus de 'favoris' qu'il ne consulte jamais boit 2 gorgées.",
+    "text": "Tous les couples : fou rire inapproprié ou larmes devant un film ? Les plus émotifs boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co88",
-    "text": "${player}, quelle est la façon la plus créative dont ${player} procrastine avant de dormir ? S'il l'a fait hier soir, il boit 2 gorgées.",
+    "text": "${player}, laisser ${player} choisir tes vêtements ou l'inverse ? Le plus mal habillé boit 3 gorgées fashion.",
     "pack": "couples"
   },
   {
     "id": "co89",
-    "text": "${player} et ${player}, mimez ensemble votre routine matinale en accéléré. Si c'est trop réaliste, vous distribuez 3 gorgées chacun.",
+    "text": "${player} et ${player}, secret rigolo privé ou tout raconter aux amis ? Les pipelettes boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co90",
-    "text": "Jeu de couples : celui qui a le plus de conversations avec lui-même à voix haute boit 2 gorgées.",
+    "text": "Jeu de couples : sieste crapuleuse ou bataille de polochons ? Les fatigués boivent 2 gorgées énergiques.",
     "pack": "couples"
   },
   {
     "id": "co91",
-    "text": "${player}, révèle le truc le plus bizarre que ${player} fait pour 'optimiser' sa journée. S'il insiste que c'est logique, il boit 3 gorgées.",
+    "text": "${player}, ${player} imite mieux ta voix ou tes mimiques ? Démonstration obligatoire, le meilleur imitateur distribue 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co92",
-    "text": "Tous les couples : celui qui a le plus de screenshots de memes qu'il a oublié de partager boit 2 gorgées.",
+    "text": "Tous les couples : mariage où vous ne connaissez personne ou dîner de famille ennuyeux ? Les asociaux boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co93",
-    "text": "${player}, imite la façon dont ${player} fait semblant de comprendre quelque chose de technique. Ton partenaire boit s'il se reconnaît.",
+    "text": "${player}, supporter la passion bizarre de ${player} ou qu'il/elle supporte la tienne ? Avouez vos passions honteuses et buvez 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co94",
-    "text": "${player} et ${player}, créez ensemble un guide de survie basé sur vos incompétences respectives. Le plus utile fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, slow ridicule en public ou sérénade fausse ? Les timides boivent 2 gorgées de courage.",
     "pack": "couples"
   },
   {
     "id": "co95",
-    "text": "Jeu de couples : celui qui reporte le plus ses alarmes le matin boit 2 gorgées par snooze habituel.",
+    "text": "Jeu de couples : finir les phrases de l'autre ou langage secret ? Prouvez-le maintenant ou buvez 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co96",
-    "text": "${player}, quelle est la théorie la plus farfelue de ${player} pour expliquer pourquoi il perd toujours ses clés ? S'il en a plusieurs, il distribue 3 gorgées.",
+    "text": "${player}, affronter une araignée pour ${player} ou fuir ensemble ? Les héros distribuent 3 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co97",
-    "text": "Tous les couples : celui qui a le plus de contacts dans son téléphone qu'il ne reconnaîtrait plus boit 2 gorgées.",
+    "text": "Tous les couples : raconter sa journée en détail ou juste l'essentiel ? Les bavards boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co98",
-    "text": "${player}, révèle la chose la plus weird que ${player} fait pour éviter d'admettre qu'il a tort. S'il le fait maintenant, il boit 3 gorgées.",
+    "text": "${player}, avoir une photo dossier de ${player} ou l'inverse ? Montrez-la ou buvez 3 gorgées de honte.",
     "pack": "couples"
   },
   {
     "id": "co99",
-    "text": "${player} et ${player}, inventez ensemble une excuse complètement absurde pour expliquer pourquoi vous êtes en retard. La plus créative fait distribuer 4 gorgées.",
+    "text": "${player} et ${player}, mentir sur un cadeau raté ou dire la vérité ? Les hypocrites gentils boivent 2 gorgées.",
     "pack": "couples"
   },
   {
     "id": "co100",
-    "text": "Final couples : ${player} et ${player}, révélez mutuellement la chose la plus ridicule que vous avez apprise sur l'autre grâce à ce jeu. Tout le monde boit 3 gorgées pour célébrer !",
+    "text": "Final couples : ${player} et ${player}, journée sans téléphone ensemble ou communication constante ? Posez vos téléphones 2 minutes ou buvez 5 gorgées ! Bravo, vous vous connaissez mieux !",
     "pack": "couples"
   },
   {
@@ -891,7 +891,7 @@
   },
   {
     "id": "co179",
-    "text": "${player} et ${player}, mimez ensemble votre façon de négocier qui fait quoi dans les tâches ménagères. Le plus réaliste fait boire 3 gorgées au groupe.",
+    "text": "${player} et ${player}, mimez ensemble votre façon de négocier qui conduit quand vous êtes perdus. Si c'est une guerre froide, vous distribuez 3 gorgées chacun.",
     "pack": "couples"
   },
   {

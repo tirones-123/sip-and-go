@@ -1,152 +1,1002 @@
 [
   {
     "id": "gy1",
-    "text": "${player}, take 2 sips if you've ever been in a fight.",
+    "text": "If ${player} has ever stolen a street sign while drunk, he drinks 3 sips and tells the story.",
     "pack": "guys"
   },
   {
     "id": "gy2",
-    "text": "${player} and ${player}, race to finish your drinks. Loser takes 2 additional sips.",
+    "text": "${player}, if you've ever broken something important while drunk, drink 2 sips and ${player} guesses what it was.",
     "pack": "guys"
   },
   {
     "id": "gy3",
-    "text": "${player}, what's your greatest sports achievement? If ${player} isn't impressed, take 2 sips.",
+    "text": "Everyone who has ever thrown up during a drinking session drinks 2 sips. ${player} tells his worst experience.",
     "pack": "guys"
   },
   {
     "id": "gy4",
-    "text": "Between ${player} and ${player}, whoever bench presses more distributes 3 sips.",
+    "text": "${player}, if you've ever had trouble with the police while drunk, drink 4 sips and tell the story (without compromising details).",
     "pack": "guys"
   },
   {
     "id": "gy5",
-    "text": "${player}, take one sip for each gaming console you currently own.",
+    "text": "If ${player} has ever been refused entry to a taxi because of his condition, he drinks 3 sips and acts out the scene.",
     "pack": "guys"
   },
   {
     "id": "gy6",
-    "text": "${player} and ${player}, arm wrestle! Loser takes 3 sips.",
+    "text": "${player}, if you've ever smoked more than a pack of cigarettes in one drinking night, drink 2 sips and give 2 sips to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy7",
-    "text": "${player}, tell us about your most embarrassing rejection or take 4 sips.",
+    "text": "Everyone who has ever woken up far from home without knowing how drinks 3 sips. ${player} tells his most wtf wake-up.",
     "pack": "guys"
   },
   {
     "id": "gy8",
-    "text": "${player} chooses which player would survive longest in a zombie apocalypse. ${player} distributes 3 sips.",
+    "text": "${player}, if you've ever been banned from entering a bar, drink 2 sips and explain why to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy9",
-    "text": "If ${player} or ${player} has ever sent a drunk text to an ex, take 2 sips.",
+    "text": "If ${player} has ever called in sick to work when he was just hungover, he drinks 2 sips.",
     "pack": "guys"
   },
   {
     "id": "gy10",
-    "text": "${player} and ${player} have a staring contest. Loser takes 2 sips.",
+    "text": "${player}, if you've ever done a beer funnel, drink 2 sips and show your technique to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy11",
-    "text": "${player}, truth: what's your technique to impress someone you like? If ${player} thinks it wouldn't work, drink.",
+    "text": "If ${player} has ever lost his driver's license because of alcohol, he drinks 5 sips and everyone toasts to his 'memory'.",
     "pack": "guys"
   },
   {
     "id": "gy12",
-    "text": "Between ${player} and ${player}, whoever has the most matches on dating apps takes 2 sips.",
+    "text": "${player}, if you've ever been kicked out of a club for inappropriate behavior, drink 3 sips and tell the story (censored version).",
     "pack": "guys"
   },
   {
     "id": "gy13",
-    "text": "${player}, show the last inappropriate meme you saved or take 3 sips.",
+    "text": "Everyone who has ever taken an electric scooter while drunk drinks 2 sips. ${player} mimes the driving.",
     "pack": "guys"
   },
   {
     "id": "gy14",
-    "text": "${player} and ${player} compare your favorite sports teams. Everyone votes for the best one; loser drinks.",
+    "text": "${player}, if you've ever received a beer shower, drink 2 sips and ${player} pours you a symbolic one.",
     "pack": "guys"
   },
   {
     "id": "gy15",
-    "text": "${player}, what car would you buy if money wasn't an issue? If ${player} thinks it's a bad choice, you both drink.",
+    "text": "If ${player} has ever drunk alcohol on a Sunday morning, he drinks 2 sips and gives 1 sip to each player.",
     "pack": "guys"
   },
   {
     "id": "gy16",
-    "text": "If ${player} or ${player} has ever used a cheesy pickup line, take 2 sips.",
+    "text": "${player}, if you've ever insulted someone while drunk, drink 2 sips and apologize to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy17",
-    "text": "${player} and ${player}, thumb wrestle. Loser takes 2 sips.",
+    "text": "Everyone who has ever taken hangover medication drinks 1 sip. ${player} reveals his secret remedy.",
     "pack": "guys"
   },
   {
     "id": "gy18",
-    "text": "${player}, rate everyone's fashion sense. Lowest score takes 2 sips.",
+    "text": "${player}, if you've ever hit someone while drunk, drink 4 sips and explain the circumstances to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy19",
-    "text": "Between ${player} and ${player}, whoever has gone longer without washing their sheets takes 2 sips.",
+    "text": "If ${player} has ever drunk too much at a professional event, he drinks 3 sips and tells his crisis management story.",
     "pack": "guys"
   },
   {
     "id": "gy20",
-    "text": "${player} shows ${player} the most embarrassing photo on their phone or takes 3 sips.",
+    "text": "${player}, if you've ever woken up outside after a night out, drink 3 sips and describe your wake-up to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy21",
-    "text": "If ${player} or ${player} has ever been kicked out of a bar, take 3 sips.",
+    "text": "Everyone who has ever abused the all-inclusive at a hotel drinks 2 sips. ${player} tells his record.",
     "pack": "guys"
   },
   {
     "id": "gy22",
-    "text": "${player} and ${player}, who can do more push-ups? Loser takes that many sips.",
+    "text": "${player}, if you've ever needed an emergency bucket, drink 2 sips and mime the situation for ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy23",
-    "text": "${player}, tell us your best dad joke. If ${player} doesn't laugh, you take 2 sips.",
+    "text": "If ${player} has ever thrown up on an alcohol to the point of not being able to drink it anymore, he drinks 2 sips and reveals which one.",
     "pack": "guys"
   },
   {
     "id": "gy24",
-    "text": "Between ${player} and ${player}, whoever spent more on their last haircut takes 2 sips.",
+    "text": "${player}, if you've ever driven after drinking (even a little), drink 5 sips and promise to never do it again.",
     "pack": "guys"
   },
   {
     "id": "gy25",
-    "text": "${player}, who in this group would be the worst roommate? That person distributes 2 sips.",
+    "text": "If ${player} has ever been refused entry to a club because he was too drunk, he drinks 3 sips and acts out the scene.",
     "pack": "guys"
   },
   {
     "id": "gy26",
-    "text": "If ${player} or ${player} has ever pretended to know about sports to impress someone, take 2 sips.",
+    "text": "${player}, if you've ever dropped someone while carrying them when you were drunk, drink 2 sips and apologize to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy27",
-    "text": "${player} and ${player}, compare your weekend plans. Group votes for whose sounds better; loser drinks.",
+    "text": "Everyone who has ever thrown up in someone else's apartment drinks 3 sips. ${player} tells his cleaning story.",
     "pack": "guys"
   },
   {
     "id": "gy28",
-    "text": "${player}, if you had to fight someone here, who would it be? ${player} distributes 3 sips.",
+    "text": "${player}, if you've ever drunk alcohol over 70 proof, drink 2 sips and grimace for ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy29",
-    "text": "Between ${player} and ${player}, whoever has more notifications on their phone right now takes 2 sips.",
+    "text": "If ${player} has ever been accused of alcoholism, he drinks 2 sips and defends his reputation to ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy30",
-    "text": "${player} mentally chooses rock, paper, or scissors. ${player} guesses what it is. If wrong, both drink.",
+    "text": "${player}, if you've ever drunk alone at home, drink 2 sips and explain why to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy31",
+    "text": "Everyone who has ever revealed someone else's secrets while drunk drinks 2 sips. ${player} apologizes.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy32",
+    "text": "${player}, if you've ever played a drinking game during a movie, drink 2 sips and suggest a movie to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy33",
+    "text": "If ${player} has ever drunk alcohol before noon, he drinks 2 sips and explains the circumstances to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy34",
+    "text": "${player}, if you've ever drunk flaming shots, drink 2 sips and mime the experience for ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy35",
+    "text": "Everyone who has ever had to be driven home because they were too drunk drinks 3 sips. ${player} thanks his driver.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy36",
+    "text": "${player}, if you've ever arrived at work still drunk, drink 4 sips and tell ${player} how you handled it.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy37",
+    "text": "If ${player} has ever taken an exam with a hangover, he drinks 2 sips and reveals his grade to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy38",
+    "text": "${player}, if you've ever forced someone to drink, drink 2 sips and apologize to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy39",
+    "text": "Everyone who has ever played 'don't drink and drive' on Mario Kart drinks 2 sips. ${player} explains the rules.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy40",
+    "text": "${player}, if you've ever drunk while doing a handstand, drink 2 sips and attempt the position in front of ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy41",
+    "text": "If ${player} has ever played beer pong, he drinks 1 sip and challenges ${player} to an imaginary game.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy42",
+    "text": "${player}, if you've never been to Oktoberfest, drink 2 sips and ${player} explains what you're missing.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy43",
+    "text": "Everyone who has ever been drunk abroad drinks 2 sips. ${player} tells his worst international wake-up.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy44",
+    "text": "${player}, if you've ever mixed weed and alcohol, drink 3 sips and describe the experience to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy45",
+    "text": "If ${player} has ever organized a beer tasting, he drinks 1 sip and ${player} judges his sommelier skills.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy46",
+    "text": "${player}, if you've ever made an embarrassing call while drunk, drink 2 sips and recreate the conversation with ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy47",
+    "text": "Everyone who has ever fallen asleep on the toilet while drunk drinks 2 sips. ${player} mimes the wake-up.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy48",
+    "text": "${player}, if you've ever pretended to be drunker than you were, drink 2 sips and act it out for ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy49",
+    "text": "If ${player} has ever texted his ex while drunk, he drinks 3 sips and ${player} judges the cringe level.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy50",
+    "text": "${player}, if you've ever lost at beer pong without scoring a point, drink 3 sips and ${player} consoles you.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy51",
+    "text": "Everyone who has ever lost valuable items while drunk drinks 2 sips. ${player} tells his most wtf loss.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy52",
+    "text": "${player}, if you've ever had a hangover lasting more than 24 hours, drink 2 sips and describe your agony to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy53",
+    "text": "If ${player} has ever laughed at something inappropriate while drunk, he drinks 2 sips and explains to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy54",
+    "text": "${player}, if you've ever done a 'tactical vomit' to continue drinking, drink 2 sips and ${player} judges your strategy.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy55",
+    "text": "Everyone who has ever played Flunkyball drinks 2 sips. ${player} explains the rules to the uninitiated.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy56",
+    "text": "${player}, if you've ever participated in a village festival that got out of hand, drink 2 sips and tell ${player} about the atmosphere.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy57",
+    "text": "If ${player} has ever played Edward Fortyhands, he drinks 2 sips and explains the concept to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy58",
+    "text": "${player}, if you've ever drunk while sick, drink 2 sips and ${player} symbolically takes care of you.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy59",
+    "text": "Everyone who has ever been close to alcohol poisoning drinks 3 sips. ${player} tells his rescue story.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy60",
+    "text": "${player}, if you've ever participated in a memorable bachelor party, drink 2 sips and tell ${player} about it.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy61",
+    "text": "If ${player} has ever made someone drink soft drinks so they'd feel included, he drinks 1 sip and ${player} congratulates him.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy62",
+    "text": "${player}, if you've ever done more than 5 shots in a row, drink 2 sips and mime the sequence for ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy63",
+    "text": "Everyone who has ever paid their partner's bar tab drinks 2 sips. ${player} reveals the highest amount.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy64",
+    "text": "${player}, if you've ever tried to convince a non-drinker to drink, drink 3 sips and apologize to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy65",
+    "text": "If ${player} has ever thrown up during a drinking game, he drinks 2 sips and explains how he continued to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy66",
+    "text": "${player}, if you've ever been drunk while watching a football match, drink 2 sips and shout a slogan with ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy67",
+    "text": "Everyone who has ever made a Feuerzangenbowle drinks 2 sips. ${player} explains the recipe.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy68",
+    "text": "${player}, if you've ever made your own alcoholic drinks, drink 2 sips and describe your recipe to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy69",
+    "text": "If ${player} has ever had an adult buy alcohol for him when he was underage, he drinks 2 sips and thanks ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy70",
+    "text": "${player}, if you've ever hosted someone because of their drunken state, drink 1 sip and ${player} thanks you.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy71",
+    "text": "Everyone who has ever drunk with friends over video call (Zoom/Skype) drinks 2 sips. ${player} tells about the experience.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy72",
+    "text": "${player}, if you've ever mixed hard liquor into someone's beer, drink 3 sips and explain why to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy73",
+    "text": "If ${player} has ever had a drunk argument, he drinks 2 sips and apologizes to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy74",
+    "text": "${player}, if you've ever cried while drunk, drink 2 sips and ${player} comforts you.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy75",
+    "text": "Everyone who has ever danced on a table drinks 2 sips. ${player} recreates his choreography.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy76",
+    "text": "${player}, if you've ever sung karaoke while drunk, drink 2 sips and give a performance to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy77",
+    "text": "If ${player} has ever done a striptease while drunk, he drinks 3 sips and mimes a censored version for ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy78",
+    "text": "${player}, if you've ever kissed someone you would never have kissed sober, drink 2 sips and tell ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy79",
+    "text": "Everyone who has ever sent a nude while drunk drinks 3 sips. ${player} judges the regret level.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy80",
+    "text": "${player}, if you've ever had blackouts from an entire night, drink 2 sips and ${player} helps you reconstruct.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy81",
+    "text": "If ${player} has ever eaten anything while having drunk munchies, he drinks 2 sips and describes his dish to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy82",
+    "text": "${player}, if you've ever peed in public while drunk, drink 2 sips and ${player} symbolically stands guard.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy83",
+    "text": "Everyone who has ever slept in their own vomit drinks 3 sips. ${player} tells his traumatic wake-up.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy84",
+    "text": "${player}, if you've ever used alcohol as an excuse for your actions, drink 2 sips and give your real apology to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy85",
+    "text": "If ${player} has ever drunk directly from the bottle at a party, he drinks 2 sips and symbolically shares with ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy86",
+    "text": "${player}, if you've ever had a deep conversation with a stranger while drunk, drink 2 sips and tell ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy87",
+    "text": "Everyone who has ever lost their phone at a party drinks 2 sips. ${player} tells his desperate search story.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy88",
+    "text": "${player}, if you've ever drunk in secret, drink 2 sips and explain why you were hiding to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy89",
+    "text": "If ${player} has ever mixed all possible alcohols in one glass, he drinks 2 sips and describes the taste to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy90",
+    "text": "${player}, if you've ever had an argument with a bouncer, drink 2 sips and replay the scene with ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy91",
+    "text": "Everyone who has ever been jealous while drunk drinks 2 sips. ${player} tells his jealousy crisis.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy92",
+    "text": "${player}, if you've ever told the same story 10 times in one night, drink 2 sips and tell it again to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy93",
+    "text": "If ${player} has ever done online shopping while drunk, he drinks 2 sips and reveals his most wtf purchase to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy94",
+    "text": "${player}, if you've ever declared your love to someone while drunk, drink 2 sips and recite your declaration to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy95",
+    "text": "Everyone who has ever had mysterious injuries after a night out drinks 2 sips. ${player} shows his scars.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy96",
+    "text": "${player}, if you've ever had a paranoia crisis while drunk, drink 2 sips and explain your fears to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy97",
+    "text": "If ${player} has ever drunk while behind the wheel (even when parked), he drinks 4 sips and promises to never do it again.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy98",
+    "text": "${player}, if you've ever tried to seduce someone with terrible pickup lines while drunk, drink 2 sips and test them on ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy99",
+    "text": "Everyone who has ever pretended to be drunker to get attention drinks 2 sips. ${player} recreates his act.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy100",
+    "text": "${player}, if you've ever drunk alone on Valentine's Day, drink 2 sips and ${player} gives you a consolation hug.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy101",
+    "text": "If ${player} has ever created a disgusting cocktail by mixing anything, he drinks 2 sips and recreates his recipe with ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy102",
+    "text": "${player}, if you've ever drunk from a dirty glass for lack of a better option, drink 2 sips and ${player} symbolically cleans you a glass.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy103",
+    "text": "Everyone who has ever had hallucinations while drunk drinks 3 sips. ${player} describes what he saw.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy104",
+    "text": "${player}, if you've ever drunk expired alcohol, drink 2 sips and describe the taste to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy105",
+    "text": "If ${player} has ever licked something disgusting while drunk, he drinks 3 sips and ${player} gives him water.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy106",
+    "text": "${player}, if you've ever tried to cook while drunk, drink 2 sips and describe your dish to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy107",
+    "text": "Everyone who has ever had a serious conversation with their reflection while drunk drinks 2 sips. ${player} replays the scene.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy108",
+    "text": "${player}, if you've ever drunk while in class, drink 3 sips and tell ${player} how you managed.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy109",
+    "text": "If ${player} has ever declared love to an inanimate object while drunk, he drinks 2 sips and renews his declaration.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy110",
+    "text": "${player}, if you've ever had a phase where you drank alone every night, drink 2 sips and ${player} reminds you that you're not alone.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy111",
+    "text": "Everyone who has ever drunk alcohol directly from the dispenser drinks 2 sips. ${player} judges the hygiene.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy112",
+    "text": "${player}, if you've ever tried to hack an alcohol dispenser, drink 3 sips and explain your technique to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy113",
+    "text": "If ${player} has ever drunk alcohol from a paper cup, he drinks 2 sips and ${player} pours him a real glass.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy114",
+    "text": "${player}, if you've ever had a philosophical conversation with an animal while drunk, drink 2 sips and summarize your conclusions to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy115",
+    "text": "Everyone who has ever tried to drink while standing on their hands drinks 2 sips. ${player} attempts the experience.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy116",
+    "text": "${player}, if you've ever drunk while in a place of worship, drink 2 sips and ask forgiveness from ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy117",
+    "text": "If ${player} has ever organized a drinking party at his parents' house, he drinks 2 sips and explains his cleaning strategy to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy118",
+    "text": "${player}, if you've ever drunk while on the phone with your parents, drink 2 sips and replay the conversation with ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy119",
+    "text": "Everyone who has ever had an uncontrollable fit of laughter while drunk drinks 2 sips. ${player} makes us laugh.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy120",
+    "text": "${player}, if you've ever drunk while in pajamas in public, drink 2 sips and explain your outfit to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy121",
+    "text": "If ${player} has ever tried to drink with his feet, he drinks 2 sips and attempts the experience in front of ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy122",
+    "text": "${player}, if you've ever drunk while hiding in toilets, drink 2 sips and explain why you were hiding to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy123",
+    "text": "Everyone who has ever had an argument with an object while drunk drinks 2 sips. ${player} tells his argument.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy124",
+    "text": "${player}, if you've ever drunk while in a meeting (video off), drink 2 sips and mime the meeting to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy125",
+    "text": "If ${player} has ever tried to convince someone he hadn't been drinking while drunk, he drinks 2 sips and recreates his performance for ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy126",
+    "text": "${player}, if you've ever drunk while in a store, drink 3 sips and explain how you did it to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy127",
+    "text": "Everyone who has ever had conversations with strangers on the internet while drunk drinks 2 sips. ${player} tells his conversation.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy128",
+    "text": "${player}, if you've ever drunk while at the movies, drink 2 sips and tell ${player} what movie you were watching.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy129",
+    "text": "If ${player} has ever tried to drink while hanging upside down, he drinks 2 sips and ${player} helps him get back upright.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy130",
+    "text": "${player}, if you've ever drunk while in an elevator, drink 2 sips and explain to ${player} how you avoided the cameras.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy131",
+    "text": "Everyone who has ever tried to hitchhike while drunk drinks 2 sips. ${player} mimes his hitchhiking technique.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy132",
+    "text": "${player}, if you've ever drunk while in a public park, drink 2 sips and describe your secret spot to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy133",
+    "text": "If ${player} has ever had a conversation with Siri/Alexa while drunk, he drinks 2 sips and renews the conversation.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy134",
+    "text": "${player}, if you've ever drunk while in a taxi, drink 2 sips and explain the driver's reaction to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy135",
+    "text": "Everyone who has ever tried to drink while on a ride drinks 2 sips. ${player} describes the sensation.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy136",
+    "text": "${player}, if you've ever drunk while at your workplace after hours, drink 2 sips and tell ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy137",
+    "text": "If ${player} has ever taken an alcohol nap in the middle of the afternoon, he drinks 2 sips and ${player} wishes him good night.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy138",
+    "text": "${player}, if you've ever drunk while in a queue, drink 2 sips and explain how you did it to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy139",
+    "text": "Everyone who has ever had a spiritual revelation while drunk drinks 2 sips. ${player} shares his wisdom.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy140",
+    "text": "${player}, if you've ever drunk while in a place where it was forbidden, drink 3 sips and explain your act of rebellion to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy141",
+    "text": "If ${player} has ever organized a drinking game with rules he invented, he drinks 2 sips and explains his game to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy142",
+    "text": "${player}, if you've ever drunk while at a funeral, drink 2 sips and explain the circumstances to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy143",
+    "text": "Everyone who has ever had a nostalgia crisis while drunk drinks 2 sips. ${player} tells his memories.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy144",
+    "text": "${player}, if you've ever drunk while in a hospital, drink 2 sips and explain how you did it to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy145",
+    "text": "If ${player} has ever tried to drink while in a swimming pool, he drinks 2 sips and ${player} throws him a life ring.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy146",
+    "text": "${player}, if you've ever drunk while on a plane, drink 2 sips and mime the takeoff to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy147",
+    "text": "Everyone who has ever had a conversation with their conscience while drunk drinks 2 sips. ${player} lets us hear his conscience.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy148",
+    "text": "${player}, if you've ever drunk while on a train, drink 2 sips and tell ${player} about your journey.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy149",
+    "text": "If ${player} has ever tried to drink while in a tree, he drinks 2 sips and ${player} helps him get down.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy150",
+    "text": "${player}, if you've ever drunk while in a fitting room, drink 2 sips and explain your strategy to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy151",
+    "text": "Everyone who has ever had an argument with their shoes while drunk drinks 2 sips. ${player} shows us the fight.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy152",
+    "text": "${player}, if you've ever drunk while in a church, drink 2 sips and ${player} blesses you.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy153",
+    "text": "If ${player} has ever tried to drink while standing on a chair, he drinks 2 sips and ${player} watches his stability.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy154",
+    "text": "${player}, if you've ever drunk while in a shopping mall, drink 2 sips and describe your shopping route to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy155",
+    "text": "Everyone who has ever had a conversation with a poster/photo while drunk drinks 2 sips. ${player} introduces us to his conversation partner.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy156",
+    "text": "${player}, if you've ever drunk while in a car (as a passenger), drink 2 sips and explain the trip to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy157",
+    "text": "If ${player} has ever tried to drink while lying on his back, he drinks 2 sips and ${player} helps him sit up.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy158",
+    "text": "${player}, if you've ever drunk while in a library, drink 2 sips and whisper your story to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy159",
+    "text": "Everyone who has ever had an artistic revelation while drunk drinks 2 sips. ${player} gives us a demonstration.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy160",
+    "text": "${player}, if you've ever drunk while in a museum, drink 2 sips and give your art critique to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy161",
+    "text": "If ${player} has ever tried to drink while in a tent, he drinks 2 sips and ${player} lights him an imaginary campfire.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy162",
+    "text": "${player}, if you've ever drunk while in a public pool, drink 2 sips and explain how you avoided the lifeguard to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy163",
+    "text": "Everyone who has ever had a conversation with their phone while drunk drinks 2 sips. ${player} has the conversation for us.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy164",
+    "text": "${player}, if you've ever drunk while in a fast food restaurant, drink 2 sips and order your meal from ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy165",
+    "text": "If ${player} has ever tried to drink while in a phone booth, he drinks 2 sips and ${player} makes him a call.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy166",
+    "text": "${player}, if you've ever drunk while in a school, drink 2 sips and recite a lesson to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy167",
+    "text": "Everyone who has ever had an argument with their stomach while drunk drinks 2 sips. ${player} lets us hear the argument.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy168",
+    "text": "${player}, if you've ever drunk while in a gym, drink 2 sips and show your favorite exercise to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy169",
+    "text": "If ${player} has ever tried to drink while in a jacuzzi, he drinks 2 sips and ${player} brings him a towel.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy170",
+    "text": "${player}, if you've ever drunk while in a gas station, drink 2 sips and explain your road trip to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy171",
+    "text": "Everyone who has ever had a conversation with a stuffed animal while drunk drinks 2 sips. ${player} introduces us to his friend.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy172",
+    "text": "${player}, if you've ever drunk while in a casino, drink 2 sips and explain your gambling strategy to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy173",
+    "text": "If ${player} has ever tried to drink while in a sauna, he drinks 2 sips and ${player} gives him cold water.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy174",
+    "text": "${player}, if you've ever drunk while in an amusement park, drink 2 sips and scream like on a ride to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy175",
+    "text": "Everyone who has ever had a mathematical revelation while drunk drinks 2 sips. ${player} explains his theorem to us.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy176",
+    "text": "${player}, if you've ever drunk while in a zoo, drink 2 sips and imitate the animal you were watching to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy177",
+    "text": "If ${player} has ever tried to drink while in a laundromat, he drinks 2 sips and ${player} folds his laundry.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy178",
+    "text": "${player}, if you've ever drunk while in a theater, drink 2 sips and perform a scene for ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy179",
+    "text": "Everyone who has ever had a conversation with their clothes while drunk drinks 2 sips. ${player} gives us the dialogue.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy180",
+    "text": "${player}, if you've ever drunk while in a market, drink 2 sips and negotiate a price with ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy181",
+    "text": "If ${player} has ever tried to drink while in a hammock, he drinks 2 sips and ${player} gently rocks him.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy182",
+    "text": "${player}, if you've ever drunk while in a post office, drink 2 sips and send a love letter to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy183",
+    "text": "Everyone who has ever had an argument with their shadow while drunk drinks 2 sips. ${player} shows us the fight.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy184",
+    "text": "${player}, if you've ever drunk while in a pharmacy, drink 2 sips and explain your purchase to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy185",
+    "text": "If ${player} has ever tried to drink while in a beach hut, he drinks 2 sips and ${player} brings him sunscreen.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy186",
+    "text": "${player}, if you've ever drunk while in a bank, drink 2 sips and explain your banking operation to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy187",
+    "text": "Everyone who has ever had a conversation with their food while drunk drinks 2 sips. ${player} lets us taste.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy188",
+    "text": "${player}, if you've ever drunk while in a bookstore, drink 2 sips and tell a story to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy189",
+    "text": "If ${player} has ever tried to drink while in a broken elevator, he drinks 2 sips and ${player} calls for help.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy190",
+    "text": "${player}, if you've ever drunk while in a waiting room, drink 2 sips and explain what you were waiting for to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy191",
+    "text": "Everyone who has ever had a culinary revelation while drunk drinks 2 sips. ${player} gives us his recipe.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy192",
+    "text": "${player}, if you've ever drunk while in a tanning booth, drink 2 sips and ${player} checks your tan.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy193",
+    "text": "If ${player} has ever tried to drink while in a photo booth, he drinks 2 sips and ${player} takes his picture.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy194",
+    "text": "${player}, if you've ever drunk while in an art gallery, drink 2 sips and create a work of art for ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy195",
+    "text": "Everyone who has ever had a conversation with their GPS while drunk drinks 2 sips. ${player} gives us directions.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy196",
+    "text": "${player}, if you've ever drunk while in an arcade, drink 2 sips and challenge ${player} to your favorite game.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy197",
+    "text": "If ${player} has ever tried to drink while in a car wash, he drinks 2 sips and ${player} soaps his back.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy198",
+    "text": "${player}, if you've ever drunk while in a phone booth, drink 2 sips and make a call to ${player}.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy199",
+    "text": "Everyone who has ever had an argument with their watch while drunk drinks 2 sips. ${player} explains the temporal conflict to us.",
+    "pack": "guys"
+  },
+  {
+    "id": "gy200",
+    "text": "${player}, if you've ever drunk while in a pet store, drink 2 sips and ${player} finds you a pet. Congratulations, we've reached 200 questions!",
     "pack": "guys"
   }
-] 
+]

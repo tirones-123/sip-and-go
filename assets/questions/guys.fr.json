@@ -1,1502 +1,1002 @@
 [
   {
     "id": "gy1",
-    "text": "${player}, raconte le compliment le plus sincère qu'on t'ait fait récemment. Si ${player} trouve ça touchant, il distribue 2 gorgées.",
+    "text": "Si ${player} a déjà volé un panneau de signalisation en étant bourré, il boit 3 gorgées et raconte l'histoire.",
     "pack": "guys"
   },
   {
     "id": "gy2",
-    "text": "${player} et ${player}, inventez ensemble le pitch d'une série Netflix absurde. Le groupe vote, si c'est génial, vous distribuez 3 gorgées chacun.",
+    "text": "${player}, si tu as déjà cassé quelque chose d'important en étant saoul, bois 2 gorgées et ${player} devine ce que c'était.",
     "pack": "guys"
   },
   {
     "id": "gy3",
-    "text": "${player}, quelle est ta théorie du complot la plus stupide mais secrètement plausible ? Si ${player} y adhère, vous trinquez sans boire.",
+    "text": "Tous ceux qui ont déjà vomi pendant une soirée arrosée boivent 2 gorgées. ${player} raconte sa pire expérience.",
     "pack": "guys"
   },
   {
     "id": "gy4",
-    "text": "Entre ${player} et ${player}, celui qui a la playlist Spotify la plus embarrassante boit 2 gorgées (et on veut des preuves).",
+    "text": "${player}, si tu as déjà eu des problèmes avec la police en étant bourré, bois 4 gorgées et raconte (sans les détails compromettants).",
     "pack": "guys"
   },
   {
     "id": "gy5",
-    "text": "${player}, imite l'animal qui te représente le mieux selon toi. Si ${player} devine juste, il distribue 3 gorgées.",
+    "text": "Si ${player} s'est déjà fait refuser l'entrée d'un taxi à cause de son état, il boit 3 gorgées et mime la scène.",
     "pack": "guys"
   },
   {
     "id": "gy6",
-    "text": "${player} et ${player}, bataille de mimes : refaites votre série préférée en 30 secondes. Le groupe vote, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà fumé plus d'un paquet de cigarettes en une soirée d'alcool, bois 2 gorgées et distribue 2 gorgées à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy7",
-    "text": "${player}, révèle ton crush d'enfance le plus improbable. Si ${player} comprend ton goût douteux, vous buvez ensemble.",
+    "text": "Tous ceux qui se sont déjà réveillés loin de chez eux sans savoir comment boivent 3 gorgées. ${player} raconte son réveil le plus wtf.",
     "pack": "guys"
   },
   {
     "id": "gy8",
-    "text": "${player} choisit lequel d'entre vous survivrait le mieux dans un escape game. Cette personne distribue 2 gorgées à qui elle veut.",
+    "text": "${player}, si tu as déjà été interdit d'entrée dans un bar, bois 2 gorgées et explique pourquoi à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy9",
-    "text": "Si ${player} ou ${player} a déjà liké par erreur une photo Instagram d'il y a 2 ans, bois 3 gorgées de honte.",
+    "text": "Si ${player} a déjà appelé son travail pour dire qu'il était malade alors qu'il était juste en gueule de bois, il boit 2 gorgées.",
     "pack": "guys"
   },
   {
     "id": "gy10",
-    "text": "${player} et ${player}, concours de beatbox/rap improvisé sur le thème 'pizza'. Le public décide, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà fait un entonnoir (bière au entonnoir), bois 2 gorgées et montre ta technique à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy11",
-    "text": "${player}, vérité : quel super-pouvoir choisirais-tu et pourquoi ? Si ${player} pense que tu l'utiliserais mal, vous buvez tous les deux.",
+    "text": "Si ${player} a déjà perdu son permis de conduire à cause de l'alcool, il boit 5 gorgées et tout le monde trinque en sa 'mémoire'.",
     "pack": "guys"
   },
   {
     "id": "gy12",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de photos de nourriture sur son phone boit 2 gorgées (on compte les stories).",
+    "text": "${player}, si tu as déjà été viré d'une boîte pour comportement inapproprié, bois 3 gorgées et raconte (version censurée).",
     "pack": "guys"
   },
   {
     "id": "gy13",
-    "text": "${player}, montre ton dernier achat Amazon impulsif ou bois 3 gorgées de regret consumériste.",
+    "text": "Tous ceux qui ont déjà pris une trottinette électrique en étant saouls boivent 2 gorgées. ${player} mime la conduite.",
     "pack": "guys"
   },
   {
     "id": "gy14",
-    "text": "${player} et ${player}, débattez : pineapple sur pizza, pour ou contre ? Chacun a 30 secondes. Le groupe vote, le perdant boit.",
+    "text": "${player}, si tu as déjà reçu une douche de bière, bois 2 gorgées et ${player} t'en verse une symbolique.",
     "pack": "guys"
   },
   {
     "id": "gy15",
-    "text": "${player}, si tu pouvais redécouvrir un film pour la première fois, lequel ? Si ${player} n'a jamais vu ce film, il boit 2 gorgées de culture.",
+    "text": "Si ${player} a déjà bu de l'alcool un dimanche matin, il boit 2 gorgées et distribue 1 gorgée à chaque joueur.",
     "pack": "guys"
   },
   {
     "id": "gy16",
-    "text": "Si ${player} ou ${player} a déjà menti sur son âge sur une app, bois 2 gorgées par année de différence (maximum 4).",
+    "text": "${player}, si tu as déjà insulté quelqu'un en étant bourré, bois 2 gorgées et présente tes excuses à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy17",
-    "text": "${player} et ${player}, bataille de dad jokes. Chacun en sort une, le groupe vote. Le perdant boit 2 gorgées de second degré.",
+    "text": "Tous ceux qui ont déjà pris un médicament anti-gueule de bois boivent 1 gorgée. ${player} révèle son remède secret.",
     "pack": "guys"
   },
   {
     "id": "gy18",
-    "text": "${player}, note le style de chacun mais uniquement avec des références de dessins animés. Le score le plus bas boit 2 gorgées.",
+    "text": "${player}, si tu as déjà frappé quelqu'un en étant saoul, bois 4 gorgées et explique les circonstances à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy19",
-    "text": "Entre ${player} et ${player}, celui qui a le dernier message le plus cringe dans ses DMs boit 2 gorgées (sans montrer).",
+    "text": "Si ${player} a déjà trop bu lors d'un événement professionnel, il boit 3 gorgées et raconte sa gestion de crise.",
     "pack": "guys"
   },
   {
     "id": "gy20",
-    "text": "${player} raconte à ${player} ton rêve le plus bizarre récent. S'il trouve ça trop wtf pour être inventé, il boit 3 gorgées.",
+    "text": "${player}, si tu t'es déjà réveillé dehors après une soirée, bois 3 gorgées et décris ton réveil à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy21",
-    "text": "Si ${player} ou ${player} s'est déjà endormi pendant un film au cinéma, bois 2 gorgées par film (maximum 6).",
+    "text": "Tous ceux qui ont déjà abusé du all-inclusive dans un hôtel boivent 2 gorgées. ${player} raconte son record.",
     "pack": "guys"
   },
   {
     "id": "gy22",
-    "text": "${player} et ${player}, qui peut tenir un plank le plus longtemps ? Le perdant boit autant de gorgées que de secondes de différence (max 5).",
+    "text": "${player}, si tu as déjà eu besoin d'un seau d'urgence, bois 2 gorgées et mime la situation pour ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy23",
-    "text": "${player}, fais ton meilleur accent régional français. Si ${player} devine la région, tu distribues 3 gorgées.",
+    "text": "Si ${player} a déjà vomi sur un alcool au point de ne plus pouvoir le boire, il boit 2 gorgées et révèle lequel.",
     "pack": "guys"
   },
   {
     "id": "gy24",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps sur TikTok aujourd'hui boit 2 gorgées d'addiction aux réseaux.",
+    "text": "${player}, si tu as déjà conduit en ayant bu (même un peu), bois 5 gorgées et promets de ne plus jamais le faire.",
     "pack": "guys"
   },
   {
     "id": "gy25",
-    "text": "${player}, qui ici ferait le meilleur YouTubeur ? Cette personne fait un intro de chaîne improbable puis distribue 2 gorgées.",
+    "text": "Si ${player} s'est déjà fait refuser l'entrée d'une boîte car il était trop bourré, il boit 3 gorgées et mime la scène.",
     "pack": "guys"
   },
   {
     "id": "gy26",
-    "text": "Si ${player} ou ${player} a déjà googl 'comment impressionner' quelque chose, bois 2 gorgées de recherche désespérée.",
+    "text": "${player}, si tu as déjà fait tomber quelqu'un en le portant alors que tu étais saoul, bois 2 gorgées et excuses-toi à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy27",
-    "text": "${player} et ${player}, créez ensemble un business plan ridicule en 1 minute. Si le groupe investirait, vous distribuez 4 gorgées.",
+    "text": "Tous ceux qui ont déjà vomi dans l'appartement de quelqu'un d'autre boivent 3 gorgées. ${player} raconte son nettoyage.",
     "pack": "guys"
   },
   {
     "id": "gy28",
-    "text": "${player}, dans un zombie apocalypse, qui ici serait ton premier allié ? ${player} choisit à qui il distribue 3 gorgées en remerciement.",
+    "text": "${player}, si tu as déjà bu de l'alcool à plus de 70°, bois 2 gorgées et grimace pour ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy29",
-    "text": "Entre ${player} et ${player}, celui qui a le plus d'onglets ouverts sur son navigateur en ce moment boit 2 gorgées par tranche de 10.",
+    "text": "Si ${player} a déjà été accusé d'alcoolisme, il boit 2 gorgées et défend sa réputation auprès de ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy30",
-    "text": "${player} pense à son emoji le plus utilisé. ${player} doit le deviner en 3 essais. Si raté, vous buvez tous les deux en rigolant.",
+    "text": "${player}, si tu as déjà bu seul chez toi, bois 2 gorgées et explique pourquoi à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy31",
-    "text": "${player}, fais ton meilleur cri de guerre de gamer. Si ${player} pense que ça motiverait une équipe, tu distribues 3 gorgées.",
+    "text": "Tous ceux qui ont déjà révélé les secrets de quelqu'un d'autre en étant bourré boivent 2 gorgées. ${player} présente ses excuses.",
     "pack": "guys"
   },
   {
     "id": "gy32",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de memes sauvegardés sur son téléphone boit 2 gorgées de culture internet.",
+    "text": "${player}, si tu as déjà joué à un jeu à boire pendant un film, bois 2 gorgées et propose un film à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy33",
-    "text": "${player} et ${player}, créez la chorégraphie la plus ridicule sur 30 secondes. Le groupe vote, les perdants boivent 2 gorgées chacun.",
+    "text": "Si ${player} a déjà bu de l'alcool avant midi, il boit 2 gorgées et explique les circonstances à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy34",
-    "text": "${player}, imite comment tu cours quand tu es en retard. Si ${player} reconnaît cette course paniquée, vous trinquez.",
+    "text": "${player}, si tu as déjà bu des shots flambés, bois 2 gorgées et mime l'expérience pour ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy35",
-    "text": "Si ${player} ou ${player} a déjà fait semblant de comprendre un truc technique qu'il ne connaissait pas, bois 2 gorgées d'imposture.",
+    "text": "Tous ceux qui ont déjà dû être raccompagnés parce qu'ils étaient trop saouls boivent 3 gorgées. ${player} remercie son chauffeur.",
     "pack": "guys"
   },
   {
     "id": "gy36",
-    "text": "${player}, raconte ton moment le plus awkward en visioconférence. Si ${player} compatit, il boit 2 gorgées de télétravail solidaire.",
+    "text": "${player}, si tu es déjà arrivé au travail encore bourré, bois 4 gorgées et raconte comment tu as géré à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy37",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de trucs inutiles dans ses favoris YouTube boit 2 gorgées de procrastination.",
+    "text": "Si ${player} a déjà passé un examen avec la gueule de bois, il boit 2 gorgées et révèle sa note à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy38",
-    "text": "${player} et ${player}, débattez : team chien ou team chat ? Chacun a 45 secondes pour convaincre. Le groupe vote, le perdant boit.",
+    "text": "${player}, si tu as déjà forcé quelqu'un à boire, bois 2 gorgées et présente tes excuses à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy39",
-    "text": "${player}, montre ta photo de profil la plus ancienne que tu trouves. Si ${player} trouve ça iconique, tu distribues 3 gorgées.",
+    "text": "Tous ceux qui ont déjà joué à 'ne bois pas et conduis' sur Mario Kart boivent 2 gorgées. ${player} explique les règles.",
     "pack": "guys"
   },
   {
     "id": "gy40",
-    "text": "Si ${player} ou ${player} a déjà eu une phase 'influenceur' avec 3 abonnés, bois 2 gorgées par tentative de story sponsorisée ratée.",
+    "text": "${player}, si tu as déjà bu en faisant le poirier, bois 2 gorgées et tente la position devant ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy41",
-    "text": "${player}, fais le commentaire sportif le plus dramatique possible d'une action banale que fait ${player}. S'il joue le jeu, vous distribuez 2 gorgées chacun.",
+    "text": "Si ${player} a déjà joué au beer pong, il boit 1 gorgée et défie ${player} à une partie imaginaire.",
     "pack": "guys"
   },
   {
     "id": "gy42",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à customiser son avatar dans un jeu boit 2 gorgées de perfectionnisme virtuel.",
+    "text": "${player}, si tu n'as jamais été à l'Oktoberfest, bois 2 gorgées et ${player} t'explique ce que tu rates.",
     "pack": "guys"
   },
   {
     "id": "gy43",
-    "text": "${player}, invente la pub la plus nulle pour un objet du quotidien. Si ${player} achèterait le produit, tu distribues 4 gorgées de génie marketing.",
+    "text": "Tous ceux qui ont déjà été bourrés à l'étranger boivent 2 gorgées. ${player} raconte son pire réveil international.",
     "pack": "guys"
   },
   {
     "id": "gy44",
-    "text": "Si ${player} ou ${player} a déjà stalké quelqu'un sur LinkedIn pour des raisons non-professionnelles, bois 3 gorgées de curiosité mal placée.",
+    "text": "${player}, si tu as déjà mélangé weed et alcool, bois 3 gorgées et décris l'expérience à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy45",
-    "text": "${player} et ${player}, concours de compliments créatifs pour ${player}. Le plus original fait boire 2 gorgées à l'autre.",
+    "text": "Si ${player} a déjà organisé une dégustation de bière, il boit 1 gorgée et ${player} juge ses compétences de sommelier.",
     "pack": "guys"
   },
   {
     "id": "gy46",
-    "text": "${player}, raconte ton fail culinaire le plus épique. Si ${player} a vécu pire, vous buvez ensemble en solidarité de nuls en cuisine.",
+    "text": "${player}, si tu as déjà passé un appel embarrassant en étant bourré, bois 2 gorgées et reconstitue la conversation avec ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy47",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de notifications non-lues boit 1 gorgée par tranche de 50 (maximum 4 gorgées).",
+    "text": "Tous ceux qui se sont déjà endormis sur les toilettes en étant saouls boivent 2 gorgées. ${player} mime le réveil.",
     "pack": "guys"
   },
   {
     "id": "gy48",
-    "text": "${player}, fais ton meilleur pitch pour convaincre un alien de visiter la Terre. Si ${player} viendrait, tu distribues 3 gorgées galactiques.",
+    "text": "${player}, si tu as déjà fait semblant d'être plus bourré que tu ne l'étais, bois 2 gorgées et joue la comédie à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy49",
-    "text": "Si ${player} ou ${player} a déjà fait un achat à 3h du matin en scroll infini, bois 2 gorgées par objet inutile commandé.",
+    "text": "Si ${player} a déjà envoyé un message à son ex en étant saoul, il boit 3 gorgées et ${player} juge le niveau de cringe.",
     "pack": "guys"
   },
   {
     "id": "gy50",
-    "text": "${player} et ${player}, créez ensemble le concept du pire reality show possible. Si le groupe regarderait quand même, vous distribuez 4 gorgées de télé-poubelle assumée.",
+    "text": "${player}, si tu as déjà perdu au beer pong sans marquer un point, bois 3 gorgées et ${player} te console.",
     "pack": "guys"
   },
   {
     "id": "gy51",
-    "text": "${player}, imite ton prof le plus marquant du lycée. Si ${player} devine la matière, tu distribues 3 gorgées de nostalgie scolaire.",
+    "text": "Tous ceux qui ont déjà perdu des objets de valeur en étant bourré boivent 2 gorgées. ${player} raconte sa perte la plus wtf.",
     "pack": "guys"
   },
   {
     "id": "gy52",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de screenshots de conversations drôles boit 2 gorgées d'archivage compulsif.",
+    "text": "${player}, si tu as déjà eu une gueule de bois de plus de 24h, bois 2 gorgées et décris ton agonie à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy53",
-    "text": "${player} et ${player}, inventez ensemble un nom de groupe de rock ridicule. Si ça sonne pro, vous distribuez 3 gorgées chacun.",
+    "text": "Si ${player} a déjà ri de quelque chose d'inapproprié en étant bourré, il boit 2 gorgées et explique à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy54",
-    "text": "${player}, raconte ta technique la plus bizarre pour te motiver le matin. Si ${player} testerait, il boit 2 gorgées de curiosité matinale.",
+    "text": "${player}, si tu as déjà fait un 'vomissement tactique' pour continuer à boire, bois 2 gorgées et ${player} juge ta stratégie.",
     "pack": "guys"
   },
   {
     "id": "gy55",
-    "text": "Si ${player} ou ${player} a déjà fait une playlist pour impressionner quelqu'un, bois 2 gorgées par chanson ratée dans la séduction.",
+    "text": "Tous ceux qui ont déjà joué au Flunkyball boivent 2 gorgées. ${player} explique les règles aux non-initiés.",
     "pack": "guys"
   },
   {
     "id": "gy56",
-    "text": "${player}, fais ton meilleur pitch pour vendre un cours en ligne sur un truc que tu ne maîtrises pas. Si ${player} s'inscrirait, tu distribues 4 gorgées d'arnaque assumée.",
+    "text": "${player}, si tu as déjà participé à un festival de village qui a dégénéré, bois 2 gorgées et raconte l'ambiance à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy57",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de contacts dans son tel qu'il ne reconnaîtrait pas dans la rue boit 3 gorgées de réseau fantôme.",
+    "text": "Si ${player} a déjà joué à Edward Fortyhands, il boit 2 gorgées et explique le concept à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy58",
-    "text": "${player} et ${player}, débattez : dormir avec ou sans chaussettes ? Arguments scientifiques exigés. Le groupe vote, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà bu alors que tu étais malade, bois 2 gorgées et ${player} te soigne symboliquement.",
     "pack": "guys"
   },
   {
     "id": "gy59",
-    "text": "${player}, montre ton GIF de réaction le plus utilisé et explique pourquoi il résume ta personnalité. Si ${player} approuve, vous trinquez.",
+    "text": "Tous ceux qui ont déjà été proches du coma éthylique boivent 3 gorgées. ${player} raconte son sauvetage.",
     "pack": "guys"
   },
   {
     "id": "gy60",
-    "text": "Si ${player} ou ${player} a déjà menti sur ses compétences dans son CV, bois 2 gorgées par mensonge créatif (soyez honnêtes).",
+    "text": "${player}, si tu as déjà participé à un enterrement de vie de garçon mémorable, bois 2 gorgées et raconte à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy61",
-    "text": "${player}, fais le doublage le plus dramatique possible de ${player} qui mange quelque chose. S'il joue le jeu, vous distribuez 2 gorgées de théâtre alimentaire.",
+    "text": "Si ${player} a déjà fait boire quelqu'un avec des softs pour qu'il se sente inclus, il boit 1 gorgée et ${player} le félicite.",
     "pack": "guys"
   },
   {
     "id": "gy62",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des vidéos de chats boit 2 gorgées de mignonnerie assumée.",
+    "text": "${player}, si tu as déjà enchaîné plus de 5 shots d'affilée, bois 2 gorgées et mime la séquence pour ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy63",
-    "text": "${player}, invente la bio Tinder la plus honnête mais séduisante possible. Si ${player} swiperait à droite, tu distribues 3 gorgées de sincérité attractive.",
+    "text": "Tous ceux qui ont déjà payé la note de bar de leur partenaire boivent 2 gorgées. ${player} révèle le montant le plus élevé.",
     "pack": "guys"
   },
   {
     "id": "gy64",
-    "text": "Si ${player} ou ${player} a déjà eu une conversation sérieuse avec son animal de compagnie, bois 2 gorgées de Dr. Dolittle.",
+    "text": "${player}, si tu as déjà essayé de convaincre un antialcoolique de boire, bois 3 gorgées et présente tes excuses à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy65",
-    "text": "${player} et ${player}, créez ensemble la théorie de why les chaussettes disparaissent dans la machine. Si c'est convaincant, vous distribuez 3 gorgées de génie domestique.",
+    "text": "Si ${player} a déjà vomi pendant un jeu à boire, il boit 2 gorgées et explique comment il a continué à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy66",
-    "text": "${player}, raconte ton moment le plus random où tu t'es senti comme le protagoniste d'un film. Si ${player} capte la vibe, il boit 2 gorgées de cinéma mental.",
+    "text": "${player}, si tu as déjà été bourré en regardant un match de foot, bois 2 gorgées et crie un slogan avec ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy67",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de brouillons de messages jamais envoyés boit 2 gorgées d'indécision textuelle.",
+    "text": "Tous ceux qui ont déjà fait une Feuerzangenbowle boivent 2 gorgées. ${player} explique la recette.",
     "pack": "guys"
   },
   {
     "id": "gy68",
-    "text": "${player}, fais ton meilleur tutoriel YouTube pour une tâche ultra-basique (genre faire ses lacets). Si ${player} likrait, tu distribues 3 gorgées de pédagogie inutile.",
+    "text": "${player}, si tu as déjà fabriqué tes propres boissons alcoolisées, bois 2 gorgées et décris ta recette à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy69",
-    "text": "Si ${player} ou ${player} a déjà créé un compte avec un faux nom sur un réseau social, bois 2 gorgées par identité secrète.",
+    "text": "Si ${player} a déjà fait acheter de l'alcool par un majeur quand il était mineur, il boit 2 gorgées et remercie ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy70",
-    "text": "${player} et ${player}, inventez ensemble le slogan publicitaire le plus nul pour de l'eau. Si c'est si mauvais que c'en devient mémorable, vous distribuez 4 gorgées d'anti-marketing de génie.",
+    "text": "${player}, si tu as déjà hébergé quelqu'un à cause de son état d'ivresse, bois 1 gorgée et ${player} te remercie.",
     "pack": "guys"
   },
   {
     "id": "gy71",
-    "text": "${player}, fais ta meilleure imitation d'un GPS qui bug. Si ${player} suivrait quand même tes indications, tu distribues 3 gorgées de navigation chaotique.",
+    "text": "Tous ceux qui ont déjà bu avec des amis en visio (Zoom/Skype) boivent 2 gorgées. ${player} raconte l'expérience.",
     "pack": "guys"
   },
   {
     "id": "gy72",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de jeux installés mais jamais lancés boit 2 gorgées de collectionneur numérique compulsif.",
+    "text": "${player}, si tu as déjà mélangé de l'alcool fort dans la bière de quelqu'un, bois 3 gorgées et explique pourquoi à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy73",
-    "text": "${player} et ${player}, créez ensemble le concept du fast-food le plus bizarre. Si ${player} commanderait, vous distribuez 3 gorgées de génie culinaire douteux.",
+    "text": "Si ${player} a déjà eu une dispute d'ivrogne, il boit 2 gorgées et présente ses excuses à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy74",
-    "text": "${player}, raconte ton excuse la plus créative pour sécher un cours. Si ${player} l'aurait crue, tu distribues 2 gorgées de mensonge artistique.",
+    "text": "${player}, si tu as déjà pleuré en étant bourré, bois 2 gorgées et ${player} te console.",
     "pack": "guys"
   },
   {
     "id": "gy75",
-    "text": "Si ${player} ou ${player} a déjà passé plus d'une heure à customiser un personnage dans un jeu, bois 2 gorgées de perfectionnisme virtuel.",
+    "text": "Tous ceux qui ont déjà dansé sur une table boivent 2 gorgées. ${player} refait sa chorégraphie.",
     "pack": "guys"
   },
   {
     "id": "gy76",
-    "text": "${player}, fais ton meilleur commentaire de série comme si c'était un match de foot. Si ${player} accroche, vous buvez ensemble en mode supporters.",
+    "text": "${player}, si tu as déjà chanté du karaoké en étant saoul, bois 2 gorgées et donne une représentation à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy77",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de photos floues dans son tel boit 2 gorgées de photographe amateur.",
+    "text": "Si ${player} a déjà fait un strip-tease en étant bourré, il boit 3 gorgées et mime une version censurée pour ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy78",
-    "text": "${player} et ${player}, débattez : mieux vaut être trop chaud ou trop froid ? Arguments existentiels requis. Le groupe vote, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà embrassé quelqu'un que tu n'aurais jamais embrassé à jeun, bois 2 gorgées et raconte à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy79",
-    "text": "${player}, montre ta recherche Google la plus wtf de la semaine. Si ${player} a déjà cherché pareil, vous trinquez de solidarité bizarre.",
+    "text": "Tous ceux qui ont déjà envoyé un nude en étant bourré boivent 3 gorgées. ${player} juge le niveau de regret.",
     "pack": "guys"
   },
   {
     "id": "gy80",
-    "text": "Si ${player} ou ${player} a déjà fait semblant de dormir pour éviter une conversation, bois 3 gorgées de simulation de sommeil.",
+    "text": "${player}, si tu as déjà eu des trous de mémoire d'une soirée entière, bois 2 gorgées et ${player} t'aide à reconstituer.",
     "pack": "guys"
   },
   {
     "id": "gy81",
-    "text": "${player}, invente le pire nom d'utilisateur possible pour un site de rencontres. Si ${player} swiperait quand même, tu distribues 4 gorgées de charisme inversé.",
+    "text": "Si ${player} a déjà mangé n'importe quoi en ayant la fringale d'alcool, il boit 2 gorgées et décrit son plat à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy82",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des fails sur YouTube boit 2 gorgées de schadenfreude assumée.",
+    "text": "${player}, si tu as déjà fait pipi en public en étant bourré, bois 2 gorgées et ${player} monte la garde symboliquement.",
     "pack": "guys"
   },
   {
     "id": "gy83",
-    "text": "${player} et ${player}, créez ensemble la théorie la plus farfelue sur pourquoi les gens mettent des ananas sur les pizzas. Si c'est convaincant, vous distribuez 3 gorgées.",
+    "text": "Tous ceux qui ont déjà dormi dans leur vomi boivent 3 gorgées. ${player} raconte son réveil traumatisant.",
     "pack": "guys"
   },
   {
     "id": "gy84",
-    "text": "${player}, raconte ton moment le plus gênant en public transport. Si ${player} compatit, il boit 2 gorgées de transport solidarity.",
+    "text": "${player}, si tu as déjà utilisé l'alcool comme excuse pour tes actions, bois 2 gorgées et présente tes vraies excuses à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy85",
-    "text": "Si ${player} ou ${player} a déjà créé un mot de passe avec le nom de son crush, bois 2 gorgées par caractère sentimental.",
+    "text": "Si ${player} a déjà bu directement à la bouteille en soirée, il boit 2 gorgées et partage symboliquement avec ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy86",
-    "text": "${player}, fais ton meilleur pitch pour convaincre quelqu'un d'adopter une plante verte. Si ${player} adopterait, tu distribues 3 gorgées de green therapy.",
+    "text": "${player}, si tu as déjà eu une conversation profonde avec un inconnu en étant bourré, bois 2 gorgées et raconte à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy87",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de tabs ouverts sur son browser mobile boit 2 gorgées de procrastination numérique.",
+    "text": "Tous ceux qui ont déjà perdu leur téléphone en soirée boivent 2 gorgées. ${player} raconte ses recherches désespérées.",
     "pack": "guys"
   },
   {
     "id": "gy88",
-    "text": "${player} et ${player}, inventez ensemble le sport le plus inutile mais divertissant. Si le groupe voudrait regarder ça aux JO, vous distribuez 4 gorgées.",
+    "text": "${player}, si tu as déjà bu en cachette, bois 2 gorgées et explique pourquoi tu te cachais à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy89",
-    "text": "${player}, imite comment tu danses quand personne te regarde. Si ${player} reconnaît ses propres moves secrets, vous trinquez en mode freestyle.",
+    "text": "Si ${player} a déjà mélangé tous les alcools possibles dans un verre, il boit 2 gorgées et décrit le goût à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy90",
-    "text": "Si ${player} ou ${player} a déjà eu un crush sur un personnage de dessin animé, bois 2 gorgées de amour 2D.",
+    "text": "${player}, si tu as déjà eu une dispute avec un videur, bois 2 gorgées et rejoue la scène avec ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy91",
-    "text": "${player}, raconte ta technique la plus bizarre pour te rappeler quelque chose d'important. Si ${player} testerait, il boit 2 gorgées de mnémotechnique douteuse.",
+    "text": "Tous ceux qui ont déjà été jaloux en étant bourré boivent 2 gorgées. ${player} raconte sa crise de jalousie.",
     "pack": "guys"
   },
   {
     "id": "gy92",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de groupes WhatsApp où il parle jamais boit 2 gorgées de participant fantôme.",
+    "text": "${player}, si tu as déjà raconté la même histoire 10 fois dans la même soirée, bois 2 gorgées et raconte-la encore à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy93",
-    "text": "${player} et ${player}, créez ensemble le concept de l'appli mobile la plus inutile. Si c'est si absurde que ça marcherait, vous distribuez 3 gorgées.",
+    "text": "Si ${player} a déjà fait du shopping en ligne en étant bourré, il boit 2 gorgées et révèle son achat le plus wtf à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy94",
-    "text": "${player}, fais ton meilleur tuto pour une compétence que tu n'as pas. Si ${player} suivrait tes conseils, tu distribues 3 gorgées d'expertise fictive.",
+    "text": "${player}, si tu as déjà déclaré ton amour à quelqu'un en étant saoul, bois 2 gorgées et récite ta déclaration à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy95",
-    "text": "Si ${player} ou ${player} a déjà prétendu connaître une chanson juste en hochant la tête, bois 2 gorgées de fake appreciation musicale.",
+    "text": "Tous ceux qui ont déjà eu des blessures mystérieuses après une soirée boivent 2 gorgées. ${player} montre ses cicatrices.",
     "pack": "guys"
   },
   {
     "id": "gy96",
-    "text": "${player}, raconte ton rêve de gosse le plus improbable. Si ${player} aurait eu le même délire, vous buvez ensemble en nostalgie d'enfance.",
+    "text": "${player}, si tu as déjà eu une crise de paranoïa en étant bourré, bois 2 gorgées et explique tes craintes à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy97",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps sur Wikipedia à partir d'un article random boit 2 gorgées de rabbit hole intellectuel.",
+    "text": "Si ${player} a déjà bu en étant au volant (même à l'arrêt), il boit 4 gorgées et promet de ne plus jamais recommencer.",
     "pack": "guys"
   },
   {
     "id": "gy98",
-    "text": "${player} et ${player}, débattez : céréales puis lait ou lait puis céréales ? Chacun a 30 secondes. Le groupe vote, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà essayé de séduire quelqu'un avec des pick-up lines nulles en étant bourré, bois 2 gorgées et teste-les sur ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy99",
-    "text": "${player}, montre ton émoji combo le plus utilisé et explique son sens profond. Si ${player} capte la philosophie, tu distribues 2 gorgées de sagesse digitale.",
+    "text": "Tous ceux qui ont déjà fait semblant d'être plus bourré pour attirer l'attention boivent 2 gorgées. ${player} refait sa comédie.",
     "pack": "guys"
   },
   {
     "id": "gy100",
-    "text": "Si ${player} ou ${player} a déjà fait une recherche embarrassante par curiosité scientifique, bois 3 gorgées de recherche pour la science.",
+    "text": "${player}, si tu as déjà bu seul un soir de Saint-Valentin, bois 2 gorgées et ${player} te fait un câlin de consolation.",
     "pack": "guys"
   },
   {
     "id": "gy101",
-    "text": "${player}, invente la startup la plus inutile mais bankable. Si ${player} investirait, tu distribues 4 gorgées de visionnaire capitaliste absurde.",
+    "text": "Si ${player} a déjà créé un cocktail immonde en mélangeant n'importe quoi, il boit 2 gorgées et refait sa recette avec ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy102",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de vidéos de lui bourré sur son tel boit 2 gorgées de archives compromettantes.",
+    "text": "${player}, si tu as déjà bu dans un verre sale faute de mieux, bois 2 gorgées et ${player} te nettoie symboliquement un verre.",
     "pack": "guys"
   },
   {
     "id": "gy103",
-    "text": "${player} et ${player}, créez ensemble la pire combinaison de saveurs possible. Si ${player} goûterait par curiosité, vous distribuez 3 gorgées de courage culinaire.",
+    "text": "Tous ceux qui ont déjà eu des hallucinations en étant bourré boivent 3 gorgées. ${player} décrit ce qu'il voyait.",
     "pack": "guys"
   },
   {
     "id": "gy104",
-    "text": "${player}, raconte ton moment le plus awkward en dating. Si ${player} a vécu pire, vous buvez ensemble en solidarité de célibat difficile.",
+    "text": "${player}, si tu as déjà bu de l'alcool périmé, bois 2 gorgées et décris le goût à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy105",
-    "text": "Si ${player} ou ${player} a déjà eu des notifications de 5 apps de livraison différentes le même jour, bois 2 gorgées de foodie compulsif.",
+    "text": "Si ${player} a déjà léché quelque chose d'immonde en étant bourré, il boit 3 gorgées et ${player} lui donne de l'eau.",
     "pack": "guys"
   },
   {
     "id": "gy106",
-    "text": "${player}, fais ton meilleur accent de YouTubeur lifestyle. Si ${player} s'abonnerait, tu distribues 3 gorgées d'influence aspirationnelle.",
+    "text": "${player}, si tu as déjà essayé de faire de la cuisine étant bourré, bois 2 gorgées et décris ton plat à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy107",
-    "text": "Entre ${player} et ${player}, celui qui a eu le plus de faux espoirs avec une notif qui était juste une pub boit 2 gorgées de déception digitale.",
+    "text": "Tous ceux qui ont déjà eu une conversation sérieuse avec leur reflet en étant saoul boivent 2 gorgées. ${player} rejoue la scène.",
     "pack": "guys"
   },
   {
     "id": "gy108",
-    "text": "${player} et ${player}, inventez ensemble le concept du pire job d'été. Si c'est si nul que personne le ferait, vous distribuez 4 gorgées de génie anti-productif.",
+    "text": "${player}, si tu as déjà bu en étant en cours, bois 3 gorgées et raconte comment tu as géré à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy109",
-    "text": "${player}, imite ton reaction face à ton réveil qui sonne. Si ${player} se reconnaît dans cette agonie matinale, vous trinquez de solidarité de lève-tôt ratés.",
+    "text": "Si ${player} a déjà fait une déclaration d'amour à un objet inanimé en étant bourré, il boit 2 gorgées et renouvelle sa déclaration.",
     "pack": "guys"
   },
   {
     "id": "gy110",
-    "text": "Si ${player} ou ${player} a déjà fait semblant d'être occupé pour éviter une corvée, bois 2 gorgées de procrastination créative.",
+    "text": "${player}, si tu as déjà eu une phase où tu buvais seul tous les soirs, bois 2 gorgées et ${player} te rappelle que tu n'es pas seul.",
     "pack": "guys"
   },
   {
     "id": "gy111",
-    "text": "${player}, raconte ta théorie personnelle sur pourquoi les chargeurs disparaissent. Si ${player} adhère à ta théorie, tu distribues 3 gorgées de logique domestique.",
+    "text": "Tous ceux qui ont déjà bu de l'alcool directement depuis le distributeur boivent 2 gorgées. ${player} juge l'hygiène.",
     "pack": "guys"
   },
   {
     "id": "gy112",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à scroller sans rien chercher de précis boit 2 gorgées de scroll hypnotique.",
+    "text": "${player}, si tu as déjà essayé de pirater un distributeur d'alcool, bois 3 gorgées et explique ta technique à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy113",
-    "text": "${player} et ${player}, créez ensemble le pire conseil de vie possible. Si c'est si mauvais que ça en devient drôle, vous distribuez 3 gorgées de sagesse inversée.",
+    "text": "Si ${player} a déjà bu de l'alcool dans un gobelet en carton, il boit 2 gorgées et ${player} lui verse dans un vrai verre.",
     "pack": "guys"
   },
   {
     "id": "gy114",
-    "text": "${player}, fais ton meilleur pitch pour vendre un objet complètement inutile. Si ${player} achèterait par pure curiosité, tu distribues 4 gorgées de commercial de l'absurde.",
+    "text": "${player}, si tu as déjà eu une conversation philosophique avec un animal en étant bourré, bois 2 gorgées et résume tes conclusions à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy115",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il parlait à ses plantes, bois 2 gorgées de Dr. Green Thumb.",
+    "text": "Tous ceux qui ont déjà essayé de boire en se tenant sur les mains boivent 2 gorgées. ${player} tente l'expérience.",
     "pack": "guys"
   },
   {
     "id": "gy116",
-    "text": "${player}, raconte ton hack de flemme le plus ingénieux. Si ${player} admire ta créativité paresseuse, tu distribues 3 gorgées de génie de l'économie d'effort.",
+    "text": "${player}, si tu as déjà bu en étant dans un lieu de culte, bois 2 gorgées et demande pardon à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy117",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de conversations non-lues dans ses messages boit 2 gorgées de social anxiety numérique.",
+    "text": "Si ${player} a déjà organisé une fête arrosée chez ses parents, il boit 2 gorgées et explique sa stratégie de nettoyage à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy118",
-    "text": "${player} et ${player}, débattez : Team jour ou Team nuit ? Arguments biologiques acceptés. Le groupe vote, le perdant boit 2 gorgées de rythme circadien contrarié.",
+    "text": "${player}, si tu as déjà bu en étant au téléphone avec tes parents, bois 2 gorgées et rejoue la conversation avec ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy119",
-    "text": "${player}, montre ta photo la plus random sur ton tel et invente l'histoire derrière. Si ${player} trouve l'histoire plausible, tu distribues 3 gorgées de storytelling improvisé.",
+    "text": "Tous ceux qui ont déjà eu une crise de fou rire incontrôlable en étant bourré boivent 2 gorgées. ${player} nous fait rire.",
     "pack": "guys"
   },
   {
     "id": "gy120",
-    "text": "Si ${player} ou ${player} a déjà créé une playlist pour une activité spécifique très niche, bois 2 gorgées de curation musicale obsessionnelle.",
+    "text": "${player}, si tu as déjà bu en étant en pyjama en public, bois 2 gorgées et explique ta tenue à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy121",
-    "text": "${player}, fais ta meilleure pub pour un produit qui existe déjà mais personne en veut. Si ${player} achèterait après ton pitch, tu distribues 4 gorgées de marketing miracle.",
+    "text": "Si ${player} a déjà essayé de boire avec les pieds, il boit 2 gorgées et tente l'expérience devant ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy122",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de contacts Uber/Bolt différents boit 2 gorgées de nomadisme urbain compulsif.",
+    "text": "${player}, si tu as déjà bu en étant caché dans des toilettes, bois 2 gorgées et explique pourquoi tu te cachais à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy123",
-    "text": "${player} et ${player}, créez ensemble le concept du reality show le plus wholesome possible. Si ça passerait en prime time, vous distribuez 3 gorgées de télé bienveillante.",
+    "text": "Tous ceux qui ont déjà eu une dispute avec un objet en étant bourré boivent 2 gorgées. ${player} raconte sa dispute.",
     "pack": "guys"
   },
   {
     "id": "gy124",
-    "text": "${player}, raconte ton moment le plus random de bonheur inexplicable. Si ${player} comprend cette émotion bizarre, tu distribues 2 gorgées de joie spontanée.",
+    "text": "${player}, si tu as déjà bu en étant en réunion (visio coupée), bois 2 gorgées et mime la réunion à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy125",
-    "text": "Si ${player} ou ${player} a déjà eu une notification de temps d'écran qui l'a mis mal à l'aise, bois 2 gorgées de digital shame.",
+    "text": "Si ${player} a déjà essayé de convaincre quelqu'un qu'il n'avait pas bu alors qu'il était bourré, il boit 2 gorgées et refait sa prestation à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy126",
-    "text": "${player}, imite ton style de marche quand tu fais semblant d'être pressé. Si ${player} reconnaît cette démarche de fausse urgence, vous trinquez ensemble.",
+    "text": "${player}, si tu as déjà bu en étant dans un magasin, bois 3 gorgées et explique comment tu as fait à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy127",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de mots de passe différents boit 2 gorgées de paranoïa sécuritaire numérique.",
+    "text": "Tous ceux qui ont déjà eu des conversations avec des inconnus sur internet en étant bourré boivent 2 gorgées. ${player} raconte sa conversation.",
     "pack": "guys"
   },
   {
     "id": "gy128",
-    "text": "${player} et ${player}, débattez : mieux vaut oublier un anniversaire ou se rappeler du mauvais ? Le groupe vote, le perdant boit 2 gorgées de social anxiety.",
+    "text": "${player}, si tu as déjà bu en étant au cinéma, bois 2 gorgées et raconte quel film tu regardais à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy129",
-    "text": "${player}, montre ton autocorrect le plus wtf de la semaine. Si ${player} a eu pire, vous buvez ensemble en solidarité de technologie rebelle.",
+    "text": "Si ${player} a déjà essayé de boire en étant pendu la tête en bas, il boit 2 gorgées et ${player} l'aide à se remettre droit.",
     "pack": "guys"
   },
   {
     "id": "gy130",
-    "text": "Si ${player} ou ${player} a déjà commandé exactement la même chose au resto pour éviter de choisir, bois 2 gorgées de comfort food compulsif.",
+    "text": "${player}, si tu as déjà bu en étant dans un ascenseur, bois 2 gorgées et explique à ${player} comment tu as évité les caméras.",
     "pack": "guys"
   },
   {
     "id": "gy131",
-    "text": "${player}, invente le concept du cours universitaire le plus inutile mais passionnant. Si ${player} s'inscrirait, tu distribues 3 gorgées d'éducation alternative.",
+    "text": "Tous ceux qui ont déjà essayé de faire du stop en étant bourré boivent 2 gorgées. ${player} mime sa technique de stop.",
     "pack": "guys"
   },
   {
     "id": "gy132",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des gens jouer aux jeux vidéo boit 2 gorgées de gaming passif.",
+    "text": "${player}, si tu as déjà bu en étant dans un parc public, bois 2 gorgées et décris ton spot secret à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy133",
-    "text": "${player} et ${player}, créez ensemble la conspiration la plus bienveillante possible. Si ça expliquerait pourquoi le monde va mieux, vous distribuez 3 gorgées d'optimisme organisé.",
+    "text": "Si ${player} a déjà eu une conversation avec Siri/Alexa en étant bourré, il boit 2 gorgées et renouvelle la conversation.",
     "pack": "guys"
   },
   {
     "id": "gy134",
-    "text": "${player}, raconte ton fail technologique le plus embarrassant. Si ${player} a fait pareil, vous buvez ensemble en solidarité de noobs assumés.",
+    "text": "${player}, si tu as déjà bu en étant dans un taxi, bois 2 gorgées et explique la réaction du chauffeur à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy135",
-    "text": "Si ${player} ou ${player} a déjà créé un compte juste pour avoir une réduction, bois 2 gorgées de deal hunter professionnel.",
+    "text": "Tous ceux qui ont déjà essayé de boire en étant dans un manège boivent 2 gorgées. ${player} décrit la sensation.",
     "pack": "guys"
   },
   {
     "id": "gy136",
-    "text": "${player}, fais ton meilleur pitch pour convaincre un martien de s'installer sur Terre. Si ${player} déménagerait sur Mars après ton argument, tu distribues 4 gorgées de diplomatie interplanétaire.",
+    "text": "${player}, si tu as déjà bu en étant sur ton lieu de travail après les heures, bois 2 gorgées et raconte à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy137",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de screenshots de trucs qu'il a jamais relus boit 2 gorgées d'archivage inutile compulsif.",
+    "text": "Si ${player} a déjà fait une sieste d'alcool en plein après-midi, il boit 2 gorgées et ${player} lui souhaite une bonne nuit.",
     "pack": "guys"
   },
   {
     "id": "gy138",
-    "text": "${player} et ${player}, inventez ensemble le job du futur le plus improbable. Si ça pourrait exister en 2050, vous distribuez 3 gorgées de visionnaires du travail.",
+    "text": "${player}, si tu as déjà bu en étant dans une file d'attente, bois 2 gorgées et explique comment tu as fait à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy139",
-    "text": "${player}, imite comment tu réagis quand tu rates ton transport en commun de 30 secondes. Si ${player} reconnaît cette tragédie urbaine, vous trinquez de frustration partagée.",
+    "text": "Tous ceux qui ont déjà eu une révélation spirituelle en étant bourré boivent 2 gorgées. ${player} partage sa sagesse.",
     "pack": "guys"
   },
   {
     "id": "gy140",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il collectionnait un truc totalement random, bois 2 gorgées par objet encore en sa possession.",
+    "text": "${player}, si tu as déjà bu en étant dans un endroit où c'était interdit, bois 3 gorgées et explique ton acte de rébellion à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy141",
-    "text": "${player}, raconte ta technique la plus créative pour éviter une conversation téléphonique. Si ${player} admire ton génie anti-social, tu distribues 3 gorgées d'évitement artistique.",
+    "text": "Si ${player} a déjà organisé un jeu à boire avec des règles qu'il a inventées, il boit 2 gorgées et explique son jeu à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy142",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à essayer de se rappeler le nom d'un acteur boit 2 gorgées de tip-of-the-tongue syndrome.",
+    "text": "${player}, si tu as déjà bu en étant à un enterrement, bois 2 gorgées et explique les circonstances à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy143",
-    "text": "${player} et ${player}, créez ensemble le concept de l'émission de télé la plus relaxante. Si ça endormirait tout le monde, vous distribuez 3 gorgées de télé-thérapie.",
+    "text": "Tous ceux qui ont déjà eu une crise de nostalgie en étant bourré boivent 2 gorgées. ${player} raconte ses souvenirs.",
     "pack": "guys"
   },
   {
     "id": "gy144",
-    "text": "${player}, fais ton meilleur argumentaire pour convaincre quelqu'un d'adopter ton passe-temps le plus niche. Si ${player} testerait, tu distribues 3 gorgées de passion contagieuse.",
+    "text": "${player}, si tu as déjà bu en étant dans un hôpital, bois 2 gorgées et explique comment tu as fait à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy145",
-    "text": "Si ${player} ou ${player} a déjà prétendu avoir vu un film culte qu'il n'a jamais vu, bois 2 gorgées de culture fake assumée.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans une piscine, il boit 2 gorgées et ${player} lui lance une bouée.",
     "pack": "guys"
   },
   {
     "id": "gy146",
-    "text": "${player}, raconte ton moment le plus wtf en transport en commun. Si ${player} a vécu plus bizarre, vous buvez ensemble en solidarité de voyageurs urbains traumatisés.",
+    "text": "${player}, si tu as déjà bu en étant dans un avion, bois 2 gorgées et mime le décollage à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy147",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de photos de plats qu'il n'a jamais postées boit 2 gorgées de food photographe frustré.",
+    "text": "Tous ceux qui ont déjà eu une conversation avec leur conscience en étant bourré boivent 2 gorgées. ${player} nous fait entendre sa conscience.",
     "pack": "guys"
   },
   {
     "id": "gy148",
-    "text": "${player} et ${player}, débattez : mieux vaut être en avance partout ou toujours en retard ? Arguments psychologiques requis. Le groupe vote, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà bu en étant dans un train, bois 2 gorgées et raconte ton voyage à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy149",
-    "text": "${player}, montre ton dernier achat impulse sur internet et défends-le. Si ${player} trouve ça justifié, tu distribues 2 gorgées de consommation rationalisée.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans un arbre, il boit 2 gorgées et ${player} l'aide à redescendre.",
     "pack": "guys"
   },
   {
     "id": "gy150",
-    "text": "Si ${player} ou ${player} a déjà eu une période où il écoutait la même chanson en boucle pendant des heures, bois 2 gorgées de obsession musicale.",
+    "text": "${player}, si tu as déjà bu en étant dans une cabine d'essayage, bois 2 gorgées et explique ta stratégie à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy151",
-    "text": "${player}, invente le concept du service de livraison le plus absurde. Si ${player} commanderait par curiosité, tu distribues 4 gorgées d'innovation logistique délirante.",
+    "text": "Tous ceux qui ont déjà eu une dispute avec leurs chaussures en étant bourré boivent 2 gorgées. ${player} nous montre le combat.",
     "pack": "guys"
   },
   {
     "id": "gy152",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à optimiser l'organisation de son écran d'accueil boit 2 gorgées de perfectionnisme digital.",
+    "text": "${player}, si tu as déjà bu en étant dans une église, bois 2 gorgées et ${player} te bénit.",
     "pack": "guys"
   },
   {
     "id": "gy153",
-    "text": "${player} et ${player}, créez ensemble la théorie la plus farfelue sur pourquoi les clés USB ne rentrent jamais du bon côté. Si c'est scientifiquement plausible, vous distribuez 3 gorgées.",
+    "text": "Si ${player} a déjà essayé de boire en étant debout sur une chaise, il boit 2 gorgées et ${player} surveille sa stabilité.",
     "pack": "guys"
   },
   {
     "id": "gy154",
-    "text": "${player}, raconte ton mensonge le plus innocent mais persistent. Si ${player} a menti pareil, vous buvez ensemble en solidarité de mythomanes mignons.",
+    "text": "${player}, si tu as déjà bu en étant dans un centre commercial, bois 2 gorgées et décris ton parcours shopping à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy155",
-    "text": "Si ${player} ou ${player} a déjà eu une conversation avec un chatbot en pensant que c'était un humain, bois 3 gorgées de Turing test raté.",
+    "text": "Tous ceux qui ont déjà eu une conversation avec un poster/une photo en étant bourré boivent 2 gorgées. ${player} nous présente son interlocuteur.",
     "pack": "guys"
   },
   {
     "id": "gy156",
-    "text": "${player}, fais ton meilleur pitch pour rendre populaire un sport complètement nul. Si ${player} regarderait aux JO, tu distribues 4 gorgées de promoteur sportif visionnaire.",
+    "text": "${player}, si tu as déjà bu en étant dans une voiture (en tant que passager), bois 2 gorgées et explique le trajet à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy157",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de liens sauvegardés qu'il n'a jamais ouverts boit 2 gorgées de procrastination organisée.",
+    "text": "Si ${player} a déjà essayé de boire en étant couché sur le dos, il boit 2 gorgées et ${player} l'aide à se redresser.",
     "pack": "guys"
   },
   {
     "id": "gy158",
-    "text": "${player} et ${player}, inventez ensemble le concept du pire premier date. Si c'est si awkward que ça en devient mémorable, vous distribuez 3 gorgées de romance catastrophique.",
+    "text": "${player}, si tu as déjà bu en étant dans une bibliothèque, bois 2 gorgées et chuchote ton histoire à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy159",
-    "text": "${player}, imite ton style de course quand tu dois chopper un ascenseur. Si ${player} reconnaît cette course de l'espoir, vous trinquez de solidarité d'étage.",
+    "text": "Tous ceux qui ont déjà eu une révélation artistique en étant bourré boivent 2 gorgées. ${player} nous fait une démonstration.",
     "pack": "guys"
   },
   {
     "id": "gy160",
-    "text": "Si ${player} ou ${player} a déjà créé un faux événement dans son calendrier pour avoir l'air occupé, bois 2 gorgées de popularité simulée.",
+    "text": "${player}, si tu as déjà bu en étant dans un musée, bois 2 gorgées et fais ton critique d'art à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy161",
-    "text": "${player}, raconte ta technique la plus ingénieuse pour éviter de faire la vaisselle. Si ${player} adopte ta méthode, tu distribues 3 gorgées de génie domestique paresseux.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans une tente, il boit 2 gorgées et ${player} lui allume un feu de camp imaginaire.",
     "pack": "guys"
   },
   {
     "id": "gy162",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des vidéos de gens qui rangent boit 2 gorgées de satisfaction organisationnelle par procuration.",
+    "text": "${player}, si tu as déjà bu en étant dans une piscine municipale, bois 2 gorgées et explique comment tu as évité le maître-nageur à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy163",
-    "text": "${player} et ${player}, créez ensemble le concept de l'appli la plus bienveillante possible. Si ça améliorerait vraiment le monde, vous distribuez 4 gorgées de tech for good.",
+    "text": "Tous ceux qui ont déjà eu une conversation avec leur téléphone en étant bourré boivent 2 gorgées. ${player} nous fait la conversation.",
     "pack": "guys"
   },
   {
     "id": "gy164",
-    "text": "${player}, fais ton meilleur commentaire de cuisine comme si c'était un match de sport extrême. Si ${player} s'abonnerait à ta chaîne, tu distribues 3 gorgées de chef-commentateur.",
+    "text": "${player}, si tu as déjà bu en étant dans un fast-food, bois 2 gorgées et commande ton menu à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy165",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il notait sa journée sur une app, bois 2 gorgées de quantified self obsessionnel.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans une cabine téléphonique, il boit 2 gorgées et ${player} lui passe un appel.",
     "pack": "guys"
   },
   {
     "id": "gy166",
-    "text": "${player}, raconte ton hack le plus créatif pour faire croire que tu écoutes en réunion. Si ${player} a fait pareil, vous buvez ensemble en solidarité de meeting survivors.",
+    "text": "${player}, si tu as déjà bu en étant dans une école, bois 2 gorgées et récite une leçon à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy167",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de conversations avec des assistants vocaux par jour boit 2 gorgées de friendship with AI.",
+    "text": "Tous ceux qui ont déjà eu une dispute avec leur estomac en étant bourré boivent 2 gorgées. ${player} nous fait entendre la dispute.",
     "pack": "guys"
   },
   {
     "id": "gy168",
-    "text": "${player} et ${player}, débattez : mieux vaut rater le début ou la fin d'un film ? Arguments cinématographiques exigés. Le groupe vote, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà bu en étant dans une salle de sport, bois 2 gorgées et montre ton exercice préféré à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy169",
-    "text": "${player}, montre ton dernier message bizarre envoyé à 3h du matin. Si ${player} a envoyé pire, vous trinquez de solidarité de insomniaques textuellement dangereux.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans un jacuzzi, il boit 2 gorgées et ${player} lui apporte une serviette.",
     "pack": "guys"
   },
   {
     "id": "gy170",
-    "text": "Si ${player} ou ${player} a déjà eu une période où il regardait des vidéos de cheminées qui brûlent, bois 2 gorgées de relaxation digitale assumée.",
+    "text": "${player}, si tu as déjà bu en étant dans une station-service, bois 2 gorgées et explique ton roadtrip à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy171",
-    "text": "${player}, invente le concept du pire super-héros possible. Si ${player} regarderait quand même son film, tu distribues 4 gorgées de Marvel alternatif.",
+    "text": "Tous ceux qui ont déjà eu une conversation avec un animal en peluche en étant bourré boivent 2 gorgées. ${player} nous présente son ami.",
     "pack": "guys"
   },
   {
     "id": "gy172",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des compilations de fails d'animaux boit 2 gorgées de schadenfreude animalière innocente.",
+    "text": "${player}, si tu as déjà bu en étant dans un casino, bois 2 gorgées et explique ta stratégie de jeu à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy173",
-    "text": "${player} et ${player}, créez ensemble le concept du réseau social le plus wholesome. Si ça cartonnait vraiment, vous distribuez 3 gorgées de tech bienveillante.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans un sauna, il boit 2 gorgées et ${player} lui donne de l'eau fraîche.",
     "pack": "guys"
   },
   {
     "id": "gy174",
-    "text": "${player}, raconte ton moment le plus random où tu t'es senti comme dans un film. Si ${player} a vécu pareil, vous buvez ensemble en solidarité de protagonistes accidentels.",
+    "text": "${player}, si tu as déjà bu en étant dans un parc d'attractions, bois 2 gorgées et crie comme dans un manège à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy175",
-    "text": "Si ${player} ou ${player} a déjà créé un pseudo ridicule qu'il regrette maintenant, bois 2 gorgées par année où tu l'as gardé.",
+    "text": "Tous ceux qui ont déjà eu une révélation mathématique en étant bourré boivent 2 gorgées. ${player} nous explique son théorème.",
     "pack": "guys"
   },
   {
     "id": "gy176",
-    "text": "${player}, imite ton style de danse dans ta chambre à 2h du matin. Si ${player} reconnaît cette liberté nocturne, vous trinquez de solidarité de danseurs secrets.",
+    "text": "${player}, si tu as déjà bu en étant dans un zoo, bois 2 gorgées et imite l'animal que tu observais à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy177",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de groupes de discussion où il ne comprend plus le contexte boit 2 gorgées de confusion sociale chronique.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans une laverie automatique, il boit 2 gorgées et ${player} lui plie son linge.",
     "pack": "guys"
   },
   {
     "id": "gy178",
-    "text": "${player} et ${player}, débattez : mieux vaut avoir trop chaud sous la couette ou trop froid ? Arguments scientifiques du sommeil requis. Le groupe vote.",
+    "text": "${player}, si tu as déjà bu en étant dans un théâtre, bois 2 gorgées et joue une scène à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy179",
-    "text": "${player}, montre ta dernière recherche Google à 3h du matin et explique le contexte. Si ${player} comprend cette dérive nocturne, tu distribues 2 gorgées.",
+    "text": "Tous ceux qui ont déjà eu une conversation avec leurs vêtements en étant bourré boivent 2 gorgées. ${player} nous fait le dialogue.",
     "pack": "guys"
   },
   {
     "id": "gy180",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il s'abonnait à des chaînes YouTube qu'il regardait jamais, bois 2 gorgées de collectionneur de contenu.",
+    "text": "${player}, si tu as déjà bu en étant dans un marché, bois 2 gorgées et négocie un prix avec ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy181",
-    "text": "${player}, invente le concept du métier le plus relaxant possible. Si ${player} postulerait, tu distribues 3 gorgées de conseiller en carrière zen.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans un hammac, il boit 2 gorgées et ${player} le balance doucement.",
     "pack": "guys"
   },
   {
     "id": "gy182",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à expliquer des memes à ses parents boit 2 gorgées de traducteur générationnel.",
+    "text": "${player}, si tu as déjà bu en étant dans un bureau de poste, bois 2 gorgées et envoie une lettre d'amour à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy183",
-    "text": "${player} et ${player}, créez ensemble la théorie la plus farfelue sur pourquoi il pleut toujours quand on lave sa voiture. Si c'est convaincant, vous distribuez 3 gorgées.",
+    "text": "Tous ceux qui ont déjà eu une dispute avec leur ombre en étant bourré boivent 2 gorgées. ${player} nous montre le combat.",
     "pack": "guys"
   },
   {
     "id": "gy184",
-    "text": "${player}, raconte ton fail le plus embarrassant avec la technologie devant quelqu'un. Si ${player} compatit, il boit 2 gorgées de tech shame solidarity.",
+    "text": "${player}, si tu as déjà bu en étant dans une pharmacie, bois 2 gorgées et explique ton achat à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy185",
-    "text": "Si ${player} ou ${player} a déjà créé une fausse urgence pour partir plus tôt d'un truc chiant, bois 3 gorgées de génie de l'évasion sociale.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans une cabine de plage, il boit 2 gorgées et ${player} lui apporte de la crème solaire.",
     "pack": "guys"
   },
   {
     "id": "gy186",
-    "text": "${player}, fais ton meilleur pitch pour convaincre quelqu'un de regarder ta série préférée. Si ${player} ajouterait à sa watchlist, tu distribues 3 gorgées de prescription culturelle.",
+    "text": "${player}, si tu as déjà bu en étant dans une banque, bois 2 gorgées et explique ton opération bancaire à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy187",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de captures d'écrans de conversations drôles qu'il montre jamais à personne boit 2 gorgées d'archivage humoristique privé.",
+    "text": "Tous ceux qui ont déjà eu une conversation avec leur nourriture en étant bourré boivent 2 gorgées. ${player} nous fait goûter.",
     "pack": "guys"
   },
   {
     "id": "gy188",
-    "text": "${player} et ${player}, inventez ensemble le concept du pire job de rêve. Si c'est paradoxalement tentant, vous distribuez 3 gorgées de logique inversée.",
+    "text": "${player}, si tu as déjà bu en étant dans une librairie, bois 2 gorgées et raconte une histoire à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy189",
-    "text": "${player}, imite comment tu réagis quand tu découvres qu'il te reste 2% de batterie. Si ${player} reconnaît cette panique moderne, vous trinquez de solidarité énergétique.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans un ascenseur en panne, il boit 2 gorgées et ${player} appelle les secours.",
     "pack": "guys"
   },
   {
     "id": "gy190",
-    "text": "Si ${player} ou ${player} a déjà eu une période où il regardait des time-lapse de constructions pendant des heures, bois 2 gorgées de zen architectural.",
+    "text": "${player}, si tu as déjà bu en étant dans une salle d'attente, bois 2 gorgées et explique ce que tu attendais à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy191",
-    "text": "${player}, raconte ta technique la plus créative pour éviter de répondre immédiatement à un message important. Si ${player} adopte ta stratégie, tu distribues 3 gorgées.",
+    "text": "Tous ceux qui ont déjà eu une révélation culinaire en étant bourré boivent 2 gorgées. ${player} nous donne sa recette.",
     "pack": "guys"
   },
   {
     "id": "gy192",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à essayer de se rappeler où il a mis un truc boit 2 gorgées de détective domestique amateur.",
+    "text": "${player}, si tu as déjà bu en étant dans une cabine d'UV, bois 2 gorgées et ${player} vérifie ton bronzage.",
     "pack": "guys"
   },
   {
     "id": "gy193",
-    "text": "${player} et ${player}, créez ensemble le concept de l'invention la plus inutile mais satisfaisante. Si ça améliorerait la vie, vous distribuez 4 gorgées d'innovation zen.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans un photomaton, il boit 2 gorgées et ${player} prend sa photo.",
     "pack": "guys"
   },
   {
     "id": "gy194",
-    "text": "${player}, fais ton meilleur argumentaire pour convaincre quelqu'un que ton plat le plus nul est en fait génial. Si ${player} goûterait, tu distribues 3 gorgées de chef marketing.",
+    "text": "${player}, si tu as déjà bu en étant dans une galerie d'art, bois 2 gorgées et crée une œuvre pour ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy195",
-    "text": "Si ${player} ou ${player} a déjà prétendu aimer un truc populaire juste pour faire partie du groupe, bois 2 gorgées de conformisme social assumé.",
+    "text": "Tous ceux qui ont déjà eu une conversation avec leur GPS en étant bourré boivent 2 gorgées. ${player} nous donne des directions.",
     "pack": "guys"
   },
   {
     "id": "gy196",
-    "text": "${player}, raconte ton moment le plus wtf de procrastination productive. Si ${player} admire cette créativité anti-travail, tu distribues 2 gorgées de génie paresseux.",
+    "text": "${player}, si tu as déjà bu en étant dans une salle de jeux, bois 2 gorgées et défie ${player} à ton jeu préféré.",
     "pack": "guys"
   },
   {
     "id": "gy197",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de bookmarks dans son navigateur qu'il utilise jamais boit 2 gorgées de collection numérique compulsive.",
+    "text": "Si ${player} a déjà essayé de boire en étant dans un tunnel de lavage, il boit 2 gorgées et ${player} lui savonne le dos.",
     "pack": "guys"
   },
   {
     "id": "gy198",
-    "text": "${player} et ${player}, débattez : mieux vaut se lever tôt et être productif ou se coucher tard et être créatif ? Le groupe vote, le perdant boit 2 gorgées.",
+    "text": "${player}, si tu as déjà bu en étant dans une cabine téléphonique, bois 2 gorgées et passe un appel à ${player}.",
     "pack": "guys"
   },
   {
     "id": "gy199",
-    "text": "${player}, montre ton dernier screenshot ridicule et invente pourquoi tu l'as pris. Si ${player} trouve l'explication plausible, tu distribues 2 gorgées de storytelling improvisé.",
+    "text": "Tous ceux qui ont déjà eu une dispute avec leur montre en étant bourré boivent 2 gorgées. ${player} nous explique le conflit temporel.",
     "pack": "guys"
   },
   {
     "id": "gy200",
-    "text": "Si ${player} ou ${player} a déjà eu une conversation sérieuse avec son reflet, bois 2 gorgées de philosophie miroir assumée.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy201",
-    "text": "${player}, invente le concept du cours en ligne le plus spécialisé et inutile possible. Si ${player} s'inscrirait par curiosité, tu distribues 4 gorgées d'éducation de niche.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy202",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des gens dessiner/peindre en live boit 2 gorgées d'art therapy par procuration.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy203",
-    "text": "${player} et ${player}, créez ensemble la théorie la plus crédible sur pourquoi les chaussettes se font la malle. Si ça explique tout, vous distribuez 3 gorgées de résolution domestique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy204",
-    "text": "${player}, raconte ton mensonge le plus créatif pour éviter une sortie. Si ${player} l'aurait cru, tu distribues 2 gorgées de fiction sociale inventive.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy205",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il écoutait des bruits de pluie pour dormir, bois 2 gorgées de sommeil atmosphérique artificiel.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy206",
-    "text": "${player}, fais ton meilleur pitch pour un service complètement inutile mais relaxant. Si ${player} payerait pour, tu distribues 4 gorgées d'entrepreneur du bien-être absurde.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy207",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de conversations Messenger qu'il ose plus ouvrir boit 2 gorgées d'anxiété conversationnelle chronique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy208",
-    "text": "${player} et ${player}, inventez ensemble le concept du pire conseil de développement personnel. Si c'est anti-productif mais zen, vous distribuez 3 gorgées de sagesse inversée.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy209",
-    "text": "${player}, imite comment tu marches quand tu essaies de paraître confiant. Si ${player} reconnaît cette démarche de fake-it-till-you-make-it, vous trinquez ensemble.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy210",
-    "text": "Si ${player} ou ${player} a déjà créé un planning parfait qu'il a suivi exactement 0 jour, bois 3 gorgées d'organisation théorique compulsive.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy211",
-    "text": "${player}, raconte ta technique la plus bizarre pour te convaincre de faire du sport. Si ${player} testerait cette motivation, tu distribues 3 gorgées de coach mental créatif.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy212",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des vidéos de gens qui font le ménage boit 2 gorgées de satisfaction domestique voyeuriste.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy213",
-    "text": "${player} et ${player}, créez ensemble le concept de l'app la plus zen mais inutile. Si ça détendrait vraiment, vous distribuez 4 gorgées de tech wellness révolutionnaire.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy214",
-    "text": "${player}, fais ton meilleur commentaire sportif d'une activité banale que fait ${player}. S'il joue le jeu, vous distribuez 2 gorgées chacun de sport commentary délire.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy215",
-    "text": "Si ${player} ou ${player} a déjà fait semblant de connaître une référence culturelle pour pas passer pour un inculte, bois 2 gorgées de culture fake solidarity.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy216",
-    "text": "${player}, raconte ton hack le plus ingénieux pour avoir l'air occupé au travail. Si ${player} a testé pareil, vous buvez ensemble en solidarité de workplace ninjas.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy217",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de musique téléchargée qu'il écoute jamais boit 2 gorgées de DJ frustré collectionneur.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy218",
-    "text": "${player} et ${player}, débattez : mieux vaut tout planifier ou tout improviser ? Arguments philosophiques acceptés. Le groupe vote, le perdant boit 2 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy219",
-    "text": "${player}, montre ton dernier message non-envoyé le plus embarrassant. Si ${player} a failli envoyer pire, vous trinquez de solidarité de censure préventive.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy220",
-    "text": "Si ${player} ou ${player} a déjà eu une période où il s'endormait sur des podcasts de développement personnel, bois 2 gorgées d'auto-amélioration somnolente.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy221",
-    "text": "${player}, invente le concept du pire événement Meetup possible. Si ${player} y participerait quand même, tu distribues 4 gorgées de networking social masochiste.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy222",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des live-streams de gens qui travaillent boit 2 gorgées de productivité voyeuriste.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy223",
-    "text": "${player} et ${player}, créez ensemble le concept de la tradition familiale la plus wholesome mais bizarre. Si ça créerait de beaux souvenirs, vous distribuez 3 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy224",
-    "text": "${player}, raconte ton moment le plus random de fierté personnelle pour un truc complètement nul. Si ${player} comprend cette satisfaction, tu distribues 2 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy225",
-    "text": "Si ${player} ou ${player} a déjà créé un CV alternatif avec ses vraies compétences de la vie, bois 2 gorgées de honnêteté professionnelle assumée.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy226",
-    "text": "${player}, imite ton style de conduite quand tu connais pas le chemin mais que tu veux pas le dire. Si ${player} reconnaît cette navigation d'orgueil, vous trinquez.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy227",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de drafts d'emails jamais envoyés boit 2 gorgées de perfectionnisme paralysant numérique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy228",
-    "text": "${player} et ${player}, débattez : mieux vaut arriver en avance et attendre ou arriver pile à l'heure stressé ? Le groupe vote, le perdant boit 2 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy229",
-    "text": "${player}, montre ta dernière photo complètement ratée et explique ce que tu voulais capturer. Si ${player} voit ta vision artistique, tu distribues 2 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy230",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il se documentait obsessionnellement sur un hobby qu'il a jamais essayé, bois 2 gorgées de expertise théorique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy231",
-    "text": "${player}, invente le concept du défi social media le plus bienveillant possible. Si ça pourrait vraiment rendre les gens heureux, tu distribues 4 gorgées de viral positivity.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy232",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à optimiser les paramètres d'une app qu'il utilise jamais boit 2 gorgées de perfectionnisme digital vain.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy233",
-    "text": "${player} et ${player}, créez ensemble la théorie la plus logique sur pourquoi le WiFi marche mieux quand on le menace. Si c'est scientifiquement défendable, vous distribuez 3 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy234",
-    "text": "${player}, raconte ton fail le plus épique en essayant d'impressionner quelqu'un avec tes connaissances. Si ${player} compatit, il boit 2 gorgées de pretentious shame solidarity.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy235",
-    "text": "Si ${player} ou ${player} a déjà créé une routine matinale parfaite qu'il a tenue exactement 3 jours, bois 3 gorgées de motivation à géométrie variable.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy236",
-    "text": "${player}, fais ton meilleur pitch pour convaincre un extraterrestre que la bureaucratie terrestre est logique. Si ${player} croirait tes arguments, tu distribues 4 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy237",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de notifications push qu'il a jamais configurées boit 2 gorgées de chaos numérique assumé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy238",
-    "text": "${player} et ${player}, inventez ensemble le concept du jeu de société le plus relaxant mais compétitif. Si ça marcherait, vous distribuez 3 gorgées de game design zen.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy239",
-    "text": "${player}, imite comment tu réagis quand tu réalises que tu parles tout seul depuis 5 minutes. Si ${player} reconnaît cette gêne, vous trinquez de monologue solidarity.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy240",
-    "text": "Si ${player} ou ${player} a déjà eu une période où il collectionnait les screenshots de prix en promo qu'il achèterait jamais, bois 2 gorgées de deal hunting théorique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy241",
-    "text": "${player}, raconte ta technique la plus créative pour éviter de prendre une décision importante. Si ${player} adopte cette stratégie d'évitement, tu distribues 3 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy242",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des vidéos de gens qui organisent des espaces boit 2 gorgées de marie kondo therapy.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy243",
-    "text": "${player} et ${player}, créez ensemble le concept de l'invention qui résoudrait le problème le plus first-world. Si c'est nécessaire, vous distribuez 4 gorgées d'innovation privilege.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy244",
-    "text": "${player}, fais ton meilleur argumentaire pour expliquer pourquoi ton obsession la plus niche est en fait universelle. Si ${player} comprend, tu distribues 3 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy245",
-    "text": "Si ${player} ou ${player} a déjà prétendu avoir lu un livre qu'il a juste vu en résumé YouTube, bois 2 gorgées de culture accélérée assumée.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy246",
-    "text": "${player}, raconte ton moment le plus wtf de confiance en soi injustifiée. Si ${player} admire cette audace aveugle, tu distribues 2 gorgées de fake it till you make it assumé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy247",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de contacts dans son tel avec juste un prénom et aucun contexte boit 2 gorgées de networking mystérieux.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy248",
-    "text": "${player} et ${player}, débattez : mieux vaut toujours dire ce qu'on pense ou toujours être diplomate ? Arguments sociologiques bienvenus. Le groupe vote.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy249",
-    "text": "${player}, montre ton dernier achat online justifié par 'ça pourrait toujours servir'. Si ${player} trouve la logique imparable, tu distribues 2 gorgées de rationalisation shopping.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy250",
-    "text": "Si ${player} ou ${player} a déjà eu une conversation philosophique profonde avec un animal, bois 2 gorgées de Dr Dolittle métaphysique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy251",
-    "text": "${player}, invente le concept du service après-vente le plus bienveillant possible. Si ça révolutionnerait l'expérience client, tu distribues 4 gorgées de customer care visionnaire.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy252",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à créer des playlists qu'il partage jamais boit 2 gorgées de DJ secret frustré.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy253",
-    "text": "${player} et ${player}, créez ensemble la théorie la plus plausible sur pourquoi les clés de voiture se cachent toujours. Si ça explique tout, vous distribuez 3 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy254",
-    "text": "${player}, raconte ton mensonge le plus créatif pour expliquer pourquoi tu arrives en retard. Si ${player} l'utiliserait, tu distribues 2 gorgées de fiction ponctualité.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy255",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il écoutait la même playlist pendant des mois, bois 2 gorgées de confort zone musicale assumée.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy256",
-    "text": "${player}, fais ton meilleur pitch pour un cours de développement personnel complètement absurde. Si ${player} s'inscrirait, tu distribues 4 gorgées de life coach alternatif.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy257",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de conversations en cours qu'il sait plus comment continuer boit 2 gorgées d'impasse conversationnelle chronique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy258",
-    "text": "${player} et ${player}, inventez ensemble le concept du pire dating show mais le plus wholesome. Si ça passerait en prime time, vous distribuez 3 gorgées de télé-réalité éthique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy259",
-    "text": "${player}, imite comment tu marches quand tu veux donner l'impression d'aller quelque part d'important. Si ${player} reconnaît cette démarche de fausse mission, vous trinquez.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy260",
-    "text": "Si ${player} ou ${player} a déjà créé un système d'organisation parfait qu'il a abandonné au bout d'une semaine, bois 3 gorgées de productivité éphémère.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy261",
-    "text": "${player}, raconte ta technique la plus bizarre pour te motiver à sortir de ton lit. Si ${player} testerait cette méthode, tu distribues 3 gorgées de réveil créatif.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy262",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des gens jouer à des jeux qu'il possède boit 2 gorgées de gaming passif avancé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy263",
-    "text": "${player} et ${player}, créez ensemble le concept de l'émission TV la plus éducative mais divertissante. Si ça marcherait, vous distribuez 4 gorgées de edutainment révolutionnaire.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy264",
-    "text": "${player}, fais ton meilleur commentaire culinaire dramatique pendant que ${player} mange quelque chose. S'il joue le jeu, vous distribuez 2 gorgées chacun de food commentary épique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy265",
-    "text": "Si ${player} ou ${player} a déjà fait semblant d'avoir une connexion internet pourrie pour éviter une visioconférence, bois 2 gorgées de tech excuse créative.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy266",
-    "text": "${player}, raconte ton hack le plus ingénieux pour paraître productif pendant une journée de flemme totale. Si ${player} adopte ta technique, tu distribues 3 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy267",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de fichiers téléchargés qu'il retrouve plus boit 2 gorgées de bordel numérique organisé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy268",
-    "text": "${player} et ${player}, débattez : mieux vaut être perfectionniste frustré ou satisfait de la médiocrité ? Arguments psychologiques bienvenus. Le groupe vote.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy269",
-    "text": "${player}, montre ton dernier screenshot de conversation bizarre et explique le contexte. Si ${player} a vécu pareil, vous trinquez de solidarité communicationnelle chaotique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy270",
-    "text": "Si ${player} ou ${player} a déjà eu une période où il s'endormait sur des documentaires qu'il trouvait passionnants, bois 2 gorgées de culture somnolente paradoxale.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy271",
-    "text": "${player}, invente le concept du pire podcast possible mais que tu écouterais quand même. Si ${player} s'abonnerait, tu distribues 4 gorgées de audio masochisme assumé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy272",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des gens faire des trucs qu'il sait déjà faire boit 2 gorgées de procrastination éducative.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy273",
-    "text": "${player} et ${player}, créez ensemble le concept de la notification la plus utile mais que personne activerait. Si c'est paradoxal, vous distribuez 3 gorgées de génie UX inversé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy274",
-    "text": "${player}, raconte ton moment le plus random où tu as eu l'impression d'être dans un film d'espionnage. Si ${player} comprend ce trip, tu distribues 2 gorgées de protagoniste secret.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy275",
-    "text": "Si ${player} ou ${player} a déjà créé un planning de révisions parfait qu'il a suivi 10 minutes, bois 3 gorgées d'optimisme académique chronique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy276",
-    "text": "${player}, imite ton style de frappe au clavier quand tu es en colère contre ton ordi. Si ${player} reconnaît cette violence digitale, vous trinquez de rage tech partagée.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy277",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de photos de plats qu'il a mangés seul boit 2 gorgées de food photography solitaire assumée.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy278",
-    "text": "${player} et ${player}, débattez : mieux vaut avoir raison et être seul ou avoir tort et être populaire ? Arguments sociophilosophiques requis. Le groupe vote.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy279",
-    "text": "${player}, montre ton dernier message envoyé au mauvais groupe et explique le malentendu. Si ${player} a fait pire, vous trinquez de communication chaotique solidarity.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy280",
-    "text": "Si ${player} ou ${player} a déjà eu une phase où il regardait des compilations de satisfying videos pendant des heures, bois 2 gorgées de zen therapy numérique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy281",
-    "text": "${player}, invente le concept du pire life hack possible qui marcherait vraiment. Si ${player} testerait, tu distribues 4 gorgées de productivité contre-intuitive.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy282",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à regarder des live-streams de jeux qu'il pourrait jouer lui-même boit 2 gorgées de gaming voyeurisme avancé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy283",
-    "text": "${player} et ${player}, créez ensemble la théorie la plus logique sur pourquoi on se souvient des paroles de chansons mais pas des cours. Si c'est scientifique, vous distribuez 3 gorgées.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy284",
-    "text": "${player}, raconte ton fail le plus épique en essayant d'utiliser de l'argot jeune. Si ${player} compatit de cette tentative, il boit 2 gorgées de linguistic cringe solidarity.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy285",
-    "text": "Si ${player} ou ${player} a déjà créé un compte sur une plateforme juste pour lurker sans jamais participer, bois 2 gorgées de social media voyeurisme pur.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy286",
-    "text": "${player}, fais ton meilleur pitch pour convaincre quelqu'un que procrastiner est en fait une forme d'art. Si ${player} achète ta philosophie, tu distribues 4 gorgées de zen procrastination.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy287",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de screenshots de trucs drôles qu'il a jamais repartagés boit 2 gorgées de collection humoristique privée compulsive.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy288",
-    "text": "${player} et ${player}, inventez ensemble le concept du métier le plus spécialisé mais nécessaire. Si ça créerait vraiment de l'emploi, vous distribuez 3 gorgées d'innovation économique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy289",
-    "text": "${player}, imite comment tu réagis quand quelqu'un te dit qu'il faut qu'on se voie plus souvent. Si ${player} reconnaît cette panique sociale, vous trinquez ensemble.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy290",
-    "text": "Si ${player} ou ${player} a déjà eu une période où il téléchargeait des apps qu'il utilisait une fois puis oubliait, bois 2 gorgées de collection numérique éphémère.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy291",
-    "text": "${player}, raconte ta technique la plus créative pour éviter de ranger ta chambre. Si ${player} adopte cette stratégie d'évitement domestique, tu distribues 3 gorgées de génie anti-ménage.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy292",
-    "text": "Entre ${player} et ${player}, celui qui a passé le plus de temps à customiser des avatars dans des jeux qu'il joue plus boit 2 gorgées de perfectionnisme virtuel nostalgique.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy293",
-    "text": "${player} et ${player}, créez ensemble le concept de la tradition moderne la plus wholesome. Si ça améliorerait la société, vous distribuez 4 gorgées de social innovation bienveillante.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy294",
-    "text": "${player}, fais ton meilleur commentaire de télé-réalité pendant que ${player} fait une action banale. S'il joue le jeu, vous distribuez 2 gorgées chacun de reality TV commentary.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy295",
-    "text": "Si ${player} ou ${player} a déjà fait semblant de comprendre une blague pour pas casser l'ambiance, bois 2 gorgées de rire diplomatique assumé.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy296",
-    "text": "${player}, raconte ton hack le plus ingénieux pour éviter une conversation awkward. Si ${player} utilise ta technique d'évasion sociale, tu distribues 3 gorgées de ninja conversationnel.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy297",
-    "text": "Entre ${player} et ${player}, celui qui a le plus de mots dans son historique de recherche qu'il assume pas boit 2 gorgées de Google shame collectif.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy298",
-    "text": "${player} et ${player}, débattez : mieux vaut être toujours en avance mais stressé ou toujours en retard mais détendu ? Arguments temporels philosophiques bienvenus.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy299",
-    "text": "${player}, montre ton dernier truc sauvegardé 'pour plus tard' que tu regarderas jamais. Si ${player} fait pareil, vous trinquez de procrastination curation solidarity.",
-    "pack": "guys"
-  },
-  {
-    "id": "gy300",
-    "text": "Si ${player} ou ${player} a déjà eu une conversation motivante avec son reflet avant un truc important, bois 2 gorgées de self-coaching miroir assumé. Félicitations, on a atteint les 300 questions !",
+    "text": "${player}, si tu as déjà bu en étant dans une animalerie, bois 2 gorgées et ${player} te trouve un animal de compagnie. Félicitations, on a atteint les 200 questions !",
     "pack": "guys"
   }
 ]

@@ -1,71 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <!-- SEO Meta Tags -->
-  <title>SIP&GO! - Ultimate Drinking Game App for Epic Parties</title>
-  <meta name="description" content="Transform your parties with SIP&GO! - 1500+ drinking game questions, 5 themed packs, and endless fun. Free classic pack, multilingual support. Download now!">
-  <link rel="canonical" href="https://www.sip-and-go.com/">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#F3C53F">
-  
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SZWMFEFM8"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>SIP&GO! - Jeu à Boire</title>
+    <!-- The 'react-native-web' recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+    <meta name="description" content="Application de jeu à boire ultime pour vos soirées">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#0B0E1A">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SZWMFEFM8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-3SZWMFEFM8');
-  </script>
-  
-  <!-- Smart redirect logic -->
-  <script>
-    (function() {
-      // Check if we're in dev mode
-      const urlParams = new URLSearchParams(window.location.search);
-      const isDevMode = urlParams.get('dev') === 'true';
-      const secretKey = urlParams.get('seokey') === 'maxime2024';
-      
-      // Skip redirection if in dev mode or using secret key
-      if (isDevMode || secretKey) {
-        console.log('SEO redirection bypassed');
-        return;
-      }
-      
-      // Check if the request is from a search engine crawler
-      const userAgent = navigator.userAgent.toLowerCase();
-      const isSearchEngine = /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebookexternalhit|twitterbot|linkedinbot|whatsapp/i.test(userAgent);
-      
-      // If it's a search engine bot, show landing page
-      if (isSearchEngine) {
-        window.location.href = '/landing.html';
-        return;
-      }
-      
-      // For regular users, redirect to the app
-      window.location.href = '/app.html';
-    })();
-  </script>
-  
-  <!-- Fallback noscript redirect for bots -->
-  <noscript>
-    <meta http-equiv="refresh" content="0;url=/landing.html">
-  </noscript>
-</head>
-<body>
-  <!-- This page should redirect immediately, but just in case -->
-  <div style="text-align: center; padding: 50px; font-family: sans-serif;">
-    <p>Loading SIP&GO!...</p>
-    <p>If you are not redirected, <a href="/app.html">click here to play</a> or <a href="/landing.html">visit our homepage</a>.</p>
-  </div>
-</body>
+      gtag('config', 'G-3SZWMFEFM8');
+    </script>
+  </head>
+
+  <body>
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"></div>
+    <script src="/_expo/static/js/web/AppEntry-dbce605a34027075a297cb9ddaa307d2.js" defer></script>
+  </body>
 </html>

@@ -1,152 +1,1997 @@
 [
   {
     "id": "co1",
-    "text": "${player} and ${player}, which one of you said 'I love you' first? The other person takes 2 sips.",
+    "text": "${player}, would you rather do the dishes every night or take out the trash even when it's raining? ${player} decides and whoever gets the worst chore drinks 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co2",
-    "text": "${player}, name three qualities of ${player}. For each one the group approves, your partner takes 1 sip.",
+    "text": "${player} and ${player}, would you rather wake up early on weekends or sleep in until noon? Those who disagree drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co3",
-    "text": "All couples: the person who takes the longest to get ready in the morning takes 2 sips.",
+    "text": "${player}, would you rather leave your socks everywhere or pick up ${player}'s? Your partner gives out 3 sips if you admit your laziness.",
     "pack": "couples"
   },
   {
     "id": "co4",
-    "text": "${player} and ${player}, make each other drink. If either of you spills, both take 2 additional sips.",
+    "text": "All couples: would you rather cook together in chaos or have one cook while the other relaxes? The chaos cooks drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co5",
-    "text": "${player}, what was your first impression of ${player}? If it wasn't positive, take 3 sips.",
+    "text": "${player}, would you rather choose the movie tonight or let ${player} decide? Whoever gives in drinks 2 sips of goodwill.",
     "pack": "couples"
   },
   {
     "id": "co6",
-    "text": "Couples game: ${player} and ${player}, count to three then point to who apologizes first after a fight.",
+    "text": "${player} and ${player}, who would rather have control of the remote? The other drinks 3 sips and can negotiate.",
     "pack": "couples"
   },
   {
     "id": "co7",
-    "text": "${player}, if you could change one habit of ${player}, what would it be? Your partner drinks if they agree.",
+    "text": "All couples: spotless apartment or organized mess? The neat freaks drink 2 sips, the messy ones give out.",
     "pack": "couples"
   },
   {
     "id": "co8",
-    "text": "All couples: the most jealous person in the relationship takes 2 sips.",
+    "text": "${player}, would you rather share all your food with ${player} or protect your plate? If you share, your partner drinks 2 sips of gratitude.",
     "pack": "couples"
   },
   {
     "id": "co9",
-    "text": "${player} and ${player}, take turns naming things that annoy you about each other. First to run out of ideas takes 3 sips.",
+    "text": "${player} and ${player}, would you rather grocery shop together or delegate to one? Whoever goes alone can make the other drink 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co10",
-    "text": "${player}, what's the most embarrassing moment of ${player} that you witnessed? They take 2 sips.",
+    "text": "${player}, would you rather sleep with the window open even in winter or everything closed? If ${player} disagrees, negotiate or drink 2 sips each.",
     "pack": "couples"
   },
   {
     "id": "co11",
-    "text": "Couples game: the person who made the first move takes 2 sips.",
+    "text": "Couples game: separate blankets or blanket war? Blanket thieves drink 3 sips automatically.",
     "pack": "couples"
   },
   {
     "id": "co12",
-    "text": "${player}, do your best impression of ${player}. The group rates it 1 to 10; below 5, you drink that many sips.",
+    "text": "${player}, would you rather get ready quickly in the morning or take your time? ${player} drinks 2 sips if they're always waiting for you.",
     "pack": "couples"
   },
   {
     "id": "co13",
-    "text": "All couples: the more forgetful partner takes 2 sips. If there's disagreement, the group votes.",
+    "text": "All couples: would you rather have help without asking or be asked first? The interventionists drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co14",
-    "text": "${player}, name ${player}'s guilty pleasure. If correct, your partner takes 2 sips. If wrong, you take 3.",
+    "text": "${player}, would you rather have a quick breakfast or Sunday brunch with ${player}? The foodie gives out 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co15",
-    "text": "Couples swap phones for 30 seconds. Each person can open one app of their choice on their partner's phone.",
+    "text": "${player} and ${player}, do you manage the budget down to the penny or keep financial independence? The accountants drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co16",
-    "text": "${player}, what's the most romantic thing ${player} has done for you? If everyone finds it cute, your partner distributes 3 sips.",
+    "text": "${player}, would you rather have a quiet movie night or go out to a restaurant with ${player}? Vote, the loser drinks 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co17",
-    "text": "All couples: the better cook in the relationship distributes 3 sips. If there's disagreement, the group votes.",
+    "text": "All couples: backpacking adventure vacation or all-inclusive hotel? Adventurers give 2 sips to the lazy ones.",
     "pack": "couples"
   },
   {
     "id": "co18",
-    "text": "${player}, tell us about your worst date with ${player}. They take 2 sips afterward.",
+    "text": "${player}, would you rather have a surprise weekend organized by ${player} or plan together? If you trust them, your partner drinks 2 pressure sips.",
     "pack": "couples"
   },
   {
     "id": "co19",
-    "text": "Couples game: the partner most likely to check their phone during dinner takes 2 sips.",
+    "text": "Couples game: material gifts or experiences to share? Materialists drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co20",
-    "text": "${player} and ${player}, rate your first kiss out of 10. If scores differ by more than 2 points, you both drink the difference.",
+    "text": "${player} and ${player}, big birthday party or intimate celebration? Act out your last birthday, the most sober drinks 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co21",
-    "text": "All couples: the partner who spends the most on useless things takes 2 sips.",
+    "text": "All couples: explore a new city or return to your favorite spots? The routine lovers drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co22",
-    "text": "${player}, what does ${player} think is your most annoying habit? If you guess wrong, take 3 sips.",
+    "text": "${player}, would you rather chat for hours at a café with ${player} or do sports together? Athletes make philosophers drink 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co23",
-    "text": "Couples game: on three, point to who said 'I love you' first. Couples who disagree both take 2 sips.",
+    "text": "Couples game: game night with friends or romantic one-on-one? The least romantic drink 2 shameful sips.",
     "pack": "couples"
   },
   {
     "id": "co24",
-    "text": "${player}, what would be ${player}'s ideal date night? Your partner drinks if you're right.",
+    "text": "${player}, would you rather have hidden sweet notes or public declarations? If ${player} blushes, they give out 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co25",
-    "text": "All couples: the partner who spends the most time in the bathroom takes 2 sips.",
+    "text": "All couples: football match or ballet? Those who disagree drink 2 sips and negotiate.",
     "pack": "couples"
   },
   {
     "id": "co26",
-    "text": "${player}, what song reminds you most of ${player}? If they don't know the song, you take 2 sips.",
+    "text": "${player}, nature walk or shopping with ${player}? The city person drinks 3 sips, the hiker gives out.",
     "pack": "couples"
   },
   {
     "id": "co27",
-    "text": "Couples game: the more stubborn partner takes 3 sips. If there's disagreement, the group votes.",
+    "text": "Couples game: trendy new restaurant or your usual spot? Culinary adventurers make routine lovers drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co28",
-    "text": "${player} and ${player}, give each other a compliment. The group votes for the most sincere; loser takes 2 sips.",
+    "text": "${player} and ${player}, handmade gift or expensive gift? Whoever has given a failed gift drinks 3 sips.",
     "pack": "couples"
   },
   {
     "id": "co29",
-    "text": "All couples: the partner most likely to fall asleep during a movie takes 2 sips.",
+    "text": "All couples: vacation with other couples or just the two of you? The social ones drink 2 sips.",
     "pack": "couples"
   },
   {
     "id": "co30",
-    "text": "${player}, what's the weirdest gift ${player} has given you? If it was actually thoughtful, distribute 3 sips.",
+    "text": "${player}, would you rather watch the sunset in silence with ${player} or sunrise after an all-nighter? Romantics give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co31",
+    "text": "${player} and ${player}, do you settle disputes hot or cold? Whoever sulks longest drinks 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co32",
+    "text": "Couples game: need space or immediate cuddle after a fight? The cuddlers drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co33",
+    "text": "${player}, do you speak up when ${player} annoys you or keep it to yourself? Diplomats drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co34",
+    "text": "All couples: constructive criticism or let it be? Those who can't handle criticism drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co35",
+    "text": "${player}, would you rather talk about your feelings or show them through actions to ${player}? The reserved ones drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co36",
+    "text": "${player} and ${player}, deep discussions or light conversations? Act out your last serious discussion, the most dramatic drinks 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co37",
+    "text": "Couples game: lots of questions when something's wrong or let them come to you? The curious drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co38",
+    "text": "${player}, do you confide in ${player} first or your friends? If it's not your partner, they give out 3 hurt sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co39",
+    "text": "All couples: forgive easily or need time? The grudge holders drink 2 therapeutic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co40",
+    "text": "${player} and ${player}, would you rather have your needs guessed or express them clearly? Failed telepaths drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co41",
+    "text": "${player}, do you approach serious topics with ${player} in a planned way or spontaneously? Strategists drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co42",
+    "text": "All couples: laugh about past fights or never mention them? Share one, the most ridiculous drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co43",
+    "text": "${player}, cute nicknames in public with ${player} or discretion? If you have an embarrassing one, drink 3 sips together.",
+    "pack": "couples"
+  },
+  {
+    "id": "co44",
+    "text": "${player} and ${player}, long apology message or face-to-face discussion? Whoever has the worst technique drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co45",
+    "text": "Couples game: defend your partner even when they're wrong or stay objective? Blind lawyers drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co46",
+    "text": "${player}, would you rather have long silent cuddles or chat late into the night with ${player}? Chatterboxes drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co47",
+    "text": "All couples: endless foreplay or straight to the point? The impatient drink 2 modest sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co48",
+    "text": "${player}, passionate kisses in public or discrete gestures with ${player}? Exhibitionists give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co49",
+    "text": "${player} and ${player}, give or receive a massage? The most selfish drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co50",
+    "text": "Couples game: try new things or stick to the classics? The routine lovers drink 2 adventurous sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co51",
+    "text": "${player}, talk about fantasies with ${player} or keep the mystery? The mysterious drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co52",
+    "text": "All couples: dim light or complete darkness? Vote discreetly, minority drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co53",
+    "text": "${player}, whispered sweet nothings or direct compliments to ${player}? Demo it, the most romantic gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co54",
+    "text": "${player} and ${player}, shower or romantic bath? Water savers drink 2 ecological sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co55",
+    "text": "Couples game: surprise or be surprised? Control freaks drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co56",
+    "text": "${player}, morning or evening cuddles with ${player}? Late risers drink 3 morning sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co57",
+    "text": "All couples: hand in hand or arm around waist? The least tactile drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co58",
+    "text": "${player}, naughty little gifts or sensual experiences with ${player}? Prudes drink 3 blushing sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co59",
+    "text": "${player} and ${player}, would you rather remember your first kiss or first 'I love you'? Share, the cutest makes the group drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co60",
+    "text": "Couples game: spontaneity or prepared atmosphere? Planners drink 2 improvisation sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co61",
+    "text": "${player}, talk about future plans with ${player} or enjoy the present? Future-stressed drink 3 zen sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co62",
+    "text": "All couples: live in the city or countryside? City and country folk face off, minority drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co63",
+    "text": "${player}, kids or world tour with ${player}? Debate for 30 seconds, the least convincing drinks 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co64",
+    "text": "${player} and ${player}, big wedding or intimate ceremony? Those who've already mentally planned drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co65",
+    "text": "Couples game: dog, cat or nothing? The allergic drink 2 consolation sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co66",
+    "text": "${player}, demanding career or time for ${player}? Workaholics drink 3 balance sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co67",
+    "text": "All couples: meet the in-laws quickly or wait? The brave drink 2 courageous sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co68",
+    "text": "${player}, Christmas separately with family or together? If ${player} disagrees, negotiate while drinking 2 sips each.",
+    "pack": "couples"
+  },
+  {
+    "id": "co69",
+    "text": "${player} and ${player}, save or enjoy now? The grasshoppers drink 3 sips, the ants give out.",
+    "pack": "couples"
+  },
+  {
+    "id": "co70",
+    "text": "Couples game: grow old here or move abroad? Homebodies drink 2 adventure sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co71",
+    "text": "${player}, established traditions or improvisation with ${player}? Organization maniacs drink 3 spontaneous sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co72",
+    "text": "All couples: mutual friends or separate circles? Those who don't like their partner's friends drink 2 diplomatic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co73",
+    "text": "${player}, imagine in 5 years or 20 years with ${player}? The most optimistic give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co74",
+    "text": "${player} and ${player}, professional success or time together? One minute debate, loser drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co75",
+    "text": "Couples game: pass on your values or total freedom for kids? Future strict parents drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co76",
+    "text": "${player}, matching t-shirts with ${player} or identical kitsch ringtones? The least confident drinks 3 shameful sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co77",
+    "text": "All couples: cut each other's hair or never? The bravest give out 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co78",
+    "text": "${player}, cheesy romantic comedy or horror movie with ${player}? Scaredy-cats drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co79",
+    "text": "${player} and ${player}, shared or separate Netflix account? If you know each other's passwords, toast 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co80",
+    "text": "Couples game: sing in the car or musical silence? Shower singers drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co81",
+    "text": "${player}, show your morning face to ${player} or hide your snoring? Morning perfects give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co82",
+    "text": "All couples: same favorite dish or culinary opposites? Picky eaters drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co83",
+    "text": "${player}, make a complicated dish for ${player} or have them assemble IKEA furniture? The least skilled drinks 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co84",
+    "text": "${player} and ${player}, who controls the decor? The design dictator drinks 2 power sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co85",
+    "text": "Couples game: share passwords or privacy? The secretive drink 2 mysterious sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co86",
+    "text": "${player}, cheesy duet karaoke or TikTok choreography with ${player}? Do a 10-second demo or drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co87",
+    "text": "All couples: inappropriate laughter or tears during a movie? The most emotional drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co88",
+    "text": "${player}, let ${player} choose your clothes or vice versa? The worst dressed drinks 3 fashion sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co89",
+    "text": "${player} and ${player}, funny private secret or tell friends everything? The gossips drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co90",
+    "text": "Couples game: naughty nap or pillow fight? The tired drink 2 energetic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co91",
+    "text": "${player}, does ${player} better imitate your voice or your mannerisms? Mandatory demonstration, best imitator gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co92",
+    "text": "All couples: wedding where you know no one or boring family dinner? Antisocials drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co93",
+    "text": "${player}, support ${player}'s weird passion or have them support yours? Confess your shameful passions and drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co94",
+    "text": "${player} and ${player}, ridiculous public slow dance or off-key serenade? The shy drink 2 courage sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co95",
+    "text": "Couples game: finish each other's sentences or secret language? Prove it now or drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co96",
+    "text": "${player}, face a spider for ${player} or flee together? Heroes give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co97",
+    "text": "All couples: tell your day in detail or just the essentials? Chatterboxes drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co98",
+    "text": "${player}, have an embarrassing photo of ${player} or vice versa? Show it or drink 3 shameful sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co99",
+    "text": "${player} and ${player}, lie about a bad gift or tell the truth? Kind hypocrites drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co100",
+    "text": "Couples final: ${player} and ${player}, day without phones together or constant communication? Put your phones down for 2 minutes or drink 5 sips! Congrats, you know each other better!",
+    "pack": "couples"
+  },
+  {
+    "id": "co101",
+    "text": "${player}, reveal the most creative lie ${player} told to avoid a chore. If they own it, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co102",
+    "text": "All couples: whoever has the most online accounts they forgot exist drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co103",
+    "text": "${player}, perfectly imitate the sound ${player} makes when getting up from the couch. If it's too realistic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co104",
+    "text": "${player} and ${player}, create a startup name based on your weirdest habits. The most ridiculous makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co105",
+    "text": "Couples game: whoever has the most food photos they never posted drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co106",
+    "text": "${player}, what's the weirdest way ${player} tests if something still works? If they demonstrate, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co107",
+    "text": "All couples: whoever has the most 'I'll buy this later' items in online carts drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co108",
+    "text": "${player}, reveal ${player}'s most ridiculous technique for pretending to listen in meetings. Your partner drinks if they recognize themselves.",
+    "pack": "couples"
+  },
+  {
+    "id": "co109",
+    "text": "${player} and ${player}, create a conspiracy theory about why your socks disappear. The most delirious gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co110",
+    "text": "Couples game: whoever has the most conversations with inanimate objects drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co111",
+    "text": "${player}, what's the most random thing ${player} does to avoid talking to neighbors? If they did it this week, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co112",
+    "text": "All couples: whoever has the most 'read later' notifications they'll never read drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co113",
+    "text": "${player}, imitate how ${player} pretends to look for something they already found. If it's spot-on, your partner drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co114",
+    "text": "${player} and ${player}, create a business plan to monetize your arguments. The most creative makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co115",
+    "text": "Couples game: whoever has the most muted WhatsApp groups drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co116",
+    "text": "${player}, reveal ${player}'s weirdest food superstition. If they insist it's logical, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co117",
+    "text": "All couples: whoever has the most blurry concert/event photos drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co118",
+    "text": "${player}, what's the most creative way ${player} avoids doing dishes? If they innovated recently, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co119",
+    "text": "${player} and ${player}, act out your first text argument. The group guesses the topic, otherwise you each drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co120",
+    "text": "Couples game: whoever has the most Pinterest tabs they'll never consult drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co121",
+    "text": "${player}, reveal the weirdest thing ${player} does when they think no one's watching. If they own it, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co122",
+    "text": "All couples: whoever has the most ongoing 'I'll do it tomorrow' drinks 2 sips per broken promise.",
+    "pack": "couples"
+  },
+  {
+    "id": "co123",
+    "text": "${player}, perfectly imitate the sound ${player} makes when thinking about what to eat. If it's too precise, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co124",
+    "text": "${player} and ${player}, create an instruction manual for managing each other's moods. The most useful makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co125",
+    "text": "Couples game: whoever has the most started but never finished movies/series drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co126",
+    "text": "${player}, what's ${player}'s wildest theory about why people are late? If they develop a new one, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co127",
+    "text": "All couples: whoever has the most passwords based on obvious things drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co128",
+    "text": "${player}, reveal the most creative way ${player} pretends to be sick. If they perfect their technique, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co129",
+    "text": "${player} and ${player}, create a YouTube tutorial on how to fail in your field. The funniest gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co130",
+    "text": "Couples game: whoever has the most phone contacts with just a first name drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co131",
+    "text": "${player}, what's the most random thing ${player} collects without realizing? If they count on their fingers, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co132",
+    "text": "All couples: whoever has the most paid subscriptions they never use drinks 2 sips per useless subscription.",
+    "pack": "couples"
+  },
+  {
+    "id": "co133",
+    "text": "${player}, imitate how ${player} pretends to understand when given directions. Your partner drinks if they recognize themselves.",
+    "pack": "couples"
+  },
+  {
+    "id": "co134",
+    "text": "${player} and ${player}, create a pitch for a reality show based on your daily life. The most watchable makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co135",
+    "text": "Couples game: whoever has the most identical sunset photos drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co136",
+    "text": "${player}, reveal ${player}'s weirdest morning motivation method. If they still practice it, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co137",
+    "text": "All couples: whoever says 'it'll work out' most often for doomed things drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co138",
+    "text": "${player}, what's ${player}'s most creative technique to avoid answering embarrassing questions? If they use it now, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co139",
+    "text": "${player} and ${player}, act out your silent arguing style. The group guesses the topic, otherwise you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co140",
+    "text": "Couples game: whoever has the most 'I'll think about it' that lead nowhere drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co141",
+    "text": "${player}, reveal ${player}'s most ridiculous transportation superstition. If they religiously follow it, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co142",
+    "text": "All couples: whoever has the most playlists named 'Untitled' or 'Music' drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co143",
+    "text": "${player}, perfectly imitate the sound ${player} makes when trying to get up quietly. If it's too realistic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co144",
+    "text": "${player} and ${player}, create a revolutionary product to solve your biggest couple problem. The most sellable makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co145",
+    "text": "Couples game: whoever has the most memes saved in 'Favorites' drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co146",
+    "text": "${player}, what's the weirdest way ${player} tests if food is still good? If they demonstrate, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co147",
+    "text": "All couples: whoever has the most phone reminders they ignore drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co148",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid tidying up. If they innovated this week, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co149",
+    "text": "${player} and ${player}, create a scientific method to prove who's right in your arguments. The most objective gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co150",
+    "text": "Couples game: whoever has the most mental conversations with people they never see drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co151",
+    "text": "${player}, what's the weirdest thing ${player} does with empty packaging? If they keep everything 'just in case', they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co152",
+    "text": "All couples: whoever has the most 'versions' of the same document on their computer drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co153",
+    "text": "${player}, perfectly imitate how ${player} explains why they're late. If it's too realistic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co154",
+    "text": "${player} and ${player}, create a board game based on your worst habits. The most playable makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co155",
+    "text": "Couples game: whoever has the most email drafts they'll never send drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co156",
+    "text": "${player}, reveal ${player}'s most creative method to avoid making decisions. If they're procrastinating now, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co157",
+    "text": "All couples: whoever has the most screenshots of 'important' stuff they can't find anymore drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co158",
+    "text": "${player}, what's ${player}'s most ridiculous work-related superstition? If they insist it works, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co159",
+    "text": "${player} and ${player}, act out your 'looking for keys' routine. If it's too similar, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co160",
+    "text": "Couples game: whoever has the most fitness apps they never open drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co161",
+    "text": "${player}, reveal the weirdest thing ${player} does to test if someone's really listening. If they test it now, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co162",
+    "text": "All couples: whoever has the most 'I'll watch this later' that are gathering dust drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co163",
+    "text": "${player}, imitate how ${player} pretends to understand an instruction manual. Your partner drinks if they recognize themselves.",
+    "pack": "couples"
+  },
+  {
+    "id": "co164",
+    "text": "${player} and ${player}, create an app to solve your communication problems. The most useful makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co165",
+    "text": "Couples game: whoever has the most songs in 'Recently Added' they don't listen to drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co166",
+    "text": "${player}, what's the most creative way ${player} avoids saying 'I don't know'? If they use a technique now, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co167",
+    "text": "All couples: whoever has the most expired promo codes in their emails drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co168",
+    "text": "${player}, reveal ${player}'s wildest theory about why printers never work. If they're somewhat right, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co169",
+    "text": "${player} and ${player}, create a survival manual for your respective families. The most diplomatic gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co170",
+    "text": "Couples game: whoever has the most bookmarked sites they never visit drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co171",
+    "text": "${player}, what's the most random thing ${player} does to avoid public restrooms? If they own their techniques, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co172",
+    "text": "All couples: whoever has the most shopping lists on their phone drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co173",
+    "text": "${player}, perfectly imitate the sound ${player} makes when trying to think silently. If it's spot-on, your partner gives out 3 shameful sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co174",
+    "text": "${player} and ${player}, create a theory about why you always lose the same objects. The most scientific makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co175",
+    "text": "Couples game: whoever has the most photos of restaurant boards/menus drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co176",
+    "text": "${player}, reveal ${player}'s weirdest method for choosing what to watch on Netflix. If they're still scrolling while we talk, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co177",
+    "text": "All couples: whoever says 'we should go out more' most often without organizing anything drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co178",
+    "text": "${player}, what's ${player}'s most creative technique to avoid answering work calls? If they perfect it, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co179",
+    "text": "${player} and ${player}, act out your negotiation style for who drives when you're lost. If it's a cold war, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co180",
+    "text": "Couples game: whoever has the most voice notes they send to themselves drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co181",
+    "text": "${player}, reveal ${player}'s most ridiculous cleaning superstition. If they follow weird rules, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co182",
+    "text": "All couples: whoever has the most downloads they don't remember making drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co183",
+    "text": "${player}, imitate how ${player} pretends to have understood everything in a meeting. Your partner drinks if they recognize themselves perfectly.",
+    "pack": "couples"
+  },
+  {
+    "id": "co184",
+    "text": "${player} and ${player}, create a consulting service based on your respective failures. The most honest gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co185",
+    "text": "Couples game: whoever has the most YouTube favorites they never watch drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co186",
+    "text": "${player}, what's the weirdest way ${player} convinces themselves they're not hungry? If they use psychological techniques, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co187",
+    "text": "All couples: whoever has the most 'things to fix' that have been sitting for months drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co188",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid important phone conversations. If they 'accidentally' hang up, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co189",
+    "text": "${player} and ${player}, create a product for couples who can't agree. The most revolutionary makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co190",
+    "text": "Couples game: whoever has the most legitimate vs fake 'I forgot' drinks 2 sips if it's 50/50.",
+    "pack": "couples"
+  },
+  {
+    "id": "co191",
+    "text": "${player}, what's the most random thing ${player} does when bored on public transport? If they're doing it discreetly now, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co192",
+    "text": "All couples: whoever has the most abandoned New Year's resolutions this year drinks 2 sips per resolution.",
+    "pack": "couples"
+  },
+  {
+    "id": "co193",
+    "text": "${player}, perfectly imitate how ${player} pretends to sleep to avoid a conversation. If it's too realistic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co194",
+    "text": "${player} and ${player}, create a guide to understanding each other's logic. The most necessary makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co195",
+    "text": "Couples game: whoever has the most 'this is important' things they never do drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co196",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid saying they're wrong. If they deny having methods, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co197",
+    "text": "All couples: whoever has the most desktop shortcuts they never use drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co198",
+    "text": "${player}, what's ${player}'s wildest social media superstition? If they post according to weird rules, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co199",
+    "text": "${player} and ${player}, act out how you make up after a fight. If it's too cute, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co200",
+    "text": "Milestone couples: ${player} and ${player}, reveal the most surprising discovery about each other while playing. Everyone toasts!",
+    "pack": "couples"
+  },
+  {
+    "id": "co201",
+    "text": "${player}, what's the weirdest thing ${player} does with old clothes? If they keep everything 'for DIY projects', they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co202",
+    "text": "All couples: whoever has the most useless 'might come in handy' items in closets drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co203",
+    "text": "${player}, perfectly imitate how ${player} negotiates with themselves not to exercise. If it's too realistic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co204",
+    "text": "${player} and ${player}, create a business plan to commercialize your most absurd arguments. The most creative makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co205",
+    "text": "Couples game: whoever has the most 'important' conversations postponed for later drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co206",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid grocery shopping. If they order everything online out of laziness, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co207",
+    "text": "All couples: whoever has the most notifications disabled out of procrastination drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co208",
+    "text": "${player}, what's ${player}'s most ridiculous exam/interview superstition? If they have weird rituals, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co209",
+    "text": "${player} and ${player}, act out how you choose a movie. If it takes more than 20 seconds, you each drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co210",
+    "text": "Couples game: whoever has the most 'I absolutely must do this' that never gets done drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co211",
+    "text": "${player}, reveal the weirdest thing ${player} does to avoid mental traffic jams. If they have weird meditation techniques, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co212",
+    "text": "All couples: whoever has the most 'interesting links' they never share drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co213",
+    "text": "${player}, imitate how ${player} pretends to have a good reason to be on their phone. Your partner drinks if they recognize themselves.",
+    "pack": "couples"
+  },
+  {
+    "id": "co214",
+    "text": "${player} and ${player}, create a method to predict each other's moods. The most accurate makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co215",
+    "text": "Couples game: whoever has the most 'I thought about it' without ever acting drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co216",
+    "text": "${player}, what's the most creative way ${player} avoids saying they don't understand? If they nod intelligently, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co217",
+    "text": "All couples: whoever has the most 'important documents' they can't find anymore drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co218",
+    "text": "${player}, reveal ${player}'s wildest theory about why they always lose at games. If they blame cosmic bad luck, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co219",
+    "text": "${player} and ${player}, create a survival guide for dealing with each other's quirks. The most diplomatic gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co220",
+    "text": "Couples game: whoever has the most 'good ideas' they immediately forget drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co221",
+    "text": "${player}, what's the most random thing ${player} does to procrastinate at work? If they reorganize their desk, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co222",
+    "text": "All couples: whoever has the most ongoing 'I'll quit tomorrow' drinks 2 sips per bad habit.",
+    "pack": "couples"
+  },
+  {
+    "id": "co223",
+    "text": "${player}, perfectly imitate how ${player} pretends to look for something they don't want to find. If it's spot-on, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co224",
+    "text": "${player} and ${player}, create an app for couples who argue about ridiculous things. The most useful makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co225",
+    "text": "Couples game: whoever has the most 'I'll start Monday' that never happens drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co226",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid reading terms and conditions. If they click 'Accept' without looking, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co227",
+    "text": "All couples: whoever has the most 'things to sort' piling up drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co228",
+    "text": "${player}, what's ${player}'s most ridiculous luck superstition? If they knock on wood now, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co229",
+    "text": "${player} and ${player}, act out your 'what are we doing tonight?' routine. If it's too realistic, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co230",
+    "text": "Couples game: whoever has the most 'that interests me' they never explore drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co231",
+    "text": "${player}, reveal the most creative thing ${player} does to avoid talking about feelings. If they change the subject now, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co232",
+    "text": "All couples: whoever has the most 'photos to sort' on their phone drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co233",
+    "text": "${player}, imitate how ${player} pretends to know a cultural reference. Your partner drinks if they recognize themselves perfectly.",
+    "pack": "couples"
+  },
+  {
+    "id": "co234",
+    "text": "${player} and ${player}, create a mediation service for your stupidest arguments. The most professional makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co235",
+    "text": "Couples game: whoever has the most 'I have to' that they constantly postpone drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co236",
+    "text": "${player}, what's the weirdest way ${player} tests if something is clean? If they sniff, they give out 3 confident sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co237",
+    "text": "All couples: whoever has the most 'it's temporary' things lasting for months drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co238",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid customer service calls. If they let it ring into the void, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co239",
+    "text": "${player} and ${player}, create a theory about why you can never throw away the same things. The most psychological gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co240",
+    "text": "Couples game: whoever has the most abandoned 'daily resolutions' drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co241",
+    "text": "${player}, what's the most random thing ${player} does when they can't find their words? If they make weird gestures, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co242",
+    "text": "All couples: whoever has the most 'final versions' of things that aren't final drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co243",
+    "text": "${player}, perfectly imitate how ${player} pretends to have listened to a long story. If it's too precise, your partner gives out 3 shameful sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co244",
+    "text": "${player} and ${player}, create an instruction manual to decode each other's silences. The most necessary makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co245",
+    "text": "Couples game: whoever has the most 'I'll do it right now' that are still pending drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co246",
+    "text": "${player}, reveal ${player}'s wildest phone superstition. If they turn it off/on for luck, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co247",
+    "text": "All couples: whoever has the most 'I'll watch the tutorial' without ever doing it drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co248",
+    "text": "${player}, what's the most creative way ${player} avoids admitting they forgot something important? If they're making excuses now, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co249",
+    "text": "${player} and ${player}, act out how you pretend you're not lost. If it's too realistic, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co250",
+    "text": "Quarter final couples: ${player} and ${player}, reveal the weirdest quirk you discovered about each other tonight. Everyone applauds and drinks!",
+    "pack": "couples"
+  },
+  {
+    "id": "co251",
+    "text": "${player}, what's the weirdest thing ${player} does with leftover food? If they make artistic creations, they give out 3 creative sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co252",
+    "text": "All couples: whoever has the most 'corners' to clean that will never be cleaned drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co253",
+    "text": "${player}, perfectly imitate how ${player} avoids answering when asked about their plans. If it's too realistic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co254",
+    "text": "${player} and ${player}, create a point system for your respective domestic contributions. The fairest makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co255",
+    "text": "Couples game: whoever has the most forgotten 'I'll take care of it' drinks 2 sips per promise.",
+    "pack": "couples"
+  },
+  {
+    "id": "co256",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid getting lost. If they pretend to know the way, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co257",
+    "text": "All couples: whoever has the most urgent 'it can wait' drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co258",
+    "text": "${player}, what's ${player}'s most ridiculous travel superstition? If they have pre-departure rituals, they give out 3 ritual sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co259",
+    "text": "${player} and ${player}, act out how you handle a Netflix conflict of interest. If it's too diplomatic, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co260",
+    "text": "Couples game: whoever has the most 'personal projects' in limbo drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co261",
+    "text": "${player}, reveal the most creative thing ${player} does to avoid family phone conversations. If they master the art of bad connection, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co262",
+    "text": "All couples: whoever has the most saved 'useful links' they never consult drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co263",
+    "text": "${player}, imitate how ${player} pretends to have a valid excuse for being on their phone. Your partner drinks if they recognize themselves.",
+    "pack": "couples"
+  },
+  {
+    "id": "co264",
+    "text": "${player} and ${player}, create a method to quantify your procrastination level. The most scientific makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co265",
+    "text": "Couples game: whoever has the most constantly postponed reminders drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co266",
+    "text": "${player}, what's the weirdest way ${player} tests water temperature? If they have ninja techniques, they give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co267",
+    "text": "All couples: whoever has the most important message drafts they never send drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co268",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid choosing a restaurant. If they always say 'whatever you want', they drink 3 diplomatic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co269",
+    "text": "${player} and ${player}, create an algorithm to predict your arguments. The most accurate gives out 4 prophetic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co270",
+    "text": "Couples game: whoever has the most unrealized 'good intentions' drinks 2 sips per intention.",
+    "pack": "couples"
+  },
+  {
+    "id": "co271",
+    "text": "${player}, what's the most random thing ${player} does when thinking too hard? If they make faces, they give out 3 expressive sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co272",
+    "text": "All couples: whoever has the most 'files to organize' in bulk drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co273",
+    "text": "${player}, perfectly imitate how ${player} pretends not to see an obvious task. If it's too precise, your partner gives out 3 guilty sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co274",
+    "text": "${player} and ${player}, create a business plan to monetize your avoidance techniques. The most profitable makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co275",
+    "text": "Couples game: whoever has the most 'I really must' that they never really do drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co276",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid thinking about important stuff. If they use the ostrich technique, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co277",
+    "text": "All couples: whoever has the most 'save for later' they'll never look at drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co278",
+    "text": "${player}, what's ${player}'s most ridiculous appearance superstition? If they have weird routines, they give out 3 vain sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co279",
+    "text": "${player} and ${player}, act out how you handle awkward silences. If it's too awkward, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co280",
+    "text": "Couples game: whoever has the most contacts they don't remember who they are drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co281",
+    "text": "${player}, reveal the most creative thing ${player} does to avoid making difficult decisions. If they mentally flip coins, they drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co282",
+    "text": "All couples: whoever has the most 'I should call' they never make drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co283",
+    "text": "${player}, imitate how ${player} pretends to understand technical explanations. Your partner drinks if they nod intelligently.",
+    "pack": "couples"
+  },
+  {
+    "id": "co284",
+    "text": "${player} and ${player}, create a translation service for your respective unspoken words. The most useful makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co285",
+    "text": "Couples game: whoever has the most 'it'll be quick' that never are drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co286",
+    "text": "${player}, what's the weirdest way ${player} avoids looking at the time when they're late? If they master the art of denial, they give out 3 temporal sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co287",
+    "text": "All couples: whoever has the most saved versions of identical things drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co288",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid money discussions. If they subtly change the subject, they drink 3 diplomatic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co289",
+    "text": "${player} and ${player}, create an alert system for your respective laziness peaks. The most preventive gives out 4 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co290",
+    "text": "Couples game: whoever has the most permanently open browser tabs drinks 2 sips per 10 tabs.",
+    "pack": "couples"
+  },
+  {
+    "id": "co291",
+    "text": "${player}, what's the most random thing ${player} does to save time in the morning? If they've optimized weird things, they give out 3 efficient sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co292",
+    "text": "All couples: whoever has the most life 'shortcuts' that waste time drinks 2 ironic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co293",
+    "text": "${player}, perfectly imitate how ${player} pretends to remember something they forgot. If it's too realistic, your partner gives out 3 amnesiac sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co294",
+    "text": "${player} and ${player}, create a detection guide for each other's white lies. The most accurate makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co295",
+    "text": "Couples game: whoever has the most abandoned 'I'll take this seriously' drinks 2 sips per project.",
+    "pack": "couples"
+  },
+  {
+    "id": "co296",
+    "text": "${player}, reveal ${player}'s wildest compliment superstition. If they knock on wood after each compliment, they drink 3 superstitious sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co297",
+    "text": "All couples: whoever has the most 'important notes' they never reread drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co298",
+    "text": "${player}, what's the most creative way ${player} avoids saying they don't feel like it? If they use scientific excuses, they drink 3 creative sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co299",
+    "text": "${player} and ${player}, act out how you negotiate the thermostat. If it's a cold war, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co300",
+    "text": "Milestone 300: ${player} and ${player}, reveal the most absurd thing you discovered about each other tonight. Triple toast mandatory!",
+    "pack": "couples"
+  },
+  {
+    "id": "co301",
+    "text": "${player}, what's the weirdest thing ${player} does to avoid family gatherings? If they master the art of medical excuses, they drink 3 strategic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co302",
+    "text": "All couples: whoever has the most ongoing 'work in progress' that will never finish drinks 2 sips per zombie project.",
+    "pack": "couples"
+  },
+  {
+    "id": "co303",
+    "text": "${player}, perfectly imitate how ${player} avoids giving their opinion on controversial stuff. If it's too diplomatic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co304",
+    "text": "${player} and ${player}, create a business model based on your complementary procrastinations. The most innovative makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co305",
+    "text": "Couples game: whoever has the most 'photos to delete' they never delete drinks 2 sips per 100 photos.",
+    "pack": "couples"
+  },
+  {
+    "id": "co306",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid admitting they took the wrong path. If they pretend to discover the neighborhood, they give out 3 explorer sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co307",
+    "text": "All couples: whoever has the most 'I'll watch this when I have time' drinks 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co308",
+    "text": "${player}, what's ${player}'s most ridiculous sleep superstition? If they have weird bedtime rituals, they drink 3 sleepy sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co309",
+    "text": "${player} and ${player}, act out how you handle telemarketing calls. If it's too creative, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co310",
+    "text": "Couples game: whoever has the most forgotten passwords this year drinks 2 sips per reset.",
+    "pack": "couples"
+  },
+  {
+    "id": "co311",
+    "text": "${player}, reveal the most creative thing ${player} does to avoid cleaning their car. If they wait for rain for automatic washing, they drink 3 meteorological sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co312",
+    "text": "All couples: whoever has the most 'I must remember this' they immediately forget drinks 2 amnesiac sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co313",
+    "text": "${player}, imitate how ${player} pretends to know a celebrity being discussed. Your partner drinks if they nod mysteriously.",
+    "pack": "couples"
+  },
+  {
+    "id": "co314",
+    "text": "${player} and ${player}, create a scoring system for your invisible contributions to the couple. The fairest makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co315",
+    "text": "Couples game: whoever has the most postponed 'I'll do this during vacation' drinks 2 sips per vacation project.",
+    "pack": "couples"
+  },
+  {
+    "id": "co316",
+    "text": "${player}, what's the weirdest way ${player} avoids answering important messages? If they master the art of 'seen', they give out 3 evasive sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co317",
+    "text": "All couples: whoever has the most 'backup' stuff they'll never use drinks 2 preventive sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co318",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid choosing a gift. If they offer 'experiences', they drink 3 experiential sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co319",
+    "text": "${player} and ${player}, create an algorithm to optimize your arguments. The most logical gives out 4 algorithmic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co320",
+    "text": "Couples game: whoever has the most 'techniques' to avoid phone calls drinks 2 sips per technique.",
+    "pack": "couples"
+  },
+  {
+    "id": "co321",
+    "text": "${player}, what's the most random thing ${player} does when bored at work? If they virtually reorganize their desktop, they give out 3 productive sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co322",
+    "text": "All couples: whoever has the most internet favorites organized in folders they never open drinks 2 organizational sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co323",
+    "text": "${player}, perfectly imitate how ${player} pretends to have read an article they just skimmed. If it's too precise, your partner gives out 3 literary sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co324",
+    "text": "${player} and ${player}, create a guide to decode each other's fatigue signals. The most useful makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co325",
+    "text": "Couples game: whoever has the most sincere 'I'll try' that lead nowhere drinks 2 sips per attempt.",
+    "pack": "couples"
+  },
+  {
+    "id": "co326",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid saying they don't know someone. If they pretend to recognize them, they drink 3 social sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co327",
+    "text": "All couples: whoever has the most 'I really must sort this' they never sort drinks 2 sips per pile of mess.",
+    "pack": "couples"
+  },
+  {
+    "id": "co328",
+    "text": "${player}, what's ${player}'s most ridiculous cooking superstition? If they always taste while cooking 'for luck', they give out 3 tasty sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co329",
+    "text": "${player} and ${player}, act out how you choose what to eat when you have no ideas. If it takes more than 30 seconds, you each drink 2 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co330",
+    "text": "Couples game: whoever has the most noted 'good ideas' they never develop drinks 2 sips per abandoned brilliant idea.",
+    "pack": "couples"
+  },
+  {
+    "id": "co331",
+    "text": "${player}, reveal the most creative thing ${player} does to avoid asking for help. If they prefer struggling alone, they drink 3 independent sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co332",
+    "text": "All couples: whoever has the most 'I'll read this weekend' still pending drinks 2 literary sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co333",
+    "text": "${player}, imitate how ${player} pretends to enjoy music they don't like. Your partner drinks if they nod politely.",
+    "pack": "couples"
+  },
+  {
+    "id": "co334",
+    "text": "${player} and ${player}, create an after-sales service for your broken promises. The most professional makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co335",
+    "text": "Couples game: whoever has the most temporary 'quick fixes' lasting for months drinks 2 sips per fix.",
+    "pack": "couples"
+  },
+  {
+    "id": "co336",
+    "text": "${player}, what's the weirdest way ${player} avoids looking at their bank balance? If they master financial blindness, they give out 3 economic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co337",
+    "text": "All couples: whoever has the most recurring 'I'll handle it tomorrow' drinks 2 sips per tomorrow that never comes.",
+    "pack": "couples"
+  },
+  {
+    "id": "co338",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid throwing away broken stuff. If they keep everything 'for parts', they drink 3 stock sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co339",
+    "text": "${player} and ${player}, create a method to measure your daily laziness level. The most accurate gives out 4 scientific sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co340",
+    "text": "Couples game: whoever has the most professional contacts they religiously avoid drinks 2 sips per ghost contact.",
+    "pack": "couples"
+  },
+  {
+    "id": "co341",
+    "text": "${player}, what's the most random thing ${player} does to procrastinate before going out? If they always find an urgent task, they give out 3 strategic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co342",
+    "text": "All couples: whoever has the most 'I'll sign up' they never do drinks 2 sips per good intention.",
+    "pack": "couples"
+  },
+  {
+    "id": "co343",
+    "text": "${player}, perfectly imitate how ${player} pretends to understand a joke they didn't get. If the laugh sounds fake, your partner gives out 3 comic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co344",
+    "text": "${player} and ${player}, create an early warning system for your laziness crises. The most preventive makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co345",
+    "text": "Couples game: whoever has the most abandoned 'I'll learn this' drinks 2 sips per ghost skill.",
+    "pack": "couples"
+  },
+  {
+    "id": "co346",
+    "text": "${player}, reveal ${player}'s wildest appointment superstition. If they have pre-meeting rituals, they drink 3 ceremonial sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co347",
+    "text": "All couples: whoever has the most 'important files' they never file drinks 2 administrative sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co348",
+    "text": "${player}, what's the most creative way ${player} avoids answering questions about future projects? If they talk about 'seeing how it evolves', they drink 3 evasive sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co349",
+    "text": "${player} and ${player}, act out your 'are we hurrying or not?' routine. If it's too chaotic, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co350",
+    "text": "Semi-final couples: ${player} and ${player}, reveal your most hilarious discovery of the evening together. Everyone laughs and drinks!",
+    "pack": "couples"
+  },
+  {
+    "id": "co351",
+    "text": "${player}, what's the weirdest thing ${player} does with spam emails? If they read them out of curiosity, they drink 3 curious sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co352",
+    "text": "All couples: whoever has the most 'I'll test this' they never test drinks 2 sips per ghost test.",
+    "pack": "couples"
+  },
+  {
+    "id": "co353",
+    "text": "${player}, perfectly imitate how ${player} avoids saying they lost something important. If it's too diplomatic, your partner gives out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co354",
+    "text": "${player} and ${player}, create a startup based on your respective incompetencies. The most honest makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co355",
+    "text": "Couples game: whoever has the most 'to-do' items on lost post-its drinks 2 sips per missing post-it.",
+    "pack": "couples"
+  },
+  {
+    "id": "co356",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid admitting they made a mistake. If they blame technology, they give out 3 technological sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co357",
+    "text": "All couples: whoever has the most 'I'll order this' in virtual carts drinks 2 sips per ghost item.",
+    "pack": "couples"
+  },
+  {
+    "id": "co358",
+    "text": "${player}, what's ${player}'s most ridiculous performance superstition? If they always wear the same 'lucky' underwear, they drink 3 ritual sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co359",
+    "text": "${player} and ${player}, act out how you manage scheduling conflicts. If it's UN-level negotiation, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co360",
+    "text": "Couples game: whoever has the most 'I'll think about it' that lead to nothing drinks 2 sips per sterile reflection.",
+    "pack": "couples"
+  },
+  {
+    "id": "co361",
+    "text": "${player}, reveal the most creative thing ${player} does to avoid saying they're bored. If they pretend to be 'in contemplation mode', they drink 3 zen sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co362",
+    "text": "All couples: whoever has the most 'I'll optimize this' they never optimize drinks 2 sips per ghost optimization.",
+    "pack": "couples"
+  },
+  {
+    "id": "co363",
+    "text": "${player}, imitate how ${player} pretends to have a strategy for something they're improvising. Your partner drinks if they talk about 'long-term vision'.",
+    "pack": "couples"
+  },
+  {
+    "id": "co364",
+    "text": "${player} and ${player}, create a warranty system for your couple promises. The most realistic makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co365",
+    "text": "Couples game: whoever has the most 'I'll look into it' they never do drinks 2 sips per ghost research.",
+    "pack": "couples"
+  },
+  {
+    "id": "co366",
+    "text": "${player}, what's the weirdest way ${player} avoids admitting they don't know how to use something? If they press all buttons, they give out 3 exploratory sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co367",
+    "text": "All couples: whoever has the most 'I'll check this' they never check drinks 2 sips per ghost verification.",
+    "pack": "couples"
+  },
+  {
+    "id": "co368",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid giving updates. If they master radio silence, they drink 3 discrete sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co369",
+    "text": "${player} and ${player}, create an early detection manual for your bad moods. The most preventive gives out 4 prophetic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co370",
+    "text": "Couples game: whoever has the most 'I'll see if it works' they never test drinks 2 sips per ghost experiment.",
+    "pack": "couples"
+  },
+  {
+    "id": "co371",
+    "text": "${player}, what's the most random thing ${player} does to avoid making important decisions? If they mentally flip coins, they give out 3 random sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co372",
+    "text": "All couples: whoever has the most 'I'll try to remember' they immediately forget drinks 2 sips per failing memory.",
+    "pack": "couples"
+  },
+  {
+    "id": "co373",
+    "text": "${player}, perfectly imitate how ${player} pretends to have a strong opinion about something they're discovering. If it's too convinced, your partner gives out 3 expert sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co374",
+    "text": "${player} and ${player}, create a business plan to monetize your procrastination techniques. The most lucrative makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co375",
+    "text": "Final countdown: ${player} and ${player}, reveal your greatest mutual revelation of the evening together. Everyone prepares for the finale!",
+    "pack": "couples"
+  },
+  {
+    "id": "co376",
+    "text": "${player}, reveal ${player}'s weirdest method to avoid giving compliments. If they use scientific facts instead, they drink 3 objective sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co377",
+    "text": "All couples: whoever has the most 'I'll finish this' they never finish drinks 2 sips per suspended project.",
+    "pack": "couples"
+  },
+  {
+    "id": "co378",
+    "text": "${player}, what's ${player}'s most ridiculous morning habit superstition? If they do things in a precise order 'for luck', they give out 3 ritual sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co379",
+    "text": "${player} and ${player}, act out how you negotiate who drives when you're lost. If it's a cold war, you each give out 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co380",
+    "text": "Couples game: whoever has the most 'I'll think about this' they forget in seconds drinks 2 sips per fleeting thought.",
+    "pack": "couples"
+  },
+  {
+    "id": "co381",
+    "text": "${player}, reveal the most creative thing ${player} does to avoid saying they're hungry. If they pretend to be 'intermittent fasting', they drink 3 nutritional sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co382",
+    "text": "All couples: whoever has the most 'I'll motivate myself' they never do drinks 2 sips per ghost motivation.",
+    "pack": "couples"
+  },
+  {
+    "id": "co383",
+    "text": "${player}, imitate how ${player} pretends to know about wine/coffee. Your partner drinks if they use words like 'full-bodied' or 'notes of...'.",
+    "pack": "couples"
+  },
+  {
+    "id": "co384",
+    "text": "${player} and ${player}, create an emergency protocol for your most recurring couple crises. The most realistic makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co385",
+    "text": "Couples game: whoever has the most 'I'll be careful' they never do drinks 2 sips per failing attention.",
+    "pack": "couples"
+  },
+  {
+    "id": "co386",
+    "text": "${player}, what's the weirdest way ${player} avoids admitting they forgot an anniversary? If they pretend to be ahead for next year, they give out 3 temporal sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co387",
+    "text": "All couples: whoever has the most 'I'll monitor this' they never monitor drinks 2 sips per ghost surveillance.",
+    "pack": "couples"
+  },
+  {
+    "id": "co388",
+    "text": "${player}, reveal ${player}'s most creative technique to avoid criticizing something they don't like. If they always find a positive aspect, they drink 3 diplomatic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co389",
+    "text": "${player} and ${player}, create a loyalty points system for your relationship. The most innovative gives out 4 commercial sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co390",
+    "text": "Couples game: whoever has the most 'I'll research this' they never do drinks 2 sips per ghost documentation.",
+    "pack": "couples"
+  },
+  {
+    "id": "co391",
+    "text": "${player}, what's the most random thing ${player} does to avoid taking a position in a debate? If they play devil's advocate, they give out 3 neutral sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co392",
+    "text": "All couples: whoever has the most 'I'll think about this seriously' they take lightly drinks 2 sips per fake reflection.",
+    "pack": "couples"
+  },
+  {
+    "id": "co393",
+    "text": "${player}, perfectly imitate how ${player} pretends to be organized when someone looks at their desk/space. If it's a grand performance, your partner gives out 3 theatrical sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co394",
+    "text": "${player} and ${player}, create an instruction manual for your future selves in 10 years. The wisest makes the group drink 3 sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co395",
+    "text": "Couples game: whoever has the most sincere but vague 'I'll improve' drinks 2 sips per ghost improvement.",
+    "pack": "couples"
+  },
+  {
+    "id": "co396",
+    "text": "${player}, reveal ${player}'s wildest social media superstition. If they post at specific times 'for the algorithm', they drink 3 algorithmic sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co397",
+    "text": "All couples: whoever has the most 'I'll keep this in mind' they immediately forget drinks 2 sips per selective memory.",
+    "pack": "couples"
+  },
+  {
+    "id": "co398",
+    "text": "${player}, what's the most creative way ${player} avoids saying 'no' directly? If they master the art of 'maybe', they give out 3 evasive sips.",
+    "pack": "couples"
+  },
+  {
+    "id": "co399",
+    "text": "${player} and ${player}, act out your vision of yourselves in 20 years. If it's too optimistic/pessimistic, you each give out 3 sips accordingly.",
     "pack": "couples"
   }
 ]
