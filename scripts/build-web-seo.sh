@@ -32,7 +32,31 @@ cat > web/index.html << EOF
     <meta charset="utf-8" />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>SIP&GO! - Jeu à Boire</title>
+    <title>SIP&GO! - Le jeu à boire ultime pour vos soirées</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="SIP&GO! - L'application de jeu à boire ultime avec 5 packs thématiques et plus de 1500 questions pour animer vos soirées. Disponible gratuitement !">
+    <meta name="keywords" content="jeu à boire, soirée, apéro, drinking game, SIP&GO, jeu alcool, jeu soirée, party game">
+    <meta name="author" content="SIP&GO!">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sipandgo.app/">
+    <meta property="og:title" content="SIP&GO! - Le jeu à boire ultime pour vos soirées">
+    <meta property="og:description" content="Découvrez SIP&GO!, l'application de jeu à boire avec 5 packs thématiques et plus de 1500 questions. Parfait pour animer vos soirées !">
+    <meta property="og:image" content="https://sipandgo.app/logo-jauneclair.png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="SIP&GO!">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sipandgo.app/">
+    <meta property="twitter:title" content="SIP&GO! - Le jeu à boire ultime pour vos soirées">
+    <meta property="twitter:description" content="Découvrez SIP&GO!, l'application de jeu à boire avec 5 packs thématiques et plus de 1500 questions.">
+    <meta property="twitter:image" content="https://sipandgo.app/logo-jauneclair.png">
+    
     <!-- The 'react-native-web' recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
     <style id="expo-reset">
       /* These styles make the body full-height */
@@ -51,7 +75,6 @@ cat > web/index.html << EOF
         flex: 1;
       }
     </style>
-    <meta name="description" content="Application de jeu à boire ultime pour vos soirées">
     
     <!-- Preload fonts -->
     <link rel="preload" href="/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.6148e7019854f3bde85b633cb88f3c25.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -86,7 +109,7 @@ cat > web/index.html << EOF
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.json">
-    <meta name="theme-color" content="#0B0E1A">
+    <meta name="theme-color" content="#FF784F">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3SZWMFEFM8"></script>
