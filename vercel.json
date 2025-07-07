@@ -1,11 +1,15 @@
 {
-  "buildCommand": "cp -r web/* .",
+  "buildCommand": "./scripts/build-web-seo.sh",
   "outputDirectory": "web",
   "devCommand": "npm start",
   "installCommand": "npm install",
   "framework": null,
   "public": false,
   "rewrites": [
+    {
+      "source": "/app",
+      "destination": "/app.html"
+    },
     {
       "source": "/drinking-games",
       "destination": "/drinking-games.html"

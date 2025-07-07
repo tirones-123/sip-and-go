@@ -1994,9 +1994,4 @@
     "text": "${player} et ${player}, mimez ensemble votre vision de vous dans 20 ans. Si c'est trop optimiste/pessimiste, vous distribuez 3 gorgées chacun selon le cas.",
     "pack": "couples"
   },
-  {
-    "id": "co400",
-    "text": "🎉 FINALE ULTIME 400 ! 🎉 ${player} et ${player}, faites un discours de remerciement mutuel pour toutes les révélations de ce soir. Tout le monde trinque, se congratule et boit 5 gorgées de célébration ! Vous vous connaissez maintenant mieux que jamais ! 🥳🍻",
-    "pack": "couples"
-  }
 ] 
