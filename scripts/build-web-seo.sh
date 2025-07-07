@@ -53,6 +53,33 @@ cat > web/index.html << EOF
     </style>
     <meta name="description" content="Application de jeu à boire ultime pour vos soirées">
     
+    <!-- Preload fonts -->
+    <link rel="preload" href="/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.6148e7019854f3bde85b633cb88f3c25.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+    
+    <!-- Font declarations -->
+    <style>
+      @font-face {
+        font-family: 'Ionicons';
+        src: url('/assets/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.6148e7019854f3bde85b633cb88f3c25.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'Montserrat_400Regular';
+        src: url('/assets/node_modules/@expo-google-fonts/montserrat/400Regular/Montserrat_400Regular.38712903602f88435ddddec98862f8b8.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      @font-face {
+        font-family: 'Montserrat_800ExtraBold';
+        src: url('/assets/node_modules/@expo-google-fonts/montserrat/800ExtraBold/Montserrat_800ExtraBold.1497e6fee4dd060b35f6b49e4241cb3f.ttf') format('truetype');
+        font-weight: 800;
+        font-style: normal;
+      }
+    </style>
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
