@@ -137,12 +137,63 @@ export const trackPWAInstall = async () => {
   }
 };
 
+// Fonction pour forcer le tracking (utile pour les tests)
+export const forceTrackPWA = async () => {
+  if (typeof window !== 'undefined') {
+    localStorage.removeItem('pwa_tracked'); // Reset le flag
+    await trackPWAInstall();
+    localStorage.setItem('pwa_tracked', 'true');
+    console.log('PWA tracking forcé');
+  }
+};
+
+// Exposer la fonction globalement pour les tests
+if (typeof window !== 'undefined') {
+  (window as any).forceTrackPWA = forceTrackPWA;
+}
+
+// Détection PWA pour Safari et autres navigateurs
+const detectAndTrackPWA = () => {
+  if (typeof window === 'undefined') return;
+  
+  // Vérifier si l'app est en mode standalone (PWA installée)
+  const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+  const isInStandaloneMode = ('standalone' in window.navigator) && (window.navigator as any).standalone;
+  
+  // Vérifier si c'est une PWA installée
+  const isPWA = isStandalone || isInStandaloneMode;
+  
+  if (isPWA) {
+    // Vérifier si c'est la première fois qu'on détecte la PWA
+    const hasTrackedPWA = localStorage.getItem('pwa_tracked');
+    if (!hasTrackedPWA) {
+      console.log('PWA détectée - tracking installation');
+      trackPWAInstall();
+      localStorage.setItem('pwa_tracked', 'true');
+    }
+  }
+};
+
 // Track PWA installation events
 if (typeof window !== 'undefined') {
-  // Track actual installation
+  // Chrome/Edge - événement standard
   window.addEventListener('appinstalled', () => {
     trackPWAInstall();
+    localStorage.setItem('pwa_tracked', 'true');
   });
+  
+  // Safari/iOS - détection au chargement
+  window.addEventListener('load', detectAndTrackPWA);
+  
+  // Vérifier aussi au changement de display-mode
+  if (window.matchMedia) {
+    window.matchMedia('(display-mode: standalone)').addEventListener('change', (e) => {
+      if (e.matches) {
+        detectAndTrackPWA();
+      }
+    });
+  }
   
   // Optional: track install prompt shown
   window.addEventListener('beforeinstallprompt', (e) => {
