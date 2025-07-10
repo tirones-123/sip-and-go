@@ -7,7 +7,7 @@ import {
   FlatList,
   KeyboardAvoidingView,
   Platform,
-  Alert,
+  Modal,
   Image,
   TouchableWithoutFeedback,
   Keyboard
@@ -42,6 +42,7 @@ const AddPlayers: React.FC = () => {
   const insets = useSafeAreaInsets();
   const isFocused = useIsFocused();
   const [playerName, setPlayerName] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
   const inputRef = useRef<TextInput>(null);
   const listRef = useRef<FlatList<string>>(null);
   
@@ -63,14 +64,16 @@ const AddPlayers: React.FC = () => {
       addPlayer(trimmedName);
       setPlayerName('');
       // Keep the keyboard open and focus in the input for quicker multi-add
-      inputRef.current?.focus();
+      if (Platform.OS !== 'web') {
+        inputRef.current?.focus();
+      }
     }
   };
   
   // Handle starting the game
   const handleStart = () => {
     if (players.length < 2) {
-      Alert.alert('', t('addPlayers.playerCountError'));
+      setShowAlert(true);
       return;
     }
     
@@ -88,7 +91,8 @@ const AddPlayers: React.FC = () => {
   }, [navigation]);
   
   useEffect(() => {
-    if (isFocused) {
+    if (isFocused && Platform.OS !== 'web') {
+      // Only auto-focus on native platforms
       inputRef.current?.focus();
     } else {
       inputRef.current?.blur();
@@ -130,104 +134,193 @@ const AddPlayers: React.FC = () => {
         <Ionicons name="settings-sharp" size={28} color="#FFFFFF" />
       </TouchableOpacity>
 
-      <KeyboardAvoidingView
-        style={tw`flex-1`}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-        keyboardVerticalOffset={Platform.OS === 'ios' ? -20 : 0}
-      >
-        <View style={tw`flex-1 p-6 pb-1`}>
-          {/* Header Section */}
-          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-            <View style={tw`items-center mt-42 mb-5`}>
-              <Text
-                style={[
-                  tw`text-white text-3xl font-bold tracking-tight text-center`,
-                  {
-                    fontFamily: 'Montserrat_800ExtraBold',
-                    textShadowColor: 'rgba(0,0,0,0.25)',
-                    textShadowOffset: { width: 2, height: 4 },
-                    textShadowRadius: 5,
-                  },
-                ]}
-              >
-                {t('addPlayers.title')}
-              </Text>
-            </View>
-          </TouchableWithoutFeedback>
-
-          {/* Player List Section */}
-          <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-            <View style={tw`flex-1`}>
-              <FlatList
-                ref={listRef}
-                data={players}
-                keyExtractor={(item) => item}
-                renderItem={({ item }) => (
-                  <PlayerListItem name={item} onRemove={removePlayer} />
-                )}
-                style={tw`mb-4`}
-                onContentSizeChange={() => listRef.current?.scrollToEnd({ animated: true })}
-                ListEmptyComponent={
-                  <View style={tw`flex-1 justify-center items-center`}>
-                    <Text style={tw`text-white/60 text-center text-lg`}>
-                      {t('addPlayers.playerCountError')}
-                    </Text>
-                  </View>
-                }
-              />
-            </View>
-          </TouchableWithoutFeedback>
-
-          {/* Input and Start Button Section */}
-          <View>
-            <View style={tw`flex-row mb-4`}>
-              <TextInput
-                ref={inputRef}
-                style={[tw`flex-1 bg-white/20 text-white text-base rounded-xl px-4 py-3.5 mr-2 border border-white/30`, { lineHeight: 20 }]}
-                placeholder={t('addPlayers.inputPlaceholder')}
-                placeholderTextColor="#ffffff90"
-                value={playerName}
-                onChangeText={setPlayerName}
-                onSubmitEditing={handleAddPlayer}
-                returnKeyType="done"
-                returnKeyLabel={t('addPlayers.addButton')}
-                blurOnSubmit={false}
-                maxLength={20}
-                autoCorrect={false}
-                autoCapitalize="words"
-                spellCheck={false}
-                autoComplete="off"
-                importantForAutofill="no"
-                textAlignVertical="center"
-              />
-              
-              <TouchableOpacity
-                style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-xl border border-white/30`}
-                onPress={handleAddPlayer}
-              >
-                <Text style={tw`text-white text-2xl font-bold`}>+</Text>
-              </TouchableOpacity>
-            </View>
-            
-            <Button
-              text={t('addPlayers.startButton')}
-              fullWidth
-              size="large"
-              disabled={players.length < 2}
-              onPress={handleStart}
-              style={tw`bg-white py-4 rounded-xl shadow-md mb-4`}
-              textClassName={`text-lg font-bold text-[${BG_COLOR}]`}
-            />
-            
-            {/* Install PWA Button or Installed Badge */}
-            <InstallButton style={tw`mb-6`} />
-            <InstalledBadge style={tw`mb-6 self-center`} />
-          </View>
-
+      {/* Conditional KeyboardAvoidingView only for native platforms */}
+      {Platform.OS === 'web' ? (
+        <View style={tw`flex-1 p-6 pb-1 mt-32`}>
+          <PlayerContent 
+            players={players}
+            playerName={playerName}
+            setPlayerName={setPlayerName}
+            handleAddPlayer={handleAddPlayer}
+            handleStart={handleStart}
+            removePlayer={removePlayer}
+            inputRef={inputRef}
+            listRef={listRef}
+            t={t}
+            BG_COLOR={BG_COLOR}
+          />
         </View>
-      </KeyboardAvoidingView>
+      ) : (
+        <KeyboardAvoidingView
+          style={tw`flex-1`}
+          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+          keyboardVerticalOffset={Platform.OS === 'ios' ? -20 : 0}
+        >
+          <View style={tw`flex-1 p-6 pb-1`}>
+            <PlayerContent 
+              players={players}
+              playerName={playerName}
+              setPlayerName={setPlayerName}
+              handleAddPlayer={handleAddPlayer}
+              handleStart={handleStart}
+              removePlayer={removePlayer}
+              inputRef={inputRef}
+              listRef={listRef}
+              t={t}
+              BG_COLOR={BG_COLOR}
+            />
+          </View>
+        </KeyboardAvoidingView>
+      )}
+
+      {/* PWA-compatible Alert Modal */}
+      <Modal
+        visible={showAlert}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => setShowAlert(false)}
+      >
+        <View style={tw`flex-1 bg-black/80 justify-center items-center px-6`}>
+          <View 
+            style={[
+              tw`w-full max-w-sm rounded-xl p-6 border border-white/20 bg-gray-900`,
+              { 
+                zIndex: 10,
+                backgroundColor: '#1F2937'
+              }
+            ]}
+          >
+            <Text style={tw`text-white text-lg font-bold mb-4 text-center`}>
+              {t('addPlayers.playerCountError')}
+            </Text>
+            <TouchableOpacity
+              style={tw`bg-white/20 rounded-lg py-3 px-6 border border-white/30`}
+              onPress={() => setShowAlert(false)}
+            >
+              <Text style={tw`text-white font-bold text-center`}>
+                OK
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </Modal>
     </LinearGradient>
   );
 };
+
+// Extracted content component to avoid duplication
+const PlayerContent: React.FC<{
+  players: string[];
+  playerName: string;
+  setPlayerName: (name: string) => void;
+  handleAddPlayer: () => void;
+  handleStart: () => void;
+  removePlayer: (name: string) => void;
+  inputRef: React.RefObject<TextInput | null>;
+  listRef: React.RefObject<FlatList<string> | null>;
+  t: (key: string) => string;
+  BG_COLOR: string;
+}> = ({
+  players,
+  playerName,
+  setPlayerName,
+  handleAddPlayer,
+  handleStart,
+  removePlayer,
+  inputRef,
+  listRef,
+  t,
+  BG_COLOR
+}) => (
+  <>
+    {/* Header Section */}
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <View style={tw`items-center mt-42 mb-5`}>
+        <Text
+          style={[
+            tw`text-white text-3xl font-bold tracking-tight text-center`,
+            {
+              fontFamily: 'Montserrat_800ExtraBold',
+              textShadowColor: 'rgba(0,0,0,0.25)',
+              textShadowOffset: { width: 2, height: 4 },
+              textShadowRadius: 5,
+            },
+          ]}
+        >
+          {t('addPlayers.title')}
+        </Text>
+      </View>
+    </TouchableWithoutFeedback>
+
+    {/* Player List Section */}
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <View style={tw`flex-1`}>
+        <FlatList
+          ref={listRef}
+          data={players}
+          keyExtractor={(item) => item}
+          renderItem={({ item }) => (
+            <PlayerListItem name={item} onRemove={removePlayer} />
+          )}
+          style={tw`mb-4`}
+          onContentSizeChange={() => listRef.current?.scrollToEnd({ animated: true })}
+          ListEmptyComponent={
+            <View style={tw`flex-1 justify-center items-center`}>
+              <Text style={tw`text-white/60 text-center text-lg`}>
+                {t('addPlayers.playerCountError')}
+              </Text>
+            </View>
+          }
+        />
+      </View>
+    </TouchableWithoutFeedback>
+
+    {/* Input and Start Button Section */}
+    <View>
+      <View style={tw`flex-row mb-4`}>
+        <TextInput
+          ref={inputRef}
+          style={[tw`flex-1 bg-white/20 text-white text-base rounded-xl px-4 py-3.5 mr-2 border border-white/30`, { lineHeight: 20 }]}
+          placeholder={t('addPlayers.inputPlaceholder')}
+          placeholderTextColor="#ffffff90"
+          value={playerName}
+          onChangeText={setPlayerName}
+          onSubmitEditing={handleAddPlayer}
+          returnKeyType="done"
+          returnKeyLabel={t('addPlayers.addButton')}
+          blurOnSubmit={false}
+          maxLength={20}
+          autoCorrect={false}
+          autoCapitalize="words"
+          spellCheck={false}
+          autoComplete="off"
+          importantForAutofill="no"
+          textAlignVertical="center"
+        />
+        
+        <TouchableOpacity
+          style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-xl border border-white/30`}
+          onPress={handleAddPlayer}
+        >
+          <Text style={tw`text-white text-2xl font-bold`}>+</Text>
+        </TouchableOpacity>
+      </View>
+      
+      <Button
+        text={t('addPlayers.startButton')}
+        fullWidth
+        size="large"
+        disabled={players.length < 2}
+        onPress={handleStart}
+        style={tw`bg-white py-4 rounded-xl shadow-md mb-4`}
+        textClassName={`text-lg font-bold text-[${BG_COLOR}]`}
+      />
+      
+      {/* Install PWA Button or Installed Badge */}
+      <InstallButton style={tw`mb-6`} />
+      <InstalledBadge style={tw`mb-6 self-center`} />
+    </View>
+  </>
+);
 
 export default AddPlayers; 

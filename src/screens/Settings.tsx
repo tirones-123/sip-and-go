@@ -64,16 +64,48 @@ const Settings: React.FC = () => {
   
   // Share app
   const shareApp = async () => {
+    const shareData = {
+      title: 'SIP&GO! - Jeu à Boire',
+      text: 'Découvrez SIP&GO!, l\'application de jeu à boire ultime !',
+      url: typeof window !== 'undefined' ? window.location.origin : 'https://sipandgo.app'
+    };
+
     try {
-      const result = await Share.share({
-        message: Platform.select({
-          ios: 'Check out SIP&GO!, the ultimate drinking game app! https://apps.apple.com/app/id000000000',
-          android: 'Check out SIP&GO!, the ultimate drinking game app! https://play.google.com/store/apps/details?id=com.sipandgoapp.first',
-          default: 'Check out SIP&GO!, the ultimate drinking game app!'
-        })
-      });
+      // Check if Web Share API is supported
+      if (typeof navigator !== 'undefined' && navigator.share && Platform.OS === 'web') {
+        await navigator.share(shareData);
+      } else if (Platform.OS === 'web') {
+        // Fallback for web browsers without Web Share API
+        if (typeof navigator !== 'undefined' && navigator.clipboard) {
+          await navigator.clipboard.writeText(
+            `${shareData.text} ${shareData.url}`
+          );
+          // Show a simple feedback (you could replace this with a toast)
+          alert('Lien copié dans le presse-papiers !');
+        }
+      } else {
+        // Native share for mobile
+        const result = await Share.share({
+          message: Platform.select({
+            ios: 'Check out SIP&GO!, the ultimate drinking game app! https://apps.apple.com/app/id000000000',
+            android: 'Check out SIP&GO!, the ultimate drinking game app! https://play.google.com/store/apps/details?id=com.sipandgoapp.first',
+            default: `${shareData.text} ${shareData.url}`
+          })
+        });
+      }
     } catch (error) {
       console.error('Error sharing app:', error);
+      // Fallback: copy to clipboard
+      try {
+        if (Platform.OS === 'web' && typeof navigator !== 'undefined' && navigator.clipboard) {
+          await navigator.clipboard.writeText(
+            `${shareData.text} ${shareData.url}`
+          );
+          alert('Lien copié dans le presse-papiers !');
+        }
+      } catch (clipboardError) {
+        console.error('Clipboard fallback failed:', clipboardError);
+      }
     }
   };
   

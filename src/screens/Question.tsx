@@ -308,11 +308,21 @@ const Question: React.FC = () => {
         animationType="slide"
         onRequestClose={() => setShowPlayersModal(false)}
       >
-        <Pressable
-          style={tw`flex-1 justify-center items-center bg-black/70`}
-          onPress={Keyboard.dismiss}
-        >
-          <Animated.View style={[tw`w-4/5 h-2/3 rounded-xl p-4 border border-white/20 rounded-xl`, { transform: [{ translateX: shakeAnim }] }]}>
+        <View style={tw`flex-1 bg-black/70 justify-center items-center`}>
+          <Pressable
+            style={tw`absolute inset-0`}
+            onPress={() => setShowPlayersModal(false)}
+          />
+          <Animated.View 
+            style={[
+              tw`w-4/5 h-2/3 rounded-xl p-4 border border-white/20 bg-gray-900`,
+              { 
+                transform: [{ translateX: shakeAnim }],
+                zIndex: 10,
+                backgroundColor: '#1F2937'
+              }
+            ]}
+          >
             <View style={tw`flex-row justify-between items-center mb-4`}>
               <Text style={tw`text-white text-lg font-bold`}>
                 {t('question.managePlayers')}
@@ -326,7 +336,7 @@ const Question: React.FC = () => {
             <View style={tw`flex-row mb-4`}>
               <TextInput
                 ref={modalInputRef}
-                style={tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2`}
+                style={tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2 border border-white/20`}
                 placeholder={t('addPlayers.inputPlaceholder')}
                 placeholderTextColor="#ffffff80"
                 value={newPlayerName}
@@ -342,11 +352,12 @@ const Question: React.FC = () => {
                 autoComplete="off"
                 importantForAutofill="no"
               />
-              <Button
-                text={t('addPlayers.addButton')}
+              <TouchableOpacity
+                style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-lg border border-white/20`}
                 onPress={handleAddPlayer}
-                size="small"
-              />
+              >
+                <Text style={tw`text-white text-xl font-bold`}>+</Text>
+              </TouchableOpacity>
             </View>
             
             {/* Player list */}
@@ -367,14 +378,16 @@ const Question: React.FC = () => {
               }
             />
             
-            <Button
-              text={t('close')}
-              variant="outline"
+            <TouchableOpacity
+              style={tw`border border-white/30 rounded-lg py-3 px-4 bg-white/10`}
               onPress={() => setShowPlayersModal(false)}
-              fullWidth
-            />
+            >
+              <Text style={tw`text-white text-center font-bold`}>
+                {t('close')}
+              </Text>
+            </TouchableOpacity>
           </Animated.View>
-        </Pressable>
+        </View>
       </Modal>
       
       {/* Quit confirmation modal */}
@@ -385,23 +398,41 @@ const Question: React.FC = () => {
         onRequestClose={() => setShowQuitConfirm(false)}
       >
         <View style={tw`flex-1 bg-black/80 justify-center items-center`}>
-          <View style={tw`w-4/5 rounded-xl p-6 border border-white/20`}>
+          <Pressable
+            style={tw`absolute inset-0`}
+            onPress={() => setShowQuitConfirm(false)}
+          />
+          <View 
+            style={[
+              tw`w-4/5 rounded-xl p-6 border border-white/20 bg-gray-900`,
+              { 
+                zIndex: 10,
+                backgroundColor: '#1F2937'
+              }
+            ]}
+          >
             <Text style={tw`text-white text-lg font-bold mb-6`}>{t('question.quitConfirm')}</Text>
             <View style={tw`flex-row justify-center`}>
-              <Button
-                text={t('question.quitNo')}
-                variant="outline"
+              <TouchableOpacity
+                style={tw`border border-white/30 rounded-lg py-3 px-6 bg-white/10 mr-4`}
                 onPress={() => setShowQuitConfirm(false)}
-                style={tw`mr-4`}
-              />
-              <Button
-                text={t('question.quitYes')}
+              >
+                <Text style={tw`text-white font-bold`}>
+                  {t('question.quitNo')}
+                </Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={tw`bg-red-600 rounded-lg py-3 px-6`}
                 onPress={() => {
                   resetGame();
                   setShowQuitConfirm(false);
                   navigation.reset({ index: 0, routes: [{ name: 'ModeCarousel' }] });
                 }}
-              />
+              >
+                <Text style={tw`text-white font-bold`}>
+                  {t('question.quitYes')}
+                </Text>
+              </TouchableOpacity>
             </View>
           </View>
         </View>
