@@ -315,11 +315,11 @@ const Question: React.FC = () => {
           />
           <Animated.View 
             style={[
-              tw`w-4/5 h-2/3 rounded-xl p-4 border border-white/20 bg-gray-900`,
+              tw`w-4/5 h-2/3 rounded-xl p-4 border border-white/30`,
               { 
                 transform: [{ translateX: shakeAnim }],
                 zIndex: 10,
-                backgroundColor: '#1F2937'
+                backgroundColor: 'rgba(0, 0, 0, 0.75)'
               }
             ]}
           >
@@ -336,7 +336,7 @@ const Question: React.FC = () => {
             <View style={tw`flex-row mb-4`}>
               <TextInput
                 ref={modalInputRef}
-                style={tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2 border border-white/20`}
+                style={tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2 border border-white/30`}
                 placeholder={t('addPlayers.inputPlaceholder')}
                 placeholderTextColor="#ffffff80"
                 value={newPlayerName}
@@ -353,7 +353,7 @@ const Question: React.FC = () => {
                 importantForAutofill="no"
               />
               <TouchableOpacity
-                style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-lg border border-white/20`}
+                style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-lg border border-white/30`}
                 onPress={handleAddPlayer}
               >
                 <Text style={tw`text-white text-xl font-bold`}>+</Text>
@@ -379,7 +379,7 @@ const Question: React.FC = () => {
             />
             
             <TouchableOpacity
-              style={tw`border border-white/30 rounded-lg py-3 px-4 bg-white/10`}
+              style={tw`border border-white/40 rounded-lg py-3 px-4 bg-white/15`}
               onPress={() => setShowPlayersModal(false)}
             >
               <Text style={tw`text-white text-center font-bold`}>
@@ -404,17 +404,17 @@ const Question: React.FC = () => {
           />
           <View 
             style={[
-              tw`w-4/5 rounded-xl p-6 border border-white/20 bg-gray-900`,
+              tw`w-4/5 rounded-xl p-6 border border-white/30`,
               { 
                 zIndex: 10,
-                backgroundColor: '#1F2937'
+                backgroundColor: 'rgba(0, 0, 0, 0.75)'
               }
             ]}
           >
             <Text style={tw`text-white text-lg font-bold mb-6`}>{t('question.quitConfirm')}</Text>
             <View style={tw`flex-row justify-center`}>
               <TouchableOpacity
-                style={tw`border border-white/30 rounded-lg py-3 px-6 bg-white/10 mr-4`}
+                style={tw`border border-white/40 rounded-lg py-3 px-6 bg-white/15 mr-4`}
                 onPress={() => setShowQuitConfirm(false)}
               >
                 <Text style={tw`text-white font-bold`}>
@@ -422,14 +422,14 @@ const Question: React.FC = () => {
                 </Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={tw`bg-red-600 rounded-lg py-3 px-6`}
+                style={tw`bg-red-500/20 border border-red-400/50 rounded-lg py-3 px-6`}
                 onPress={() => {
                   resetGame();
                   setShowQuitConfirm(false);
                   navigation.reset({ index: 0, routes: [{ name: 'ModeCarousel' }] });
                 }}
               >
-                <Text style={tw`text-white font-bold`}>
+                <Text style={tw`text-red-300 font-bold`}>
                   {t('question.quitYes')}
                 </Text>
               </TouchableOpacity>

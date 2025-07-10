@@ -183,10 +183,10 @@ const AddPlayers: React.FC = () => {
         <View style={tw`flex-1 bg-black/80 justify-center items-center px-6`}>
           <View 
             style={[
-              tw`w-full max-w-sm rounded-xl p-6 border border-white/20 bg-gray-900`,
+              tw`w-full max-w-sm rounded-xl p-6 border border-white/30`,
               { 
                 zIndex: 10,
-                backgroundColor: '#1F2937'
+                backgroundColor: 'rgba(0, 0, 0, 0.75)'
               }
             ]}
           >
@@ -194,7 +194,7 @@ const AddPlayers: React.FC = () => {
               {t('addPlayers.playerCountError')}
             </Text>
             <TouchableOpacity
-              style={tw`bg-white/20 rounded-lg py-3 px-6 border border-white/30`}
+              style={tw`bg-white/15 rounded-lg py-3 px-6 border border-white/40`}
               onPress={() => setShowAlert(false)}
             >
               <Text style={tw`text-white font-bold text-center`}>
