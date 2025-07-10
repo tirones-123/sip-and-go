@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { View, Dimensions } from 'react-native';
+import { View, Dimensions, Platform } from 'react-native';
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -11,7 +11,33 @@ import Animated, {
   interpolate,
 } from 'react-native-reanimated';
 
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+// Custom hook for responsive dimensions on PWA
+const useResponsiveDimensions = () => {
+  const [dimensions, setDimensions] = useState(() => Dimensions.get('window'));
+
+  useEffect(() => {
+    if (Platform.OS === 'web' && typeof window !== 'undefined') {
+      const updateDimensions = () => {
+        setDimensions({
+          width: window.innerWidth,
+          height: window.innerHeight,
+          scale: window.devicePixelRatio || 1,
+          fontScale: 1
+        });
+      };
+
+      window.addEventListener('resize', updateDimensions);
+      return () => window.removeEventListener('resize', updateDimensions);
+    } else if (Platform.OS !== 'web') {
+      const subscription = Dimensions.addEventListener('change', ({ window }) => {
+        setDimensions(window);
+      });
+      return () => subscription?.remove();
+    }
+  }, []);
+
+  return dimensions;
+};
 
 interface BubbleData {
   id: number;
@@ -24,11 +50,16 @@ interface BubbleData {
 /**
  * Individual realistic bubble component with shine effect
  */
-const RealisticBubble: React.FC<{ bubble: BubbleData; onComplete: (id: number) => void }> = ({ 
+const RealisticBubble: React.FC<{ 
+  bubble: BubbleData; 
+  onComplete: (id: number) => void;
+  screenDimensions: { width: number; height: number };
+}> = ({ 
   bubble, 
-  onComplete 
+  onComplete,
+  screenDimensions
 }) => {
-  const translateY = useSharedValue(SCREEN_HEIGHT + bubble.size);
+  const translateY = useSharedValue(screenDimensions.height + bubble.size);
   const translateX = useSharedValue(0);
   const scale = useSharedValue(0);
   const rotation = useSharedValue(0);
@@ -75,21 +106,21 @@ const RealisticBubble: React.FC<{ bubble: BubbleData; onComplete: (id: number) =
       false
     );
 
-    // Gentle rotation
+    // Gentle rotation (reduced on web for performance)
     rotation.value = withRepeat(
       withTiming(360, { 
-        duration: bubble.duration * 1.5, 
+        duration: Platform.OS === 'web' ? bubble.duration * 2 : bubble.duration * 1.5, 
         easing: Easing.linear 
       }),
       -1,
       false
     );
-  }, [bubble, onComplete]);
+  }, [bubble, onComplete, screenDimensions]);
 
   const animatedStyle = useAnimatedStyle(() => {
     const progress = interpolate(
       translateY.value,
-      [SCREEN_HEIGHT + bubble.size, -bubble.size - 50],
+      [screenDimensions.height + bubble.size, -bubble.size - 50],
       [0, 1]
     );
 
@@ -172,21 +203,27 @@ interface BubbleBackgroundProps {
 
 /**
  * Background component with continuous realistic bubbles
+ * Optimized for PWA performance
  */
 const BubbleBackground: React.FC<BubbleBackgroundProps> = ({ 
   bubbleCount = 60, 
   spawnRate = 3 
 }) => {
+  const dimensions = useResponsiveDimensions();
   const [bubbles, setBubbles] = useState<BubbleData[]>([]);
   const bubbleIdCounter = useRef(0);
   const spawnTimer = useRef<NodeJS.Timeout | null>(null);
+
+  // PWA Performance optimization: reduce bubble count and spawn rate on web
+  const optimizedBubbleCount = Platform.OS === 'web' ? Math.min(bubbleCount, 25) : bubbleCount;
+  const optimizedSpawnRate = Platform.OS === 'web' ? Math.min(spawnRate, 2) : spawnRate;
 
   // Create a new bubble
   const createBubble = (): BubbleData => {
     return {
       id: bubbleIdCounter.current++,
       size: Math.random() * 20 + 6, // 6-26px
-      startX: Math.random() * (SCREEN_WIDTH + 60) - 30, // Can start slightly off-screen
+      startX: Math.random() * (dimensions.width + 60) - 30, // Can start slightly off-screen
       duration: Math.random() * 8000 + 12000, // 12-20s duration
       opacity: Math.random() * 0.4 + 0.4, // 0.4-0.8 opacity (much more visible)
     };
@@ -200,7 +237,7 @@ const BubbleBackground: React.FC<BubbleBackgroundProps> = ({
   // Spawn new bubble
   const spawnBubble = () => {
     setBubbles(prev => {
-      if (prev.length < bubbleCount) {
+      if (prev.length < optimizedBubbleCount) {
         return [...prev, createBubble()];
       }
       return prev;
@@ -209,17 +246,21 @@ const BubbleBackground: React.FC<BubbleBackgroundProps> = ({
 
   // Continuous spawning
   useEffect(() => {
-    // Initial burst of bubbles
+    // Initial burst of bubbles (reduced for web)
     const initialBubbles: BubbleData[] = [];
-    for (let i = 0; i < Math.min(bubbleCount, 20); i++) {
+    const initialCount = Platform.OS === 'web' ? 
+      Math.min(optimizedBubbleCount, 10) : 
+      Math.min(optimizedBubbleCount, 20);
+    
+    for (let i = 0; i < initialCount; i++) {
       setTimeout(() => {
         setBubbles(prev => [...prev, createBubble()]);
-      }, i * 100);
+      }, i * 150); // Slightly slower spawn for web
     }
 
     // Continuous spawning
     const startContinuousSpawning = () => {
-      const spawnInterval = 1000 / spawnRate; // Convert rate to interval
+      const spawnInterval = 1000 / optimizedSpawnRate; // Convert rate to interval
       
       const scheduleNext = () => {
         spawnTimer.current = setTimeout(() => {
@@ -239,7 +280,7 @@ const BubbleBackground: React.FC<BubbleBackgroundProps> = ({
         clearTimeout(spawnTimer.current);
       }
     };
-  }, [bubbleCount, spawnRate]);
+  }, [optimizedBubbleCount, optimizedSpawnRate]);
 
   return (
     <View 
@@ -257,6 +298,7 @@ const BubbleBackground: React.FC<BubbleBackgroundProps> = ({
           key={bubble.id}
           bubble={bubble}
           onComplete={removeBubble}
+          screenDimensions={dimensions}
         />
       ))}
     </View>

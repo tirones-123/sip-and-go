@@ -34,7 +34,7 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
 
     // Recheck when app comes back to foreground (iOS)
     const handleVisibilityChange = () => {
-      if (!document.hidden) {
+      if (typeof document !== 'undefined' && !document.hidden) {
         checkInstallAvailability();
       }
     };

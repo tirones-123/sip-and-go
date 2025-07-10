@@ -25,16 +25,18 @@ const InstalledBadge: React.FC<InstalledBadgeProps> = ({ style }) => {
 
     // Recheck when app comes back to foreground
     const handleVisibilityChange = () => {
-      if (!document.hidden) {
+      if (typeof document !== 'undefined' && !document.hidden) {
         checkInstallStatus();
       }
     };
 
-    document.addEventListener('visibilitychange', handleVisibilityChange);
+    if (typeof document !== 'undefined') {
+      document.addEventListener('visibilitychange', handleVisibilityChange);
 
-    return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
+      return () => {
+        document.removeEventListener('visibilitychange', handleVisibilityChange);
+      };
+    }
   }, []);
 
   // Don't render if not installed or not on web
