@@ -127,7 +127,13 @@ const Settings: React.FC = () => {
   
   return (
     <View style={tw`flex-1 bg-[${BG_COLOR}]`}>
-      <ScrollView style={tw`flex-1`} contentContainerStyle={tw`px-4 pb-10`}>
+      <ScrollView 
+        style={tw`flex-1`} 
+        contentContainerStyle={tw`px-4 pb-10`}
+        showsVerticalScrollIndicator={false}
+        bounces={false}
+        overScrollMode="never"
+      >
         {/* Logo */}
         <View style={tw`items-center justify-center my-6`}>
           <Image
@@ -141,36 +147,40 @@ const Settings: React.FC = () => {
           <Text style={tw`text-lg font-bold text-white mb-4`}>
             {t('settings.language.title')}
           </Text>
-          <ScrollView 
-            horizontal 
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={tw`pr-4`}
-          >
-            <View style={tw`flex-row`}>
-              {languages.map((language) => (
-                <TouchableOpacity
-                  key={language.code}
-                  style={tw`mr-2`}
-                  onPress={() => changeLanguage(language.code as 'en' | 'fr')}
-                >
-                  <View style={[
-                    tw`p-3 rounded-xl border-2 w-24 items-center`,
-                    lang === language.code
-                      ? tw`border-white bg-white/20`
-                      : tw`border-white/30 bg-white/10`,
-                  ]}>
-                    <Text style={tw`text-3xl mb-1`}>{language.flag}</Text>
-                    <Text style={tw`text-xs font-medium text-center text-white`} numberOfLines={1}>
-                      {language.name}
-                    </Text>
-                    {lang === language.code && (
-                      <Ionicons name="checkmark-circle" size={16} color="white" style={tw`absolute top-1 right-1`} />
-                    )}
-                  </View>
-                </TouchableOpacity>
-              ))}
-            </View>
-          </ScrollView>
+          <View style={[{ overflow: 'hidden' }]}>
+            <ScrollView 
+              horizontal 
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={tw`pr-4`}
+              bounces={false}
+              overScrollMode="never"
+            >
+              <View style={tw`flex-row`}>
+                {languages.map((language) => (
+                  <TouchableOpacity
+                    key={language.code}
+                    style={tw`mr-2`}
+                    onPress={() => changeLanguage(language.code as 'en' | 'fr')}
+                  >
+                    <View style={[
+                      tw`p-3 rounded-xl border-2 w-24 items-center`,
+                      lang === language.code
+                        ? tw`border-white bg-white/20`
+                        : tw`border-white/30 bg-white/10`,
+                    ]}>
+                      <Text style={tw`text-3xl mb-1`}>{language.flag}</Text>
+                      <Text style={tw`text-xs font-medium text-center text-white`} numberOfLines={1}>
+                        {language.name}
+                      </Text>
+                      {lang === language.code && (
+                        <Ionicons name="checkmark-circle" size={16} color="white" style={tw`absolute top-1 right-1`} />
+                      )}
+                    </View>
+                  </TouchableOpacity>
+                ))}
+              </View>
+            </ScrollView>
+          </View>
         </View>
 
         {/* Web platform message */}

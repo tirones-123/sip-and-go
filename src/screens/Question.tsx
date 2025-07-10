@@ -370,7 +370,11 @@ const Question: React.FC = () => {
                   onRemove={handleRemovePlayer}
                 />
               )}
-              style={tw`flex-1 mb-4`}
+              style={[tw`flex-1 mb-4`, { overflow: 'hidden' }]}
+              showsVerticalScrollIndicator={false}
+              bounces={false}
+              overScrollMode="never"
+              contentContainerStyle={{ flexGrow: 1 }}
               ListEmptyComponent={
                 <Text style={tw`text-white/50 text-center mt-4`}>
                   {t('addPlayers.playerCountError')}

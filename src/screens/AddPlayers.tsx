@@ -134,29 +134,11 @@ const AddPlayers: React.FC = () => {
         <Ionicons name="settings-sharp" size={28} color="#FFFFFF" />
       </TouchableOpacity>
 
-      {/* Conditional KeyboardAvoidingView only for native platforms */}
-      {Platform.OS === 'web' ? (
-        <View style={tw`flex-1 p-6 pb-1 mt-32`}>
-          <PlayerContent 
-            players={players}
-            playerName={playerName}
-            setPlayerName={setPlayerName}
-            handleAddPlayer={handleAddPlayer}
-            handleStart={handleStart}
-            removePlayer={removePlayer}
-            inputRef={inputRef}
-            listRef={listRef}
-            t={t}
-            BG_COLOR={BG_COLOR}
-          />
-        </View>
-      ) : (
-        <KeyboardAvoidingView
-          style={tw`flex-1`}
-          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-          keyboardVerticalOffset={Platform.OS === 'ios' ? -20 : 0}
-        >
-          <View style={tw`flex-1 p-6 pb-1`}>
+      {/* Main container with overflow protection */}
+      <View style={[tw`flex-1`, { overflow: 'hidden' }]}>
+        {/* Conditional KeyboardAvoidingView only for native platforms */}
+        {Platform.OS === 'web' ? (
+          <View style={tw`flex-1 p-6 pb-1 mt-32`}>
             <PlayerContent 
               players={players}
               playerName={playerName}
@@ -170,8 +152,29 @@ const AddPlayers: React.FC = () => {
               BG_COLOR={BG_COLOR}
             />
           </View>
-        </KeyboardAvoidingView>
-      )}
+        ) : (
+          <KeyboardAvoidingView
+            style={tw`flex-1`}
+            behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+            keyboardVerticalOffset={Platform.OS === 'ios' ? -20 : 0}
+          >
+            <View style={tw`flex-1 p-6 pb-1`}>
+              <PlayerContent 
+                players={players}
+                playerName={playerName}
+                setPlayerName={setPlayerName}
+                handleAddPlayer={handleAddPlayer}
+                handleStart={handleStart}
+                removePlayer={removePlayer}
+                inputRef={inputRef}
+                listRef={listRef}
+                t={t}
+                BG_COLOR={BG_COLOR}
+              />
+            </View>
+          </KeyboardAvoidingView>
+        )}
+      </View>
 
       {/* PWA-compatible Alert Modal */}
       <Modal
@@ -232,7 +235,7 @@ const PlayerContent: React.FC<{
   t,
   BG_COLOR
 }) => (
-  <>
+  <View style={[tw`flex-1`, { overflow: 'hidden' }]}>
     {/* Header Section */}
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={tw`items-center mt-42 mb-5`}>
@@ -252,9 +255,9 @@ const PlayerContent: React.FC<{
       </View>
     </TouchableWithoutFeedback>
 
-    {/* Player List Section */}
+    {/* Player List Section with strict bounds */}
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <View style={tw`flex-1`}>
+      <View style={[tw`flex-1 mb-4`, { overflow: 'hidden', minHeight: 0 }]}>
         <FlatList
           ref={listRef}
           data={players}
@@ -262,7 +265,11 @@ const PlayerContent: React.FC<{
           renderItem={({ item }) => (
             <PlayerListItem name={item} onRemove={removePlayer} />
           )}
-          style={tw`mb-4`}
+          style={[tw`flex-1`, { overflow: 'hidden' }]}
+          contentContainerStyle={{ flexGrow: 1 }}
+          showsVerticalScrollIndicator={false}
+          bounces={false}
+          overScrollMode="never"
           onContentSizeChange={() => listRef.current?.scrollToEnd({ animated: true })}
           ListEmptyComponent={
             <View style={tw`flex-1 justify-center items-center`}>
@@ -275,8 +282,8 @@ const PlayerContent: React.FC<{
       </View>
     </TouchableWithoutFeedback>
 
-    {/* Input and Start Button Section */}
-    <View>
+    {/* Input and Start Button Section - Fixed at bottom */}
+    <View style={tw`pb-safe`}>
       <View style={tw`flex-row mb-4`}>
         <TextInput
           ref={inputRef}
@@ -320,7 +327,7 @@ const PlayerContent: React.FC<{
       <InstallButton style={tw`mb-6`} />
       <InstalledBadge style={tw`mb-6 self-center`} />
     </View>
-  </>
+  </View>
 );
 
 export default AddPlayers; 

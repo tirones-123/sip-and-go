@@ -144,6 +144,8 @@ const ModeCarousel: React.FC = () => {
           keyExtractor={(item) => item.id}
           horizontal
           showsHorizontalScrollIndicator={false}
+          bounces={false}
+          overScrollMode="never"
           pagingEnabled={false}
           snapToInterval={ITEM_WIDTH + ITEM_SPACING}
           snapToAlignment="start"
@@ -155,7 +157,7 @@ const ModeCarousel: React.FC = () => {
           }}
           onScroll={scrollHandler}
           scrollEventThrottle={16}
-          style={{ flex: 1 }}
+          style={[{ flex: 1 }, { overflow: 'hidden' }]}
           renderItem={({ item, index }) => (
             <View style={{
               marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,
