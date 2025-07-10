@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIP&GO! - Statistiques PWA</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FF784F, #fe8763);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(0,0,0,0.3);
+            padding: 40px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .logo {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        
+        .title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .counter-section {
+            margin: 30px 0;
+        }
+        
+        .counter {
+            font-size: 4em;
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            color: #FFE135;
+            text-shadow: 
+                0 0 10px rgba(255, 225, 53, 0.5),
+                2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .label {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-item {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #FFE135;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+        
+        .last-updated {
+            font-size: 0.9em;
+            opacity: 0.7;
+            margin-top: 25px;
+            padding: 15px;
+            background: rgba(0,0,0,0.2);
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .refresh-btn {
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .refresh-btn:hover {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .loading {
+            opacity: 0.6;
+            pointer-events: none;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .counter {
+                font-size: 3em;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🍻</div>
+        <div class="title">SIP&GO! PWA Stats</div>
+        
+        <div class="counter-section">
+            <div class="label">Téléchargements PWA</div>
+            <div class="counter" id="counter">-</div>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-value" id="todayCount">-</div>
+                <div class="stat-label">Aujourd'hui</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="avgPerDay">-</div>
+                <div class="stat-label">Moy./jour</div>
+            </div>
+        </div>
+        
+        <div class="last-updated" id="lastUpdated">-</div>
+        
+        <button class="refresh-btn" onclick="refreshStats()" id="refreshBtn">
+            🔄 Actualiser
+        </button>
+    </div>
+
+    <script>
+        let lastCount = 0;
+        let startDate = new Date('2024-01-01'); // Date de lancement
+        
+        function loadStats() {
+            const btn = document.getElementById('refreshBtn');
+            btn.classList.add('loading');
+            btn.textContent = '⏳ Chargement...';
+            
+            fetch('count.php')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('counter').textContent = data.count;
+                    document.getElementById('lastUpdated').textContent = 'Dernière mise à jour: ' + data.last_updated;
+                    
+                    // Calculs statistiques simples
+                    const now = new Date();
+                    const daysSinceLaunch = Math.max(1, Math.ceil((now - startDate) / (1000 * 60 * 60 * 24)));
+                    const avgPerDay = Math.round(data.count / daysSinceLaunch * 10) / 10;
+                    
+                    // Simulation "aujourd'hui" (vous pourriez améliorer ça avec de vraies stats journalières)
+                    const todayEstimate = Math.max(0, data.count - lastCount);
+                    
+                    document.getElementById('todayCount').textContent = todayEstimate;
+                    document.getElementById('avgPerDay').textContent = avgPerDay;
+                    
+                    lastCount = data.count;
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    document.getElementById('counter').textContent = 'Erreur';
+                    document.getElementById('lastUpdated').textContent = 'Erreur de chargement';
+                })
+                .finally(() => {
+                    btn.classList.remove('loading');
+                    btn.textContent = '🔄 Actualiser';
+                });
+        }
+
+        function refreshStats() {
+            loadStats();
+        }
+
+        // Charger au démarrage
+        loadStats();
+        
+        // Auto-refresh toutes les 30 secondes
+        setInterval(loadStats, 30000);
+        
+        // Animation au chargement
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.container').style.opacity = '0';
+            document.querySelector('.container').style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                document.querySelector('.container').style.transition = 'all 0.5s ease';
+                document.querySelector('.container').style.opacity = '1';
+                document.querySelector('.container').style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html> 

@@ -115,4 +115,38 @@ export function trackError(errorMessage: string, errorCode?: string): void {
     errorMessage,
     errorCode
   });
+}
+
+// Simple PWA download counter
+export const trackPWAInstall = async () => {
+  try {
+    // URL relative vers notre endpoint de stats
+    const STATS_URL = '/stats/count.php';
+    
+    await fetch(STATS_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ action: 'install' })
+    });
+    
+    console.log('PWA install tracked');
+  } catch (error) {
+    console.error('Failed to track PWA install:', error);
+  }
+};
+
+// Track PWA installation events
+if (typeof window !== 'undefined') {
+  // Track actual installation
+  window.addEventListener('appinstalled', () => {
+    trackPWAInstall();
+  });
+  
+  // Optional: track install prompt shown
+  window.addEventListener('beforeinstallprompt', (e) => {
+    console.log('PWA install prompt ready');
+    // Ne pas tracker ici car c'est juste la proposition
+  });
 } 
