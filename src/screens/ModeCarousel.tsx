@@ -157,7 +157,7 @@ const ModeCarousel: React.FC = () => {
           }}
           onScroll={scrollHandler}
           scrollEventThrottle={16}
-          style={[{ flex: 1 }, { overflow: 'hidden' }]}
+          style={{ flex: 1 }}
           renderItem={({ item, index }) => (
             <View style={{
               marginLeft: index === 0 ? 0 : ITEM_SPACING / 2,

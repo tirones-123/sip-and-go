@@ -238,7 +238,7 @@ const PlayerContent: React.FC<{
   <View style={[tw`flex-1`, { overflow: 'hidden' }]}>
     {/* Header Section */}
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <View style={tw`items-center mt-42 mb-5`}>
+      <View style={tw`items-center ${Platform.OS === 'web' ? 'mt-8' : 'mt-42'} mb-5`}>
         <Text
           style={[
             tw`text-white text-3xl font-bold tracking-tight text-center`,
@@ -257,7 +257,14 @@ const PlayerContent: React.FC<{
 
     {/* Player List Section with strict bounds */}
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-      <View style={[tw`flex-1 mb-4`, { overflow: 'hidden', minHeight: 0 }]}>
+      <View style={[
+        tw`flex-1 mb-4`, 
+        { 
+          overflow: 'hidden', 
+          minHeight: Platform.OS === 'web' ? 250 : 0,
+          maxHeight: Platform.OS === 'web' ? '60%' : undefined
+        }
+      ]}>
         <FlatList
           ref={listRef}
           data={players}
@@ -266,8 +273,11 @@ const PlayerContent: React.FC<{
             <PlayerListItem name={item} onRemove={removePlayer} />
           )}
           style={[tw`flex-1`, { overflow: 'hidden' }]}
-          contentContainerStyle={{ flexGrow: 1 }}
-          showsVerticalScrollIndicator={false}
+          contentContainerStyle={{ 
+            flexGrow: 1,
+            paddingBottom: Platform.OS === 'web' ? 10 : 0
+          }}
+          showsVerticalScrollIndicator={Platform.OS !== 'web'}
           bounces={false}
           overScrollMode="never"
           onContentSizeChange={() => listRef.current?.scrollToEnd({ animated: true })}
