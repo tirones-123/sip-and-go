@@ -1,3 +1,9 @@
+# Empêcher la redirection vers la page principale pour le dossier stats
+RewriteEngine On
+
+# Permettre l'accès direct aux fichiers du dossier stats
+RewriteRule ^(.*)$ - [L]
+
 # Protection du fichier de données JSON
 <Files "downloads.json">
     Order allow,deny
@@ -16,4 +22,21 @@
     ExpiresActive on
     ExpiresByType text/html "access plus 1 hour"
     ExpiresByType application/json "access plus 1 minute"
+</IfModule>
+
+# Forcer l'accès aux pages de stats sans redirection
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Permettre l'accès direct à index.html
+    RewriteRule ^index\.html$ - [L]
+    
+    # Permettre l'accès direct à count.php
+    RewriteRule ^count\.php$ - [L]
+    
+    # Rediriger le dossier racine vers index.html
+    RewriteRule ^$ index.html [L]
+    
+    # Bloquer tout autre accès qui pourrait rediriger
+    RewriteRule ^.*$ - [L]
 </IfModule> 
