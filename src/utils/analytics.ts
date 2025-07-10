@@ -120,8 +120,8 @@ export function trackError(errorMessage: string, errorCode?: string): void {
 // Simple PWA download counter
 export const trackPWAInstall = async () => {
   try {
-    // URL relative vers notre endpoint de stats
-    const STATS_URL = '/stats/count.php';
+    // URL vers notre Vercel Function
+    const STATS_URL = '/api/count';
     
     await fetch(STATS_URL, {
       method: 'POST',

@@ -129,6 +129,18 @@
             pointer-events: none;
         }
         
+        .platform-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0,255,0,0.2);
+            color: #00ff00;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            border: 1px solid rgba(0,255,0,0.3);
+        }
+        
         @media (max-width: 600px) {
             .container {
                 padding: 30px 20px;
@@ -147,6 +159,8 @@
     </style>
 </head>
 <body>
+    <div class="platform-badge">Vercel Functions</div>
+    
     <div class="container">
         <div class="logo">🍻</div>
         <div class="title">SIP&GO! PWA Stats</div>
@@ -183,11 +197,16 @@
             btn.classList.add('loading');
             btn.textContent = '⏳ Chargement...';
             
-            fetch('count.php')
+            // Utiliser l'API Vercel Function
+            fetch('/api/count')
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById('counter').textContent = data.count;
-                    document.getElementById('lastUpdated').textContent = 'Dernière mise à jour: ' + data.last_updated;
+                    
+                    // Formater la date
+                    const lastUpdated = new Date(data.last_updated);
+                    document.getElementById('lastUpdated').textContent = 
+                        'Dernière mise à jour: ' + lastUpdated.toLocaleString('fr-FR');
                     
                     // Calculs statistiques simples
                     const now = new Date();
@@ -205,7 +224,7 @@
                 .catch(error => {
                     console.error('Erreur:', error);
                     document.getElementById('counter').textContent = 'Erreur';
-                    document.getElementById('lastUpdated').textContent = 'Erreur de chargement';
+                    document.getElementById('lastUpdated').textContent = 'Erreur de chargement: ' + error.message;
                 })
                 .finally(() => {
                     btn.classList.remove('loading');
