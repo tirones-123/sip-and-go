@@ -261,8 +261,8 @@ const PlayerContent: React.FC<{
         tw`flex-1 mb-4`, 
         { 
           overflow: 'hidden', 
-          minHeight: Platform.OS === 'web' ? 250 : 0,
-          maxHeight: Platform.OS === 'web' ? '60%' : undefined
+          minHeight: Platform.OS === 'web' ? 200 : 0,
+          maxHeight: Platform.OS === 'web' ? '45%' : undefined
         }
       ]}>
         <FlatList
@@ -340,9 +340,11 @@ const PlayerContent: React.FC<{
         textClassName={`text-lg font-bold text-[${BG_COLOR}]`}
       />
       
-      {/* Install PWA Button or Installed Badge */}
-      <InstallButton style={tw`mb-6`} />
-      <InstalledBadge style={tw`mb-6 self-center`} />
+      {/* Install PWA Button or Installed Badge - Always visible */}
+      <View style={tw`items-center`}>
+        <InstallButton style={tw`mb-3`} />
+        <InstalledBadge style={tw`mb-3`} />
+      </View>
     </View>
   </View>
 );
