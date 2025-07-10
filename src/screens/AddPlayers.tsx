@@ -287,7 +287,13 @@ const PlayerContent: React.FC<{
       <View style={tw`flex-row mb-4`}>
         <TextInput
           ref={inputRef}
-          style={[tw`flex-1 bg-white/20 text-white text-base rounded-xl px-4 py-3.5 mr-2 border border-white/30`, { lineHeight: 20 }]}
+          style={[
+            tw`flex-1 bg-white/20 text-white text-base rounded-xl px-4 py-3.5 mr-2 border border-white/30`, 
+            { 
+              lineHeight: 20,
+              fontSize: 16 // Prevent auto-zoom on mobile web
+            }
+          ]}
           placeholder={t('addPlayers.inputPlaceholder')}
           placeholderTextColor="#ffffff90"
           value={playerName}
@@ -303,6 +309,7 @@ const PlayerContent: React.FC<{
           autoComplete="off"
           importantForAutofill="no"
           textAlignVertical="center"
+          textContentType="none"
         />
         
         <TouchableOpacity

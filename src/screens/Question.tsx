@@ -308,18 +308,21 @@ const Question: React.FC = () => {
         animationType="slide"
         onRequestClose={() => setShowPlayersModal(false)}
       >
-        <View style={tw`flex-1 bg-black/70 justify-center items-center`}>
+        <View style={[tw`flex-1 bg-black/70 justify-center items-center`, { overflow: 'hidden' }]}>
           <Pressable
             style={tw`absolute inset-0`}
             onPress={() => setShowPlayersModal(false)}
           />
           <Animated.View 
             style={[
-              tw`w-4/5 h-2/3 rounded-xl p-4 border border-white/30`,
+              tw`w-4/5 rounded-xl p-4 border border-white/30`,
               { 
                 transform: [{ translateX: shakeAnim }],
                 zIndex: 10,
-                backgroundColor: 'rgba(0, 0, 0, 0.75)'
+                backgroundColor: 'rgba(0, 0, 0, 0.75)',
+                maxHeight: '70%',
+                maxWidth: '90%',
+                overflow: 'hidden'
               }
             ]}
           >
@@ -336,7 +339,13 @@ const Question: React.FC = () => {
             <View style={tw`flex-row mb-4`}>
               <TextInput
                 ref={modalInputRef}
-                style={tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2 border border-white/30`}
+                style={[
+                  tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2 border border-white/30`,
+                  { 
+                    fontSize: 16, // Prevent auto-zoom on mobile web
+                    lineHeight: 20
+                  }
+                ]}
                 placeholder={t('addPlayers.inputPlaceholder')}
                 placeholderTextColor="#ffffff80"
                 value={newPlayerName}
@@ -351,6 +360,7 @@ const Question: React.FC = () => {
                 spellCheck={false}
                 autoComplete="off"
                 importantForAutofill="no"
+                textContentType="none"
               />
               <TouchableOpacity
                 style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-lg border border-white/30`}
@@ -361,26 +371,28 @@ const Question: React.FC = () => {
             </View>
             
             {/* Player list */}
-            <FlatList
-              data={players}
-              keyExtractor={(item) => item}
-              renderItem={({ item }) => (
-                <PlayerListItem 
-                  name={item} 
-                  onRemove={handleRemovePlayer}
-                />
-              )}
-              style={[tw`flex-1 mb-4`, { overflow: 'hidden' }]}
-              showsVerticalScrollIndicator={false}
-              bounces={false}
-              overScrollMode="never"
-              contentContainerStyle={{ flexGrow: 1 }}
-              ListEmptyComponent={
-                <Text style={tw`text-white/50 text-center mt-4`}>
-                  {t('addPlayers.playerCountError')}
-                </Text>
-              }
-            />
+            <View style={[tw`flex-1 mb-4`, { overflow: 'hidden', minHeight: 0 }]}>
+              <FlatList
+                data={players}
+                keyExtractor={(item) => item}
+                renderItem={({ item }) => (
+                  <PlayerListItem 
+                    name={item} 
+                    onRemove={handleRemovePlayer}
+                  />
+                )}
+                style={[tw`flex-1`, { overflow: 'hidden' }]}
+                showsVerticalScrollIndicator={false}
+                bounces={false}
+                overScrollMode="never"
+                contentContainerStyle={{ flexGrow: 1 }}
+                ListEmptyComponent={
+                  <Text style={tw`text-white/50 text-center mt-4`}>
+                    {t('addPlayers.playerCountError')}
+                  </Text>
+                }
+              />
+            </View>
             
             <TouchableOpacity
               style={tw`border border-white/40 rounded-lg py-3 px-4 bg-white/15`}
