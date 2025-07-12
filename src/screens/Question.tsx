@@ -8,7 +8,8 @@ import {
   Pressable,
   TextInput,
   Keyboard,
-  Animated
+  Animated,
+  Platform
 } from 'react-native';
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -336,14 +337,26 @@ const Question: React.FC = () => {
             </View>
             
             {/* Add player input */}
-            <View style={tw`flex-row mb-4`}>
+            <View style={[tw`flex-row mb-4`, { overflow: 'hidden' }]}>
               <TextInput
                 ref={modalInputRef}
                 style={[
                   tw`flex-1 bg-white/10 text-white rounded-lg px-4 py-3 mr-2 border border-white/30`,
                   { 
                     fontSize: 16, // Prevent auto-zoom on mobile web
-                    lineHeight: 20
+                    lineHeight: 20,
+                    overflow: 'hidden',
+                    maxWidth: '100%'
+                  },
+                  Platform.OS === 'web' && {
+                    // @ts-ignore - Web-specific CSS properties
+                    userSelect: 'text',
+                    WebkitUserSelect: 'text',
+                    touchAction: 'manipulation',
+                    resize: 'none',
+                    outline: 'none',
+                    whiteSpace: 'nowrap',
+                    textOverflow: 'ellipsis'
                   }
                 ]}
                 placeholder={t('addPlayers.inputPlaceholder')}
@@ -361,6 +374,8 @@ const Question: React.FC = () => {
                 autoComplete="off"
                 importantForAutofill="no"
                 textContentType="none"
+                multiline={false}
+                scrollEnabled={false}
               />
               <TouchableOpacity
                 style={tw`bg-white/20 w-12 h-12 items-center justify-center rounded-lg border border-white/30`}

@@ -25,17 +25,22 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
       const canInstall = canInstallPWA();
       const isAlreadyInstalled = isPWAInstalled();
       
-      // Optional: log can be re-enabled for debugging if needed
+      // Debug logs for troubleshooting
+      console.log('InstallButton - Check availability:', {
+        canInstall,
+        isAlreadyInstalled,
+        showButton: canInstall && !isAlreadyInstalled
+      });
       
       setShowInstallButton(canInstall && !isAlreadyInstalled);
     };
 
     checkInstallAvailability();
 
-    // Recheck when app comes back to foreground (iOS)
+    // Recheck when app comes back to foreground
     const handleVisibilityChange = () => {
       if (typeof document !== 'undefined' && !document.hidden) {
-        checkInstallAvailability();
+        setTimeout(checkInstallAvailability, 100); // Small delay to ensure state is updated
       }
     };
 
@@ -52,18 +57,38 @@ const InstallButton: React.FC<InstallButtonProps> = ({ style, textStyle }) => {
       (window as any).deferredPrompt = null;
     };
 
+    // Listen for display mode changes (when switching between standalone and browser)
+    const handleDisplayModeChange = () => {
+      setTimeout(checkInstallAvailability, 100);
+    };
+
     if (typeof window !== 'undefined') {
       window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
       window.addEventListener('appinstalled', handleAppInstalled);
       document.addEventListener('visibilitychange', handleVisibilityChange);
+      
+      // Listen for display mode changes
+      const mediaQuery = window.matchMedia('(display-mode: standalone)');
+      if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener('change', handleDisplayModeChange);
+      } else {
+        // Fallback for older browsers
+        mediaQuery.addListener(handleDisplayModeChange);
+      }
 
       return () => {
         window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt);
         window.removeEventListener('appinstalled', handleAppInstalled);
         document.removeEventListener('visibilitychange', handleVisibilityChange);
+        
+        if (mediaQuery.removeEventListener) {
+          mediaQuery.removeEventListener('change', handleDisplayModeChange);
+        } else {
+          mediaQuery.removeListener(handleDisplayModeChange);
+        }
       };
     }
-  }, [showInstallButton]);
+  }, []);
 
   const handleInstall = () => {
     setShowModal(true);

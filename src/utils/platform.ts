@@ -63,56 +63,73 @@ export const isPWAMarkedAsInstalled = (): boolean => {
 };
 
 /**
- * Check if the app is already installed as PWA
+ * Clear PWA installation marker (useful for testing)
  */
-export const isPWAInstalled = (): boolean => {
+export const clearPWAInstallStatus = (): void => {
+  if (!isWeb) return;
+  
+  try {
+    localStorage.removeItem('pwa-installed');
+    localStorage.removeItem('pwa-install-date');
+  } catch (error) {
+    console.warn('Could not clear PWA install status:', error);
+  }
+};
+
+/**
+ * Check if the app is currently running in standalone mode (actually launched as PWA)
+ */
+export const isRunningAsStandalone = (): boolean => {
   if (!isWeb) return false;
   
-  // First check if user manually marked as installed
-  if (isPWAMarkedAsInstalled()) {
-    return true;
-  }
-  
-  // Multiple ways to detect PWA installation
-  
-  // Method 1: Check display-mode standalone
+  // Method 1: Check display-mode standalone (most reliable)
   const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
   
   // Method 2: Check navigator.standalone (iOS Safari specific)
   const isIOSStandalone = (window.navigator as any).standalone === true;
   
-  // Method 3: Check if window.navigator.userAgent contains specific PWA indicators
-  const userAgent = navigator.userAgent;
-  const isPWAMode = userAgent.includes('wv'); // WebView indicator
+  return isStandalone || isIOSStandalone;
+};
+
+/**
+ * Check if the app is already installed as PWA
+ * This now focuses on actual standalone mode detection rather than stored state
+ */
+export const isPWAInstalled = (): boolean => {
+  if (!isWeb) return false;
   
-  // Method 4: Check window size and screen properties (PWA often runs fullscreen)
-  const isFullscreen = window.screen.height === window.innerHeight;
+  // Priority 1: Check if actually running in standalone mode RIGHT NOW
+  const isCurrentlyStandalone = isRunningAsStandalone();
   
-  // Method 5: Check if app was launched from home screen (iOS)
-  const isFromHomeScreen = !document.referrer || document.referrer === '';
-  
-  // Debug info
-  console.log('PWA Detection Methods:', {
-    isStandalone,
-    isIOSStandalone,
-    isPWAMode,
-    isFullscreen,
-    isFromHomeScreen,
-    userAgent: userAgent.substring(0, 100),
-    referrer: document.referrer,
-    screenHeight: window.screen.height,
-    innerHeight: window.innerHeight,
-    markedAsInstalled: isPWAMarkedAsInstalled()
-  });
-  
-  const isInstalled = isStandalone || isIOSStandalone || (isIOSSafari() && isFromHomeScreen && isFullscreen);
-  
-  // If we detect it's installed, mark it for future reference
-  if (isInstalled) {
+  // If running standalone, definitely installed
+  if (isCurrentlyStandalone) {
+    // Mark as installed for future reference
     markPWAAsInstalled();
+    return true;
   }
   
-  return isInstalled;
+  // Priority 2: If not running standalone, check if we can detect installation capability
+  // This helps avoid showing "installed" when user is just browsing normally
+  
+  // For iOS Safari, check if we can show install prompt
+  if (isIOSSafari()) {
+    // If we have a clear indication it was installed but not running standalone,
+    // it might have been uninstalled - be more conservative
+    return false;
+  }
+  
+  // For other browsers, check if beforeinstallprompt is available
+  // If it is, the app is probably not installed
+  if ('onbeforeinstallprompt' in window) {
+    const deferredPrompt = (window as any).deferredPrompt;
+    // If prompt is available, app is not installed
+    if (deferredPrompt) {
+      return false;
+    }
+  }
+  
+  // As a fallback, check our stored state but with less weight
+  return isPWAMarkedAsInstalled();
 };
 
 /**
@@ -121,9 +138,14 @@ export const isPWAInstalled = (): boolean => {
 export const canInstallPWA = (): boolean => {
   if (!isWeb) return false;
   
+  // Don't show install if already running in standalone mode
+  if (isRunningAsStandalone()) {
+    return false;
+  }
+  
   // For iOS Safari, we can always show install instructions
   if (isIOSSafari()) {
-    return !isPWAInstalled();
+    return true;
   }
   
   // For other browsers, check if beforeinstallprompt is supported
@@ -226,4 +248,43 @@ export function getPremiumMessage(): string {
     return "Les fonctionnalités premium ne sont disponibles que sur l'application mobile. Téléchargez l'app pour accéder à tous les packs !";
   }
   return "Débloquez tous les packs avec un abonnement premium !";
+}
+
+/**
+ * Debug function to reset PWA installation status
+ * Available in browser console as window.resetPWAStatus()
+ */
+export const resetPWAStatus = (): void => {
+  if (!isWeb) {
+    console.log('This function is only available on web');
+    return;
+  }
+  
+  clearPWAInstallStatus();
+  console.log('PWA installation status cleared');
+  console.log('Current state:', {
+    isRunningStandalone: isRunningAsStandalone(),
+    isPWAInstalled: isPWAInstalled(),
+    canInstallPWA: canInstallPWA(),
+    isIOSSafari: isIOSSafari()
+  });
+  
+  // Force refresh to update UI
+  window.location.reload();
+};
+
+// Make debug function globally available
+if (isWeb && typeof window !== 'undefined') {
+  (window as any).resetPWAStatus = resetPWAStatus;
+  (window as any).checkPWAStatus = () => {
+    console.log('PWA Status:', {
+      isRunningStandalone: isRunningAsStandalone(),
+      isPWAInstalled: isPWAInstalled(),
+      canInstallPWA: canInstallPWA(),
+      isIOSSafari: isIOSSafari(),
+      userAgent: navigator.userAgent.substring(0, 100),
+      displayMode: window.matchMedia('(display-mode: standalone)').matches ? 'standalone' : 'browser',
+      navigatorStandalone: (window.navigator as any).standalone
+    });
+  };
 } 

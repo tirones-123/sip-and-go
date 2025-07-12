@@ -18,7 +18,9 @@ const InstalledBadge: React.FC<InstalledBadgeProps> = ({ style }) => {
     if (!isWeb) return;
 
     const checkInstallStatus = () => {
-      setIsInstalled(isPWAInstalled());
+      const installed = isPWAInstalled();
+      console.log('InstalledBadge - Check status:', { installed });
+      setIsInstalled(installed);
     };
 
     checkInstallStatus();
@@ -26,15 +28,35 @@ const InstalledBadge: React.FC<InstalledBadgeProps> = ({ style }) => {
     // Recheck when app comes back to foreground
     const handleVisibilityChange = () => {
       if (typeof document !== 'undefined' && !document.hidden) {
-        checkInstallStatus();
+        setTimeout(checkInstallStatus, 100); // Small delay to ensure state is updated
       }
+    };
+
+    // Listen for display mode changes
+    const handleDisplayModeChange = () => {
+      setTimeout(checkInstallStatus, 100);
     };
 
     if (typeof document !== 'undefined') {
       document.addEventListener('visibilitychange', handleVisibilityChange);
+      
+      // Listen for display mode changes
+      const mediaQuery = window.matchMedia('(display-mode: standalone)');
+      if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener('change', handleDisplayModeChange);
+      } else {
+        // Fallback for older browsers
+        mediaQuery.addListener(handleDisplayModeChange);
+      }
 
       return () => {
         document.removeEventListener('visibilitychange', handleVisibilityChange);
+        
+        if (mediaQuery.removeEventListener) {
+          mediaQuery.removeEventListener('change', handleDisplayModeChange);
+        } else {
+          mediaQuery.removeListener(handleDisplayModeChange);
+        }
       };
     }
   }, []);

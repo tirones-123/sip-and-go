@@ -294,14 +294,26 @@ const PlayerContent: React.FC<{
 
     {/* Input and Start Button Section - Fixed at bottom */}
     <View style={tw`pb-safe`}>
-      <View style={tw`flex-row mb-4`}>
+      <View style={[tw`flex-row mb-4`, { overflow: 'hidden' }]}>
         <TextInput
           ref={inputRef}
           style={[
             tw`flex-1 bg-white/20 text-white text-base rounded-xl px-4 py-3.5 mr-2 border border-white/30`, 
             { 
               lineHeight: 20,
-              fontSize: 16 // Prevent auto-zoom on mobile web
+              fontSize: 16, // Prevent auto-zoom on mobile web
+              overflow: 'hidden',
+              maxWidth: '100%'
+            },
+            Platform.OS === 'web' && {
+              // @ts-ignore - Web-specific CSS properties
+              userSelect: 'text',
+              WebkitUserSelect: 'text',
+              touchAction: 'manipulation',
+              resize: 'none',
+              outline: 'none',
+              whiteSpace: 'nowrap',
+              textOverflow: 'ellipsis'
             }
           ]}
           placeholder={t('addPlayers.inputPlaceholder')}
@@ -320,6 +332,8 @@ const PlayerContent: React.FC<{
           importantForAutofill="no"
           textAlignVertical="center"
           textContentType="none"
+          multiline={false}
+          scrollEnabled={false}
         />
         
         <TouchableOpacity
